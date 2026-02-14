@@ -82,8 +82,8 @@ RLS is enabled on all app tables and policies are split into:
 ## Current Frontend Dependencies
 
 These existing pages/scripts rely directly on this schema:
-- `docs/dashboard.html` -> `profiles`, `saved_jobs`
-- `docs/js/savedJobs.js` -> `saved_jobs`
+- `legacy/docs/dashboard.html` -> `profiles`, `saved_jobs`
+- `legacy/docs/js/savedJobs.js` -> `saved_jobs`
 
 ## Validation Commands
 

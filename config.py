@@ -4,11 +4,11 @@ import re
 # Directories
 ROOT_DIR = Path(__file__).parent
 JSON_DIR = ROOT_DIR / "json"
-OUTPUT_DIR = ROOT_DIR / "docs"
+OUTPUT_DIR = ROOT_DIR / "legacy/docs"
 
 # Ensure directories exist
 JSON_DIR.mkdir(exist_ok=True)
-OUTPUT_DIR.mkdir(exist_ok=True)
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 # Scraper settings
 SCRAPER_CONFIG = {

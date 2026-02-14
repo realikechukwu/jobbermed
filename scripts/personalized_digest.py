@@ -335,7 +335,7 @@ def main() -> int:
         print("ℹ️  No opted-in recipients found for personalized delivery.")
         return 0
 
-    aggregated_jobs = load_aggregated_jobs(PROJECT_ROOT / "docs/master_jobs.json")
+    aggregated_jobs = load_aggregated_jobs(PROJECT_ROOT / "legacy/docs/master_jobs.json")
     native_jobs = load_native_jobs(config)
     all_jobs = [*aggregated_jobs, *native_jobs]
     if not all_jobs:

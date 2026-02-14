@@ -304,7 +304,7 @@ def main() -> None:
     print("  JOBBERMED WEEKLY NEWSLETTER")
     print("=" * 60)
 
-    jobs_file = Path("docs/master_jobs.json")
+    jobs_file = Path("legacy/docs/master_jobs.json")
     jobs = load_jobs(jobs_file, limit=20)
     print(f"\n📋 Loaded {len(jobs)} jobs")
 
@@ -315,7 +315,7 @@ def main() -> None:
     print("📝 Building email content...")
     html_content = build_email_html(jobs)
 
-    preview_file = Path("docs/newsletter_preview.html")
+    preview_file = Path("legacy/docs/newsletter_preview.html")
     with open(preview_file, "w", encoding="utf-8") as f:
         f.write(html_content.replace("{{unsubscribe}}", "#"))
     print(f"📄 Preview saved: {preview_file}")
