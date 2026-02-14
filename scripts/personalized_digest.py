@@ -15,6 +15,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
+from config import MASTER_JOBS_PATH
 from newsletter import build_email_html
 
 from email_runtime import (
@@ -335,7 +336,7 @@ def main() -> int:
         print("ℹ️  No opted-in recipients found for personalized delivery.")
         return 0
 
-    aggregated_jobs = load_aggregated_jobs(PROJECT_ROOT / "legacy/docs/master_jobs.json")
+    aggregated_jobs = load_aggregated_jobs(MASTER_JOBS_PATH)
     native_jobs = load_native_jobs(config)
     all_jobs = [*aggregated_jobs, *native_jobs]
     if not all_jobs:

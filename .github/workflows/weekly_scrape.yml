@@ -42,3 +42,4 @@ jobs:
           BREVO_SENDER_EMAIL: ${{ secrets.BREVO_SENDER_EMAIL }}
           BREVO_SENDER_NAME: ${{ secrets.BREVO_SENDER_NAME }}
           EMAIL_CTA_URL: ${{ secrets.EMAIL_CTA_URL }}
+          MASTER_JOBS_PATH: data/master_jobs.json

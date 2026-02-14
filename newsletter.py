@@ -11,6 +11,8 @@ from pathlib import Path
 import requests
 from dotenv import load_dotenv
 
+from config import MASTER_JOBS_PATH
+
 
 def load_jobs(filepath: Path, limit: int = 20) -> list:
     """Load and return top N jobs sorted by date."""
@@ -304,7 +306,7 @@ def main() -> None:
     print("  JOBBERMED WEEKLY NEWSLETTER")
     print("=" * 60)
 
-    jobs_file = Path("legacy/docs/master_jobs.json")
+    jobs_file = MASTER_JOBS_PATH
     jobs = load_jobs(jobs_file, limit=20)
     print(f"\n📋 Loaded {len(jobs)} jobs")
 
@@ -315,7 +317,8 @@ def main() -> None:
     print("📝 Building email content...")
     html_content = build_email_html(jobs)
 
-    preview_file = Path("legacy/docs/newsletter_preview.html")
+    preview_file = jobs_file.with_name("newsletter_preview.html")
+    preview_file.parent.mkdir(parents=True, exist_ok=True)
     with open(preview_file, "w", encoding="utf-8") as f:
         f.write(html_content.replace("{{unsubscribe}}", "#"))
     print(f"📄 Preview saved: {preview_file}")

@@ -24,7 +24,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Create directories
-        run: mkdir -p json legacy/docs
+        run: mkdir -p json data
 
       - name: Run scrapers
         run: python main.py
@@ -33,11 +33,12 @@ jobs:
         run: python extract.py
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          MASTER_JOBS_PATH: data/master_jobs.json
 
       - name: Commit updated master_jobs.json
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add legacy/docs/master_jobs.json legacy/docs/extraction_cache.json
+          git add data/master_jobs.json data/extraction_cache.json
           git diff --quiet && git diff --staged --quiet || git commit -m "Update jobs data $(date +'%Y-%m-%d')"
           git push

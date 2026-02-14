@@ -1,13 +1,20 @@
+import os
 from pathlib import Path
 import re
 
 # Directories
 ROOT_DIR = Path(__file__).parent
 JSON_DIR = ROOT_DIR / "json"
-OUTPUT_DIR = ROOT_DIR / "legacy/docs"
+DATA_DIR = ROOT_DIR / "data"
+DEFAULT_MASTER_JOBS_PATH = DATA_DIR / "master_jobs.json"
+MASTER_JOBS_PATH = Path(os.getenv("MASTER_JOBS_PATH", str(DEFAULT_MASTER_JOBS_PATH)))
+if not MASTER_JOBS_PATH.is_absolute():
+    MASTER_JOBS_PATH = ROOT_DIR / MASTER_JOBS_PATH
+OUTPUT_DIR = MASTER_JOBS_PATH.parent
 
 # Ensure directories exist
 JSON_DIR.mkdir(exist_ok=True)
+DATA_DIR.mkdir(parents=True, exist_ok=True)
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 # Scraper settings
@@ -39,7 +46,7 @@ EXTRACTION_CONFIG = {
 
 # Output files
 OUTPUT_FILES = {
-    "master_jobs": OUTPUT_DIR / "master_jobs.json",
+    "master_jobs": MASTER_JOBS_PATH,
     "raw_jobs": JSON_DIR / "raw_jobs.json", 
     
 }

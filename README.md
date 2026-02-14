@@ -6,6 +6,7 @@ JobberMed is a medical jobs aggregator. It scrapes jobs from multiple sources, n
 
 Legacy archive note:
 - `legacy/docs/` is archival reference only.
+- Canonical jobs file is `data/master_jobs.json`.
 - Deploy artifact for the active web app is `web/dist` only.
 
 ---
@@ -18,10 +19,10 @@ The legacy static site lives in `legacy/docs/` for reference only.
 - `legacy/docs/index.html` — Main UI (filters, cards, detail panel, pagination)
 - `legacy/docs/style.css` — Styling
 - `legacy/docs/script.js` — Client logic (filters, search, pagination, detail panel)
-- `legacy/docs/master_jobs.json` — Jobs data
 - `legacy/docs/dashboard.html` — Profile + saved jobs preview
 - `legacy/docs/change-password.html`, `legacy/docs/signin.html`, `legacy/docs/signup.html`, `legacy/docs/confirmation.html`
 - `legacy/docs/about.html`, `legacy/docs/privacy.html`, `legacy/docs/subscribe.html`
+- `data/master_jobs.json` — Canonical jobs data used by backend scripts/workflows
 
 **Local preview (recommended):**
 ```
@@ -62,7 +63,7 @@ The weekly newsletter is generated and sent via Brevo.
 ```
 NEWSLETTER_DRY_RUN=true python newsletter.py
 ```
-This writes `legacy/docs/newsletter_preview.html`.
+This writes `data/newsletter_preview.html`.
 
 ### Personalization Pipeline
 
@@ -97,7 +98,7 @@ python scripts/personalized_digest.py
 ┌─────────────────────────────────────────────────────────────┐
 │  CONFIGURATION                                               │
 ├─────────────────────────────────────────────────────────────┤
-│  • Sets up directory paths (json/, legacy/docs/)                    │
+│  • Sets up directory paths (json/, data/)                           │
 │  • Defines which scrapers are enabled                        │
 │  • Sets rate limits (delays between requests)                │
 │  • Configures extraction settings (AI model, date cutoff)    │
@@ -421,11 +422,11 @@ For each job in json/raw_jobs.json:
 │  │ 4. Run scrapers (main.py)               │                 │
 │  │ 5. Run extraction (extract.py)          │                 │
 │  │    └─ Uses OPENAI_API_KEY secret        │                 │
-│  │ 6. Commit updated legacy/docs/master_jobs.json │                 │
+│  │ 6. Commit updated data/master_jobs.json │                        │
 │  └─────────────────────────────────────────┘                 │
 │                                                              │
 │  RESULT:                                                     │
-│  legacy/docs/master_jobs.json updated in the repo                   │
+│  data/master_jobs.json updated in the repo                          │
 │                                                              │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -457,7 +458,7 @@ For each job in json/raw_jobs.json:
                                                                │
                                                                ▼
                                                         ┌───────────┐
-                                                        │  legacy/docs/    │
+                                                        │  data/            │
                                                         │  master_  │
                                                         │  jobs.json│
                                                         └─────┬─────┘
@@ -468,7 +469,7 @@ For each job in json/raw_jobs.json:
   │                         GITHUB ACTIONS                               │
   │  ┌─────────┐    ┌─────────┐    ┌─────────┐    ┌─────────────────┐   │
   │  │ Weekly  │───►│  Run    │───►│ Commit  │───►│ Repo contains   │   │
-  │  │ Trigger │    │ Pipeline│    │ updates │    │ legacy/docs/master_   │   │
+  │  │ Trigger │    │ Pipeline│    │ updates │    │ data/master_         │   │
   │  │ Mon 6AM │    │         │    │ to repo │    │ jobs.json       │   │
   │  └─────────┘    └─────────┘    └─────────┘    └────────┬────────┘   │
   └────────────────────────────────────────────────────────┼────────────┘
@@ -490,7 +491,7 @@ For each job in json/raw_jobs.json:
 |------|----------|---------|
 | `raw_jobs.json` | `json/` | Latest raw scrape (combined) |
 | `latest_raw_jobs.json` | `json/` | Always-current raw data |
-| `master_jobs.json` | `legacy/docs/` | Final cleaned data for website |
+| `master_jobs.json` | `data/` | Final cleaned data for backend + newsletters |
 
 ---
 

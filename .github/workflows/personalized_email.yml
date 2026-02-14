@@ -43,3 +43,4 @@ jobs:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
           EMAIL_CTA_URL: ${{ secrets.EMAIL_CTA_URL }}
+          MASTER_JOBS_PATH: data/master_jobs.json
