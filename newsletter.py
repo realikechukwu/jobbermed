@@ -40,7 +40,20 @@ def format_date(date_str: str) -> str:
         return date_str
 
 
-def build_email_html(jobs: list) -> str:
+def get_email_cta_url() -> str:
+    """Return the configurable CTA URL used in legacy digest emails."""
+    value = os.getenv("EMAIL_CTA_URL", "/signup").strip()
+    return value or "/signup"
+
+
+def build_email_html(
+    jobs: list,
+    *,
+    headline_text: str = "Healthcare jobs across Nigeria and Africa.",
+    subheadline_text: str = "Delivered to your email every week.",
+    intro_text: str | None = None,
+    include_signup_cta: bool = True,
+) -> str:
     """Build HTML email content."""
     invalid_salary_values = {"", "n", "n,", "na", "n/a", "none", "null", "-", "--", "nil"}
 
@@ -118,6 +131,33 @@ def build_email_html(jobs: list) -> str:
         </tr>
         """
 
+    if intro_text is None:
+        intro_text = (
+            f"Here are the top <strong>{len(jobs)} medical and healthcare opportunities</strong> curated this week."
+        )
+
+    signup_cta_html = ""
+    if include_signup_cta:
+        cta_url = escape(get_email_cta_url(), quote=True)
+        signup_cta_html = f"""
+          <tr>
+            <td style="padding:0 32px 24px 32px;">
+              <table width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #e2ddd6; border-radius:14px; background:#f7f4ef;">
+                <tr>
+                  <td style="padding:16px 18px;">
+                    <p style="margin:0 0 10px 0; color:#1c1b19; font-size:14px; line-height:1.5;">
+                      Want emails matched to your preferred role, location, and job type?
+                    </p>
+                    <a href="{cta_url}" style="display:inline-block; background:#111111; color:#ffffff; padding:10px 14px; border-radius:10px; text-decoration:none; font-size:13px; font-weight:600;">
+                      Create account for personalization →
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        """
+
     html_content = f"""
 <!DOCTYPE html>
 <html lang="en">
@@ -137,18 +177,18 @@ def build_email_html(jobs: list) -> str:
           <tr>
             <td style="padding:26px 32px; background:#111111;">
               <h1 style="margin:0; color:#ffffff; font-size:28px; line-height:1.2; font-weight:800;">
-                Healthcare jobs across Nigeria and Africa.
+                {escape(headline_text)}
               </h1>
               <div style="width:180px; height:5px; margin-top:14px; border-radius:999px; background:#0cc0df;"></div>
               <p style="margin:14px 0 0 0; color:rgba(255,255,255,0.85); font-size:15px; line-height:1.5;">
-                Delivered to your email every week.
+                {escape(subheadline_text)}
               </p>
             </td>
           </tr>
           <tr>
             <td style="padding:20px 32px 20px 32px;">
               <p style="margin:0; color:#1c1b19; font-size:15px; line-height:1.6;">
-                Here are the top <strong>{len(jobs)} medical and healthcare opportunities</strong> curated this week.
+                {intro_text}
               </p>
             </td>
           </tr>
@@ -166,6 +206,7 @@ def build_email_html(jobs: list) -> str:
               </a>
             </td>
           </tr>
+          {signup_cta_html}
           <tr>
             <td style="background:#111111; padding:24px 32px; text-align:center;">
               <p style="margin:0 0 8px 0; color:rgba(255,255,255,0.72); font-size:13px; line-height:1.5;">
