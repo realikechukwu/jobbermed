@@ -12,7 +12,7 @@ export function HomePage() {
           <p className="meta">Job listing aggregation logic will be added in a follow-up task.</p>
         </CardPrimitive>
         <CardPrimitive title="Weekly updates" meta="Route shell only">
-          <p className="meta">Newsletter and preference wiring is intentionally deferred.</p>
+          <p className="meta">Personalized delivery settings are available in Dashboard preferences.</p>
         </CardPrimitive>
       </section>
     </RouteShell>
