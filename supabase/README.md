@@ -18,6 +18,7 @@ This folder contains first-party database migrations for JobberMed.
 12. `migrations/0012_jobs_policies_and_grants.sql`
 13. `migrations/0013_native_jobs_contract_fix.sql`
 14. `migrations/0014_roles_access_requests_fix.sql`
+15. `migrations/0015_email_personalization_schema.sql`
 
 ## Objects Created
 
@@ -42,6 +43,10 @@ This folder contains first-party database migrations for JobberMed.
 - `public.native_job_applications`
 - `public.user_platform_roles`
 - `public.access_requests`
+- `public.email_preferences`
+- `public.email_pref_categories`
+- `public.email_pref_locations`
+- `public.email_delivery_log`
 
 ### Functions
 - `public.set_updated_at()`
@@ -63,6 +68,7 @@ This folder contains first-party database migrations for JobberMed.
 - `set_native_job_applications_updated_at` on `public.native_job_applications`
 - `set_user_platform_roles_updated_at` on `public.user_platform_roles`
 - `set_access_requests_updated_at` on `public.access_requests`
+- `set_email_preferences_updated_at` on `public.email_preferences`
 
 ### RLS
 RLS is enabled on all app tables and policies are split into:
@@ -71,6 +77,7 @@ RLS is enabled on all app tables and policies are split into:
 - Native jobs policies (`native_jobs`) with public published-read and owner/admin writes
 - Native application policies (`native_job_applications`) for insert/read-own and reviewer/job-owner access
 - Role assignment/request policies (`user_platform_roles`, `access_requests`) for own-read and admin review/update
+- Email personalization policies (`email_preferences`, `email_pref_categories`, `email_pref_locations`) for own-row management, with service-role-only delivery logs
 
 ## Current Frontend Dependencies
 
@@ -92,6 +99,7 @@ Optional policy/table checks:
 ```bash
 supabase db query "select tablename, rowsecurity from pg_tables where schemaname='public' and tablename in ('profiles','saved_jobs','jobs','job_alerts','job_applications','native_jobs','native_job_applications') order by tablename;"
 supabase db query "select tablename, rowsecurity from pg_tables where schemaname='public' and tablename in ('user_platform_roles','access_requests') order by tablename;"
+supabase db query "select tablename, rowsecurity from pg_tables where schemaname='public' and tablename in ('email_preferences','email_pref_categories','email_pref_locations','email_delivery_log') order by tablename;"
 supabase db query "select schemaname, tablename, policyname from pg_policies where schemaname='public' order by tablename, policyname;"
 ```
 
@@ -103,4 +111,6 @@ supabase db query "select schemaname, tablename, policyname from pg_policies whe
 - Legacy jobs flows and native jobs flows are intentionally parallel in this phase; no legacy tables were dropped or renamed.
 - Role values now include `recruiter` and `mdcn_official`; legacy `mdcn` alias is preserved for compatibility.
 - Dashboard access approvals are backed by `access_requests` + `user_platform_roles`, with `approve_access_request()` handling approval updates atomically.
+- Legacy weekly digest (`weekly_default`) and personalized campaigns (`personalized_daily`, `personalized_weekly`) intentionally coexist during rollout.
+- `email_delivery_log.dedupe_key` is used to prevent duplicate sends for the same user/campaign window.
 - Admin policy checks use JWT claim `app_metadata.role = 'admin'`.
