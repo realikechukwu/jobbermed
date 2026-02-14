@@ -6,24 +6,27 @@ type HeroShellProps = {
 };
 
 export function HeroShell({ title, subtitle }: HeroShellProps) {
+  const navClassName = ({ isActive }: { isActive: boolean }) =>
+    isActive ? "site-nav-link active" : "site-nav-link";
+
   return (
     <section className="hero-banner">
       <div className="hero-inner">
         <div className="hero-top-row">
           <nav className="site-nav" aria-label="Primary">
-            <NavLink className="site-nav-link" to="/">
+            <NavLink className={navClassName} to="/">
               Home
             </NavLink>
-            <NavLink className="site-nav-link" to="/native-jobs">
+            <NavLink className={navClassName} to="/native-jobs">
               Native Jobs
             </NavLink>
-            <NavLink className="site-nav-link" to="/dashboard">
+            <NavLink className={navClassName} to="/dashboard">
               Dashboard
             </NavLink>
-            <NavLink className="site-nav-link" to="/signin">
+            <NavLink className={navClassName} to="/signin">
               Sign In
             </NavLink>
-            <NavLink className="site-nav-link" to="/signup">
+            <NavLink className={navClassName} to="/signup">
               Sign Up
             </NavLink>
           </nav>
