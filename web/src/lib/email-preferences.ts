@@ -1,18 +1,12 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
 
-export type EmailFrequency = "daily" | "weekly" | "paused";
-export type DeliveryMode = "default_weekly" | "personalized";
+export type EmailFrequency = "daily" | "weekly";
 
 export type EmailPreferences = {
   personalizeEnabled: boolean;
   frequency: EmailFrequency;
-  weeklyDay: number;
-  timezone: string;
-  deliveryMode: DeliveryMode;
   categories: string[];
   locations: string[];
-  jobTypes: string[];
-  sources: string[];
 };
 
 export type LoadPreferencesResult =
@@ -29,23 +23,15 @@ type PostgrestLikeError = {
   code?: string | null;
   message?: string | null;
   details?: string | null;
-  hint?: string | null;
 };
 
-const DEFAULT_TIMEZONE = "Africa/Lagos";
-const DEFAULT_WEEKLY_DAY = 1;
 const MISSING_RELATION_CODES = new Set(["PGRST205", "42P01"]);
 
 export const defaultEmailPreferences: EmailPreferences = {
   personalizeEnabled: false,
   frequency: "weekly",
-  weeklyDay: DEFAULT_WEEKLY_DAY,
-  timezone: DEFAULT_TIMEZONE,
-  deliveryMode: "default_weekly",
   categories: [],
   locations: [],
-  jobTypes: [],
-  sources: ["aggregated"],
 };
 
 class PreferencesUnavailableError extends Error {
@@ -114,31 +100,10 @@ function isMissingRelationError(error: unknown): boolean {
 }
 
 function sanitizeFrequency(value: unknown): EmailFrequency {
-  if (value === "daily" || value === "paused") {
+  if (value === "daily") {
     return value;
   }
   return "weekly";
-}
-
-function sanitizeWeeklyDay(value: unknown): number {
-  if (typeof value === "number" && Number.isInteger(value) && value >= 0 && value <= 6) {
-    return value;
-  }
-  return DEFAULT_WEEKLY_DAY;
-}
-
-function sanitizeTimezone(value: unknown): string {
-  if (typeof value === "string" && value.trim()) {
-    return value.trim();
-  }
-  return DEFAULT_TIMEZONE;
-}
-
-function sanitizeDeliveryMode(value: unknown, personalizeEnabled: boolean): DeliveryMode {
-  if (value === "default_weekly" || value === "personalized") {
-    return value;
-  }
-  return personalizeEnabled ? "personalized" : "default_weekly";
 }
 
 async function readStringSetTable(
@@ -208,7 +173,7 @@ export async function loadUserEmailPreferencesForUser(
 ): Promise<LoadPreferencesResult> {
   const { data, error } = await supabase
     .from("email_preferences")
-    .select("user_id, personalize_enabled, frequency, weekly_day, timezone, delivery_mode")
+    .select("user_id, personalization_enabled, frequency")
     .eq("user_id", userId)
     .maybeSingle();
 
@@ -223,17 +188,11 @@ export async function loadUserEmailPreferencesForUser(
   }
 
   const row = (data ?? {}) as Record<string, unknown>;
-  const personalizeEnabled = Boolean(row.personalize_enabled);
   const base: EmailPreferences = {
-    personalizeEnabled,
+    personalizeEnabled: Boolean(row.personalization_enabled),
     frequency: sanitizeFrequency(row.frequency),
-    weeklyDay: sanitizeWeeklyDay(row.weekly_day),
-    timezone: sanitizeTimezone(row.timezone),
-    deliveryMode: sanitizeDeliveryMode(row.delivery_mode, personalizeEnabled),
     categories: [],
     locations: [],
-    jobTypes: [],
-    sources: [],
   };
 
   try {
@@ -249,17 +208,11 @@ export async function loadUserEmailPreferencesForUser(
       "location",
       userId,
     );
-    base.jobTypes = await readStringSetTable(supabase, "email_pref_job_types", "job_type", userId);
-    base.sources = await readStringSetTable(supabase, "email_pref_sources", "source", userId);
   } catch (tableError) {
     if (tableError instanceof PreferencesUnavailableError) {
       return { status: "unavailable", reason: tableError.message };
     }
     return { status: "error", error: asErrorMessage(tableError) };
-  }
-
-  if (base.sources.length === 0) {
-    base.sources = ["aggregated"];
   }
 
   return { status: "ok", preferences: base };
@@ -273,23 +226,15 @@ export async function saveUserEmailPreferencesForUser(
   const normalized: EmailPreferences = {
     personalizeEnabled: Boolean(preferences.personalizeEnabled),
     frequency: sanitizeFrequency(preferences.frequency),
-    weeklyDay: sanitizeWeeklyDay(preferences.weeklyDay),
-    timezone: sanitizeTimezone(preferences.timezone),
-    deliveryMode: preferences.personalizeEnabled ? "personalized" : "default_weekly",
     categories: normalizeList(preferences.categories),
     locations: normalizeList(preferences.locations),
-    jobTypes: normalizeList(preferences.jobTypes),
-    sources: normalizeList(preferences.sources.length ? preferences.sources : ["aggregated"]),
   };
 
   const { error: upsertError } = await supabase.from("email_preferences").upsert(
     {
       user_id: userId,
-      personalize_enabled: normalized.personalizeEnabled,
+      personalization_enabled: normalized.personalizeEnabled,
       frequency: normalized.frequency,
-      weekly_day: normalized.weeklyDay,
-      timezone: normalized.timezone,
-      delivery_mode: normalized.deliveryMode,
     },
     { onConflict: "user_id" },
   );
@@ -318,20 +263,6 @@ export async function saveUserEmailPreferencesForUser(
       "location",
       userId,
       normalized.locations,
-    );
-    await replaceStringSetTable(
-      supabase,
-      "email_pref_job_types",
-      "job_type",
-      userId,
-      normalized.jobTypes,
-    );
-    await replaceStringSetTable(
-      supabase,
-      "email_pref_sources",
-      "source",
-      userId,
-      normalized.sources,
     );
   } catch (tableError) {
     if (tableError instanceof PreferencesUnavailableError) {

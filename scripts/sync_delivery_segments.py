@@ -38,9 +38,6 @@ def load_opted_in_emails(config) -> list[str]:
         user_id = str(row.get("user_id") or "").strip()
         if not user_id:
             continue
-        delivery_mode = str(row.get("delivery_mode") or "").strip().lower()
-        if delivery_mode and delivery_mode != "personalized":
-            continue
         opted_in_user_ids.append(user_id)
 
     profile_map = fetch_profile_map(config, opted_in_user_ids)

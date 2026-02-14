@@ -60,7 +60,7 @@ NEWSLETTER_DRY_RUN=true python newsletter.py
 ```
 This writes `docs/newsletter_preview.html`.
 
-### Personalization Pipeline (Fallback-Safe)
+### Personalization Pipeline
 
 The repo now supports two coexisting delivery streams:
 - **Legacy weekly digest** (`newsletter.py` + `.github/workflows/weekly_scrape.yml`)
@@ -71,10 +71,11 @@ Behavior:
 - dashboard users with no preferences remain on weekly list,
 - opted-in users are removed from weekly list and sent via personalized path.
 
-Safety/fallback behavior:
-- if `email_preferences`/related tables are missing or not initialized, personalized and sync scripts exit safely,
-- weekly digest still sends,
-- personalized script also checks weekly-list membership before sending to reduce duplicate risk.
+Runtime behavior:
+- personalized flow reads from `email_preferences`, `email_pref_categories`, and `email_pref_locations`,
+- weekly digest remains independent and still sends to default weekly list,
+- segment sync removes opted-in users from weekly list before weekly send,
+- personalized script checks weekly-list membership and logs dedupe keys (`email_delivery_log.dedupe_key`) to prevent duplicate sends.
 
 Manual runs:
 ```bash

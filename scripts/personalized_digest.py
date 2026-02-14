@@ -26,13 +26,11 @@ from email_runtime import (
     get_brevo_contact,
     has_brevo_api_key,
     has_supabase_credentials,
-    is_due_for_delivery,
+    is_due_for_frequency,
     load_runtime_config,
     normalize_frequency,
     normalize_text_list,
-    normalize_weekly_day,
     now_utc,
-    resolve_timezone,
     send_transactional_email,
     supabase_select,
     supabase_table_exists,
@@ -43,8 +41,6 @@ REQUIRED_PREFERENCE_TABLES = [
     "email_preferences",
     "email_pref_categories",
     "email_pref_locations",
-    "email_pref_job_types",
-    "email_pref_sources",
 ]
 
 
@@ -54,12 +50,8 @@ class RecipientPreference:
     email: str
     full_name: str
     frequency: str
-    weekly_day: int
-    timezone_name: str
-    sources: list[str] = field(default_factory=list)
     categories: list[str] = field(default_factory=list)
     locations: list[str] = field(default_factory=list)
-    job_types: list[str] = field(default_factory=list)
 
 
 def parse_iso_datetime(value: Any) -> datetime:
@@ -180,18 +172,6 @@ def load_recipients(config) -> list[RecipientPreference]:
         "location",
         user_ids,
     )
-    job_types_map = fetch_string_preferences_for_users(
-        config,
-        "email_pref_job_types",
-        "job_type",
-        user_ids,
-    )
-    sources_map = fetch_string_preferences_for_users(
-        config,
-        "email_pref_sources",
-        "source",
-        user_ids,
-    )
 
     recipients: list[RecipientPreference] = []
     for row in user_rows:
@@ -199,30 +179,21 @@ def load_recipients(config) -> list[RecipientPreference]:
         if not user_id:
             continue
 
-        delivery_mode = str(row.get("delivery_mode") or "").strip().lower()
-        if delivery_mode and delivery_mode != "personalized":
-            continue
-
         profile = profile_map.get(user_id, {})
         email = str(profile.get("email") or "").strip()
         if not email:
             continue
 
-        recipient = RecipientPreference(
-            user_id=user_id,
-            email=email,
-            full_name=str(profile.get("full_name") or "").strip(),
-            frequency=normalize_frequency(row.get("frequency")),
-            weekly_day=normalize_weekly_day(row.get("weekly_day")),
-            timezone_name=str(row.get("timezone") or "Africa/Lagos"),
-            sources=normalize_text_list(sources_map.get(user_id, ["aggregated"])),
-            categories=normalize_text_list(categories_map.get(user_id, [])),
-            locations=normalize_text_list(locations_map.get(user_id, [])),
-            job_types=normalize_text_list(job_types_map.get(user_id, [])),
+        recipients.append(
+            RecipientPreference(
+                user_id=user_id,
+                email=email,
+                full_name=str(profile.get("full_name") or "").strip(),
+                frequency=normalize_frequency(row.get("frequency")),
+                categories=normalize_text_list(categories_map.get(user_id, [])),
+                locations=normalize_text_list(locations_map.get(user_id, [])),
+            )
         )
-        if not recipient.sources:
-            recipient.sources = ["aggregated"]
-        recipients.append(recipient)
 
     return recipients
 
@@ -231,24 +202,15 @@ def filter_jobs_for_recipient(
     jobs: list[dict[str, Any]],
     recipient: RecipientPreference,
 ) -> list[dict[str, Any]]:
-    allowed_sources = {value.lower() for value in recipient.sources}
     matched: list[dict[str, Any]] = []
 
     for job in jobs:
-        source = str(job.get("_digest_source") or "aggregated").lower()
-        if allowed_sources and source not in allowed_sources:
-            continue
-
         category = str(job.get("job_category") or job.get("category") or "")
         if recipient.categories and not value_matches(recipient.categories, category):
             continue
 
         location = str(job.get("location") or "")
         if recipient.locations and not value_matches(recipient.locations, location):
-            continue
-
-        job_type = str(job.get("job_type") or "")
-        if recipient.job_types and not value_matches(recipient.job_types, job_type):
             continue
 
         matched.append(job)
@@ -260,12 +222,29 @@ def filter_jobs_for_recipient(
     return matched
 
 
-def already_logged_today(
+def build_campaign_type(frequency: str) -> str:
+    return "personalized_daily" if normalize_frequency(frequency) == "daily" else "personalized_weekly"
+
+
+def build_dedupe_key(
+    *,
+    campaign_type: str,
+    recipient: RecipientPreference,
+    current_utc: datetime,
+) -> str:
+    identity = recipient.user_id or recipient.email.lower()
+    if campaign_type == "personalized_daily":
+        window_key = current_utc.date().isoformat()
+    else:
+        iso_calendar = current_utc.isocalendar()
+        window_key = f"{iso_calendar.year}-W{iso_calendar.week:02d}"
+    return f"{campaign_type}:{window_key}:{identity}"
+
+
+def already_logged(
     config,
     *,
-    run_date: str,
-    email: str,
-    delivery_mode: str,
+    dedupe_key: str,
     delivery_log_enabled: bool,
 ) -> bool:
     if not delivery_log_enabled:
@@ -274,11 +253,7 @@ def already_logged_today(
         config,
         "email_delivery_log",
         select="id",
-        filters={
-            "run_date": f"eq.{run_date}",
-            "recipient_email": f"eq.{email}",
-            "delivery_mode": f"eq.{delivery_mode}",
-        },
+        filters={"dedupe_key": f"eq.{dedupe_key}"},
         limit=1,
     )
     return len(rows) > 0
@@ -287,32 +262,31 @@ def already_logged_today(
 def log_delivery(
     config,
     *,
-    run_date: str,
-    user_id: str,
-    email: str,
+    recipient: RecipientPreference,
+    campaign_type: str,
+    dedupe_key: str,
     status: str,
     reason: str,
     job_count: int,
-    delivery_mode: str,
     delivery_log_enabled: bool,
 ) -> None:
     if not delivery_log_enabled:
         return
 
     row = {
-        "run_date": run_date,
-        "user_id": user_id,
-        "recipient_email": email,
-        "delivery_mode": delivery_mode,
+        "user_id": recipient.user_id,
+        "recipient_email": recipient.email,
+        "campaign_type": campaign_type,
         "status": status,
-        "reason": reason,
-        "job_count": job_count,
+        "dedupe_key": dedupe_key,
+        "meta": {"reason": reason, "job_count": job_count},
+        "sent_at": now_utc().isoformat(),
     }
     supabase_upsert(
         config,
         "email_delivery_log",
         [row],
-        on_conflict="run_date,recipient_email,delivery_mode",
+        on_conflict="dedupe_key",
     )
 
 
@@ -379,7 +353,6 @@ def main() -> int:
     if not delivery_log_enabled:
         print("⚠️  email_delivery_log unavailable; idempotency will only apply within this run.")
 
-    run_date = now_utc().date().isoformat()
     sent_in_run: set[str] = set()
     sent_count = 0
     skipped_count = 0
@@ -391,30 +364,20 @@ def main() -> int:
             skipped_count += 1
             continue
 
-        if not is_due_for_delivery(
-            frequency=recipient.frequency,
-            weekly_day=recipient.weekly_day,
-            timezone_name=recipient.timezone_name,
-        ):
+        if not is_due_for_frequency(frequency=recipient.frequency):
             skipped_count += 1
-            log_delivery(
-                config,
-                run_date=run_date,
-                user_id=recipient.user_id,
-                email=recipient.email,
-                status="skipped",
-                reason="not_due_for_schedule",
-                job_count=0,
-                delivery_mode="personalized",
-                delivery_log_enabled=delivery_log_enabled,
-            )
             continue
 
-        if already_logged_today(
+        campaign_type = build_campaign_type(recipient.frequency)
+        dedupe_key = build_dedupe_key(
+            campaign_type=campaign_type,
+            recipient=recipient,
+            current_utc=now_utc(),
+        )
+
+        if already_logged(
             config,
-            run_date=run_date,
-            email=recipient.email,
-            delivery_mode="personalized",
+            dedupe_key=dedupe_key,
             delivery_log_enabled=delivery_log_enabled,
         ):
             skipped_count += 1
@@ -425,13 +388,12 @@ def main() -> int:
                 skipped_count += 1
                 log_delivery(
                     config,
-                    run_date=run_date,
-                    user_id=recipient.user_id,
-                    email=recipient.email,
+                    recipient=recipient,
+                    campaign_type=campaign_type,
+                    dedupe_key=dedupe_key,
                     status="skipped",
                     reason="still_in_weekly_segment",
                     job_count=0,
-                    delivery_mode="personalized",
                     delivery_log_enabled=delivery_log_enabled,
                 )
                 continue
@@ -440,13 +402,12 @@ def main() -> int:
             skipped_count += 1
             log_delivery(
                 config,
-                run_date=run_date,
-                user_id=recipient.user_id,
-                email=recipient.email,
+                recipient=recipient,
+                campaign_type=campaign_type,
+                dedupe_key=dedupe_key,
                 status="skipped",
                 reason="weekly_membership_check_failed",
                 job_count=0,
-                delivery_mode="personalized",
                 delivery_log_enabled=delivery_log_enabled,
             )
             continue
@@ -456,27 +417,25 @@ def main() -> int:
             skipped_count += 1
             log_delivery(
                 config,
-                run_date=run_date,
-                user_id=recipient.user_id,
-                email=recipient.email,
+                recipient=recipient,
+                campaign_type=campaign_type,
+                dedupe_key=dedupe_key,
                 status="skipped",
                 reason="no_matching_jobs",
                 job_count=0,
-                delivery_mode="personalized",
                 delivery_log_enabled=delivery_log_enabled,
             )
             continue
 
         top_jobs = matched_jobs[:job_limit]
-        local_now = now_utc().astimezone(resolve_timezone(recipient.timezone_name))
-        subject = f"{len(top_jobs)} jobs matching your preferences — {local_now.strftime('%d %b %Y')}"
+        subject = f"{len(top_jobs)} jobs matching your preferences — {now_utc().strftime('%d %b %Y')}"
         html_content = build_email_html(
             top_jobs,
             headline_text="Healthcare jobs across Nigeria and Africa.",
             subheadline_text="Personalized to your dashboard preferences.",
             intro_text=(
                 f"Here are <strong>{len(top_jobs)} opportunities</strong> aligned with your current "
-                "category, location, job-type, and source settings."
+                "category and location settings."
             ),
             include_signup_cta=False,
         )
@@ -488,20 +447,19 @@ def main() -> int:
                 to_name=recipient.full_name,
                 subject=subject,
                 html_content=html_content,
-                tags=["personalized-digest"],
+                tags=["personalized-digest", campaign_type],
                 dry_run=config.dry_run,
             )
             sent_in_run.add(recipient_key)
             sent_count += 1
             log_delivery(
                 config,
-                run_date=run_date,
-                user_id=recipient.user_id,
-                email=recipient.email,
+                recipient=recipient,
+                campaign_type=campaign_type,
+                dedupe_key=dedupe_key,
                 status="sent",
                 reason="ok",
                 job_count=len(top_jobs),
-                delivery_mode="personalized",
                 delivery_log_enabled=delivery_log_enabled,
             )
         except Exception as send_error:
@@ -509,13 +467,12 @@ def main() -> int:
             print(f"❌ Personalized send failed for {recipient.email}: {send_error}")
             log_delivery(
                 config,
-                run_date=run_date,
-                user_id=recipient.user_id,
-                email=recipient.email,
+                recipient=recipient,
+                campaign_type=campaign_type,
+                dedupe_key=dedupe_key,
                 status="failed",
                 reason=str(send_error)[:240],
                 job_count=len(top_jobs),
-                delivery_mode="personalized",
                 delivery_log_enabled=delivery_log_enabled,
             )
 

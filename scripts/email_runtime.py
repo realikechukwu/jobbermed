@@ -11,7 +11,6 @@ from urllib.parse import quote
 
 import requests
 from dotenv import load_dotenv
-from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
 SUPABASE_TIMEOUT_SECONDS = 30
 BREVO_TIMEOUT_SECONDS = 30
@@ -266,8 +265,8 @@ def fetch_opted_in_user_rows(config: RuntimeConfig) -> list[dict[str, Any]]:
     return supabase_select(
         config,
         "email_preferences",
-        select="user_id, personalize_enabled, frequency, weekly_day, timezone, delivery_mode",
-        filters={"personalize_enabled": "eq.true"},
+        select="user_id, personalization_enabled, frequency",
+        filters={"personalization_enabled": "eq.true"},
     )
 
 
@@ -458,48 +457,19 @@ def normalize_text_list(values: Iterable[str]) -> list[str]:
 
 def normalize_frequency(value: Any) -> str:
     raw = str(value or "").strip().lower()
-    if raw in {"daily", "weekly", "paused"}:
+    if raw in {"daily", "weekly"}:
         return raw
     return "weekly"
 
 
-def normalize_weekly_day(value: Any) -> int:
-    try:
-        day = int(value)
-    except (TypeError, ValueError):
-        return 1
-    if day < 0 or day > 6:
-        return 1
-    return day
-
-
-def resolve_timezone(tz_name: str | None) -> ZoneInfo:
-    if not tz_name:
-        return ZoneInfo("UTC")
-    try:
-        return ZoneInfo(tz_name)
-    except ZoneInfoNotFoundError:
-        return ZoneInfo("UTC")
-
-
-def is_due_for_delivery(
-    *,
-    frequency: str,
-    weekly_day: int,
-    timezone_name: str,
-    now_utc: datetime | None = None,
-) -> bool:
+def is_due_for_frequency(*, frequency: str, now_utc: datetime | None = None) -> bool:
     normalized_frequency = normalize_frequency(frequency)
-    if normalized_frequency == "paused":
-        return False
-
     if normalized_frequency == "daily":
         return True
 
     current_utc = now_utc or datetime.now(timezone.utc)
-    local_now = current_utc.astimezone(resolve_timezone(timezone_name))
-    local_weekday_sunday_zero = (local_now.weekday() + 1) % 7
-    return local_weekday_sunday_zero == normalize_weekly_day(weekly_day)
+    # Weekly personalized digests run on Mondays (UTC).
+    return current_utc.weekday() == 0
 
 
 def now_utc() -> datetime:
