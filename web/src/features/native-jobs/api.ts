@@ -125,7 +125,11 @@ export async function submitNativeJobApplication(input: NativeJobApplicationInpu
   const supabase = getSupabaseClient();
   const normalized = normalizeApplicationInput(input);
   const { data: authData } = await supabase.auth.getUser();
-  const candidateUserId = authData.user?.id ?? null;
+  const candidateUserId = authData.user?.id;
+
+  if (!candidateUserId) {
+    throw new Error("Sign in to submit an application.");
+  }
 
   const payload = {
     job_id: normalized.jobId,
