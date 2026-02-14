@@ -16,6 +16,7 @@ This folder contains first-party database migrations for JobberMed.
 10. `migrations/0010_enable_rls.sql`
 11. `migrations/0011_user_policies.sql`
 12. `migrations/0012_jobs_policies_and_grants.sql`
+13. `migrations/0013_native_jobs_contract_fix.sql`
 
 ## Objects Created
 
@@ -26,6 +27,8 @@ This folder contains first-party database migrations for JobberMed.
 - `public.job_status`
 - `public.alert_frequency`
 - `public.application_status`
+- `public.native_job_status`
+- `public.native_application_status`
 
 ### Tables
 - `public.profiles`
@@ -33,6 +36,8 @@ This folder contains first-party database migrations for JobberMed.
 - `public.jobs`
 - `public.job_alerts`
 - `public.job_applications`
+- `public.native_jobs`
+- `public.native_job_applications`
 
 ### Functions
 - `public.set_updated_at()`
@@ -46,11 +51,15 @@ This folder contains first-party database migrations for JobberMed.
 - `set_jobs_updated_at` on `public.jobs`
 - `set_job_alerts_updated_at` on `public.job_alerts`
 - `set_job_applications_updated_at` on `public.job_applications`
+- `set_native_jobs_updated_at` on `public.native_jobs`
+- `set_native_job_applications_updated_at` on `public.native_job_applications`
 
 ### RLS
 RLS is enabled on all app tables and policies are split into:
 - User-owner policies (`profiles`, `saved_jobs`, `job_alerts`, `job_applications`)
 - Public read + admin write policies (`jobs`)
+- Native jobs policies (`native_jobs`) with public published-read and owner/admin writes
+- Native application policies (`native_job_applications`) for insert/read-own and reviewer/job-owner access
 
 ## Current Frontend Dependencies
 
@@ -70,7 +79,7 @@ supabase db reset
 Optional policy/table checks:
 
 ```bash
-supabase db query "select tablename, rowsecurity from pg_tables where schemaname='public' and tablename in ('profiles','saved_jobs','jobs','job_alerts','job_applications') order by tablename;"
+supabase db query "select tablename, rowsecurity from pg_tables where schemaname='public' and tablename in ('profiles','saved_jobs','jobs','job_alerts','job_applications','native_jobs','native_job_applications') order by tablename;"
 supabase db query "select schemaname, tablename, policyname from pg_policies where schemaname='public' order by tablename, policyname;"
 ```
 
@@ -78,4 +87,6 @@ supabase db query "select schemaname, tablename, policyname from pg_policies whe
 
 - `saved_jobs` is the active persistence path for authenticated users.
 - `jobs`, `job_alerts`, and `job_applications` are prepared for backend ingestion and future product expansion.
+- Legacy `public.job_applications`/`public.application_status` and native `public.native_job_applications`/`public.native_application_status` coexist for backward compatibility.
+- Legacy jobs flows and native jobs flows are intentionally parallel in this phase; no legacy tables were dropped or renamed.
 - Admin policy checks use JWT claim `app_metadata.role = 'admin'`.
