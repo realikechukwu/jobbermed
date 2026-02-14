@@ -17,9 +17,11 @@ type SessionContextValue = {
   user: User | null;
   roles: DashboardRole[];
   isLoading: boolean;
+  isRevalidatingRoles: boolean;
   error: string | null;
   hasRole: (role: DashboardRole) => boolean;
   refresh: () => Promise<void>;
+  revalidateRoles: () => Promise<void>;
 };
 
 type UserPlatformRoleRow = {
@@ -78,6 +80,7 @@ export function SessionProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
   const [roles, setRoles] = useState<DashboardRole[]>([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [isRevalidatingRoles, setIsRevalidatingRoles] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const mountedRef = useRef(true);
 
@@ -90,6 +93,7 @@ export function SessionProvider({ children }: { children: ReactNode }) {
       setSession(null);
       setUser(null);
       setRoles([]);
+      setIsRevalidatingRoles(false);
       setIsLoading(false);
       return;
     }
@@ -127,6 +131,27 @@ export function SessionProvider({ children }: { children: ReactNode }) {
     await hydrate(data.session ?? null);
   }, [hydrate]);
 
+  const revalidateRoles = useCallback(async () => {
+    if (!user) return;
+
+    setIsRevalidatingRoles(true);
+
+    try {
+      const resolvedRoles = await resolveRoles(user);
+      if (!mountedRef.current) return;
+      setRoles(resolvedRoles);
+      setError(null);
+    } catch (roleError) {
+      if (!mountedRef.current) return;
+      const message = roleError instanceof Error ? roleError.message : "Unable to revalidate roles.";
+      setError(message);
+    } finally {
+      if (mountedRef.current) {
+        setIsRevalidatingRoles(false);
+      }
+    }
+  }, [user]);
+
   useEffect(() => {
     mountedRef.current = true;
     const supabase = getSupabaseClient();
@@ -159,11 +184,13 @@ export function SessionProvider({ children }: { children: ReactNode }) {
       user,
       roles,
       isLoading,
+      isRevalidatingRoles,
       error,
       hasRole: (role: DashboardRole) => hasRoleUtil(roles, role),
       refresh,
+      revalidateRoles,
     }),
-    [error, isLoading, refresh, roles, session, user],
+    [error, isLoading, isRevalidatingRoles, refresh, revalidateRoles, roles, session, user],
   );
 
   return <SessionContext.Provider value={value}>{children}</SessionContext.Provider>;

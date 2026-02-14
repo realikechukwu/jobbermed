@@ -74,6 +74,7 @@ export function AccessRequestCard({ requiredRole }: AccessRequestCardProps) {
 
   const resolvedRole = hasRole(requiredRole);
   const roleLabel = ROLE_LABELS[requiredRole];
+  const shouldShowApprovedNotice = !resolvedRole && latestRequest?.status === "approved";
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -141,10 +142,20 @@ export function AccessRequestCard({ requiredRole }: AccessRequestCardProps) {
 
           {!isLoading && latestRequest?.status === "approved" ? (
             <div className="access-request-actions">
+              <p className="meta">
+                Access is approved. Refresh now. If access still fails, sign out and sign in again to refresh your
+                role claims.
+              </p>
               <button className="shell-button" type="button" onClick={handleRefreshAccess} disabled={isRefreshing}>
                 {isRefreshing ? "Refreshing..." : "Refresh access"}
               </button>
             </div>
+          ) : null}
+
+          {shouldShowApprovedNotice ? (
+            <p className="native-form-message native-form-success">
+              Approval detected. A fresh session may be required before this dashboard unlocks.
+            </p>
           ) : null}
 
           {!isLoading && (!latestRequest || latestRequest.status === "rejected") ? (

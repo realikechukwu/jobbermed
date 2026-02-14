@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import { type ReactNode, useEffect, useState } from "react";
 import { Navigate, useLocation } from "react-router-dom";
 import { CardPrimitive } from "../../components/CardPrimitive";
 import { RouteShell } from "../../layouts/RouteShell";
@@ -33,11 +33,64 @@ function toSigninUrl(pathname: string, search: string, hash: string): string {
   return `/signin?next=${encodeURIComponent(next)}`;
 }
 
+function useRoleGuardRevalidation(enabled: boolean, routeKey: string): boolean {
+  const { revalidateRoles } = useSession();
+  const [isRouteChecking, setIsRouteChecking] = useState(false);
+
+  useEffect(() => {
+    if (!enabled) {
+      setIsRouteChecking(false);
+      return;
+    }
+
+    let isMounted = true;
+    setIsRouteChecking(true);
+
+    void revalidateRoles().finally(() => {
+      if (isMounted) {
+        setIsRouteChecking(false);
+      }
+    });
+
+    return () => {
+      isMounted = false;
+    };
+  }, [enabled, routeKey, revalidateRoles]);
+
+  useEffect(() => {
+    if (!enabled) {
+      return;
+    }
+
+    const handleFocus = () => {
+      void revalidateRoles();
+    };
+
+    const handleVisibility = () => {
+      if (document.visibilityState === "visible") {
+        void revalidateRoles();
+      }
+    };
+
+    window.addEventListener("focus", handleFocus);
+    document.addEventListener("visibilitychange", handleVisibility);
+
+    return () => {
+      window.removeEventListener("focus", handleFocus);
+      document.removeEventListener("visibilitychange", handleVisibility);
+    };
+  }, [enabled, revalidateRoles]);
+
+  return isRouteChecking;
+}
+
 export function RequireAuth({ children }: RequireAuthProps) {
   const location = useLocation();
   const { user, isLoading } = useSession();
+  const routeKey = `${location.pathname}${location.search}${location.hash}`;
+  const isRouteChecking = useRoleGuardRevalidation(Boolean(user), routeKey);
 
-  if (isLoading) {
+  if (isLoading || isRouteChecking) {
     return <GuardState title="Checking session" message="Loading your account details..." />;
   }
 
@@ -50,9 +103,11 @@ export function RequireAuth({ children }: RequireAuthProps) {
 
 export function RequireRole({ roles, children, fallback, allowAdminBypass = true }: RequireRoleProps) {
   const location = useLocation();
-  const { user, roles: userRoles, hasRole, isLoading } = useSession();
+  const { user, roles: userRoles, hasRole, isLoading, isRevalidatingRoles } = useSession();
+  const routeKey = `${location.pathname}${location.search}${location.hash}`;
+  const isRouteChecking = useRoleGuardRevalidation(Boolean(user), routeKey);
 
-  if (isLoading) {
+  if (isLoading || isRouteChecking || isRevalidatingRoles) {
     return <GuardState title="Checking permissions" message="Validating your role access..." />;
   }
 

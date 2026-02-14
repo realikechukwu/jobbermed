@@ -31,8 +31,6 @@ type ProfileRow = {
   email?: string | null;
 };
 
-const FALLBACK_RPC_ERROR_CODES = new Set(["42883", "PGRST202", "PGRST116"]);
-
 function toOptionalString(value: unknown): string | null {
   if (typeof value !== "string") return null;
   const trimmed = value.trim();
@@ -86,16 +84,6 @@ async function getCurrentUserId(): Promise<string> {
   }
 
   return user.id;
-}
-
-function shouldFallbackRpc(error: { code?: string | null; message?: string | null }): boolean {
-  const code = error.code || "";
-  if (FALLBACK_RPC_ERROR_CODES.has(code)) {
-    return true;
-  }
-
-  const message = (error.message || "").toLowerCase();
-  return message.includes("approve_access_request") || message.includes("function");
 }
 
 export async function fetchMyAccessRequests(requestedRole?: AccessRequestRole): Promise<AccessRequest[]> {
@@ -226,69 +214,6 @@ export async function fetchPendingAccessRequestsForAdmin(): Promise<AccessReques
   });
 }
 
-async function fallbackReviewAccessRequest(requestId: string, approve: boolean): Promise<AccessRequest> {
-  const supabase = getSupabaseClient();
-  const reviewerId = await getCurrentUserId();
-  const reviewedAt = new Date().toISOString();
-  const status = approve ? "approved" : "rejected";
-
-  const { data: updatedRequest, error: updateError } = await supabase
-    .from("access_requests")
-    .update({
-      status,
-      reviewed_by: reviewerId,
-      reviewed_at: reviewedAt,
-      updated_at: reviewedAt,
-    })
-    .eq("id", requestId)
-    .select("id,user_id,requested_role,org_id,reason,status,reviewed_by,reviewed_at,created_at,updated_at")
-    .single();
-
-  if (updateError) {
-    throw new Error(updateError.message || "Unable to update access request.");
-  }
-
-  const request = mapAccessRequestRow((updatedRequest as AccessRequestRow) ?? {});
-
-  if (approve) {
-    const normalizedRole = request.requestedRole;
-    const updateExisting = supabase
-      .from("user_platform_roles")
-      .update({ is_active: true, status: "active", updated_at: reviewedAt })
-      .eq("user_id", request.userId)
-      .eq("role", normalizedRole);
-
-    const { data: existingRoleRows, error: existingRoleError } = await (request.orgId
-      ? updateExisting.eq("org_id", request.orgId)
-      : updateExisting.is("org_id", null)
-    )
-      .select("id")
-      .limit(1);
-
-    if (existingRoleError) {
-      throw new Error(existingRoleError.message || "Unable to update role assignment.");
-    }
-
-    const hasExistingRole = Array.isArray(existingRoleRows) && existingRoleRows.length > 0;
-
-    if (!hasExistingRole) {
-      const { error: insertRoleError } = await supabase.from("user_platform_roles").insert({
-        user_id: request.userId,
-        role: normalizedRole,
-        org_id: request.orgId,
-        status: "active",
-        is_active: true,
-      });
-
-      if (insertRoleError) {
-        throw new Error(insertRoleError.message || "Unable to grant role.");
-      }
-    }
-  }
-
-  return request;
-}
-
 export async function reviewAccessRequest(requestId: string, approve: boolean): Promise<AccessRequest> {
   const supabase = getSupabaseClient();
   const { data, error } = await supabase.rpc("approve_access_request", {
@@ -301,9 +226,7 @@ export async function reviewAccessRequest(requestId: string, approve: boolean): 
     return mapAccessRequestRow((row as AccessRequestRow) ?? {});
   }
 
-  if (shouldFallbackRpc(error)) {
-    return fallbackReviewAccessRequest(requestId, approve);
-  }
-
-  throw new Error(error.message || "Unable to review access request.");
+  throw new Error(
+    error.message || "Unable to review access request. Confirm approve_access_request RPC is available.",
+  );
 }
