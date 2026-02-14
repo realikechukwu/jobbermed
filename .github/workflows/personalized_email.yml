@@ -1,44 +1,45 @@
-name: Weekly Job Scrape
+name: Personalized Email Digest
 
 on:
   schedule:
-    - cron: '0 9 * * 1'  # Every Monday 9am UK time (UTC)
-  workflow_dispatch:      # Manual trigger
+    - cron: "30 6 * * *" # Daily 06:30 UTC
+  workflow_dispatch:
 
 jobs:
-  scrape:
+  personalized:
     runs-on: ubuntu-latest
-    
-    permissions:
-      contents: write
-    
+
     steps:
       - uses: actions/checkout@v4
-      
+
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
-          cache: 'pip'
-      
+          python-version: "3.11"
+          cache: "pip"
+
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Sync weekly list exclusions for personalized users
+      - name: Sync delivery segments
         run: python scripts/sync_delivery_segments.py
-        continue-on-error: true
         env:
           BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
           BREVO_WEEKLY_LIST_ID: ${{ secrets.BREVO_LIST_ID }}
           BREVO_PERSONALIZED_LIST_ID: ${{ secrets.BREVO_PERSONALIZED_LIST_ID }}
+          BREVO_SENDER_EMAIL: ${{ secrets.BREVO_SENDER_EMAIL }}
+          BREVO_SENDER_NAME: ${{ secrets.BREVO_SENDER_NAME }}
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
           EMAIL_CTA_URL: ${{ secrets.EMAIL_CTA_URL }}
 
-      - name: Send weekly newsletter
-        run: python newsletter.py
+      - name: Send personalized digest
+        run: python scripts/personalized_digest.py
         env:
           BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
-          BREVO_LIST_ID: ${{ secrets.BREVO_LIST_ID }}
+          BREVO_WEEKLY_LIST_ID: ${{ secrets.BREVO_LIST_ID }}
+          BREVO_PERSONALIZED_LIST_ID: ${{ secrets.BREVO_PERSONALIZED_LIST_ID }}
           BREVO_SENDER_EMAIL: ${{ secrets.BREVO_SENDER_EMAIL }}
           BREVO_SENDER_NAME: ${{ secrets.BREVO_SENDER_NAME }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
           EMAIL_CTA_URL: ${{ secrets.EMAIL_CTA_URL }}

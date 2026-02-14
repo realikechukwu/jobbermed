@@ -60,6 +60,29 @@ NEWSLETTER_DRY_RUN=true python newsletter.py
 ```
 This writes `docs/newsletter_preview.html`.
 
+### Personalization Pipeline
+
+The repo now supports two coexisting delivery streams:
+- **Legacy weekly digest** (`newsletter.py` + `.github/workflows/weekly_scrape.yml`)
+- **Personalized digest** (`scripts/personalized_digest.py` + `.github/workflows/personalized_email.yml`)
+
+Behavior:
+- non-dashboard subscribers remain on weekly list,
+- dashboard users with no preferences remain on weekly list,
+- opted-in users are removed from weekly list and sent via personalized path.
+
+Runtime behavior:
+- personalized flow reads from `email_preferences`, `email_pref_categories`, and `email_pref_locations`,
+- weekly digest remains independent and still sends to default weekly list,
+- segment sync removes opted-in users from weekly list before weekly send,
+- personalized script checks weekly-list membership and logs dedupe keys (`email_delivery_log.dedupe_key`) to prevent duplicate sends.
+
+Manual runs:
+```bash
+python scripts/sync_delivery_segments.py
+python scripts/personalized_digest.py
+```
+
 ---
 
 ## How It Works (High Level)
@@ -500,9 +523,11 @@ python extract.py --max 10
 
 ### GitHub Actions
 ```bash
-# Runs automatically every Monday
-# Or trigger manually:
+# Weekly digest:
 # Actions → Weekly Job Scrape → Run workflow
+#
+# Personalized digest:
+# Actions → Personalized Email Digest → Run workflow
 ```
 
 ---
@@ -512,6 +537,20 @@ python extract.py --max 10
 | Variable | Required | Description |
 |----------|----------|-------------|
 | `OPENAI_API_KEY` | Yes (for extraction) | Your OpenAI API key |
+| `SUPABASE_URL` | Yes (for personalized scripts) | Supabase project URL |
+| `SUPABASE_SERVICE_ROLE_KEY` | Yes (for personalized scripts) | Service-role key used by CI scripts |
+| `BREVO_API_KEY` | Yes (for all email sends) | Brevo API key |
+| `BREVO_LIST_ID` | Yes (weekly path) | Legacy weekly recipient list id |
+| `BREVO_WEEKLY_LIST_ID` | Optional | Explicit weekly list id (falls back to `BREVO_LIST_ID`) |
+| `BREVO_PERSONALIZED_LIST_ID` | Optional | Personalized segment list id for sync script |
+| `BREVO_SENDER_EMAIL` | Yes (send paths) | Sender email for newsletter and personalized sends |
+| `BREVO_SENDER_NAME` | Yes (send paths) | Sender display name |
+| `EMAIL_CTA_URL` | Optional | Bottom CTA URL in weekly digest (default: `/signup`) |
+| `SITE_BASE_URL` | Optional | Base URL for native-job links in personalized digest |
+| `NEWSLETTER_DRY_RUN` | Optional | `true` to build weekly HTML preview without send |
+| `SYNC_DRY_RUN` | Optional | `true` to preview segment sync actions without mutating lists |
+| `PERSONALIZED_DRY_RUN` | Optional | `true` to preview personalized sends without sending |
+| `PERSONALIZED_DIGEST_JOB_LIMIT` | Optional | Max jobs per personalized email (default: `20`) |
 
 **Local:** Add to `.env` file
 **GitHub:** Add to Settings → Secrets → Actions
