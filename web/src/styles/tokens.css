@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --bg: #f7f4ef;
+  --ink: #1c1b19;
+  --muted: #6d6760;
+  --card: #ffffff;
+  --line: #e2ddd6;
+  --accent: #1f5f4a;
+  --accent-soft: #dceae4;
+  --shadow: 0 16px 40px rgba(28, 27, 25, 0.08);
+  --med: #1800ad;
+  --jobber: #0cc0df;
+  --max-width: 1100px;
+}
