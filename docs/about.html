@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>About Us | JobberMed</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/supabase.js"></script>
+  <script src="js/savedJobs.js"></script>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="top-strip"></div>
+  <section class="hero-banner">
+    <div class="hero-inner">
+      <div class="hero-topbar">
+        <nav class="hero-nav" aria-label="Primary">
+          <a class="hero-nav-link" href="./">Home</a>
+          <a class="hero-nav-link" id="heroNavDashboard" href="dashboard.html">Dashboard</a>
+          <a class="hero-nav-link" href="subscribe.html">Subscribe</a>
+          <a class="hero-nav-link" href="about.html">About Us</a>
+          <a class="hero-nav-link" href="privacy.html">Privacy Policy</a>
+        </nav>
+        <div class="hero-auth">
+          <span class="hero-user-email" id="heroUserEmail"></span>
+          <a class="hero-auth-link" id="heroSignIn" href="signin.html">Sign In</a>
+          <button class="hero-auth-link hero-signout" id="heroSignOut" type="button">Sign Out</button>
+        </div>
+      </div>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="Open menu">☰</button>
+      <a class="brand-link" href="./" aria-label="Go to homepage">
+        <img src="images/logo.png" alt="JobberMed" class="brand-logo" />
+      </a>
+      <h2 class="hero-title">About JobberMed</h2>
+    </div>
+  </section>
+
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+  <aside class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <button class="mobile-menu-close" id="mobileMenuClose" type="button" aria-label="Close menu">✕</button>
+    <div class="mobile-menu-email" id="mobileMenuEmail"></div>
+    <a class="mobile-menu-link" id="mobileMenuPrimaryLink" href="signin.html">Sign In</a>
+    <nav class="mobile-menu-links">
+      <a class="mobile-menu-link" href="./">Home</a>
+      <a class="mobile-menu-link" href="dashboard.html">Dashboard</a>
+      <a class="mobile-menu-link" href="subscribe.html">Subscribe</a>
+      <a class="mobile-menu-link" href="about.html">About Us</a>
+      <a class="mobile-menu-link" href="privacy.html">Privacy Policy</a>
+    </nav>
+    <a class="mobile-menu-link" id="mobileMenuSignUp" href="signup.html">Sign Up</a>
+    <button class="mobile-menu-signout" id="mobileMenuSignOut" type="button">Sign Out</button>
+  </aside>
+
+  <div class="page">
+    <section class="content-page">
+      <h1>About Us</h1>
+      <p>
+        JobberMed is a medical job aggregator focused on making healthcare opportunities easier to find and compare.
+        We pull listings from multiple trusted sources and present them in one place so clinicians, administrators,
+        and allied health professionals can discover roles faster.
+      </p>
+      <p>
+        We are not an employer or recruiter. Each listing links back to the original source for full details and
+        application instructions. We aim to keep the listings current and accurate, but always verify information
+        on the source page before applying.
+      </p>
+      <p>
+        Our mission is to help healthcare professionals across Nigeria and Africa access opportunities with less
+        friction and more transparency.
+      </p>
+    </section>
+  </div>
+
+  <footer class="footer-strip" aria-label="Footer">
+    <div class="footer-inner">
+      <a href="./" class="footer-link">Home</a>
+      <a href="about.html" class="footer-link">About Us</a>
+      <a href="privacy.html" class="footer-link">Privacy Policy</a>
+      <a href="subscribe.html" class="footer-link">Subscribe to Newsletter</a>
+      <a href="signup.html" class="footer-link">Sign Up</a>
+    </div>
+  </footer>
+  <script>
+    (async () => {
+      if (typeof supabase === "undefined") return;
+      const heroUserEmail = document.getElementById("heroUserEmail");
+      const heroSignIn = document.getElementById("heroSignIn");
+      const heroSignOut = document.getElementById("heroSignOut");
+      const heroNavDashboard = document.getElementById("heroNavDashboard");
+      const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const mobileMenuOverlay = document.getElementById("mobileMenuOverlay");
+      const mobileMenuClose = document.getElementById("mobileMenuClose");
+      const mobileMenuEmail = document.getElementById("mobileMenuEmail");
+      const mobileMenuPrimaryLink = document.getElementById("mobileMenuPrimaryLink");
+      const mobileMenuSignOut = document.getElementById("mobileMenuSignOut");
+      const mobileMenuSignUp = document.getElementById("mobileMenuSignUp");
+
+      const updateAuthUI = (user) => {
+        if (!heroUserEmail || !heroSignIn || !heroSignOut) return;
+        if (user && user.email) {
+          heroUserEmail.textContent = user.email;
+          heroSignIn.style.display = "none";
+          heroSignOut.style.display = "inline-flex";
+          if (heroNavDashboard) heroNavDashboard.style.display = "inline-flex";
+          if (mobileMenuEmail) mobileMenuEmail.textContent = user.email;
+          if (mobileMenuPrimaryLink) {
+            mobileMenuPrimaryLink.textContent = "Dashboard";
+            mobileMenuPrimaryLink.setAttribute("href", "dashboard.html");
+          }
+          if (mobileMenuSignOut) mobileMenuSignOut.style.display = "inline-flex";
+          if (mobileMenuSignUp) mobileMenuSignUp.style.display = "none";
+        } else {
+          heroUserEmail.textContent = "";
+          heroSignIn.style.display = "inline-flex";
+          heroSignOut.style.display = "none";
+          if (heroNavDashboard) heroNavDashboard.style.display = "none";
+          if (mobileMenuEmail) mobileMenuEmail.textContent = "";
+          if (mobileMenuPrimaryLink) {
+            mobileMenuPrimaryLink.textContent = "Sign In";
+            mobileMenuPrimaryLink.setAttribute("href", "signin.html");
+          }
+          if (mobileMenuSignOut) mobileMenuSignOut.style.display = "none";
+          if (mobileMenuSignUp) mobileMenuSignUp.style.display = "inline-flex";
+        }
+      };
+
+      heroSignOut?.addEventListener("click", async () => {
+        await supabase.auth.signOut();
+        updateAuthUI(null);
+      });
+      if (mobileMenuSignOut) {
+        mobileMenuSignOut.addEventListener("click", async () => {
+          await supabase.auth.signOut();
+          updateAuthUI(null);
+          closeMobileMenu();
+        });
+      }
+
+      function openMobileMenu() {
+        if (!mobileMenu || !mobileMenuOverlay) return;
+        mobileMenu.classList.add("open");
+        mobileMenuOverlay.classList.add("show");
+        mobileMenu.setAttribute("aria-hidden", "false");
+      }
+
+      function closeMobileMenu() {
+        if (!mobileMenu || !mobileMenuOverlay) return;
+        mobileMenu.classList.remove("open");
+        mobileMenuOverlay.classList.remove("show");
+        mobileMenu.setAttribute("aria-hidden", "true");
+      }
+
+      mobileMenuBtn?.addEventListener("click", openMobileMenu);
+      mobileMenuClose?.addEventListener("click", closeMobileMenu);
+      mobileMenuOverlay?.addEventListener("click", closeMobileMenu);
+      mobileMenu?.addEventListener("click", (e) => {
+        if (e.target.matches("a")) closeMobileMenu();
+      });
+
+      const path = window.location.pathname.split("/").pop() || "index.html";
+      mobileMenu?.querySelectorAll(".mobile-menu-link").forEach(link => {
+        const href = link.getAttribute("href") || "";
+        const isActive = href === path || (path === "index.html" && href === "./");
+        link.classList.toggle("active", isActive);
+      });
+
+      const { data } = await supabase.auth.getUser();
+      updateAuthUI(data?.user || null);
+      supabase.auth.onAuthStateChange((_event, session) => {
+        updateAuthUI(session?.user || null);
+      });
+    })();
+  </script>
+</body>
+</html>

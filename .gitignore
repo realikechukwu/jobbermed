@@ -1,0 +1,25 @@
+.env
+.venv/
+venv/
+
+__pycache__/
+*.pyc
+json/*.json
+!json/.gitkeep
+.DS_Store
+addnew.md
+
+
+# IDE
+.vscode/
+.idea/
+
+medpipeline.md
+git-align.md
+
+email-pref.md
+improve.md
+
+move.md
+agents-ic.md
+new-build.md
