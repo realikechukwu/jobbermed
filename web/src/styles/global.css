@@ -237,6 +237,207 @@ a {
   background: #000000;
 }
 
+.native-jobs-page {
+  margin-top: 24px;
+  display: grid;
+  gap: 16px;
+}
+
+.native-jobs-intro .title {
+  margin-bottom: 8px;
+}
+
+.native-jobs-count {
+  margin: 8px 0 0;
+  color: var(--ink);
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.native-jobs-controls {
+  display: grid;
+  gap: 8px;
+}
+
+.native-jobs-search-input {
+  max-width: 520px;
+}
+
+.native-jobs-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+}
+
+.native-jobs-state {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 14px 16px;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.native-jobs-error {
+  border-color: rgba(152, 36, 36, 0.3);
+  background: rgba(152, 36, 36, 0.06);
+  color: #7d1f1f;
+}
+
+.native-job-card {
+  gap: 12px;
+}
+
+.native-job-head {
+  display: grid;
+  gap: 6px;
+}
+
+.native-job-title {
+  margin: 0;
+}
+
+.native-job-salary {
+  margin: 0;
+  font-size: 0.92rem;
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.native-job-description {
+  margin: 0;
+  color: var(--ink);
+  font-size: 0.94rem;
+  line-height: 1.45;
+}
+
+.native-job-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.native-chip {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  border: 1px solid rgba(31, 95, 74, 0.3);
+  color: var(--accent);
+  padding: 4px 10px;
+  font-size: 0.76rem;
+  font-weight: 600;
+  background: var(--accent-soft);
+}
+
+.native-job-deadline {
+  margin: 2px 0 0;
+}
+
+.native-job-actions {
+  margin-top: auto;
+  padding-top: 6px;
+}
+
+.native-job-cta {
+  display: inline-flex;
+  width: auto;
+  min-width: 180px;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.native-job-detail-page {
+  margin-top: 24px;
+  display: grid;
+  gap: 16px;
+}
+
+.native-back-link {
+  display: inline-flex;
+  width: fit-content;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.native-back-link:hover {
+  text-decoration: underline;
+}
+
+.native-job-detail-layout {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+}
+
+.native-job-detail-card {
+  gap: 14px;
+}
+
+.native-job-detail-salary {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.native-detail-block h3 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.native-detail-block p {
+  margin: 0 0 10px;
+  color: var(--ink);
+  line-height: 1.5;
+}
+
+.native-detail-block ul {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 8px;
+}
+
+.native-detail-block li {
+  line-height: 1.45;
+}
+
+.native-apply-card {
+  align-self: start;
+}
+
+.native-apply-form {
+  display: grid;
+  gap: 10px;
+}
+
+.native-apply-cover-letter {
+  min-height: 140px;
+  resize: vertical;
+  font-family: inherit;
+}
+
+.native-form-message {
+  margin: 2px 0;
+  font-size: 0.88rem;
+}
+
+.native-form-error {
+  color: #7d1f1f;
+}
+
+.native-form-success {
+  color: #1f5f4a;
+}
+
+.native-submit-button[disabled] {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
 @media (max-width: 700px) {
   .hero-top-row {
     justify-content: flex-start;
@@ -253,6 +454,14 @@ a {
   .shell-grid {
     margin-top: -26px;
     grid-template-columns: 1fr;
+  }
+
+  .native-job-detail-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .native-job-cta {
+    width: 100%;
   }
 }
 
