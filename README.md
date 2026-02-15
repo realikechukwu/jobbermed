@@ -7,6 +7,7 @@ JobberMed is a medical jobs aggregator. It scrapes jobs from multiple sources, n
 Legacy archive note:
 - `legacy/docs/` is archival reference only.
 - Canonical jobs file is `data/master_jobs.json`.
+- Frontend-served bridge copy is `web/public/data/master_jobs.json`.
 - Deploy artifact for the active web app is `web/dist` only.
 
 ---
@@ -23,6 +24,12 @@ The legacy static site lives in `legacy/docs/` for reference only.
 - `legacy/docs/change-password.html`, `legacy/docs/signin.html`, `legacy/docs/signup.html`, `legacy/docs/confirmation.html`
 - `legacy/docs/about.html`, `legacy/docs/privacy.html`, `legacy/docs/subscribe.html`
 - `data/master_jobs.json` — Canonical jobs data used by backend scripts/workflows
+- `web/public/data/master_jobs.json` — Vite-served aggregated jobs JSON for the React app
+
+Sync canonical output to web public bridge:
+```bash
+./scripts/sync_master_jobs_bridge.sh
+```
 
 **Local preview (recommended):**
 ```
@@ -492,6 +499,7 @@ For each job in json/raw_jobs.json:
 | `raw_jobs.json` | `json/` | Latest raw scrape (combined) |
 | `latest_raw_jobs.json` | `json/` | Always-current raw data |
 | `master_jobs.json` | `data/` | Final cleaned data for backend + newsletters |
+| `master_jobs.json` | `web/public/data/` | Frontend-served bridge copy for React/Vite runtime |
 
 ---
 
@@ -508,6 +516,9 @@ cp .env.example .env
 
 # Run full pipeline
 python run_pipeline.py
+
+# Sync to React/Vite public bridge
+./scripts/sync_master_jobs_bridge.sh
 ```
 
 ### Run Individual Steps
