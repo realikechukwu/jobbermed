@@ -38,6 +38,9 @@ jobs:
       - name: Sync jobs bridge for web/public
         run: ./scripts/sync_master_jobs_bridge.sh
 
+      - name: Check jobs bridge drift
+        run: ./scripts/check_master_jobs_bridge.sh
+
       - name: Commit updated master_jobs.json
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"

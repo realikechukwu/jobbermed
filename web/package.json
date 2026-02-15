@@ -9,6 +9,7 @@
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
     "sync:jobs-bridge": "../scripts/sync_master_jobs_bridge.sh",
+    "check:jobs-bridge": "../scripts/check_master_jobs_bridge.sh",
     "lint": "eslint . --ext ts,tsx --max-warnings 0"
   },
   "dependencies": {
