@@ -1,4 +1,4 @@
-import { useEffect, useState, type ReactNode } from "react";
+import { useCallback, useEffect, useRef, useState, type ReactNode } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useSession } from "../../auth/session-context";
 import { getSupabaseClient } from "../../../lib/supabase-client";
@@ -11,10 +11,76 @@ export function HomeLegacyShell({ children }: HomeLegacyShellProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
   const { user } = useSession();
+  const menuScrollYRef = useRef(0);
+  const bodyLockAppliedRef = useRef(false);
+  const previousBodyStylesRef = useRef<{
+    overflow: string;
+    position: string;
+    width: string;
+    top: string;
+  } | null>(null);
+
+  const unlockBodyScrollForMenu = useCallback(() => {
+    if (typeof window === "undefined" || !bodyLockAppliedRef.current) {
+      return;
+    }
+
+    const previousStyles = previousBodyStylesRef.current;
+    if (previousStyles) {
+      document.body.style.overflow = previousStyles.overflow;
+      document.body.style.position = previousStyles.position;
+      document.body.style.width = previousStyles.width;
+      document.body.style.top = previousStyles.top;
+    } else {
+      document.body.style.overflow = "";
+      document.body.style.position = "";
+      document.body.style.width = "";
+      document.body.style.top = "";
+    }
+
+    window.scrollTo(0, menuScrollYRef.current);
+    bodyLockAppliedRef.current = false;
+    previousBodyStylesRef.current = null;
+  }, []);
 
   useEffect(() => {
     setIsMobileMenuOpen(false);
   }, [location.pathname, location.search]);
+
+  useEffect(() => {
+    if (typeof window === "undefined") {
+      return;
+    }
+
+    if (!isMobileMenuOpen) {
+      unlockBodyScrollForMenu();
+      return;
+    }
+
+    if (bodyLockAppliedRef.current || document.body.classList.contains("panel-open")) {
+      return;
+    }
+
+    menuScrollYRef.current = window.scrollY || 0;
+    previousBodyStylesRef.current = {
+      overflow: document.body.style.overflow,
+      position: document.body.style.position,
+      width: document.body.style.width,
+      top: document.body.style.top,
+    };
+
+    document.body.style.overflow = "hidden";
+    document.body.style.position = "fixed";
+    document.body.style.width = "100%";
+    document.body.style.top = `-${menuScrollYRef.current}px`;
+    bodyLockAppliedRef.current = true;
+  }, [isMobileMenuOpen, unlockBodyScrollForMenu]);
+
+  useEffect(() => {
+    return () => {
+      unlockBodyScrollForMenu();
+    };
+  }, [unlockBodyScrollForMenu]);
 
   useEffect(() => {
     if (!isMobileMenuOpen) {

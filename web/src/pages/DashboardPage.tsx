@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState, type FormEvent } from "react";
 import { Link } from "react-router-dom";
 import { CardPrimitive } from "../components/CardPrimitive";
+import { CATEGORY_ORDER } from "../features/aggregator-jobs/constants";
 import { type DashboardRole } from "../features/auth/roles";
 import { useSession } from "../features/auth/session-context";
 import { fetchCandidateNativeApplications } from "../features/native-jobs/api";
@@ -163,6 +164,46 @@ export function DashboardPage() {
     return uniqueRoles.map((role) => ROLE_TITLES[role] || role);
   }, [roles]);
 
+  const selectedCategories = useMemo(() => splitPreferenceInput(categoriesInput), [categoriesInput]);
+
+  const categoryOptions = useMemo(() => {
+    const baseCategories = CATEGORY_ORDER.filter((category) => category !== "All");
+    const seen = new Set<string>();
+    const merged: string[] = [];
+
+    [...baseCategories, ...selectedCategories].forEach((category) => {
+      const cleaned = category.trim();
+      if (!cleaned) {
+        return;
+      }
+
+      const key = cleaned.toLowerCase();
+      if (seen.has(key)) {
+        return;
+      }
+
+      seen.add(key);
+      merged.push(cleaned);
+    });
+
+    return merged;
+  }, [selectedCategories]);
+
+  const selectedCategorySet = useMemo(() => new Set(selectedCategories.map((category) => category.toLowerCase())), [selectedCategories]);
+
+  const handleCategoryToggle = (category: string) => {
+    const categoryKey = category.toLowerCase();
+    const nextValues = selectedCategories.filter((value) => value.trim().length > 0);
+    const isSelected = selectedCategorySet.has(categoryKey);
+
+    if (isSelected) {
+      setCategoriesInput(joinPreferenceInput(nextValues.filter((value) => value.toLowerCase() !== categoryKey)));
+      return;
+    }
+
+    setCategoriesInput(joinPreferenceInput([...nextValues, category]));
+  };
+
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     if (!userId) {
@@ -234,7 +275,7 @@ export function DashboardPage() {
 
         <CardPrimitive
           title="Email preferences"
-          meta="By default, you'll receive our full nationwide digest: all medical job roles across Nigeria, once a week."
+          meta="Weekly nationwide digest by default."
         >
           {isLoadingPrefs ? <p className="meta">Loading preference controls...</p> : null}
 
@@ -256,15 +297,11 @@ export function DashboardPage() {
                 Signed in as <strong>{userEmail || "account user"}</strong>
               </p>
               <p className="preference-note">
-                Current delivery: Weekly nationwide digest (default).
+                {preferences.personalizeEnabled
+                  ? `Current delivery: Personalized ${preferences.frequency} updates.`
+                  : "Current delivery: Weekly nationwide digest (default)."}
               </p>
-              <p className="preference-note">
-                Choose the job roles and locations you care about, then set how often you want updates (daily or weekly).
-              </p>
-              <p className="preference-meta">Jobs are updated every day.</p>
-              <p className="preference-note">
-                Leave personalization off to keep receiving all roles across the country every week.
-              </p>
+              <p className="preference-meta">Jobs update daily.</p>
 
               <label className="preference-checkbox" htmlFor="personalize-enabled">
                 <input
@@ -281,47 +318,62 @@ export function DashboardPage() {
                 <span>Enable personalized digest</span>
               </label>
 
-              <div className="preference-grid">
-                <label className="shell-label" htmlFor="email-frequency">
-                  Frequency
-                </label>
-                <select
-                  className="shell-input"
-                  id="email-frequency"
-                  value={preferences.frequency}
-                  onChange={(event) =>
-                    setPreferences((current) => ({
-                      ...current,
-                      frequency: event.target.value as EmailFrequency,
-                    }))
-                  }
-                >
-                  <option value="daily">Daily</option>
-                  <option value="weekly">Weekly</option>
-                </select>
+              {preferences.personalizeEnabled ? (
+                <div className="preference-grid">
+                  <p className="preference-note">Select categories, locations, and frequency for tailored updates.</p>
+                  <label className="shell-label" htmlFor="email-frequency">
+                    Frequency
+                  </label>
+                  <select
+                    className="shell-input"
+                    id="email-frequency"
+                    value={preferences.frequency}
+                    onChange={(event) =>
+                      setPreferences((current) => ({
+                        ...current,
+                        frequency: event.target.value as EmailFrequency,
+                      }))
+                    }
+                  >
+                    <option value="daily">Daily</option>
+                    <option value="weekly">Weekly</option>
+                  </select>
 
-                <label className="shell-label" htmlFor="category-filter">
-                  Categories (comma-separated)
-                </label>
-                <textarea
-                  className="shell-input preference-textarea"
-                  id="category-filter"
-                  value={categoriesInput}
-                  onChange={(event) => setCategoriesInput(event.target.value)}
-                  placeholder="Doctor, Nurse, Public Health"
-                />
+                  <span className="shell-label">Categories (select one or more)</span>
+                  <div className="preference-source-group" id="category-filter">
+                    {categoryOptions.map((category) => {
+                      const isChecked = selectedCategorySet.has(category.toLowerCase());
+                      return (
+                        <label key={category} className="preference-source">
+                          <input
+                            type="checkbox"
+                            value={category}
+                            checked={isChecked}
+                            onChange={() => handleCategoryToggle(category)}
+                          />
+                          <span>{category}</span>
+                        </label>
+                      );
+                    })}
+                  </div>
+                  <p className="preference-meta">Select all categories that match your interests.</p>
 
-                <label className="shell-label" htmlFor="location-filter">
-                  Locations (comma-separated)
-                </label>
-                <textarea
-                  className="shell-input preference-textarea"
-                  id="location-filter"
-                  value={locationsInput}
-                  onChange={(event) => setLocationsInput(event.target.value)}
-                  placeholder="Lagos, Abuja, Remote"
-                />
-              </div>
+                  <label className="shell-label" htmlFor="location-filter">
+                    Locations (comma-separated)
+                  </label>
+                  <textarea
+                    className="shell-input preference-textarea"
+                    id="location-filter"
+                    value={locationsInput}
+                    onChange={(event) => setLocationsInput(event.target.value)}
+                    placeholder="Lagos, Abuja, Remote"
+                  />
+                </div>
+              ) : (
+                <p className="preference-note">
+                  Personalization is off. You'll continue receiving all roles nationwide each week.
+                </p>
+              )}
 
               {tableWarning ? <p className="status-banner status-info">{tableWarning}</p> : null}
               {statusMessage ? <p className={`status-banner status-${statusTone}`}>{statusMessage}</p> : null}
