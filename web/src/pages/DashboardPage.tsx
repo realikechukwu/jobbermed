@@ -210,8 +210,6 @@ export function DashboardPage() {
     }
   };
 
-  const deliveryMode = preferences.personalizeEnabled ? "personalized" : "default_weekly";
-
   return (
     <RouteShell title="Dashboard" subtitle="Manage your role access, native job activity, and email delivery settings.">
       <section className="shell-grid" aria-label="Dashboard cards">
@@ -234,7 +232,10 @@ export function DashboardPage() {
           </div>
         </CardPrimitive>
 
-        <CardPrimitive title="Email preferences" meta="Legacy weekly digest remains default unless you opt in.">
+        <CardPrimitive
+          title="Email preferences"
+          meta="By default, you'll receive our full nationwide digest: all medical job roles across Nigeria, once a week."
+        >
           {isLoadingPrefs ? <p className="meta">Loading preference controls...</p> : null}
 
           {!isLoadingPrefs && !userId ? (
@@ -255,7 +256,14 @@ export function DashboardPage() {
                 Signed in as <strong>{userEmail || "account user"}</strong>
               </p>
               <p className="preference-note">
-                Delivery mode: <strong>{deliveryMode}</strong>. Keep personalization off to stay on legacy weekly digest.
+                Current delivery: Weekly nationwide digest (default).
+              </p>
+              <p className="preference-note">
+                Choose the job roles and locations you care about, then set how often you want updates (daily or weekly).
+              </p>
+              <p className="preference-meta">Jobs are updated every day.</p>
+              <p className="preference-note">
+                Leave personalization off to keep receiving all roles across the country every week.
               </p>
 
               <label className="preference-checkbox" htmlFor="personalize-enabled">
