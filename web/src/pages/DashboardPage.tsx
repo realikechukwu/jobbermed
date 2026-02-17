@@ -1,17 +1,15 @@
-import { useEffect, useMemo, useState, type FormEvent } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { CardPrimitive } from "../components/CardPrimitive";
-import { CATEGORY_ORDER } from "../features/aggregator-jobs/constants";
 import { type DashboardRole } from "../features/auth/roles";
 import { useSession } from "../features/auth/session-context";
 import { fetchCandidateNativeApplications } from "../features/native-jobs/api";
+import { summarizeLocationSelections } from "../features/preferences/location-options";
 import type { NativeJobApplicationRecord } from "../features/native-jobs/types";
 import { getCurrentUser } from "../lib/auth";
 import {
   defaultEmailPreferences,
   loadUserEmailPreferencesForUser,
-  saveUserEmailPreferencesForUser,
-  type EmailFrequency,
   type EmailPreferences,
 } from "../lib/email-preferences";
 import { getSupabaseClient } from "../lib/supabase-client";
@@ -26,17 +24,6 @@ const ROLE_TITLES: Record<DashboardRole, string> = {
 
 type BannerTone = "info" | "success" | "error";
 
-function splitPreferenceInput(value: string): string[] {
-  return value
-    .split(",")
-    .map((item) => item.trim())
-    .filter(Boolean);
-}
-
-function joinPreferenceInput(values: string[]): string {
-  return values.join(", ");
-}
-
 function formatDate(value: string | null): string {
   if (!value) return "-";
   const parsed = new Date(value);
@@ -44,19 +31,26 @@ function formatDate(value: string | null): string {
   return parsed.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
 }
 
+function summarizeCategories(values: string[]): string {
+  if (values.length === 0) {
+    return "All categories";
+  }
+
+  if (values.length === 1) {
+    return values[0];
+  }
+
+  return `${values.length} selections`;
+}
+
 export function DashboardPage() {
-  const { roles, error: sessionError } = useSession();
+  const { roles, hasRole, error: sessionError } = useSession();
   const [applications, setApplications] = useState<NativeJobApplicationRecord[]>([]);
   const [isLoadingApps, setIsLoadingApps] = useState(true);
   const [appsError, setAppsError] = useState<string | null>(null);
 
   const [isLoadingPrefs, setIsLoadingPrefs] = useState(true);
-  const [isSavingPrefs, setIsSavingPrefs] = useState(false);
-  const [userId, setUserId] = useState<string | null>(null);
-  const [userEmail, setUserEmail] = useState<string>("");
   const [preferences, setPreferences] = useState<EmailPreferences>(defaultEmailPreferences);
-  const [categoriesInput, setCategoriesInput] = useState("");
-  const [locationsInput, setLocationsInput] = useState("");
   const [tableWarning, setTableWarning] = useState<string | null>(null);
   const [statusMessage, setStatusMessage] = useState<string | null>(null);
   const [statusTone, setStatusTone] = useState<BannerTone>("info");
@@ -99,9 +93,8 @@ export function DashboardPage() {
 
         if (!user) {
           if (!cancelled) {
-            setUserId(null);
             setStatusTone("info");
-            setStatusMessage("Sign in to configure personalized email delivery.");
+            setStatusMessage("Sign in to configure personalised email delivery.");
           }
           return;
         }
@@ -110,9 +103,6 @@ export function DashboardPage() {
           return;
         }
 
-        setUserId(user.id);
-        setUserEmail(user.email ?? "");
-
         const loaded = await loadUserEmailPreferencesForUser(user.id, supabase);
         if (cancelled) {
           return;
@@ -120,8 +110,6 @@ export function DashboardPage() {
 
         if (loaded.status === "ok") {
           setPreferences(loaded.preferences);
-          setCategoriesInput(joinPreferenceInput(loaded.preferences.categories));
-          setLocationsInput(joinPreferenceInput(loaded.preferences.locations));
           setTableWarning(null);
           setStatusMessage(null);
           return;
@@ -164,92 +152,32 @@ export function DashboardPage() {
     return uniqueRoles.map((role) => ROLE_TITLES[role] || role);
   }, [roles]);
 
-  const selectedCategories = useMemo(() => splitPreferenceInput(categoriesInput), [categoriesInput]);
+  const hasAdminAccess = hasRole("admin");
+  const hasRecruiterAccess = hasRole("recruiter") || hasAdminAccess;
+  const hasMdcnAccess = hasRole("mdcn_official") || hasAdminAccess;
 
-  const categoryOptions = useMemo(() => {
-    const baseCategories = CATEGORY_ORDER.filter((category) => category !== "All");
-    const seen = new Set<string>();
-    const merged: string[] = [];
+  const workspaceLinks = useMemo(
+    () =>
+      [
+        hasRecruiterAccess ? { id: "recruiter", to: "/recruiter", label: "Recruiter dashboard" } : null,
+        hasMdcnAccess ? { id: "mdcn", to: "/mdcn", label: "MDCN dashboard" } : null,
+        hasAdminAccess ? { id: "admin", to: "/admin", label: "Admin dashboard" } : null,
+      ].filter((item): item is { id: string; to: string; label: string } => item !== null),
+    [hasAdminAccess, hasMdcnAccess, hasRecruiterAccess],
+  );
 
-    [...baseCategories, ...selectedCategories].forEach((category) => {
-      const cleaned = category.trim();
-      if (!cleaned) {
-        return;
-      }
-
-      const key = cleaned.toLowerCase();
-      if (seen.has(key)) {
-        return;
-      }
-
-      seen.add(key);
-      merged.push(cleaned);
-    });
-
-    return merged;
-  }, [selectedCategories]);
-
-  const selectedCategorySet = useMemo(() => new Set(selectedCategories.map((category) => category.toLowerCase())), [selectedCategories]);
-
-  const handleCategoryToggle = (category: string) => {
-    const categoryKey = category.toLowerCase();
-    const nextValues = selectedCategories.filter((value) => value.trim().length > 0);
-    const isSelected = selectedCategorySet.has(categoryKey);
-
-    if (isSelected) {
-      setCategoriesInput(joinPreferenceInput(nextValues.filter((value) => value.toLowerCase() !== categoryKey)));
-      return;
-    }
-
-    setCategoriesInput(joinPreferenceInput([...nextValues, category]));
-  };
-
-  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    if (!userId) {
-      return;
-    }
-
-    const nextPreferences: EmailPreferences = {
-      ...preferences,
-      categories: splitPreferenceInput(categoriesInput),
-      locations: splitPreferenceInput(locationsInput),
-    };
-
-    setIsSavingPrefs(true);
-    setStatusMessage(null);
-
-    try {
-      const supabase = getSupabaseClient();
-      const result = await saveUserEmailPreferencesForUser(userId, nextPreferences, supabase);
-
-      if (result.status === "ok") {
-        setPreferences(result.preferences);
-        setCategoriesInput(joinPreferenceInput(result.preferences.categories));
-        setLocationsInput(joinPreferenceInput(result.preferences.locations));
-        setTableWarning(null);
-        setStatusTone("success");
-        setStatusMessage("Preferences saved.");
-        return;
-      }
-
-      if (result.status === "unavailable") {
-        setTableWarning(result.reason);
-        setStatusTone("info");
-        setStatusMessage("Weekly digest fallback remains active.");
-        return;
-      }
-
-      setStatusTone("error");
-      setStatusMessage(result.error);
-    } catch (error) {
-      const message = error instanceof Error ? error.message : "Unable to save preferences.";
-      setStatusTone("error");
-      setStatusMessage(message);
-    } finally {
-      setIsSavingPrefs(false);
-    }
-  };
+  const personalizationStatus = preferences.personalizeEnabled ? "On" : "Off";
+  const frequencySummary = preferences.personalizeEnabled
+    ? preferences.frequency === "daily"
+      ? "Daily"
+      : "Weekly"
+    : "Weekly (default)";
+  const categoriesSummary = preferences.personalizeEnabled
+    ? summarizeCategories(preferences.categories)
+    : "All categories";
+  const locationsSummary = preferences.personalizeEnabled
+    ? summarizeLocationSelections(preferences.locations)
+    : "All locations";
 
   return (
     <RouteShell title="Dashboard" subtitle="Manage your role access, native job activity, and email delivery settings.">
@@ -257,134 +185,79 @@ export function DashboardPage() {
         <CardPrimitive title="Account roles" meta="Active roles from claims and platform assignments.">
           <p className="meta">{roleList.join(" • ")}</p>
           {sessionError ? <p className="native-form-message native-form-error">{sessionError}</p> : null}
+          <p className="meta auth-aux-link">
+            <Link to="/account/change-password">Change password</Link>
+          </p>
         </CardPrimitive>
 
-        <CardPrimitive title="Role dashboards" meta="Open role-specific workspaces.">
-          <div className="dashboard-links">
-            <Link className="shell-button dashboard-link" to="/recruiter">
-              Recruiter dashboard
-            </Link>
-            <Link className="shell-button dashboard-link" to="/mdcn">
-              MDCN dashboard
-            </Link>
-            <Link className="shell-button dashboard-link" to="/admin">
-              Admin dashboard
-            </Link>
-          </div>
+        <CardPrimitive title="Your workspaces" meta="Open dashboards available to your current role access.">
+          {workspaceLinks.length === 0 ? (
+            <p className="meta">No role-specific dashboards are available for your account yet.</p>
+          ) : (
+            <div className="dashboard-links">
+              {workspaceLinks.map((workspace) => (
+                <Link key={workspace.id} className="shell-button dashboard-link" to={workspace.to}>
+                  {workspace.label}
+                </Link>
+              ))}
+            </div>
+          )}
         </CardPrimitive>
+
+        {hasRecruiterAccess ? (
+          <CardPrimitive title="Recruiter workspace">
+            <p className="meta">Manage your job posts and review applicants.</p>
+            <div className="dashboard-links">
+              <Link className="shell-button dashboard-link" to="/recruiter">
+                Manage jobs
+              </Link>
+            </div>
+          </CardPrimitive>
+        ) : (
+          <CardPrimitive title="Recruiter access">
+            <div className="access-request-status">
+              <p>Post jobs and manage applicants. Requires admin approval.</p>
+              <p className="preference-meta">If approved, refresh access to activate your recruiter dashboard.</p>
+            </div>
+            <div className="dashboard-links">
+              <Link className="shell-button dashboard-link" to="/request-access/recruiter">
+                Request recruiter access
+              </Link>
+            </div>
+          </CardPrimitive>
+        )}
 
         <CardPrimitive
-          title="Email preferences"
-          meta="Weekly nationwide digest by default."
+          title="Email personalisation"
+          meta="Review your current digest settings and open full controls."
         >
-          {isLoadingPrefs ? <p className="meta">Loading preference controls...</p> : null}
+          {isLoadingPrefs ? <p className="meta">Loading personalisation summary...</p> : null}
 
-          {!isLoadingPrefs && !userId ? (
-            <div className="preference-state">
-              {statusMessage ? <p className={`status-banner status-${statusTone}`}>{statusMessage}</p> : null}
+          {!isLoadingPrefs ? (
+            <div className="access-request-status">
               <p className="meta">
-                Non-dashboard subscribers and dashboard users with no preferences continue receiving the weekly digest.
+                <strong>Status:</strong> {personalizationStatus}
               </p>
-              <Link className="shell-inline-link" to="/signin">
-                Sign in to configure personalization
-              </Link>
+              <p className="meta">
+                <strong>Frequency:</strong> {frequencySummary}
+              </p>
+              <p className="meta">
+                <strong>Categories:</strong> {categoriesSummary}
+              </p>
+              <p className="meta">
+                <strong>Locations:</strong> {locationsSummary}
+              </p>
             </div>
           ) : null}
 
-          {!isLoadingPrefs && userId ? (
-            <form className="preference-form" onSubmit={handleSubmit}>
-              <p className="preference-meta">
-                Signed in as <strong>{userEmail || "account user"}</strong>
-              </p>
-              <p className="preference-note">
-                {preferences.personalizeEnabled
-                  ? `Current delivery: Personalized ${preferences.frequency} updates.`
-                  : "Current delivery: Weekly nationwide digest (default)."}
-              </p>
-              <p className="preference-meta">Jobs update daily.</p>
+          {tableWarning ? <p className="status-banner status-info">{tableWarning}</p> : null}
+          {statusMessage ? <p className={`status-banner status-${statusTone}`}>{statusMessage}</p> : null}
 
-              <label className="preference-checkbox" htmlFor="personalize-enabled">
-                <input
-                  id="personalize-enabled"
-                  type="checkbox"
-                  checked={preferences.personalizeEnabled}
-                  onChange={(event) =>
-                    setPreferences((current) => ({
-                      ...current,
-                      personalizeEnabled: event.target.checked,
-                    }))
-                  }
-                />
-                <span>Enable personalized digest</span>
-              </label>
-
-              {preferences.personalizeEnabled ? (
-                <div className="preference-grid">
-                  <p className="preference-note">Select categories, locations, and frequency for tailored updates.</p>
-                  <label className="shell-label" htmlFor="email-frequency">
-                    Frequency
-                  </label>
-                  <select
-                    className="shell-input"
-                    id="email-frequency"
-                    value={preferences.frequency}
-                    onChange={(event) =>
-                      setPreferences((current) => ({
-                        ...current,
-                        frequency: event.target.value as EmailFrequency,
-                      }))
-                    }
-                  >
-                    <option value="daily">Daily</option>
-                    <option value="weekly">Weekly</option>
-                  </select>
-
-                  <span className="shell-label">Categories (select one or more)</span>
-                  <div className="preference-source-group" id="category-filter">
-                    {categoryOptions.map((category) => {
-                      const isChecked = selectedCategorySet.has(category.toLowerCase());
-                      return (
-                        <label key={category} className="preference-source">
-                          <input
-                            type="checkbox"
-                            value={category}
-                            checked={isChecked}
-                            onChange={() => handleCategoryToggle(category)}
-                          />
-                          <span>{category}</span>
-                        </label>
-                      );
-                    })}
-                  </div>
-                  <p className="preference-meta">Select all categories that match your interests.</p>
-
-                  <label className="shell-label" htmlFor="location-filter">
-                    Locations (comma-separated)
-                  </label>
-                  <textarea
-                    className="shell-input preference-textarea"
-                    id="location-filter"
-                    value={locationsInput}
-                    onChange={(event) => setLocationsInput(event.target.value)}
-                    placeholder="Lagos, Abuja, Remote"
-                  />
-                </div>
-              ) : (
-                <p className="preference-note">
-                  Personalization is off. You'll continue receiving all roles nationwide each week.
-                </p>
-              )}
-
-              {tableWarning ? <p className="status-banner status-info">{tableWarning}</p> : null}
-              {statusMessage ? <p className={`status-banner status-${statusTone}`}>{statusMessage}</p> : null}
-
-              <div className="preference-actions">
-                <button className="shell-button" type="submit" disabled={isSavingPrefs}>
-                  {isSavingPrefs ? "Saving preferences..." : "Save preferences"}
-                </button>
-              </div>
-            </form>
-          ) : null}
+          <div className="dashboard-links">
+            <Link className="shell-button dashboard-link" to="/account/personalization">
+              Manage personalisation
+            </Link>
+          </div>
         </CardPrimitive>
       </section>
 

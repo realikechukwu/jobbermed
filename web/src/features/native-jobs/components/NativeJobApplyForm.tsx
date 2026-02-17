@@ -139,15 +139,18 @@ export function NativeJobApplyForm({ jobId, jobTitle }: NativeJobApplyFormProps)
       />
 
       <label className="shell-label" htmlFor="native-apply-cv">
-        CV link (optional)
+        CV link
       </label>
+      <p className="preference-meta">
+        Please upload a link to your CV. Kindly upload it to a drive and share the link as a shared file here.
+      </p>
       <input
         className="shell-input"
         id="native-apply-cv"
         type="url"
         value={formState.cvUrl}
         onChange={updateField("cvUrl")}
-        placeholder="https://..."
+        placeholder="https://drive.google.com/..."
       />
 
       <label className="shell-label" htmlFor="native-apply-cover-letter">

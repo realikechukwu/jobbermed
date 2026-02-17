@@ -117,7 +117,7 @@ async function readStringSetTable(
   if (error) {
     if (isMissingRelationError(error)) {
       throw new PreferencesUnavailableError(
-        `Personalization tables are not ready yet (${tableName}).`,
+        `Personalisation tables are not ready yet (${tableName}).`,
       );
     }
     throw error;
@@ -141,7 +141,7 @@ async function replaceStringSetTable(
   if (deleteError) {
     if (isMissingRelationError(deleteError)) {
       throw new PreferencesUnavailableError(
-        `Personalization tables are not ready yet (${tableName}).`,
+        `Personalisation tables are not ready yet (${tableName}).`,
       );
     }
     throw deleteError;
@@ -160,7 +160,7 @@ async function replaceStringSetTable(
   if (insertError) {
     if (isMissingRelationError(insertError)) {
       throw new PreferencesUnavailableError(
-        `Personalization tables are not ready yet (${tableName}).`,
+        `Personalisation tables are not ready yet (${tableName}).`,
       );
     }
     throw insertError;

@@ -83,6 +83,10 @@ export function SigninPage() {
               required
             />
 
+            <p className="meta auth-aux-link">
+              <Link to="/forgot-password">Forgot password?</Link>
+            </p>
+
             {error ? <p className="native-form-message native-form-error">{error}</p> : null}
 
             <button className="shell-button" type="submit" disabled={isSubmitting}>

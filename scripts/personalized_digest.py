@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import sys
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
@@ -44,6 +45,119 @@ REQUIRED_PREFERENCE_TABLES = [
     "email_pref_locations",
 ]
 
+LOCATION_TOKEN_ALL_STATES = "all_states"
+LOCATION_TOKEN_REMOTE = "remote"
+LOCATION_TOKEN_OUTSIDE_NIGERIA = "outside_nigeria"
+
+NIGERIAN_STATE_TOKENS = {
+    "abia",
+    "adamawa",
+    "akwa_ibom",
+    "anambra",
+    "bauchi",
+    "bayelsa",
+    "benue",
+    "borno",
+    "cross_river",
+    "delta",
+    "ebonyi",
+    "edo",
+    "ekiti",
+    "enugu",
+    "gombe",
+    "imo",
+    "jigawa",
+    "kaduna",
+    "kano",
+    "katsina",
+    "kebbi",
+    "kogi",
+    "kwara",
+    "lagos",
+    "nasarawa",
+    "niger",
+    "ogun",
+    "ondo",
+    "osun",
+    "oyo",
+    "plateau",
+    "rivers",
+    "sokoto",
+    "taraba",
+    "yobe",
+    "zamfara",
+    "fct",
+}
+
+LOCATION_PREFERENCE_ALIASES = {
+    "all states": LOCATION_TOKEN_ALL_STATES,
+    "all nigeria states": LOCATION_TOKEN_ALL_STATES,
+    "nigeria": LOCATION_TOKEN_ALL_STATES,
+    "nationwide": LOCATION_TOKEN_ALL_STATES,
+    "fct": "fct",
+    "abuja": "fct",
+    "remote": LOCATION_TOKEN_REMOTE,
+    "work from home": LOCATION_TOKEN_REMOTE,
+    "wfh": LOCATION_TOKEN_REMOTE,
+    "outside nigeria": LOCATION_TOKEN_OUTSIDE_NIGERIA,
+    "international": LOCATION_TOKEN_OUTSIDE_NIGERIA,
+}
+
+CITY_TO_STATE_TOKEN = {
+    "abuja": "fct",
+    "lagos": "lagos",
+    "kano": "kano",
+    "ibadan": "oyo",
+    "port harcourt": "rivers",
+    "benin": "edo",
+    "benin city": "edo",
+    "kaduna": "kaduna",
+    "enugu": "enugu",
+    "jos": "plateau",
+    "ilorin": "kwara",
+    "sokoto": "sokoto",
+    "calabar": "cross_river",
+    "warri": "delta",
+    "owerri": "imo",
+    "uyo": "akwa_ibom",
+    "abeokuta": "ogun",
+    "maiduguri": "borno",
+    "zaria": "kaduna",
+    "aba": "abia",
+    "ogbomoso": "oyo",
+    "onitsha": "anambra",
+    "akure": "ondo",
+    "bauchi": "bauchi",
+    "yola": "adamawa",
+    "gombe": "gombe",
+    "lafia": "nasarawa",
+    "lokoja": "kogi",
+    "minna": "niger",
+    "oshogbo": "osun",
+    "asaba": "delta",
+    "awka": "anambra",
+    "birnin kebbi": "kebbi",
+    "damaturu": "yobe",
+    "dutse": "jigawa",
+    "ado ekiti": "ekiti",
+    "gusau": "zamfara",
+    "jalingo": "taraba",
+    "katsina": "katsina",
+    "umuahia": "abia",
+    "yenagoa": "bayelsa",
+    "mowe": "ogun",
+    "keffi": "nasarawa",
+}
+
+REMOTE_KEYWORDS = ("remote", "work from home", "wfh")
+
+KNOWN_LOCATION_TOKENS = {
+    LOCATION_TOKEN_ALL_STATES,
+    LOCATION_TOKEN_REMOTE,
+    LOCATION_TOKEN_OUTSIDE_NIGERIA,
+    *NIGERIAN_STATE_TOKENS,
+}
+
 
 @dataclass
 class RecipientPreference:
@@ -75,6 +189,113 @@ def value_matches(preferences: list[str], candidate: str) -> bool:
     if not target:
         return False
     return any(preference.lower() in target for preference in preferences)
+
+
+def has_word(value: str, phrase: str) -> bool:
+    escaped = re.escape(phrase)
+    return re.search(rf"\b{escaped}\b", value, flags=re.IGNORECASE) is not None
+
+
+def normalize_location_preference(value: str) -> str:
+    raw = value.strip().lower()
+    if not raw:
+        return ""
+
+    if raw in LOCATION_PREFERENCE_ALIASES:
+        return LOCATION_PREFERENCE_ALIASES[raw]
+
+    as_token = raw.replace(" ", "_")
+    if as_token in NIGERIAN_STATE_TOKENS:
+        return as_token
+
+    return raw
+
+
+def normalize_location_preferences(values: list[str]) -> list[str]:
+    normalized: list[str] = []
+    seen: set[str] = set()
+
+    for value in values:
+        token = normalize_location_preference(value)
+        if not token:
+            continue
+        if token in seen:
+            continue
+        seen.add(token)
+        normalized.append(token)
+
+    return normalized
+
+
+def matched_nigerian_state_tokens(location: str) -> set[str]:
+    if not location:
+        return set()
+
+    matched: set[str] = set()
+
+    for token in NIGERIAN_STATE_TOKENS:
+        if token == "fct":
+            if has_word(location, "fct") or has_word(location, "abuja"):
+                matched.add("fct")
+            continue
+
+        phrase = token.replace("_", " ")
+        if has_word(location, phrase):
+            matched.add(token)
+
+    for city, state_token in CITY_TO_STATE_TOKEN.items():
+        if has_word(location, city):
+            matched.add(state_token)
+
+    return matched
+
+
+def is_nigeria_location(location: str) -> bool:
+    if not location:
+        return False
+
+    if has_word(location, "nigeria") or has_word(location, "nationwide"):
+        return True
+
+    return bool(matched_nigerian_state_tokens(location))
+
+
+def is_remote_location(location: str) -> bool:
+    if not location:
+        return False
+    return any(has_word(location, keyword) for keyword in REMOTE_KEYWORDS)
+
+
+def location_matches_preferences(preferences: list[str], candidate: str) -> bool:
+    if not preferences:
+        return True
+
+    normalized_preferences = normalize_location_preferences(preferences)
+    if not normalized_preferences:
+        return True
+
+    location = (candidate or "").strip().lower()
+    nigerian_tokens = matched_nigerian_state_tokens(location)
+    nigeria_match = bool(location) and is_nigeria_location(location)
+
+    if LOCATION_TOKEN_REMOTE in normalized_preferences and is_remote_location(location):
+        return True
+
+    if LOCATION_TOKEN_ALL_STATES in normalized_preferences and nigeria_match:
+        return True
+
+    selected_states = [value for value in normalized_preferences if value in NIGERIAN_STATE_TOKENS]
+    if selected_states and nigerian_tokens.intersection(selected_states):
+        return True
+
+    if LOCATION_TOKEN_OUTSIDE_NIGERIA in normalized_preferences and location and not nigeria_match:
+        return True
+
+    legacy_terms = [value for value in normalized_preferences if value not in KNOWN_LOCATION_TOKENS]
+    if legacy_terms and location and any(term in location for term in legacy_terms):
+        return True
+
+    return False
 
 
 def missing_preference_tables(config) -> list[str]:
@@ -211,7 +432,7 @@ def filter_jobs_for_recipient(
             continue
 
         location = str(job.get("location") or "")
-        if recipient.locations and not value_matches(recipient.locations, location):
+        if recipient.locations and not location_matches_preferences(recipient.locations, location):
             continue
 
         matched.append(job)
