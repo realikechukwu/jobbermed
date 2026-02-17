@@ -1,7 +1,14 @@
-import { useCallback, useEffect, useRef, useState, type ReactNode } from "react";
+import { useEffect, useMemo, useState, type ReactNode } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useSession } from "../../auth/session-context";
 import { getSupabaseClient } from "../../../lib/supabase-client";
+import {
+  getHomeMobilePrimaryLink,
+  getHomeMobileSignUpLink,
+  getSiteNavLinks,
+  type SiteNavState,
+} from "../../../navigation/site-nav";
+import { SiteMobileDrawer } from "../../../components/SiteMobileDrawer";
 
 type HomeLegacyShellProps = {
   children: ReactNode;
@@ -10,94 +17,24 @@ type HomeLegacyShellProps = {
 export function HomeLegacyShell({ children }: HomeLegacyShellProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
-  const { user } = useSession();
-  const menuScrollYRef = useRef(0);
-  const bodyLockAppliedRef = useRef(false);
-  const previousBodyStylesRef = useRef<{
-    overflow: string;
-    position: string;
-    width: string;
-    top: string;
-  } | null>(null);
+  const { user, roles } = useSession();
 
-  const unlockBodyScrollForMenu = useCallback(() => {
-    if (typeof window === "undefined" || !bodyLockAppliedRef.current) {
-      return;
-    }
+  const navState = useMemo<SiteNavState>(
+    () => ({
+      isAuthenticated: Boolean(user),
+      roles,
+    }),
+    [roles, user],
+  );
 
-    const previousStyles = previousBodyStylesRef.current;
-    if (previousStyles) {
-      document.body.style.overflow = previousStyles.overflow;
-      document.body.style.position = previousStyles.position;
-      document.body.style.width = previousStyles.width;
-      document.body.style.top = previousStyles.top;
-    } else {
-      document.body.style.overflow = "";
-      document.body.style.position = "";
-      document.body.style.width = "";
-      document.body.style.top = "";
-    }
-
-    window.scrollTo(0, menuScrollYRef.current);
-    bodyLockAppliedRef.current = false;
-    previousBodyStylesRef.current = null;
-  }, []);
+  const headerLinks = useMemo(() => getSiteNavLinks("home", "header", navState), [navState]);
+  const mobileLinks = useMemo(() => getSiteNavLinks("home", "mobile", navState), [navState]);
+  const mobilePrimaryLink = useMemo(() => getHomeMobilePrimaryLink(navState), [navState]);
+  const mobileSignUpLink = useMemo(() => getHomeMobileSignUpLink(navState), [navState]);
 
   useEffect(() => {
     setIsMobileMenuOpen(false);
   }, [location.pathname, location.search]);
-
-  useEffect(() => {
-    if (typeof window === "undefined") {
-      return;
-    }
-
-    if (!isMobileMenuOpen) {
-      unlockBodyScrollForMenu();
-      return;
-    }
-
-    if (bodyLockAppliedRef.current || document.body.classList.contains("panel-open")) {
-      return;
-    }
-
-    menuScrollYRef.current = window.scrollY || 0;
-    previousBodyStylesRef.current = {
-      overflow: document.body.style.overflow,
-      position: document.body.style.position,
-      width: document.body.style.width,
-      top: document.body.style.top,
-    };
-
-    document.body.style.overflow = "hidden";
-    document.body.style.position = "fixed";
-    document.body.style.width = "100%";
-    document.body.style.top = `-${menuScrollYRef.current}px`;
-    bodyLockAppliedRef.current = true;
-  }, [isMobileMenuOpen, unlockBodyScrollForMenu]);
-
-  useEffect(() => {
-    return () => {
-      unlockBodyScrollForMenu();
-    };
-  }, [unlockBodyScrollForMenu]);
-
-  useEffect(() => {
-    if (!isMobileMenuOpen) {
-      return;
-    }
-
-    const handleEscape = (event: KeyboardEvent) => {
-      if (event.key === "Escape") {
-        setIsMobileMenuOpen(false);
-      }
-    };
-
-    document.addEventListener("keydown", handleEscape);
-    return () => {
-      document.removeEventListener("keydown", handleEscape);
-    };
-  }, [isMobileMenuOpen]);
 
   async function handleSignOut() {
     const supabase = getSupabaseClient();
@@ -113,23 +50,21 @@ export function HomeLegacyShell({ children }: HomeLegacyShellProps) {
         <div className="hero-inner hero-inner-signin">
           <div className="hero-topbar">
             <nav className="hero-nav" aria-label="Primary">
-              <Link className="hero-nav-link" to="/">
-                Home
-              </Link>
-              {user ? (
-                <Link className="hero-nav-link" to="/dashboard">
-                  Dashboard
-                </Link>
-              ) : null}
-              <Link className="hero-nav-link" to="/native-jobs">
-                Subscribe
-              </Link>
-              <a className="hero-nav-link" href="https://jobbermed.com/about.html">
-                About Us
-              </a>
-              <a className="hero-nav-link" href="https://jobbermed.com/privacy.html">
-                Privacy Policy
-              </a>
+              {headerLinks.map((link) => {
+                if (link.kind === "external") {
+                  return (
+                    <a key={link.id} className="hero-nav-link" href={link.href}>
+                      {link.label}
+                    </a>
+                  );
+                }
+
+                return (
+                  <Link key={link.id} className="hero-nav-link" to={link.to}>
+                    {link.label}
+                  </Link>
+                );
+              })}
             </nav>
 
             <div className="hero-auth">
@@ -150,6 +85,7 @@ export function HomeLegacyShell({ children }: HomeLegacyShellProps) {
             className="mobile-menu-btn"
             type="button"
             aria-label="Open menu"
+            aria-expanded={isMobileMenuOpen ? "true" : "false"}
             onClick={() => setIsMobileMenuOpen(true)}
           >
             Menu
@@ -164,55 +100,18 @@ export function HomeLegacyShell({ children }: HomeLegacyShellProps) {
         </div>
       </section>
 
-      <div
-        className={`mobile-menu-overlay${isMobileMenuOpen ? " show" : ""}`}
-        role="presentation"
-        onClick={() => setIsMobileMenuOpen(false)}
+      <SiteMobileDrawer
+        variant="home"
+        isOpen={isMobileMenuOpen}
+        onClose={() => setIsMobileMenuOpen(false)}
+        pathname={location.pathname}
+        email={user?.email ?? ""}
+        primaryLink={mobilePrimaryLink}
+        links={mobileLinks}
+        supplementalLink={mobileSignUpLink}
+        showSignOut={Boolean(user)}
+        onSignOut={handleSignOut}
       />
-
-      <aside className={`mobile-menu${isMobileMenuOpen ? " open" : ""}`} aria-hidden={isMobileMenuOpen ? "false" : "true"}>
-        <button className="mobile-menu-close" type="button" aria-label="Close menu" onClick={() => setIsMobileMenuOpen(false)}>
-          X
-        </button>
-
-        <div className="mobile-menu-email">{user?.email ?? ""}</div>
-
-        <Link className="mobile-menu-link" to={user ? "/dashboard" : "/signin"}>
-          {user ? "Dashboard" : "Sign In"}
-        </Link>
-
-        <nav className="mobile-menu-links">
-          <Link className={`mobile-menu-link${location.pathname === "/" ? " active" : ""}`} to="/">
-            Home
-          </Link>
-          {user ? (
-            <Link className={`mobile-menu-link${location.pathname.startsWith("/dashboard") ? " active" : ""}`} to="/dashboard">
-              Dashboard
-            </Link>
-          ) : null}
-          <Link className={`mobile-menu-link${location.pathname.startsWith("/native-jobs") ? " active" : ""}`} to="/native-jobs">
-            Subscribe
-          </Link>
-          <a className="mobile-menu-link" href="https://jobbermed.com/about.html">
-            About Us
-          </a>
-          <a className="mobile-menu-link" href="https://jobbermed.com/privacy.html">
-            Privacy Policy
-          </a>
-        </nav>
-
-        {!user ? (
-          <Link className="mobile-menu-link" to="/signup">
-            Sign Up
-          </Link>
-        ) : null}
-
-        {user ? (
-          <button className="mobile-menu-signout" type="button" onClick={() => void handleSignOut()}>
-            Sign Out
-          </button>
-        ) : null}
-      </aside>
 
       <div className="page">{children}</div>
     </>

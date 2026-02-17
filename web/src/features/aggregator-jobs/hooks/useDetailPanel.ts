@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useSearchParams } from "react-router-dom";
+import { useBodyScrollLock } from "../../../hooks/useBodyScrollLock";
 import type { AggregatorJob } from "../types";
 import { findJobBySlug, getJobSlug, safeText } from "../utils";
 
@@ -24,33 +25,24 @@ export function useDetailPanel({ jobs }: UseDetailPanelArgs): UseDetailPanelResu
   const [isClosing, setIsClosing] = useState(false);
 
   const closeTimerRef = useRef<number | null>(null);
-  const scrollYRef = useRef(0);
-  const isBodyLockedRef = useRef(false);
 
   const jobSlugParam = safeText(searchParams.get("job"));
   const refParam = safeText(searchParams.get("ref"));
+  const isMounted = panelSlug !== null;
 
-  const lockBody = useCallback(() => {
-    if (typeof window === "undefined" || isBodyLockedRef.current) {
+  useBodyScrollLock(isMounted);
+
+  useEffect(() => {
+    if (!isMounted) {
+      document.body.classList.remove("panel-open");
       return;
     }
 
-    scrollYRef.current = window.scrollY || 0;
     document.body.classList.add("panel-open");
-    document.body.style.top = `-${scrollYRef.current}px`;
-    isBodyLockedRef.current = true;
-  }, []);
-
-  const unlockBody = useCallback(() => {
-    if (typeof window === "undefined" || !isBodyLockedRef.current) {
-      return;
-    }
-
-    document.body.classList.remove("panel-open");
-    document.body.style.top = "";
-    window.scrollTo(0, scrollYRef.current);
-    isBodyLockedRef.current = false;
-  }, []);
+    return () => {
+      document.body.classList.remove("panel-open");
+    };
+  }, [isMounted]);
 
   useEffect(() => {
     if (refParam === "dashboard") {
@@ -67,7 +59,6 @@ export function useDetailPanel({ jobs }: UseDetailPanelArgs): UseDetailPanelResu
 
       setPanelSlug(jobSlugParam);
       setIsClosing(false);
-      lockBody();
       return;
     }
 
@@ -85,9 +76,8 @@ export function useDetailPanel({ jobs }: UseDetailPanelArgs): UseDetailPanelResu
       setPanelSlug(null);
       setIsClosing(false);
       closeTimerRef.current = null;
-      unlockBody();
     }, CLOSE_ANIMATION_MS);
-  }, [jobSlugParam, panelSlug, lockBody, unlockBody]);
+  }, [jobSlugParam, panelSlug]);
 
   useEffect(() => {
     return () => {
@@ -95,9 +85,8 @@ export function useDetailPanel({ jobs }: UseDetailPanelArgs): UseDetailPanelResu
         window.clearTimeout(closeTimerRef.current);
         closeTimerRef.current = null;
       }
-      unlockBody();
     };
-  }, [unlockBody]);
+  }, []);
 
   const openDetail = useCallback(
     (job: AggregatorJob) => {
@@ -142,7 +131,6 @@ export function useDetailPanel({ jobs }: UseDetailPanelArgs): UseDetailPanelResu
   }, [panelSlug, closeDetail]);
 
   const panelJob = useMemo(() => findJobBySlug(jobs, panelSlug), [jobs, panelSlug]);
-  const isMounted = panelSlug !== null;
 
   return {
     panelJob,

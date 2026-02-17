@@ -1,52 +1,35 @@
 import { NavLink } from "react-router-dom";
 import { useSession } from "../features/auth/session-context";
+import { getSiteNavLinks, type SiteNavState } from "../navigation/site-nav";
 
 export function FooterShell() {
-  const { user, hasRole, isLoading } = useSession();
+  const { user, roles } = useSession();
 
-  const showRecruiterLink = !isLoading && user && (hasRole("recruiter") || hasRole("admin"));
-  const showMdcnLink = !isLoading && user && (hasRole("mdcn_official") || hasRole("admin"));
-  const showAdminLink = !isLoading && user && hasRole("admin");
+  const navState: SiteNavState = {
+    isAuthenticated: Boolean(user),
+    roles,
+  };
+
+  const footerLinks = getSiteNavLinks("app", "footer", navState);
 
   return (
     <footer className="footer-strip" aria-label="Footer">
       <div className="footer-inner">
-        <NavLink className="footer-link" to="/">
-          Home
-        </NavLink>
-        <NavLink className="footer-link" to="/native-jobs">
-          Native Jobs
-        </NavLink>
-        {user ? (
-          <NavLink className="footer-link" to="/dashboard">
-            Dashboard
-          </NavLink>
-        ) : null}
-        {showRecruiterLink ? (
-          <NavLink className="footer-link" to="/recruiter">
-            Recruiter
-          </NavLink>
-        ) : null}
-        {showMdcnLink ? (
-          <NavLink className="footer-link" to="/mdcn">
-            MDCN
-          </NavLink>
-        ) : null}
-        {showAdminLink ? (
-          <NavLink className="footer-link" to="/admin">
-            Admin
-          </NavLink>
-        ) : null}
-        {!user ? (
-          <>
-            <NavLink className="footer-link" to="/signin">
-              Sign In
+        {footerLinks.map((link) => {
+          if (link.kind === "external") {
+            return (
+              <a key={link.id} className="footer-link" href={link.href}>
+                {link.label}
+              </a>
+            );
+          }
+
+          return (
+            <NavLink key={link.id} className="footer-link" to={link.to}>
+              {link.label}
             </NavLink>
-            <NavLink className="footer-link" to="/signup">
-              Sign Up
-            </NavLink>
-          </>
-        ) : null}
+          );
+        })}
       </div>
     </footer>
   );

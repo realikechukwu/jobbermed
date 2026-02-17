@@ -1,6 +1,12 @@
-import { Link, NavLink } from "react-router-dom";
+import { useEffect, useMemo, useState } from "react";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { useSession } from "../features/auth/session-context";
 import { getSupabaseClient } from "../lib/supabase-client";
+import {
+  getSiteNavLinks,
+  type SiteNavState,
+} from "../navigation/site-nav";
+import { SiteMobileDrawer } from "./SiteMobileDrawer";
 
 type HeroShellProps = {
   title: string;
@@ -8,7 +14,24 @@ type HeroShellProps = {
 };
 
 export function HeroShell({ title, subtitle }: HeroShellProps) {
-  const { user, hasRole, isLoading } = useSession();
+  const { user, roles } = useSession();
+  const location = useLocation();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const navState = useMemo<SiteNavState>(
+    () => ({
+      isAuthenticated: Boolean(user),
+      roles,
+    }),
+    [roles, user],
+  );
+
+  const headerLinks = useMemo(() => getSiteNavLinks("app", "header", navState), [navState]);
+  const mobileLinks = useMemo(() => getSiteNavLinks("app", "mobile", navState), [navState]);
+
+  useEffect(() => {
+    setIsMobileMenuOpen(false);
+  }, [location.pathname, location.search]);
 
   const navClassName = ({ isActive }: { isActive: boolean }) =>
     isActive ? "site-nav-link active" : "site-nav-link";
@@ -19,60 +42,42 @@ export function HeroShell({ title, subtitle }: HeroShellProps) {
     window.location.assign("/");
   }
 
-  const showRecruiterLink = !isLoading && user && (hasRole("recruiter") || hasRole("admin"));
-  const showMdcnLink = !isLoading && user && (hasRole("mdcn_official") || hasRole("admin"));
-  const showAdminLink = !isLoading && user && hasRole("admin");
-
   return (
     <section className="hero-banner">
       <div className="hero-inner">
         <div className="hero-top-row">
+          <button
+            className="site-mobile-menu-btn"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded={isMobileMenuOpen ? "true" : "false"}
+            onClick={() => setIsMobileMenuOpen(true)}
+          >
+            Menu
+          </button>
+
           <nav className="site-nav" aria-label="Primary">
-            <NavLink className={navClassName} to="/">
-              Home
-            </NavLink>
-            <NavLink className={navClassName} to="/native-jobs">
-              Native Jobs
-            </NavLink>
+            {headerLinks.map((link) => {
+              if (link.kind === "external") {
+                return (
+                  <a key={link.id} className="site-nav-link" href={link.href}>
+                    {link.label}
+                  </a>
+                );
+              }
+
+              return (
+                <NavLink key={link.id} className={navClassName} to={link.to}>
+                  {link.label}
+                </NavLink>
+              );
+            })}
 
             {user ? (
-              <NavLink className={navClassName} to="/dashboard">
-                Dashboard
-              </NavLink>
-            ) : null}
-
-            {showRecruiterLink ? (
-              <NavLink className={navClassName} to="/recruiter">
-                Recruiter
-              </NavLink>
-            ) : null}
-
-            {showMdcnLink ? (
-              <NavLink className={navClassName} to="/mdcn">
-                MDCN
-              </NavLink>
-            ) : null}
-
-            {showAdminLink ? (
-              <NavLink className={navClassName} to="/admin">
-                Admin
-              </NavLink>
-            ) : null}
-
-            {!user ? (
-              <>
-                <NavLink className={navClassName} to="/signin">
-                  Sign In
-                </NavLink>
-                <NavLink className={navClassName} to="/signup">
-                  Sign Up
-                </NavLink>
-              </>
-            ) : (
               <button className="site-nav-button" type="button" onClick={() => void handleSignOut()}>
                 Sign Out
               </button>
-            )}
+            ) : null}
           </nav>
         </div>
 
@@ -83,6 +88,17 @@ export function HeroShell({ title, subtitle }: HeroShellProps) {
         <h1 className="hero-title">{title}</h1>
         {subtitle ? <p className="hero-subtitle">{subtitle}</p> : null}
       </div>
+
+      <SiteMobileDrawer
+        variant="app"
+        isOpen={isMobileMenuOpen}
+        onClose={() => setIsMobileMenuOpen(false)}
+        pathname={location.pathname}
+        email={user?.email ?? ""}
+        links={mobileLinks}
+        showSignOut={Boolean(user)}
+        onSignOut={handleSignOut}
+      />
     </section>
   );
 }
