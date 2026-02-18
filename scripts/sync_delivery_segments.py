@@ -84,7 +84,12 @@ def main() -> int:
         emails=opted_in_emails,
         dry_run=config.dry_run,
     )
-    print(f"✅ Removed {removed} personalized recipients from weekly list {config.weekly_list_id}.")
+    if removed == 0 and not config.dry_run:
+        print(
+            f"ℹ️  No removals needed from weekly list {config.weekly_list_id}; contacts were already absent."
+        )
+    else:
+        print(f"✅ Removed {removed} personalized recipients from weekly list {config.weekly_list_id}.")
 
     if config.personalized_list_id:
         added = add_emails_to_brevo_list(

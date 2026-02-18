@@ -373,9 +373,18 @@ def remove_emails_from_brevo_list(
         return len(unique_emails)
 
     payload = _parse_response_payload(response)
-    raise RuntimeError(
-        f"Brevo list remove failed: {response.status_code} {payload.get('message', payload)}"
-    )
+    if response.status_code == 400:
+        if isinstance(payload, dict):
+            message = str(payload.get("message", ""))
+        else:
+            message = str(payload)
+
+        normalized_message = message.lower()
+        if "already removed" in normalized_message or "does not exist" in normalized_message:
+            return 0
+
+    detail = payload.get("message", payload) if isinstance(payload, dict) else payload
+    raise RuntimeError(f"Brevo list remove failed: {response.status_code} {detail}")
 
 
 def add_emails_to_brevo_list(
