@@ -4,6 +4,10 @@ import { CardPrimitive } from "../components/CardPrimitive";
 import { type DashboardRole } from "../features/auth/roles";
 import { useSession } from "../features/auth/session-context";
 import { fetchCandidateNativeApplications } from "../features/native-jobs/api";
+import {
+  normalizeCategorySelections,
+  summarizeCategorySelections,
+} from "../features/preferences/category-options";
 import { summarizeLocationSelections } from "../features/preferences/location-options";
 import type { NativeJobApplicationRecord } from "../features/native-jobs/types";
 import { getCurrentUser } from "../lib/auth";
@@ -29,18 +33,6 @@ function formatDate(value: string | null): string {
   const parsed = new Date(value);
   if (Number.isNaN(parsed.getTime())) return value;
   return parsed.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
-}
-
-function summarizeCategories(values: string[]): string {
-  if (values.length === 0) {
-    return "All categories";
-  }
-
-  if (values.length === 1) {
-    return values[0];
-  }
-
-  return `${values.length} selections`;
 }
 
 export function DashboardPage() {
@@ -109,7 +101,10 @@ export function DashboardPage() {
         }
 
         if (loaded.status === "ok") {
-          setPreferences(loaded.preferences);
+          setPreferences({
+            ...loaded.preferences,
+            categories: normalizeCategorySelections(loaded.preferences.categories),
+          });
           setTableWarning(null);
           setStatusMessage(null);
           return;
@@ -173,7 +168,7 @@ export function DashboardPage() {
       : "Weekly"
     : "Weekly (default)";
   const categoriesSummary = preferences.personalizeEnabled
-    ? summarizeCategories(preferences.categories)
+    ? summarizeCategorySelections(preferences.categories)
     : "All categories";
   const locationsSummary = preferences.personalizeEnabled
     ? summarizeLocationSelections(preferences.locations)

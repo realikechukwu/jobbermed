@@ -1,7 +1,13 @@
 import { type FormEvent, useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { CardPrimitive } from "../components/CardPrimitive";
-import { CATEGORY_ORDER } from "../features/aggregator-jobs/constants";
+import {
+  CATEGORY_OPTIONS,
+  getCategoryLabel,
+  normalizeCategorySelections,
+  summarizeCategorySelections,
+  toggleCategorySelection,
+} from "../features/preferences/category-options";
 import {
   getLocationLabel,
   normalizeLocationSelections,
@@ -65,6 +71,7 @@ export function PersonalizationPage() {
         if (loaded.status === "ok") {
           setPreferences({
             ...loaded.preferences,
+            categories: normalizeCategorySelections(loaded.preferences.categories),
             locations: normalizeLocationSelections(loaded.preferences.locations),
           });
           setTableWarning(null);
@@ -102,32 +109,14 @@ export function PersonalizationPage() {
   }, []);
 
   const categoryOptions = useMemo(() => {
-    const baseCategories = CATEGORY_ORDER.filter((category) => category !== "All");
-    const seen = new Set<string>();
-    const merged: string[] = [];
-
-    [...baseCategories, ...preferences.categories].forEach((category) => {
-      const cleaned = category.trim();
-      if (!cleaned) {
-        return;
-      }
-
-      const key = cleaned.toLowerCase();
-      if (seen.has(key)) {
-        return;
-      }
-
-      seen.add(key);
-      merged.push(cleaned);
-    });
-
-    return merged;
+    const knownValues = new Set(CATEGORY_OPTIONS.map((option) => option.value));
+    const unknownSelections = normalizeCategorySelections(preferences.categories)
+      .filter((value) => !knownValues.has(value))
+      .map((value) => ({ value, label: getCategoryLabel(value) }));
+    return [...CATEGORY_OPTIONS, ...unknownSelections];
   }, [preferences.categories]);
 
-  const selectedCategorySet = useMemo(
-    () => new Set(preferences.categories.map((category) => category.toLowerCase())),
-    [preferences.categories],
-  );
+  const selectedCategorySet = useMemo(() => new Set(normalizeCategorySelections(preferences.categories)), [preferences.categories]);
 
   const selectedLocationSet = useMemo(
     () => new Set(normalizeLocationSelections(preferences.locations)),
@@ -151,34 +140,16 @@ export function PersonalizationPage() {
     return labels.join(" • ");
   }, [preferences.locations]);
 
-  const selectedCategorySummary = useMemo(() => {
-    if (preferences.categories.length === 0) {
-      return "All categories";
-    }
-    if (preferences.categories.length === 1) {
-      return preferences.categories[0];
-    }
-    return `${preferences.categories.length} selections`;
-  }, [preferences.categories]);
+  const selectedCategorySummary = useMemo(
+    () => summarizeCategorySelections(preferences.categories),
+    [preferences.categories],
+  );
 
   const handleCategoryToggle = (category: string) => {
-    setPreferences((current) => {
-      const key = category.toLowerCase();
-      const selected = current.categories.filter((value) => value.trim().length > 0);
-      const hasCategory = selected.some((value) => value.toLowerCase() === key);
-
-      if (hasCategory) {
-        return {
-          ...current,
-          categories: selected.filter((value) => value.toLowerCase() !== key),
-        };
-      }
-
-      return {
-        ...current,
-        categories: [...selected, category],
-      };
-    });
+    setPreferences((current) => ({
+      ...current,
+      categories: toggleCategorySelection(current.categories, category),
+    }));
   };
 
   const handleLocationToggle = (value: string) => {
@@ -196,6 +167,7 @@ export function PersonalizationPage() {
 
     const nextPreferences: EmailPreferences = {
       ...preferences,
+      categories: normalizeCategorySelections(preferences.categories),
       locations: normalizeLocationSelections(preferences.locations),
     };
 
@@ -209,6 +181,7 @@ export function PersonalizationPage() {
       if (result.status === "ok") {
         setPreferences({
           ...result.preferences,
+          categories: normalizeCategorySelections(result.preferences.categories),
           locations: normalizeLocationSelections(result.preferences.locations),
         });
         setTableWarning(null);
@@ -309,16 +282,16 @@ export function PersonalizationPage() {
                     <p className="preference-section-subtitle">Select one or more job categories to prioritize.</p>
                     <div className="preference-source-group" id="category-filter">
                       {categoryOptions.map((category) => {
-                        const isChecked = selectedCategorySet.has(category.toLowerCase());
+                        const isChecked = selectedCategorySet.has(category.value);
                         return (
-                          <label key={category} className="preference-source">
+                          <label key={category.value} className="preference-source">
                             <input
                               type="checkbox"
-                              value={category}
+                              value={category.value}
                               checked={isChecked}
-                              onChange={() => handleCategoryToggle(category)}
+                              onChange={() => handleCategoryToggle(category.value)}
                             />
-                            <span>{category}</span>
+                            <span>{category.label}</span>
                           </label>
                         );
                       })}

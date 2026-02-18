@@ -158,6 +158,38 @@ KNOWN_LOCATION_TOKENS = {
     *NIGERIAN_STATE_TOKENS,
 }
 
+CATEGORY_TOKEN_DOCTOR = "doctor"
+CATEGORY_TOKEN_NURSE = "nurse"
+CATEGORY_TOKEN_PHARMACIST = "pharmacist"
+CATEGORY_TOKEN_MEDICAL_LAB = "medical_laboratory_scientist"
+CATEGORY_TOKEN_DENTIST = "dentist"
+CATEGORY_TOKEN_PUBLIC_HEALTH = "public_health"
+CATEGORY_TOKEN_HEALTHCARE_MANAGEMENT = "healthcare_management"
+CATEGORY_TOKEN_ALLIED_HEALTH = "allied_health"
+CATEGORY_TOKEN_OTHER = "other"
+
+CATEGORY_PREFERENCE_ALIASES = {
+    "doctor": CATEGORY_TOKEN_DOCTOR,
+    "doctors": CATEGORY_TOKEN_DOCTOR,
+    "nurse": CATEGORY_TOKEN_NURSE,
+    "nurses": CATEGORY_TOKEN_NURSE,
+    "nurses & midwives": CATEGORY_TOKEN_NURSE,
+    "nurses and midwives": CATEGORY_TOKEN_NURSE,
+    "midwife": CATEGORY_TOKEN_NURSE,
+    "midwives": CATEGORY_TOKEN_NURSE,
+    "pharmacist": CATEGORY_TOKEN_PHARMACIST,
+    "pharmacists": CATEGORY_TOKEN_PHARMACIST,
+    "medical laboratory scientist": CATEGORY_TOKEN_MEDICAL_LAB,
+    "medical laboratory scientists": CATEGORY_TOKEN_MEDICAL_LAB,
+    "dentist": CATEGORY_TOKEN_DENTIST,
+    "dentists": CATEGORY_TOKEN_DENTIST,
+    "public health": CATEGORY_TOKEN_PUBLIC_HEALTH,
+    "healthcare management": CATEGORY_TOKEN_HEALTHCARE_MANAGEMENT,
+    "allied health": CATEGORY_TOKEN_ALLIED_HEALTH,
+    "other": CATEGORY_TOKEN_OTHER,
+    "others": CATEGORY_TOKEN_OTHER,
+}
+
 
 @dataclass
 class RecipientPreference:
@@ -189,6 +221,56 @@ def value_matches(preferences: list[str], candidate: str) -> bool:
     if not target:
         return False
     return any(preference.lower() in target for preference in preferences)
+
+
+def normalize_category_preference(value: str) -> str:
+    raw = value.strip().lower()
+    if not raw:
+        return ""
+
+    raw = re.sub(r"\s+", " ", raw)
+    if raw in CATEGORY_PREFERENCE_ALIASES:
+        return CATEGORY_PREFERENCE_ALIASES[raw]
+
+    if "laboratory" in raw and "scientist" in raw:
+        return CATEGORY_TOKEN_MEDICAL_LAB
+    if "nurse" in raw or "midwi" in raw:
+        return CATEGORY_TOKEN_NURSE
+    if "doctor" in raw or "physician" in raw or "medical officer" in raw:
+        return CATEGORY_TOKEN_DOCTOR
+    if "pharmac" in raw:
+        return CATEGORY_TOKEN_PHARMACIST
+    if "dent" in raw:
+        return CATEGORY_TOKEN_DENTIST
+    if "public health" in raw:
+        return CATEGORY_TOKEN_PUBLIC_HEALTH
+    if "management" in raw:
+        return CATEGORY_TOKEN_HEALTHCARE_MANAGEMENT
+    if "allied health" in raw:
+        return CATEGORY_TOKEN_ALLIED_HEALTH
+
+    return raw
+
+
+def category_matches_preferences(preferences: list[str], candidate: str) -> bool:
+    if not preferences:
+        return True
+
+    normalized_preferences: set[str] = set()
+    for value in preferences:
+        normalized = normalize_category_preference(value)
+        if normalized:
+            normalized_preferences.add(normalized)
+
+    if not normalized_preferences:
+        return True
+
+    normalized_candidate = normalize_category_preference(candidate)
+    if normalized_candidate and normalized_candidate in normalized_preferences:
+        return True
+
+    # Keep a legacy fallback for unnormalized historical values.
+    return value_matches(preferences, candidate)
 
 
 def has_word(value: str, phrase: str) -> bool:
@@ -428,7 +510,7 @@ def filter_jobs_for_recipient(
 
     for job in jobs:
         category = str(job.get("job_category") or job.get("category") or "")
-        if recipient.categories and not value_matches(recipient.categories, category):
+        if recipient.categories and not category_matches_preferences(recipient.categories, category):
             continue
 
         location = str(job.get("location") or "")
