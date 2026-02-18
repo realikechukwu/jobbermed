@@ -103,11 +103,11 @@ export function RequireAuth({ children }: RequireAuthProps) {
 
 export function RequireRole({ roles, children, fallback, allowAdminBypass = true }: RequireRoleProps) {
   const location = useLocation();
-  const { user, roles: userRoles, hasRole, isLoading, isRevalidatingRoles } = useSession();
+  const { user, roles: userRoles, hasRole, isLoading } = useSession();
   const routeKey = `${location.pathname}${location.search}${location.hash}`;
   const isRouteChecking = useRoleGuardRevalidation(Boolean(user), routeKey);
 
-  if (isLoading || isRouteChecking || isRevalidatingRoles) {
+  if (isLoading || isRouteChecking) {
     return <GuardState title="Checking permissions" message="Validating your role access..." />;
   }
 
