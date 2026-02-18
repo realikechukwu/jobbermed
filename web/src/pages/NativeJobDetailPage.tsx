@@ -3,7 +3,9 @@ import { Link, useParams } from "react-router-dom";
 import { fetchPublishedNativeJobById } from "../features/native-jobs/api";
 import { parseNativeJobAdvertMeta } from "../features/native-jobs/advert-meta";
 import { NativeJobApplyForm } from "../features/native-jobs/components/NativeJobApplyForm";
+import { getJobTypeLabel } from "../features/native-jobs/job-type-options";
 import type { NativeJob } from "../features/native-jobs/types";
+import { getCategoryLabel } from "../features/preferences/category-options";
 import { RouteShell } from "../layouts/RouteShell";
 
 function formatDate(value: string | null): string {
@@ -122,8 +124,8 @@ export function NativeJobDetailPage() {
 
               <div className="native-job-meta">
                 {job.location ? <span className="native-chip">{job.location}</span> : null}
-                {job.jobType ? <span className="native-chip">{job.jobType}</span> : null}
-                {job.category ? <span className="native-chip">{job.category}</span> : null}
+                {job.jobType ? <span className="native-chip">{getJobTypeLabel(job.jobType)}</span> : null}
+                {job.category ? <span className="native-chip">{getCategoryLabel(job.category)}</span> : null}
               </div>
               {advertMeta.companyName ? (
                 <p className="meta native-job-company">Company: {advertMeta.companyName}</p>

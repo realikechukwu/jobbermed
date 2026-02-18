@@ -1,7 +1,9 @@
 import { type ChangeEvent, useEffect, useMemo, useState } from "react";
 import { NativeJobCard } from "../features/native-jobs/components/NativeJobCard";
+import { getJobTypeLabel } from "../features/native-jobs/job-type-options";
 import { fetchPublishedNativeJobs } from "../features/native-jobs/api";
 import type { NativeJob } from "../features/native-jobs/types";
+import { getCategoryLabel } from "../features/preferences/category-options";
 import { RouteShell } from "../layouts/RouteShell";
 
 export function NativeJobsPage() {
@@ -42,7 +44,14 @@ export function NativeJobsPage() {
     if (!normalizedQuery) return jobs;
 
     return jobs.filter((job) => {
-      const searchTarget = [job.title, job.location, job.jobType, job.category]
+      const searchTarget = [
+        job.title,
+        job.location,
+        job.jobType,
+        job.jobType ? getJobTypeLabel(job.jobType) : null,
+        job.category,
+        job.category ? getCategoryLabel(job.category) : null,
+      ]
         .filter((value): value is string => Boolean(value))
         .join(" ")
         .toLowerCase();

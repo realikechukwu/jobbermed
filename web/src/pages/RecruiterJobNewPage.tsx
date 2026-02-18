@@ -3,7 +3,9 @@ import { Link, useNavigate } from "react-router-dom";
 import { CardPrimitive } from "../components/CardPrimitive";
 import { composeNativeJobDescription } from "../features/native-jobs/advert-meta";
 import { createNativeJob } from "../features/native-jobs/api";
+import { JOB_TYPE_OPTIONS } from "../features/native-jobs/job-type-options";
 import type { NativeJobStatus } from "../features/native-jobs/types";
+import { CATEGORY_OPTIONS } from "../features/preferences/category-options";
 import { RouteShell } from "../layouts/RouteShell";
 
 type JobFormState = {
@@ -218,24 +220,38 @@ export function RecruiterJobNewPage() {
                 <label className="shell-label" htmlFor="job-type">
                   Job type
                 </label>
-                <input
+                <select
                   className="shell-input"
                   id="job-type"
                   value={form.jobType}
                   onChange={(event) => update("jobType", event.target.value)}
-                />
+                >
+                  <option value="">Select job type</option>
+                  {JOB_TYPE_OPTIONS.map((option) => (
+                    <option key={option.value} value={option.value}>
+                      {option.label}
+                    </option>
+                  ))}
+                </select>
               </div>
 
               <div>
                 <label className="shell-label" htmlFor="job-category">
                   Category
                 </label>
-                <input
+                <select
                   className="shell-input"
                   id="job-category"
                   value={form.category}
                   onChange={(event) => update("category", event.target.value)}
-                />
+                >
+                  <option value="">Select category</option>
+                  {CATEGORY_OPTIONS.map((option) => (
+                    <option key={option.value} value={option.value}>
+                      {option.label}
+                    </option>
+                  ))}
+                </select>
               </div>
 
               <div>

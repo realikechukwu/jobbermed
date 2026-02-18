@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { parseNativeJobAdvertMeta } from "../advert-meta";
+import { getJobTypeLabel } from "../job-type-options";
 import type { NativeJob } from "../types";
+import { getCategoryLabel } from "../../preferences/category-options";
 
 type NativeJobCardProps = {
   job: NativeJob;
@@ -58,8 +60,8 @@ export function NativeJobCard({ job }: NativeJobCardProps) {
 
       <div className="native-job-meta">
         {job.location ? <span className="native-chip">{job.location}</span> : null}
-        {job.jobType ? <span className="native-chip">{job.jobType}</span> : null}
-        {job.category ? <span className="native-chip">{job.category}</span> : null}
+        {job.jobType ? <span className="native-chip">{getJobTypeLabel(job.jobType)}</span> : null}
+        {job.category ? <span className="native-chip">{getCategoryLabel(job.category)}</span> : null}
       </div>
 
       <p className="meta native-job-deadline">Apply by {formatDate(job.applyDeadline)}</p>
