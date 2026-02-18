@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { parseNativeJobAdvertMeta } from "../advert-meta";
 import type { NativeJob } from "../types";
 
 type NativeJobCardProps = {
@@ -42,6 +43,8 @@ function formatDescriptionPreview(value: string): string {
 }
 
 export function NativeJobCard({ job }: NativeJobCardProps) {
+  const advertMeta = parseNativeJobAdvertMeta(job.description);
+
   return (
     <article className="card native-job-card">
       <div className="native-job-head">
@@ -49,7 +52,9 @@ export function NativeJobCard({ job }: NativeJobCardProps) {
         <p className="native-job-salary">{formatSalary(job)}</p>
       </div>
 
-      <p className="native-job-description">{formatDescriptionPreview(job.description)}</p>
+      <p className="native-job-description">{formatDescriptionPreview(advertMeta.description)}</p>
+      {advertMeta.companyName ? <p className="meta native-job-company">Company: {advertMeta.companyName}</p> : null}
+      {advertMeta.contactInfo ? <p className="meta native-job-contact">Contact: {advertMeta.contactInfo}</p> : null}
 
       <div className="native-job-meta">
         {job.location ? <span className="native-chip">{job.location}</span> : null}

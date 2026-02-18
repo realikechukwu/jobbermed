@@ -1,12 +1,15 @@
 import { type FormEvent, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { CardPrimitive } from "../components/CardPrimitive";
+import { composeNativeJobDescription } from "../features/native-jobs/advert-meta";
 import { createNativeJob } from "../features/native-jobs/api";
 import type { NativeJobStatus } from "../features/native-jobs/types";
 import { RouteShell } from "../layouts/RouteShell";
 
 type JobFormState = {
   title: string;
+  companyName: string;
+  contactInfo: string;
   description: string;
   requirements: string;
   responsibilities: string;
@@ -23,6 +26,8 @@ type JobFormState = {
 
 const initialState: JobFormState = {
   title: "",
+  companyName: "",
+  contactInfo: "",
   description: "",
   requirements: "",
   responsibilities: "",
@@ -98,7 +103,7 @@ export function RecruiterJobNewPage() {
     try {
       const createdJob = await createNativeJob({
         title: form.title,
-        description: form.description,
+        description: composeNativeJobDescription(form.description, form.companyName, form.contactInfo),
         requirements: toList(form.requirements),
         responsibilities: toList(form.responsibilities),
         location: form.location,
@@ -147,6 +152,34 @@ export function RecruiterJobNewPage() {
               onChange={(event) => update("description", event.target.value)}
               required
             />
+
+            <div className="dashboard-form-grid">
+              <div>
+                <label className="shell-label" htmlFor="job-company-name">
+                  Company name
+                </label>
+                <input
+                  className="shell-input"
+                  id="job-company-name"
+                  value={form.companyName}
+                  onChange={(event) => update("companyName", event.target.value)}
+                  placeholder="e.g. JobberMed Clinics"
+                />
+              </div>
+
+              <div>
+                <label className="shell-label" htmlFor="job-contact-info">
+                  Recruiter contact
+                </label>
+                <input
+                  className="shell-input"
+                  id="job-contact-info"
+                  value={form.contactInfo}
+                  onChange={(event) => update("contactInfo", event.target.value)}
+                  placeholder="e.g. hiring@jobbermed.com, +234..."
+                />
+              </div>
+            </div>
 
             <label className="shell-label" htmlFor="job-requirements">
               Requirements (one per line)

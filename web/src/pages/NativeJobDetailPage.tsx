@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { fetchPublishedNativeJobById } from "../features/native-jobs/api";
+import { parseNativeJobAdvertMeta } from "../features/native-jobs/advert-meta";
 import { NativeJobApplyForm } from "../features/native-jobs/components/NativeJobApplyForm";
 import type { NativeJob } from "../features/native-jobs/types";
 import { RouteShell } from "../layouts/RouteShell";
@@ -86,10 +87,14 @@ export function NativeJobDetailPage() {
     };
   }, [jobId]);
 
-  const descriptionParagraphs = useMemo(() => {
-    if (!job) return [];
-    return normalizeParagraphs(job.description);
+  const advertMeta = useMemo(() => {
+    if (!job) {
+      return { companyName: null, contactInfo: null, description: "" };
+    }
+    return parseNativeJobAdvertMeta(job.description);
   }, [job]);
+
+  const descriptionParagraphs = useMemo(() => normalizeParagraphs(advertMeta.description), [advertMeta.description]);
 
   return (
     <RouteShell
@@ -120,6 +125,10 @@ export function NativeJobDetailPage() {
                 {job.jobType ? <span className="native-chip">{job.jobType}</span> : null}
                 {job.category ? <span className="native-chip">{job.category}</span> : null}
               </div>
+              {advertMeta.companyName ? (
+                <p className="meta native-job-company">Company: {advertMeta.companyName}</p>
+              ) : null}
+              {advertMeta.contactInfo ? <p className="meta native-job-contact">Contact: {advertMeta.contactInfo}</p> : null}
 
               <p className="meta native-job-deadline">Application deadline: {formatDate(job.applyDeadline)}</p>
 

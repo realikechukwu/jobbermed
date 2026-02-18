@@ -713,6 +713,11 @@ a {
   margin: 2px 0 0;
 }
 
+.native-job-company,
+.native-job-contact {
+  margin: 0;
+}
+
 .native-job-actions {
   margin-top: auto;
   padding-top: 6px;

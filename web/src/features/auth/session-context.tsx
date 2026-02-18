@@ -30,6 +30,11 @@ type UserPlatformRoleRow = {
   is_active?: unknown;
 };
 
+type HydrateOptions = {
+  blockUi?: boolean;
+  preserveRolesOnError?: boolean;
+};
+
 const SessionContext = createContext<SessionContextValue | undefined>(undefined);
 
 const IGNORABLE_ROLE_QUERY_CODES = new Set(["42P01", "42703", "42501"]);
@@ -83,9 +88,15 @@ export function SessionProvider({ children }: { children: ReactNode }) {
   const [isRevalidatingRoles, setIsRevalidatingRoles] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const mountedRef = useRef(true);
+  const hasInitializedRef = useRef(false);
 
-  const hydrate = useCallback(async (nextSession: Session | null) => {
-    setIsLoading(true);
+  const hydrate = useCallback(async (nextSession: Session | null, options?: HydrateOptions) => {
+    const blockUi = options?.blockUi ?? !hasInitializedRef.current;
+    const preserveRolesOnError = options?.preserveRolesOnError ?? !blockUi;
+
+    if (blockUi) {
+      setIsLoading(true);
+    }
     setError(null);
 
     if (!nextSession?.user) {
@@ -95,6 +106,7 @@ export function SessionProvider({ children }: { children: ReactNode }) {
       setRoles([]);
       setIsRevalidatingRoles(false);
       setIsLoading(false);
+      hasInitializedRef.current = true;
       return;
     }
 
@@ -109,12 +121,15 @@ export function SessionProvider({ children }: { children: ReactNode }) {
       const message = loadError instanceof Error ? loadError.message : "Unable to initialize session.";
       setSession(nextSession);
       setUser(nextSession.user);
-      setRoles(["candidate"]);
+      if (!preserveRolesOnError) {
+        setRoles(["candidate"]);
+      }
       setError(message);
     } finally {
-      if (mountedRef.current) {
+      if (mountedRef.current && blockUi) {
         setIsLoading(false);
       }
+      hasInitializedRef.current = true;
     }
   }, []);
 
@@ -128,7 +143,10 @@ export function SessionProvider({ children }: { children: ReactNode }) {
       return;
     }
 
-    await hydrate(data.session ?? null);
+    await hydrate(data.session ?? null, {
+      blockUi: false,
+      preserveRolesOnError: true,
+    });
   }, [hydrate]);
 
   const revalidateRoles = useCallback(async () => {
@@ -161,7 +179,10 @@ export function SessionProvider({ children }: { children: ReactNode }) {
       if (sessionError && mountedRef.current) {
         setError(sessionError.message || "Unable to initialize session.");
       }
-      await hydrate(data.session ?? null);
+      await hydrate(data.session ?? null, {
+        blockUi: true,
+        preserveRolesOnError: false,
+      });
     };
 
     void bootstrap();
@@ -169,7 +190,10 @@ export function SessionProvider({ children }: { children: ReactNode }) {
     const {
       data: { subscription },
     } = supabase.auth.onAuthStateChange((_event, nextSession) => {
-      void hydrate(nextSession);
+      void hydrate(nextSession, {
+        blockUi: false,
+        preserveRolesOnError: true,
+      });
     });
 
     return () => {
