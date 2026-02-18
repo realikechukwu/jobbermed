@@ -1,4 +1,4 @@
-import { type ReactNode, useEffect, useState } from "react";
+import { type ReactNode, useEffect, useRef, useState } from "react";
 import { Navigate, useLocation } from "react-router-dom";
 import { CardPrimitive } from "../../components/CardPrimitive";
 import { RouteShell } from "../../layouts/RouteShell";
@@ -33,9 +33,17 @@ function toSigninUrl(pathname: string, search: string, hash: string): string {
   return `/signin?next=${encodeURIComponent(next)}`;
 }
 
+/**
+ * Revalidates roles on route changes and when the tab becomes active again.
+ * Critically: it does NOT force a blocking "Checking..." UI once the user is already present,
+ * because that would remount guarded routes and wipe in-progress form state.
+ */
 function useRoleGuardRevalidation(enabled: boolean, routeKey: string): boolean {
   const { revalidateRoles } = useSession();
   const [isRouteChecking, setIsRouteChecking] = useState(false);
+
+  // Once we've ever had the guard enabled (i.e. user exists), we avoid blocking UI on future checks.
+  const hasEverBeenEnabledRef = useRef(false);
 
   useEffect(() => {
     if (!enabled) {
@@ -43,13 +51,38 @@ function useRoleGuardRevalidation(enabled: boolean, routeKey: string): boolean {
       return;
     }
 
+    // Mark that we have had an authenticated user at least once in this mount.
+    hasEverBeenEnabledRef.current = true;
+
     let isMounted = true;
-    setIsRouteChecking(true);
+
+    // Only block on the very first enabled run; after that, do background checks.
+    const shouldBlockUi = !hasEverBeenEnabledRef.current ? true : false;
+
+    // Note: because we set the ref above, shouldBlockUi will be false here,
+    // so we need a separate "first run" ref.
+  }, [enabled]);
+
+  const firstBlockingRunRef = useRef(true);
+
+  useEffect(() => {
+    if (!enabled) {
+      setIsRouteChecking(false);
+      firstBlockingRunRef.current = true;
+      return;
+    }
+
+    let isMounted = true;
+
+    // Block only on the first authenticated guard pass after mount.
+    if (firstBlockingRunRef.current) {
+      setIsRouteChecking(true);
+    }
 
     void revalidateRoles().finally(() => {
-      if (isMounted) {
-        setIsRouteChecking(false);
-      }
+      if (!isMounted) return;
+      setIsRouteChecking(false);
+      firstBlockingRunRef.current = false;
     });
 
     return () => {
@@ -58,16 +91,16 @@ function useRoleGuardRevalidation(enabled: boolean, routeKey: string): boolean {
   }, [enabled, routeKey, revalidateRoles]);
 
   useEffect(() => {
-    if (!enabled) {
-      return;
-    }
+    if (!enabled) return;
 
     const handleFocus = () => {
+      // Background only (do not set isRouteChecking)
       void revalidateRoles();
     };
 
     const handleVisibility = () => {
       if (document.visibilityState === "visible") {
+        // Background only (do not set isRouteChecking)
         void revalidateRoles();
       }
     };
@@ -90,7 +123,8 @@ export function RequireAuth({ children }: RequireAuthProps) {
   const routeKey = `${location.pathname}${location.search}${location.hash}`;
   const isRouteChecking = useRoleGuardRevalidation(Boolean(user), routeKey);
 
-  if (isLoading || isRouteChecking) {
+  // Only show blocking UI when we DON'T have a user yet (true initial load).
+  if (!user && (isLoading || isRouteChecking)) {
     return <GuardState title="Checking session" message="Loading your account details..." />;
   }
 
@@ -101,13 +135,19 @@ export function RequireAuth({ children }: RequireAuthProps) {
   return <>{children}</>;
 }
 
-export function RequireRole({ roles, children, fallback, allowAdminBypass = true }: RequireRoleProps) {
+export function RequireRole({
+  roles,
+  children,
+  fallback,
+  allowAdminBypass = true,
+}: RequireRoleProps) {
   const location = useLocation();
   const { user, roles: userRoles, hasRole, isLoading } = useSession();
   const routeKey = `${location.pathname}${location.search}${location.hash}`;
   const isRouteChecking = useRoleGuardRevalidation(Boolean(user), routeKey);
 
-  if (isLoading || isRouteChecking) {
+  // Only show blocking UI when we DON'T have a user yet (true initial load).
+  if (!user && (isLoading || isRouteChecking)) {
     return <GuardState title="Checking permissions" message="Validating your role access..." />;
   }
 

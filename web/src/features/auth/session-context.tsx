@@ -10,7 +10,13 @@ import {
 } from "react";
 import type { Session, User } from "@supabase/supabase-js";
 import { getSupabaseClient } from "../../lib/supabase-client";
-import { deriveClaimRoles, type DashboardRole, hasRole as hasRoleUtil, mergeRoles, normalizeRole } from "./roles";
+import {
+  deriveClaimRoles,
+  type DashboardRole,
+  hasRole as hasRoleUtil,
+  mergeRoles,
+  normalizeRole,
+} from "./roles";
 
 type SessionContextValue = {
   session: Session | null;
@@ -33,6 +39,7 @@ type UserPlatformRoleRow = {
 type HydrateOptions = {
   blockUi?: boolean;
   preserveRolesOnError?: boolean;
+  event?: string;
 };
 
 const SessionContext = createContext<SessionContextValue | undefined>(undefined);
@@ -40,8 +47,10 @@ const SessionContext = createContext<SessionContextValue | undefined>(undefined)
 const IGNORABLE_ROLE_QUERY_CODES = new Set(["42P01", "42703", "42501"]);
 
 function isRoleActive(row: UserPlatformRoleRow): boolean {
-  const status = typeof row.status === "string" ? row.status.toLowerCase() : "active";
-  const isActive = typeof row.is_active === "boolean" ? row.is_active : true;
+  const status =
+    typeof row.status === "string" ? row.status.toLowerCase() : "active";
+  const isActive =
+    typeof row.is_active === "boolean" ? row.is_active : true;
   return isActive && status === "active";
 }
 
@@ -87,51 +96,72 @@ export function SessionProvider({ children }: { children: ReactNode }) {
   const [isLoading, setIsLoading] = useState(true);
   const [isRevalidatingRoles, setIsRevalidatingRoles] = useState(false);
   const [error, setError] = useState<string | null>(null);
+
   const mountedRef = useRef(true);
   const hasInitializedRef = useRef(false);
 
-  const hydrate = useCallback(async (nextSession: Session | null, options?: HydrateOptions) => {
-    const blockUi = options?.blockUi ?? !hasInitializedRef.current;
-    const preserveRolesOnError = options?.preserveRolesOnError ?? !blockUi;
+  const hydrate = useCallback(
+    async (nextSession: Session | null, options?: HydrateOptions) => {
+      const blockUi = options?.blockUi ?? !hasInitializedRef.current;
+      const preserveRolesOnError = options?.preserveRolesOnError ?? !blockUi;
+      const authEvent = options?.event;
 
-    if (blockUi) {
-      setIsLoading(true);
-    }
-    setError(null);
-
-    if (!nextSession?.user) {
-      if (!mountedRef.current) return;
-      setSession(null);
-      setUser(null);
-      setRoles([]);
-      setIsRevalidatingRoles(false);
-      setIsLoading(false);
-      hasInitializedRef.current = true;
-      return;
-    }
-
-    try {
-      const resolvedRoles = await resolveRoles(nextSession.user);
-      if (!mountedRef.current) return;
-      setSession(nextSession);
-      setUser(nextSession.user);
-      setRoles(resolvedRoles);
-    } catch (loadError) {
-      if (!mountedRef.current) return;
-      const message = loadError instanceof Error ? loadError.message : "Unable to initialize session.";
-      setSession(nextSession);
-      setUser(nextSession.user);
-      if (!preserveRolesOnError) {
-        setRoles(["candidate"]);
+      if (blockUi) {
+        setIsLoading(true);
       }
-      setError(message);
-    } finally {
-      if (mountedRef.current && blockUi) {
+
+      setError(null);
+
+      // 🚨 KEY FIX: Only clear state on explicit SIGNED_OUT
+      if (!nextSession?.user) {
+        if (authEvent !== "SIGNED_OUT") {
+          // Transient null during tab focus / token refresh → ignore
+          return;
+        }
+
+        if (!mountedRef.current) return;
+
+        setSession(null);
+        setUser(null);
+        setRoles([]);
+        setIsRevalidatingRoles(false);
         setIsLoading(false);
+        hasInitializedRef.current = true;
+        return;
       }
-      hasInitializedRef.current = true;
-    }
-  }, []);
+
+      try {
+        const resolvedRoles = await resolveRoles(nextSession.user);
+        if (!mountedRef.current) return;
+
+        setSession(nextSession);
+        setUser(nextSession.user);
+        setRoles(resolvedRoles);
+      } catch (loadError) {
+        if (!mountedRef.current) return;
+
+        const message =
+          loadError instanceof Error
+            ? loadError.message
+            : "Unable to initialize session.";
+
+        setSession(nextSession);
+        setUser(nextSession.user);
+
+        if (!preserveRolesOnError) {
+          setRoles(["candidate"]);
+        }
+
+        setError(message);
+      } finally {
+        if (mountedRef.current && blockUi) {
+          setIsLoading(false);
+        }
+        hasInitializedRef.current = true;
+      }
+    },
+    [],
+  );
 
   const refresh = useCallback(async () => {
     const supabase = getSupabaseClient();
@@ -161,7 +191,10 @@ export function SessionProvider({ children }: { children: ReactNode }) {
       setError(null);
     } catch (roleError) {
       if (!mountedRef.current) return;
-      const message = roleError instanceof Error ? roleError.message : "Unable to revalidate roles.";
+      const message =
+        roleError instanceof Error
+          ? roleError.message
+          : "Unable to revalidate roles.";
       setError(message);
     } finally {
       if (mountedRef.current) {
@@ -175,10 +208,15 @@ export function SessionProvider({ children }: { children: ReactNode }) {
     const supabase = getSupabaseClient();
 
     const bootstrap = async () => {
-      const { data, error: sessionError } = await supabase.auth.getSession();
+      const { data, error: sessionError } =
+        await supabase.auth.getSession();
+
       if (sessionError && mountedRef.current) {
-        setError(sessionError.message || "Unable to initialize session.");
+        setError(
+          sessionError.message || "Unable to initialize session.",
+        );
       }
+
       await hydrate(data.session ?? null, {
         blockUi: true,
         preserveRolesOnError: false,
@@ -189,10 +227,11 @@ export function SessionProvider({ children }: { children: ReactNode }) {
 
     const {
       data: { subscription },
-    } = supabase.auth.onAuthStateChange((_event, nextSession) => {
+    } = supabase.auth.onAuthStateChange((event, nextSession) => {
       void hydrate(nextSession, {
         blockUi: false,
         preserveRolesOnError: true,
+        event,
       });
     });
 
@@ -214,13 +253,25 @@ export function SessionProvider({ children }: { children: ReactNode }) {
       refresh,
       revalidateRoles,
     }),
-    [error, isLoading, isRevalidatingRoles, refresh, revalidateRoles, roles, session, user],
+    [
+      error,
+      isLoading,
+      isRevalidatingRoles,
+      refresh,
+      revalidateRoles,
+      roles,
+      session,
+      user,
+    ],
   );
 
-  return <SessionContext.Provider value={value}>{children}</SessionContext.Provider>;
+  return (
+    <SessionContext.Provider value={value}>
+      {children}
+    </SessionContext.Provider>
+  );
 }
 
-// eslint-disable-next-line react-refresh/only-export-components
 export function useSession() {
   const context = useContext(SessionContext);
   if (!context) {
