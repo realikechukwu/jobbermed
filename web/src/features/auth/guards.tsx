@@ -42,27 +42,7 @@ function useRoleGuardRevalidation(enabled: boolean, routeKey: string): boolean {
   const { revalidateRoles } = useSession();
   const [isRouteChecking, setIsRouteChecking] = useState(false);
 
-  // Once we've ever had the guard enabled (i.e. user exists), we avoid blocking UI on future checks.
-  const hasEverBeenEnabledRef = useRef(false);
-
-  useEffect(() => {
-    if (!enabled) {
-      setIsRouteChecking(false);
-      return;
-    }
-
-    // Mark that we have had an authenticated user at least once in this mount.
-    hasEverBeenEnabledRef.current = true;
-
-    let isMounted = true;
-
-    // Only block on the very first enabled run; after that, do background checks.
-    const shouldBlockUi = !hasEverBeenEnabledRef.current ? true : false;
-
-    // Note: because we set the ref above, shouldBlockUi will be false here,
-    // so we need a separate "first run" ref.
-  }, [enabled]);
-
+  // Block only on the first authenticated check after mount; after that, background-only.
   const firstBlockingRunRef = useRef(true);
 
   useEffect(() => {
@@ -74,7 +54,6 @@ function useRoleGuardRevalidation(enabled: boolean, routeKey: string): boolean {
 
     let isMounted = true;
 
-    // Block only on the first authenticated guard pass after mount.
     if (firstBlockingRunRef.current) {
       setIsRouteChecking(true);
     }
