@@ -3,6 +3,7 @@ import { CardPrimitive } from "./components/CardPrimitive";
 import { RequireAuth, RequireRole } from "./features/auth/guards";
 import { RouteShell } from "./layouts/RouteShell";
 import { AdminDashboardPage } from "./pages/AdminDashboardPage";
+import { AboutPage } from "./pages/AboutPage";
 import { ChangePasswordPage } from "./pages/ChangePasswordPage";
 import { DashboardPage } from "./pages/DashboardPage";
 import { ForgotPasswordPage } from "./pages/ForgotPasswordPage";
@@ -10,6 +11,7 @@ import { HomePage } from "./pages/HomePage";
 import { MdcnDashboardPage } from "./pages/MdcnDashboardPage";
 import { NativeJobDetailPage } from "./pages/NativeJobDetailPage";
 import { NativeJobsPage } from "./pages/NativeJobsPage";
+import { PrivacyPage } from "./pages/PrivacyPage";
 import { RecruiterDashboardPage } from "./pages/RecruiterDashboardPage";
 import { RecruiterJobApplicantsPage } from "./pages/RecruiterJobApplicantsPage";
 import { RecruiterJobNewPage } from "./pages/RecruiterJobNewPage";
@@ -18,6 +20,7 @@ import { ResetPasswordPage } from "./pages/ResetPasswordPage";
 import { PersonalizationPage } from "./pages/PersonalizationPage";
 import { SigninPage } from "./pages/SigninPage";
 import { SignupPage } from "./pages/SignupPage";
+import { SubscribePage } from "./pages/SubscribePage";
 
 function AdminOnlyFallback() {
   return (
@@ -55,6 +58,9 @@ export function App() {
       <Route path="/native-jobs/:jobId" element={<NativeJobDetailPage />} />
       <Route path="/signin" element={<SigninPage />} />
       <Route path="/signup" element={<SignupPage />} />
+      <Route path="/about" element={<AboutPage />} />
+      <Route path="/privacy" element={<PrivacyPage />} />
+      <Route path="/subscribe" element={<SubscribePage />} />
       <Route path="/forgot-password" element={<ForgotPasswordPage />} />
       <Route path="/reset-password" element={<ResetPasswordPage />} />
 
