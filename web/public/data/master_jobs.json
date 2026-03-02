@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "extracted_at": "2026-03-01T04:38:54.568618",
+    "extracted_at": "2026-03-02T04:34:28.210933",
     "model": "gpt-4o-mini",
     "total_processed": 244,
-    "duplicates_removed": 29,
+    "duplicates_removed": 28,
     "skipped_old": 0,
     "skipped_empty": 0,
     "errors": 0,
-    "openai_calls": 31
+    "openai_calls": 29
   },
   "jobs": [
     {
@@ -2196,6 +2196,44 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/pharmacy-specialist-375",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Healthcare Assistant",
+      "company": "Tofaans Hospital Amule Ayobo",
+      "location": "Lagos, Nigeria",
+      "job_type": "Part-Time",
+      "job_category": "Allied Health",
+      "salary": "",
+      "experience": "",
+      "qualification": "Minimum of SSCE or equivalent qualification",
+      "requirements": [
+        "Certificate or training as a Health Care Assistant",
+        "Previous experience in a hospital or healthcare facility is preferred",
+        "Basic knowledge of patient care and hospital hygiene standards",
+        "Ability to work shifts, including nights and weekends",
+        "Good communication and interpersonal skills",
+        "Compassionate, patient, and respectful attitude",
+        "Physically fit and able to assist with patient movement"
+      ],
+      "responsibilities": [
+        "Assist patients with daily living activities such as bathing, dressing, feeding, and mobility",
+        "Support nurses in monitoring patients’ vital signs (temperature, pulse, respiration, blood pressure)",
+        "Help in preparing patients for medical examinations and procedures",
+        "Maintain cleanliness and hygiene of wards, patient beds, and equipment",
+        "Assist in transferring and repositioning patients safely",
+        "Observe patients and promptly report any changes in condition to the nursing staff",
+        "Assist with stocking and organising medical supplies",
+        "Carry out any other duties assigned by the nursing or hospital management"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-23",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/healthcare-assistantyy-374",
       "_source": "medlocum"
     },
     {
