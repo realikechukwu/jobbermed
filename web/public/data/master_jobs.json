@@ -1,15 +1,451 @@
 {
   "metadata": {
-    "extracted_at": "2026-03-03T04:33:00.241872",
+    "extracted_at": "2026-03-04T04:26:23.698175",
     "model": "gpt-4o-mini",
     "total_processed": 244,
-    "duplicates_removed": 29,
+    "duplicates_removed": 27,
     "skipped_old": 0,
     "skipped_empty": 0,
     "errors": 0,
-    "openai_calls": 39
+    "openai_calls": 42
   },
   "jobs": [
+    {
+      "job_title": "Registered Nurse",
+      "company": "Bolin Mining Company Limited",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Nurse",
+      "salary": "NGN350,000 - NGN400,000 / monthly",
+      "experience": "",
+      "qualification": "Professional nursing qualification (Bachelor of Nursing / Registered Nurse) from a recognised institution.",
+      "requirements": [
+        "Current registration with the Nursing and Midwifery Council of Nigeria (NMCN) or equivalent regulatory body.",
+        "Proven clinical experience in general nursing; prior experience in occupational or industrial health settings is an advantage.",
+        "Strong knowledge of emergency care procedures, infection control standards, and occupational health practices.",
+        "Excellent communication, interpersonal, and record-keeping skills.",
+        "Ability to work independently, make sound clinical judgements, and respond effectively in emergencies."
+      ],
+      "responsibilities": [
+        "Assess, monitor, and document the health status of employees, including vital signs, symptoms, and overall wellbeing.",
+        "Deliver nursing care in line with established clinical protocols and standards.",
+        "Provide emergency first aid and coordinate with medical officers for urgent care or referrals.",
+        "Administer medications, injections, immunisations, and treatments as prescribed.",
+        "Assist in employee health screening programmes, pre-employment medical checks, and routine health assessments.",
+        "Maintain accurate patient records and ensure confidentiality in line with professional standards.",
+        "Promote health education and disease prevention initiatives among staff.",
+        "Participate in health surveillance and safety meetings to address workplace health risks.",
+        "Collaborate with other healthcare professionals to plan and implement individualized care plans."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-03-03",
+      "deadline": "2026-03-20",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/registered-nurse-448",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Senior Technical Officer, Maternal and Neonatal Health",
+      "company": "FHI 360",
+      "location": "Quelimane, Mozambique",
+      "job_type": "Full-Time",
+      "job_category": "Public Health",
+      "salary": "",
+      "experience": "Minimum of 6 years’ experience in clinical care and public health",
+      "qualification": "Master's degree or equivalent in Public Health, Social Sciences, Development Studies, or other relevant fields",
+      "requirements": [
+        "Medical doctor, preferably an obstetrician/gynecologist or senior nurse specializing in pregnancy, labor and delivery and neonatal care",
+        "Proven leadership experience in supervising and evaluating staff performance",
+        "Experience in designing and implementing training and guidance in the provision of maternal and child health clinical services",
+        "Knowledge of high-impact interventions in maternal, neonatal, and child health",
+        "Fluent in Portuguese required with oral presentation skills in English",
+        "Excellent oral and written communication skills",
+        "Knowledge of computer software programs (Word, Excel, PowerPoint)"
+      ],
+      "responsibilities": [
+        "Provide technical expertise and supervision in the implementation and monitoring of maternal and neonatal health services in health facilities and in the community",
+        "Provide overall technical direction and guidance in line with the expected results of the project",
+        "Provide technical support, including training for project staff and partners",
+        "Monitor and maintain protocols, instruments, data sets, manuals, training materials, and reports related to the technical area of activity",
+        "Conduct project implementation analysis to identify areas for improvement and propose appropriate technical strategies and guidelines"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-03-03",
+      "deadline": "2026-03-17",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/senior-technical-officer-maternal-and-neonatal-health-446",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Technical Officer, Maternal and Neonatal Health",
+      "company": "FHI 360",
+      "location": "Quelimane, Mozambique",
+      "job_type": "Full-Time",
+      "job_category": "Public Health",
+      "salary": "",
+      "experience": "At least four years of experience in clinical care and public health, including maternal and child health programs",
+      "qualification": "Medical doctor or Senior Maternal and Child Health Technician/ Nurse",
+      "requirements": [
+        "At least four years of experience in clinical care and public health, including maternal and child health programs",
+        "Experience in direct supervision of program staff",
+        "Experience in designing and implementing training and guidance at the district and health facility levels",
+        "Experience working in Nampula and Zambezia provinces",
+        "Excellent oral and written communication skills in Portuguese",
+        "Knowledge of computer software programs (Word, Excel, PowerPoint)"
+      ],
+      "responsibilities": [
+        "Support the Senior Maternal and Neonatal Health Officer to ensure the quality of maternal and neonatal health clinical services",
+        "Develop a training and adoption strategy and lead training and adoption activities that strengthen the capacity of district and health facility staff",
+        "Collaborate with project technical staff to plan and implement service strengthening activities"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-03-03",
+      "deadline": "2026-03-17",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/technical-officer-maternal-and-neonatal-health-445",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Senior Technical Officer, Child Health",
+      "company": "FHI 360",
+      "location": "Quelimane, Mozambique",
+      "job_type": "Full-Time",
+      "job_category": "Public Health",
+      "salary": "",
+      "experience": "Minimum of 6 years’ experience",
+      "qualification": "Master's degree or equivalent in Public Health, Social Sciences, Development Studies, or other relevant fields",
+      "requirements": [
+        "Medical doctor, preferably an obstetrician/gynecologist or senior nurse specializing in pregnancy, labor and delivery and neonatal care",
+        "Proven leadership experience in supervising and evaluating staff performance",
+        "Experience in designing and implementing training and guidance in the provision of maternal and child health clinical services",
+        "Knowledge of high-impact interventions in maternal, neonatal, and child health",
+        "Fluent in Portuguese required with oral presentation skills in English",
+        "Ability to work independently and manage a high-volume workflow",
+        "Excellent oral and written communication skills",
+        "Excellent organizational and analytical skills",
+        "Ability to work under pressure and adapt"
+      ],
+      "responsibilities": [
+        "Provide technical expertise and supervision in the implementation and monitoring of Child Health services at the health unit and community levels",
+        "Provide the technical team with general direction and guidance aligned with the expected results, focusing on Child Heath",
+        "Offer technical support in child health, including training for project staff and partners",
+        "Monitor and maintain protocols, instruments, data sets, manuals, training materials, and reports related to the technical area of activity",
+        "Work closely with the team to ensure technically sound, integrated, aligned, comprehensive implementation",
+        "Conduct implementation analysis of the children's area to identify areas for improvement",
+        "Provide guidance and team training",
+        "Contribute content on clinical activities and participate in the development of work plans, quarterly and annual reports, financial reports"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-03-03",
+      "deadline": "2026-03-17",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/senior-technical-officer-child-health-444",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Medical Officer",
+      "company": "Bergstein Hospital",
+      "location": "Ikorodu, Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Doctor",
+      "salary": "NGN450,000 - NGN650,000 / monthly",
+      "experience": "2–3 years post-NYSC clinical experience",
+      "qualification": "MBBS or equivalent medical degree from a recognized institution",
+      "requirements": [
+        "Valid practicing license with the Medical and Dental Council",
+        "Completion of NYSC or exemption certificate",
+        "Strong clinical and diagnostic skills",
+        "Excellent communication and interpersonal skills",
+        "Ability to work in a fast-paced clinical environment",
+        "Experience working in a private hospital setting",
+        "Additional certifications such as ACLS, BLS, or related clinical training",
+        "Strong teamwork and leadership abilities."
+      ],
+      "responsibilities": [
+        "Examine, diagnose, and treat patients presenting with various medical conditions",
+        "Provide general medical consultations and manage outpatient and inpatient care",
+        "Order and interpret laboratory and diagnostic tests",
+        "Prescribe appropriate medications and treatment plans",
+        "Monitor patient progress and adjust treatments when necessary",
+        "Maintain accurate and detailed medical records",
+        "Respond to medical emergencies promptly and effectively",
+        "Collaborate with specialists, nurses, laboratory scientists, and other healthcare professionals",
+        "Ensure compliance with hospital policies, clinical protocols, and ethical standards",
+        "Participate in clinical meetings, case reviews, and continuous medical education"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-03-03",
+      "deadline": "2026-03-17",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/medical-officer-443",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Production Pharmacist",
+      "company": "Dele Pharmaceutical",
+      "location": "Ilorin, Kwara, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Pharmacist",
+      "salary": "",
+      "experience": "3 – 5 years",
+      "qualification": "B.Pharm or Pharm.D Degree",
+      "requirements": [
+        "Registered Pharmacist with current license to practice",
+        "Strong knowledge of aseptic processing, sterilization, WFI systems, and cleanroom operations",
+        "Excellent problem-solving and decision-making abilities",
+        "Good documentation and report-writing skills",
+        "Ability to work under pressure and meet production deadlines",
+        "Proficiency in MS Office and production reporting tools"
+      ],
+      "responsibilities": [
+        "Plan and manage daily, weekly, and monthly production schedules for IV fluids.",
+        "Ensure optimal utilization of manpower, machines, materials, and utilities.",
+        "Monitor production output against targets and take corrective actions where necessary.",
+        "Ensure full compliance with cGMP, WHO guidelines, NAFDAC regulations, and SOPs.",
+        "Participate in internal, external, and regulatory inspections and audits.",
+        "Work closely with Quality Assurance and Quality Control to ensure product quality.",
+        "Supervise, mentor, and evaluate production supervisors, line leaders, and operators."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-03-03",
+      "deadline": "2026-03-21",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/production-pharmacist-442",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Laboratory Analyst",
+      "company": "Bolin Mining Company Limited",
+      "location": "Itobe, Kogi, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Other",
+      "salary": "NGN150,000 - NGN200,000 / monthly",
+      "experience": "At least 2 years’ laboratory experience",
+      "qualification": "Bachelor’s degree in Chemistry, Geology, Laboratory Science, or related discipline",
+      "requirements": [
+        "Bachelor’s degree in Chemistry, Geology, Laboratory Science, or related discipline.",
+        "At least 2 years’ laboratory experience (mineral or industrial lab preferred).",
+        "Strong analytical and documentation skills.",
+        "Attention to detail and ability to work independently."
+      ],
+      "responsibilities": [
+        "Conduct laboratory tests on mineral samples and raw materials.",
+        "Analyze chemical and physical properties of samples.",
+        "Maintain accurate records of test results and reports.",
+        "Ensure laboratory equipment is properly calibrated and maintained.",
+        "Follow laboratory safety standards and quality procedures."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-03-03",
+      "deadline": "2026-03-29",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/laboratory-analyst-441",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Optometrist",
+      "company": "CarePoint Hospitals",
+      "location": "Egbeda, Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Allied Health",
+      "salary": "",
+      "experience": "2–3 years post-qualification clinical experience",
+      "qualification": "Doctor of Optometry (OD) degree from a recognized institution",
+      "requirements": [
+        "Valid practicing license",
+        "Strong clinical and diagnostic skills",
+        "Excellent communication and patient counselling skills",
+        "Proficiency in the use of optometric diagnostic equipment",
+        "Good documentation and basic computer skills (EMR knowledge is an advantage)",
+        "Strong interpersonal skills and a patient-focused mindset"
+      ],
+      "responsibilities": [
+        "Conduct comprehensive eye examinations and vision assessments",
+        "Diagnose refractive errors and common ocular conditions",
+        "Prescribe corrective lenses, contact lenses, and low vision aids",
+        "Detect ocular diseases and refer complex cases appropriately",
+        "Educate patients on eye care, treatment plans, and preventive measures",
+        "Maintain accurate and up-to-date patient records",
+        "Collaborate with other healthcare professionals to ensure holistic patient care",
+        "Ensure compliance with professional and ethical standards"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-03-03",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/optometrist-440",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Medical Laboratory Technician (MLT)",
+      "company": "Talent Pool Resources International Limited",
+      "location": "Ayobo, Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Medical Laboratory Scientist",
+      "salary": "NGN120,000 / monthly",
+      "experience": "2 – 3 years relevant experience",
+      "qualification": "Relevant qualification in Medical Laboratory Technology",
+      "requirements": [
+        "Relevant qualification in Medical Laboratory Technology",
+        "Valid practicing license",
+        "2 – 3 years relevant experience",
+        "Must be able to independently carry out laboratory tests",
+        "Attention to detail and ability to work with minimal supervision"
+      ],
+      "responsibilities": [
+        "Conduct routine laboratory tests and diagnostics",
+        "Properly handle and analyze samples",
+        "Operate laboratory equipment efficiently",
+        "Record and report accurate test results",
+        "Maintain cleanliness and safety standards in the laboratory"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-03-03",
+      "deadline": "2026-03-23",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/medical-laboratory-technician-mlt-438",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "OPTOMETRIST",
+      "company": "RIGHTSIGHT SPECIALIST EYE CENTRE",
+      "location": "Okota, Oshodi-Isolo, Lagos State, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Allied Health",
+      "salary": "NGN250,000 - NGN300,000 / monthly",
+      "experience": "",
+      "qualification": "Doctor of Optometry (O.D) degree",
+      "requirements": [
+        "Must possess a doctor of optometry (O.D) degree",
+        "Must be duly registered with the board and have a valid practicing license",
+        "Must be an intermediate user of Microsoft office suite",
+        "Must have completed NYSC",
+        "Must be ready to learn",
+        "Residence within or around Isolo is an added advantage"
+      ],
+      "responsibilities": [
+        "Recognize and treat common eye conditions",
+        "Prescribe vision aids and spectacles",
+        "Recognize serious ocular diseases and refer appropriately"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-03-03",
+      "deadline": "2026-03-15",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/optometrist-437",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Senior Technical Officer, Community Engagement",
+      "company": "Family Health International (FHI 360)",
+      "location": "Bauchi",
+      "job_type": "Full-time",
+      "job_category": "Public Health",
+      "salary": "n,",
+      "experience": "6 years",
+      "qualification": "Bachelor’s Degree in public health, Social Sciences, Communication, Development Studies, or related field; Master’s degree is an advantage",
+      "requirements": [
+        "6+ years of experience in social and behaviour change communication, community mobilization, or health promotion",
+        "Experience working with government and community stakeholders at state, LGA, ward levels",
+        "Ability to design, implement, and monitor community engagement, demand creation/SBC/RCCE strategies",
+        "Skilled in training facilitation, mentoring, and coaching",
+        "Good communication, interpersonal, and problem-solving skills",
+        "Proficiency in Microsoft Office and digital tools",
+        "Fluency in English; local languages in Bauchi State an advantage",
+        "Strong documentation and reporting skills"
+      ],
+      "responsibilities": [
+        "Support the design and planning of evidence-based community engagement, demand creation and risk communication activities",
+        "Provide technical guidance to state, LGA, and ward stakeholders on implementation of integrated community engagement components",
+        "Support the implementation of technical workplans at various levels",
+        "Coordinate community engagement trainings with stakeholders",
+        "Oversee community resource groups in delivering communication messaging and referrals",
+        "Document and report all community mobilization and demand creation activities."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-03-03",
+      "deadline": "2026-03-13",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Senior-Technical-Officer-Community-Engagement-at-Family-Health-International-FHI-360?pid=77419",
+      "_source": "medicalworldnigeria"
+    },
+    {
+      "job_title": "Medical Officer",
+      "company": "Syx-Brij Nigeria Limited",
+      "location": "Ikorodu, Lagos",
+      "job_type": "Full-time",
+      "job_category": "Doctor",
+      "salary": "N450,000 – N550,000 per month (gross)",
+      "experience": "3",
+      "qualification": "bsc",
+      "requirements": [
+        "MBBS or equivalent medical degree from a recognized institution",
+        "Valid practicing license with the Medical and Dental Council",
+        "Completion of NYSC or exemption certificate",
+        "2–3 years post-NYSC clinical experience",
+        "Strong clinical and diagnostic skills",
+        "Excellent communication and interpersonal skills",
+        "Ability to work in a fast-paced clinical environment",
+        "Experience working in a private hospital setting",
+        "Additional certifications such as ACLS, BLS, or related clinical training",
+        "Strong teamwork and leadership abilities."
+      ],
+      "responsibilities": [
+        "Examine, diagnose, and treat patients presenting with various medical conditions",
+        "Provide general medical consultations and manage outpatient and inpatient care",
+        "Order and interpret laboratory and diagnostic tests",
+        "Prescribe appropriate medications and treatment plans",
+        "Monitor patient progress and adjust treatments when necessary",
+        "Maintain accurate and detailed medical records",
+        "Respond to medical emergencies promptly and effectively",
+        "Collaborate with specialists, nurses, laboratory scientists, and other healthcare professionals",
+        "Ensure compliance with hospital policies, clinical protocols, and ethical standards",
+        "Participate in clinical meetings, case reviews, and continuous medical education"
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites).",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-03-03",
+      "deadline": "2026-03-17",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Medical-Officer-at-Bergstein-Hospital-Syx-Brij-Nigeria-Limited?pid=77413",
+      "_source": "medicalworldnigeria"
+    },
     {
       "job_title": "Senior Technical Officer, MNCH/Nutrition",
       "company": "FHI 360",
@@ -341,37 +777,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/senior-dietician-424",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Medical Officer",
-      "company": "MSI Nigeria Reproductive Choices",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Doctor",
-      "salary": "NGN850,000 - NGN980,000 / monthly",
-      "experience": "Minimum of 2–3 years post-qualification clinical experience",
-      "qualification": "MBBS or equivalent medical degree from a recognised institution. Full registration with MDCN and valid practicing license.",
-      "requirements": [
-        "Experience in sexual and reproductive health, family planning, or public health is an advantage.",
-        "Previous experience working with NGOs or donor-funded health programs is desirable."
-      ],
-      "responsibilities": [
-        "Provide comprehensive sexual and reproductive health services, including family planning (short-acting, long-acting, and permanent methods).",
-        "Safe abortion care and post-abortion care (where legally permitted).",
-        "Management of reproductive tract infections (RTIs/STIs).",
-        "Cervical cancer screening and treatment (where applicable).",
-        "Ensure all clinical services meet MSI Nigeria’s quality assurance and infection prevention standards.",
-        "Conduct client counselling, informed consent, and follow-up care with respect and confidentiality."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-02-28",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/medical-officer-copy-423",
       "_source": "medlocum"
     },
     {
@@ -1460,43 +1865,6 @@
       "_source": "medlocum"
     },
     {
-      "job_title": "Healthcare Assistant",
-      "company": "Tofaans Hospital",
-      "location": "Lagos, Nigeria",
-      "job_type": "Part-Time",
-      "job_category": "Allied Health",
-      "salary": "",
-      "experience": "",
-      "qualification": "Minimum of SSCE or equivalent qualification, Certificate or training as a Health Care Assistant",
-      "requirements": [
-        "Previous experience in a hospital or healthcare facility is preferred",
-        "Basic knowledge of patient care and hospital hygiene standards",
-        "Ability to work shifts, including nights and weekends",
-        "Good communication and interpersonal skills",
-        "Compassionate, patient, and respectful attitude",
-        "Physically fit and able to assist with patient movement"
-      ],
-      "responsibilities": [
-        "Assist patients with daily living activities such as bathing, dressing, feeding, and mobility",
-        "Support nurses in monitoring patients’ vital signs (temperature, pulse, respiration, blood pressure)",
-        "Help in preparing patients for medical examinations and procedures",
-        "Maintain cleanliness and hygiene of wards, patient beds, and equipment",
-        "Assist in transferring and repositioning patients safely",
-        "Observe patients and promptly report any changes in condition to the nursing staff",
-        "Assist with stocking and organising medical supplies",
-        "Carry out any other duties assigned by the nursing or hospital management"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-02-25",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/healthcare-assistant-c-copy-401",
-      "_source": "medlocum"
-    },
-    {
       "job_title": "Full Time Pharmacist",
       "company": "Castville Solutions",
       "location": "Ikeja, Lagos, Nigeria",
@@ -2539,9 +2907,8 @@
       "job_category": "Allied Health",
       "salary": "",
       "experience": "",
-      "qualification": "Minimum of SSCE or equivalent qualification",
+      "qualification": "Minimum of SSCE or equivalent qualification; Certificate or training as a Health Care Assistant",
       "requirements": [
-        "Certificate or training as a Health Care Assistant",
         "Previous experience in a hospital or healthcare facility is preferred",
         "Basic knowledge of patient care and hospital hygiene standards",
         "Ability to work shifts, including nights and weekends",
@@ -2566,7 +2933,7 @@
       "deadline": "",
       "contact_email": "",
       "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/healthcare-assistantyy-374",
+      "apply_url": "https://medlocumjobs.com/jobs/healthcare-assistant-374",
       "_source": "medlocum"
     },
     {
@@ -3034,329 +3401,6 @@
       "_source": "medicalworldnigeria"
     },
     {
-      "job_title": "Radiographer",
-      "company": "ICS Outsourcing Limited",
-      "location": "Surulere, Lagos, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Allied Health",
-      "salary": "NGN400,000 - NGN500,000 / monthly",
-      "experience": "Minimum of 3+ years post-qualification experience",
-      "qualification": "Bachelor of Radiography (B.Rad) or B.Sc. in a related field; Completion of a one (1) year mandatory internship; Must be registered with the Radiographers Registration Board of Nigeria (RRBN)",
-      "requirements": [
-        "Bachelor of Radiography (B.Rad) or B.Sc. in a related field",
-        "Completion of a one (1) year mandatory internship",
-        "Must be registered with the Radiographers Registration Board of Nigeria (RRBN)",
-        "Minimum of 3+ years post-qualification experience in a reputable healthcare facility",
-        "Strong knowledge of radiographic techniques and imaging equipment",
-        "Excellent attention to detail",
-        "Good communication and interpersonal skills",
-        "High level of professionalism and ethical standards",
-        "Ability to work under pressure and manage emergency cases",
-        "Strong commitment to patient safety and confidentiality"
-      ],
-      "responsibilities": [
-        "Perform diagnostic imaging procedures such as X-rays, CT scans, MRI scans, and other radiographic examinations as required",
-        "Ensure proper patient positioning and clearly explain procedures to patients to ensure cooperation and comfort",
-        "Operate and maintain imaging equipment in accordance with safety and regulatory standards",
-        "Adhere strictly to radiation protection and safety guidelines",
-        "Review and evaluate images for quality assurance before submission to physicians",
-        "Maintain accurate patient records and imaging documentation",
-        "Collaborate with radiologists and other healthcare professionals to ensure accurate diagnosis",
-        "Monitor and report equipment faults or irregularities promptly",
-        "Ensure compliance with hospital policies and healthcare regulations",
-        "Participate in continuous professional development and relevant training programs."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-02-19",
-      "deadline": "2026-02-28",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/radiographer-360",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Nurse - Peak Season",
-      "company": "Alliance for International Medical Action (ALIMA)",
-      "location": "Owo, Ondo, Nigeria",
-      "job_type": "Contract",
-      "job_category": "Nurse",
-      "salary": "",
-      "experience": "At least 2 years’ experience Post Qualified",
-      "qualification": "Degree / Diploma of nursing related studies or medical profile; Registered With Nigerian Nursing Council",
-      "requirements": [
-        "Degree / Diploma of nursing related studies or medical profile",
-        "Registered With Nigerian Nursing Council",
-        "At least 2 years’ experience Post Qualified",
-        "Previous experience with ALIMA or other NGOs in developing countries is desirable",
-        "Previous experience working on a research project/ Lassar fever management"
-      ],
-      "responsibilities": [
-        "Provide adequate and timely quality nursing care, treatment, and follow-up to patients hospitalized in the Lassa Fever ward.",
-        "Follow up on blood transfusions, ensuring that patients who need blood transfusions get it as quickly as possible.",
-        "Follow up on Hemodialysis sessions, assist the renal nurses during some procedures when time permits.",
-        "Offer psychological Support to patients and relatives while considering the health promotional component to the affected population.",
-        "Know, promote, implement, and follow at all times the universal hygiene standards/ precautions, bio-hazard prevention and infection control.",
-        "Organize and carry out care and treatments according to medical prescriptions, as well as assist medical staff during consultations/ daily rounds and other medical procedures.",
-        "Ensure patients are properly received and installed in the health service.",
-        "Respect medical secrets and confidentiality.",
-        "Carry out admission, surveillance, and follow-up of patients, meaning assessment of their health state evolution.",
-        "Participate in health education of the patient and caretakers.",
-        "Participate in the department-related pharmacy and medical equipment control and maintenance.",
-        "Carry out and supervise administrative procedures and documents.",
-        "Pay attention to PEP and report urgently any incident."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-02-19",
-      "deadline": "2026-02-26",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/nurse-peak-season-359",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Emergency and Climate Change Consultant",
-      "company": "UNICEF",
-      "location": "Lusaka, Zambia, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Public Health",
-      "salary": "",
-      "experience": "2 years",
-      "qualification": "Advanced university degree (master’s or equivalent) in Climate Change, Environmental Studies, Public Health, Development Studies or a related field.",
-      "requirements": [
-        "A first-level university degree (Bachelor’s) in the above fields combined with additional years of relevant professional experience in public health, climate adaptation, humanitarian emergencies, or resilience programming.",
-        "Experience working with UNICEF, the UN system or international NGOs is required.",
-        "Demonstrated experience in emergency preparedness, coordination and response.",
-        "Adequate understanding of government systems, humanitarian architecture, and multi-sectoral programming at country level."
-      ],
-      "responsibilities": [
-        "Builds and maintains partnerships",
-        "Demonstrates self-awareness and ethical awareness",
-        "Drive to achieve results for impact",
-        "Innovates and embraces change",
-        "Manages ambiguity and complexity",
-        "Thinks and acts strategically",
-        "Works collaboratively with others"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-02-19",
-      "deadline": "2026-02-26",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/emergency-and-climate-change-consultant-364-days-358",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Senior Doctor / Senior Registrar (Family Physician)",
-      "company": "Standard Specialist Hospital",
-      "location": "Tarauni, Kano, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Doctor",
-      "salary": "",
-      "experience": "5-7 years",
-      "qualification": "Medical Degree (MBBS, MBChB or its equivalent)",
-      "requirements": [
-        "NYSC Discharge or Certificate of Exemption",
-        "Completion of Residency program",
-        "Pass in the Primary Fellowship Examination of the National Postgraduate Medical College of Nigeria (NPMCN) or its equivalent in the relevant specialty within the past 4 years",
-        "Valid medical license and registration",
-        "Membership in relevant medical associations, such as the Society of Family Physicians of Nigeria (SOFPON) or its equivalent"
-      ],
-      "responsibilities": [
-        "Provide comprehensive medical assessments, diagnosis, and treatment for a variety of acute and chronic conditions",
-        "Develop individualized care plans that incorporate preventive and wellness strategies",
-        "Perform physical examinations, order diagnostic tests, and interpret results for accurate diagnosis and treatment",
-        "Coordinate patient care with specialists and other healthcare professionals to ensure holistic care",
-        "Maintain up-to-date and accurate patient records in compliance with medical standards",
-        "Rapidly evaluate patients to determine severity of condition to prioritize care, allocate resources, and ensure timely interventions",
-        "Perform life-saving procedures (e.g., CPR, intubation) to stabilize critically ill patients and prevent further deterioration",
-        "Order and interpret diagnostic tests to quickly identify underlying conditions and guide treatment",
-        "Manage shock, trauma, or medical emergencies to restore vital functions, prevent organ failure, and optimize patient outcomes",
-        "Collaborate with emergency teams, provide clear handover to ensure seamless transitions, prevent errors, and maintain continuity of care",
-        "Guide junior team members in interpreting lab results, imaging, and other diagnostic tools",
-        "Ensure compliance with the standards and regulations set by relevant authorities",
-        "Participate in quality assurance programs and clinical audits to maintain high standards of care",
-        "Maintain comprehensive and accurate patient records, adhering to data protection and confidentiality protocols",
-        "Report quality metrics and ensure accreditation standards are maintained",
-        "Educate patients and their families about their conditions, treatment options, potential side effects, and preventive care",
-        "Promote patient-centered care and involve patients in decision-making processes",
-        "Address patient concerns with compassion and provide emotional support throughout treatment",
-        "Advocate for patient access to advanced treatments and palliative care services",
-        "Lead patient care rounds, multidisciplinary team meetings, and case reviews",
-        "Supervise and mentor junior doctors, medical students, and allied health professionals",
-        "Provide expert guidance and support to the medical team on complex cases",
-        "Foster an environment of collaboration and continuous learning within the department",
-        "Provide mentorship and training to junior residents, interns, and medical students"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-02-19",
-      "deadline": "2026-03-31",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/senior-doctor-senior-registrar-family-physician-357",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Research Laboratory Scientist",
-      "company": "Alliance for International Medical Action (ALIMA)",
-      "location": "Owo, Ondo, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Medical Laboratory Scientist",
-      "salary": "",
-      "experience": "",
-      "qualification": "Bachelor's Degree in Medical Laboratory Science",
-      "requirements": [
-        "Proven research experience in a laboratory setting",
-        "Strong understanding of scientific principles and laboratory techniques",
-        "Excellent analytical, problem-solving, and communication skills",
-        "Ability to work independently and as part of a team",
-        "Familiarity with laboratory software and instrumentation",
-        "Strong attention to detail and organizational skills",
-        "Registered with the Medical Laboratory Science Council of Nigeria",
-        "Strong knowledge of PCR and PCR-related techniques and blood processing",
-        "Working experiences in Ebola or Lassa Fever outbreaks or other viral hemorrhagic fevers",
-        "Desirable working experience with International medical NGO’s in developing countries",
-        "Literacy in MS Excel, Word, Outlook, and Internet",
-        "Well organized with good negotiation and communication skills",
-        "Ability to work in close collaboration with MOH staff"
-      ],
-      "responsibilities": [
-        "Conduct a set of laboratory tests on patient samples, ensuring accuracy, precision, and strict adherence to study protocols",
-        "These tests will include, but are not limited to, nucleic acid extraction, polymerase chain reaction (RT-PCR), blood biochemistry, and haematology",
-        "Reception of study-specific biological samples according to study guidelines",
-        "Collaborate effectively with colleagues in the analysis of RT-PCR test results to achieve research goals and objectives",
-        "Production of sample aliquots and their temporary storage on site in the biobank according to study specifications",
-        "Adhere to quality control procedures to ensure the reliability and reproducibility of experimental results",
-        "Perform the scheduled maintenance and calibration of study-specific laboratory equipment according to the manufacturer’s specifications as well as timely documentation",
-        "Timely documentation of test results performed in compliance with GCP guidelines",
-        "Uploading of test results to the appropriate platform for prompt decision-making by the research team",
-        "Routinely monitor and record the temperature of the laboratory space, fridges, and freezers, documenting any alarms triggered by the temperature monitoring system promptly",
-        "Adhere to safety protocols to minimize the risk while handling infectious materials and biohazardous substances",
-        "Prepare samples for pickups and shipments, ensuring proper packaging and compliance with transportation regulations",
-        "Undertake additional duties as assigned to meet the specific needs of the clinical trial and research team"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-02-19",
-      "deadline": "2026-02-26",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/research-laboratory-scientist-356",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Physiotherapist",
-      "company": "Medecins Sans Frontieres (MSF)",
-      "location": "Maiduguri, Borno, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Allied Health",
-      "salary": "",
-      "experience": "",
-      "qualification": "",
-      "requirements": [],
-      "responsibilities": [
-        "Implement the set up of Stimulation therapy for malnourished children.",
-        "Screen, hire, train and coach national Physiotherapy staff.",
-        "Develop and monitor outcomes of care for children.",
-        "Guide children’s care during individual sessions and instruct caregivers on continuation of therapy at home."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-02-19",
-      "deadline": "2026-02-24",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/physiotherapist-355",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Chief Operating Officer",
-      "company": "Medlyfe - Medbury Healthcare Group",
-      "location": "Ikeja, Lagos, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Healthcare Management",
-      "salary": "",
-      "experience": "15 years",
-      "qualification": "MBBS or Bachelor’s degree in Healthcare Management or related field; Master’s degree in Business Management or MBA; Professional certifications or training in Wellness, Regenerative Medicine, Aesthetics, and/or Longevity domains",
-      "requirements": [],
-      "responsibilities": [
-        "Develop and execute business strategies to drive revenue growth and profitability",
-        "Align Medlyfe’s objectives with overall organizational strategy",
-        "Oversee daily operations to ensure seamless service delivery",
-        "Manage vendors, partners, ad-hoc staff, and employees ensuring compliance with healthcare regulations",
-        "Drive revenue growth across all revenue streams",
-        "Build and maintain strong relationships with vendors, partners, and regulators",
-        "Attract, develop, and retain top talent within the medical and wellness industry",
-        "Develop and execute marketing strategies to promote the business",
-        "Ensure the business operates within budget",
-        "Identify expansion opportunities and develop sustainable growth strategies"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-02-19",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/chief-operating-officer-354",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "PDX Radiographer",
-      "company": "KNCV Nigeria",
-      "location": "Lagos, Nigeria",
-      "job_type": "Contract",
-      "job_category": "Allied Health",
-      "salary": "",
-      "experience": "Minimum of 1 year of post-qualification experience in a clinical setting",
-      "qualification": "BSc Radiography",
-      "requirements": [
-        "Valid practicing license from the Radiographers Registration Board of Nigeria (RRBN)",
-        "Proficiency in operating digital radiography equipment",
-        "Strong knowledge of radiation safety and protection protocols",
-        "Excellent communication and interpersonal skills",
-        "Ability to work independently and as part of a team",
-        "Familiarity with NGO activities, particularly TB programs, is an added advantage",
-        "Must be flexible with absolute integrity, organizational awareness, and understanding of cultural differences",
-        "Physical fitness to handle the demands of the role, including standing for long periods and moving equipment",
-        "Must possess an Android phone for reporting and communication purposes",
-        "Computer literacy and proficiency with digital equipment",
-        "Ability to manage official information in a confidential manner",
-        "Ability to multitask and work well under pressure to meet deadlines"
-      ],
-      "responsibilities": [
-        "Prepare and position patients for X-ray procedures, ensuring their comfort and safety",
-        "Operate PDX equipment to capture high-quality diagnostic images",
-        "Adjust imaging parameters according to specific diagnostic needs",
-        "Maintain accurate records of radiographic procedures and patient information",
-        "Ensure compliance with all radiation safety protocols to minimize exposure risks",
-        "Perform routine maintenance and quality control checks on radiographic equipment",
-        "Troubleshoot equipment malfunctions and coordinate with technical support for repairs",
-        "Collaborate with healthcare professionals to provide comprehensive patient care",
-        "Participate in ongoing training and professional development activities",
-        "Support and adhere to the facility’s policies and procedures",
-        "Work closely with the State TB and Leprosy Control program (STBLCP) to ensure optimal use of the Portable Digital X-rays for Active TB case finding in Hotspot communities"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-02-19",
-      "deadline": "2026-02-20",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/pdx-radiographer-353",
-      "_source": "medlocum"
-    },
-    {
       "job_title": "Pharmacist",
       "company": "Tonia Pharmacy Limited",
       "location": "Abuja, Nigeria",
@@ -3576,6 +3620,52 @@
       "_source": "jobsinnigeria"
     },
     {
+      "job_title": "Senior Doctor / Senior Registrar (Family Physician)",
+      "company": "Standard Specialist Hospital",
+      "location": "Tarauni, Kano",
+      "job_type": "Contract",
+      "job_category": "Doctor",
+      "salary": "",
+      "experience": "5-7 years of clinical experience in a family medicine or primary care setting, including residency.",
+      "qualification": "Medical Degree (MBBS, MBChB or its equivalent) from a recognised Institution.",
+      "requirements": [
+        "NYSC Discharge or Certificate of Exemption.",
+        "Completion of Residency program",
+        "Pass in the Primary Fellowship Examination of the National Postgraduate Medical College of Nigeria (NPMCN) or its equivalent in the relevant specialty within the past 4 years.",
+        "Valid medical license and registration",
+        "Membership in relevant medical associations, such as the Society of Family Physicians of Nigeria (SOFPON) or its equivalent."
+      ],
+      "responsibilities": [
+        "Provide comprehensive medical assessments, diagnosis, and treatment for a variety of acute and chronic conditions.",
+        "Develop individualized care plans that incorporate preventive and wellness strategies.",
+        "Perform physical examinations, order diagnostic tests, and interpret results for accurate diagnosis and treatment.",
+        "Coordinate patient care with specialists and other healthcare professionals to ensure holistic care.",
+        "Maintain up-to-date and accurate patient records in compliance with medical standards.",
+        "Rapidly evaluate patients to determine severity of condition to prioritize care, allocate resources, and ensure timely interventions.",
+        "Perform life-saving procedures (e.g., CPR, intubation) to stabilize critically ill patients and prevent further deterioration.",
+        "Order and interpret diagnostic tests (e.g., labs, imaging to quickly identify underlying conditions and guide treatment.",
+        "Manage shock, trauma, or medical emergencies to restore vital functions, prevent organ failure, and optimize patient outcomes.",
+        "Collaborate with emergency teams, provide clear handover to ensure seamless transitions, prevent errors, and maintain continuity of care.",
+        "Guide junior team members in interpreting lab results, imaging, and other diagnostic tools.",
+        "Ensure compliance with the standards and regulations set by relevant authorities.",
+        "Participate in quality assurance programs and clinical audits to maintain high standards of care.",
+        "Maintain comprehensive and accurate patient records, adhering to data protection and confidentiality protocols.",
+        "Report quality metrics and ensure accreditation standards are maintained.",
+        "Educate patients and their families about their conditions, treatment options, potential side effects, and preventive care.",
+        "Promote patient-centered care and involve patients in decision-making processes."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-02-18",
+      "deadline": "2026-03-31",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Senior-Doctor-Senior-Registrar-Family-Physician-at-Standard-Specialist-Hospital?pid=77337",
+      "_source": "medicalworldnigeria"
+    },
+    {
       "job_title": "School Nurse",
       "company": "Favoured Life International School",
       "location": "Surulere, Lagos",
@@ -3676,6 +3766,44 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Nurse-Peak-Season-at-Alliance-for-International-Medical-Action-ALIMA?pid=77339",
+      "_source": "medicalworldnigeria"
+    },
+    {
+      "job_title": "Nurse - Peak Season",
+      "company": "Alliance for International Medical Action (ALIMA)",
+      "location": "Owo, Ondo",
+      "job_type": "Contract",
+      "job_category": "Nurse",
+      "salary": "n,",
+      "experience": "2 years",
+      "qualification": "BSc",
+      "requirements": [
+        "Degree / Diploma of nursing related studies or medical profile",
+        "Registered With Nigerian Nursing Council",
+        "At least 2 years’ experience Post Qualified",
+        "Previous experience with ALIMA or other NGOs in developing countries is desirable",
+        "Previous experience working on a research project/ Lassa fever management"
+      ],
+      "responsibilities": [
+        "Provide adequate and timely quality nursing care, treatment, and follow-up to patients hospitalized in the Lassa Fever ward.",
+        "Follow up on blood transfusions, ensuring that patients who need blood transfusions get it as quickly as possible and record accordingly.",
+        "Assist during Hemodialysis sessions when time permits.",
+        "Offer psychological support to patients and relatives.",
+        "Implement universal hygiene standards/precautions, bio-hazard prevention, and infection control procedures.",
+        "Organize and carry out care and treatments according to medical prescriptions.",
+        "Ensure patients are properly received and installed in the health service and assisted as needed.",
+        "Respect medical secrets and confidentiality.",
+        "Carry out admission, surveillance, and follow-up of patients.",
+        "Participate in health education of the patient and caretakers."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-02-18",
+      "deadline": "2026-02-26",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Nurse-Peak-Season-at-Alliance-for-International-Medical-Action-ALIMA?pid=77338",
       "_source": "medicalworldnigeria"
     },
     {
@@ -7447,39 +7575,6 @@
       "_source": "medicalworldnigeria"
     },
     {
-      "job_title": "Medical Officer",
-      "company": "St. Ives Specialist Hospital",
-      "location": "Abeokuta, Ogun",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "N350,000 - N400,000 monthly",
-      "experience": "2–4 years",
-      "qualification": "Bachelor's Degree",
-      "requirements": [],
-      "responsibilities": [
-        "Conducting medical examinations and assessments of patients.",
-        "Diagnosing and treating acute and chronic illnesses.",
-        "Ordering and interpreting diagnostic tests such as blood tests, X-rays, and MRIs.",
-        "Prescribing medications and other treatments as necessary.",
-        "Collaborating with other healthcare professionals to develop comprehensive treatment plans.",
-        "Providing counselling and education to patients about their health conditions and treatment options.",
-        "Monitoring patients' progress and adjusting treatment plans as needed.",
-        "Maintaining accurate and up-to-date medical records.",
-        "Participating in multidisciplinary team meetings to discuss patient care and treatment strategies.",
-        "Adhering to all relevant medical laws, regulations, and ethical standards."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-01-13",
-      "deadline": "2026-01-27",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Medical-Officer-at-St-Ives-Specialist-Hospital?pid=76975",
-      "_source": "medicalworldnigeria"
-    },
-    {
       "job_title": "Laboratory Specialist",
       "company": "Natural Girl Wigs",
       "location": "Yaba, Lagos, Nigeria",
@@ -7614,46 +7709,6 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/full-time-pharmacists-castville-solutions-7-openings/",
       "_source": "jobsinnigeria"
-    },
-    {
-      "job_title": "Medical Vacancies",
-      "company": "Nigerian Army",
-      "location": "Nigeria",
-      "job_type": "",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "",
-      "qualification": "bsc",
-      "requirements": [
-        "Must be Fellow of the National Postgraduate Medical College of Nigeria or equivalent Postgraduate Medical College",
-        "Not be more than 40 years of age by 30 March 2026",
-        "Must have full registration of Medical and Dental Council of Nigeria (MDCN) for the undergraduate degree and additional qualification registration as appropriate",
-        "Must have current MDCN license to practice as a specialist",
-        "Applicants are expected to present proof of registration with their professional regulatory bodies and current practicing license",
-        "Be a Nigerian as defined in the Constitution of the Federal Republic of Nigeria",
-        "Be a male or female between the ages of 20 and 32 years by 30 March 2026. Medical consultants could be between 25 - 40 years of age by 30 March 2026",
-        "Be medically, mentally and physically fit according to NA standards",
-        "Be recommended and attested to his/her good character by at least 2 recognizable referees",
-        "Passport photographs of referees must be affixed to the letter of attestation",
-        "Applicants must submit a letter of Attestation from their former institutions",
-        "Measure in height at least 1.68m (for males) and 1.65m (for females)",
-        "Must not have been convicted by any court of law",
-        "Military personnel applying must be free from any disciplinary case and endorsed by the applicant’s Commanding Officer/Commander",
-        "Possess at least a first degree with not less than Second Class Upper Division or HND (where applicable) of not less than Upper Credit from any accredited institution of learning",
-        "Possess valid birth certificate endorsed by the National Population Commission, Hospital or Local Government Council or valid age declaration",
-        "Possess a valid state of origin certificate"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-01-08",
-      "deadline": "2026-02-04",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Medical-Consultant-at-the-Nigerian-Army-DSSC-29-2026?pid=76947",
-      "_source": "medicalworldnigeria"
     }
   ]
 }
