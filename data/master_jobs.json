@@ -1,15 +1,533 @@
 {
   "metadata": {
-    "extracted_at": "2026-03-05T04:29:32.260673",
+    "extracted_at": "2026-03-06T04:26:16.332848",
     "model": "gpt-4o-mini",
     "total_processed": 244,
-    "duplicates_removed": 23,
+    "duplicates_removed": 29,
     "skipped_old": 0,
     "skipped_empty": 0,
     "errors": 0,
-    "openai_calls": 34
+    "openai_calls": 51
   },
   "jobs": [
+    {
+      "job_title": "Consultant Pediatrician",
+      "company": "Dalhatu Araf Specialist Hospital (DASH)",
+      "location": "Nasarawa, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Doctor",
+      "salary": "",
+      "experience": "",
+      "qualification": "",
+      "requirements": [
+        "Current practicing license from the Medical and Dental Council of Nigeria",
+        "NYSC discharge certificate or certificate of exemption",
+        "MBBS Degree certificate",
+        "Relevant membership certificate from the National Postgraduate Medical College of Nigeria or the West African College of Physicians or Surgeons",
+        "Fellowship certificate where applicable."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-03-05",
+      "deadline": "2026-03-17",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/consultant-pediatrician-466",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Gerontological Nurse",
+      "company": "Dalhatu Araf Specialist Hospital (DASH)",
+      "location": "Nasarawa, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Nurse",
+      "salary": "",
+      "experience": "",
+      "qualification": "",
+      "requirements": [
+        "Current practicing license from the Nursing and Midwifery Council of Nigeria",
+        "Relevant professional certificates and academic qualifications."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-03-05",
+      "deadline": "2026-03-17",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/gerontological-nurse-465",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Oncology Nurse",
+      "company": "Dalhatu Araf Specialist Hospital (DASH)",
+      "location": "Nasarawa, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Nurse",
+      "salary": "",
+      "experience": "",
+      "qualification": "",
+      "requirements": [
+        "Current practicing license from the Nursing and Midwifery Council of Nigeria.",
+        "Relevant professional certificates and academic qualifications."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-03-05",
+      "deadline": "2026-03-17",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/oncology-nurse-464",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Preoperative Nurse",
+      "company": "Dalhatu Araf Specialist Hospital (DASH)",
+      "location": "Nasarawa, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Nurse",
+      "salary": "",
+      "experience": "",
+      "qualification": "",
+      "requirements": [
+        "Current practicing license from the Nursing and Midwifery Council of Nigeria.",
+        "Relevant professional certificates and academic qualifications."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-03-05",
+      "deadline": "2026-03-17",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/preoperative-nurse-463",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Dialysis Nurse",
+      "company": "Dalhatu Araf Specialist Hospital (DASH)",
+      "location": "Nasarawa, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Nurse",
+      "salary": "",
+      "experience": "",
+      "qualification": "",
+      "requirements": [
+        "Current practicing license from the Nursing and Midwifery Council of Nigeria.",
+        "Relevant professional certificates and academic qualifications."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-03-05",
+      "deadline": "2026-03-17",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/dialysis-nurse-462",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "ENT Nurse",
+      "company": "Dalhatu Araf Specialist Hospital (DASH)",
+      "location": "Nasarawa, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Nurse",
+      "salary": "",
+      "experience": "",
+      "qualification": "",
+      "requirements": [
+        "Current practicing license from the Nursing and Midwifery Council of Nigeria.",
+        "Relevant professional certificates and academic qualifications."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-03-05",
+      "deadline": "2026-03-17",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/ent-nurse-461",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Cardiothoracic Nurse",
+      "company": "Dalhatu Araf Specialist Hospital (DASH)",
+      "location": "Nasarawa, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Nurse",
+      "salary": "",
+      "experience": "",
+      "qualification": "",
+      "requirements": [
+        "Current practicing license from the Nursing and Midwifery Council of Nigeria.",
+        "Relevant professional certificates and academic qualifications."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-03-05",
+      "deadline": "2026-03-17",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/cardiothoracic-nurse-460",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Graduate Nurse",
+      "company": "Dalhatu Araf Specialist Hospital (DASH)",
+      "location": "Nasarawa, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Nurse",
+      "salary": "",
+      "experience": "",
+      "qualification": "",
+      "requirements": [
+        "Current practicing license from the Nursing and Midwifery Council of Nigeria.",
+        "Relevant professional certificates and academic qualifications."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-03-05",
+      "deadline": "2026-03-17",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/graduate-nurse-459",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Geriatric Nurse",
+      "company": "Dalhatu Araf Specialist Hospital (DASH)",
+      "location": "Nasarawa, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Nurse",
+      "salary": "",
+      "experience": "",
+      "qualification": "",
+      "requirements": [
+        "Current practicing license from the Nursing and Midwifery Council of Nigeria.",
+        "Relevant professional certificates and academic qualifications."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-03-05",
+      "deadline": "2026-03-17",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/geriatric-nurse-458",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Orthopedic Nurse",
+      "company": "Dalhatu Araf Specialist Hospital (DASH)",
+      "location": "Nasarawa, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Nurse",
+      "salary": "",
+      "experience": "",
+      "qualification": "",
+      "requirements": [
+        "Current practicing license from the Nursing and Midwifery Council of Nigeria.",
+        "Relevant professional certificates and academic qualifications."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-03-05",
+      "deadline": "2026-03-17",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/orthopedic-nurse-457",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Dialysis Nurse",
+      "company": "Clinix Healthcare Nigeria",
+      "location": "Awka, Anambra, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Nurse",
+      "salary": "n,",
+      "experience": "Minimum of 2–3 years of clinical experience as a Dialysis Nurse in a recognized hemodialysis unit.",
+      "qualification": "BSc",
+      "requirements": [
+        "Registered Nurse (RN) with current license from the Nursing and Midwifery Council of Nigeria (NMCN)",
+        "Valid practicing license and good standing with NMCN",
+        "BLS (Basic Life Support) certification; ACLS is an added advantage",
+        "Experience with Fresenius, Baxter, or similar dialysis machines is desirable"
+      ],
+      "responsibilities": [
+        "Prepare, operate, and monitor hemodialysis machines and related equipment during dialysis sessions.",
+        "Assess patients before, during, and after dialysis treatment, including vital signs, vascular access condition, weight, and overall clinical status.",
+        "Administer prescribed medications, anticoagulants, and fluids as per physician orders during dialysis.",
+        "Cannulate and decannulate arteriovenous fistulas, grafts, and central venous catheters using aseptic techniques.",
+        "Monitor for and promptly respond to dialysis-related complications such as hypotension, cramps, clotting, air embolism, or dialyzer reactions.",
+        "Educate patients and families on renal disease management, dialysis procedures, dietary restrictions, fluid control, and vascular access care.",
+        "Maintain accurate and timely documentation of treatment parameters, patient responses, and any adverse events in the electronic health record.",
+        "Ensure strict adherence to infection prevention protocols, water quality standards, and dialysis unit safety guidelines.",
+        "Collaborate with nephrologists, dietitians, social workers, and other healthcare team members to optimize patient outcomes.",
+        "Participate in quality improvement initiatives, infection control audits, and continuous education in renal nursing."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-03-05",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://jobsinnigeria.careers/jobs/dialysis-nurse-clinix-healthcare-nigeria/",
+      "_source": "jobsinnigeria"
+    },
+    {
+      "job_title": "Radiographer",
+      "company": "Dukes Neurosurgery and Specialist Hospital",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Allied Health",
+      "salary": "",
+      "experience": "2",
+      "qualification": "bsc",
+      "requirements": [
+        "Bachelor’s Degree or equivalent in Radiography or a related field",
+        "Minimum of 2 years experience as a radiographer",
+        "Certification in Radiography from a recognized institution",
+        "Proficiency in ultrasound equipment is an added advantage",
+        "Strong communication and interpersonal skills",
+        "Must be registered with the relevant professional body"
+      ],
+      "responsibilities": [
+        "Perform diagnostic imaging procedures using X-ray and ultrasound equipment",
+        "Position patients and adjust equipment to obtain high-quality images",
+        "Operate and maintain radiographic and ultrasound equipment",
+        "Evaluate images for quality and accuracy, ensuring diagnostic clarity",
+        "Maintain patient records and confidentiality in compliance with regulations",
+        "Collaborate with healthcare professionals to assess patient needs and provide accurate imaging results",
+        "Stay updated on industry developments and best practices in radiography and ultrasound"
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-03-05",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://jobsinnigeria.careers/jobs/radiographer-dukes-neurosurgery-specialist-hospital/",
+      "_source": "jobsinnigeria"
+    },
+    {
+      "job_title": "Consultant General Surgeon",
+      "company": "Dalhatu Araf Specialist Hospital (DASH)",
+      "location": "Lafia, Nasarawa, Nigeria",
+      "job_type": "",
+      "job_category": "Doctor",
+      "salary": "",
+      "experience": "",
+      "qualification": "bsc",
+      "requirements": [
+        "Current practicing license from the Medical and Dental Council of Nigeria",
+        "NYSC discharge certificate or certificate of exemption",
+        "MBBS Degree certificate",
+        "Relevant membership certificate from the National Postgraduate Medical College of Nigeria or the West African College of Physicians or Surgeons",
+        "Fellowship certificate where applicable."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-03-05",
+      "deadline": "2026-03-17",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Consultant-General-Surgeon-at-Dalhatu-Araf-Specialist-Hospital-DASH?pid=77449",
+      "_source": "medicalworldnigeria"
+    },
+    {
+      "job_title": "Consultant Physician",
+      "company": "Dalhatu Araf Specialist Hospital (DASH)",
+      "location": "Lafia, Nasarawa State, Nigeria",
+      "job_type": "",
+      "job_category": "Doctor",
+      "salary": "",
+      "experience": "",
+      "qualification": "bsc",
+      "requirements": [
+        "Current practicing license from the Medical and Dental Council of Nigeria",
+        "NYSC discharge certificate or certificate of exemption",
+        "MBBS Degree certificate",
+        "Relevant membership certificate from the National Postgraduate Medical College of Nigeria or the West African College of Physicians or Surgeons",
+        "Fellowship certificate where applicable."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-03-05",
+      "deadline": "2026-03-17",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Consultant-Physician-at-Dalhatu-Araf-Specialist-Hospital-DASH?pid=77448",
+      "_source": "medicalworldnigeria"
+    },
+    {
+      "job_title": "Critical Care ICU Nurse",
+      "company": "Dalhatu Araf Specialist Hospital (DASH)",
+      "location": "Lafia, Nasarawa State, Nigeria",
+      "job_type": "",
+      "job_category": "Nurse",
+      "salary": "",
+      "experience": "",
+      "qualification": "bsc",
+      "requirements": [
+        "Current practicing license from the Nursing and Midwifery Council of Nigeria.",
+        "Relevant professional certificates and academic qualifications."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-03-05",
+      "deadline": "2026-03-17",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Critical-Care-ICU-Nurse-at-Dalhatu-Araf-Specialist-Hospital-DASH?pid=77450",
+      "_source": "medicalworldnigeria"
+    },
+    {
+      "job_title": "Pediatric Nurse",
+      "company": "Dalhatu Araf Specialist Hospital (DASH)",
+      "location": "Lafia, Nasarawa State, Nigeria",
+      "job_type": "",
+      "job_category": "Nurse",
+      "salary": "",
+      "experience": "",
+      "qualification": "bsc",
+      "requirements": [
+        "Current practicing license from the Nursing and Midwifery Council of Nigeria.",
+        "Relevant professional certificates and academic qualifications."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-03-05",
+      "deadline": "2026-03-17",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Pediatric-Nurse-at-Dalhatu-Araf-Specialist-Hospital-DASH?pid=77447",
+      "_source": "medicalworldnigeria"
+    },
+    {
+      "job_title": "Accident and Emergency Nurse",
+      "company": "Dalhatu Araf Specialist Hospital (DASH)",
+      "location": "Lafia, Nasarawa State, Nigeria",
+      "job_type": "",
+      "job_category": "Nurse",
+      "salary": "",
+      "experience": "",
+      "qualification": "bsc",
+      "requirements": [
+        "Current practicing license from the Nursing and Midwifery Council of Nigeria.",
+        "Relevant professional certificates and academic qualifications."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-03-05",
+      "deadline": "2026-03-17",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Accident-and-Emergency-Nurse-at-Dalhatu-Araf-Specialist-Hospital-DASH?pid=77446",
+      "_source": "medicalworldnigeria"
+    },
+    {
+      "job_title": "Obstetrics and Gynaecology Nurse",
+      "company": "Dalhatu Araf Specialist Hospital (DASH)",
+      "location": "Lafia, Nasarawa, Nigeria",
+      "job_type": "",
+      "job_category": "Nurse",
+      "salary": "",
+      "experience": "",
+      "qualification": "bsc",
+      "requirements": [
+        "Current practicing license from the Nursing and Midwifery Council of Nigeria.",
+        "Relevant professional certificates and academic qualifications."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-03-05",
+      "deadline": "2026-03-17",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Accident-and-Emergency-Nurse-at-Dalhatu-Araf-Specialist-Hospital-DASH?pid=77445",
+      "_source": "medicalworldnigeria"
+    },
+    {
+      "job_title": "Anesthetic Nurse",
+      "company": "Dalhatu Araf Specialist Hospital (DASH)",
+      "location": "Lafia, Nasarawa State, Nigeria",
+      "job_type": "",
+      "job_category": "Nurse",
+      "salary": "",
+      "experience": "",
+      "qualification": "bsc",
+      "requirements": [
+        "Current practicing license from the Nursing and Midwifery Council of Nigeria.",
+        "Relevant professional certificates and academic qualifications."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-03-05",
+      "deadline": "2026-03-17",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Anesthetic-Nurse-at-Dalhatu-Araf-Specialist-Hospital-DASH?pid=77444",
+      "_source": "medicalworldnigeria"
+    },
+    {
+      "job_title": "Endoscopy Nurse",
+      "company": "Dalhatu Araf Specialist Hospital (DASH)",
+      "location": "Lafia, Nasarawa, Nigeria",
+      "job_type": "",
+      "job_category": "Nurse",
+      "salary": "",
+      "experience": "",
+      "qualification": "bsc",
+      "requirements": [
+        "Current practicing license from the Nursing and Midwifery Council of Nigeria.",
+        "Relevant professional certificates and academic qualifications."
+      ],
+      "responsibilities": [
+        "Submit a written application to the Chief Medical Director."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-03-05",
+      "deadline": "2026-03-17",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Endoscopy-Nurse-at-Dalhatu-Araf-Specialist-Hospital-DASH?pid=77443",
+      "_source": "medicalworldnigeria"
+    },
     {
       "job_title": "Health & Nutrition Officer, NO-2",
       "company": "UNICEF",
@@ -3043,373 +3561,6 @@
       "_source": "medlocum"
     },
     {
-      "job_title": "Public Health Officer (Health Promotion and Determinants)",
-      "company": "WHO",
-      "location": "Port Moresby, Papua New Guinea",
-      "job_type": "Full-Time",
-      "job_category": "Public Health",
-      "salary": "",
-      "experience": "Minimum of five years relevant work experience in public health and disease control programmes",
-      "qualification": "University degree (bachelor’s or higher) in medicine, public health, social sciences or similar fields; Master's degree in public health or health management is desirable",
-      "requirements": [
-        "Training in epidemiology or social epidemiology and/or strong knowledge of the theory and practice of health promotion, determinants of health",
-        "Postgraduate qualifications in NCD prevention and control, mental health and substance abuse, violence and injuries prevention, ageing, nutrition, and social determinants of health"
-      ],
-      "responsibilities": [
-        "Develop and maintain productive working relationships and partnerships with relevant national and state authorities and other stakeholders to strengthen health promotion",
-        "Undertake research, collaborate with, and support national officials in the development and implementation of multisectoral, national plans for the prevention and control of noncommunicable diseases",
-        "Provide technical advice on the development/review and promotion of national policies, programs, and structures for health promotion",
-        "Coordinate priority health programs to strengthen community engagement, social mobilization, behaviour change communication"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-02-23",
-      "deadline": "2026-03-16",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/public-health-officer-health-promotion-and-determinants-2600503-public-health-officer-health-promotion-and-determinants-2600503-377",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Clinical Specialist",
-      "company": "Achieving Health Nigeria Initiative (AHNi)",
-      "location": "Anambra, Nigeria",
-      "job_type": "Contract",
-      "job_category": "Doctor",
-      "salary": "",
-      "experience": "2 - 3 years post NYSC experience",
-      "qualification": "A Degree in Medicine (MBBS) from a recognized institution",
-      "requirements": [
-        "Valid License to practice as a Doctor in Nigeria",
-        "Possession of a post graduate degree in a related field is an added advantage",
-        "Excellent ability to communicate, lead and maintain productive relations with the team",
-        "Resourcefulness, flexibility, and ability to work in a fast changing and challenging environment",
-        "Ability to use key computing applications e g MS Office Suite",
-        "Knowledge of different databases (DHIS or NMRS) is a plus",
-        "Proficiency in local languages is an advantage"
-      ],
-      "responsibilities": [
-        "Coordinate the Provision of ART services to PLHIVs at facilities in the LGA in line with the National guidelines both at the facility and community",
-        "Coordinate and conduct comprehensive clinical assessments, diagnosis, and management of HIV/AIDS and related opportunistic infections",
-        "Oversee clinical HIV management interventions for PLHIVS at the facilities in the LGA",
-        "Review clinical records to evaluate the necessary level of client care",
-        "Effectively manage and supervise other clinical team members, health service providers, volunteers and case managers at the facility as well as through other DSD sites in the designated LGA",
-        "Provide pre- and post-exposure prophylaxis (PrEP and PEP) services for eligible clients",
-        "Supervise weekly/monthly clinical staff meetings, integrate facility and Community services with other project activities to enhance the achievement of project outcomes in the LGA",
-        "Provide support to the Strategic Information (SI) unit to manage data collection for service delivery to PLHIVs in project communities using nationally approved tools at the facilities in the LGA",
-        "Support for data analysis, interpretation and use at all facilities in the LGA",
-        "Use of data at facility level for decision making towards improving service delivery",
-        "Preparation of program reports, proactively seek out and report relevant opportunities, success stories, linkages or challenges that may promote clinical services for the project",
-        "Provide technical and programmatic oversight to the pharmacy, Lab and other units in the LGAs",
-        "Health Education to clients in areas requiring needs",
-        "Work collaboratively with community outreach teams, peer educators, and other healthcare providers to ensure a seamless continuum of care at the LGA",
-        "Coordinate referrals for additional services, including psychosocial support, legal aid, and other specialized care",
-        "Carry out any task as assigned"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-02-23",
-      "deadline": "2026-03-03",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/clinical-specialist-376",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Pharmacy Specialist",
-      "company": "Achieving Health Nigeria Initiative (AHNi)",
-      "location": "Anambra, Nigeria",
-      "job_type": "Contract",
-      "job_category": "Pharmacist",
-      "salary": "",
-      "experience": "2 - 3 years",
-      "qualification": "B. Pharm Degree",
-      "requirements": [
-        "B. Pharm Degree with 2 - 3 years post NYSC experience in clinical management of HIV/TB",
-        "Possession of a post graduate degree in a related field is an added advantage",
-        "Experience working with the General population is essential",
-        "Excellent ability to communicate and maintain productive relations with the team",
-        "Resourcefulness, flexibility, and ability to work in a fast changing and challenging environment",
-        "Ability to use key computing applications e.g. MS Office Suite and knowledge of different databases (NHLMIS, DHIS, NDARS or NMRS) is a plus"
-      ],
-      "responsibilities": [
-        "Coordinate and dispense antiretroviral drugs (ARVs) and other related medications according to prescriptions and treatment guidelines at the facility and all supported sites in the LGA",
-        "Ensure proper inventory management, including stock ordering, storage, and monitoring to prevent stockouts, overstocking, or expiries in all supported facilities in the LGA",
-        "Conduct regular stock counts and report discrepancies promptly",
-        "Ensure compliance with national and international pharmaceutical standards",
-        "Ensure proper education of clients on the correct use of ARVs, potential side effects, and the importance of adherence to therapy",
-        "Address clients’ concerns or misconceptions about ART medications in a confidential and nonjudgmental manner",
-        "Coordinate differentiated service delivery models, including multi-month dispensing (MMD) and community ART distribution in the LGA",
-        "Work closely with clinicians, nurses, and community health workers to provide integrated and patient-centered care",
-        "Participate in multidisciplinary case management meetings to discuss client progress and address challenges",
-        "Coordinate with supply chain managers to ensure uninterrupted availability of ARVs and related products to all supported sites in the LGA",
-        "Maintain accurate dispensing records using electronic and paper-based systems",
-        "Compile and submit regular reports on stock levels, dispensing patterns, and medication-related issues to relevant authorities for all supported facilities in the LGA",
-        "Use of CRRF for request and requisition for drug, test kits and other commodities to be used in the LGA",
-        "Monitor and report adverse drug reactions (ADRs) and drug interactions"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-02-23",
-      "deadline": "2026-02-28",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/pharmacy-specialist-375",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Healthcare Assistant",
-      "company": "Tofaans Hospital Amule Ayobo",
-      "location": "Lagos, Nigeria",
-      "job_type": "Part-Time",
-      "job_category": "Allied Health",
-      "salary": "",
-      "experience": "",
-      "qualification": "Minimum of SSCE or equivalent qualification; Certificate or training as a Health Care Assistant",
-      "requirements": [
-        "Previous experience in a hospital or healthcare facility is preferred",
-        "Basic knowledge of patient care and hospital hygiene standards",
-        "Ability to work shifts, including nights and weekends",
-        "Good communication and interpersonal skills",
-        "Compassionate, patient, and respectful attitude",
-        "Physically fit and able to assist with patient movement"
-      ],
-      "responsibilities": [
-        "Assist patients with daily living activities such as bathing, dressing, feeding, and mobility",
-        "Support nurses in monitoring patients’ vital signs (temperature, pulse, respiration, blood pressure)",
-        "Help in preparing patients for medical examinations and procedures",
-        "Maintain cleanliness and hygiene of wards, patient beds, and equipment",
-        "Assist in transferring and repositioning patients safely",
-        "Observe patients and promptly report any changes in condition to the nursing staff",
-        "Assist with stocking and organising medical supplies",
-        "Carry out any other duties assigned by the nursing or hospital management"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-02-23",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/healthcare-assistant-374",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Pharmacy Technician",
-      "company": "Prestigious Consulting Group",
-      "location": "Agungi, Lagos, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Pharmacist",
-      "salary": "NGN120,000 / monthly",
-      "experience": "",
-      "qualification": "Minimum of OND / HND in a relevant field is an advantage",
-      "requirements": [
-        "Valid Pharmacy Technician license",
-        "Previous experience in a pharmacy or healthcare setting preferred",
-        "Good knowledge of pharmaceutical terminology and medications",
-        "Strong attention to detail and organizational skills",
-        "Excellent communication and customer service skills",
-        "Ability to work independently and as part of a team"
-      ],
-      "responsibilities": [
-        "Assist pharmacists in preparing and dispensing prescriptions",
-        "Verify prescription information for accuracy",
-        "Label, package, and store medications properly",
-        "Maintain accurate patient and inventory records",
-        "Monitor stock levels and report shortages or expired drugs",
-        "Provide courteous assistance to customers and respond to inquiries",
-        "Ensure compliance with pharmacy regulations and safety standards"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-02-23",
-      "deadline": "2026-03-30",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/pharmacy-technician-373",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "General Practitioner",
-      "company": "Nova multi-specialist care centre",
-      "location": "Maitama, Abuja (FCT), Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Doctor",
-      "salary": "",
-      "experience": "",
-      "qualification": "Minimum MBBS, MBChB, or its equivalent; Registered with the Medical and Dental Council of Nigeria with a valid practicing license; Completion of compulsory internship and national service or exemption.",
-      "requirements": [
-        "Minimum MBBS, MBChB, or its equivalent",
-        "Registered with the Medical and Dental Council of Nigeria with a valid practicing license",
-        "Completion of compulsory internship and national service or exemption",
-        "Skills to perform minor trauma care including suturing, plaster casting, debridement etc.",
-        "Demonstrates evidence of independently attending to common primary healthcare conditions."
-      ],
-      "responsibilities": [
-        "Discuss and review patients' medical history, symptoms, allergies, and current medications.",
-        "Perform a range of functions including but not limited to; initial history taking, clinical assessments, diagnosis, treatment, and evaluation of care.",
-        "Ask patients situation-specific questions to formulate accurate diagnoses and perform specialized diagnostic physical exams and treatment procedures.",
-        "Review and act appropriately on blood results and referrals/correspondence regarding patients.",
-        "Formulate suitable treatment plans to address non-threatening conditions, such as common colds, cases of flu, ear infections, urinary tract infections, allergies, and rashes; ensuring compliance with approved standard treatment guidelines.",
-        "Prescribe various diagnostic tests to aid in providing accurate diagnoses.",
-        "Analyze diagnostic test results and explain them to patients.",
-        "Prescribe suitable medications to patients and provide proper dosage and administration instructions.",
-        "Participate in all treatment and preventative healthcare services as delegated and agreed upon by the supervising Clinical Managers.",
-        "Maintain accurate records of patient's contact details, medical history, prescribed medications, allergies, diagnoses, and progress, via designated Electronic Medical Record System.",
-        "Attend regular educational meetings organized by the practice in order to update clinical knowledge, practice policy and guidelines, and disseminate other useful information relevant to the provision of adequate healthcare for patients in order to discuss in a bid to learn from recent significant events relating to clinical practice occurring within the clinics.",
-        "Advise patients on suitable diets and exercise regimens to improve their overall health.",
-        "Develop and utilize treatment tools that standardize the provision of care on the platform.",
-        "Support the training of other medical providers (doctors).",
-        "Facilitate knowledge-sharing sessions amongst medical practitioners on the platform.",
-        "Routinely review and assess the consultations for compliance with set guidelines.",
-        "Know and ensure all medical protocols are followed and implemented, checking universal precautions are followed at all times and reducing bio-hazard risks and improving infection control.",
-        "Ensure professional confidentiality is respected.",
-        "Ensure absolute confidentiality of medical data and patients’ information.",
-        "Responsible for patient safety and apply patient centered care."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-02-23",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/general-practitioner-372",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Associate Dentist (Outreach)",
-      "company": "Beaconhill Smile Clinic Limited",
-      "location": "Victoria Island, Lagos, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Dentist",
-      "salary": "",
-      "experience": "2 - 5 years",
-      "qualification": "BDS holder (or its equivalent)",
-      "requirements": [
-        "Post NYSC graduate licensed to practice in Nigeria"
-      ],
-      "responsibilities": [
-        "Conduct dental screenings, examinations, and diagnosis in outreach settings.",
-        "Deliver oral health education sessions to schools, corporate organizations, and community groups.",
-        "Promote preventive dental practices and awareness campaigns.",
-        "Represent the organization professionally during outreach programs and public engagements.",
-        "Work closely with the outreach and clinical teams to plan and execute outreach activities.",
-        "Team player, efficient, interpersonal relationship skills, good listener with strong customer service & communication skills.",
-        "Must be willing to comply with all Practices' policies and procedures on diagnosis, treatment, etc.",
-        "He/she must be confident and willing to learn."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-02-23",
-      "deadline": "2026-02-27",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/associate-dentist-outreach-371",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Registered Nurse",
-      "company": "Neveah Limited",
-      "location": "Ogun, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Nurse",
-      "salary": "",
-      "experience": "Minimum 4 years’ nursing experience, including 2 years in a manufacturing or industrial setting.",
-      "qualification": "Bachelor's Degree",
-      "requirements": [
-        "Registered Nurse",
-        "Strong clinical assessment and emergency response capabilities",
-        "Excellent record-keeping and patient education skills."
-      ],
-      "responsibilities": [
-        "Administer first aid and emergency care; coordinate medical evacuations.",
-        "Conduct pre-employment and periodic medical screenings.",
-        "Maintain accurate medical records and incident reports.",
-        "Facilitate health promotion and wellness programs.",
-        "Liaise with external healthcare providers for referrals."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-02-23",
-      "deadline": "2026-02-28",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/registered-nurse-370",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Physiologist",
-      "company": "Union Diagnostics Limited",
-      "location": "Port Harcourt, Rivers, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Allied Health",
-      "salary": "",
-      "experience": "2 - 10 years",
-      "qualification": "Bachelor's Degree",
-      "requirements": [
-        "Bachelor's Degree",
-        "2 - 10 years of work experience"
-      ],
-      "responsibilities": [
-        "Vital signs check",
-        "Performing ECG",
-        "Performing EEG",
-        "Performing Spirometry"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-02-20",
-      "deadline": "2026-03-31",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/physiologist-369",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Senior Nursing Officer",
-      "company": "International Institute of Tropical Agriculture (IITA)",
-      "location": "Ibadan, Oyo, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Nurse",
-      "salary": "",
-      "experience": "4-5 years",
-      "qualification": "BSc in Nursing / Bachelor of Nursing Science",
-      "requirements": [
-        "BSc in Nursing / Bachelor of Nursing Science with any two (2) of the following: Diploma in Public / Occupational Health Nursing; Family Planning Certificate; Post Basic Diploma in Accident & Emergency Nursing; Post Basic Nursing Certificate in Theatre Techniques; Post Basic Nursing Certificate in Paediatric Nursing; Diploma in Nursing Science.",
-        "4-5 years’ experience in at least (3) of the following areas; Post Basic Diploma in Accident and Emergency unit; Post Basic Nursing Certificate in Theatre Techniques; Post Basic Nursing Certificate in Paediatric Nursing; Outpatient Departments and Medical wards; Community Health Nursing."
-      ],
-      "responsibilities": [
-        "Evaluate accurate vital signs.",
-        "Dress wound on routine and emergency basis.",
-        "Carry out eye lavage, ear syringing, and administration of parenteral medications.",
-        "Set up intravenous infusion as the need arises.",
-        "Administer all immunizations.",
-        "Assess Visual acuity using Snellen's chart.",
-        "Accompany very ill patients outside hospitals.",
-        "Perform incision and drainage of abscesses.",
-        "Suture minor wound lacerations.",
-        "Enter patients' attendance the company daily.",
-        "Wash autoclave and store instruments used in nursing care."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-02-20",
-      "deadline": "2026-03-06",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/senior-nursing-officer-368",
-      "_source": "medlocum"
-    },
-    {
       "job_title": "General Practitioner",
       "company": "Gynescope Specialist Hospital",
       "location": "Maitama, Abuja (FCT)",
@@ -3457,6 +3608,79 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/General-Practitioner?pid=77365",
+      "_source": "medicalworldnigeria"
+    },
+    {
+      "job_title": "Registered Nurse",
+      "company": "Neveah Limited",
+      "location": "Ogun, Nigeria",
+      "job_type": "Full-time",
+      "job_category": "Nurse",
+      "salary": "",
+      "experience": "4 years",
+      "qualification": "Bachelor's Degree",
+      "requirements": [
+        "Minimum 4 years nursing experience",
+        "2 years in a manufacturing or industrial setting",
+        "Registered Nurse"
+      ],
+      "responsibilities": [
+        "Administer first aid and emergency care; coordinate medical evacuations",
+        "Conduct pre-employment and periodic medical screenings",
+        "Maintain accurate medical records and incident reports",
+        "Facilitate health promotion and wellness programs",
+        "Liaise with external healthcare providers for referrals"
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-02-20",
+      "deadline": "2026-02-28",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Registered-Nurse-at-Neveah-Limited?pid=77363",
+      "_source": "medicalworldnigeria"
+    },
+    {
+      "job_title": "Senior Nursing Officer",
+      "company": "International Institute of Tropical Agriculture (IITA)",
+      "location": "Ibadan, Oyo",
+      "job_type": "Contract",
+      "job_category": "Nurse",
+      "salary": "with equally attractive benefits and excellent working conditions in a pleasant campus environment.",
+      "experience": "four to five (4-5) years",
+      "qualification": "BSc in Nursing / Bachelor of Nursing Science",
+      "requirements": [
+        "Diploma in Public / Occupational Health Nursing",
+        "Family Planning Certificate",
+        "Post Basic Diploma in Accident & Emergency Nursing",
+        "Post Basic Nursing Certificate in Theatre Techniques",
+        "Post Basic Nursing Certificate in Paediatric Nursing",
+        "Diploma in Nursing Science"
+      ],
+      "responsibilities": [
+        "Evaluate accurate vital signs.",
+        "Dress wound on routine and emergency basis.",
+        "Carry out eye lavage, ear syringing, and administration of parenteral medications.",
+        "Set up intravenous infusion as the need arises.",
+        "Administer all immunizations.",
+        "Assess Visual acuity using Snellen's chart.",
+        "Accompany very ill patients outside hospitals.",
+        "Perform incision and drainage of abscesses.",
+        "Suture minor wound lacerations.",
+        "Enter patients' attendance the company daily.",
+        "Wash autoclave and store instruments used in nursing care."
+      ],
+      "how_to_apply": [
+        "Submit your application through the employer’s online recruitment portal.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-02-20",
+      "deadline": "2026-03-06",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Senior-Nursing-Officer-at-International-Institute-of-Tropical-Agriculture-IITA?pid=77361",
       "_source": "medicalworldnigeria"
     },
     {
@@ -4506,79 +4730,6 @@
       "_source": "medicalworldnigeria"
     },
     {
-      "job_title": "Provider Manager - Nurse",
-      "company": "International Health Management Services (IHMS)",
-      "location": "Ogui, Enugu",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "N200,000 - N300,000 per month",
-      "experience": "5",
-      "qualification": "bsc",
-      "requirements": [
-        "Strong knowledge of healthcare regulations, policies, and clinical best practices.",
-        "Excellent communication and interpersonal skills.",
-        "Strong analytical and problem-solving abilities.",
-        "Ability to work collaboratively across departments."
-      ],
-      "responsibilities": [
-        "Manage and maintain relationships with healthcare providers in the network.",
-        "Monitor provider performance and ensure compliance with healthcare standards and regulatory requirements.",
-        "Work closely with the Claims Department to review and validate medical claims.",
-        "Support the Call Center team in resolving provider-related inquiries and complaints.",
-        "Ensure adherence to healthcare regulations and internal policy guidelines.",
-        "Participate in the onboarding and credentialing of new providers."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-02-13",
-      "deadline": "2026-02-19",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Provider-Manager-Nurse-at-International-Health-Management-Services-IHMS?pid=77293",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Pediatric Nurse",
-      "company": "Daughters of Charity of St. Vincent de Paul Hospital",
-      "location": "Kubwa, Abuja (FCT)",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "n,",
-      "experience": "Minimum of 1 year relevant work experience in pediatric nursing.",
-      "qualification": "BSc",
-      "requirements": [
-        "Registered Nurse (RN) and Registered Pediatric Nurse Certification from an accredited institution.",
-        "Must be registered with the National Association of Nurses and Midwifery of Nigeria and licensed to practice as a Pediatric Nurse.",
-        "Strong knowledge of child growth and development, immunization schedules, and pediatric emergencies.",
-        "Proficiency in Microsoft Office and electronic medical record (EMR) systems.",
-        "Excellent communication, interpersonal, and patient care skills."
-      ],
-      "responsibilities": [
-        "Provide specialized care to infants, children, and adolescents.",
-        "Assess, monitor, and deliver high-quality nursing care while ensuring the physical and emotional well-being of young patients.",
-        "Conduct patient assessments and monitor vital signs.",
-        "Administer medications, vaccinations, and treatments as prescribed.",
-        "Assist in diagnostic tests and procedures for pediatric patients.",
-        "Educate parents and caregivers on child health, nutrition, and disease prevention.",
-        "Provide emotional support to children and families during treatment.",
-        "Collaborate with pediatricians and other healthcare professionals to ensure comprehensive care.",
-        "Maintain accurate medical records and ensure compliance with healthcare standards.",
-        "Implement infection control and safety protocols in pediatric care."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-02-13",
-      "deadline": "2026-02-28",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Pediatric-Nurse-at-Daughters-of-Charity-of-St-Vincent-de-Paul-Hospital?pid=77286",
-      "_source": "medicalworldnigeria"
-    },
-    {
       "job_title": "Provider Manager – Nurse",
       "company": "International Health Management Services (IHMS)",
       "location": "Ogui, Enugu, Nigeria",
@@ -4689,85 +4840,6 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/nutritionist-dietitian-falcon-peak-solutions-limited/",
       "_source": "jobsinnigeria"
-    },
-    {
-      "job_title": "Registered Nurse",
-      "company": "St. Luke's Hospital",
-      "location": "Ajura–Siun, Obafemi Owode LGA, Ogun",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "n,",
-      "experience": "3 – 5 years",
-      "qualification": "bsc",
-      "requirements": [
-        "Must be a Registered Nurse (RN) with a valid Nursing and Midwifery Council of Nigeria (NMCN) license",
-        "Experience in industrial, occupational health, or clinic settings is an advantage",
-        "Good communication, interpersonal, and record-keeping skills",
-        "Ability to work independently and under pressure",
-        "Strong sense of responsibility and professionalism"
-      ],
-      "responsibilities": [
-        "Provide first aid and basic medical care to staff and visitors",
-        "Assess, treat, and manage minor injuries and illnesses",
-        "Maintain accurate medical records and reports",
-        "Administer medications as prescribed",
-        "Monitor staff health and fitness for duty",
-        "Support occupational health and safety programs",
-        "Coordinate medical referrals and emergency response when necessary",
-        "Conduct routine health checks and health awareness programs",
-        "Ensure cleanliness and proper management of the clinic and medical supplies"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-02-12",
-      "deadline": "2026-02-16",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Registered-Nurse-at-Harvest-Feed-and-Agro-Processing-Limited?pid=77283",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Lead Nurse - Executive Unit",
-      "company": "Lily Hospitals Limited",
-      "location": "Benin City, Edo",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "n,",
-      "experience": "Minimum of three to five years of clinical experience",
-      "qualification": "bsc",
-      "requirements": [
-        "Registered Nurse (RN) and/or Registered Midwife (RM) with a valid practising license from NMCN",
-        "Bachelor's degree (B.NSc) is an added advantage",
-        "Must possess a BLS and ACLS training certificate",
-        "Knowledge of the Nurse Practice Act",
-        "Strong proficiency in simulation-based learning, clinical assessments, and student mentorship",
-        "Excellent leadership, communication, and problem-solving skills",
-        "Proficiency in the Microsoft Office Package."
-      ],
-      "responsibilities": [
-        "Deliver and oversee high-quality patient care",
-        "Ensure compliance with patient safety, privacy, and nursing standards",
-        "Lead, supervise, and support nursing staff to ensure consistent, quality care",
-        "Assign duties, manage schedules and rotations",
-        "Recruit, orient, train, and develop nursing staff",
-        "Ensure adequate stock levels and functional equipment",
-        "Prepare patients for consultations and procedures",
-        "Collaborate with physicians on treatment plans",
-        "Maintain a safe, clean, and infection-controlled environment",
-        "Ensure adherence to regulatory, accreditation, and quality standards."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-02-11",
-      "deadline": "2026-02-17",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Lead-Nurse-Executive-Unit-at-Lily-Hospitals-Limited?pid=77269",
-      "_source": "medicalworldnigeria"
     },
     {
       "job_title": "Head Wealth and Funds Manager",
@@ -4999,66 +5071,6 @@
       "_source": "medicalworldnigeria"
     },
     {
-      "job_title": "Staff Nurse / Midwife",
-      "company": "Private Specialist Hospital",
-      "location": "Nnewi, Anambra",
-      "job_type": "",
-      "job_category": "Nurse",
-      "salary": "is attractive",
-      "experience": "",
-      "qualification": "bsc",
-      "requirements": [
-        "Candidates should possess relevant qualifications and experience."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-02-10",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "08067857731",
-      "apply_url": "https://medicalworldnigeria.com/post/Staff-Nurse-Midwife-at-a-Private-Specialist-Hospital?pid=77263",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Registered Nurse",
-      "company": "Montaigne AH Limited",
-      "location": "Ajah, Lagos",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "N150,000",
-      "experience": "1–2 years clinical experience",
-      "qualification": "bsc",
-      "requirements": [
-        "Must be a Registered Nurse (RN)",
-        "Valid practicing license",
-        "Strong communication and interpersonal skills",
-        "Ability to work independently and as part of a team",
-        "Professional, compassionate, and detail-oriented."
-      ],
-      "responsibilities": [
-        "Provide direct patient care and nursing support",
-        "Administer medications and treatments as prescribed",
-        "Monitor and record patients’ vital signs and medical information",
-        "Assist doctors during procedures",
-        "Maintain accurate patient records",
-        "Ensure compliance with healthcare regulations and safety standards",
-        "Educate patients and their families on health management"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-02-10",
-      "deadline": "2026-03-10",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Registered-Nurse-at-Montaigne-AH-Limited-Montaigne-Place?pid=77253",
-      "_source": "medicalworldnigeria"
-    },
-    {
       "job_title": "Pharmacy Assistant",
       "company": "Castville Solutions",
       "location": "Lagos, Nigeria",
@@ -5124,31 +5136,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/General-Practitioner?pid=77248",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Experienced Registered Nurse/Midwife",
-      "company": "Mother Elizabeth Hospital",
-      "location": "Azagba Ogwashi, Delta",
-      "job_type": "",
-      "job_category": "Nurse",
-      "salary": "negotiable",
-      "experience": "not less than 6 years",
-      "qualification": "bsc",
-      "requirements": [
-        "A current practising license",
-        "Knowledge of EMR"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-02-07",
-      "deadline": "21/02/2026",
-      "contact_email": "",
-      "contact_phone": "0703 138 1620",
-      "apply_url": "https://medicalworldnigeria.com/post/Experienced-registered-nurse-midwife?pid=77246",
       "_source": "medicalworldnigeria"
     },
     {
@@ -5288,39 +5275,6 @@
       "contact_email": "",
       "contact_phone": "08068562999, 09020672134",
       "apply_url": "https://medicalworldnigeria.com/post/Top-Hospital-in-Zamfara-Announces-Immediate-Recruitment-for-Doctors-See-Full-Requirements-and-Deadline?pid=77233",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Nurse",
-      "company": "Purple Consult",
-      "location": "Victoria Island, Lagos",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "Very Attractive",
-      "experience": "6",
-      "qualification": "bsc",
-      "requirements": [
-        "Candidates should possess a Bachelor's Degree with 4-6 years experience",
-        "Proximity is mandatory."
-      ],
-      "responsibilities": [
-        "Deliver high-quality patient care in line with hospital standards.",
-        "Monitor patient conditions and promptly report changes.",
-        "Administer medications and treatments as prescribed.",
-        "Maintain accurate and up-to-date patient records.",
-        "Collaborate with doctors and other healthcare professionals.",
-        "Ensure strict adherence to infection control and safety protocols.",
-        "Provide patient education and emotional support to patients and families."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-02-06",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Nurses-at-Purple-Consult?pid=77240",
       "_source": "medicalworldnigeria"
     },
     {
@@ -5535,170 +5489,6 @@
       "_source": "jobsinnigeria"
     },
     {
-      "job_title": "Nurse (Male and Female)",
-      "company": "Reputable Hospital",
-      "location": "Lagos",
-      "job_type": "",
-      "job_category": "Nurse",
-      "salary": "",
-      "experience": "",
-      "qualification": "bsc",
-      "requirements": [
-        "Interested candidates should possess relevant qualifications."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-02-05",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Nurses-at-a-Reputable-Hospital?pid=77231",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Qualified and Skilled Midwife",
-      "company": "Christian Miracle Hospital",
-      "location": "Enugu, Nigeria",
-      "job_type": "full-time",
-      "job_category": "Nurse",
-      "salary": "n,",
-      "experience": "in providing Lactation support and education",
-      "qualification": "bsc",
-      "requirements": [
-        "Expertise in Maternity care and Midwifery practices",
-        "Proficiency in managing Childbirth and Postnatal care",
-        "Knowledge of Medicine, including maternal and neonatal health",
-        "Experience in providing Lactation support and education",
-        "Strong communication and interpersonal skills",
-        "Compassionate, patient-focused approach to care",
-        "Relevant certifications or licensure in midwifery and nursing",
-        "Prior experience in a hospital or maternity care setting is an advantage",
-        "Willingness to work shifts, including nights and weekends",
-        "Resident in or willing to relocate to Enugu, Nigeria",
-        "Commitment to the mission of Christian Miracle Hospital",
-        "Ability to work under pressure and manage emergencies gracefully"
-      ],
-      "responsibilities": [
-        "Provide holistic antenatal, intrapartum, and postnatal care to mothers and their newborns",
-        "Monitor fetal and maternal well-being during labor and delivery using evidence-based protocols",
-        "Assist in spontaneous vaginal deliveries, including management of normal and complicated births",
-        "Identify and respond promptly to obstetric emergencies",
-        "Assist in health education and counseling for mothers and families",
-        "Collaborate with doctors, nurses, and other healthcare professionals to coordinate patient care",
-        "Maintain detailed, accurate, and timely clinical documentation",
-        "Provide faith-sensitive emotional and psychological support to patients and their families",
-        "Participate in clinical training sessions, outreach programs, and community maternal health advocacy",
-        "Uphold the Christian values and mission of CMH in all patient interactions"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-02-05",
-      "deadline": "2026-03-05",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Qualified-and-Skilled-Midwife-at-Christian-Miracle-Hospital?pid=77229",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Head of Department for Midwifery",
-      "company": "Lily Hospitals Limited",
-      "location": "Warri, Delta, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "& Benefits",
-      "experience": "2",
-      "qualification": "bsc",
-      "requirements": [
-        "Registered Midwife (RM) with a Master's Degree in Midwifery or a related field",
-        "Minimum of 4 years' experience in midwifery education or clinical practice, with at least 2 years in a leadership or managerial role",
-        "PGD in Education is required",
-        "Proven experience in curriculum development, program assessment, and faculty development within a midwifery education context",
-        "Excellent communication and interpersonal skills, with the ability to engage effectively with diverse stakeholders"
-      ],
-      "responsibilities": [
-        "Lead the development, implementation, and evaluation of the midwifery curriculum in alignment with regulatory and accreditation standards",
-        "Provide leadership and support to faculty members and administrative staff within the Midwifery department",
-        "Ensure the integration of evidence-based practices and innovative teaching methodologies in midwifery education",
-        "Foster a collaborative and supportive environment that promotes professional growth and student success"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-02-05",
-      "deadline": "2026-02-14",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Head-of-Department-for-Midwifery-at-Lily-College-of-Nursing-Sciences?pid=77224",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Oncology Nurse",
-      "company": "NSIA-LUTH Cancer Centre",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "n,",
-      "experience": "in the applied role or a related professional/healthcare environment",
-      "qualification": "bsc",
-      "requirements": [
-        "Candidates should be a Registered Nurse License",
-        "Relevant experience in the applied role or a related professional/healthcare environment",
-        "Required academic and professional qualification, certifications, and licenses applicable to the role",
-        "Strong communication and interpersonal skills",
-        "Professionalism, teamwork, and attention to detail",
-        "Demonstrated Commitment to quality service delivery and organizational values"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-02-05",
-      "deadline": "2026-02-06",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Oncology-Nurse-at-NSIA-LUTH-Cancer-Centre-NLCC?pid=77219",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Deputy Provost",
-      "company": "Lily College Of Nursing Sciences",
-      "location": "Warri, Delta",
-      "job_type": "Full-time",
-      "job_category": "Healthcare Management",
-      "salary": "n,",
-      "experience": "5",
-      "qualification": "Master’s Degree in Nursing",
-      "requirements": [
-        "Minimum of Master’s Degree in Nursing and must be a Registered Nurse Educator",
-        "At least 5 years of progressive leadership experience in higher education",
-        "Proven track record in curriculum design, faculty management, accreditation, and policy implementation",
-        "Strong leadership, communication, and interpersonal skills",
-        "Integrity, professional ethics, and a passion for student-centered education"
-      ],
-      "responsibilities": [
-        "Provide strategic leadership in curriculum development, faculty performance, and quality assurance",
-        "Ensure compliance with academic standards and promote student success",
-        "Foster innovation, institutional effectiveness, and stakeholder collaboration"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-02-05",
-      "deadline": "2026-02-11",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Deputy-Provost-at-Lily-College-Of-Nursing-Sciences?pid=77212",
-      "_source": "medicalworldnigeria"
-    },
-    {
       "job_title": "Medical Doctor",
       "company": "EHA Clinics",
       "location": "Life Camp, Abuja",
@@ -5768,41 +5558,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Medical-Doctor-at-a-Fast-growing-Healthcare-Services-Company-Kaplo-Africa?pid=77205",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Registered Nurse",
-      "company": "JV Management Consulting",
-      "location": "Ogudu Berger, Lagos",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "N110,000 monthly; Accommodation provided.",
-      "experience": "Health & Wellness experience is an added advantage",
-      "qualification": "bsc",
-      "requirements": [
-        "Must be a Registered Nurse (RN) with a valid license",
-        "Relevant nursing experience (Health & Wellness experience is an added advantage)",
-        "Good communication and interpersonal skills",
-        "Caring, patient-focused, and professional attitude",
-        "Must reside in or around Ogudu, Berger or be willing to commute."
-      ],
-      "responsibilities": [
-        "Provide professional nursing care to patients/clients",
-        "Monitor and record patients’ health conditions and vital signs",
-        "Administer medications and treatments as prescribed",
-        "Assist doctors and other healthcare professionals when required",
-        "Maintain accurate patient records and reports",
-        "Ensure compliance with health, safety, and hygiene standards."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-02-04",
-      "deadline": "2026-02-10",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Registered-Nurse-at-a-Health-and-Wellness-Company-JV-Management-Consulting?pid=77206",
       "_source": "medicalworldnigeria"
     },
     {
@@ -5893,55 +5648,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Internal-Medicine-Physician-at-the-African-Medical-Centre-of-Excellence-AMCE?pid=77151",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Palliative Care Nurse",
-      "company": "African Medical Centre of Excellence (AMCE)",
-      "location": "Abuja",
-      "job_type": "",
-      "job_category": "Nurse",
-      "salary": "n,",
-      "experience": "1 year",
-      "qualification": "BSc",
-      "requirements": [
-        "Registered Nurse (RN) qualification with a valid practicing license from the Nursing and Midwifery Council of Nigeria (NMCN)",
-        "Post-basic certification or diploma in Palliative Care, Oncology Nursing, or a related field is highly desirable",
-        "Minimum of 3 years of clinical nursing experience, with at least 1 year in a setting providing palliative care, oncology, chronic disease management, or intensive care",
-        "Demonstrated competency in pain and symptom assessment and management",
-        "Experience in providing end-of-life care and supporting grieving families",
-        "Strong interpersonal, communication, and emotional resilience skills",
-        "Ability to work effectively within a multidisciplinary team",
-        "Commitment to patient-centered, compassionate care",
-        "Proficiency in nursing documentation and basic IT skills"
-      ],
-      "responsibilities": [
-        "Conduct comprehensive nursing assessments of patients with advanced illness, focusing on physical, emotional, and spiritual needs",
-        "Administer and monitor pharmacological and non-pharmacological interventions for pain and symptom control",
-        "Provide expert wound care, including management of pressure injuries and malignant wounds",
-        "Deliver compassionate end-of-life care, ensuring comfort and dignity",
-        "Provide emotional support, active listening, and therapeutic communication to patients and families",
-        "Facilitate family meetings and support discussions around goals of care, advance care planning, and transition points",
-        "Offer bereavement support and refer to appropriate counseling services as needed",
-        "Work as an integral member of the interdisciplinary palliative care team, contributing to care planning and case reviews",
-        "Collaborate closely with physicians, social workers, chaplains, physiotherapists, and pharmacists to implement holistic care plans",
-        "Serve as a liaison between the patient/family and the wider healthcare team",
-        "Educate patients and families on disease progression, symptom management strategies, and care options",
-        "Advocate for patient preferences and ensure care aligns with the patient’s values and wishes",
-        "Provide palliative care education and support to nursing colleagues and other healthcare staff",
-        "Maintain accurate, timely, and confidential patient records in accordance with professional and institutional standards",
-        "Coordinate care transitions, including referrals to hospice, home care, or other community services",
-        "Participate in clinical audits and quality improvement initiatives related to palliative and end-of-life care"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-02-03",
-      "deadline": "2026-02-05",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Palliative-Care-Nurse-at-African-Medical-Centre-of-Excellence-AMCE?pid=77193",
       "_source": "medicalworldnigeria"
     },
     {
@@ -7463,49 +7169,6 @@
       "_source": "jobsinnigeria"
     },
     {
-      "job_title": "Medical Officer – HIFU",
-      "company": "Kelina Hospital",
-      "location": "Lekki, Lagos",
-      "job_type": "Full-time (On-site)",
-      "job_category": "Doctor",
-      "salary": "Competitive and commensurate with experience.",
-      "experience": "5",
-      "qualification": "bsc",
-      "requirements": [
-        "Bachelor of Medicine, Bachelor of Surgery (MBBS) from a recognized institution.",
-        "Full registration with the Medical and Dental Council of Nigeria (MDCN) and a current practicing license.",
-        "Minimum of 3–5 years post-qualification clinical experience.",
-        "Experience in gynaecology, radiology, fertility care, or other procedure-based clinical settings is an added advantage."
-      ],
-      "responsibilities": [
-        "Conduct patient consultations and clinical assessments to determine suitability for HIFU treatment.",
-        "Explain HIFU procedures, benefits, risks, and expectations to patients and obtain informed consent.",
-        "Perform and/or support HIFU procedures in line with approved clinical protocols.",
-        "Monitor patients before, during, and after procedures and manage post-procedure care.",
-        "Provide follow-up reviews, counselling, and ongoing patient support.",
-        "Ensure strict compliance with clinical guidelines, infection control standards, and patient safety protocols.",
-        "Maintain accurate, complete, and confidential medical records.",
-        "Promptly escalate complications or clinical concerns to senior clinicians.",
-        "Participate in clinical audits and quality improvement initiatives.",
-        "Ensure appropriate handling and use of HIFU equipment and consumables.",
-        "Report equipment faults or maintenance needs promptly.",
-        "Work closely with nurses and other clinical staff to ensure smooth patient flow.",
-        "Collaborate effectively with Nurses, Embryologists, and other multidisciplinary team members.",
-        "Communicate professionally with patients, families, and colleagues.",
-        "Support patient education and awareness initiatives related to HIFU services."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-01-15",
-      "deadline": "2026-02-28",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Medical-Officer-HIFU-at-Nordica-Fertility-Clinic?pid=76995",
-      "_source": "medicalworldnigeria"
-    },
-    {
       "job_title": "Patient Care Coordinator",
       "company": "a Fast-growing Psychiatric Practice",
       "location": "Remote, Nigeria",
@@ -7706,37 +7369,6 @@
       "_source": "jobsinnigeria"
     },
     {
-      "job_title": "Director of Medical Services",
-      "company": "Nnamdi Azikiwe University",
-      "location": "Kano, Awka, Anambra",
-      "job_type": "full time",
-      "job_category": "Healthcare Management",
-      "salary": "CONMESS 07",
-      "experience": "Not less than eighteen years in a tertiary institution",
-      "qualification": "MBBS, postgraduate fellowship of the National Post Graduate Medical College or equivalent",
-      "requirements": [
-        "MBBS, completion of one year House job and NYSC, full registration with Nigeria Medical and Dental Council",
-        "Post registration experience of not less than eighteen years in a tertiary institution",
-        "Postgraduate fellowship of the National Post Graduate Medical College or its equivalent",
-        "Must not be above sixty years of age before the date of appointment"
-      ],
-      "responsibilities": [
-        "Responsible to the Vice Chancellor for the day to day administration of the Medical Centre",
-        "Provide appropriate leadership and advice on the institutions staff and students health problems",
-        "Hold office for a single term of five years"
-      ],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-01-13",
-      "deadline": "2026-01-13",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Director-of-Medical-Services-Vacancy-Opens-at-Nnamdi-Azikiwe-University-Apply-Now?pid=76979",
-      "_source": "medicalworldnigeria"
-    },
-    {
       "job_title": "Laboratory Specialist",
       "company": "Natural Girl Wigs",
       "location": "Yaba, Lagos, Nigeria",
@@ -7805,37 +7437,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/pharmacologist-kaplo-africa/",
-      "_source": "jobsinnigeria"
-    },
-    {
-      "job_title": "Pharmacy Manager",
-      "company": "Elizabeth Maddeux Limited",
-      "location": "Egbeda, Lagos, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Pharmacist",
-      "salary": "#400,000 net",
-      "experience": "10",
-      "qualification": "bsc",
-      "requirements": [
-        "Strong leadership",
-        "Excellent communication skills",
-        "Deep commitment to exceptional patient care"
-      ],
-      "responsibilities": [
-        "Supervise Pharmacists across various branches on day-to-day operations",
-        "Ensure adherence to standard operating procedures (SOPs), ethics, and dispensing protocols",
-        "Monitor and analyze sales performance, revenue growth, and profit margins",
-        "Conduct training, coaching, and continuous capacity development"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-01-09",
-      "deadline": "2026-01-15",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://jobsinnigeria.careers/jobs/pharmacy-manager-elizabeth-maddeux-limited/",
       "_source": "jobsinnigeria"
     }
   ]
