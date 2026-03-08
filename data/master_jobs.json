@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "extracted_at": "2026-03-07T04:17:56.991333",
+    "extracted_at": "2026-03-08T04:27:42.874246",
     "model": "gpt-4o-mini",
     "total_processed": 244,
-    "duplicates_removed": 27,
+    "duplicates_removed": 26,
     "skipped_old": 0,
     "skipped_empty": 0,
     "errors": 0,
-    "openai_calls": 40
+    "openai_calls": 27
   },
   "jobs": [
     {
@@ -2477,6 +2477,42 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Nurses-Reserve-Pool-at-Medecins-Sans-Frontieres-MSF-Belgium?pid=77402",
+      "_source": "medicalworldnigeria"
+    },
+    {
+      "job_title": "Field Nurse",
+      "company": "And Maternity",
+      "location": "Uyo, Akwa Ibom",
+      "job_type": "Contract",
+      "job_category": "Nurse",
+      "salary": "Competitive and commensurate with experience",
+      "experience": "Minimum of 1 – 3 years relevant experience (field experience is an advantage)",
+      "qualification": "bsc",
+      "requirements": [
+        "Registered Nurse (RN) qualification",
+        "Valid practicing license",
+        "Strong communication and interpersonal skills",
+        "Ability to work independently and manage field assignments effectively",
+        "Must be resident in, or willing to relocate to, Uyo",
+        "Immediate availability is required."
+      ],
+      "responsibilities": [
+        "Provide nursing care and clinical support in field locations",
+        "Monitor patient health conditions and maintain accurate records",
+        "Administer medications and treatments as prescribed",
+        "Conduct health assessments and follow-up visits",
+        "Support health education and community outreach initiatives",
+        "Ensure adherence to professional and ethical nursing standards."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites).",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-02-27",
+      "deadline": "2026-03-02",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Field-Nurse-at-Elkris-Group?pid=77401",
       "_source": "medicalworldnigeria"
     },
     {
