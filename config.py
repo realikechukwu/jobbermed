@@ -35,7 +35,13 @@ SCRAPER_CONFIG = {
         "max_pages": 2,
         "professions": {"Doctors": 7, "Nurses": 14},
     },
+    "hotnigerianjobs": {
+        "enabled": True,
+        "rate_limit": 2.0,
+        "max_pages": 2,
+    },
 }
+
 
 # Extraction settings
 EXTRACTION_CONFIG = {
