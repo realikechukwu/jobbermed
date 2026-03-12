@@ -7,13 +7,21 @@ import sys
 from datetime import datetime
 
 from config import JSON_DIR, SCRAPER_CONFIG
-from scrapers import MedLocumScraper, JobsInNigeriaScraper, MedicalWorldNigeriaScraper, HotNigerianJobsScraper
+
+from scrapers import (
+    MedLocumScraper,
+    JobsInNigeriaScraper,
+    MedicalWorldNigeriaScraper,
+    HotNigerianJobsScraper,
+    MyJobMagScraper,
+)
 
 SCRAPERS = {
     "medlocum": MedLocumScraper,
     "jobsinnigeria": JobsInNigeriaScraper,
     "medicalworldnigeria": MedicalWorldNigeriaScraper,
     "hotnigerianjobs": HotNigerianJobsScraper,
+    "myjobmag": MyJobMagScraper,
 }
 
 

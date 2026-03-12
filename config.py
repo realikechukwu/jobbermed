@@ -40,14 +40,19 @@ SCRAPER_CONFIG = {
         "rate_limit": 2.0,
         "max_pages": 2,
     },
+    "myjobmag": {
+        "enabled": True,
+        "rate_limit": 2.0,
+        "max_pages": 2,
+    },
 }
 
 
 # Extraction settings
 EXTRACTION_CONFIG = {
     "model": "gpt-4o-mini",
-    "max_age_days": 90,
-    "max_jobs": 260,  # Limit OpenAI API calls
+    "max_age_days": 60,
+    "max_jobs": 450,  # Limit OpenAI API calls
 }
 
 # Output files
