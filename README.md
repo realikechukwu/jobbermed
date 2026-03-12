@@ -1,30 +1,154 @@
 # JobberMed
 
-JobberMed is a healthcare jobs platform with two job surfaces:
+JobberMed is a healthcare jobs platform with two connected job surfaces:
 
-- Aggregated listings ingested from three external jobsites (anonymised here as `Jobsite 1`, `Jobsite 2`, `Jobsite 3`).
-- Native listings posted directly by recruiters inside JobberMed.
+- Aggregated jobs scraped from 5 external jobsites
+- Native jobs posted directly inside JobberMed by approved recruiters
 
-The repo includes scraping + extraction pipelines, a React web app, Supabase-backed auth/roles, and email delivery workflows (weekly and personalised digests).
+This repository contains the full operating stack for that product:
 
-## Current Product Scope
+- Python scraping and extraction pipeline for aggregated jobs
+- React + Vite frontend in `web/`
+- Supabase-backed auth, roles, native jobs, access requests, and email preferences
+- Email delivery workflows for weekly and personalized job digests
 
-- React + Vite web app in `web/` (active product UI).
-- Supabase auth with role-aware dashboards:
-  - `candidate`
+## What This Repo Does
+
+At a high level, the repo does four things:
+
+1. Collects healthcare job listings from external jobsites
+2. Normalizes those listings into one canonical aggregated dataset
+3. Runs the JobberMed web app for public browsing, dashboards, and native job applications
+4. Sends weekly and personalized job emails
+
+## End-to-End Workflow
+
+### 1. Aggregated job ingestion
+
+`main.py` runs 5 source-specific scrapers:
+
+- `medlocum`
+- `jobsinnigeria`
+- `medicalworldnigeria`
+- `hotnigerianjobs`
+- `myjobmag`
+
+Raw scraper output is written to:
+
+- `json/raw_jobs.json`
+- `json/latest_raw_jobs.json`
+
+### 2. Extraction and normalization
+
+`extract.py` uses OpenAI to turn raw scraped content into a consistent jobs dataset with fields such as:
+
+- title
+- company
+- location
+- category
+- salary
+- deadline
+- apply instructions
+
+Canonical aggregated output is written to:
+
+- `data/master_jobs.json`
+
+Extraction cache is written to:
+
+- `data/extraction_cache.json`
+
+### 3. Frontend bridge
+
+The web app serves aggregated jobs from a static bridge file:
+
+- source of truth: `data/master_jobs.json`
+- frontend-served copy: `web/public/data/master_jobs.json`
+
+Bridge scripts:
+
+```bash
+./scripts/sync_master_jobs_bridge.sh
+./scripts/check_master_jobs_bridge.sh
+```
+
+### 4. Web product
+
+The React app exposes:
+
+- Aggregated jobs browsing on `/`
+- Native jobs browsing on `/native-jobs`
+- Native job application flow on `/native-jobs/:jobId`
+- Auth flows for sign-up, sign-in, password reset, and password change
+- Role-aware dashboards for candidates, recruiters, MDCN reviewers, and admins
+- Email personalization controls for signed-in users
+
+### 5. Native jobs and role workflows
+
+Native jobs live in Supabase and support these flows:
+
+- Signed-in candidates browse published native jobs and submit applications
+- Recruiters request access, then create jobs and review applicants
+- MDCN reviewers review native applications and update statuses
+- Admins approve recruiter access requests and manage elevated role access
+
+### 6. Email delivery
+
+The repo also runs email automation:
+
+- `newsletter.py` sends the weekly digest
+- `scripts/sync_delivery_segments.py` keeps weekly and personalized lists aligned
+- `scripts/personalized_digest.py` sends personalized digests using saved preferences
+
+## Product Surfaces
+
+### Public
+
+- Aggregated jobs homepage
+- Native jobs listing and detail pages
+- About, privacy, and subscribe pages
+- Sign-in, sign-up, forgot-password, and reset-password flows
+
+### Signed-in account
+
+- `/dashboard` shows:
+  - active roles
+  - available workspaces
+  - native application history
+  - current email personalization summary
+
+### Recruiter workspace
+
+- Request recruiter access from `/request-access/recruiter`
+- Open `/recruiter` after approval
+- Create native jobs at `/recruiter/jobs/new`
+- Review applicants at `/recruiter/jobs/:jobId/applicants`
+
+### MDCN workspace
+
+- `/mdcn` provides the native application review queue
+- MDCN access is currently admin-assigned
+
+### Admin workspace
+
+- `/admin` reviews pending access requests and activates platform roles
+
+## Roles and Access Model
+
+- Every authenticated user resolves to at least `candidate`
+- Additional platform roles are:
   - `recruiter`
   - `mdcn_official`
   - `admin`
-- Recruiter role request flow:
-  - Single CTA from `/dashboard` to `/request-access/recruiter`.
-  - Admin approves from `/admin`.
-  - User refreshes access after approval.
-- MDCN role is admin-assigned only (no self-service request UI).
-- Password management:
-  - Sign-in includes `Forgot password?`.
-  - Public reset flow via `/forgot-password` and `/reset-password`.
-  - Authenticated change flow via `/account/change-password`.
-- Personalisation controls moved to `/account/personalization` with multi-select location filters.
+- The UI resolves roles from both auth claims and `user_platform_roles`
+- Admin approvals run through the Supabase RPC `approve_access_request()`
+- Recruiter access has a user-facing request flow; MDCN access is admin-assigned
+
+Current fallback behavior:
+
+- Missing recruiter role redirects to `/request-access/recruiter`
+- Missing MDCN role shows an informational access-required screen
+- Missing admin role shows an access-denied screen
 
 ## Repository Structure
 
@@ -35,159 +159,40 @@ The repo includes scraping + extraction pipelines, a React web app, Supabase-bac
 ├── extract.py
 ├── run_pipeline.py
 ├── newsletter.py
+├── data/
+│   ├── master_jobs.json
+│   └── extraction_cache.json
+├── json/
+│   ├── raw_jobs.json
+│   └── latest_raw_jobs.json
+├── scrapers/
 ├── scripts/
-│   ├── check_master_jobs_bridge.sh
 │   ├── sync_master_jobs_bridge.sh
+│   ├── check_master_jobs_bridge.sh
 │   ├── sync_delivery_segments.py
 │   ├── personalized_digest.py
 │   └── email_runtime.py
-├── data/
-│   └── master_jobs.json
-├── json/
-│   └── raw_jobs.json
-├── scrapers/
 ├── supabase/
 │   ├── migrations/
 │   └── README.md
 ├── web/
 │   ├── public/data/master_jobs.json
 │   └── src/
-└── legacy/docs/  (archival only)
+└── legacy/  (archival only)
 ```
 
-## Data Files and Bridge
+## Common Commands
 
-- Canonical aggregated jobs output: `data/master_jobs.json`
-- Frontend-served bridge copy: `web/public/data/master_jobs.json`
+### Run the aggregated jobs pipeline
 
-Sync bridge manually:
-
-```bash
-./scripts/sync_master_jobs_bridge.sh
-```
-
-Validate bridge consistency:
-
-```bash
-./scripts/check_master_jobs_bridge.sh
-```
-
-## Web Routes (Current)
-
-Public:
-
-- `/`
-- `/native-jobs`
-- `/native-jobs/:jobId`
-- `/signin`
-- `/signup`
-- `/forgot-password`
-- `/reset-password`
-
-RequireAuth:
-
-- `/dashboard`
-- `/request-access/recruiter`
-- `/account/personalization`
-- `/account/change-password`
-
-RequireRole:
-
-- `/recruiter`
-- `/recruiter/jobs/new`
-- `/recruiter/jobs/:jobId/applicants`
-- `/mdcn`
-- `/admin`
-
-Fallback behaviour:
-
-- Missing recruiter role: redirect to `/request-access/recruiter`
-- Missing MDCN role: informational screen only (`MDCN access required`, contact admin)
-- Missing admin role: access denied fallback
-
-## Role and Access Model
-
-- Base role resolves as candidate.
-- Authoritative role IDs used by UI/guards:
-  - `recruiter`
-  - `mdcn_official`
-  - `admin`
-- Guards:
-  - `RequireAuth` validates active session.
-  - `RequireRole` validates required role and supports admin bypass where configured.
-- Admin approvals run via Supabase RPC `approve_access_request()`.
-
-## Account and Security UX
-
-Sign-in and recovery:
-
-- `/signin` supports `next` redirect.
-- Forgot password sends reset email with redirect target `${origin}/reset-password`.
-- Reset page waits for auth hydration before declaring invalid/expired link.
-
-Change password:
-
-- Available from dashboard account card and `/account/change-password`.
-- Supports optional current-password verification before `updateUser({ password })`.
-
-## Personalisation UX
-
-Personalisation summary is shown on `/dashboard`.
-Full controls are on `/account/personalization`.
-
-Supported location options:
-
-- `All states`
-- `FCT`
-- All 36 Nigerian states
-- `Remote`
-- `Outside Nigeria`
-
-Selection rules:
-
-- Selecting `All states` clears specific state picks.
-- Selecting any specific state clears `All states`.
-- `Remote` and `Outside Nigeria` can coexist with state filters.
-
-## Native Jobs UX
-
-Candidate flow:
-
-- Browse published native jobs.
-- Open detail page and submit application.
-- Track submitted applications from dashboard.
-
-Recruiter flow:
-
-- Create native jobs.
-- View jobs and open applicant lists.
-
-Reviewer/admin flow:
-
-- MDCN dashboard reviews native applications and updates status.
-
-Application form:
-
-- CV field requests a shareable drive URL.
-- Cover letter minimum length is enforced client-side.
-
-## Data Pipeline
-
-End-to-end pipeline:
-
-1. Scrape raw jobs from 3 sources.
-2. Run extraction/normalisation with OpenAI.
-3. Write canonical output to `data/master_jobs.json`.
-4. Sync bridge copy to `web/public/data/master_jobs.json`.
-
-Run all-in-one:
+All in one:
 
 ```bash
 python run_pipeline.py
 ./scripts/sync_master_jobs_bridge.sh
 ```
 
-Run step-by-step:
+Step by step:
 
 ```bash
 python main.py
@@ -195,30 +200,27 @@ python extract.py
 ./scripts/sync_master_jobs_bridge.sh
 ```
 
-Notes:
+### Run the web app
 
-- Source adapters are intentionally anonymised in this README as `Jobsite 1/2/3`.
-- Scraper enablement, pacing, and limits are controlled in `config.py`.
+```bash
+npm --prefix web install
+npm --prefix web run dev
+```
 
-## Email Delivery Workflows
+Build production assets:
 
-Weekly digest:
+```bash
+npm --prefix web run build
+```
 
-- Script: `newsletter.py`
-- Sends to weekly list in Brevo.
+Useful frontend checks:
 
-Segment sync:
+```bash
+npm --prefix web run lint
+npm --prefix web run typecheck
+```
 
-- Script: `scripts/sync_delivery_segments.py`
-- Removes opted-in personalised users from weekly list and optionally adds them to personalised list.
-
-Personalised digest:
-
-- Script: `scripts/personalized_digest.py`
-- Reads preference tables and sends filtered jobs.
-- Supports dedupe via `email_delivery_log.dedupe_key`.
-
-Manual runs:
+### Run email workflows manually
 
 ```bash
 python scripts/sync_delivery_segments.py
@@ -234,11 +236,20 @@ Dry-run flags:
 
 ## Environment Variables
 
-Root `.env` (`.env.example`):
+Root `.env` (`.env.example`)
+
+Pipeline:
 
 - `OPENAI_API_KEY`
+- `MASTER_JOBS_PATH` (optional override)
+
+Supabase runtime:
+
 - `SUPABASE_URL`
 - `SUPABASE_SERVICE_ROLE_KEY`
+
+Brevo and email delivery:
+
 - `BREVO_API_KEY`
 - `BREVO_LIST_ID`
 - `BREVO_WEEKLY_LIST_ID`
@@ -247,20 +258,22 @@ Root `.env` (`.env.example`):
 - `BREVO_SENDER_NAME`
 - `EMAIL_CTA_URL`
 - `SITE_BASE_URL`
+
+Email execution flags:
+
 - `NEWSLETTER_DRY_RUN`
 - `SYNC_DRY_RUN`
 - `PERSONALIZED_DRY_RUN`
 - `PERSONALIZED_DIGEST_JOB_LIMIT`
-- Optional override: `MASTER_JOBS_PATH`
 
-Web `.env` (`web/.env.example`):
+Web `.env` (`web/.env.example`)
 
 - `VITE_SUPABASE_URL`
 - `VITE_SUPABASE_ANON_KEY`
 
 ## Local Setup
 
-### 1) Python pipeline setup
+### 1. Python pipeline setup
 
 ```bash
 python3 -m venv .venv
@@ -268,30 +281,27 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 2) Web setup
+### 2. Web setup
 
 ```bash
 npm --prefix web install
 ```
 
-### 3) Run web app
+### 3. Start the app
 
 ```bash
 npm --prefix web run dev
 ```
 
-### 4) Build web app
-
-```bash
-npm --prefix web run build
-```
-
-## Supabase Schema
+## Supabase
 
 Database migrations live in `supabase/migrations/`.
-Schema and RLS documentation lives in `supabase/README.md`.
 
-Core app tables used by current flows include:
+Schema and RLS notes live in:
+
+- `supabase/README.md`
+
+Core tables used by the current product include:
 
 - `profiles`
 - `native_jobs`
@@ -303,46 +313,55 @@ Core app tables used by current flows include:
 - `email_pref_locations`
 - `email_delivery_log`
 
-Useful checks:
+Useful validation commands:
 
 ```bash
 supabase db lint
 supabase db reset
 ```
 
-## CI / Scheduled Automation
+## Automation
 
-GitHub Actions workflows:
+GitHub Actions workflows currently automate:
 
 - `.github/workflows/daily_scrape.yml`
-  - Runs scraping + extraction daily
-  - Syncs bridge and commits updated data artifacts
+  - scrape external jobs
+  - run extraction
+  - sync `web/public/data/master_jobs.json`
+  - commit updated data artifacts
 - `.github/workflows/weekly_scrape.yml`
-  - Syncs delivery segments then sends weekly digest
+  - sync weekly list exclusions
+  - send weekly digest
 - `.github/workflows/personalized_email.yml`
-  - Runs segment sync and personalised digest daily
+  - sync delivery segments
+  - send personalized digests
+- `.github/workflows/deploy-web-pages.yml`
+  - build the Vite app
+  - deploy `web/dist` to GitHub Pages
 
 ## Troubleshooting
 
 `Supabase environment variables are missing`
 
-- Set `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` in `web/.env`.
+- Set `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` in `web/.env`
 
 `Invalid or expired link` on reset page
 
-- Request a new link via `/forgot-password`.
-- Confirm Supabase Auth redirect allowlist includes `<origin>/reset-password`.
+- Request a new link via `/forgot-password`
+- Confirm Supabase Auth redirect allowlist includes `<origin>/reset-password`
 
 Recruiter approval completed but route still blocked
 
-- Use `Refresh access` on the recruiter request page.
-- If still blocked, sign out and sign in again.
+- Use `Refresh access` on the recruiter request page
+- If access still does not update, sign out and sign back in
 
 Bridge drift warning
 
-- Run `./scripts/sync_master_jobs_bridge.sh`, then re-check with `./scripts/check_master_jobs_bridge.sh`.
+- Run `./scripts/sync_master_jobs_bridge.sh`
+- Re-run `./scripts/check_master_jobs_bridge.sh`
 
 ## Legacy Notes
 
-- `legacy/docs/` remains for archival reference and is not the active production UI.
-- Active deploy artifact is `web/dist`.
+- `legacy/` remains for archival reference and is not the active production UI
+- The active frontend lives in `web/`
+- The production build artifact is `web/dist`
