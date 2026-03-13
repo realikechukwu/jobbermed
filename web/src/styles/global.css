@@ -19,6 +19,11 @@ a {
   color: inherit;
 }
 
+/* Hide reCAPTCHA v3 floating badge — attribution text shown inline instead */
+.grecaptcha-badge {
+  visibility: hidden !important;
+}
+
 .top-strip {
   height: 12px;
   background: linear-gradient(90deg, var(--med) 0%, var(--jobber) 100%);
@@ -486,14 +491,35 @@ a {
   background: #000000;
 }
 
-.brevo-submit .sib-hide-loader-icon {
-  display: none;
-}
-
 .brevo-submit .progress-indicator__icon {
   width: 18px;
   height: 18px;
   fill: #ffffff;
+}
+
+.brevo-spinner {
+  animation: brevo-spin 0.8s linear infinite;
+}
+
+@keyframes brevo-spin {
+  to { transform: rotate(360deg); }
+}
+
+.brevo-submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.brevo-recaptcha-notice {
+  margin: 8px 0 0;
+  font-size: 0.72rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+.brevo-recaptcha-notice a {
+  color: var(--muted);
+  text-decoration: underline;
 }
 
 .brevo-msg {
@@ -505,8 +531,7 @@ a {
   display: none;
 }
 
-.brevo-msg[style*="display: block"],
-.brevo-msg[style*="display:block"] {
+.brevo-msg--visible {
   display: block;
 }
 
