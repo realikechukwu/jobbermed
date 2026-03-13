@@ -24,20 +24,20 @@ const DISCOVERY_STATS = [
 
 const FEATURES = [
   {
-    title: "Built for healthcare jobs",
-    desc: "Find roles for doctors, nurses, pharmacists, med lab professionals, radiographers, dentists, and allied health workers.",
+    title: "Built for healthcare professionals",
+    desc: "Explore roles for doctors, nurses, pharmacists, med lab professionals, radiographers, dentists, and allied health workers.",
   },
   {
     title: "Filter by specialty and location",
-    desc: "Narrow jobs to the profession and place that matter to you.",
+    desc: "Quickly narrow jobs to the profession and location that matter most to you.",
   },
   {
     title: "Clean interface, less clutter",
-    desc: "No messy browsing experience. Just relevant healthcare jobs in one place.",
+    desc: "Browse relevant healthcare jobs without the noise of generic job boards.",
   },
   {
     title: "Tailored job alerts",
-    desc: "Subscribe for curated alerts matched to your profession and preferred location.",
+    desc: "Get curated alerts based on your profession and preferred location.",
   },
 ];
 
@@ -214,10 +214,10 @@ export function LandingPage() {
             <div className="chat-bubble chat-insight reveal-item" style={{ transitionDelay: "300ms" }}>
               <div className="chat-content">
                 <p className="chat-text">
-                  Most professionals rely on informal channels like WhatsApp groups, Telegram and
-                  word of mouth. Only <strong>35%</strong> use job listing websites because there
-                  hasn't been a reliable one built for them.{" "}
-                  <strong>Until now.</strong>
+                  Most healthcare professionals still rely on WhatsApp groups, Telegram channels,
+                  and word of mouth to find new roles. Only <strong>35%</strong> use job listing
+                  websites, largely because there hasn't been a platform built specifically for
+                  them. <strong>Until now.</strong>
                 </p>
               </div>
             </div>
