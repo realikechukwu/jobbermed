@@ -10,8 +10,7 @@ from bs4 import BeautifulSoup
 from .base import BaseScraper
 from config import SCRAPER_CONFIG
 from utils import (
-    NIGERIAN_LOCATIONS,
-    clean_ad_content,
+    NIGERIAN_LOCATIONS, #clean_ad_content,
     extract_email,
     extract_first_match,
     extract_location,
@@ -157,7 +156,7 @@ class HotNigerianJobsScraper(BaseScraper):
             return {}
 
         soup = BeautifulSoup(html, "html.parser")
-        soup = clean_ad_content(soup)
+        #soup = clean_ad_content(soup)
 
         main = self.extract_main_block(soup)
         if not main:
