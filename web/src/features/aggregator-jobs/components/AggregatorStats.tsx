@@ -9,7 +9,7 @@ export function AggregatorStats({ jobCountLabel, listingsPeriodLabel }: Aggregat
       <div className="stats-wrap">
         <div className="stat" id="stat-count">
           <strong>{jobCountLabel}</strong>
-          <span>Live jobs - updated automatically</span>
+          <span>Live jobs - updated daily</span>
         </div>
 
         <div className="stat" id="stat-range">

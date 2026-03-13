@@ -20,6 +20,8 @@ export const CATEGORY_ORDER = [
 export const SOURCE_LABELS: Record<string, string> = {
   medlocum: "MedLocum Jobs",
   jobsinnigeria: "Jobs In Nigeria",
+  myjobmag: "MyJobMag",
+  hotnigerianjobs: "HotNigerianJobs",
   medicalworldnigeria: "Medical World Nigeria",
 };
 
