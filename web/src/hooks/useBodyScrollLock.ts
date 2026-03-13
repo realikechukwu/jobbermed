@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 
 let activeLockCount = 0;
 let lockedScrollY = 0;
+let restoreFrameId: number | null = null;
 let storedStyles: {
   overflow: string;
   position: string;
@@ -12,6 +13,11 @@ let storedStyles: {
 function acquireBodyScrollLock() {
   if (typeof window === "undefined") {
     return;
+  }
+
+  if (restoreFrameId !== null) {
+    window.cancelAnimationFrame(restoreFrameId);
+    restoreFrameId = null;
   }
 
   if (activeLockCount === 0) {
@@ -57,7 +63,13 @@ function releaseBodyScrollLock() {
   }
 
   storedStyles = null;
-  window.scrollTo(0, lockedScrollY);
+  const scrollYToRestore = lockedScrollY;
+  restoreFrameId = window.requestAnimationFrame(() => {
+    restoreFrameId = null;
+    if (activeLockCount === 0) {
+      window.scrollTo(0, scrollYToRestore);
+    }
+  });
 }
 
 export function useBodyScrollLock(locked: boolean) {

@@ -1053,12 +1053,6 @@
   .aggregator-home .detail-back-btn {
     display: flex;
   }
-
-  body.panel-open {
-    overflow: hidden;
-    position: fixed;
-    width: 100%;
-  }
 }
 
 @media (max-width: 700px) {
