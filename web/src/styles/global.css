@@ -167,9 +167,11 @@ a {
 
 .site-mobile-link.active {
   font-weight: 700;
-  background: #f0f0f0;
-  border-left: 3px solid #111111;
-  padding: 6px 8px;
+  background: #111111;
+  color: #ffffff;
+  border-radius: 999px;
+  padding: 6px 16px;
+  justify-self: start;
 }
 
 .site-mobile-primary {
@@ -401,6 +403,127 @@ a {
   width: 100%;
   min-height: 320px;
   border: 0;
+}
+
+/* ── shared Brevo native form ── */
+
+.subscribe-native {
+  margin-top: 10px;
+}
+
+.brevo-form-card {
+  text-align: left;
+}
+
+.brevo-label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 0 0 10px;
+  font-family: inherit;
+}
+
+.brevo-input {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  background: #ffffff;
+  color: var(--ink);
+  outline: none;
+  box-sizing: border-box;
+}
+
+.brevo-input::placeholder {
+  color: rgba(28, 27, 25, 0.35);
+  font-family: inherit;
+}
+
+.brevo-input:focus {
+  border-color: #9a9a9a;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.08);
+}
+
+.brevo-helper {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-family: inherit;
+}
+
+.brevo-field-error {
+  font-size: 0.85rem;
+  color: #7d1f1f;
+  font-family: inherit;
+}
+
+.brevo-submit-wrap {
+  margin-top: 12px;
+}
+
+.brevo-submit {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background: #111111;
+  color: #ffffff;
+  padding: 12px 14px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.brevo-submit:hover {
+  background: #000000;
+}
+
+.brevo-submit .sib-hide-loader-icon {
+  display: none;
+}
+
+.brevo-submit .progress-indicator__icon {
+  width: 18px;
+  height: 18px;
+  fill: #ffffff;
+}
+
+.brevo-msg {
+  margin: 0 0 12px;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  display: none;
+}
+
+.brevo-msg[style*="display: block"],
+.brevo-msg[style*="display:block"] {
+  display: block;
+}
+
+.brevo-msg--error {
+  border: 1px solid #e8c2c2;
+  background: #fff1f1;
+  color: #8a2b2b;
+}
+
+.brevo-msg--success {
+  border: 1px solid #b7d8be;
+  background: #edf8f0;
+  color: #1f5f2c;
+}
+
+.brevo-msg-text {
+  margin: 0;
 }
 
 .dashboard-links {

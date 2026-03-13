@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { BrevoSubscribeForm } from "../../../components/BrevoSubscribeForm";
 import { NEWSLETTER_DISMISS_DAYS, NEWSLETTER_STORAGE_KEY } from "../constants";
 
 function isNewsletterDismissed(): boolean {
@@ -38,20 +39,18 @@ export function AggregatorNewsletter() {
 
   return (
     <section className={`newsletter-section${isHidden ? " hidden" : ""}`} id="newsletterSection">
-      <div className="newsletter-form">
-        <iframe
-          width="540"
-          height="280"
-          src="https://58681e2d.sibforms.com/serve/MUIFAHXVR5tRFBDTcOiuh20_p5-O29yy8k6p5GA7_6vI8Mb29oJKSmjzFdFS_42mJMKpX3gRAnzPHIXoo3rmGHyDPdPUTmBgyYut9bQsy96jN4w0GOoddcGrWFGZYkT0ZFaCl4M5fCzyZig_rPFG-yB2pE-Lqro3GCHZ9det5WfikZkmJgdeG6iMIEktzRDAxSIwlId0D8akd_v1Cw=="
-          frameBorder="0"
-          scrolling="no"
-          allowFullScreen
-          title="Newsletter signup form"
-        />
+      <div className="newsletter-native">
+        <BrevoSubscribeForm />
       </div>
 
-      <button className="newsletter-dismiss" id="newsletterDismiss" type="button" aria-label="Dismiss newsletter signup" onClick={dismissNewsletter}>
-        x
+      <button
+        className="newsletter-dismiss"
+        id="newsletterDismiss"
+        type="button"
+        aria-label="Dismiss newsletter signup"
+        onClick={dismissNewsletter}
+      >
+        ✕
       </button>
     </section>
   );

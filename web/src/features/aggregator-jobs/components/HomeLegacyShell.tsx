@@ -68,7 +68,7 @@ export function HomeLegacyShell({ children }: HomeLegacyShellProps) {
             </nav>
 
             <div className="hero-auth">
-              <span className="hero-user-email">{user?.email ?? ""}</span>
+              {user ? <span className="hero-user-email">{user.email}</span> : null}
               {!user ? (
                 <Link className="hero-auth-link" to="/signin">
                   Sign In
