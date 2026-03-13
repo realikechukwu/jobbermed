@@ -8,6 +8,7 @@ import { ChangePasswordPage } from "./pages/ChangePasswordPage";
 import { DashboardPage } from "./pages/DashboardPage";
 import { ForgotPasswordPage } from "./pages/ForgotPasswordPage";
 import { HomePage } from "./pages/HomePage";
+import { LandingPage } from "./pages/LandingPage";
 import { MdcnDashboardPage } from "./pages/MdcnDashboardPage";
 import { NativeJobDetailPage } from "./pages/NativeJobDetailPage";
 import { NativeJobsPage } from "./pages/NativeJobsPage";
@@ -61,6 +62,7 @@ export function App() {
       <Route path="/about" element={<AboutPage />} />
       <Route path="/privacy" element={<PrivacyPage />} />
       <Route path="/subscribe" element={<SubscribePage />} />
+      <Route path="/landing" element={<LandingPage />} />
       <Route path="/forgot-password" element={<ForgotPasswordPage />} />
       <Route path="/reset-password" element={<ResetPasswordPage />} />
 
