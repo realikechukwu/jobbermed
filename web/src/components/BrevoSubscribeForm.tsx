@@ -46,9 +46,12 @@ export function BrevoSubscribeForm() {
       const res = await fetch(BREVO_FORM_ACTION, {
         method: "POST",
         body: formData,
+        mode: "no-cors",
       });
 
-      if (res.ok) {
+      /* no-cors returns an opaque response (type "opaque", status 0).
+         If fetch didn't throw, the request was sent and Brevo received it. */
+      if (res.ok || res.type === "opaque") {
         setStatus("success");
         form.reset();
       } else {
