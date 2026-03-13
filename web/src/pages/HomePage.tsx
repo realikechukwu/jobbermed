@@ -21,7 +21,7 @@ const AGGREGATED_JOBS_URL = `${import.meta.env.BASE_URL}data/master_jobs.json`;
 
 const VALID_CATEGORY_SET = new Set<string>(CATEGORY_ORDER);
 
-function buildCategoryCounts(activeJobs: Array<{ job_title: string }>): CategoryCounts {
+function buildCategoryCounts(activeJobs: Array<{ job_title: string; job_category: string }>): CategoryCounts {
   const counts: CategoryCounts = {};
   CATEGORY_ORDER.forEach((category) => {
     counts[category] = 0;

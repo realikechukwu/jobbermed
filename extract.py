@@ -66,6 +66,209 @@ NUMBER_WORDS = {
     "thirty": 30,
 }
 
+DENTIST_PATTERNS = (
+    r"\bdentist\b",
+    r"\bdental\b",
+)
+
+MEDICAL_LAB_CORE_PATTERNS = (
+    r"\bmedical laboratory\b",
+    r"\bmedical lab\b",
+    r"\bmedical laboratory science\b",
+    r"\blaboratory science\b",
+    r"\blaboratory scientist\b",
+    r"\blab scientist\b",
+)
+
+MEDICAL_LAB_SUPPORT_PATTERNS = (
+    r"\bmedical laboratory technician\b",
+    r"\bmedical lab technician\b",
+    r"\blaboratory technician\b",
+    r"\blab technician\b",
+    r"\blaboratory technologist\b",
+    r"\blaboratory analyst\b",
+    r"\blab analyst\b",
+    r"\blaboratory assistant\b",
+    r"\blaboratory supervisor\b",
+    r"\blaboratory associate\b",
+    r"\bmls\b",
+    r"\bmlt\b",
+)
+
+MEDICAL_LAB_CONTEXT_PATTERNS = (
+    r"\bmedical laboratory\b",
+    r"\bmedical lab\b",
+    r"\bmedical laboratory science\b",
+    r"\bmedical laboratory technology\b",
+    r"\bclinical laboratory\b",
+    r"\bdiagnostic laboratory\b",
+    r"\bpathology laboratory\b",
+    r"\bmlscn\b",
+)
+
+PHARMACIST_PATTERNS = (
+    r"\bpharmacist\b",
+    r"\bpharmacy\b",
+)
+
+NURSE_PATTERNS = (
+    r"\bmidwife\b",
+    r"\bmidwifery\b",
+    r"\bnurse\b",
+    r"\bnursing\b",
+    r"\bmatron\b",
+)
+
+DOCTOR_PATTERNS = (
+    r"\bdoctor\b",
+    r"\bphysician\b",
+    r"\bmedical officer\b",
+    r"\bhouse officer\b",
+    r"\bregistrar\b",
+    r"\bgeneral practitioner\b",
+    r"\bpediatrician\b",
+    r"\bpediatrics?\b",
+    r"\bsurgeon\b",
+    r"\bsurgery\b",
+    r"\bobstetrician\b",
+    r"\bobstetrics\b",
+    r"\bgynecolog(?:ist|y)\b",
+    r"\boncolog(?:ist|y)\b",
+    r"\bradiolog(?:ist|y)\b",
+    r"\bradio diagnosis\b",
+    r"\bophthalmolog(?:ist|y)\b",
+    r"\binternal medicine\b",
+    r"\bcardiolog(?:ist|y)\b",
+    r"\bnephrolog(?:ist|y)\b",
+    r"\bnephology\b",
+    r"\bhematolog(?:ist|y)\b",
+    r"\bpatholog(?:ist|y)\b",
+    r"\bchemical pathology\b",
+    r"\bmedical microbiology\b",
+    r"\banatomic and molecular pathology\b",
+    r"\banesthes(?:ia|iology)\b",
+    r"\bendocrin(?:e|olog(?:ist|y))\b",
+    r"\bneurolog(?:ist|y)\b",
+    r"\bpulmonary\b",
+    r"\bdermatolog(?:ist|y)\b",
+    r"\bdematology\b",
+    r"\borthoped(?:ic|ics)?\b",
+    r"\btraumatolog(?:y|ist)\b",
+    r"\bent\b",
+    r"\bgit\b",
+)
+
+DOCTOR_CONTEXTUAL_PATTERNS = (
+    r"\bradio physicist\b",
+)
+
+PHYSICIAN_CREDENTIAL_PATTERNS = (
+    r"\bmedical and dental council of nigeria\b",
+    r"\bmdcn\b",
+    r"\bmbbs\b",
+    r"\bwest african college\b",
+    r"\bnational postgraduate medical college\b",
+    r"\bfellow(?:ship)?\b",
+)
+
+PUBLIC_HEALTH_PATTERNS = (
+    r"\bpublic health\b",
+    r"\bprogram officer\b",
+    r"\bprogramme officer\b",
+    r"\bepidemiology\b",
+    r"\bsurveillance\b",
+    r"\bhealth systems\b",
+    r"\bhealth security\b",
+    r"\bproject officer\b",
+    r"\bcommunity health extension worker\b",
+    r"\bchew\b",
+    r"\bmnch\b",
+    r"\bnutrition officer\b",
+)
+
+PUBLIC_HEALTH_CONTEXT_PATTERNS = (
+    r"\bcommunity health practitioners registration board\b",
+    r"\bchprbn\b",
+    r"\bcommunity health\b",
+    r"\btb\b",
+    r"\bhiv\b",
+)
+
+HEALTHCARE_MANAGEMENT_PATTERNS = (
+    r"\bdirector\b",
+    r"\bmanager\b",
+    r"\bcoordinator\b",
+    r"\bprovost\b",
+    r"\bhse\b",
+    r"\bquality officer\b",
+    r"\binventory\b",
+    r"\bwarehouse\b",
+)
+
+ALLIED_HEALTH_PATTERNS = (
+    r"\bphysiotherapist\b",
+    r"\boptometrist\b",
+    r"\btherapist\b",
+    r"\bradiographer\b",
+    r"\bradiography\b",
+    r"\bsonographer\b",
+    r"\bmedical imaging\b",
+    r"\bimaging science\b",
+    r"\bparamedic\b",
+    r"\bclinical psychologist\b",
+    r"\b(?:anesthetic|anaesthetic) technologist\b",
+    r"\b(?:anesthetic|anaesthetic) technician\b",
+    r"\brenal technologist\b",
+    r"\brenal dialysis technician\b",
+    r"\bdialysis (?:technician|technologist)\b",
+    r"\bdietitian\b",
+    r"\bnutritionist\b",
+    r"\bradiotherapist\b",
+)
+
+
+def _normalize_category_text(*values) -> str:
+    parts: list[str] = []
+
+    for value in values:
+        if value is None:
+            continue
+        if isinstance(value, (list, tuple, set)):
+            for item in value:
+                text = _normalize_category_text(item)
+                if text:
+                    parts.append(text)
+            continue
+
+        text = str(value).strip().lower()
+        if not text:
+            continue
+        parts.append(text)
+
+    combined = " ".join(parts)
+    if not combined:
+        return ""
+
+    combined = combined.replace("&", " and ")
+    replacements = {
+        "gynaec": "gynec",
+        "paedi": "pedi",
+        "haemat": "hemat",
+        "anaesth": "anesth",
+        "orthopaed": "orthoped",
+        "radiophysicist": "radio physicist",
+    }
+    for old, new in replacements.items():
+        combined = combined.replace(old, new)
+
+    combined = re.sub(r"[^a-z0-9+/(). -]+", " ", combined)
+    combined = re.sub(r"\s+", " ", combined).strip()
+    return combined
+
+
+def _has_any_pattern(text: str, patterns: tuple[str, ...]) -> bool:
+    return any(re.search(pattern, text, flags=re.IGNORECASE) for pattern in patterns)
+
 
 def parse_date(s: str):
     if not s:
@@ -263,34 +466,58 @@ def iter_jobs(json_dir: Path):
     except (json.JSONDecodeError, IOError) as e:
         print(f"⚠️  Error reading {raw_jobs_file.name}: {e}")
 
-def classify_job_category(title: str) -> str:
-    """Derive job category from title keywords when possible."""
-    t = (title or "").strip().lower()
-    if not t:
+def classify_job_category(
+    title: str,
+    *,
+    qualification: str = "",
+    requirements=None,
+    responsibilities=None,
+    context_text: str = "",
+) -> str:
+    """Derive job category from title + supporting context when possible."""
+    title_text = _normalize_category_text(title)
+    if not title_text:
         return ""
-    if "dentist" in t or "dental" in t:
+
+    context = _normalize_category_text(
+        title_text,
+        qualification,
+        requirements or [],
+        responsibilities or [],
+        context_text,
+    )
+
+    if _has_any_pattern(title_text, DENTIST_PATTERNS):
         return "Dentist"
-    if "medical laboratory" in t or ("laboratory" in t and "scientist" in t):
+    if _has_any_pattern(title_text, MEDICAL_LAB_CORE_PATTERNS):
         return "Medical Laboratory Scientist"
-    if "pharmacist" in t or "pharmacy" in t:
+    if _has_any_pattern(title_text, PHARMACIST_PATTERNS):
         return "Pharmacist"
-    if "midwife" in t or "midwifery" in t or "nurse" in t or "nursing" in t or "matron" in t:
+    if _has_any_pattern(title_text, NURSE_PATTERNS):
         return "Nurse"
-    if ("medical officer" in t or "doctor" in t or "physician" in t or
-        "obstetrician" in t or "gynaecologist" in t or "gynecologist" in t or
-        "general practitioner" in t or "oncology" in t):
+    if _has_any_pattern(title_text, DOCTOR_PATTERNS):
         return "Doctor"
-    if ("public health" in t or "program officer" in t or "programme officer" in t or
-        "epidemiology" in t or "surveillance" in t or "health systems" in t or
-        "health security" in t or "project officer" in t):
+    if (
+        _has_any_pattern(title_text, DOCTOR_CONTEXTUAL_PATTERNS)
+        and _has_any_pattern(context, PHYSICIAN_CREDENTIAL_PATTERNS)
+    ):
+        return "Doctor"
+    if _has_any_pattern(title_text, PUBLIC_HEALTH_PATTERNS):
         return "Public Health"
-    if ("director" in t or "manager" in t or "coordinator" in t or
-        "provost" in t or "hse " in t or "quality officer" in t or
-        "inventory" in t or "warehouse" in t):
+    if (
+        "field officer" in title_text
+        and _has_any_pattern(context, PUBLIC_HEALTH_CONTEXT_PATTERNS)
+    ):
+        return "Public Health"
+    if _has_any_pattern(title_text, HEALTHCARE_MANAGEMENT_PATTERNS):
         return "Healthcare Management"
-    if ("physiotherapist" in t or "optometrist" in t or "therapist" in t or
-        "radiographer" in t or "dietitian" in t or "nutritionist" in t):
+    if _has_any_pattern(title_text, ALLIED_HEALTH_PATTERNS):
         return "Allied Health"
+    if (
+        _has_any_pattern(title_text, MEDICAL_LAB_SUPPORT_PATTERNS)
+        and _has_any_pattern(context, MEDICAL_LAB_CONTEXT_PATTERNS)
+    ):
+        return "Medical Laboratory Scientist"
     return ""
 
 def deduplicate_jobs(jobs):
@@ -436,8 +663,15 @@ def main():
                             "If a field is missing, return an empty string or empty array as appropriate. "
                             "For location, include city and state/country if available. "
                             "For job_category, choose one: Doctor, Nurse, Pharmacist, Medical Laboratory Scientist, Dentist, Public Health, Healthcare Management, Allied Health, Other. "
-                            "If job title includes 'medical officer', 'obstetrician', 'gynaecologist', or 'general practitioner', choose Doctor. "
+                            "If job title includes physician-specialty terms such as 'medical officer', 'consultant', 'registrar', 'house officer', "
+                            "'obstetrician', 'gynaecologist', 'gynecologist', 'pediatrician', 'paediatrician', 'surgeon', "
+                            "'radiologist', 'ophthalmologist', 'internal medicine', 'haematology', 'hematology', 'pathology', or 'general practitioner', choose Doctor. "
                             "If job title includes 'midwife', 'midwifery', or 'matron', choose Nurse. "
+                            "If job title includes 'medical lab', 'medical laboratory', 'laboratory scientist', 'lab scientist', "
+                            "'laboratory technician', 'lab technician', or 'medical laboratory science', choose Medical Laboratory Scientist unless the listing is clearly non-medical. "
+                            "If job title includes 'sonographer', 'radiographer', 'medical imaging', 'paramedic', 'clinical psychologist', "
+                            "or 'anaesthetic/anesthetic technologist/technician', choose Allied Health. "
+                            "If job title includes 'Community Health Extension Worker' or 'CHEW', choose Public Health. "
                             "If job title includes 'program officer', 'project officer', 'epidemiology', 'surveillance', 'public health', or 'health systems', choose Public Health. "
                             "If job title includes 'director', 'manager', 'coordinator', 'provost', or 'quality officer', choose Healthcare Management. "
                             "If job title includes 'physiotherapist', 'optometrist', or 'therapist', choose Allied Health. "
@@ -484,7 +718,16 @@ def main():
                 )
                 if relative_deadline:
                     data["deadline"] = relative_deadline.isoformat()
-            title_category = classify_job_category(data.get("job_title") or "")
+            title_category = classify_job_category(
+                data.get("job_title") or "",
+                qualification=str(data.get("qualification") or job.get("qualification") or ""),
+                requirements=data.get("requirements") or job.get("requirements") or [],
+                responsibilities=data.get("responsibilities") or job.get("responsibilities") or [],
+                context_text=" ".join(
+                    str(job.get(key) or "")
+                    for key in ("description", "full_description", "raw_content", "other_info")
+                ),
+            )
             if title_category:
                 data["job_category"] = title_category
             if not data.get("salary") and job.get("salary"):

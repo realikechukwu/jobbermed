@@ -52,7 +52,7 @@ SCRAPER_CONFIG = {
 EXTRACTION_CONFIG = {
     "model": "gpt-4o-mini",
     "max_age_days": 60,
-    "max_jobs": 450,  # Limit OpenAI API calls
+    "max_jobs": 800,  # Limit OpenAI API calls
 }
 
 # Output files

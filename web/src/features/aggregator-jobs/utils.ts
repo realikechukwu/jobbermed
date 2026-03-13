@@ -231,8 +231,35 @@ export function extractRawJobs(payload: unknown): RawJobRecord[] {
   return [];
 }
 
-export function normalizeCategory(job: Pick<AggregatorJob, "job_title"> | string): string {
-  const title = (typeof job === "string" ? safeText(job) : safeText(job.job_title)).toLowerCase();
+const CATEGORY_LABEL_MAP = new Map<string, string>([
+  ["doctor", "Doctors"],
+  ["doctors", "Doctors"],
+  ["nurse", "Nurses & Midwives"],
+  ["nurses", "Nurses & Midwives"],
+  ["nurses & midwives", "Nurses & Midwives"],
+  ["nurses and midwives", "Nurses & Midwives"],
+  ["midwife", "Nurses & Midwives"],
+  ["midwives", "Nurses & Midwives"],
+  ["pharmacist", "Pharmacists"],
+  ["pharmacists", "Pharmacists"],
+  ["medical laboratory scientist", "Medical Laboratory Scientists"],
+  ["medical laboratory scientists", "Medical Laboratory Scientists"],
+  ["dentist", "Dentists"],
+  ["dentists", "Dentists"],
+  ["public health", "Public Health"],
+  ["healthcare management", "Healthcare Management"],
+  ["allied health", "Allied Health"],
+  ["other", "Others"],
+  ["others", "Others"],
+]);
+
+function normalizeCategoryLabel(value: string): string {
+  const normalized = safeText(value).toLowerCase().replace(/\s+/g, " ");
+  return CATEGORY_LABEL_MAP.get(normalized) ?? "";
+}
+
+function inferCategoryFromTitle(titleOrJob: Pick<AggregatorJob, "job_title"> | string): string {
+  const title = (typeof titleOrJob === "string" ? safeText(titleOrJob) : safeText(titleOrJob.job_title)).toLowerCase();
 
   if (!title) {
     return "Others";
@@ -311,6 +338,17 @@ export function normalizeCategory(job: Pick<AggregatorJob, "job_title"> | string
   }
 
   return "Others";
+}
+
+export function normalizeCategory(job: Pick<AggregatorJob, "job_title" | "job_category"> | string): string {
+  if (typeof job !== "string") {
+    const normalizedCategory = normalizeCategoryLabel(job.job_category);
+    if (normalizedCategory) {
+      return normalizedCategory;
+    }
+  }
+
+  return inferCategoryFromTitle(job);
 }
 
 export function getLocationBuckets(location: string): string[] {
