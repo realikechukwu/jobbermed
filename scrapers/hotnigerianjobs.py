@@ -34,7 +34,7 @@ class HotNigerianJobsScraper(BaseScraper):
         super().__init__()
         self.config = SCRAPER_CONFIG.get(self.name, {})
         self.rate_limit = self.config.get("rate_limit", 6.0)
-        self.max_pages = self.config.get("max_pages", 2)
+        self.field_pages = self.config.get("field_pages", {})
 
     def build_field_page_url(self, field_id: int, page: int) -> str:
         if page == 0:
@@ -45,6 +45,7 @@ class HotNigerianJobsScraper(BaseScraper):
         """
         Convert strings like:
         'Posted on Wed 11th Mar, 2026'
+        'Posted on Fri 13th Mar, 2026 -'
         into:
         '2026-03-11'
         """
@@ -55,15 +56,24 @@ class HotNigerianJobsScraper(BaseScraper):
         text = re.sub(r"(?i)^posted on\s*", "", text).strip()
         text = re.sub(r"\b(\d+)(st|nd|rd|th)\b", r"\1", text, flags=re.I)
         text = text.replace(",", "").strip()
+        text = re.sub(r"\s*[-–—|]+\s*$", "", text).strip()
 
-        for fmt in ("%a %d %b %Y", "%A %d %b %Y", "%d %b %Y", "%d %B %Y"):
+        from datetime import datetime
+
+        for fmt in (
+            "%a %d %b %Y",
+            "%A %d %b %Y",
+            "%a %d %B %Y",
+            "%A %d %B %Y",
+            "%d %b %Y",
+            "%d %B %Y",
+        ):
             try:
-                from datetime import datetime
                 return datetime.strptime(text, fmt).date().isoformat()
             except ValueError:
                 continue
 
-        return value.strip()
+        return ""
 
     def scrape_listing_page(self, url: str, field_id: int, page: int) -> list[dict]:
         """Get job links from listing page"""
@@ -96,7 +106,7 @@ class HotNigerianJobsScraper(BaseScraper):
     def extract_posted_date(self, main) -> str:
         for span in main.select("span.semibio"):
             text = span.get_text(" ", strip=True)
-            if "Posted on" in text:
+            if re.search(r"(?i)\bposted on\b", text):
                 return self.normalize_posted_date(text)
         return ""
 
@@ -243,17 +253,18 @@ class HotNigerianJobsScraper(BaseScraper):
 
     def run(self) -> list[dict]:
         """Main entry point"""
-        print(f"\n📋 Collecting Hot Nigerian Jobs links from up to {self.max_pages} pages per field...")
+        print("\n📋 Collecting Hot Nigerian Jobs links with per-field page limits...")
 
         job_links = []
         seen_links = set()
 
         for field_id in self.field_ids:
-            print(f"\n  Field {field_id}...")
+            pages_for_field = self.field_pages.get(field_id, 1)
+            print(f"\n  Field {field_id} ({pages_for_field} page(s))...")
 
-            for page in range(0, self.max_pages):
+            for page in range(0, pages_for_field):
                 url = self.build_field_page_url(field_id, page)
-                print(f"    Page {page + 1}/{self.max_pages}...", end=" ")
+                print(f"    Page {page + 1}/{pages_for_field}...", end=" ")
 
                 jobs = self.scrape_listing_page(url, field_id, page)
                 if not jobs:
@@ -270,7 +281,7 @@ class HotNigerianJobsScraper(BaseScraper):
 
                 print(f"✅ {added} jobs")
 
-                if page < self.max_pages - 1:
+                if page < pages_for_field - 1:
                     time.sleep(self.rate_limit)
 
         print(f"\n📊 Total links: {len(job_links)}")

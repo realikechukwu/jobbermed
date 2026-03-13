@@ -38,7 +38,13 @@ SCRAPER_CONFIG = {
     "hotnigerianjobs": {
         "enabled": True,
         "rate_limit": 2.0,
-        "max_pages": 2,
+        "field_pages": {
+            247: 2,  # Doctors
+            248: 2,  # Nurses and midwives
+            246: 1,  # Pharmacy
+            249: 1,  # Med lab / radiography / sonography
+            250: 1,  # Optometry / dentistry / allied health
+        },
     },
     "myjobmag": {
         "enabled": True,
@@ -46,7 +52,6 @@ SCRAPER_CONFIG = {
         "max_pages": 2,
     },
 }
-
 
 # Extraction settings
 EXTRACTION_CONFIG = {
