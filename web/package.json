@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && mkdir -p dist/landing && cp dist/index.html dist/landing/index.html",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
     "sync:jobs-bridge": "../scripts/sync_master_jobs_bridge.sh",
