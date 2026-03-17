@@ -367,6 +367,87 @@ a {
   cursor: not-allowed;
 }
 
+.gsi-material-button {
+  margin-top: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 44px;
+  padding: 0 20px;
+  border: 1px solid #747775;
+  border-radius: 22px;
+  background: #ffffff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.gsi-material-button:hover {
+  background: #f2f8ff;
+  border-color: #747775;
+}
+
+.gsi-material-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.gsi-material-button:disabled:hover {
+  background: #ffffff;
+}
+
+.gsi-material-button-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.gsi-material-button-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.gsi-material-button-icon svg {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.gsi-material-button-contents {
+  font-family: "Roboto", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1f1f1f;
+  letter-spacing: 0.25px;
+  white-space: nowrap;
+}
+
+.auth-separator {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 14px 0 2px;
+  color: rgba(17, 17, 17, 0.65);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.auth-separator::before,
+.auth-separator::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.08);
+}
+
 .auth-aux-link {
   margin-top: 2px;
 }
