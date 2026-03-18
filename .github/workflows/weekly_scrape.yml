@@ -2,7 +2,7 @@ name: Weekly Job Scrape
 
 on:
   schedule:
-    - cron: '0 9 * * 1'  # Every Monday 9am UK time (UTC)
+    - cron: '0 9 * * 2'  # Every Tuesday 9am UK time (UTC)
   workflow_dispatch:      # Manual trigger
 
 jobs:

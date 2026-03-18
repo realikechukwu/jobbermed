@@ -92,9 +92,25 @@ export function HomePage() {
 
   const activeJobs = useMemo(() => jobs.filter((job) => !isExpired(job.deadline)), [jobs]);
 
-  const categoryCounts = useMemo(() => buildCategoryCounts(activeJobs), [activeJobs]);
+  const categoryCounts = useMemo(
+    () =>
+      buildCategoryCounts(
+        activeLocation === ALL_LOCATIONS
+          ? activeJobs
+          : activeJobs.filter((job) => job._locationBuckets.includes(activeLocation)),
+      ),
+    [activeJobs, activeLocation],
+  );
 
-  const locationCounts = useMemo(() => buildLocationCounts(activeJobs), [activeJobs]);
+  const locationCounts = useMemo(
+    () =>
+      buildLocationCounts(
+        activeCategory === ALL_CATEGORY
+          ? activeJobs
+          : activeJobs.filter((job) => normalizeCategory(job) === activeCategory),
+      ),
+    [activeJobs, activeCategory],
+  );
 
   const locationOptions = useMemo(
     () => [ALL_LOCATIONS, ...Object.keys(locationCounts).sort((left, right) => left.localeCompare(right))],
