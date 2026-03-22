@@ -1,15 +1,56 @@
 {
   "metadata": {
-    "extracted_at": "2026-03-21T04:56:50.099570",
+    "extracted_at": "2026-03-22T05:08:09.926996",
     "model": "gpt-4o-mini",
-    "total_processed": 650,
+    "total_processed": 649,
     "duplicates_removed": 113,
-    "skipped_old": 5,
+    "skipped_old": 7,
     "skipped_empty": 0,
     "errors": 0,
-    "openai_calls": 145
+    "openai_calls": 116
   },
   "jobs": [
+    {
+      "job_title": "Nutrition Officer",
+      "company": "Elela-Care Humanitarian and Development Organization (ECM)",
+      "location": "Maiduguri, Borno, Nigeria",
+      "job_type": "Contract",
+      "job_category": "Public Health",
+      "salary": "n,",
+      "experience": "2 - 5 years",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "Bachelor’s degree in Nutrition, Public Health, Community Health, or related field",
+        "2–3 years’ experience in CMAM/OTP programming in emergency or humanitarian settings",
+        "Strong knowledge of national CMAM guidelines and OTP protocols",
+        "Experience in MIYCN and community-based nutrition interventions",
+        "Proficiency in Microsoft Office (Word, Excel, PowerPoint)",
+        "Excellent report writing and communication skills",
+        "Ability to speak Kanuri or Hausa is a strong advantage"
+      ],
+      "responsibilities": [
+        "Lead the setup, daily management, and supervision of Outpatient Therapeutic Programme (OTP) sites",
+        "Ensure high-quality screening, admission, treatment, and discharge of SAM children in line with national CMAM guidelines",
+        "Facilitate MIYCN counselling sessions, especially for pregnant and lactating women and caregivers of children under 5",
+        "Support MAM treatment using the Tom Brown complementary feeding approach",
+        "Conduct regular supportive supervision and on-the-job training for Health Workers, Nutrition Assistants, and Community Nutrition Mobilizers (CNMs)",
+        "Carry out weekly field visits to all OTP and CMAM sites to monitor service quality and data accuracy",
+        "Ensure timely procurement, distribution, and stock management of nutrition supplies (RUTF, RUSF, therapeutic foods, etc.)",
+        "Participate in nutrition coordination meetings at LGA and state levels",
+        "Support nutrition surveillance, MUAC screening, and rapid assessments",
+        "Document lessons learned and prepare high-quality weekly and monthly reports (including 5Ws) for the Nutrition Manager and donors",
+        "Represent ECM in nutrition cluster meetings and stakeholder engagements"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-03-21",
+      "deadline": "2026-03-25",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/nutrition-officer-elela-care-humanitarian-and-development-organization-ecm",
+      "_source": "myjobmag"
+    },
     {
       "job_title": "Histotechnology Scientist",
       "company": "ECWA Hospital, Egbe",
@@ -318,9 +359,9 @@
     {
       "job_title": "Medical Sales Representative",
       "company": "Al-tinez Pharmaceuticals Limited",
-      "location": "Abia, Akwa Ibom, Cross River, Kaduna, Kano, Lagos, Plateau, Rivers, Nigeria",
+      "location": "Nigeria",
       "job_type": "Full-time",
-      "job_category": "Other",
+      "job_category": "Allied Health",
       "salary": "n,",
       "experience": "",
       "qualification": "Degree",
@@ -339,9 +380,9 @@
       ],
       "date_posted": "2026-03-20",
       "deadline": "2026-04-03",
-      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "contact_email": "",
       "contact_phone": "",
-      "apply_url": "Click the Apply Now button for full details.",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/872479/medical-sales-representative-at-altinez-pharmaceut.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -4447,6 +4488,32 @@
       "_source": "myjobmag"
     },
     {
+      "job_title": "Driver",
+      "company": "Abuja Clinics",
+      "location": "Abuja, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "",
+      "experience": "3 - 5 years",
+      "qualification": "Secondary School (SSCE)",
+      "requirements": [
+        "Must have a minimum of SSCE.",
+        "Applicants must have between 3 - 5 years driving experience.",
+        "Valid Drivers License.",
+        "Must be familiar with Abuja roads."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-03-18",
+      "deadline": "",
+      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/driver-abuja-clinics-19",
+      "_source": "myjobmag"
+    },
+    {
       "job_title": "Radiographer",
       "company": "Echolab Radiology and Laboratory Services",
       "location": "Lagos, Nigeria",
@@ -4490,32 +4557,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.myjobmag.com/job/radiographer-echolab-radiology-and-laboratory-services-7",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Driver",
-      "company": "Abuja Clinics",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "",
-      "experience": "3 - 5 years",
-      "qualification": "Secondary School (SSCE)",
-      "requirements": [
-        "Must have a minimum of SSCE.",
-        "Applicants must have between 3 - 5 years driving experience.",
-        "Valid Drivers License.",
-        "Must be familiar with Abuja roads."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-03-18",
-      "deadline": "",
-      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/driver-abuja-clinics-19",
       "_source": "myjobmag"
     },
     {
@@ -12316,6 +12357,47 @@
       "_source": "hotnigerianjobs"
     },
     {
+      "job_title": "Community Health Extension Worker",
+      "company": "ComfortCare Pharmaceutical Ltd",
+      "location": "Abuja, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Public Health",
+      "salary": "₦50,000 - ₦100,000/month",
+      "experience": "2 years",
+      "qualification": "BSc",
+      "requirements": [
+        "Diploma or certification as a Community Health Extension Worker (CHEW) from a recognized institution.",
+        "Valid professional license/registration where applicable.",
+        "Good knowledge of drugs and common medications, including indications, basic dosing awareness, and patient counseling points.",
+        "Experience in community health services, pharmacy, or clinical settings is an advantage.",
+        "Good communication and patient relationship skills.",
+        "Ability to work in a fast-paced community pharmacy environment.",
+        "Strong attention to detail, integrity, and professionalism."
+      ],
+      "responsibilities": [
+        "Conduct basic patient health assessments such as blood pressure, blood glucose, temperature, and weight monitoring.",
+        "Assist in vaccination and immunization services under the supervision of the Pharmacist Manager.",
+        "Provide health education and counseling to patients on disease prevention, medication adherence, and healthy lifestyle practices.",
+        "Support pharmacists in dispensing activities and patient care services.",
+        "Maintain accurate patient records and documentation for clinical services provided.",
+        "Assist in chronic disease monitoring programs (e.g., hypertension, diabetes, and arthritis management).",
+        "Observe and report any medication-related concerns or patient reactions to the supervising pharmacist.",
+        "Promote the pharmacy’s health services, wellness programs, and preventive care initiatives.",
+        "Ensure cleanliness and proper organization of clinical equipment and service areas.",
+        "Adhere strictly to ComfortCare Pharmaceuticals' SOPs, ethics, and patient care standards."
+      ],
+      "how_to_apply": [
+        "Submit your application through the employer’s online recruitment portal.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-03-06",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/community-health-extension-worker-2",
+      "_source": "myjobmag"
+    },
+    {
       "job_title": "Radiographer",
       "company": "Dukes Neurosurgery and Specialist Hospital",
       "location": "Lagos, Nigeria",
@@ -13456,32 +13538,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.myjobmag.com/job/experienced-nurse-oak-hospitals",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Sales Canvasser",
-      "company": "Vastovers Group",
-      "location": "Abia, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "N300,000 per month",
-      "experience": "1 year",
-      "qualification": "OND",
-      "requirements": [
-        "BA/BSc/HND",
-        "NCE",
-        "OND"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-02-28",
-      "deadline": "",
-      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/sales-canvasser-vastovers-group-9",
       "_source": "myjobmag"
     },
     {
@@ -17727,87 +17783,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/optometrist-lamb-hospital/",
-      "_source": "jobsinnigeria"
-    },
-    {
-      "job_title": "NYSC Nurse",
-      "company": "Tractrac MSL",
-      "location": "Keffi, Nasarawa, Nigeria",
-      "job_type": "Internship",
-      "job_category": "Nurse",
-      "salary": "n,",
-      "experience": "",
-      "qualification": "BSc",
-      "requirements": [
-        "NYSC Nurse currently serving or recently posted in/around Keffi.",
-        "Valid nursing qualification and NYSC status.",
-        "Basic first-aid and patient-care competence.",
-        "Organized, compassionate, and attentive.",
-        "Comfortable working in a camp or field environment.",
-        "Strong communication and teamwork skills."
-      ],
-      "responsibilities": [
-        "Provide first aid and basic nursing care to participants and staff.",
-        "Assist the Medical Doctor with treatments, monitoring, and record-keeping.",
-        "Take and record vital signs where necessary.",
-        "Support health screenings and medication administration.",
-        "Maintain hygiene and order in the clinic area.",
-        "Educate participants on basic health practices (hydration, rest, hygiene).",
-        "Monitor participants for signs of illness, fatigue, or distress.",
-        "Ensure medical supplies are organized and replenished."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-01-20",
-      "deadline": "2026-01-23",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://jobsinnigeria.careers/jobs/nysc-nurse-tractrac-msl/",
-      "_source": "jobsinnigeria"
-    },
-    {
-      "job_title": "Medical Laboratory Scientist",
-      "company": "The Change Room",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Medical Laboratory Scientist",
-      "salary": "n,",
-      "experience": "",
-      "qualification": "bsc",
-      "requirements": [
-        "Bachelor’s degree in Medical Laboratory Science.",
-        "Certification as a Medical Laboratory Scientist.",
-        "Strong analytical, problem-solving, and organizational skills.",
-        "Proficiency with laboratory equipment and information systems.",
-        "Excellent attention to detail"
-      ],
-      "responsibilities": [
-        "Perform routine and specialized laboratory tests in areas such as hematology, clinical chemistry, microbiology, immunology, serology, and transfusion services.",
-        "Operate, calibrate, and maintain analytical instruments and laboratory equipment.",
-        "Validate test results and ensure precision, accuracy, and timeliness.",
-        "Collect, label, and process biological specimens following proper identification and handling protocols.",
-        "Ensure samples are stored and transported under optimal conditions to maintain integrity.",
-        "Conduct daily quality control checks on instruments and reagents.",
-        "Adhere to standard operating procedures (SOPs).",
-        "Participate in internal and external quality assurance programs.",
-        "Maintain confidentiality and comply with patient data protection regulations.",
-        "Follow established biosafety and infection control practices.",
-        "Handle and dispose of hazardous materials safely and responsibly.",
-        "Ensure compliance with all applicable laboratory and health regulations.",
-        "Collaborate with healthcare providers and interdisciplinary teams to support optimal patient care.",
-        "Engage in continuing education to stay current with advances in laboratory science and technology."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-01-20",
-      "deadline": "2026-02-02",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://jobsinnigeria.careers/jobs/medical-laboratory-scientist-change-room-2/",
       "_source": "jobsinnigeria"
     }
   ]
