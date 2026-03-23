@@ -1,15 +1,91 @@
 {
   "metadata": {
-    "extracted_at": "2026-03-22T05:08:09.926996",
+    "extracted_at": "2026-03-23T05:16:46.298052",
     "model": "gpt-4o-mini",
-    "total_processed": 649,
-    "duplicates_removed": 113,
-    "skipped_old": 7,
+    "total_processed": 644,
+    "duplicates_removed": 110,
+    "skipped_old": 12,
     "skipped_empty": 0,
     "errors": 0,
-    "openai_calls": 116
+    "openai_calls": 114
   },
   "jobs": [
+    {
+      "job_title": "Nurse Manager",
+      "company": "KNCV Tuberculosis Foundation",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Nurse",
+      "salary": "NGN1,500,000 / monthly",
+      "experience": "Minimum of 5–7 years post-qualification nursing experience, including at least 3 years in a supervisory or managerial role",
+      "qualification": "Bachelor’s degree in Nursing (BSc Nursing) or equivalent; Master’s degree in Nursing, Public Health, or related field is an advantage.",
+      "requirements": [
+        "Valid registration and current practicing license with the Nursing and Midwifery Council of Nigeria (NMCN).",
+        "Experience in TB, HIV, infectious diseases, or public health programs strongly preferred.",
+        "Proven track record in TB/HIV clinical management, DOT supervision, or adherence support in resource-limited settings.",
+        "Familiarity with national TB guidelines, TB LON projects, USAID-funded programs, or NTBLCP protocols.",
+        "Experience leading teams, training staff, and implementing quality improvement initiatives."
+      ],
+      "responsibilities": [
+        "Supervise and mentor Registered Nurses, Community Health Extension Workers (CHEWs), and other nursing personnel delivering TB care in facilities and communities.",
+        "Oversee nursing assessments, care planning, medication administration (including DOT), side-effect monitoring, and patient education for TB (DS-TB, DR-TB) and TB/HIV co-infected patients.",
+        "Ensure adherence to infection prevention and control (IPC) protocols, including PPE use and safe handling in high-risk TB environments.",
+        "Lead implementation of TB case management, active case finding, contact tracing, and linkage to care in Lagos facilities and communities.",
+        "Conduct regular performance reviews, capacity building, and on-the-job training for nursing staff on TB guidelines, data tools, and best practices.",
+        "Participate in and lead quality assurance audits, root-cause analysis for gaps, and implementation of corrective actions to improve treatment outcomes and notification rates.",
+        "Ensure accurate, timely, and confidential documentation of patient care and program data in electronic and manual systems.",
+        "Prepare and contribute to monthly/quarterly reports on nursing indicators (e.g., adherence rates, loss-to-follow-up, adverse events).",
+        "Support data quality checks and use findings to inform nursing interventions and program adjustments.",
+        "Collaborate with Senior Program Managers, TB Advisors, Laboratory teams, and external partners (NTBLCP, state TB programs, NGOs) to align nursing activities with project goals.",
+        "Support community outreach, stigma reduction campaigns, and health education to boost TB service uptake in Lagos.",
+        "Represent nursing perspectives in program meetings, case discussions, and donor reviews."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-03-22",
+      "deadline": "2026-04-09",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/nurse-manager-568",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Registered Nurse",
+      "company": "KNCV Tuberculosis Foundation",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Nurse",
+      "salary": "NGN800,000 - NGN1,200,000 / monthly",
+      "experience": "Minimum of 2 years of post-qualification clinical nursing experience",
+      "qualification": "Bachelor’s degree in Nursing (BSc Nursing) or equivalent qualification from a recognized institution",
+      "requirements": [
+        "Valid registration and current practicing license with the Nursing and Midwifery Council of Nigeria (NMCN)",
+        "Prior experience in TB, HIV/AIDS, infectious diseases, or public health nursing is highly desirable",
+        "Familiarity with national TB guidelines, DOT strategies, and TB/HIV collaborative activities",
+        "Experience working in resource-limited settings or with NGOs/international organizations"
+      ],
+      "responsibilities": [
+        "Conduct comprehensive nursing assessments, develop individualized care plans, and provide holistic care to TB patients",
+        "Administer prescribed medications, injections, and other treatments in line with national TB guidelines and best practices",
+        "Monitor vital signs, symptoms, treatment side effects, and overall patient progress; promptly identify and report any complications or adverse events",
+        "Educate patients and families on TB transmission, prevention, treatment regimens, nutrition, and lifestyle modifications to promote adherence and recovery",
+        "Assist in active case finding, contact tracing, and follow-up of TB patients to ensure continuity of care and timely linkage to services",
+        "Participate in Directly Observed Therapy (DOT) supervision and support community-based adherence monitoring",
+        "Collaborate effectively with clinicians, pharmacists, lab technicians, and other stakeholders in TB diagnosis, treatment, and referral pathways",
+        "Contribute to TB screening, sputum collection, and sample transportation processes as needed",
+        "Engage in community outreach, health education sessions, and awareness campaigns to reduce stigma and improve TB service uptake"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-03-22",
+      "deadline": "2026-04-06",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/registered-nurse-567",
+      "_source": "medlocum"
+    },
     {
       "job_title": "Nutrition Officer",
       "company": "Elela-Care Humanitarian and Development Organization (ECM)",
@@ -1228,6 +1304,48 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/medical-doctor-555",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Medical Doctor (Maiduguri)",
+      "company": "INTERSOS Nigeria",
+      "location": "Maiduguri, Borno, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Doctor",
+      "salary": "",
+      "experience": "Minimum of 1 year work experience as clinician",
+      "qualification": "Medical Doctor Diploma",
+      "requirements": [
+        "Desirable experience in obstetrics and gynaecology, paediatrics, general medicine or minor surgery",
+        "Essential computer literacy (word, excel and internet)",
+        "Teamwork and cooperation",
+        "Behavioural flexibility",
+        "Commitment to INTERSOS principles",
+        "Mission language essential",
+        "Local working language desirable"
+      ],
+      "responsibilities": [
+        "Apply medical knowledge and skills to diagnose and prevention",
+        "Carry out inpatient and outpatient consultations, prescribing the necessary treatment respecting protocols",
+        "Keep the patient and/or his family informed about the illness and provide appropriate explanations about the treatment to follow, checking has been understood",
+        "Check and control the rational distribution of medicines and equipment under his responsibility and take care the quality, disinfection and sterilization of the medical materials",
+        "Ensure general compliance with standing hygiene standards",
+        "Participate in the collection, transmission and analysis of epidemiological data, checking its quality and informing the line manager about any problem or complication of the patients illness, medical error",
+        "Monitor the proper functioning of the department, equipment or material",
+        "Ensure ongoing training of the medical/paramedical multidisciplinary team in order to optimize the quality of care",
+        "Act as team leader of the medical team under his direct responsibility according to INTERSOS policies and procedures",
+        "Organize and schedule shift and rotations, supervise the team performance and the quality of the medical project activities and inform the line manager about any relevant problem within the team under his supervision",
+        "Ensure professional confidentiality is respected among all the member of his team",
+        "Collaborate with program, logistic and HR department if requested"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-03-19",
+      "deadline": "2026-03-25",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/medical-doctor-maiduguri-554",
       "_source": "medlocum"
     },
     {
@@ -3247,6 +3365,41 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/871542/pharmacist-abuja-at-eha-clinics.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
+      "job_title": "Pharmacist (Kano)",
+      "company": "EHA Clinics",
+      "location": "Kano, Nigeria",
+      "job_type": "",
+      "job_category": "Pharmacist",
+      "salary": "n,",
+      "experience": "Minimum of two (2) years post NYSC progressive experience in Pharmacy within the private and public sector",
+      "qualification": "Bachelor's degree in Pharmacy/M.Pharm/PharmD",
+      "requirements": [
+        "Registered member of Pharmacists Council of Nigeria (PCN) with an up-to-date practicing license",
+        "Experience working with public health and health systems is an advantage"
+      ],
+      "responsibilities": [
+        "Provide effective medication use and become the people’s trusted ally against health issues",
+        "Review and develop the clinic's pharmacy policies and regulations",
+        "Participate in voluntary community health activities",
+        "Manage clinical risk",
+        "Provide professional advice on cosmetics or para-pharmaceuticals",
+        "Document patient and family education",
+        "Adhere to EHA Clinics Code of Conduct",
+        "Prepare and dispense medications to patients on physician’s order",
+        "Maintain an up-to-date inventory of the clinic drug formulary"
+      ],
+      "how_to_apply": [
+        "Submit your application through the employer’s online recruitment portal.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-03-18",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/871538/pharmacist-kano-at-eha-clinics.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -10561,37 +10714,6 @@
       "_source": "medlocum"
     },
     {
-      "job_title": "Medical Doctor",
-      "company": "Pink Clinic Nigeria",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Doctor",
-      "salary": "NGN450,000 - NGN500,000 / monthly",
-      "experience": "2-3 years",
-      "qualification": "MBBS or equivalent medical degree",
-      "requirements": [
-        "2-3 years experience",
-        "Valid practicing license",
-        "Experience in sexual and reproductive health is an advantage",
-        "Strong communication and patient management skills"
-      ],
-      "responsibilities": [
-        "Provide quality sexual and reproductive healthcare services to patients.",
-        "Conduct consultations, diagnosis and treatment.",
-        "Counsel patients on sexual and reproductive health matters.",
-        "Maintain accurate patient records and ensure confidentiality."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-03-10",
-      "deadline": "2026-03-16",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/medical-doctor-487",
-      "_source": "medlocum"
-    },
-    {
       "job_title": "Care Assistant / Support Worker",
       "company": "Catilas Resources Limited",
       "location": "Lagos, Nigeria",
@@ -17599,190 +17721,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/health-safety-environment-hse-manager-transtell-ventures-nigeria-limited/",
-      "_source": "jobsinnigeria"
-    },
-    {
-      "job_title": "Registered Nurse (Aesthetics Clinic)",
-      "company": "Future Moves Recruitment Agency",
-      "location": "Lekki, Lagos, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Nurse",
-      "salary": "N120,000 monthly",
-      "experience": "Minimum of [2] years nursing experience (aesthetics experience is an added advantage)",
-      "qualification": "bsc",
-      "requirements": [
-        "Must be a Registered Nurse with a valid practicing license",
-        "Strong interest in aesthetics and willingness to learn",
-        "Good knowledge of basic nursing care and infection control standards",
-        "Excellent communication and interpersonal skills",
-        "Professional appearance and patient-focused attitude",
-        "Ability to work as part of a team and follow clinical instructions",
-        "Attention to detail and commitment to safety and quality care"
-      ],
-      "responsibilities": [
-        "Assist with and support aesthetic procedures under supervision, in line with clinical guidelines",
-        "Conduct basic client assessments and prepare clients for treatments",
-        "Provide nursing care before, during, and after aesthetic procedures",
-        "Observe and monitor clients’ responses to treatments and report any concerns",
-        "Ensure proper infection control, hygiene, and safety standards at all times",
-        "Prepare treatment rooms, equipment, and supplies for daily operations",
-        "Maintain accurate client records and documentation",
-        "Educate clients on post-treatment care and general skincare advice",
-        "Participate actively in training and learning opportunities related to aesthetic nursing",
-        "Support the clinical team to ensure smooth day-to-day clinic operations"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-01-21",
-      "deadline": "2026-01-23",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://jobsinnigeria.careers/jobs/registered-nurse-aesthetics-clinic-future-moves-recruitment-agency/",
-      "_source": "jobsinnigeria"
-    },
-    {
-      "job_title": "Dentist",
-      "company": "Clinix Healthcare",
-      "location": "Awka, Anambra, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Dentist",
-      "salary": "",
-      "experience": "in Medical and Diagnostic services with over 120 centers across Africa",
-      "qualification": "bsc",
-      "requirements": [
-        "Candidates should possess relevant qualifications",
-        "Fully registered with Dental board",
-        "Must be able to perform dental assessment",
-        "Must be able to perform dental procedures",
-        "Scaling, polishing, filling, simple extraction"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-01-21",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://jobsinnigeria.careers/jobs/dentist-clinix-healthcare/",
-      "_source": "jobsinnigeria"
-    },
-    {
-      "job_title": "Optometrist",
-      "company": "Clinix Healthcare",
-      "location": "Awka, Anambra, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Allied Health",
-      "salary": "",
-      "experience": "in Medical and Diagnostic services with over 120 centers across Africa.",
-      "qualification": "bsc",
-      "requirements": [
-        "Candidates should possess relevant qualifications",
-        "Must have relevant practicing License",
-        "Proficiency in conducting eye tests",
-        "Work with little or no supervision"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-01-21",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://jobsinnigeria.careers/jobs/optometrist-clinix-healthcare/",
-      "_source": "jobsinnigeria"
-    },
-    {
-      "job_title": "Dentist",
-      "company": "The Lamb Hospital",
-      "location": "Mowe / Shimawa, Ogun, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Dentist",
-      "salary": "",
-      "experience": "(fresh graduates may apply)",
-      "qualification": "bsc",
-      "requirements": [
-        "Bachelor of Dental Surgery (BDS) or Doctor of Dental Surgery (DDS/DMD)",
-        "Valid practicing license with the relevant Dental Council",
-        "Minimum of [1–3] years clinical experience (fresh graduates may apply)",
-        "Strong clinical and diagnostic skills",
-        "Good communication and patient-management skills",
-        "Ability to work independently and as part of a healthcare team",
-        "Clinical dental procedures proficiency",
-        "Patient care and empathy",
-        "Attention to detail and manual dexterity",
-        "Time management and organizational skills",
-        "Knowledge of infection control and dental ethics"
-      ],
-      "responsibilities": [
-        "Examine patients’ teeth, gums, and oral tissues to diagnose dental conditions",
-        "Perform dental procedures such as fillings, extractions, scaling and polishing, and root canal treatments (as qualified)",
-        "Diagnose and manage dental caries, gum diseases, infections, and oral pain",
-        "Prescribe medications such as antibiotics and pain relief when necessary",
-        "Interpret dental X-rays and other diagnostic tests",
-        "Educate patients on oral hygiene, preventive care, and dietary habits affecting dental health",
-        "Maintain accurate dental records and treatment plans",
-        "Ensure proper sterilization and infection control procedures are followed",
-        "Refer patients to specialists (e.g., orthodontists, oral surgeons) when required",
-        "Work collaboratively with dental nurses, hygienists, and other healthcare staff",
-        "Adhere to professional ethics, safety standards, and clinic policies"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-01-21",
-      "deadline": "2026-02-28",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://jobsinnigeria.careers/jobs/dentist-lamb-hospital/",
-      "_source": "jobsinnigeria"
-    },
-    {
-      "job_title": "Optometrist",
-      "company": "Lamb Hospital",
-      "location": "Mowe, Ogun, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Allied Health",
-      "salary": "",
-      "experience": "(fresh graduates may apply, if applicable)",
-      "qualification": "bsc",
-      "requirements": [
-        "Bachelor’s degree or Doctor of Optometry (OD) from a recognized institution",
-        "Valid practicing license with the relevant professional council",
-        "1–3 years clinical experience (fresh graduates may apply, if applicable)",
-        "Strong diagnostic and clinical decision-making skills",
-        "Excellent communication and interpersonal skills",
-        "Ability to work independently and as part of a healthcare team",
-        "Computer literacy and experience with electronic medical records (EMR) is an advantage"
-      ],
-      "responsibilities": [
-        "Conduct comprehensive eye examinations and vision tests",
-        "Diagnose refractive errors such as myopia, hyperopia, astigmatism, and presbyopia",
-        "Prescribe eyeglasses, contact lenses, and visual aids",
-        "Detect and manage eye conditions such as glaucoma, cataracts, conjunctivitis, and dry eye",
-        "Provide pre- and post-operative care for eye surgery patients when required",
-        "Educate patients on eye health, hygiene, and preventive care",
-        "Maintain accurate and up-to-date patient records",
-        "Refer patients to ophthalmologists or other specialists when necessary",
-        "Ensure proper use, maintenance, and calibration of optometry equipment",
-        "Comply with clinic policies, professional standards, and ethical guidelines",
-        "Work collaboratively with nurses, ophthalmologists, and other healthcare staff"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-01-21",
-      "deadline": "2026-02-20",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://jobsinnigeria.careers/jobs/optometrist-lamb-hospital/",
       "_source": "jobsinnigeria"
     }
   ]
