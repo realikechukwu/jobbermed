@@ -4,7 +4,7 @@
 import json
 import os
 import sys
-from datetime import datetime
+from datetime import date, datetime
 from html import escape
 from pathlib import Path
 
@@ -14,8 +14,18 @@ from dotenv import load_dotenv
 from config import MASTER_JOBS_PATH
 
 
+def is_expired(deadline_str: str) -> bool:
+    """Return True if the deadline has already passed."""
+    if not deadline_str:
+        return False
+    try:
+        return date.fromisoformat(str(deadline_str)[:10]) < date.today()
+    except ValueError:
+        return False
+
+
 def load_jobs(filepath: Path, limit: int = 20) -> list:
-    """Load and return top N jobs sorted by date."""
+    """Load and return top N non-expired jobs sorted by date."""
     if not filepath.exists():
         print(f"❌ {filepath} not found")
         sys.exit(1)
@@ -24,6 +34,9 @@ def load_jobs(filepath: Path, limit: int = 20) -> list:
         data = json.load(f)
 
     jobs = data.get("jobs", []) if isinstance(data, dict) else data
+
+    # Filter out expired jobs before selecting top N
+    jobs = [j for j in jobs if not is_expired(j.get("deadline", ""))]
 
     # Sort by date_posted descending (newest first)
     jobs.sort(key=lambda j: j.get("date_posted", ""), reverse=True)
