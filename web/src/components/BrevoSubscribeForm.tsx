@@ -106,7 +106,7 @@ export function BrevoSubscribeForm() {
                 </div>
                 <label className="entry__error entry__error--primary brevo-field-error" />
                 <span className="entry__specification brevo-helper">
-                  Join 500+ healthcare professionals. Every Monday
+                  Join 500+ healthcare professionals. Every Tuesday
                 </span>
               </div>
             </div>
