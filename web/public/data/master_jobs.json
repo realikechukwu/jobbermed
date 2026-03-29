@@ -1,15 +1,180 @@
 {
   "metadata": {
-    "extracted_at": "2026-03-28T05:12:18.345272",
+    "extracted_at": "2026-03-29T05:23:32.721461",
     "model": "gpt-4o-mini",
     "total_processed": 641,
     "duplicates_removed": 114,
     "skipped_old": 4,
     "skipped_empty": 0,
     "errors": 0,
-    "openai_calls": 165
+    "openai_calls": 119
   },
   "jobs": [
+    {
+      "job_title": "Registered Nurses (RN)",
+      "company": "Lariken International School",
+      "location": "Oyo, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Nurse",
+      "salary": "₦100,000 - ₦150,000/month",
+      "experience": "Registered Nurses who are very or fairly experienced",
+      "qualification": "BA/BSc/HND, Others, Professional Certificate",
+      "requirements": [
+        "BA/BSc/HND",
+        "Others",
+        "Professional Certificate"
+      ],
+      "responsibilities": [
+        "Work collaboratively with fellow nurses, the school doctors, and other administrative heads of the college",
+        "Provide healthcare support in a secondary school environment"
+      ],
+      "how_to_apply": [
+        "Submit your application through the employer’s online recruitment portal.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-03-28",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/registered-nurses-rn-lariken-international-school",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Health Assistant",
+      "company": "Global Village Healthcare Initiative for Africa (GHIV Africa)",
+      "location": "Borno, Nigeria",
+      "job_type": "Contract",
+      "job_category": "Other",
+      "salary": "n,",
+      "experience": "2 years",
+      "qualification": "OND",
+      "requirements": [
+        "OND",
+        "2 years experience",
+        "Ability to support delivery of integrated primary healthcare activities",
+        "Community engagement skills"
+      ],
+      "responsibilities": [
+        "Support community diagnosis activities including household assessments and mapping.",
+        "Assist in outpatient consultations, triage, and referral of patients.",
+        "Conduct health education sessions on key topics including hygiene and nutrition.",
+        "Support Immunization, Maternal, Newborn, and Child Health (MNCH) activities.",
+        "Assist in screening for acute malnutrition using MUAC."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-03-28",
+      "deadline": "2026-05-31",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/health-assistant-global-village-healthcare-initiative-for-africa-ghiv-africa",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Nurses and Midwives",
+      "company": "JOJ Memorial Foundation",
+      "location": "Imo, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Nurse",
+      "salary": "n,",
+      "experience": "2 years",
+      "qualification": "RN",
+      "requirements": [
+        "Registered Nurse (RN) or Registered Midwife (RM) qualification from a recognized institution.",
+        "Valid license to practice.",
+        "Ability to provide safe, respectful, and holistic care to patients of all ages.",
+        "Strong communication skills, with the ability to listen, explain, and reassure effectively.",
+        "Excellent teamwork skills and a willingness to collaborate in a multidisciplinary environment.",
+        "Emotional resilience, compassion, and a commitment to patient dignity.",
+        "A positive attitude toward continuous learning and professional development."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Email the address shown on the original listing.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-03-28",
+      "deadline": "2026-04-10",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/nurses-and-midwives-joj-memorial-foundation",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Medical Laboratory Technician",
+      "company": "JOJ Memorial Foundation",
+      "location": "Imo, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Medical Laboratory Scientist",
+      "salary": "",
+      "experience": "2 years",
+      "qualification": "BSc",
+      "requirements": [
+        "Certification in Medical Laboratory Technology.",
+        "Strong analytical and technical skills.",
+        "High attention to detail and accuracy.",
+        "Ability to follow protocols and maintain quality standards."
+      ],
+      "responsibilities": [
+        "Collect, process, and analyse patient samples using standard laboratory procedures.",
+        "Operate and maintain laboratory equipment safely and effectively.",
+        "Ensure accurate documentation and timely reporting of test results.",
+        "Uphold infection‑control and biosafety standards at all times.",
+        "Collaborate with clinicians to support accurate diagnosis and treatment."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-03-28",
+      "deadline": "2026-04-10",
+      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/medical-laboratory-technician-joj-memorial-foundation",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Business Operations Manager",
+      "company": "Medbury Healthcare Group",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Healthcare Management",
+      "salary": "n,",
+      "experience": "8 - 12 years",
+      "qualification": "BSc",
+      "requirements": [
+        "Bachelor’s degree in Healthcare Administration, Business Administration, Public Health, or related field",
+        "MBA, MHA, or MPH is an added advantage",
+        "8–12 years in healthcare operations",
+        "Experience managing multiple healthcare locations in Nigeria",
+        "Proven track record in scaling operations, revenue growth, and team leadership",
+        "Strong financial and P&L management skills",
+        "Multi-site operations experience",
+        "Data analysis and performance tracking",
+        "Strong leadership, stakeholder management, and commercial mindset"
+      ],
+      "responsibilities": [
+        "Oversee daily clinic operations, standardize processes, and ensure high-quality patient experience",
+        "Drive revenue targets, execute growth strategies, and support business development efforts",
+        "Manage P&L, optimize costs and pricing, and monitor profitability",
+        "Lead clinic and operations teams, drive performance, and support staff development",
+        "Ensure regulatory compliance, audit readiness, and patient safety standards",
+        "Enhance workflows, implement systems, and drive data-driven decision-making",
+        "Improve patient satisfaction, retention, and manage escalations",
+        "Support new clinic rollouts and identify growth opportunities"
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-03-28",
+      "deadline": "2026-04-13",
+      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/business-operations-manager-medbury-medical-services",
+      "_source": "myjobmag"
+    },
     {
       "job_title": "Training Officer",
       "company": "Kedi Healthcare Industries (Nigeria) Limited",
@@ -3635,160 +3800,6 @@
       "_source": "myjobmag"
     },
     {
-      "job_title": "Medical Laboratory Scientist",
-      "company": "St Dominic Catholic Hospital",
-      "location": "Ibadan, Oyo, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Medical Laboratory Scientist",
-      "salary": "N150,000 - N250,000 monthly",
-      "experience": "2 - 5 years",
-      "qualification": "BA/BSc/HND",
-      "requirements": [
-        "Bachelor’s Degree in Medical Laboratory Science (BMLS) or equivalent",
-        "Valid practicing license from the appropriate regulatory body",
-        "Registration with the Medical Laboratory Science Council",
-        "2–5 years relevant laboratory experience (preferred)",
-        "Experience in a hospital or diagnostic laboratory setting is an added advantage",
-        "Willingness to work shifts, including weekends and public holidays",
-        "Strong commitment to accuracy, patient safety, and confidentiality",
-        "Ability to work effectively as part of a team."
-      ],
-      "responsibilities": [
-        "Perform laboratory tests in areas including bacteriology, virology, mycology, and parasitology.",
-        "Collect, process, and analyze patient specimens in accordance with standard procedures.",
-        "Apply aseptic techniques and maintain strict biosafety practices at all times.",
-        "Accurately interpret and report microbiological test results to aid clinical decision-making.",
-        "Ensure proper documentation of test procedures, results, and laboratory activities.",
-        "Maintain, clean, and calibrate laboratory equipment.",
-        "Adhere to quality control and quality assurance protocols.",
-        "Collaborate with doctors, nurses, and other healthcare professionals to ensure effective patient care.",
-        "Ensure compliance with hospital policies and regulatory standards.",
-        "Maintain cleanliness and organization of the laboratory environment."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-03-26",
-      "deadline": "",
-      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/medical-laboratory-scientist-st-dominic-catholic-hospital-1",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Registered Midwife",
-      "company": "St Dominic Catholic Hospital",
-      "location": "Ibadan, Oyo, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Nurse",
-      "salary": "N120,000 - N250,000 monthly",
-      "experience": "6",
-      "qualification": "OND",
-      "requirements": [
-        "BA/BSc/HND",
-        "OND",
-        "2 - 6 years of experience in maternity care (preferred)"
-      ],
-      "responsibilities": [
-        "Provide comprehensive antenatal, labour, and postnatal care to expectant and new mothers.",
-        "Monitor the progress of labour and assist in safe delivery of babies.",
-        "Assess the health condition of both mother and newborn before, during, and after delivery.",
-        "Administer medications and treatments as prescribed by the attending physician.",
-        "Assist doctors during obstetric procedures when required.",
-        "Provide counselling and education to mothers on breastfeeding, newborn care, family planning, and maternal health.",
-        "Monitor and record vital signs and maintain accurate patient records.",
-        "Identify complications and promptly escalate to the appropriate medical personnel.",
-        "Maintain hygiene and infection prevention standards within the maternity unit.",
-        "Participate in ward rounds and maternity team meetings.",
-        "Support hospital initiatives aimed at improving maternal and child health outcomes."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-03-26",
-      "deadline": "",
-      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/registered-midwife-st-dominic-catholic-hospital-2",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Medical Doctor",
-      "company": "St Dominic Catholic Hospital",
-      "location": "Oyo, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Doctor",
-      "salary": "package",
-      "experience": "2 - 7 years",
-      "qualification": "ond",
-      "requirements": [
-        "MBBS / MBChB Degree from a recognized institution",
-        "Full registration with the Medical and Dental Council",
-        "Valid practicing license",
-        "Completion of Housemanship",
-        "NYSC discharge or exemption certificate",
-        "2–7 years post-NYSC clinical experience"
-      ],
-      "responsibilities": [
-        "Conduct thorough medical assessments, examinations, and diagnosis of patients.",
-        "Prescribe appropriate treatments, medications, and management plans.",
-        "Admit, manage, and discharge patients appropriately.",
-        "Perform minor medical and surgical procedures as required.",
-        "Maintain accurate and timely medical documentation.",
-        "Collaborate with nurses, pharmacists, laboratory scientists, and other healthcare professionals for comprehensive patient care.",
-        "Respond promptly to medical emergencies.",
-        "Participate in ward rounds and clinical meetings.",
-        "Educate patients and families on preventive health measures and treatment plans.",
-        "Adhere strictly to hospital policies, ethical standards, and regulatory guidelines.",
-        "Participate in continuous professional development and hospital training programs."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-03-26",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/medical-doctor-st-dominic-catholic-hospital-13",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Family Therapist",
-      "company": "Integrated Health Care Limited",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Allied Health",
-      "salary": "",
-      "experience": "",
-      "qualification": "BSc / HND in Family Therapy, Counseling, Psychology, or related field",
-      "requirements": [
-        "BA/BSc/HND",
-        "Proven experience in family therapy or counseling",
-        "Professional licensure or certification as required by local regulations"
-      ],
-      "responsibilities": [
-        "Conduct assessments and develop tailored treatment plans for clients.",
-        "Provide individual, couple, and family therapy sessions.",
-        "Facilitate communication and conflict resolution within families.",
-        "Collaborate with healthcare professionals to ensure integrated care.",
-        "Maintain accurate and confidential client records.",
-        "Promote community wellness through outreach and education initiatives."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-03-26",
-      "deadline": "",
-      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/family-therapist-integrated-health-care-limited-1",
-      "_source": "myjobmag"
-    },
-    {
       "job_title": "Senior Full Stack Developer (Backend Heavy – Laravel)",
       "company": "Orange Drugs",
       "location": "Nigeria",
@@ -3913,46 +3924,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.myjobmag.com/job/personal-driver-tyonex-nigeria-limited",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "IT / Systems Manager (Healthcare)",
-      "company": "Dukes Neurosurgery and Specialist Hospital",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Healthcare Management",
-      "salary": "n,",
-      "experience": "5",
-      "qualification": "BSc",
-      "requirements": [
-        "Bachelor’s degree in Computer Science, Information Technology, or a related field",
-        "3–5+ years experience in IT systems management (healthcare experience is a plus)",
-        "Strong understanding of system integration and IT infrastructure",
-        "Experience managing or supporting EMR systems",
-        "Strong knowledge of WordPress website management",
-        "Knowledge of cybersecurity best practices and data protection",
-        "Strong troubleshooting and problem-solving skills",
-        "Ability to manage vendors and communicate effectively with non-technical staff"
-      ],
-      "responsibilities": [
-        "Oversee and manage all hospital systems, including billing, EMR, and HR platforms",
-        "Ensure seamless operation and integration between all digital tools and workflows",
-        "Manage and coordinate external vendors (e.g., system providers)",
-        "Take ownership of the hospital website (WordPress), including updates, maintenance, and improvements",
-        "Provide first-level and second-level technical support for staff and resolve system-related issues promptly",
-        "Implement and maintain data security practices (access control, backups, monitoring, and compliance)",
-        "Monitor system performance and ensure minimal downtime across all platforms",
-        "Train staff on proper system usage and improve adoption of digital tools",
-        "Recommend and implement technology improvements to enhance efficiency and patient experience"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-03-26",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/it-systems-manager-healthcare-dukes-neurosurgery-and-specialist-hospital",
       "_source": "myjobmag"
     },
     {
