@@ -1,15 +1,40 @@
 {
   "metadata": {
-    "extracted_at": "2026-03-29T05:23:32.721461",
+    "extracted_at": "2026-03-30T05:36:18.168411",
     "model": "gpt-4o-mini",
     "total_processed": 641,
-    "duplicates_removed": 114,
+    "duplicates_removed": 113,
     "skipped_old": 4,
     "skipped_empty": 0,
     "errors": 0,
-    "openai_calls": 119
+    "openai_calls": 116
   },
   "jobs": [
+    {
+      "job_title": "Medical Officer",
+      "company": "Toptee Medical Center",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Doctor",
+      "salary": "NGN370 - NGN400 / monthly",
+      "experience": "",
+      "qualification": "",
+      "requirements": [
+        "48 hours on, 48 hours off"
+      ],
+      "responsibilities": [
+        "Medical Officer, post NYSC"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-03-29",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/medical-officer-621",
+      "_source": "medlocum"
+    },
     {
       "job_title": "Registered Nurses (RN)",
       "company": "Lariken International School",
@@ -3233,6 +3258,50 @@
       "_source": "hotnigerianjobs"
     },
     {
+      "job_title": "Health Officer",
+      "company": "International Rescue Committee (IRC)",
+      "location": "Borno, Nigeria",
+      "job_type": "Full-time",
+      "job_category": "Public Health",
+      "salary": "n,",
+      "experience": "Experience in supervising health staff at the primary health care level.",
+      "qualification": "Degree in Nursing Science from a recognized institution, with strong public Health background.",
+      "requirements": [
+        "Must possess valid practicing license by Nursing and Midwifery council of Nigeria",
+        "Ability to work with displaced communities with diverse cultural and ethnic backgrounds",
+        "Able to work in a location with basic living conditions and with limited communication options",
+        "Experienced in report and proposal writing",
+        "Experience in training, capacity development, and on the job coaching on relevant SRHR topics; FP, PAC, CCSAS, BEmONC, ANC/PNC and safe delivery",
+        "Full professional competence in Microsoft Office Suite, (especially Word, Excel, Outlook, and PowerPoint)",
+        "Excellent interpersonal skills; culturally and socially sensitive",
+        "Ability to work collaboratively with a range of community structures including grassroots organization, community members, religious and youth organizations, and authorities at different levels."
+      ],
+      "responsibilities": [
+        "Ensure provision of essential lifesaving health and SRH services across implementation sites.",
+        "Provide service once in a week, rotating within supported facilities as part of health system and capacity strengthening of PHC staff and incentive workers.",
+        "Work with supply chain to ensure timely submission of item forecast, delivery of procured items, store release and distribution of project items to the targeted beneficiaries.",
+        "Ensure all project documents are well archived on Box folder and hardcopy of waybills, distribution plan, distribution list, delivery notes are stored securely for audit, verification and reporting purpose.",
+        "Ensure Infection prevention and control (IPC) and waste management are adhered too across NHF implementation sites.",
+        "Facilitate drug distribution from the pharmacy to service delivery site, ensure the site has the necessary stock of commodities at all times of service provision.",
+        "Supervise incentive staff working at the IRC outreach facilities and government supported PHC.",
+        "Supervise incentive community mobilizers, referral agents, CHVs, TBA's, Henna and Kayan Mata women to ensure demand generation and community participation in health programming.",
+        "Ensure training and capacity building on emergency preparedness and response, MISP for SRH and IMCI.",
+        "Hold high-quality meetings with implementation team on a regular and predictable basis, at least monthly.",
+        "Provide on the job coaching and supportive supervision including Monthly Virtual Continuous medical education (CME) is done for incentive staff.",
+        "Administrative supervision of incentive workers on NHF in NHF supported locations, ensuring timely submission of Timesheet for payment.",
+        "Ensure timely submission of weekly statistical report and monthly data summary for tracking and reporting."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-03-26",
+      "deadline": "2026-03-30",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/875036/health-officer-at-the-international-rescue-committ.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
       "job_title": "Health Manager, SRH",
       "company": "the International Rescue Committee (IRC)",
       "location": "Maiduguri, Borno, Nigeria",
@@ -6100,6 +6169,30 @@
       "_source": "medicalworldnigeria"
     },
     {
+      "job_title": "Nurse Practitioner",
+      "company": "ECWA Hospital, Egbe",
+      "location": "Kogi State, Nigeria",
+      "job_type": "",
+      "job_category": "Nurse",
+      "salary": "",
+      "experience": "",
+      "qualification": "bsc",
+      "requirements": [
+        "Candidates should possess relevant qualifications and experience."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-03-24",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Nurse-Practitioner-at-ECWA-Hospital-Egbe?pid=77576",
+      "_source": "medicalworldnigeria"
+    },
+    {
       "job_title": "Nurse - Emergency Room",
       "company": "ECWA Hospital, Egbe",
       "location": "Kogi, Nigeria",
@@ -6823,37 +6916,6 @@
       "_source": "hotnigerianjobs"
     },
     {
-      "job_title": "Nutrition Officer",
-      "company": "Ekklesiyar Yan'uwa a Nigeria (EYN PROJECT)",
-      "location": "Borno, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Public Health",
-      "salary": "n,",
-      "experience": "3",
-      "qualification": "BSc",
-      "requirements": [],
-      "responsibilities": [
-        "Support the planning and day-to-day implementation of nutrition activities including screening, admission, treatment, and discharge of children with Severe Acute Malnutrition (SAM) and Moderate Acute Malnutrition (MAM) under CMAM/IMAM protocols",
-        "Conduct on-the-job training and mentoring of community health workers, volunteers, and facility staff on nutrition protocols, IYCF practices, growth monitoring, and hygiene promotion",
-        "Perform regular field monitoring visits to OTP/SC sites, distribution points, and communities to ensure adherence to protocols, quality service delivery, and proper use of nutrition supplies (RUTF, RUSF, etc.)",
-        "Identify and refer complicated SAM cases to stabilization centers; support follow-up of defaulters, non-responders, and recoveries",
-        "Facilitate IYCF counseling sessions, support groups for mothers/caregivers, cooking demonstrations, and nutrition education in communities and safe spaces",
-        "Ensure gender, protection, and disability considerations are integrated into nutrition activities, with safe referral pathways for vulnerable cases",
-        "Collaborate with health, WASH, and other sector teams to promote integrated programming and avoid duplication",
-        "Collect, compile, and verify nutrition data (admissions, discharges, stock reports, MUAC screening results) using approved tools; support timely submission to the Nutrition Coordinator",
-        "Monitor stock levels of nutrition commodities and report any shortages or expiries to supervisor"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-03-24",
-      "deadline": "2026-03-31",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/nutrition-officer-ekklesiyar-yan-uwa-a-nigeria-eyn-project-4",
-      "_source": "myjobmag"
-    },
-    {
       "job_title": "Superitendent Pharmacist",
       "company": "Erkang Pharmaceutical",
       "location": "Ilorin, Kwara, Nigeria",
@@ -7417,30 +7479,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/872661/medical-officer-at-immaculate-heart-of-mary-specia.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Nurse Practitioner",
-      "company": "ECWA Hospital, Egbe",
-      "location": "Kogi, Nigeria",
-      "job_type": "",
-      "job_category": "Nurse",
-      "salary": "",
-      "experience": "",
-      "qualification": "rn",
-      "requirements": [
-        "Candidates should possess relevant qualifications and experience."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-03-23",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/873577/nurse-practitioner-at-ecwa-hospital-egbe.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -10185,27 +10223,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/locum-pharmacist-536",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Nurse",
-      "company": "Priesthood Hospital Ltd",
-      "location": "No.1 poiki junction Lajo, off Ibeshe road , Ikorodu, Lagos., Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Nurse",
-      "salary": "NGN400,000 / monthly",
-      "experience": "",
-      "qualification": "",
-      "requirements": [],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-03-17",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/nurse-535",
       "_source": "medlocum"
     },
     {
@@ -13568,6 +13585,46 @@
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/867079/experienced-site-nurse-at-elin-mining-limited.html",
       "_source": "hotnigerianjobs"
+    },
+    {
+      "job_title": "Sonographer / Sonologist",
+      "company": "ARO Managemnt",
+      "location": "Lekki, Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Allied Health",
+      "salary": "₦200,000 - ₦300,000/month",
+      "experience": "3 - 5 years",
+      "qualification": "BSc",
+      "requirements": [
+        "BA/BSc/HND",
+        "Professional Certificate",
+        "3–5 years of relevant hands-on experience in diagnostic ultrasound sonography",
+        "Specialised ultrasound training and certification",
+        "Valid Radiographers License",
+        "Postgraduate Diploma (PGD) in Ultrasound Sonography",
+        "Valid University Certificate",
+        "Valid NYSC Certificate",
+        "Strong professionalism, attention to detail, and excellent patient-care skills"
+      ],
+      "responsibilities": [
+        "Perform high-quality diagnostic ultrasound examinations in line with approved medical protocols.",
+        "Accurately interpret, document, and report ultrasound findings.",
+        "Ensure proper patient preparation, positioning, and comfort throughout the examination process.",
+        "Operate and maintain ultrasound equipment safely and efficiently.",
+        "Maintain accurate patient records and imaging documentation.",
+        "Adhere strictly to professional, ethical, health, and safety standards.",
+        "Communicate findings clearly and professionally with referring clinicians when required."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-03-09",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/sonographer-sonologist",
+      "_source": "myjobmag"
     },
     {
       "job_title": "Medical Officer",
