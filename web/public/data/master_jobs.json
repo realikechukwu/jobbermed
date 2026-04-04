@@ -1,15 +1,989 @@
 {
   "metadata": {
-    "extracted_at": "2026-04-03T05:29:20.548059",
+    "extracted_at": "2026-04-04T05:09:09.117895",
     "model": "gpt-4o-mini",
-    "total_processed": 647,
-    "duplicates_removed": 101,
-    "skipped_old": 3,
+    "total_processed": 642,
+    "duplicates_removed": 106,
+    "skipped_old": 6,
     "skipped_empty": 0,
     "errors": 0,
-    "openai_calls": 205
+    "openai_calls": 136
   },
   "jobs": [
+    {
+      "job_title": "Medical Laboratory Scientists",
+      "company": "KNCV Tuberculosis Foundation",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Medical Laboratory Scientist",
+      "salary": "NGN1,500,000 / monthly",
+      "experience": "",
+      "qualification": "Bachelor’s degree in MLS (BSc Medical Laboratory Science) or equivalent; Master’s degree in Public Health, or related field is an advantage.",
+      "requirements": [
+        "Valid registration and current practicing license",
+        "Familiarity with national TB guidelines, TB LON projects, USAID-funded programs, or NTBLCP protocols.",
+        "Experience leading teams, training staff, and implementing quality improvement initiatives.",
+        "Prior work with NGOs, international organizations, or in urban high-burden TB settings like Lagos."
+      ],
+      "responsibilities": [
+        "Supervise and mentor laboratory staff and other laboratory personnel delivering TB care in facilities and communities.",
+        "Oversee laboratory unit, care planning, (including DOT), side-effect monitoring, and patient education for TB (DS-TB, DR-TB) and TB/HIV co-infected patients.",
+        "Ensure adherence to infection prevention and control (IPC) protocols, including PPE use and safe handling in high-risk TB environments.",
+        "Lead implementation of TB case management, active case finding, contact tracing, and linkage to care in Lagos facilities and communities.",
+        "Conduct regular performance reviews, capacity building, and on-the-job training for laboratory staff on TB guidelines, data tools, and best practices.",
+        "Participate in and lead quality assurance audits, root-cause analysis for gaps, and implementation of corrective actions to improve treatment outcomes and notification rates.",
+        "Ensure accurate, timely, and confidential documentation of patient care and program data in electronic and manual systems.",
+        "Prepare and contribute to monthly/quarterly reports on laboratory indicators (e.g., adherence rates, loss-to-follow-up, adverse events).",
+        "Support data quality checks and use findings to inform laboratory interventions and program adjustments.",
+        "Collaborate with Senior Program Managers, TB Advisors, Laboratory teams, and external partners (NTBLCP, state TB programs, NGOs) to align laboratory activities with project goals.",
+        "Support community outreach, stigma reduction campaigns, and health education to boost TB service uptake in Lagos.",
+        "Represent laboratory perspectives in program meetings, case discussions, and donor reviews."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-04-03",
+      "deadline": "2026-04-09",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/medical-laboratory-scientists-667",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Senior Adviser WASH (Water, Sanitation and Hygiene (Sanitation), P-5",
+      "company": "UNICEF",
+      "location": "Nairobi, Kenya",
+      "job_type": "Full-Time",
+      "job_category": "Other",
+      "salary": "",
+      "experience": "10 years of relevant work experience",
+      "qualification": "Master or equivalent (Advanced University Degree) in civil or environmental engineering, natural or social sciences, environmental or public health, water resource management, or another relevant technical field",
+      "requirements": [
+        "Education: Master or equivalent (Advanced University Degree)",
+        "A Bachelor or equivalent (First Level University Degree) and 2 additional years of work experience may be accepted for internal staff",
+        "10 years of relevant work experience in organizations related to financing, project management, consulting, or technical assistance in WASH or closely related areas",
+        "Fluency in English is required",
+        "Strategic Thinking",
+        "Project Management",
+        "Team Collaboration",
+        "Interpersonal Skills"
+      ],
+      "responsibilities": [
+        "Lead Global Strategy for Safe, Climate-Resilient Services for All",
+        "Provide strategic guidance to governments and UNICEF Country Offices to scale up sanitation systems",
+        "Analyze national bottlenecks and conduct capacity gap assessments",
+        "Guide governments in reforming policies and institutions to improve governance",
+        "Advocate for inclusive solutions that prioritize vulnerable groups",
+        "Serve as a primary contact for designated country offices"
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-04-03",
+      "deadline": "2026-04-10",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/re-advertisement-senior-adviser-wash-water-sanitation-and-hygiene-sanitation-p-5-nairobi-kenya-00133992-666",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Senior Adviser Health (Integrated Primary Health Care Delivery)",
+      "company": "UNICEF",
+      "location": "Nairobi, Kenya",
+      "job_type": "Full-Time",
+      "job_category": "Healthcare Management",
+      "salary": "",
+      "experience": "10 years of relevant work experience",
+      "qualification": "Master or equivalent (Advanced University Degree) in public health or related fields",
+      "requirements": [
+        "Master or equivalent in public health, pediatric health, family health, global/international health, health policy and/or management, biostatistics, socio-medical, health education or other health related sciences.",
+        "10 years of relevant work experience in public health, primary health care, community health programming, health policy, etc.",
+        "Fluency in English is required."
+      ],
+      "responsibilities": [
+        "Lead UNICEF’s work on Integrated Primary Health Care Delivery.",
+        "Provide strategic and technical leadership to UNICEF country offices and partners on community-based primary health care.",
+        "Ensure integration of maternal, newborn, child, and adolescent health services at the community level."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-04-03",
+      "deadline": "2026-04-10",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/re-advertisement-senior-adviser-health-integrated-primary-health-care-delivery-p-5-fixed-term-position-nairobi-kenya-00053197-665",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Associate Director, Technical",
+      "company": "FHI 360",
+      "location": "Nairobi, Kenya",
+      "job_type": "Full-Time",
+      "job_category": "Healthcare Management",
+      "salary": "",
+      "experience": "Typically requires 10+ years of relevant technical/project management experience",
+      "qualification": "Master’s degree or its International Equivalent Health or a related fields; A Medical Degree (MBBS/MBChB or MD) with a Master’s Degree is strongly preferred",
+      "requirements": [
+        "Comprehensive technical knowledge of project management",
+        "Understanding of infectious disease preparedness and response principles",
+        "Familiarity with Kenya public health sector",
+        "Knowledge of health information systems and evaluation processes",
+        "Ability to perform complex data analyses and present findings",
+        "Excellent communication and organizational skills",
+        "Demonstrated project and technical leadership"
+      ],
+      "responsibilities": [
+        "Serve as the technical lead for the STRIDES project",
+        "Monitor technical delivery of project milestones and targets",
+        "Liaise with Kenyan health system stakeholders",
+        "Provide technical capacity strengthening of subrecipients",
+        "Ensure high quality technical deliverables are submitted on schedule",
+        "Organize project activities within budget constraints",
+        "Ensure compliance with donor requirements and policies"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-04-03",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/associate-director-technical-664",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Pharmacy Technician",
+      "company": "Katsina State Hospital Services Management Board (KTHSMB)",
+      "location": "Katsina, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Pharmacist",
+      "salary": "",
+      "experience": "",
+      "qualification": "Diploma or certificate in Pharmacy Technician or related field",
+      "requirements": [
+        "Basic knowledge of pharmaceutical procedures",
+        "Good attention to detail and accuracy",
+        "Strong organizational skills",
+        "Relevant experience"
+      ],
+      "responsibilities": [
+        "Assist in dispensing medications under pharmacist supervision",
+        "Receive, process, and verify prescription orders",
+        "Prepare, package, and label medications accurately",
+        "Maintain and update pharmacy records and documentation",
+        "Monitor inventory levels and report stock shortages or expiries",
+        "Ensure proper storage and handling of pharmaceutical products",
+        "Assist in basic drug compounding and preparation",
+        "Support inventory control and stock management processes",
+        "Maintain cleanliness and organization of the pharmacy",
+        "Assist in providing basic information to patients under supervision."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-04-03",
+      "deadline": "2026-04-10",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/pharmacy-technician-663",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Nursing Officer III",
+      "company": "Katsina State Hospital Services Management Board (KTHSMB)",
+      "location": "Katsina, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Nurse",
+      "salary": "",
+      "experience": "",
+      "qualification": "Registered Nurse (RN) qualification; Valid practicing license",
+      "requirements": [
+        "Good clinical and patient care skills",
+        "Strong communication and teamwork abilities",
+        "Relevant experience"
+      ],
+      "responsibilities": [
+        "Provide direct nursing care to patients in assigned units",
+        "Assess, plan, and implement patient care interventions",
+        "Administer medications and treatments as prescribed",
+        "Monitor and record patient vital signs and progress",
+        "Assist doctors during clinical procedures and examinations",
+        "Maintain accurate and up-to-date patient records",
+        "Ensure adherence to infection prevention and control protocols",
+        "Educate patients and families on health conditions and care plans",
+        "Respond promptly to patient needs and emergencies",
+        "Maintain cleanliness and safety of the clinical environment."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-04-03",
+      "deadline": "2026-04-10",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/nursing-officer-iii-662",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Medical Laboratory Scientist",
+      "company": "Katsina State Hospital Services Management Board (KTHSMB)",
+      "location": "Katsina, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Medical Laboratory Scientist",
+      "salary": "",
+      "experience": "",
+      "qualification": "Bachelor of Medical Laboratory Science",
+      "requirements": [
+        "Registration with Medical Laboratory Science Council",
+        "Current practicing license",
+        "NYSC certificate",
+        "Proficiency in laboratory techniques"
+      ],
+      "responsibilities": [
+        "Perform laboratory tests and analyses",
+        "Operate and maintain laboratory equipment",
+        "Prepare and examine specimens",
+        "Report laboratory results accurately"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-04-03",
+      "deadline": "2026-04-10",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/medical-laboratory-scientist-661",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Medical Officer",
+      "company": "Katsina State Hospital Services Management Board (KTHSMB)",
+      "location": "Katsina, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Doctor",
+      "salary": "",
+      "experience": "",
+      "qualification": "",
+      "requirements": [
+        "MBBS degree from recognized institution",
+        "Full registration with Medical and Dental Council of Nigeria",
+        "Current practicing license",
+        "NYSC certificate",
+        "Computer literacy"
+      ],
+      "responsibilities": [
+        "Diagnose and treat medical conditions",
+        "Prescribe medications and treatments",
+        "Conduct medical examinations",
+        "Maintain patient records and documentation"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-04-03",
+      "deadline": "2026-04-10",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/medical-officer-660",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Pharmacist",
+      "company": "Katsina State Hospital Services Management Board (KTHSMB)",
+      "location": "Katsina, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Pharmacist",
+      "salary": "",
+      "experience": "",
+      "qualification": "Bachelor’s Degree in Pharmacy (B.Pharm or Pharm.D)",
+      "requirements": [
+        "NYSC Discharged/Exemption Certificate",
+        "Valid practicing license",
+        "Strong knowledge of pharmacology and drug safety",
+        "Good communication and counseling skills",
+        "Relevant experience."
+      ],
+      "responsibilities": [
+        "Review and dispense prescriptions accurately and safely",
+        "Provide counseling to patients on medication use and adherence",
+        "Ensure proper storage and management of pharmaceutical supplies",
+        "Monitor drug interactions, side effects, and contraindications",
+        "Maintain accurate records of prescriptions and drug inventory",
+        "Ensure compliance with pharmaceutical regulations and standards",
+        "Advise healthcare professionals on drug therapy and usage",
+        "Supervise pharmacy support staff and technicians",
+        "Conduct inventory control and prevent stockouts or expiries",
+        "Participate in hospital pharmacy and drug management committees."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-04-03",
+      "deadline": "2026-04-10",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/pharmacist-659",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Midwife (Officer)",
+      "company": "Katsina State Hospital Services Management Board (KTHSMB)",
+      "location": "Katsina, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Nurse",
+      "salary": "",
+      "experience": "",
+      "qualification": "Registered Midwife (RM) qualification; Valid practicing license",
+      "requirements": [
+        "Strong maternal and neonatal care skills",
+        "Good communication and patient care abilities",
+        "Relevant experience"
+      ],
+      "responsibilities": [
+        "Provide antenatal, intrapartum, and postnatal care to patients",
+        "Assist and manage normal deliveries safely",
+        "Monitor maternal and fetal conditions during pregnancy and labour",
+        "Provide immediate care to newborns after delivery",
+        "Administer medications and treatments as prescribed",
+        "Educate mothers on maternal, neonatal, and reproductive health",
+        "Maintain accurate patient records and documentation",
+        "Ensure adherence to infection prevention and control protocols",
+        "Identify and refer high-risk cases appropriately",
+        "Support family planning and reproductive health services."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-04-03",
+      "deadline": "2026-04-10",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/midwife-officer-658",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Health Promotion Officer",
+      "company": "Lindii Peace Foundation",
+      "location": "Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Public Health",
+      "salary": "n,",
+      "experience": "2 – 5 years of humanitarian aid experience",
+      "qualification": "B.Sc. / High National Diploma",
+      "requirements": [
+        "B. Sc. / High National Diploma in Environmental Sciences, Social Work, Nursing, Public Health",
+        "Strong management and communication skills",
+        "Ability to live and work in stressful and insecure environment",
+        "Able to manage multiple tasks",
+        "Knowledge and/or experience in conflict management, protection, or other related field",
+        "Fluency in English and Hausa language preferred",
+        "Knowledge of the local languages",
+        "Excellent professional approach and strong team building skills",
+        "Knowledge of LPF policies and procedures",
+        "Competent user of MS Applications: Word, Excel"
+      ],
+      "responsibilities": [
+        "Ensure that all hygiene promotion activities are in line with project strategy and design",
+        "Maintain close links and collaboration with other sectors and in particular Health, Nutrition and Protection",
+        "Ensure that the hygiene promotion activities are implemented in a timely and professional manner",
+        "Directly manage the day-to-day hygiene promotion activities in the field",
+        "Ensure that health promotion activities meet stated objectives within the timeframe",
+        "Propose technical designs and methodologies for all hygiene promotion activities",
+        "Provide technical support and training for hygiene promoters and community volunteers."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-04-03",
+      "deadline": "2026-04-16",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://jobsinnigeria.careers/jobs/health-promotion-officer-lindii-peace-foundation-3-openings/",
+      "_source": "jobsinnigeria"
+    },
+    {
+      "job_title": "Pharmacy Technician",
+      "company": "Elizabeth Maddeux Limited",
+      "location": "Baruwa, Lagos, Nigeria",
+      "job_type": "Full-time",
+      "job_category": "Pharmacist",
+      "salary": "N100,000 monthly",
+      "experience": "is an advantage",
+      "qualification": "Diploma",
+      "requirements": [
+        "Diploma or certification in Pharmacy Technician course",
+        "Valid license (if applicable)",
+        "Good communication and organizational skills",
+        "Previous experience is an advantage",
+        "Female is highly preferred for gender balance"
+      ],
+      "responsibilities": [
+        "Assist in dispensing prescriptions",
+        "Manage inventory and stock",
+        "Maintain cleanliness and organization of the pharmacy",
+        "Support customer inquiries."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-04-03",
+      "deadline": "2026-04-24",
+      "contact_email": "",
+      "contact_phone": "08136930307",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/879151/pharmacy-technician-at-elizabeth-maddeux-limited.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
+      "job_title": "Medical Sales Representative (Pharmacist / Nurse)",
+      "company": "Prezgreel Investment Limited",
+      "location": "Abuja (FCT), Nigeria",
+      "job_type": "Full-time",
+      "job_category": "Pharmacist",
+      "salary": "",
+      "experience": "12",
+      "qualification": "Bachelor's Degree in a Medical related field (Pharmacist/Nurse)",
+      "requirements": [
+        "Minimum of 3 years of field sales experience, especially in the Medical / Pharmaceutical Sector.",
+        "Great customer service skills.",
+        "Sound negotiation and sales skills.",
+        "Problem-solving skills.",
+        "Strong organizational skills.",
+        "Must be resident in Abuja and familiar with the locations of health institutions in the FCT.",
+        "Should be able to drive a car.",
+        "Effective communication skills.",
+        "Male candidates are strongly advised to apply for gender equality."
+      ],
+      "responsibilities": [
+        "Develop and execute strategic sales plans to grow market share within your assigned territory.",
+        "Identify and onboard new clients for company products.",
+        "Build and maintain strong, long-term relationships with healthcare professionals and institutions.",
+        "Promptly resolve client concerns and ensure high customer satisfaction.",
+        "Ensure brand visibility and awareness meet organizational standards within your territory.",
+        "Meet and exceed assigned sales targets.",
+        "Prepare and submit weekly and monthly performance reports to management.",
+        "Deliver products to clients within your assigned territory when required.",
+        "Conduct product presentations and demonstrations to prospective clients.",
+        "Participate in industry events, promotional activities, and networking opportunities.",
+        "Monitor competitors’ activities and provide market intelligence.",
+        "Perform other duties as assigned by management."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-04-03",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/879086/medical-sales-representative-pharmacistnurse-at-pr.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
+      "job_title": "Medical Sales Representative (Pharmacist / Nurse)",
+      "company": "Ginos Ventures Limited",
+      "location": "Abuja (FCT), Nigeria",
+      "job_type": "Full-time",
+      "job_category": "Pharmacist",
+      "salary": "n,",
+      "experience": "Minimum of 3 years of field sales experience",
+      "qualification": "A Bachelor's Degree in a Medical related field (Pharmacist / Nurse)",
+      "requirements": [
+        "Great customer service skills",
+        "Sound negotiation and sales skills",
+        "Problem-solving skills",
+        "Strong organizational skills",
+        "Must be resident in Abuja and familiar with the locations of health institutions in the FCT",
+        "Should be able to drive a car",
+        "Effective communication skills"
+      ],
+      "responsibilities": [
+        "Develop and execute strategic sales plans to grow market share within your assigned territory",
+        "Identify and onboard new clients for company products",
+        "Build and maintain strong, long-term relationships with healthcare professionals and institutions",
+        "Promptly resolve client concerns and ensure high customer satisfaction",
+        "Ensure brand visibility and awareness meet organizational standards within your territory",
+        "Meet and exceed assigned sales targets",
+        "Prepare and submit weekly and monthly performance reports to management",
+        "Deliver products to clients within your assigned territory when required",
+        "Conduct product presentations and demonstrations to prospective clients",
+        "Participate in industry events, promotional activities, and networking opportunities",
+        "Monitor competitors’ activities and provide market intelligence",
+        "Perform other duties as assigned by management"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-04-03",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/879073/medical-sales-representative-pharmacist-nurse-at-g.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
+      "job_title": "Mental Health, Psychosocial Support (MHPSS) Officer",
+      "company": "Action Against Hunger | ACF-International",
+      "location": "Mobbar, Damasak - Borno, Nigeria",
+      "job_type": "remote",
+      "job_category": "Other",
+      "salary": "n,",
+      "experience": "in MHPSS, protection and/or care practices, covering psychological assessment, counselling, follow-up, case management and referral",
+      "qualification": "rn",
+      "requirements": [],
+      "responsibilities": [
+        "Conduct psychological assessments and plan the appropriate interventions and follow-up for the beneficiaries.",
+        "Ensure an appropriate, safe and confidential environment for psychological interventions (framework to discuss highly emotional issues, set up group rules, values, exercises, etc.) in communities, schools, camps, primary health care centres, community-based organizations, and home visits.",
+        "Ensure the high quality of intervention and care are provided to beneficiaries.",
+        "Ensure regular and proper use of psychometric scales.",
+        "Provide individual and group therapeutic sessions and activities for persons in need, including children, adolescents, adults, families and persons with specific vulnerabilities following strictly standard ACF protocols.",
+        "Ensure confidentiality and proper documentation of clinical details in the patient file.",
+        "Ensure referrals to specialized services (MHPSS, Health, Protection etc) when needed, according to ACF protocols and national standards; Follow-up the quality of care provided by partnering agencies and actors; Follow-up closely on protection issues.",
+        "Provide staff care to health workers and community helpers, according to ACF protocols and national policies.",
+        "Provide psychological support remotely if needed (in case of no access to the field).",
+        "Prepare (with the program manager) and conduct trainings for general practitioners, nurses, midwives, health workers, and psychosocial workers in primary health care centers, hospitals, on MHPSS, protection and care practices, according to ACF international standards (like mhGAP, PM+, IPT, Thinking Healthy, child development, basic helping skills, Life skills, Social and Emotional skills, etc).",
+        "Conduct regular on the job and group supervision of trained non-specialists, including technical support, case management, patients' assessments, counselling skills.",
+        "Assist the ACF psychosocial workers to prepare and conduct training and technical supervision for community-based organizations and stakeholders."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-04-03",
+      "deadline": "Thursday, 9th April 2026 at 05:00 pm (Nigerian Time)",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/879009/mental-health-psychosocial-support-mhpss-officer-a.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
+      "job_title": "Medical Supervisor - Damboa",
+      "company": "Medecins Du Monde",
+      "location": "Borno, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "₦500,000 - ₦750,000/month",
+      "experience": "3 - 4 years",
+      "qualification": "ond",
+      "requirements": [],
+      "responsibilities": [
+        "Ensure the implementation of the program in all Mobile clinics and MoH supported facilities Damboa",
+        "Collaborate with MoH in Damboa to strengthen health systems",
+        "Provide technical and operational support to MoH clinic staff and all Mobile clinic staff in Damboa",
+        "Implement a bimonthly follow-up of the action plan to improve quality of health services in MOH clinics",
+        "Organize supervisions with MdM’s technical team and facility manager monthly"
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-04-03",
+      "deadline": "2026-04-16",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/medical-supervisor-damboa-medecins-du-monde-3",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Nursing Services Personnel",
+      "company": "State University of Medical and Applied Sciences (SUMAS)",
+      "location": "Enugu, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Nurse",
+      "salary": "n,",
+      "experience": "",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "Candidates must be a registered nurse and midwifery with practising licence from the Nursing and Midwifery council of Nigeria (NMCN)",
+        "Candidates must possess basic nursing skills",
+        "Candidates that possess some areas of specialization and years of experience will be an added advantage."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-04-03",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/nursing-services-personnel-state-university-of-medical-and-applied-sciences-sumas",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Dental Officer",
+      "company": "State University of Medical and Applied Sciences (SUMAS)",
+      "location": "Enugu, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Dentist",
+      "salary": "n,",
+      "experience": "Location",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "Bachelor of Dental Surgery (BDS) from any recognized institution",
+        "Full registration with the MDCN and a valid practising licence",
+        "Completion of one year housemanship and one year National Youth Service Corps (NYSC) or exemption/Exclusion letter"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-04-03",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/dental-officer-state-university-of-medical-and-applied-sciences-sumas",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Consultant (Anaesthesiology)",
+      "company": "State University of Medical and Applied Sciences (SUMAS)",
+      "location": "Enugu, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Doctor",
+      "salary": "n,",
+      "experience": "",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "Basic Qualification: Bachelor of Surgery or equivalent in a relevant field from a recognized institution.",
+        "Postgraduate Qualification: Fellowship of the National Postgraduate Medical College of Nigeria or the West African College of Surgeons/Physicians (FWACS/FWACP)",
+        "Registration: Full registration with the Medical and Dental Council of Nigeria (MDCN) and valid practicing license."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-04-03",
+      "deadline": "",
+      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/consultant-anaesthesiology-state-university-of-medical-and-applied-sciences-sumas",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Physiotherapist",
+      "company": "State University of Medical and Applied Sciences (SUMAS)",
+      "location": "Enugu, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Allied Health",
+      "salary": "n,",
+      "experience": "Completion of a one-year internship and NYSC or exemption letter.",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "Bachelor of Science (B.Sc.) or Bachelor of Medical Rehabilitation (BMR) in Physiotherapy from any recognized Institution",
+        "Registration with the Medical Rehabilitation Therapists Board of Nigeria (MRTB) and valid practicing license",
+        "Completion of a one-year internship and NYSC or exemption letter."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-04-03",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/physiotherapist-state-university-of-medical-and-applied-sciences-sumas",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Medical Laboratory Scientist",
+      "company": "State University of Medical and Applied Sciences (SUMAS)",
+      "location": "Enugu, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Medical Laboratory Scientist",
+      "salary": "n,",
+      "experience": "",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "Bachelor of Science Degree of Medical Laboratory (B.MLS) from any recognized Institution.",
+        "Registration with the Medical Laboratory Science of Nigeria (MLSCN) and valid practicing license.",
+        "Completion of a one-year internship and NYSC or exemption letter."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-04-03",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/medical-laboratory-scientist-state-university-of-medical-and-applied-sciences-sumas",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Radiographer",
+      "company": "State University of Medical and Applied Sciences (SUMAS)",
+      "location": "Enugu, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Allied Health",
+      "salary": "n,",
+      "experience": "Location",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "B.Sc. in Radiography from any recognized Institution.",
+        "Registration with the Radiographers Registration Board of Nigeria (RRBN) and valid practicing license.",
+        "Completion of a one-year internship and NYSC or exemption/Exclusion letter."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-04-03",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/radiographer-state-university-of-medical-and-applied-sciences-sumas",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Nutritionist & Dietician",
+      "company": "State University of Medical and Applied Sciences (SUMAS)",
+      "location": "Enugu, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Allied Health",
+      "salary": "n,",
+      "experience": "",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "Degree / Higher National Diploma in Nutrition and Dietetics from a recognized Institution",
+        "National Youth Service Corp Certificate (NYSC) or Exemption certificate",
+        "Registration with the institution for Dietetics in Nigeria (IDN)"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-04-03",
+      "deadline": "",
+      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/nutritionist-dietician-state-university-of-medical-and-applied-sciences-sumas",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Psychologist",
+      "company": "State University of Medical and Applied Sciences (SUMAS)",
+      "location": "Enugu, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Allied Health",
+      "salary": "n,",
+      "experience": "",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "Degree / Higher National Diploma in Psychology from a recognized Institution",
+        "National Youth Service Corp Certificate (NYSC) or Exemption certificate"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-04-03",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/psychologist-state-university-of-medical-and-applied-sciences-sumas",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Consultant (Health Information Management/Records)",
+      "company": "State University of Medical and Applied Sciences (SUMAS)",
+      "location": "Enugu, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "n,",
+      "experience": "",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "Degree/Higher National Diploma in Statistics or Degree in physical sciences or Biological sciences from a recognized Institution plus National Youth Service Corp Certificate (NYSC) or Exemption certificate."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-04-03",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/consultant-health-information-management-records-state-university-of-medical-and-applied-sciences-sumas",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Optometrist",
+      "company": "State University of Medical and Applied Sciences (SUMAS)",
+      "location": "Enugu, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Allied Health",
+      "salary": "n,",
+      "experience": "",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "The applicant must be in possession of a degree in Optometry or its equivalent from a recognized Institution plus National Youth Service Corp Certificate (NYSC) or Exemption certificate.",
+        "The candidate must be registered with the Optometrist and Dispensing Opticians Board of Nigeria."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-04-03",
+      "deadline": "",
+      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/optometrist-state-university-of-medical-and-applied-sciences-sumas",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Consultant (Otorhinolaryngology (ENT))",
+      "company": "State University of Medical and Applied Sciences (SUMAS)",
+      "location": "Enugu, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Doctor",
+      "salary": "n,",
+      "experience": "",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "Bachelor of Surgery or equivalent in a relevant field from a recognized institution.",
+        "Fellowship of the National Postgraduate Medical College of Nigeria or the West African College of Surgeons/Physicians (FWACS/FWACP)",
+        "Full registration with the Medical and Dental Council of Nigeria (MDCN) and valid practicing license."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-04-03",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/consultant-otorhinolaryngology-ent-state-university-of-medical-and-applied-sciences-sumas-1",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Consultant (Surgery - GEN / B & P / UROL / Ortho / PAED / ICTU)",
+      "company": "State University of Medical and Applied Sciences (SUMAS)",
+      "location": "Enugu, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Doctor",
+      "salary": "n,",
+      "experience": "Location",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "Bachelor of Surgery or equivalent in a relevant field from a recognized institution.",
+        "Fellowship of the National Postgraduate Medical College of Nigeria or the West African College of Surgeons/Physicians (FWACS/FWACP)",
+        "Full registration with the Medical and Dental Council of Nigeria (MDCN) and valid practicing license."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-04-03",
+      "deadline": "",
+      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/consultant-surgery-gen-b-p-urol-ortho-paed-ictu-state-university-of-medical-and-applied-sciences-sumas-1",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Nutrition & Health Programme Manager",
+      "company": "Action Against Hunger | ACF-International",
+      "location": "Damasak, Borno, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Healthcare Management",
+      "salary": "n,",
+      "experience": "5 years",
+      "qualification": "BA/BSc/HND, MBA/MSc/MA",
+      "requirements": [
+        "BA/BSc/HND",
+        "MBA/MSc/MA",
+        "5 years experience in relevant field"
+      ],
+      "responsibilities": [
+        "Ensure projects are implemented in line with donor proposals and requirements",
+        "Finalize and manage the update and implementation of the detailed Project(s) Implementation Plan (PIP)",
+        "Develop detailed monthly/weekly implementation plans for project staff",
+        "Collaborate with the Nutrition and Health HOD to develop strategies addressing malnutrition",
+        "Ensure continued review of remote management strategy in collaboration with relevant Government agencies",
+        "Promote and supervise high quality care for clients of the OTP/SC Sites",
+        "Monitor data collection concerning Primary Health Care Services at ACF supported facilities",
+        "Initiate and oversee needs and technical assessments and analysis"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-04-03",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/nutrition-health-programme-manager-damasak-acf-international",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "MHPSS and Protection Programme Manager",
+      "company": "Action Against Hunger | ACF-International",
+      "location": "Maiduguri, Borno, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Healthcare Management",
+      "salary": "n,",
+      "experience": "4 years",
+      "qualification": "BA/BSc/HND, MBA/MSc/MA",
+      "requirements": [
+        "BA/BSc/HND",
+        "MBA/MSc/MA"
+      ],
+      "responsibilities": [
+        "Contribute to the analysis of the humanitarian context",
+        "Define the intervention strategy",
+        "Implement and monitor the MHPSS&P project",
+        "Promote coordination with other actors and departments",
+        "Manage crosscutting issues in MHPSS responses"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-04-03",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/mhpss-and-protection-programme-manager-maiduguri-acf-international",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Communication Specialist (Polio) P3",
+      "company": "UNICEF",
+      "location": "Abuja, Nigeria",
+      "job_type": "Contract",
+      "job_category": "Public Health",
+      "salary": "n,",
+      "experience": "7",
+      "qualification": "BSc",
+      "requirements": [
+        "BA/BSc/HND",
+        "MBA/MSc/MA"
+      ],
+      "responsibilities": [
+        "Lead and coordinate advocacy and communication initiatives for polio eradication and immunization.",
+        "Engage political and traditional leaders to strengthen commitment to polio eradication.",
+        "Design and implement public engagement initiatives for polio awareness.",
+        "Support digital engagement initiatives to promote community participation."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-04-03",
+      "deadline": "2026-04-10",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/communication-specialist-polio-p3-unicef",
+      "_source": "myjobmag"
+    },
     {
       "job_title": "Nutrition Officer",
       "company": "Save The Children",
@@ -69,6 +1043,123 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.myjobmag.com/job/health-and-nutrition-specialist-save-the-children",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Account Clerk",
+      "company": "Queens Clinic Limited",
+      "location": "Abuja, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "n,",
+      "experience": "0 - 1 years",
+      "qualification": "OND",
+      "requirements": [
+        "OND qualification in Accountancy.",
+        "0 - 1 year working experience.",
+        "Applicant must live in Abuja.",
+        "Candidate must be able to demonstrate the use of accounting software such as quickbook.",
+        "Must be able to use MS. word such as Excel etc and other accounting software at a professional level."
+      ],
+      "responsibilities": [
+        "Receivable management",
+        "Payables management",
+        "Ensure accurate and timely invoicing for clients and patients",
+        "Perform regular reviews of the ledgers and other books of entries and ensure relevant reconciliation.",
+        "Ensure confidentiality and safe keeping of accounting records and documents.",
+        "Adhere to financial and accounting control procedures of the company.",
+        "Carry out monthly Tax Returns (PAYE, VAT, Withholding Tax e. t. c.)",
+        "Ensure timely pension remittance.",
+        "Weekly/Monthly Cash Plan",
+        "Reconciliation reports.",
+        "Weekly Reports (which includes Receivables Summary, Payables Summary)",
+        "Monthly Income Statement, Statement of financial Position, Analysis of Expenses, Financial Summary etc.",
+        "POS cashier."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-04-03",
+      "deadline": "2026-04-10",
+      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/account-clerk-queens-clinic-limited",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Receptionist",
+      "company": "Reverse Aesthetics Limited",
+      "location": "Abuja, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "n,",
+      "experience": "3",
+      "qualification": "OND",
+      "requirements": [
+        "Minimum of OND in a relevant field",
+        "1–3 years experience in a receptionist, front desk, or customer service role",
+        "Strong communication and interpersonal skills",
+        "Good use of Microsoft Office and basic digital tools",
+        "Ability to multitask and stay organized in a fast-paced environment",
+        "Professional appearance and customer service mindset",
+        "Sales or upselling ability is an added advantage",
+        "Prior experience in a clinic, spa, or customer-facing role is preferred."
+      ],
+      "responsibilities": [
+        "Welcome and attend to clients in a warm and professional manner",
+        "Manage appointment bookings, confirmations, and rescheduling",
+        "Handle phone calls, WhatsApp inquiries, and walk-in clients",
+        "Maintain accurate client records and payment tracking",
+        "Support front desk sales and promote clinic services and packages",
+        "Coordinate with medical and operations teams for smooth service delivery",
+        "Ensure the reception area is clean, organized, and presentable at all times",
+        "Assist with basic administrative tasks and reporting"
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-04-03",
+      "deadline": "",
+      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/receptionist-reverse-aesthetics-limited",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Cleaner / Office Assistant",
+      "company": "Reverse Aesthetics Limited",
+      "location": "Abuja, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "n,",
+      "experience": "0 - 1 years",
+      "qualification": "Secondary School (SSCE)",
+      "requirements": [
+        "Good attention to detail and cleanliness",
+        "Ability to work independently and follow instructions",
+        "Reliable, punctual, and hardworking",
+        "Basic communication skills",
+        "Previous experience in a similar role is an added advantage."
+      ],
+      "responsibilities": [
+        "Clean and sanitize all areas of the clinic including reception, treatment rooms, restrooms, and offices",
+        "Ensure all cleaning supplies are adequately stocked and properly used",
+        "Maintain a neat and welcoming environment for clients and staff",
+        "Assist with basic office errands and support tasks as assigned",
+        "Handle waste disposal in a safe and hygienic manner",
+        "Support staff with minor day-to-day operational needs",
+        "Follow hygiene and safety standards at all times."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-04-03",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/cleaner-office-assistant-reverse-aesthetics-limited",
       "_source": "myjobmag"
     },
     {
@@ -530,39 +1621,6 @@
       "_source": "medicalworldnigeria"
     },
     {
-      "job_title": "Medical Officer",
-      "company": "Katsina State Hospital Services Management Board (KTHSMB)",
-      "location": "Katsina",
-      "job_type": "",
-      "job_category": "Doctor",
-      "salary": "",
-      "experience": "",
-      "qualification": "bsc",
-      "requirements": [
-        "MBBS degree from recognized institution",
-        "Full registration with Medical and Dental Council of Nigeria",
-        "Current practicing license",
-        "NYSC certificate",
-        "Computer literacy."
-      ],
-      "responsibilities": [
-        "Diagnose and treat medical conditions",
-        "Prescribe medications and treatments",
-        "Conduct medical examinations",
-        "Maintain patient records and documentation"
-      ],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-04-02",
-      "deadline": "2026-04-10",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Medical-Officer-at-Katsina-State-Hospital-Services-Management-Board-KTHSMB?pid=77633",
-      "_source": "medicalworldnigeria"
-    },
-    {
       "job_title": "Clinical Service Officer",
       "company": "TNL Pharmaceutical Company",
       "location": "Nigeria",
@@ -672,45 +1730,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Nursing-Officer-III-at-Katsina-State-Hospital-Services-Management-Board-KTHSMB?pid=77635",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Midwife (Officer)",
-      "company": "Katsina State Hospital Services Management Board (KTHSMB)",
-      "location": "Katsina",
-      "job_type": "",
-      "job_category": "Nurse",
-      "salary": "",
-      "experience": "",
-      "qualification": "bsc",
-      "requirements": [
-        "Registered Midwife (RM) qualification",
-        "Valid practicing license",
-        "Strong maternal and neonatal care skills",
-        "Good communication and patient care abilities",
-        "Relevant experience."
-      ],
-      "responsibilities": [
-        "Provide antenatal, intrapartum, and postnatal care to patients",
-        "Assist and manage normal deliveries safely",
-        "Monitor maternal and fetal conditions during pregnancy and labour",
-        "Provide immediate care to newborns after delivery",
-        "Administer medications and treatments as prescribed",
-        "Educate mothers on maternal, neonatal, and reproductive health",
-        "Maintain accurate patient records and documentation",
-        "Ensure adherence to infection prevention and control protocols",
-        "Identify and refer high-risk cases appropriately",
-        "Support family planning and reproductive health services."
-      ],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-04-02",
-      "deadline": "2026-04-10",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Midwife-Officer-at-Katsina-State-Hospital-Services-Management-Board-KTHSMB?pid=77631",
       "_source": "medicalworldnigeria"
     },
     {
@@ -1486,54 +2505,6 @@
       "_source": "hotnigerianjobs"
     },
     {
-      "job_title": "Health Promotion Officer",
-      "company": "Lindii Peace Foundation",
-      "location": "Borno, Nigeria",
-      "job_type": "Contract",
-      "job_category": "Public Health",
-      "salary": "n,",
-      "experience": "in conflict management, protection, or other related field",
-      "qualification": "B. Sc. / High National Diploma in Environmental Sciences, Social Work, Nursing, Public Health",
-      "requirements": [
-        "Minimum of 2 – 5 years of humanitarian aid experience.",
-        "Strong management and communication skills.",
-        "Ability to live and work in stressful and insecure environment.",
-        "Able to manage multiple tasks.",
-        "Knowledge and/or experience in conflict management, protection, or other related field.",
-        "Able to work under pressure and good at timely decision making.",
-        "Fluency in English and Hausa language preferred.",
-        "Knowledge of the local languages.",
-        "Excellent professional approach and strong team building skills.",
-        "Knowledge of LPF policies and procedures.",
-        "Requires general information management and telecommunication skills and proficiency in information technology/computer skills.",
-        "Qualifications and/or experience in professional information and communication-related fields.",
-        "Strong assessment, evaluation, analysis, and strategic planning skills.",
-        "Knowledge of Humanitarian/Human rights/Refugee Law.",
-        "Basic knowledge of contract employment and experience and skills in recruitment and selection.",
-        "Competent user of MS Applications: Word, Excel."
-      ],
-      "responsibilities": [
-        "Ensure that all hygiene promotion activities are in line with project strategy and design",
-        "Maintain close links and collaboration with other sectors and in particular Health, Nutrition and Protection",
-        "Ensure that the hygiene promotion activities are implemented in a timely and professional manner (as per SPHERE and LPF standards) and in line with beneficiary needs.",
-        "Directly manage the day-to-day hygiene promotion activities in the field",
-        "Ensure that health promotion activities meet stated objectives within the timeframe",
-        "Ensure program activities foster accountability to beneficiaries, gender and protection sensitivity and inclusion are adequately addressed in programming",
-        "Propose technical designs and methodologies for all hygiene promotion activities",
-        "Provide technical support and training for hygiene promoters and community volunteers.",
-        "Provide regular reports, document results and maintain detailed records."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-04-02",
-      "deadline": "2026-04-16",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/878882/health-promotion-officer-at-lindii-peace-foundatio.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
       "job_title": "Health Unit Coordinator",
       "company": "Quadri Advisory HR Services",
       "location": "Lagos, Nigeria",
@@ -2251,432 +3222,6 @@
       "_source": "myjobmag"
     },
     {
-      "job_title": "Nutrition Community Health Worker",
-      "company": "Unique Care and Support Foundation (CASFOD)",
-      "location": "Borno, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Public Health",
-      "salary": "n,",
-      "experience": "1 - 3 years",
-      "qualification": "BA/BSc/HND",
-      "requirements": [
-        "BA/BSc/HND",
-        "1 - 3 years experience"
-      ],
-      "responsibilities": [
-        "Clinical Assessment and Admission",
-        "Screening, Treatment, and Management",
-        "IYCF Counselling",
-        "Hygiene and Health",
-        "Cultural Sensitivity",
-        "Reporting",
-        "Stock Management",
-        "Storage"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-04-02",
-      "deadline": "2026-04-07",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/nutrition-community-health-worker-unique-care-and-support-foundation-casfod",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Medical Officer",
-      "company": "State University of Medical and Applied Sciences (SUMAS)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "Completion of one year houseman-ship and one year National Youth Service Corps (NYSC) or exemption letter.",
-      "qualification": "Bachelor of Medicine/Bachelor of Surgery from any recognized institution",
-      "requirements": [
-        "Full registration with the MDCN and valid practising licence.",
-        "Completion of one year houseman-ship and one year National Youth Service Corps (NYSC) or exemption letter."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-04-02",
-      "deadline": "",
-      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/medical-officer-state-university-of-medical-and-applied-sciences-sumas",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Consultant (Obstetrics & Gynecology)",
-      "company": "State University of Medical and Applied Sciences (SUMAS)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "",
-      "qualification": "BA/BSc/HND",
-      "requirements": [
-        "Bachelor of Surgery or equivalent in a relevant field from a recognized institution.",
-        "Fellowship of the National Postgraduate Medical College of Nigeria or the West African College of Surgeons/Physicians (FWACS/FWACP).",
-        "Full registration with the Medical and Dental Council of Nigeria (MDCN) and valid practicing license."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-04-02",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/consultant-obstetrics-gynecology-state-university-of-medical-and-applied-sciences-sumas",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Consultant (Paediatrics)",
-      "company": "State University of Medical and Applied Sciences (SUMAS)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "",
-      "qualification": "BA/BSc/HND",
-      "requirements": [
-        "Bachelor of Surgery or equivalent in a relevant field from a recognized institution.",
-        "Fellowship of the National Postgraduate Medical College of Nigeria or the West African College of Surgeons/Physicians (FWACS/FWACP)",
-        "Full registration with the Medical and Dental Council of Nigeria (MDCN) and valid practicing license."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-04-02",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/consultant-paediatrics-state-university-of-medical-and-applied-sciences-sumas",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Consultant (Dermatology)",
-      "company": "State University of Medical and Applied Sciences (SUMAS)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "",
-      "qualification": "BA/BSc/HND",
-      "requirements": [
-        "Bachelor of Surgery or equivalent in a relevant field from a recognized institution.",
-        "Fellowship of the National Postgraduate Medical College of Nigeria or the West African College of Surgeons/Physicians (FWACS/FWACP).",
-        "Full registration with the Medical and Dental Council of Nigeria (MDCN) and valid practicing license."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-04-02",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/consultant-dermatology-state-university-of-medical-and-applied-sciences-sumas",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Consultant (Otorhinolaryngology (ENT)",
-      "company": "State University of Medical and Applied Sciences (SUMAS)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "",
-      "qualification": "BA/BSc/HND",
-      "requirements": [
-        "Bachelor of Surgery or equivalent in a relevant field from a recognized institution.",
-        "Fellowship of the National Postgraduate Medical College of Nigeria or the West African College of Surgeons/Physicians (FWACS/FWACP)",
-        "Full registration with the Medical and Dental Council of Nigeria (MDCN) and valid practicing license"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-04-02",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/consultant-otorhinolaryngology-ent-state-university-of-medical-and-applied-sciences-sumas",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Consultant (Ophthalmology)",
-      "company": "State University of Medical and Applied Sciences (SUMAS)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "Location",
-      "qualification": "BA/BSc/HND",
-      "requirements": [
-        "Bachelor of Surgery or equivalent in a relevant field from a recognized institution.",
-        "Fellowship of the National Postgraduate Medical College of Nigeria or the West African College of Surgeons/Physicians (FWACS/FWACP)",
-        "Full registration with the Medical and Dental Council of Nigeria (MDCN) and valid practicing license"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-04-02",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/consultant-ophthalmology-state-university-of-medical-and-applied-sciences-sumas",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Consultant (Surgery - GEN / B & P / UROL / Ortho / PAED / ICTU)",
-      "company": "State University of Medical and Applied Sciences (SUMAS)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "Location",
-      "qualification": "BA/BSc/HND",
-      "requirements": [
-        "Bachelor of Surgery or equivalent in a relevant field from a recognized institution.",
-        "Fellowship of the National Postgraduate Medical College of Nigeria or the West African College of Surgeons/Physicians (FWACS/FWACP)",
-        "Full registration with the Medical and Dental Council of Nigeria (MDCN) and valid practicing license"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-04-02",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/consultant-surgery-gen-b-p-urol-ortho-paed-ictu-state-university-of-medical-and-applied-sciences-sumas",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Consultant Pathologist (Chem, Micro, Path, Haem)",
-      "company": "State University of Medical and Applied Sciences (SUMAS)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "",
-      "qualification": "BA/BSc/HND",
-      "requirements": [
-        "Bachelor of Surgery or equivalent in a relevant field from a recognized institution.",
-        "Fellowship of the National Postgraduate Medical College of Nigeria or the West African College of Surgeons/Physicians (FWACS/FWACP).",
-        "Full registration with the Medical and Dental Council of Nigeria (MDCN) and valid practicing license."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-04-02",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/consultant-pathologist-chem-micro-path-haem-state-university-of-medical-and-applied-sciences-sumas",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Dental Technician",
-      "company": "State University of Medical and Applied Sciences (SUMAS)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Dentist",
-      "salary": "n,",
-      "experience": "",
-      "qualification": "BA/BSc/HND",
-      "requirements": [
-        "Completed the prescribed 3 years training programme at the School of Health Technology",
-        "Obtained registration of the Institute of Laboratory Technology of Nigeria for Technician cadre"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-04-02",
-      "deadline": "",
-      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/dental-technician-state-university-of-medical-and-applied-sciences-sumas",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Orthopaedic Technician",
-      "company": "State University of Medical and Applied Sciences (SUMAS)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "",
-      "qualification": "BA/BSc/HND",
-      "requirements": [
-        "The Applicant must have completed the prescribed 3 years training programme at the School of Health Technology and obtained the Registration of Institute of Medical Laboratory Technology of Nigeria for Technicians cadre."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-04-02",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/orthopaedic-technician-state-university-of-medical-and-applied-sciences-sumas",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Consultant (Radiology)",
-      "company": "State University of Medical and Applied Sciences (SUMAS)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "",
-      "qualification": "BA/BSc/HND",
-      "requirements": [
-        "Bachelor of Surgery or equivalent in a relevant field from a recognized institution.",
-        "Fellowship of the National Postgraduate Medical College of Nigeria or the West African College of Surgeons/Physicians (FWACS/FWACP)",
-        "Full registration with the Medical and Dental Council of Nigeria (MDCN) and valid practicing license."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-04-02",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/consultant-radiology-state-university-of-medical-and-applied-sciences-sumas",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Consultant (Accident / Emergency)",
-      "company": "State University of Medical and Applied Sciences (SUMAS)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "",
-      "qualification": "BA/BSc/HND",
-      "requirements": [
-        "Basic Qualification: Bachelor of Surgery or equivalent in a relevant field from a recognized institution.",
-        "Postgraduate Qualification: Fellowship of the National Postgraduate Medical College of Nigeria or the West African College of Surgeons/Physicians (FWACS/FWACP)",
-        "Registration: Full registration with the Medical and Dental Council of Nigeria (MDCN) and valid practicing license."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-04-02",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/consultant-accident-emergency-state-university-of-medical-and-applied-sciences-sumas",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Electrocardiogram (ECG) Technician",
-      "company": "State University of Medical and Applied Sciences (SUMAS)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "n,",
-      "experience": "",
-      "qualification": "BA/BSc/HND",
-      "requirements": [
-        "The Applicant must have completed the prescribed 3 years training programme at the School of Health Technology and obtained the Registration of Institute of Medical Laboratory Technology of Nigeria for Technicians cadre."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-04-02",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/electrocardiogram-ecg-technician-state-university-of-medical-and-applied-sciences-sumas",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Consultant (Internal Medicine)",
-      "company": "State University of Medical and Applied Sciences (SUMAS)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "",
-      "qualification": "BA/BSc/HND",
-      "requirements": [
-        "Bachelor of Surgery or equivalent in a relevant field from a recognized institution.",
-        "Fellowship of the National Postgraduate Medical College of Nigeria or the West African College of Surgeons/Physicians (FWACS/FWACP)",
-        "Full registration with the Medical and Dental Council of Nigeria (MDCN) and valid practicing license."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-04-02",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/consultant-internal-medicine-state-university-of-medical-and-applied-sciences-sumas",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Medical Officer",
-      "company": "Genesis Specialist Hospital",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Doctor",
-      "salary": "",
-      "experience": "1 - 3 years",
-      "qualification": "BSc",
-      "requirements": [
-        "Bachelor of Medicine, Bachelor of Surgery (MBBS) from a recognized institution.",
-        "Valid license to practice from the Medical and Dental Council of Nigeria (MDCN).",
-        "1–3 years of post-NYSC clinical experience (hospital experience preferred).",
-        "Strong clinical, diagnostic, and decision-making skills.",
-        "Excellent communication and interpersonal abilities.",
-        "Commitment to continuous professional development and patient-centered care."
-      ],
-      "responsibilities": [
-        "Provide medical care to inpatients and outpatients in line with hospital protocols.",
-        "Support consultants in patient assessment, diagnosis, and treatment plans.",
-        "Monitor and document patients’ progress, updating records accurately.",
-        "Participate in ward rounds, case reviews, and multidisciplinary team meetings.",
-        "Respond promptly to medical emergencies.",
-        "Ensure adherence to clinical guidelines, safety standards, and ethical practices."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-04-02",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/medical-officer-genesis-specialist-hospital-8",
-      "_source": "myjobmag"
-    },
-    {
       "job_title": "Head of Research, Monitoring and Evaluation",
       "company": "HelpMum",
       "location": "Nigeria",
@@ -3105,6 +3650,41 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.myjobmag.com/job/receptionist-provita-clinic",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Medical Officer",
+      "company": "Genesis Specialist Hospital",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Doctor",
+      "salary": "",
+      "experience": "1 - 3 years",
+      "qualification": "BSc",
+      "requirements": [
+        "Bachelor of Medicine, Bachelor of Surgery (MBBS) from a recognized institution.",
+        "Valid license to practice from the Medical and Dental Council of Nigeria (MDCN).",
+        "1–3 years of post-NYSC clinical experience (hospital experience preferred).",
+        "Strong clinical, diagnostic, and decision-making skills.",
+        "Excellent communication and interpersonal abilities.",
+        "Commitment to continuous professional development and patient-centered care."
+      ],
+      "responsibilities": [
+        "Provide medical care to inpatients and outpatients in line with hospital protocols.",
+        "Support consultants in patient assessment, diagnosis, and treatment plans.",
+        "Monitor and document patients’ progress, updating records accurately.",
+        "Participate in ward rounds, case reviews, and multidisciplinary team meetings.",
+        "Respond promptly to medical emergencies.",
+        "Ensure adherence to clinical guidelines, safety standards, and ethical practices."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-04-02",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/medical-officer-genesis-specialist-hospital-8",
       "_source": "myjobmag"
     },
     {
@@ -3845,83 +4425,6 @@
     },
     {
       "job_title": "Pharmacist",
-      "company": "Katsina State Hospital Services Management Board (KTHSMB)",
-      "location": "Katsina, Nigeria",
-      "job_type": "",
-      "job_category": "Pharmacist",
-      "salary": "n,",
-      "experience": "",
-      "qualification": "Bachelor’s Degree in Pharmacy (B.Pharm or Pharm.D)",
-      "requirements": [
-        "NYSC Discharged/Exemption Certificate",
-        "Valid practicing license",
-        "Strong knowledge of pharmacology and drug safety",
-        "Good communication and counseling skills",
-        "Relevant experience."
-      ],
-      "responsibilities": [
-        "Review and dispense prescriptions accurately and safely",
-        "Provide counseling to patients on medication use and adherence",
-        "Ensure proper storage and management of pharmaceutical supplies",
-        "Monitor drug interactions, side effects, and contraindications",
-        "Maintain accurate records of prescriptions and drug inventory",
-        "Ensure compliance with pharmaceutical regulations and standards",
-        "Advise healthcare professionals on drug therapy and usage",
-        "Supervise pharmacy support staff and technicians",
-        "Conduct inventory control and prevent stockouts or expiries",
-        "Participate in hospital pharmacy and drug management committees"
-      ],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-04-01",
-      "deadline": "2026-04-10",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/878036/pharmacist-at-katsina-state-hospital-services-mana.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Pharmacy Technician",
-      "company": "Katsina State Hospital Services Management Board (KTHSMB)",
-      "location": "Katsina, Nigeria",
-      "job_type": "",
-      "job_category": "Pharmacist",
-      "salary": "n,",
-      "experience": "",
-      "qualification": "Diploma or certificate in Pharmacy Technician or related field",
-      "requirements": [
-        "Basic knowledge of pharmaceutical procedures",
-        "Good attention to detail and accuracy",
-        "Strong organizational skills",
-        "Relevant experience."
-      ],
-      "responsibilities": [
-        "Assist in dispensing medications under pharmacist supervision",
-        "Receive, process, and verify prescription orders",
-        "Prepare, package, and label medications accurately",
-        "Maintain and update pharmacy records and documentation",
-        "Monitor inventory levels and report stock shortages or expiries",
-        "Ensure proper storage and handling of pharmaceutical products",
-        "Assist in basic drug compounding and preparation",
-        "Support inventory control and stock management processes",
-        "Maintain cleanliness and organization of the pharmacy",
-        "Assist in providing basic information to patients under supervision"
-      ],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-04-01",
-      "deadline": "2026-04-10",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/878031/pharmacy-technician-at-katsina-state-hospital-serv.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Pharmacist",
       "company": "Hec Recruit",
       "location": "Victoria Island, Lagos, Nigeria",
       "job_type": "Full-time",
@@ -4159,43 +4662,6 @@
       "_source": "hotnigerianjobs"
     },
     {
-      "job_title": "Nursing Officer III",
-      "company": "Katsina State Hospital Services Management Board (KTHSMB)",
-      "location": "Katsina, Nigeria",
-      "job_type": "",
-      "job_category": "Nurse",
-      "salary": "n,",
-      "experience": "",
-      "qualification": "Registered Nurse (RN) qualification, Valid practicing license",
-      "requirements": [
-        "Good clinical and patient care skills",
-        "Strong communication and teamwork abilities",
-        "Relevant experience."
-      ],
-      "responsibilities": [
-        "Provide direct nursing care to patients in assigned units",
-        "Assess, plan, and implement patient care interventions",
-        "Administer medications and treatments as prescribed",
-        "Monitor and record patient vital signs and progress",
-        "Assist doctors during clinical procedures and examinations",
-        "Maintain accurate and up-to-date patient records",
-        "Ensure adherence to infection prevention and control protocols",
-        "Educate patients and families on health conditions and care plans",
-        "Respond promptly to patient needs and emergencies",
-        "Maintain cleanliness and safety of the clinical environment"
-      ],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-04-01",
-      "deadline": "2026-04-10",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/878040/nursing-officer-iii-at-katsina-state-hospital-serv.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
       "job_title": "Health Officer",
       "company": "Lovebeams Educational Centre",
       "location": "Airport Road, Ajao Estate, Lagos, Nigeria",
@@ -4305,38 +4771,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/878047/medical-laboratory-technician-at-katsina-state-hos.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Medical Laboratory Scientist",
-      "company": "Katsina State Hospital Services Management Board (KTHSMB)",
-      "location": "Katsina, Nigeria",
-      "job_type": "",
-      "job_category": "Medical Laboratory Scientist",
-      "salary": "",
-      "experience": "",
-      "qualification": "Bachelor of Medical Laboratory Science",
-      "requirements": [
-        "Registration with Medical Laboratory Science Council",
-        "Current practicing license",
-        "NYSC certificate",
-        "Proficiency in laboratory techniques."
-      ],
-      "responsibilities": [
-        "Perform laboratory tests and analyses",
-        "Operate and maintain laboratory equipment",
-        "Prepare and examine specimens",
-        "Report laboratory results accurately"
-      ],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-04-01",
-      "deadline": "2026-04-10",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/878072/medical-laboratory-scientist-at-katsina-state-hosp.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -4540,144 +4974,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.myjobmag.com/job/marketer-aa-rescue-5",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Sales/Marketing Officer",
-      "company": "Desol Medical Solutions Limited",
-      "location": "Ebute Metta, Lagos, Nigeria",
-      "job_type": "Contract",
-      "job_category": "Other",
-      "salary": "₦100,000 - ₦150,000/month",
-      "experience": "0 - 2 years",
-      "qualification": "BA/BSc/HND, OND",
-      "requirements": [
-        "BA/BSc/HND",
-        "OND",
-        "0 - 2 years experience"
-      ],
-      "responsibilities": [
-        "Promote FMCG and services",
-        "Sales of medical equipment",
-        "Health services - online and physical",
-        "Health education",
-        "Research"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-04-01",
-      "deadline": "",
-      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/sales-marketing-officer-desol-medical-solutions-limited",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Fiber Field Engineer (FSE)",
-      "company": "Victoria Waterfront Hotel & Resorts",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "n,",
-      "experience": "Location",
-      "qualification": "BA/BSc/HND, OND",
-      "requirements": [
-        "BA/BSc/HND",
-        "OND",
-        "Experience Location",
-        "Lagos",
-        "City Victoria Island",
-        "Job Field Engineering / Technical"
-      ],
-      "responsibilities": [
-        "Site Surveys & Planning",
-        "Testing & Quality Assurance",
-        "Construction & Maintenance Oversight",
-        "Documentation & Reporting"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-04-01",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/fiber-field-engineer-fse-victoria-waterfront-hotel-resorts",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Legal Compliance / HR Officer",
-      "company": "Victoria Waterfront Hotel & Resorts",
-      "location": "Lekki, Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "n,",
-      "experience": "2 - 3 years",
-      "qualification": "BA/BSc/HND",
-      "requirements": [
-        "Bachelor’s degree in Law",
-        "2–3 years in a legal or compliance role"
-      ],
-      "responsibilities": [
-        "Stay abreast of changes in local and international laws affecting the industry",
-        "Conduct regular compliance audits and risk assessments to identify potential vulnerabilities",
-        "Serve as the primary point of contact for regulatory bodies and external auditors",
-        "Draft, update, and enforce internal policies",
-        "Develop a Compliance Management System (CMS) that integrates with daily operations",
-        "Design and deliver training programs to ensure all employees understand their legal obligations",
-        "Review, draft, and negotiate vendor contracts, client agreements, and NDAs",
-        "Provide legal opinions on new business initiatives, product launches, or market expansions",
-        "Manage corporate governance tasks, including board resolutions and statutory filings",
-        "Investigate reports of non-compliance or unethical behavior",
-        "Develop corrective action plans to resolve breaches and prevent recurrence",
-        "Oversee the 'whistleblower' hotline and ensure protection for those reporting issues"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-04-01",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/legal-compliance-hr-officer-victoria-waterfront-hotel-resorts",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Finance Manager",
-      "company": "Soteria Eye Clinic",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Healthcare Management",
-      "salary": "n,",
-      "experience": "Location",
-      "qualification": "BSc",
-      "requirements": [
-        "BA/BSc/HND",
-        "Professional Certificate"
-      ],
-      "responsibilities": [
-        "Overseeing financial operations",
-        "Financial planning",
-        "Ensuring accurate financial reporting",
-        "Budget preparation",
-        "Financial forecasting",
-        "Managing accounts receivable and payable",
-        "Performing risk assessment",
-        "Ensuring compliance with relevant financial regulations",
-        "Collaborating with other departments to optimize financial performance",
-        "Assisting in strategic decision-making"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-04-01",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/finance-manager-soteria-eye-clinic",
       "_source": "myjobmag"
     },
     {
@@ -5638,50 +5934,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/immunization-officer-vaccine-management-cold-chain-no-1-yaounde-cameroun-136668-and-temp-appointment-628",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Nutrition & Health Programme Manager",
-      "company": "Action Against Hunger | ACF-International",
-      "location": "Damaturu, Yobe, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Healthcare Management",
-      "salary": "",
-      "experience": "More than 5 years",
-      "qualification": "Master’s Degree in Public Health or related fields; Bachelor’s Degree in Nursing, Public Health, Food Science / Technology or related courses can also apply.",
-      "requirements": [
-        "Master’s Degree in Public Health with strong background in nutrition program planning & management or related field",
-        "Bachelor’s Degree in related courses with more than 5 years’ experience in nutrition program management can also apply",
-        "Willingness to be flexible and accommodating in difficult working conditions",
-        "Prepared to live and work in an uncertain security environment",
-        "Three years relevant work experience in a similar position",
-        "Excellent report writing skills",
-        "Proficient in Microsoft Office software",
-        "Fluency in Hausa preferable"
-      ],
-      "responsibilities": [
-        "Ensure projects are implemented in line with donor proposals and requirements",
-        "Finalize and manage update and implementation of Project Implementation Plan (PIP)",
-        "Develop detailed monthly/weekly implementation plans for project staff",
-        "Support development of strategies addressing malnutrition in Northwest region",
-        "Ensure quality implementation of remotely managed programs",
-        "Promote and supervise high quality care for clients at supported sites",
-        "Monitor data collection concerning Primary Health Care Services",
-        "Initiate and oversee needs and technical assessments and analysis",
-        "Contribute to building on good practice and ensure proper documentation of nutrition interventions",
-        "Participate in recruitment of staff in collaboration with HR Manager",
-        "Support institutional capacity building engagement",
-        "Identify teams' training needs and organize training sessions",
-        "Create and supervise action plans for individual team members"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-03-30",
-      "deadline": "2026-04-04",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/nutrition-health-programme-manager-627",
       "_source": "medlocum"
     },
     {
@@ -8183,69 +8435,6 @@
       "_source": "hotnigerianjobs"
     },
     {
-      "job_title": "Medical Laboratory Technician",
-      "company": "Kingsfield Diagnostic Services",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full - Time",
-      "job_category": "Medical Laboratory Scientist",
-      "salary": "",
-      "experience": "",
-      "qualification": "",
-      "requirements": [
-        "Good analytical and communication skills",
-        "Ikorodu metropolis or willing to relocate."
-      ],
-      "responsibilities": [
-        "Perform routine laboratory tests across relevant departments under the supervision of a Medical Laboratory Scientist",
-        "Collect, analyze, and report patient samples accurately",
-        "Operate and maintain laboratory equipment",
-        "Follow quality control and safety protocols",
-        "Maintain proper laboratory records and documentation."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-03-26",
-      "deadline": "2026-04-02",
-      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/875403/medical-laboratory-technician-at-kingsfield-diagno.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Medical Laboratory Scientist",
-      "company": "Kingsfield Diagnostic Services",
-      "location": "Lagos, Nigeria",
-      "job_type": "internship",
-      "job_category": "Medical Laboratory Scientist",
-      "salary": "",
-      "experience": "in diagnostics",
-      "qualification": "ond",
-      "requirements": [
-        "BMLS or equivalent qualification",
-        "MLSCN registered",
-        "Completion of internship and NYSC (where applicable)",
-        "Good analytical and communication skills",
-        "Ikorodu metropolis or willing to relocate"
-      ],
-      "responsibilities": [
-        "Perform routine laboratory tests across relevant departments",
-        "Collect, analyze, and report patient samples accurately",
-        "Operate and maintain laboratory equipment",
-        "Follow quality control and safety protocols",
-        "Maintain proper laboratory records and documentation."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-03-26",
-      "deadline": "2026-04-02",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/875401/medical-laboratory-scientist-at-kingsfield-diagnos.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
       "job_title": "Medical Laboratory Scientist",
       "company": "St. Dominic Catholic Hospital",
       "location": "Ibadan, Oyo, Nigeria",
@@ -8318,35 +8507,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/875478/mental-health-and-psychosocial-support-mhpss-offic.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Healthcare Assistant",
-      "company": "Kingsfield Diagnostic Services",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full - Time",
-      "job_category": "Other",
-      "salary": "n,",
-      "experience": "",
-      "qualification": "OND",
-      "requirements": [],
-      "responsibilities": [
-        "Support the pharmacist in preparing and dispensing prescriptions accurately",
-        "Receive, shelve, rotate, and routinely count medications and supplies to ensure proper inventory control and expiry management",
-        "Maintain accurate daily sales records and support basic operational expense tracking with appropriate approvals",
-        "Respond to customer enquiries and telephone calls",
-        "Ensure the pharmacy environment, shelves, and work areas are clean, organised, and compliant with operational standards",
-        "Good communication and interpersonal skills",
-        "Ability to work effectively in a team."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-03-26",
-      "deadline": "2026-04-02",
-      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/875397/healthcare-assistant-at-kingsfield-diagnostic-serv.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -8827,101 +8987,6 @@
       "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/874861/health-manager-pharmacy-at-delta-state-ministry-of.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Pharmacy Technician",
-      "company": "Delta State Ministry of Health",
-      "location": "Delta, Nigeria",
-      "job_type": "",
-      "job_category": "Pharmacist",
-      "salary": "n,",
-      "experience": "3 years",
-      "qualification": "rn",
-      "requirements": [
-        "Minimum of 3 years training programme from a School of Health Technology",
-        "Registration of the Institute of Medical Lab"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-03-25",
-      "deadline": "2026-04-08",
-      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/874864/pharmacy-technician-at-delta-state-ministry-of-hea.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Health Manager (Pharmacy)",
-      "company": "Delta State Ministry of Health",
-      "location": "Delta, Nigeria",
-      "job_type": "",
-      "job_category": "Pharmacist",
-      "salary": "N,",
-      "experience": "5 years",
-      "qualification": "B.Pharm or equivalent, recognized by PCN",
-      "requirements": [
-        "B.Pharm or equivalent, recognized by PCN",
-        "5 years relevant experience"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-03-25",
-      "deadline": "2026-04-08",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/874871/health-manager-pharmacy-at-delta-state-ministry-of.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Pharmacist (Deputy)",
-      "company": "DP World",
-      "location": "Calabar, Cross River, Nigeria",
-      "job_type": "",
-      "job_category": "Pharmacist",
-      "salary": "n,",
-      "experience": "5",
-      "qualification": "ond",
-      "requirements": [
-        "Bachelor’s Degree in Pharmacy (B. Pharm.) or any related field",
-        "Pharmacy Council of Nigeria (PCN)",
-        "Pharmaceutical Society of Nigeria (PSN)",
-        "2 - 5 years experience in supply chain quality management system",
-        "Sound understanding of HSE, Quality and Regulatory management systems",
-        "Experience with Regulatory Agencies such as PCN and NAFDAC",
-        "WMS experience (SAP and related software)",
-        "Cold chain storage management"
-      ],
-      "responsibilities": [
-        "Overseeing the implementation of quality control measures",
-        "Monitoring HSE practices",
-        "Ensuring compliance of operational activities within the DC with relevant regulations",
-        "Oversees the registration, continued renewal, and maintenance of annual premises licence of the Pharma warehouse",
-        "Ensures compliance and monitoring of all operational staff with GWP, GSP and agreed clients’ SOPs",
-        "Drives the quality culture of the DC relating to receipt, storage, dispatch, and distribution of products",
-        "Prepares and forwards relevant Monthly Reports to line managers",
-        "Ensures efficient service delivery to customers and prompt resolution of quality complaints",
-        "Escalates unresolved quality complaints to clients or line managers after 24 hours",
-        "Ensures products are stored within the right temperature range and monitors",
-        "Ensures 100% accuracy of batch and shelf-life management of all product categories",
-        "Supports the maintenance/management of DC operational and quality assets",
-        "Promotes a culture of safety and aligns with MDS HSEQ policy and guidelines"
-      ],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-03-25",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/874557/pharmacist-deputy-at-dp-world.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -9950,204 +10015,6 @@
       "_source": "medlocum"
     },
     {
-      "job_title": "Pharmacist (Contract Staff)",
-      "company": "Rubber Estates Nigeria Limited",
-      "location": "Araromi Obu Odigbo LGA - Ondo, Nigeria",
-      "job_type": "Contract",
-      "job_category": "Pharmacist",
-      "salary": "",
-      "experience": "Minimum of 3 years practical experience in primary healthcare delivery.",
-      "qualification": "Bachelor of Pharmacy (B.Pharm)",
-      "requirements": [
-        "Must be a licensed pharmacist, registered with the Pharmacist Council of Nigeria with a valid practicing license",
-        "Proficiency in the use of Microsoft Excel",
-        "Master’s in Pharmacy (M.Pharm) will be an added advantage",
-        "Must be smart, honest, dedicated, proactive and a good team player with high integrity.",
-        "Must have good human relations with empathy"
-      ],
-      "responsibilities": [
-        "Provide a comprehensive pharmacy service to the medical practitioners, to the benefit of all staff and their dependents",
-        "Review prescription for accuracy and evaluate their suitability for patients",
-        "Provide information and advice about drugs, including their side effects, correct dosage and proper storage",
-        "Adhere to applicable legal rules, regulations, and procedures governing pharmaceutical practice."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-03-24",
-      "deadline": "2026-03-31",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/pharmacist-contract-staff-581",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Environmental Health Officers",
-      "company": "Nabuyar Environmental Consultants Limited",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Public Health",
-      "salary": "NGN250,000 / monthly",
-      "experience": "Minimum of 2 years relevant field experience",
-      "qualification": "Registered Environmental Health Officer with a valid practicing license from the Environmental Health Council of Nigeria (EHCON)",
-      "requirements": [
-        "Must be a registered Environmental Health Officer with a valid practicing license from the Environmental Health Council of Nigeria (EHCON)",
-        "Minimum of 2 years relevant field experience",
-        "Strong knowledge of environmental health regulations and enforcement procedures",
-        "Good reporting and communication skills."
-      ],
-      "responsibilities": [
-        "Conduct sanitary inspections of various premises",
-        "Assess environmental health conditions and ensure compliance with regulations",
-        "Prepare and submit detailed inspection reports",
-        "Identify public health risks and recommend corrective actions"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-03-24",
-      "deadline": "2026-05-09",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/environmental-health-officers-580",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Medical Consultant (Internal Medicine)",
-      "company": "Bergstein Hospital - Syx-Brij Nigeria Limited",
-      "location": "Ikorodu, Lagos, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Doctor",
-      "salary": "NGN1,200,000 - NGN2,000,000 / monthly",
-      "experience": "5–8 years post-qualification clinical experience",
-      "qualification": "MBBS or equivalent medical Degree; Fellowship (FWACP, FMCP, or equivalent) in Internal Medicine; Valid practicing license with MDCN",
-      "requirements": [
-        "MBBS or equivalent medical Degree",
-        "Fellowship (FWACP, FMCP, or equivalent) in Internal Medicine",
-        "Valid practicing license with MDCN",
-        "Minimum of 5–8 years post-qualification clinical experience",
-        "Strong diagnostic and clinical decision-making skills",
-        "Excellent communication and interpersonal skills",
-        "Ability to work in a multidisciplinary team",
-        "Subspecialty interest (e.g., Cardiology, Endocrinology, Gastroenterology, etc.)",
-        "Experience working in a private or multi-specialty hospital",
-        "Leadership or supervisory experience"
-      ],
-      "responsibilities": [
-        "Diagnose and manage complex medical conditions affecting adult patients",
-        "Conduct thorough clinical assessments and develop effective treatment plans",
-        "Provide specialist consultations and second opinions when required",
-        "Supervise and support medical officers and junior doctors",
-        "Coordinate patient care with other specialists and healthcare teams",
-        "Interpret laboratory and diagnostic test results accurately",
-        "Ensure adherence to clinical protocols, guidelines, and best practices",
-        "Participate in ward rounds and patient follow-ups",
-        "Provide health education and counseling to patients and their families",
-        "Maintain accurate and up-to-date medical records"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-03-24",
-      "deadline": "2026-04-13",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/medical-consultant-internal-medicine-579",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Genetics Assistant",
-      "company": "Deda Hospital",
-      "location": "Nigeria, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Medical Laboratory Scientist",
-      "salary": "",
-      "experience": "1–3 years",
-      "qualification": "Degree or Diploma in Medical Laboratory Science, Genetics, Biology, or a related field",
-      "requirements": [
-        "Basic knowledge of genetic testing or laboratory procedures",
-        "Strong attention to detail and high level of accuracy",
-        "Commitment to confidentiality, ethics, and patient safety"
-      ],
-      "responsibilities": [
-        "Assist in the collection, labeling, and proper handling of genetic samples",
-        "Support preparation and processing of specimens for genetic and laboratory analysis",
-        "Maintain accurate patient records, test documentation, and laboratory logs",
-        "Coordinate with clinicians, embryologists, and laboratory personnel on testing requirements",
-        "Ensure proper storage and transportation of specimens in line with safety protocols",
-        "Adhere strictly to confidentiality standards for patient genetic information",
-        "Assist in maintaining laboratory equipment and ensuring operational readiness",
-        "Comply with infection prevention and laboratory safety guidelines",
-        "Support quality assurance processes and continuous improvement initiatives"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-03-24",
-      "deadline": "2026-03-30",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/medical-laboratory-science-genetics-assistant-578",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Anaesthetic Technology",
-      "company": "Deda Hospital",
-      "location": "Nigeria, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Allied Health",
-      "salary": "",
-      "experience": "Minimum of 2–4 years’ experience in a theatre or surgical setting.",
-      "qualification": "Diploma or certification in Anaesthetic Technology or a related field.",
-      "requirements": [
-        "Sound knowledge of anesthesia equipment and perioperative procedures.",
-        "Strong attention to detail and commitment to patient safety.",
-        "Ability to work effectively in a fast-paced clinical environment."
-      ],
-      "responsibilities": [
-        "Prepare and set up anesthesia equipment, drugs, and monitoring devices prior to procedures.",
-        "Assist anesthetists during induction, maintenance, and recovery phases of anesthesia.",
-        "Monitor and record patients’ vital signs during procedures under supervision.",
-        "Ensure anesthesia machines and related equipment are clean, functional, and properly maintained.",
-        "Check, restock, and manage anesthesia supplies and consumables.",
-        "Assist with patient preparation and positioning for procedures.",
-        "Support post-anesthesia care and safe transfer of patients to recovery units.",
-        "Maintain accurate documentation of procedures and equipment usage.",
-        "Ensure strict compliance with infection control and patient safety protocols.",
-        "Participate in emergency response and resuscitation support when required."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-03-24",
-      "deadline": "2026-03-30",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/anaesthetic-technology-577",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Lab scientist",
-      "company": "JCPMAX laboratory",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Medical Laboratory Scientist",
-      "salary": "",
-      "experience": "",
-      "qualification": "",
-      "requirements": [],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-03-24",
-      "deadline": "2026-03-31",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/lab-scientist-576",
-      "_source": "medlocum"
-    },
-    {
       "job_title": "MHPSS Assistant",
       "company": "Center for Advocacy Transparency and Accountability Initiative (CATAI)",
       "location": "Ngala and Kaga LGA, Borno, Nigeria",
@@ -10719,114 +10586,6 @@
       "_source": "hotnigerianjobs"
     },
     {
-      "job_title": "Superitendent Pharmacist",
-      "company": "Erkang Pharmaceutical",
-      "location": "Ilorin, Kwara, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Pharmacist",
-      "salary": "",
-      "experience": "",
-      "qualification": "Relevant qualifications required",
-      "requirements": [
-        "Possess relevant qualifications",
-        "Experience in large volume parenterals (LVP)"
-      ],
-      "responsibilities": [
-        "Work on and process all the Common Technical Documents (CTD) on behalf of the company",
-        "Liaising and interfacing with external bodies and agencies on healthcare and medicinal matters",
-        "Registration of premises with the Pharmacists Council of Nigeria (PCN)",
-        "Registration of products with the National Agency for Food Drugs Administration and Control (NAFDAC)",
-        "Facilitating contract manufacturing of products",
-        "Facilitating businesses within the Pharmaceutical Industry in Nigeria",
-        "Co-ordination of tenders for healthcare supplies",
-        "Co-ordination of clinical presentations and meetings with Private Sector clinics, Federal and State government Health institutions",
-        "Co-ordination of imports of finished formulations and APIs",
-        "Liaising with bodies such as the Pharmaceutical Group of the Manufacturers Association of Nigeria (PMGMAN), National Agency for Food Drugs Administration and Control (NAFDAC), Pharmacists Council of Nigeria (PCN), Pharmaceutical Society of Nigeria (PSN), Federal and State Ministries of Health, Customs and Excise Authorities",
-        "Interface with multilateral and Development Agencies such as World Health Organization (WHO), West African Health Organization (WAHO), United Nation Industrial Development Organization (UNIDO), Economic Community of West African States (ECOWAS), International Finance Corporation (IFC) & Centre for Development Enterprise (CDE) on Healthcare and Medicinal matters",
-        "Other duties as assigned by Management & the Board"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-03-23",
-      "deadline": "2026-04-20",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/superitendent-pharmacist-574",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Technical Director, MNCH/N",
-      "company": "FHI 360",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Public Health",
-      "salary": "",
-      "experience": "10+ years of relevant experience in global health programming",
-      "qualification": "Master’s degree or international equivalent in Public Health, Global Health, Health Policy, Medicine, Nursing, social sciences, or related field; Advanced degree (PhD, DrPH, MD) preferred.",
-      "requirements": [
-        "Extensive knowledge and technical expertise in Advanced MNCH and Nutrition service delivery in low-resource settings.",
-        "Strong relationship management skills with donors, government agencies, and implementing partners.",
-        "Excellent written and verbal communication skills; able to translate complex evidence into actionable guidance.",
-        "Ability to manage multiple streams of work and solve complex challenges independently.",
-        "Applies advanced technical judgment to guide strategy, solve complex implementation challenges, and influence programmatic direction.",
-        "Directly impacts project performance and FHI 360’s reputation for technical excellence in MNCH/Nutrition service delivery.",
-        "Sensitivity to cultural differences and a sound understanding of the political, social, and ethical issues surrounding MNCH and Nutrition.",
-        "Proficiency in the use of computers and standard MS Office applications to accurately enter, retrieve, and manage data and information.",
-        "Willingness and ability to travel up to 50% of the time."
-      ],
-      "responsibilities": [
-        "Provides technical oversight for integrated MNCH and Nutrition service delivery",
-        "Supports the design and implementation of MNCH and Nutrition activities, at facility and community levels, ensuring technical excellence and consistency with national guidelines.",
-        "Provides technical guidance to state-level teams to strengthen service delivery models, referral systems, and linkages to care.",
-        "Contributes to development of workplans, budgets, MEL frameworks, and donor reporting for MNCH and Nutrition activities.",
-        "Identifies opportunities for innovation, improved efficiency, and enhanced quality of integrated service delivery.",
-        "Leads development and adaptation of tools, SOPs, guidelines, and job aids for MNCH/N programming.",
-        "Ensures integration of evidence-based approaches across continuum of care.",
-        "Strengthens partnerships with government, partners and represents EpiC Nigeria in MNCH/N technical forums, working groups, and donor engagements."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-03-23",
-      "deadline": "2026-04-03",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/technical-director-mnchn-573",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Resident Doctor (Family Medicine)",
-      "company": "Immaculate Heart of Mary Specialist Hospital",
-      "location": "Nkpor (Onitsha), Anambra, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Doctor",
-      "salary": "",
-      "experience": "",
-      "qualification": "",
-      "requirements": [
-        "Eligible candidates must be Medical Officers who have passed their Primaries or intend to sit for their Primary examination in Family Medicine"
-      ],
-      "responsibilities": [
-        "Participate in structured postgraduate clinical training in Family Medicine.",
-        "Provide comprehensive patient care under the supervision of consultants and senior physicians.",
-        "Participate in ward rounds, outpatient clinics, emergency care, and community-oriented healthcare services.",
-        "Maintain accurate clinical documentation and patient records.",
-        "Engage in academic activities including seminars, case presentations, and clinical discussions.",
-        "Prepare for and participate in postgraduate professional examinations in Family Medicine.",
-        "Adhere to hospital policies, clinical protocols, and infection prevention guidelines"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-03-23",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/resident-doctor-family-medicine-572",
-      "_source": "medlocum"
-    },
-    {
       "job_title": "Medical Laboratory Scientist",
       "company": "Immaculate Heart of Mary Specialist Hospital",
       "location": "Nkpor, Anambra, Nigeria",
@@ -10857,6 +10616,38 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/medical-laboratory-scientist-immaculate-heart-mary-specialist-hospital/",
+      "_source": "jobsinnigeria"
+    },
+    {
+      "job_title": "Resident Doctor (Family Medicine)",
+      "company": "Immaculate Heart of Mary Specialist Hospital",
+      "location": "Nkpor (Onitsha), Anambra, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Doctor",
+      "salary": "",
+      "experience": "",
+      "qualification": "bsc",
+      "requirements": [
+        "Eligible candidates must be Medical Officers who have passed their Primaries or intend to sit for their Primary examination in Family Medicine."
+      ],
+      "responsibilities": [
+        "Participate in structured postgraduate clinical training in Family Medicine.",
+        "Provide comprehensive patient care under the supervision of consultants and senior physicians.",
+        "Participate in ward rounds, outpatient clinics, emergency care, and community-oriented healthcare services.",
+        "Maintain accurate clinical documentation and patient records.",
+        "Engage in academic activities including seminars, case presentations, and clinical discussions.",
+        "Prepare for and participate in postgraduate professional examinations in Family Medicine.",
+        "Adhere to hospital policies, clinical protocols, and infection prevention guidelines."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites).",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-03-23",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://jobsinnigeria.careers/jobs/resident-doctor-family-medicine-immaculate-heart-mary-specialist-hospital/",
       "_source": "jobsinnigeria"
     },
     {
@@ -11006,6 +10797,46 @@
       "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/873414/medical-consultant-obstetrics-gynaecology-at-bergs.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
+      "job_title": "Medical Consultant (Internal Medicine)",
+      "company": "Bergstein Hospital - Syx-Brij Nigeria Limited",
+      "location": "Ikorodu, Lagos, Nigeria",
+      "job_type": "Full-time",
+      "job_category": "Doctor",
+      "salary": "N1,200,000 - N2,000,000 per month (gross)",
+      "experience": "8",
+      "qualification": "MBBS or equivalent medical Degree; Fellowship (FWACP, FMCP, or equivalent) in Internal Medicine; Valid practicing license with MDCN",
+      "requirements": [
+        "MBBS or equivalent medical Degree",
+        "Fellowship (FWACP, FMCP, or equivalent) in Internal Medicine",
+        "Valid practicing license with MDCN",
+        "Minimum of 5–8 years post-qualification clinical experience",
+        "Strong diagnostic and clinical decision-making skills",
+        "Excellent communication and interpersonal skills",
+        "Ability to work in a multidisciplinary team"
+      ],
+      "responsibilities": [
+        "Diagnose and manage complex medical conditions affecting adult patients",
+        "Conduct thorough clinical assessments and develop effective treatment plans",
+        "Provide specialist consultations and second opinions when required",
+        "Supervise and support medical officers and junior doctors",
+        "Coordinate patient care with other specialists and healthcare teams",
+        "Interpret laboratory and diagnostic test results accurately",
+        "Ensure adherence to clinical protocols, guidelines, and best practices",
+        "Participate in ward rounds and patient follow-ups",
+        "Provide health education and counseling to patients and their families",
+        "Maintain accurate and up-to-date medical records"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-03-23",
+      "deadline": "2026-04-13",
+      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/873320/medical-consultant-internal-medicine-at-bergstein.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -12392,6 +12223,81 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/871883/nursing-assistant-at-the-change-room.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
+      "job_title": "Radiographer",
+      "company": "Echolab Laboratory & Radiology Services",
+      "location": "Garki, Abuja (FCT), Nigeria",
+      "job_type": "Full-time",
+      "job_category": "Allied Health",
+      "salary": "n,",
+      "experience": "Minimum of 2 years’ experience in similar job role",
+      "qualification": "First Degree in Radiography",
+      "requirements": [
+        "Operate CT scanners, MRI, X-rays, machines etc. to obtain radiographic images of patient.",
+        "Evaluate patient condition prior to radiotherapy to determine the suitable radiographic technique for treatment.",
+        "Accurately performs diagnostic imaging to obtain clear, usable images.",
+        "Inserting commands and data into the computer to document and specify the scan sequences and monitoring the video display to adjust the density or contrast.",
+        "Monitor patients during examinations, ensuring their safety, and following procedures to prevent unnecessary exposure to radiation.",
+        "Ensure that all names of conducted studies are move to work area.",
+        "Ensure that all acquired images are uploaded onto the viewing platform.",
+        "Ensure compliance with established safety regulations and procedures when operating radiation equipment in order to prevent ill-exposure to ionizing radiation.",
+        "Producing diagnostic images, reporting important information to the Physician, and updating patients' records on PACS.",
+        "Follow all radiology health and safety rules and report any possible hazards to the Radiologist and Branch Operations Manager.",
+        "Keep and / or retrieve departmental copies of patient test reports."
+      ],
+      "responsibilities": [
+        "Positioning patients and equipment, explaining the procedures, and ensuring patients' comfort.",
+        "Interact with patients to offer them psychological support and reassurance.",
+        "Set accurate radiation levels in accordance with established standards and obtain patient consent prior to diagnostic imaging to fulfill legal requirements."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-03-18",
+      "deadline": "2026-04-30",
+      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/872156/radiographer-at-echolab-laboratory-radiology-servi.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
+      "job_title": "Female Radiographer",
+      "company": "Echolab Laboratory & Radiology Services",
+      "location": "Asaba, Delta, Nigeria",
+      "job_type": "Full-time",
+      "job_category": "Allied Health",
+      "salary": "n,",
+      "experience": "5",
+      "qualification": "First Degree in Radiography",
+      "requirements": [
+        "Operate ECG &X-rays, machines etc. to obtain radiographic images of patient.",
+        "Evaluate patient condition prior to radiotherapy to determine the suitable radiographic technique for treatment.",
+        "Accurately performs diagnostic imaging to obtain clear, usable images.",
+        "Inserting commands and data into the computer to document and specify the scan sequences and monitoring the video display to adjust the density or contrast.",
+        "Monitor patients during examinations, ensuring their safety, and following procedures to prevent unnecessary exposure to radiation.",
+        "Ensure that all names of conducted studies are moved to the work area.",
+        "Ensure that all acquired images are uploaded onto the viewing platform.",
+        "Ensure compliance with established safety regulations and procedures when operating radiation equipment to prevent ill-exposure to ionizing radiation.",
+        "Producing diagnostic images, reporting important information to the Physician, and updating patients' records on PACS.",
+        "Follow all radiology health and safety rules and report any possible hazards to the Radiologist and Branch Operations Manager.",
+        "Keep and / or retrieve departmental copies of patient test reports."
+      ],
+      "responsibilities": [
+        "Positioning patients and equipment, explaining the procedures, and ensuring patients' comfort.",
+        "Interact with patients to offer them psychological support and reassurance.",
+        "Set accurate radiation levels in accordance with established standards and obtain patient consent prior to diagnostic imaging to fulfill legal requirements."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-03-18",
+      "deadline": "2026-04-29",
+      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/872096/female-radiographer-at-echolab-laboratory-radiolog.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -15644,31 +15550,6 @@
       "_source": "medicalworldnigeria"
     },
     {
-      "job_title": "Personal Support Worker",
-      "company": "XclusiveCare Services",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "",
-      "experience": "2",
-      "qualification": "",
-      "requirements": [
-        "Relevant qualifications",
-        "At least 2 years experience"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-03-05",
-      "deadline": "2026-04-02",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/866104/personal-support-worker-at-xclusivecare-services.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
       "job_title": "Medical Laboratory Scientist",
       "company": "Euracare Multi-Specialist Hospital",
       "location": "Lagos, Nigeria",
@@ -17151,31 +17032,6 @@
       "_source": "hotnigerianjobs"
     },
     {
-      "job_title": "School Nurse",
-      "company": "International Private Secondary School",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "",
-      "experience": "",
-      "qualification": "rn",
-      "requirements": [
-        "Relevant qualifications",
-        "Experience"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-02-11",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/856303/school-nurse-an-international-private-secondary-sc.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
       "job_title": "Head Wealth and Funds Manager",
       "company": "Talent Pool Resources International Limited",
       "location": "Lagos, Nigeria",
@@ -17522,158 +17378,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/pharmacy-assistant-viewpoint-hospital/",
-      "_source": "jobsinnigeria"
-    },
-    {
-      "job_title": "Epidemiologist",
-      "company": "Medecins Sans Frontiers, Switzerland",
-      "location": "Bauchi, Nigeria",
-      "job_type": "Contract",
-      "job_category": "Public Health",
-      "salary": "n,",
-      "experience": "Experience in field epidemiology.",
-      "qualification": "bsc",
-      "requirements": [
-        "Medical doctor (preferable), Nurse or biomedical background with a Degree in Epidemiology (not in Public Health)",
-        "Training in GIS (production of maps) is helpful but not a must.",
-        "Experience in field epidemiology.",
-        "GIS map production skills will be of great advantage.",
-        "Languages: English is essential, Hausa language is essential but not mandatory.",
-        "Knowledge: Use of epidemiology related analytical software (excel, Epi-info, R, STATA or SPSS)."
-      ],
-      "responsibilities": [
-        "Assessing, implementing and maintaining epidemiological surveillance systems/monitoring according to MSF protocols.",
-        "Supporting the mission epidemiologist in key epidemiological activities in outbreak investigation.",
-        "Implementing and maintaining a surveillance system to monitor epidemiological trends of relevant outbreak-prone diseases.",
-        "Engaging in surveillance activities and/or active case finding.",
-        "Monitoring and implementing initial assessments for emergency situations.",
-        "Preparing and adapting routine documentation as guided by the mission epidemiologist.",
-        "Managing data systems and ensuring accurate, high-quality databases.",
-        "Producing maps to communicate data arising from surveillance activities.",
-        "Providing training sessions to medical teams on relevant aspects of epidemiology."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-02-02",
-      "deadline": "2026-02-13",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://jobsinnigeria.careers/jobs/epidemiologist-medecins-sans-frontiers-switzerland/",
-      "_source": "jobsinnigeria"
-    },
-    {
-      "job_title": "Registered Midwife",
-      "company": "Talent Pool Resources International Limited",
-      "location": "Ejigbo & Orile Iganmu Axis, Lagos, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Nurse",
-      "salary": "N150,000 / month",
-      "experience": "3",
-      "qualification": "bsc",
-      "requirements": [
-        "Must be a Registered Midwife with valid certification",
-        "Minimum of 3 years post-qualification experience",
-        "Proven experience in handling deliveries with minimal supervision",
-        "Willingness to work shift schedules",
-        "Females preferred for gender balance"
-      ],
-      "responsibilities": [
-        "Provide comprehensive antenatal, intrapartum, and postnatal care",
-        "Confidently handle deliveries with minimal supervision",
-        "Monitor and support maternal and neonatal wellbeing",
-        "Maintain accurate medical records in line with hospital standards",
-        "Work collaboratively with doctors and other healthcare professionals."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-02-02",
-      "deadline": "2026-02-09",
-      "contact_email": "",
-      "contact_phone": "08156392799",
-      "apply_url": "https://jobsinnigeria.careers/jobs/registered-midwife-talent-pool-resources-international-limited/",
-      "_source": "jobsinnigeria"
-    },
-    {
-      "job_title": "Medical Sales Representative",
-      "company": "Divine AG Solutions Limited",
-      "location": "Kaduna, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Other",
-      "salary": "N350,000 Monthly",
-      "experience": "4",
-      "qualification": "bsc",
-      "requirements": [
-        "A Degree in Biological Sciences or related courses.",
-        "B.Pharm or Pharm.D is an advantage.",
-        "3 – 4 years of experience as a medical sales representative",
-        "Must reside in Kaduna.",
-        "Planning, analytical, and organizational skills.",
-        "Proficient in Microsoft Office.",
-        "Excellent communication and presentation skills.",
-        "Customer relationship skills.",
-        "Strong teamwork and networking skills.",
-        "Ability to work under pressure."
-      ],
-      "responsibilities": [
-        "Meet and exceed territory sales target within agreed budgets and timelines.",
-        "Interface with and communicate effectively to customers and key influencers regarding product efficacy and safety, product availability, supply and distribution.",
-        "Maintain key customer relationships and develop and implement strategies for expanding designated customer base in assigned territory.",
-        "Identifying and establishing new business.",
-        "Lead the generation of demand for products in government and privately owned health facilities, retail facilities and relevant medical establishments.",
-        "Maintaining detailed records.",
-        "Make presentations to healthcare professionals in hospitals or pharmacies.",
-        "Analyze sales data to improve sales results.",
-        "Monitor competitor activity and products.",
-        "Develop strategies for increasing opportunities to meet and talk to contacts in the healthcare sector."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-02-02",
-      "deadline": "2026-02-16",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://jobsinnigeria.careers/jobs/medical-sales-representative-kaduna-divine-ag-solutions-limited/",
-      "_source": "jobsinnigeria"
-    },
-    {
-      "job_title": "Pharmacy Manager",
-      "company": "Kiyix Recruitment Hub",
-      "location": "Surulere, Lagos, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Pharmacist",
-      "salary": "N200,000 Monthly",
-      "experience": "2–4 years",
-      "qualification": "BSc in Science related courses",
-      "requirements": [
-        "Minimum of 2–4 years’ experience in a retail/community pharmacy",
-        "Strong leadership and team management skills",
-        "Good knowledge of inventory management and pharmacy software",
-        "Excellent communication and customer service skills",
-        "Business and sales-driven mindset."
-      ],
-      "responsibilities": [
-        "Oversee daily pharmacy operations and ensure smooth workflow",
-        "Supervise pharmacy staff and ensure compliance with professional standards",
-        "Dispense medications accurately and provide appropriate patient counseling",
-        "Ensure proper storage, handling, and documentation of pharmaceutical products",
-        "Manage inventory, stock levels, and supplier relationships",
-        "Monitor expiry dates and ensure regulatory compliance at all times.",
-        "Handle customer complaints professionally and ensure excellent service delivery."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-02-02",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://jobsinnigeria.careers/jobs/pharmacy-manager-kiyix-recruitment-hub/",
       "_source": "jobsinnigeria"
     }
   ]
