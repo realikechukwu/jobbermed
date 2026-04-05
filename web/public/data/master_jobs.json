@@ -1,15 +1,188 @@
 {
   "metadata": {
-    "extracted_at": "2026-04-04T05:09:09.117895",
+    "extracted_at": "2026-04-05T05:22:25.030090",
     "model": "gpt-4o-mini",
-    "total_processed": 642,
-    "duplicates_removed": 106,
+    "total_processed": 640,
+    "duplicates_removed": 104,
     "skipped_old": 6,
     "skipped_empty": 0,
     "errors": 0,
-    "openai_calls": 136
+    "openai_calls": 111
   },
   "jobs": [
+    {
+      "job_title": "Medical officer",
+      "company": "Prince of peace hospital",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Doctor",
+      "salary": "NGN350,000 - NGN400,000 / monthly",
+      "experience": "",
+      "qualification": "",
+      "requirements": [],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-04-04",
+      "deadline": "2026-04-24",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/medical-officer-668",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Health Care Assistant",
+      "company": "Caring Habitat",
+      "location": "Ajah, Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "₦50,000 - ₦100,000/month",
+      "experience": "1 - 3 years",
+      "qualification": "Secondary School (SSCE)",
+      "requirements": [
+        "A caregiver's certificate.",
+        "1-3 Years of working experience as a caregiver."
+      ],
+      "responsibilities": [
+        "Rendering personal care; bed bathing and or assisted bathroom.",
+        "Eating (support the patient during feed-time).",
+        "Change patients’ soiled diapers, Incopad, slide sheet, and bed linen.",
+        "Assist the patient in using the convenience.",
+        "Transferring the patient using the Glide/Slide sheet and hoist to facilitate ambulation.",
+        "Identify the patient’s hobbies and engage them in activities of interest.",
+        "Create a positive home-like environment by responding to patients’ needs promptly.",
+        "Help the patient develop trust.",
+        "Maintain patient’s confidentiality.",
+        "Offer emotional support and work with the family.",
+        "Communicate effectively and actively listen.",
+        "Follow Infection Prevention /Control practices.",
+        "Maintain a clean, safe environment and report safety problems immediately.",
+        "Perform procedures correctly, following the “Standard of Practice.”"
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-04-04",
+      "deadline": "2026-05-15",
+      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/health-care-assistant-caring-habitat",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Program Manager",
+      "company": "Christian Health Association of Nigeria",
+      "location": "Plateau, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Healthcare Management",
+      "salary": "n,",
+      "experience": "5 - 10 years",
+      "qualification": "BA/BSc/HND, MBA/MSc/MA, Professional Certificate",
+      "requirements": [
+        "BA/BSc/HND",
+        "MBA/MSc/MA",
+        "Professional Certificate",
+        "5 - 10 years"
+      ],
+      "responsibilities": [
+        "Oversee the planning and delivery of REACH activities across target LGAs and health facilities.",
+        "Ensure timely execution of micro-plans, session schedules, and operational milestones.",
+        "Facilitate the strengthening of community health structures and partnerships with Ward Development Committees and faith leaders.",
+        "Integrate immunization sessions with other primary health care (PHC) services where feasible.",
+        "Organize training, mentoring, and supervision for vaccinators and community mobilisers.",
+        "Lead community mobilization and outreach campaigns to improve demand generation.",
+        "Ensure consistent data collection, validation, and reporting using digital tools (CommCare, DHIS2).",
+        "Conduct routine supervision and data quality assessments.",
+        "Compile monthly and quarterly reports with evidence-based analysis and field insights.",
+        "Document success stories, best practices, and operational learnings.",
+        "Maintain strong relationships with the Plateau State Primary Health Care Development Agency (SPHCDA), LGAs, and partner organizations.",
+        "Represent CHAN in coordination platforms, technical working groups, and cluster meetings.",
+        "Promote synergy and complementarity with other partner programs in the same geography.",
+        "Support budget preparation, expenditure tracking, and resource optimization.",
+        "Ensure compliance with CHAN’s financial and procurement guidelines.",
+        "Maintain transparent records of all activity-related expenditures.",
+        "Identify capacity needs of health workers and community volunteers and organize targeted training.",
+        "Provide technical support and mentorship to enhance service quality and data use for decision-making."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-04-04",
+      "deadline": "",
+      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/program-manager-christian-health-association-of-nigeria",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Facility Officer",
+      "company": "Euracare Multi-Specialist Hospital",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "",
+      "experience": "2",
+      "qualification": "BSc",
+      "requirements": [
+        "BA/BSc/HND",
+        "2 - 5 years experience in facility management"
+      ],
+      "responsibilities": [
+        "Provide support to the facility manager, coordinating and ensuring both routine and periodic maintenance of the hospital’s infrastructure and amenities.",
+        "Manage unplanned maintenance, repair, and recovery for the facility with emphasis on HVAC.",
+        "Monitor and ensure that agreed work by contractors are completed satisfactorily and follow up on any deficiencies.",
+        "Support the facility manager to rectify issues related to OSH (Occupational health and safety) infection control policies, waste management policies, among other facility health and safety requirements."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-04-04",
+      "deadline": "2026-04-13",
+      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/facility-officer-euracare-multi-specialist-hospital-1",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Pharmacist",
+      "company": "Grandville Medical & Laser",
+      "location": "Lekki, Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Pharmacist",
+      "salary": "₦300,000 - ₦400,000/month",
+      "experience": "2 - 3 years",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "Bachelor of Pharmacy (B.Pharm) or Doctor of Pharmacy (Pharm.D)",
+        "Valid practicing license with the Pharmacists Council of Nigeria (PCN)",
+        "Minimum of 2–3 years relevant experience (hospital/retail setting preferred)",
+        "Strong knowledge of pharmaceutical regulations and best practices",
+        "Excellent communication and interpersonal skills",
+        "High level of integrity and attention to detail"
+      ],
+      "responsibilities": [
+        "Dispense prescription medications accurately and efficiently",
+        "Provide professional counselling to patients on medication use, dosage, and side effects",
+        "Review prescriptions for accuracy and appropriateness",
+        "Maintain proper record-keeping and inventory control",
+        "Ensure compliance with regulatory and ethical standards",
+        "Collaborate with doctors, nurses, and other healthcare professionals",
+        "Monitor drug therapy and patient outcomes",
+        "Supervise pharmacy staff and support personnel where applicable"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-04-04",
+      "deadline": "2026-04-15",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/pharmacist-grandville-medical-amp-laser-1",
+      "_source": "myjobmag"
+    },
     {
       "job_title": "Medical Laboratory Scientists",
       "company": "KNCV Tuberculosis Foundation",
@@ -3160,68 +3333,6 @@
       "_source": "myjobmag"
     },
     {
-      "job_title": "Senior Officer, Client Engagement",
-      "company": "EHA Clinics",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "EHA Clinics is committed to fair and competitive compensation for its employees. We want our team members in all locations to feel valued for their unique skills, expertise, and talents and remunerated accordingly, so we can attract and retain the best and most passionate people.",
-      "experience": "1 year",
-      "qualification": "BSc",
-      "requirements": [
-        "1 year of experience in client engagement or related field",
-        "Excellent communication skills"
-      ],
-      "responsibilities": [
-        "Promote, follow up, close sales/deals, up-sell or cross-sell services and products",
-        "Collaborate with internal teams to address customer needs",
-        "Ensure service delivery meets agreed service level agreements"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-04-02",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/senior-officer-client-engagement-eha-clinics-10",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Infection Control Nurse",
-      "company": "Ascentech Services Limited",
-      "location": "Port Harcourt, Rivers, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Nurse",
-      "salary": "₦400,000 – ₦700,000 per month",
-      "experience": "3 - 5 years",
-      "qualification": "BSc",
-      "requirements": [
-        "Registered Nurse (RN) with a valid practicing license",
-        "Minimum 3 years’ experience in infection prevention and control",
-        "Certification in Infection Control (CIC) or willingness to obtain within the first year",
-        "Strong knowledge of infection control standards, communication, teamwork, and documentation skills"
-      ],
-      "responsibilities": [
-        "Monitor and enforce infection prevention protocols across clinical and non-clinical departments.",
-        "Conduct surveillance of hospital-acquired infections and analyze trends with microbiologists.",
-        "Ensure compliance with regulatory standards and support accreditation initiatives.",
-        "Identify infection risks, implement containment measures, and investigate exposure incidents.",
-        "Maintain accurate records, prepare reports, and communicate infection risks to stakeholders.",
-        "Participate in infection control audits, research, and quality improvement initiatives."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-04-02",
-      "deadline": "2026-04-30",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/infection-control-nurse-ascentech-services-limited",
-      "_source": "myjobmag"
-    },
-    {
       "job_title": "Head of Research, Monitoring and Evaluation",
       "company": "HelpMum",
       "location": "Nigeria",
@@ -3405,6 +3516,34 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.myjobmag.com/job/flutter-whatsapp-chatbot-engineer-helpmum",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Senior Officer, Client Engagement",
+      "company": "EHA Clinics",
+      "location": "Abuja, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "EHA Clinics is committed to fair and competitive compensation for its employees. We want our team members in all locations to feel valued for their unique skills, expertise, and talents and remunerated accordingly, so we can attract and retain the best and most passionate people.",
+      "experience": "1 year",
+      "qualification": "BSc",
+      "requirements": [
+        "1 year of experience in client engagement or related field",
+        "Excellent communication skills"
+      ],
+      "responsibilities": [
+        "Promote, follow up, close sales/deals, up-sell or cross-sell services and products",
+        "Collaborate with internal teams to address customer needs",
+        "Ensure service delivery meets agreed service level agreements"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-04-02",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/senior-officer-client-engagement-eha-clinics-10",
       "_source": "myjobmag"
     },
     {
@@ -4033,40 +4172,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.myjobmag.com/job/accountant-e-clinic-diagnostic",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Conversion Officer",
-      "company": "Navitas",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "n,",
-      "experience": "Location",
-      "qualification": "BSc",
-      "requirements": [
-        "BA/BSc/HND"
-      ],
-      "responsibilities": [
-        "Develop engaging, high-impact content across multiple channels to attract quality applicants and drive conversion throughout the recruitment journey",
-        "Collaborate with the WA Recruitment and International Marketing teams to design data-informed, results-driven conversion strategies aligned with regional trends",
-        "Lead and deliver interactive conversion initiatives, including telephone campaigns and live web chats, enhancing applicant engagement",
-        "Support the planning and execution of dynamic online and in-person conversion events in partnership with the WA Recruitment team",
-        "Own and manage the conversion calendar, ensuring timely, creative, and audience-focused communications",
-        "Track and analyse applicant progression across each stage to optimize conversion performance and identify improvement opportunities",
-        "Produce insightful campaign evaluation reports and present findings to inform wider recruitment strategies",
-        "Create targeted, relevant, and compelling content tailored to diverse audience segments",
-        "Provide flexible team support during peak periods, including participation in recruitment activities as needed",
-        "Build strong partnerships across the University of Plymouth (Admissions, UKVI Credibility Team, Enquiry Team) to streamline the applicant journey and maximize enrolments."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-04-02",
-      "deadline": "2026-04-23",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/conversion-officer-navitas",
       "_source": "myjobmag"
     },
     {
@@ -4913,68 +5018,6 @@
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/878057/dental-therapist-at-katsina-state-hospital-service.html",
       "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Hospital Driver",
-      "company": "Toptee Medical Centre",
-      "location": "Surulere, Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "₦100,000 - ₦150,000/month",
-      "experience": "",
-      "qualification": "Secondary School (SSCE)",
-      "requirements": [
-        "Must be able to drive Manual and Automatic cars."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-04-01",
-      "deadline": "",
-      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/hospital-driver-toptee-medical-centre-2",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Marketer",
-      "company": "AA Rescue",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "n,",
-      "experience": "",
-      "qualification": "BA/BSc/HND",
-      "requirements": [
-        "Bachelor’s degree in Marketing, Business Administration, or related field",
-        "Proven experience in marketing or a similar role",
-        "Strong communication and interpersonal skills",
-        "Creativity and ability to think strategically",
-        "Knowledge of digital marketing tools and platforms",
-        "Ability to work independently and as part of a team"
-      ],
-      "responsibilities": [
-        "Develop and implement marketing strategies and campaigns",
-        "Promote products/services through digital and offline channels",
-        "Conduct market research to identify trends and customer needs",
-        "Manage social media platforms and create engaging content",
-        "Collaborate with sales teams to achieve business goals",
-        "Monitor and analyze campaign performance",
-        "Organize promotional events and campaigns",
-        "Build and maintain strong customer relationships",
-        "Create marketing materials (flyers, ads, presentations, etc.)"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-04-01",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/marketer-aa-rescue-5",
-      "_source": "myjobmag"
     },
     {
       "job_title": "Basic Emergency Obstetrics and Newborn Care (BEmONC) Capacity Builder",
@@ -8903,6 +8946,42 @@
       "_source": "medicalworldnigeria"
     },
     {
+      "job_title": "Maternal, Perinatal and Child Death Surveillance Responses (MPCDSR) Capacity Builder",
+      "company": "Jhpiego",
+      "location": "Abuja, Ebonyi, Abakaliki",
+      "job_type": "",
+      "job_category": "Public Health",
+      "salary": "n,",
+      "experience": "5 years",
+      "qualification": "Bachelor’s degree",
+      "requirements": [
+        "Bachelor’s degree in medicine, Nursing, Public Health, or a child health–related field",
+        "Certified MPCDSR facilitator.",
+        "Minimum of 5 years of experience conducting MPCDSR trainings and capacity building.",
+        "Demonstrated ability to apply adult learning and competency-based training methodologies.",
+        "Experience collaborating with government health institutions and development partners.",
+        "Strong report-writing, communication, and data interpretation skills."
+      ],
+      "responsibilities": [
+        "Ensure standardization by aligning state stakeholders on national MPCDSR policy, tools, roles, and data flows.",
+        "Build the capacity of MPCDSR committees to conduct high-quality, no-blame reviews both at facility and community levels.",
+        "Ensure system strengthening by establishing/re-activating functional MPCDSR committees at state, LGA, and facility levels.",
+        "Conduct a 3-day training on MPCDSR at the facility level.",
+        "Conduct a 2-day training on MPCDSR at the community level.",
+        "Write a comprehensive report for both trainings."
+      ],
+      "how_to_apply": [
+        "Submit your application through the employer’s online recruitment portal.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-03-25",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Maternal-Perinatal-and-Child-Death-Surveillance-Responses-MPCDSR-Capacity-Builder-at-Jhpiego-Nigeria?pid=77591",
+      "_source": "medicalworldnigeria"
+    },
+    {
       "job_title": "Pharmacologist",
       "company": "Delta State Ministry of Health",
       "location": "Delta, Nigeria",
@@ -9979,39 +10058,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/roving-pharmacy-officer-583",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Field Pharmacist",
-      "company": "INTERSOS Nigeria",
-      "location": "Monguno and Magumeri, Borno, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Pharmacist",
-      "salary": "",
-      "experience": "2 years",
-      "qualification": "Bachelor’s Degree in Pharmacy (B.Pharm or Pharm.D)",
-      "requirements": [
-        "Registration with Pharmacy Council of Nigeria with a current License",
-        "Desirable previous experience in pharmacy for at least 2 years in similar or relevant positions",
-        "Essential computer literacy (word, excel and internet)",
-        "Commitment to INTERSOS principles",
-        "Mission language is essential",
-        "Local working language desirable"
-      ],
-      "responsibilities": [
-        "Data Collection and Analysis",
-        "Supply Management",
-        "Stock Management",
-        "Treatment Delivery"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-03-24",
-      "deadline": "2026-03-30",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/field-pharmacist-582",
       "_source": "medlocum"
     },
     {
@@ -13388,70 +13434,6 @@
       "_source": "medicalworldnigeria"
     },
     {
-      "job_title": "Territory Sales Officer - Healthcare",
-      "company": "Sovereign Quint Iddeas Limited",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "₦150,000 - ₦200,000/month",
-      "experience": "2 years",
-      "qualification": "BA/BSc/HND, OND",
-      "requirements": [
-        "BA/BSc/HND",
-        "OND degree holders in medical sciences and BSc/HND in marketing can be considered with 3 years and above sales experience in healthcare sales/marketing",
-        "Minimum of 2 years’ field sales experience preferably in Healthcare/Medical consumables and device sales",
-        "Proficiency in MS Office (basic level) and sales automation platforms",
-        "Knowledge of medical facilities procurement process"
-      ],
-      "responsibilities": [
-        "Manage existing customers and seek new business opportunities",
-        "Develop relationships with potential customers",
-        "Develop new clients and implement effective territory sales/marketing strategies"
-      ],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-03-14",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/territory-sales-officer-healthcare-lagos-sovereign-quint-iddeas-limited",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Nursing Agency Operations Officer",
-      "company": "Outsource Company",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Nurse",
-      "salary": "₦200,000 - ₦300,000/month",
-      "experience": "3 - 5 years",
-      "qualification": "BSc",
-      "requirements": [
-        "BA/BSc/HND",
-        "Experience 3 - 5 years",
-        "Intermediate proficiency level with excel"
-      ],
-      "responsibilities": [
-        "Handling invoices",
-        "Managing client relationships",
-        "Hiring and supervising carers",
-        "Deploying roster schedule for carers",
-        "Managing daily, weekly and monthly reports to management"
-      ],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-03-14",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/nursing-agency-operations-officer-outsource-company",
-      "_source": "myjobmag"
-    },
-    {
       "job_title": "Medical Sales Representative",
       "company": "Micronova Pharmaceuticals Industries Limited",
       "location": "Oregun, Lagos, Nigeria",
@@ -13686,6 +13668,39 @@
       "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/869464/medical-director-at-bergstein-hospital-syxbrij-nig.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
+      "job_title": "Infection Control Nurse",
+      "company": "Ascentech Services Limited",
+      "location": "Port Harcourt, Rivers, Nigeria",
+      "job_type": "Full-time",
+      "job_category": "Nurse",
+      "salary": "N400,000 – N700,000 per month (approximately PHP 56,000 – PHP 98,000)",
+      "experience": "3",
+      "qualification": "ond",
+      "requirements": [
+        "Registered Nurse (RN) with a valid practicing license",
+        "Minimum 3 years’ experience in infection prevention and control",
+        "Certification in Infection Control (CIC) or willingness to obtain within the first year",
+        "Strong knowledge of infection control standards, communication, teamwork, and documentation skills"
+      ],
+      "responsibilities": [
+        "Monitor and enforce infection prevention protocols across clinical and non-clinical departments.",
+        "Conduct surveillance of hospital-acquired infections and analyze trends with microbiologists.",
+        "Ensure compliance with regulatory standards and support accreditation initiatives.",
+        "Identify infection risks, implement containment measures, and investigate exposure incidents.",
+        "Maintain accurate records, prepare reports, and communicate infection risks to stakeholders.",
+        "Participate in infection control audits, research, and quality improvement initiatives."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-03-13",
+      "deadline": "2026-04-10",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/869751/infection-control-nurse-at-ascentech-services-limi.html",
       "_source": "hotnigerianjobs"
     },
     {
