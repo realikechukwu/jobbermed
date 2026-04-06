@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "extracted_at": "2026-04-05T05:22:25.030090",
+    "extracted_at": "2026-04-06T05:31:29.902470",
     "model": "gpt-4o-mini",
     "total_processed": 640,
-    "duplicates_removed": 104,
+    "duplicates_removed": 102,
     "skipped_old": 6,
     "skipped_empty": 0,
     "errors": 0,
-    "openai_calls": 111
+    "openai_calls": 104
   },
   "jobs": [
     {
@@ -1791,6 +1791,39 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Medical-Consultant-at-Katsina-State-Hospital-Services-Management-Board-KTHSMB?pid=77638",
+      "_source": "medicalworldnigeria"
+    },
+    {
+      "job_title": "Medical Officer",
+      "company": "Katsina State Hospital Services Management Board",
+      "location": "Katsina",
+      "job_type": "",
+      "job_category": "Doctor",
+      "salary": "",
+      "experience": "",
+      "qualification": "bsc",
+      "requirements": [
+        "MBBS degree from recognized institution",
+        "Full registration with Medical and Dental Council of Nigeria",
+        "Current practicing license",
+        "NYSC certificate",
+        "Computer literacy"
+      ],
+      "responsibilities": [
+        "Diagnose and treat medical conditions",
+        "Prescribe medications and treatments",
+        "Conduct medical examinations",
+        "Maintain patient records and documentation"
+      ],
+      "how_to_apply": [
+        "Submit your application through the employer’s online recruitment portal.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-04-02",
+      "deadline": "2026-04-10",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Medical-Officer-at-Katsina-State-Hospital-Services-Management-Board-KTHSMB?pid=77633",
       "_source": "medicalworldnigeria"
     },
     {
@@ -4239,6 +4272,45 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/community-technical-officer-nutrition-647",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Community Technical Officer - Nampula",
+      "company": "FHI 360",
+      "location": "Nampula, Mozambique",
+      "job_type": "Full-Time",
+      "job_category": "Public Health",
+      "salary": "",
+      "experience": "Minimum of 4 years",
+      "qualification": "Bachelor's degree in nutrition, Public Health, Nursing, Midwifery, Medicine, or a closely related health field",
+      "requirements": [
+        "Bachelor's degree in nutrition, Public Health, Nursing, Midwifery, Medicine, or a closely related health field",
+        "Minimum of 4 years of experience in nutrition",
+        "Demonstrated experience in community-based nutrition programming",
+        "Experience in supervising program staff and/or community-based workers",
+        "Familiarity with national nutrition and MNCH guidelines",
+        "Experience in designing and implementing training and guidance",
+        "Excellent oral and written communication skills in Portuguese",
+        "Knowledge of computer software programs"
+      ],
+      "responsibilities": [
+        "Support the Senior Nutrition Technical Officer to ensure quality and consistency of community-based nutrition services",
+        "Collaborate with facility-based Nutrition Technical Officers for effective referral and continuity of care",
+        "Ensure all community nutrition activities are implemented according to approved procedures",
+        "Support delivery, follow-up, and quality assurance of nutrition trainings and mentoring",
+        "Monitor sub-partner performance and provide constructive feedback",
+        "Support implementation of high-impact Priority Nutrition Interventions at community level",
+        "Support community-based nutrition education and behavior change activities",
+        "Promote community ownership and participation in nutrition activities"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-04-01",
+      "deadline": "2026-04-15",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/community-technical-officer-nampula-646",
       "_source": "medlocum"
     },
     {
