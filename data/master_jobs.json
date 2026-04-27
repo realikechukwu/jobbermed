@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "extracted_at": "2026-04-26T06:00:06.458958",
+    "extracted_at": "2026-04-27T06:17:50.718142",
     "model": "gpt-4o-mini",
-    "total_processed": 647,
-    "duplicates_removed": 134,
-    "skipped_old": 6,
+    "total_processed": 646,
+    "duplicates_removed": 133,
+    "skipped_old": 7,
     "skipped_empty": 0,
     "errors": 0,
-    "openai_calls": 140
+    "openai_calls": 134
   },
   "jobs": [
     {
@@ -9801,6 +9801,44 @@
       "_source": "hotnigerianjobs"
     },
     {
+      "job_title": "State Campaign Digital Health Officer (Kogi)",
+      "company": "Malaria Consortium",
+      "location": "Kogi, Nigeria",
+      "job_type": "remote",
+      "job_category": "Public Health",
+      "salary": "Competitive",
+      "experience": "Essential: Master’s Degree in relevant field, experience in implementing digital solutions in health systems",
+      "qualification": "Master’s Degree in relevant field (information systems, computer science or similar field)",
+      "requirements": [
+        "Experience in implementing digital solutions, preferably in the health system",
+        "Previous experience in capacity building and providing technical assistance to stakeholders",
+        "Experience in developing Android applications",
+        "Experience in system administration and hardware management",
+        "Experience in integrating information management systems",
+        "Strong knowledge working with DHIS2",
+        "Experience in coding with XML, SQL, HTML, PHP",
+        "Experience of working in Nigeria",
+        "Understanding of the Nigerian health systems context",
+        "Familiar with monitoring and evaluation of digital health interventions"
+      ],
+      "responsibilities": [
+        "Support the design and implementation of digital solutions for malaria surveillance",
+        "Provide capacity building to national and sub-national government stakeholders",
+        "Develop training materials for health stakeholders",
+        "Lead refinements to digital health platforms",
+        "Collaborate with partners for platform development and integration"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-04-14",
+      "deadline": "2026-04-28",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/882994/state-campaign-digital-health-officer-kogi-at-mala.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
       "job_title": "Experienced Medical Officer",
       "company": "a Private Specialist Hospital",
       "location": "Ukpor Nnewi LGA, Anambra, Nigeria",
@@ -17518,48 +17556,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/pharmacy-technician-bergstein-hospital-syx-brij-nigeria-limited/",
-      "_source": "jobsinnigeria"
-    },
-    {
-      "job_title": "Graduate Trainee (Analytical Chemist)",
-      "company": "The Candel FZE",
-      "location": "Ibeju-Lekki, Lagos, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Other",
-      "salary": "n,",
-      "experience": "",
-      "qualification": "bsc",
-      "requirements": [
-        "A minimum of B.Sc. Second Class Upper in Analytical Chemistry or Industrial Chemistry from any of the Nigerian Universities.",
-        "Must have analytical skill and mindset",
-        "Must be familiar with and able to handle basic laboratory equipment/apparatus",
-        "Must have a good knowledge of Quality Assurance (ISO) and familiar with regulatory policies, standards/ specifications (NAFDAC, SON)",
-        "Must be able to work effectively with minimal supervision and under pressure in order to release results on time",
-        "Good PC skills and Knowledge of Microsoft packages essential for effective report writing",
-        "Must be flexible in approach to work and shift patterns."
-      ],
-      "responsibilities": [
-        "Follow and ensure strict safety procedures and standards in the laboratory.",
-        "Sample incoming raw materials and perform laboratory tests on the materials to ensure it meets specification before receipt into warehouse",
-        "Prepare reagents in line with the SOP and ensure the reagents are well labelled",
-        "Carry out physico-chemical analysis on in-process and finish products in line with defined standard operating procedure and ensure results are well documented in the QA records",
-        "Ensure Laboratory equipment’s, glass wares and work bench are well maintained",
-        "Verify/calibrate/document laboratory equipment and ensure optimal performance",
-        "Ensure routine auditing of laboratory stock chemicals and glass ware and submit report to QA Manager",
-        "Ensure the laboratory meets good laboratory practice(GLP) standards",
-        "Track and Monitor performance levels in all operations on Quality, Process and Equipment through collation, analysis and storage of relevant data and dissemination to the QA manager",
-        "Prepare weekly and monthly quality reports and submit to the QA manager",
-        "Comply and enforce PPE usage, issuance and replacement"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-02-25",
-      "deadline": "2026-03-30",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://jobsinnigeria.careers/jobs/graduate-trainee-analytical-chemist-candel-fze-3/",
       "_source": "jobsinnigeria"
     }
   ]
