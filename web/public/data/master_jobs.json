@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "extracted_at": "2026-05-03T06:22:27.854223",
+    "extracted_at": "2026-05-04T06:25:30.746598",
     "model": "gpt-4o-mini",
-    "total_processed": 637,
+    "total_processed": 636,
     "duplicates_removed": 131,
-    "skipped_old": 8,
+    "skipped_old": 9,
     "skipped_empty": 0,
     "errors": 0,
-    "openai_calls": 132
+    "openai_calls": 131
   },
   "jobs": [
     {
@@ -17439,38 +17439,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/radiographer-dukes-neurosurgery-specialist-hospital/",
-      "_source": "jobsinnigeria"
-    },
-    {
-      "job_title": "Medical Laboratory Scientist",
-      "company": "Euracare Multi-Specialist Hospital",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Medical Laboratory Scientist",
-      "salary": "N300,000 – N400,000 / Month",
-      "experience": "2+ years of post nysc experience in a medical laboratory",
-      "qualification": "bsc",
-      "requirements": [
-        "Bachelor’s Degree in Medical Laboratory Science or related field",
-        "Registration with relevant professional bodies (e.g., MLSCN)",
-        "Strong analytical and communication skills."
-      ],
-      "responsibilities": [
-        "Conduct laboratory tests and procedures (e.g., hematology, chemistry, microbiology)",
-        "Analyze and interpret test results",
-        "Maintain laboratory equipment and ensure quality control",
-        "Collaborate with healthcare professionals to provide accurate diagnoses",
-        "Maintain accurate records and reports"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-03-04",
-      "deadline": "2026-03-09",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://jobsinnigeria.careers/jobs/medical-laboratory-scentist-euracare-multi-specialist-hospital/",
       "_source": "jobsinnigeria"
     }
   ]
