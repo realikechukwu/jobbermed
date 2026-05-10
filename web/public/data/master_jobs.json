@@ -1,15 +1,180 @@
 {
   "metadata": {
-    "extracted_at": "2026-05-09T06:18:57.341007",
+    "extracted_at": "2026-05-10T06:26:27.160682",
     "model": "gpt-4o-mini",
-    "total_processed": 653,
-    "duplicates_removed": 134,
-    "skipped_old": 0,
+    "total_processed": 650,
+    "duplicates_removed": 129,
+    "skipped_old": 2,
     "skipped_empty": 0,
     "errors": 0,
-    "openai_calls": 172
+    "openai_calls": 138
   },
   "jobs": [
+    {
+      "job_title": "Optometrist",
+      "company": "MeCure Healthcare Limited (MHL)",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Allied Health",
+      "salary": "",
+      "experience": "",
+      "qualification": "BSc",
+      "requirements": [
+        "Doctor of Optometry (OD) degree from an accredited optometry school",
+        "Current state license to practice optometry",
+        "Comprehensive knowledge of ocular anatomy, physiology, and pathology",
+        "Experience in conducting eye examinations and diagnosing eye conditions",
+        "Familiarity with diagnostic tools and equipment used in optometry"
+      ],
+      "responsibilities": [
+        "Conduct comprehensive eye examinations to assess visual acuity and detect any eye health issues.",
+        "Prescribe eyeglasses, contact lenses, and other visual aids as needed to correct vision.",
+        "Diagnose and treat eye conditions such as glaucoma, cataracts, and macular degeneration.",
+        "Provide pre- and post-operative care for patients undergoing eye surgeries, such as LASIK or cataract surgery.",
+        "Educate patients about proper eye care practices, including the use of eyewear and contact lenses.",
+        "Collaborate with other healthcare professionals, such as ophthalmologists and opticians, to ensure coordinated patient care.",
+        "Stay updated on the latest advancements in optometry and incorporate new technologies and techniques into practice."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-05-09",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/optometrist-mecure-healthcare-limited-mhl-3",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Opthalmologist",
+      "company": "MeCure Healthcare Limited (MHL)",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Doctor",
+      "salary": "n,",
+      "experience": "",
+      "qualification": "BSc",
+      "requirements": [
+        "Bachelor of Medicine and Bachelor of Surgery",
+        "Proven experience",
+        "Valid license to practice",
+        "Great organizational skills",
+        "Excellent verbal and written communication skills",
+        "Comprehensive understanding of human anatomy, physiology, pathology, and pharmacology, with specialized knowledge in ocular diseases, treatment protocols, and surgical procedures",
+        "Proficient in determining appropriate treatment plans, including dosage requirements for ophthalmic medications and safe administration techniques",
+        "Familiar with diagnostic tools, surgical instruments, and ophthalmic imaging technologies"
+      ],
+      "responsibilities": [
+        "Conducting comprehensive eye examinations.",
+        "Prescribing medications to treat infections, inflammation, allergies and chronic eye diseases.",
+        "Managing eye conditions linked to systemic diseases like diabetes or hypertension.",
+        "Performing surgeries such as cataract removal, retinal repairs and eyelid surgery.",
+        "Treating traumatic eye injuries surgically.",
+        "Prescribing and adjusting glasses or contact lenses.",
+        "Explaining diagnoses, treatment options and aftercare."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-05-09",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/opthalmologist-mecure-healthcare-limited-mhl-1",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Content Creator / Digital Marketing Executive",
+      "company": "Zoom 36 Dental Clinic",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "n,",
+      "experience": "1 - 5 years",
+      "qualification": "OND",
+      "requirements": [
+        "OND",
+        "1 - 5 years"
+      ],
+      "responsibilities": [
+        "Develop and execute comprehensive content strategies, including crafting, writing, and editing blog posts, articles, social media updates, and marketing copy.",
+        "Create engaging visual content, including videos, infographics, and graphics for digital platforms.",
+        "Manage and grow social media channels (e.g., LinkedIn, Instagram, Facebook), ensuring consistent brand voice and actively engaging with the online community.",
+        "Plan and execute digital marketing campaigns, including email marketing and search engine marketing. Apply SEO best practices to increase organic traffic.",
+        "Monitor and analyze content performance metrics (engagement, web traffic, conversions) and adjust strategies based on data.",
+        "Stay updated with industry trends to innovate content, ensuring high brand visibility."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-05-09",
+      "deadline": "2026-05-19",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/content-creator-digital-marketing-executive-zoom-36-dental-clinic",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Front Desk Officer",
+      "company": "Zoom 36 Dental Clinic",
+      "location": "Abuja, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Healthcare Management",
+      "salary": "₦150,000 - ₦200,000/month",
+      "experience": "0 - 3 years",
+      "qualification": "OND",
+      "requirements": [
+        "OND",
+        "0 - 3 years experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Email the address shown on the original listing.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-05-09",
+      "deadline": "2026-05-19",
+      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/front-desk-officer-zoom-36-dental-clinic-3",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Facility Officer",
+      "company": "Lily Hospitals Limited",
+      "location": "Benin, Edo, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "n,",
+      "experience": "Location",
+      "qualification": "BSc",
+      "requirements": [
+        "BA/BSc/HND",
+        "OND"
+      ],
+      "responsibilities": [
+        "Oversee the maintenance and repair of buildings, equipment, and utilities",
+        "Ensure compliance with health and safety regulations",
+        "Conduct routine inspections and implement preventive maintenance plans",
+        "Supervise vendors, contractors, and third-party service providers",
+        "Manage facility-related budgets and control costs",
+        "Coordinate cleaning, security, and waste management services",
+        "Respond to facility issues and emergencies in a timely manner",
+        "Maintain accurate records of maintenance and service activities",
+        "Ensure proper functioning of electrical, plumbing, and HVAC systems."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-05-09",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/facility-officer-lily-hospitals-limited-4",
+      "_source": "myjobmag"
+    },
     {
       "job_title": "SBC Consultant, Social and Community Listening",
       "company": "UNICEF",
@@ -1684,6 +1849,38 @@
       "_source": "hotnigerianjobs"
     },
     {
+      "job_title": "Junior Clinical Services Consultant",
+      "company": "Indigenous Non-Profit and Non-Governmental Organization",
+      "location": "Abuja (FCT), Nigeria",
+      "job_type": "Full-time",
+      "job_category": "Public Health",
+      "salary": "n,",
+      "experience": "2",
+      "qualification": "Degree in Medicine, Public Health or a related field; or a Master’s degree or equivalent in public health or related fields",
+      "requirements": [
+        "Degree in Medicine, Public Health, or a related field; or a Master’s degree or equivalent in public health or related fields",
+        "At least 2 years’ post NYSC experience in developing country health care programs or program support function",
+        "Knowledge of the policies, regulations, reporting formats, and cultures of principal donors",
+        "Extensive clinical experience in care and treatment of HIV/AIDS patients",
+        "Demonstrated experience in non-profit sector in a program management role",
+        "Strong supervisory and management skills",
+        "Analytical Thinking & Conceptualization",
+        "Ability to handle confidential information with discretion and make reasoned judgments in a timely fashion",
+        "Experience of dealing with difficult and sensitive situations in a diplomatic and professional manner."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Submit your application through the employer’s online recruitment portal.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-05-07",
+      "deadline": "",
+      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/893647/junior-clinical-services-consultant-at-an-indigeno.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
       "job_title": "Senior Clinical Services Consultant",
       "company": "an Indigenous Non-Profit and Non-Governmental Organization",
       "location": "Abuja (FCT), Nigeria",
@@ -1951,6 +2148,40 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.myjobmag.com/job/sales-canvasser-vastovers-group-11",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Health Informatician (eHealth related degree required)",
+      "company": "eHealth4everyone",
+      "location": "Abuja, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "n,",
+      "experience": "7 years",
+      "qualification": "degree",
+      "requirements": [
+        "BA/BSc/HND",
+        "MBA/MSc/MA"
+      ],
+      "responsibilities": [
+        "Interviewing healthcare providers and patients, observing healthcare service delivery procedures, and collecting electronic healthcare data.",
+        "Analyzing and interpreting data to identify areas that need improvement.",
+        "Developing health information systems that support the collection, sharing, standardization, and integration of healthcare data.",
+        "Collaborating on improving standards of care, policies, and procedures.",
+        "Training healthcare staff on health information system deployment and management.",
+        "Providing technical support, optimizing network security, and maintaining databases.",
+        "Ensuring compliance with healthcare information management regulations.",
+        "Documenting processes, maintaining records, and preparing reports.",
+        "Keeping abreast of advancements in the field of health informatics."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-05-07",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/health-informatician-ehealth-related-degree-required-ehealth4everyone",
       "_source": "myjobmag"
     },
     {
@@ -2744,137 +2975,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.myjobmag.com/job/mechanical-technician-orange-drugs",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Employee Relations and Safeguarding Lead",
-      "company": "Global Alliance for Improved Nutrition (GAIN)",
-      "location": "Abuja, Nigeria",
-      "job_type": "Contract",
-      "job_category": "Other",
-      "salary": "n,",
-      "experience": "Location",
-      "qualification": "BSc",
-      "requirements": [
-        "BA/BSc/HND"
-      ],
-      "responsibilities": [
-        "Lead on the development and implementation of employee relations strategies, ensuring alignment with organisational values and goals",
-        "Develop and embed the strategic organisational approach to managing employee relations cases across the organisation",
-        "Partner with Learning and Development colleagues to develop high standards of people management and leadership capability across the organisation, helping managers have the confidence and skills to manage teams and individuals effectively",
-        "Develop and deliver training programs on employee relations, safeguarding, workplace harassment, diversity and inclusion, etc.",
-        "Lead the design, implementation, and monitoring of GAIN’s safeguarding policies and practices to ensure high standards and continuous improvements across the organization",
-        "Oversee and review systems and procedures for identifying, receiving, reporting, investigating and responding to safeguarding issues, concerns and complaints are in-place and operating effectively",
-        "Build and maintain a safeguarding community of practice and support key stakeholders across GAIN to understand and implement policy",
-        "Review, update, and enforce HR & Safeguarding policies to ensure alignment with legal requirements and organizational values.",
-        "Stay updated on labour laws and safeguarding regulations in all countries where GAIN operates, advising the organisation on necessary adjustments."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-05-07",
-      "deadline": "2026-05-14",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/employee-relations-and-safeguarding-lead-global-alliance-for-improved-nutrition-gain-1",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Python Web (Django) Developer",
-      "company": "eHealth4everyone",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "",
-      "experience": "7",
-      "qualification": "BSc",
-      "requirements": [
-        "Degree in Computer Science, Engineering, or any related subject.",
-        "Minimum of 7 years experience using Django and Flask frameworks."
-      ],
-      "responsibilities": [
-        "Write effective, scalable code",
-        "Develop backend components to improve responsiveness and overall performance",
-        "Integrate user-facing elements into applications",
-        "Test and debug programs",
-        "Improve functionality of existing systems",
-        "Implement security and data protection solutions",
-        "Assess and prioritize feature requests",
-        "Coordinate with internal teams to understand user requirements and provide technical solutions"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-05-07",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/python-web-django-developer-ehealth4everyone-25",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Al-UX Designer",
-      "company": "eHealth4everyone",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "n,",
-      "experience": "7 years",
-      "qualification": "BSc",
-      "requirements": [
-        "BA/BSc/HND",
-        "7 years experience"
-      ],
-      "responsibilities": [
-        "Collaborate with AI experts, data scientists, and product managers to understand project goals and user requirements.",
-        "Develop a deep understanding of AI models, algorithms, and data structures to inform UX decisions.",
-        "Conceptualize and illustrate AI-driven user experiences through storyboards, process flows, and interactive prototypes.",
-        "Conduct usability testing and gather feedback to iterate on AI-UX designs and improve overall user satisfaction.",
-        "Keep abreast of the latest developments in artificial intelligence, machine learning, and data-driven design to bring cutting-edge solutions to our healthcare products.",
-        "Collaborate closely with AI engineers, data scientists, developers, product managers, and healthcare experts to understand complex AI functionalities and translate them into user-friendly and intuitive design solutions.",
-        "Ensure compliance with design standards, accessibility guidelines, and ethical considerations in AI-UX design.",
-        "Present design concepts, prototypes, and rationale to internal teams and stakeholders, incorporating feedback into design iterations.",
-        "Continuously analyze user data and behaviour to refine and enhance the AI-UX design over time.",
-        "Experiment with emerging AI technologies and tools to explore opportunities for enhancing the user experience."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-05-07",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/al-ux-designer-ehealth4everyone-8",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Consultant (Program Sustainability Assessment, JSR Framework Update, and Self-Reliance Roadmap for CODSAiN)",
-      "company": "Association for Reproductive and Family Health (ARFH)",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "n,",
-      "experience": "10 - 15 years",
-      "qualification": "BA/BSc/HND",
-      "requirements": [
-        "BA/BSc/HND",
-        "10 - 15 years experience"
-      ],
-      "responsibilities": [
-        "Analysis of CODSAiN System Performance and Transition Readiness",
-        "Comparative Learning from RASUDiN Transitioned States",
-        "Cross-Programme Learning and Integration (DISC)",
-        "Review and Strengthen the JSR Framework and Scorecard",
-        "Sustainability Strategy and Transition Roadmap Development"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-05-07",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/consultant-program-sustainability-assessment-jsr-framework-update-and-self-reliance-roadmap-for-codsain-association-for-reproductive-and-family-health",
       "_source": "myjobmag"
     },
     {
@@ -4188,68 +4288,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.myjobmag.com/job/program-manager-i-nutrition-catholic-relief-services-1",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "LGA Facilitator, Nutrition (Re-Advertized)",
-      "company": "Nina Jojer Limited",
-      "location": "Adamawa, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Public Health",
-      "salary": "n,",
-      "experience": "3 years",
-      "qualification": "BSc",
-      "requirements": [
-        "BA/BSc/HND",
-        "3 years experience"
-      ],
-      "responsibilities": [
-        "Provide technical support to the assigned state or LGA and facilitate the delivery and monitoring of nutrition programmes.",
-        "Support to programme development and planning at LGA and state levels.",
-        "Support states and LGAs in community mobilization, implementation and reporting on activities.",
-        "Facilitate the implementation of planned activities and programmes in line with approved work plans."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-05-06",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/lga-facilitator-nutrition-re-advertized-adamawa-nina-jojer-limited",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Hospital Social Worker",
-      "company": "TransitEdge Solutions Limited",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "n,",
-      "experience": "Location",
-      "qualification": "BSc",
-      "requirements": [
-        "Excellent communication skills, including ability to explain medical concepts to patients in understandable language",
-        "Compassionate demeanor with patients of all ages and conditions",
-        "Strong organizational and time-management skills"
-      ],
-      "responsibilities": [
-        "Assess each patient’s unique condition, combining data from medical diagnoses and personal interviews",
-        "Develop comprehensive plans to help patients adjust to medical diagnoses and transition from the health care system to normal life",
-        "Provide necessary support for each patient according to health status, personal strengths and weaknesses, emotional state and additional factors",
-        "Research local support groups and other resources to determine which ones are right for individual patients",
-        "Evaluate services and resources provided to patients to determine effectiveness",
-        "Follow up with patients throughout diagnosis, treatment and recovery to determine current state of mental and emotional health",
-        "Maintain current knowledge of local resources and relevant medical research to provide best possible recommendation to patients."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-05-06",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/hospital-social-worker-transitedge-solutions-limited",
       "_source": "myjobmag"
     },
     {
@@ -9121,6 +9159,48 @@
       "_source": "medicalworldnigeria"
     },
     {
+      "job_title": "Physician",
+      "company": "AIDS Healthcare Foundation Nigeria",
+      "location": "Wellness Clinics, Makurdi, Benue",
+      "job_type": "Full-time",
+      "job_category": "Doctor",
+      "salary": "n,",
+      "experience": "5",
+      "qualification": "bsc",
+      "requirements": [],
+      "responsibilities": [
+        "Provides clinical direction and support and general management oversight",
+        "Ensures that all patients access various diagnostic tests",
+        "Analyses and evaluates medical procedures and diagnostic tests that promote good clinical outcomes",
+        "Responsible for maintaining delivery of high-quality medical care and efficiency of all services provided",
+        "Participates in Quality Improvement meetings and medical directors’ meetings",
+        "Ensures and monitors that all clinic staff participate in scheduled staff and recommended CPD activities",
+        "Participates in clinical assessment and other related activities",
+        "Provides clinical services to clients and patients in AHF Supported Clinics",
+        "Be active in the development of best practice",
+        "Implements AHF clinical strategies and SOPs",
+        "Mentors and trains clinical teams",
+        "Ensures accurate and timely documentation of all services provided",
+        "Ensures the timely input of data onto the Electronic Medical Records (EMR)",
+        "Implements operational research protocols",
+        "General day to day support to the clinical team and all roving team members",
+        "Participate in team de-briefing session’s monthly meetings",
+        "Any other duties assigned by supervisor",
+        "Provides guidance, supervisory support and general management to the teams",
+        "Ensures that the clinical staff have all the information and clinical support that they need"
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites).",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-04-29",
+      "deadline": "12th May, 2026; not later than 11:30pm",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Physician-at-AIDS-Healthcare-Foundation-Nigeria-Foundation-for-AIDS-Care-Prevention-and-Advocacy-In-Nigeria?pid=77794",
+      "_source": "medicalworldnigeria"
+    },
+    {
       "job_title": "Operating Theatre Nurse",
       "company": "Alan & Grant",
       "location": "Port Harcourt, Rivers",
@@ -12877,6 +12957,36 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/occupational-therapist-royal-resource-management/",
       "_source": "jobsinnigeria"
+    },
+    {
+      "job_title": "Registered Nurse",
+      "company": "Attention to Detail.",
+      "location": "Kano",
+      "job_type": "Full Time",
+      "job_category": "Nurse",
+      "salary": "NGN 181,000 monthly",
+      "experience": "3",
+      "qualification": "bsc",
+      "requirements": [],
+      "responsibilities": [
+        "Perform patient assessment using appropriate, problem-focused, and age-specific assessment techniques.",
+        "Provide emotional support and measures to alleviate fear and anxiety.",
+        "Assess patient and family readiness and identify learning needs.",
+        "Participate in voluntary community health activities to promote, maintain and restore health and prevent diseases.",
+        "Administer medications, monitor desirable and undesirable effects, and intervene appropriately.",
+        "Travel to patients’ homes to deliver care as required.",
+        "Manage patients with infectious diseases when applicable."
+      ],
+      "how_to_apply": [
+        "Submit your application through the employer’s online recruitment portal.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-04-16",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Registered-Nurse-at-EHA-Clinics?pid=77735",
+      "_source": "medicalworldnigeria"
     },
     {
       "job_title": "Hospital Healthcare - Ward Assistant",
@@ -18043,39 +18153,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/medical-records-officers-health-information-officers-standard-specialist-hospital/",
-      "_source": "jobsinnigeria"
-    },
-    {
-      "job_title": "Care Assistant / Support Worker",
-      "company": "Catilas Resources Limited",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Other",
-      "salary": "",
-      "experience": "1–2 years’ experience in a similar care or support role (preferred but not essential)",
-      "qualification": "bsc",
-      "requirements": [
-        "Basic Care Training and certifications such as CPR & First Aid, Safeguarding Awareness are an advantage.",
-        "Compassionate, empathetic, and committed to providing quality care.",
-        "Good communication and interpersonal skills.",
-        "Reliable, patient, and able to work independently with minimal supervision."
-      ],
-      "responsibilities": [
-        "Assist clients with personal care, including bathing, dressing, mobility, and grooming.",
-        "Prepare meals and provide support with feeding when necessary.",
-        "Remind and support clients in taking medications as outlined in their care plans.",
-        "Provide companionship, emotional support, and promote independence.",
-        "Maintain accurate daily care records and report any concerns to the Senior Carer / Manager."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-03-10",
-      "deadline": "2026-03-13",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://jobsinnigeria.careers/jobs/care-assistant-support-worker-catilas-resources-limited/",
       "_source": "jobsinnigeria"
     }
   ]
