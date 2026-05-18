@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "extracted_at": "2026-05-17T06:34:47.689806",
+    "extracted_at": "2026-05-18T07:03:22.240563",
     "model": "gpt-4o-mini",
-    "total_processed": 656,
-    "duplicates_removed": 123,
-    "skipped_old": 0,
+    "total_processed": 655,
+    "duplicates_removed": 122,
+    "skipped_old": 1,
     "skipped_empty": 0,
     "errors": 0,
-    "openai_calls": 130
+    "openai_calls": 123
   },
   "jobs": [
     {
@@ -17937,6 +17937,42 @@
       "_source": "hotnigerianjobs"
     },
     {
+      "job_title": "Basic Emergency Obstetrics and Newborn Care (BEmONC) Capacity Builders",
+      "company": "Jhpiego Nigeria",
+      "location": "Birnin Kebbi, Kebbi, Nigeria",
+      "job_type": "Temporary",
+      "job_category": "Doctor",
+      "salary": "n,",
+      "experience": "5",
+      "qualification": "rn",
+      "requirements": [
+        "Must be a practicing Medical Doctor, or registered nurse and/or registered midwife in one of the General Hospitals where Comprehensive Emergency Obstetrics and Newborn Care (CEmONC) training was recently conducted in Kebbi State.",
+        "Evidence of up-to-date annual practicing license issued by either the Medical and Dental Council of Nigeria (for doctors) or the Nursing and Midwifery Council of Nigeria (for Nurses and/or Midwives).",
+        "Acquired at least 5 years post-MBBS, or post-nursing and/or midwifery bedside clinical practicing experience in a secondary health facility in Kebbi State.",
+        "Evidence of successful completion of an onsite hands-on competency-based comprehensive emergency obstetrics and newborn care training (or refresher training) within the last 12 months.",
+        "Evidence of strong clinical facilitation, mentoring or coaching skills.",
+        "Evidence of strong analytical and communication skills."
+      ],
+      "responsibilities": [
+        "Participate in a 5-day skills standardization and pre-training planning workshop to be organized by Jhpiego.",
+        "Conduct an advocacy visit to the SPHCDA prior to the commencement of the training and participate in a post-training debrief of stakeholders.",
+        "Conduct a 7-day on-site capacity building of an average of 6 healthcare workers at the PHC.",
+        "Conduct a 4-day follow-up mentoring of the trained healthcare workers.",
+        "Conduct pre- and post-test assessments for each of the modules of the training package.",
+        "Submit a comprehensive report at the end of the training and at the end of the mentoring."
+      ],
+      "how_to_apply": [
+        "Submit your application through the employer’s online recruitment portal.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-03-31",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/877029/basic-emergency-obstetrics-and-newborn-care-bemonc.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
       "job_title": "Psychologist",
       "company": "Medecins Sans Frontieres (MSF)",
       "location": "Awka, Anambra, Nigeria",
@@ -18905,50 +18941,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/registered-nurse-midwife-abuja-clinics-2/",
-      "_source": "jobsinnigeria"
-    },
-    {
-      "job_title": "Senior Doctor / Senior Registrar (Family Physician)",
-      "company": "Standard Specialist Hospital",
-      "location": "Tarauni, Kano, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Doctor",
-      "salary": "",
-      "experience": "5-7 years",
-      "qualification": "bsc",
-      "requirements": [
-        "Medical Degree (MBBS, MBChB or its equivalent) from a recognised Institution.",
-        "NYSC Discharge or Certificate of Exemption.",
-        "Completion of Residency program",
-        "Pass in the Primary Fellowship Examination of the National Postgraduate Medical College of Nigeria (NPMCN) or its equivalent in the relevant specialty within the past 4 years. (For Nigerians Only).",
-        "Valid medical license and registration",
-        "Membership in relevant medical associations, such as the Society of Family Physicians of Nigeria (SOFPON) or its equivalent."
-      ],
-      "responsibilities": [
-        "Provide comprehensive medical assessments, diagnosis, and treatment for a variety of acute and chronic conditions.",
-        "Develop individualized care plans that incorporate preventive and wellness strategies.",
-        "Perform physical examinations, order diagnostic tests, and interpret results for accurate diagnosis and treatment.",
-        "Coordinate patient care with specialists and other healthcare professionals to ensure holistic care.",
-        "Maintain up-to-date and accurate patient records in compliance with medical standards.",
-        "Rapidly evaluate patients to determine severity of condition to prioritize care, allocate resources, and ensure timely interventions.",
-        "Perform life-saving procedures (e.g., CPR, intubation) to stabilize critically ill patients and prevent further deterioration.",
-        "Order and interpret diagnostic tests (e.g., labs, imaging) to quickly identify underlying conditions and guide treatment.",
-        "Manage shock, trauma, or medical emergencies to restore vital functions, prevent organ failure, and optimize patient outcomes.",
-        "Collaborate with emergency teams, provide clear handover to ensure seamless transitions, prevent errors, and maintain continuity of care.",
-        "Guide junior team members in interpreting lab results, imaging, and other diagnostic tools.",
-        "Ensure compliance with the standards and regulations set by relevant authorities.",
-        "Participate in quality assurance programs and clinical audits to maintain high standards of care.",
-        "Educate patients and their families about their conditions, treatment options, potential side effects, and preventive care."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-03-18",
-      "deadline": "2026-03-31",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://jobsinnigeria.careers/jobs/senior-doctor-senior-registrar-family-physician-standard-specialist-hospital/",
       "_source": "jobsinnigeria"
     }
   ]
