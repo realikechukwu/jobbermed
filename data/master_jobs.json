@@ -1,15 +1,275 @@
 {
   "metadata": {
-    "extracted_at": "2026-05-23T06:30:47.306098",
+    "extracted_at": "2026-05-24T06:50:15.194139",
     "model": "gpt-4o-mini",
-    "total_processed": 642,
-    "duplicates_removed": 122,
-    "skipped_old": 0,
+    "total_processed": 636,
+    "duplicates_removed": 120,
+    "skipped_old": 2,
     "skipped_empty": 0,
     "errors": 0,
-    "openai_calls": 172
+    "openai_calls": 128
   },
   "jobs": [
+    {
+      "job_title": "Nephrology Nurse clinician",
+      "company": "Molly Specialist Hospital",
+      "location": "Ibadan, Oyo State, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Nurse",
+      "salary": "NGN450,000 / monthly",
+      "experience": "",
+      "qualification": "",
+      "requirements": [
+        "Registered Nurse (RN) license",
+        "Certification or specialization in nephrology nursing"
+      ],
+      "responsibilities": [
+        "Prepare patients and equipment for hemodialysis and peritoneal dialysis",
+        "Monitor patients during dialysis for adverse reactions, vital signs, and fluid balance",
+        "Administer prescribed medications and IV therapies related to renal care",
+        "Assess and care for vascular access sites: AV fistulas, grafts, catheters"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-05-23",
+      "deadline": "2026-06-16",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/nephrology-nurse-clinician-copy-1008",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Radiographer (Gwagwalada)",
+      "company": "Crystal Thorpe",
+      "location": "Gwagwalada, Abuja, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Allied Health",
+      "salary": "₦200,000 - ₦300,000/month",
+      "experience": "2 years",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "Degree in Radiography from a recognized institution",
+        "At least 2 years post internship experience",
+        "Versatile in the use of conventional x-ray, CT scan, ultrasound and ECG",
+        "Current practicing license",
+        "Good interpersonal skills",
+        "Ability to work within a multi-disciplinary team",
+        "Ability to work without supervision"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Email the address shown on the original listing.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-05-23",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/radiographer-gwagwalada-crystal-thorpe",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Medical Officer",
+      "company": "Rayfield Medical Services Ltd",
+      "location": "Plateau, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Doctor",
+      "salary": "is competitive and commensurate with qualifications and experience.",
+      "experience": "2 years",
+      "qualification": "ond",
+      "requirements": [
+        "MBBS or equivalent qualification",
+        "Current MDCN license",
+        "Minimum of 2 years post-NYSC clinical experience",
+        "Strong clinical, communication, decision-making, and teamwork skills",
+        "Proficiency in computer applications is essential"
+      ],
+      "responsibilities": [
+        "Provide comprehensive medical care including patient assessment, diagnosis, treatment, monitoring, documentation, emergency response, and collaboration with multidisciplinary teams to ensure quality healthcare delivery."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-05-23",
+      "deadline": "2026-06-05",
+      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/medical-officer-rayfield-medical-services-ltd",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Radiographer",
+      "company": "Rayfield Medical Services Ltd",
+      "location": "Plateau, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Allied Health",
+      "salary": "is competitive and commensurate with qualifications and experience.",
+      "experience": "2 years",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "Degree in Radiography",
+        "Current professional license",
+        "Minimum of 2 years post-NYSC clinical experience",
+        "Strong technical, communication, and patient care skills",
+        "Proficiency in computer applications is essential"
+      ],
+      "responsibilities": [
+        "Conduct diagnostic imaging procedures",
+        "Ensure patient safety and comfort during examinations",
+        "Operate radiographic equipment",
+        "Maintain imaging records",
+        "Collaborate with clinicians for accurate diagnosis and patient management."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-05-23",
+      "deadline": "2026-06-05",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/radiographer-rayfield-medical-services-ltd",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Medical Laboratory Scientist",
+      "company": "ExCare Services Limited",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Medical Laboratory Scientist",
+      "salary": "N150,000 - N250,000 monthly",
+      "experience": "1 - 3 years",
+      "qualification": "BSc",
+      "requirements": [
+        "Bachelor’s Degree in Medical Laboratory Science (BMLS)",
+        "Registration and a valid practicing license with the Medical Laboratory Science Council of Nigeria",
+        "Minimum of one year of experience in a similar role (NYSC are encouraged to apply)",
+        "Strong documentation, quality management, and laboratory data management skills",
+        "Attention to detail, accountability, and the ability to work effectively in a team."
+      ],
+      "responsibilities": [
+        "Perform routine and specialized laboratory tests on blood, tissues, and body fluids using standard procedures",
+        "Operate, calibrate, and maintain laboratory equipment while monitoring quality control measures",
+        "Ensure proper specimen handling, documentation, and reporting of test results",
+        "Maintain a sterile laboratory environment and comply with safety, quality, and regulatory standards",
+        "Support blood grouping, compatibility testing, and identification of infectious agents",
+        "Manage laboratory inventory, prepare routine reports, and maintain confidentiality of patient information"
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-05-23",
+      "deadline": "2026-08-10",
+      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/medical-laboratory-scientist-excare-services-limited-3",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Spa Trainee",
+      "company": "Organique Spa",
+      "location": "Lagos, Nigeria",
+      "job_type": "Contract",
+      "job_category": "Other",
+      "salary": "+ tips + commission on home service clients",
+      "experience": "None",
+      "qualification": "OND",
+      "requirements": [
+        "First School Leaving Certificate",
+        "OND",
+        "Secondary School (SSCE)"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Email the address shown on the original listing.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-05-23",
+      "deadline": "2026-07-31",
+      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/spa-trainee-organique-spa",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Front Desk / Receptionist",
+      "company": "Orofacial Dental Practice",
+      "location": "Abuja, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "",
+      "experience": "2 years",
+      "qualification": "BSc",
+      "requirements": [
+        "Good communication and interpersonal skills.",
+        "Basic computer and email proficiency.",
+        "Ability to multitask and stay organized.",
+        "Professional appearance and attitude.",
+        "Previous receptionist or customer service experience is an advantage."
+      ],
+      "responsibilities": [
+        "Welcome and attend to patients and visitors professionally.",
+        "Schedule and confirm patient appointments.",
+        "Respond to emails, messages, and patient inquiries promptly.",
+        "Process and send HMO approval requests for patients.",
+        "Prepare and manage patient billing and payments.",
+        "Receive and direct phone calls appropriately.",
+        "Maintain cleanliness and organization of the reception area.",
+        "Ensure proper communication between patients and clinic staff.",
+        "Handle administrative tasks as assigned."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-05-23",
+      "deadline": "2026-06-04",
+      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/front-desk-receptionist-orofacial-dental-practice",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Sales Executive",
+      "company": "ISN Medical",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "n,",
+      "experience": "2 years",
+      "qualification": "BSc",
+      "requirements": [
+        "BA/BSc/HND",
+        "Minimum of 2+ years sales experience (pharmaceutical / diagnostics / medical equipment preferred)",
+        "Strong sales, negotiation, and communication skills",
+        "Result-oriented, self-driven, and comfortable with field work",
+        "Proven ability to meet or exceed sales targets",
+        "CRM and Microsoft Office proficiency",
+        "Valid driver’s license and willingness to travel"
+      ],
+      "responsibilities": [
+        "Achieve sales targets and grow market share",
+        "Identify and onboard new distributors and retail partners",
+        "Manage distributors & retail networks for product availability and visibility",
+        "Execute territory sales plans and promotions",
+        "Build strong relationships with key accounts and trade partners",
+        "Conduct consumer healthcare product presentations and trainings",
+        "Support order processing, delivery follow-up, and payment collection",
+        "Monitor market trends and competitor activities"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-05-23",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/sales-executive-isn-medical-2",
+      "_source": "myjobmag"
+    },
     {
       "job_title": "In-House Medical Sales Representative",
       "company": "Tyonex Nigeria Limited",
@@ -490,6 +750,45 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Health-Officer-at-the-International-Rescue-Committee-IRC?pid=77917",
+      "_source": "medicalworldnigeria"
+    },
+    {
+      "job_title": "Medical Doctor (National)",
+      "company": "International Medical Corps (IMC)",
+      "location": "Kano",
+      "job_type": "volunteer",
+      "job_category": "Doctor",
+      "salary": "n,",
+      "experience": "2+ years of relevant clinical work, post graduate medical experience preferred in low-resource settings",
+      "qualification": "BSc",
+      "requirements": [
+        "Medical Degree with a valid license to practice",
+        "Board certified or equivalent",
+        "Excellent organizational skills",
+        "Excellent communication skills both oral and written",
+        "Excellent self-motivation skills",
+        "Ability to exercise sound judgment and excellent decision-making skills",
+        "Fluency in local languages and English"
+      ],
+      "responsibilities": [
+        "Provide high quality clinical care to patients",
+        "Conduct daily rounds on patients",
+        "Advise if further testing and/or advanced care is required",
+        "Initiate regular case discussions as part of hands-on training",
+        "Identify gaps in staff training and provide training as needed",
+        "Advocate for necessary training of team staff",
+        "Collect and analyze medical service data to monitor quality of care",
+        "Participate in 24-hour health service delivery system"
+      ],
+      "how_to_apply": [
+        "Submit your application through the employer’s online recruitment portal.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-05-22",
+      "deadline": "2026-06-01",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Medical-Doctor-National-at-International-Medical-Corps-IMC?pid=77905",
       "_source": "medicalworldnigeria"
     },
     {
@@ -2032,40 +2331,6 @@
       "_source": "myjobmag"
     },
     {
-      "job_title": "Medical Laboratory Scientist",
-      "company": "ExCare Services Limited",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Medical Laboratory Scientist",
-      "salary": "n,",
-      "experience": "Minimum of one year of experience in a similar role",
-      "qualification": "BSc",
-      "requirements": [
-        "Bachelor’s Degree in Medical Laboratory Science (BMLS)",
-        "Registration and a valid practicing license with the Medical Laboratory Science Council of Nigeria",
-        "Strong documentation, quality management, and laboratory data management skills",
-        "Attention to detail, accountability, and the ability to work effectively in a team"
-      ],
-      "responsibilities": [
-        "Perform routine and specialized laboratory tests on blood, tissues, and body fluids using standard procedures",
-        "Operate, calibrate, and maintain laboratory equipment while monitoring quality control measures",
-        "Ensure proper specimen handling, documentation, and reporting of test results",
-        "Maintain a sterile laboratory environment and comply with safety, quality, and regulatory standards",
-        "Support blood grouping, compatibility testing, and identification of infectious agents",
-        "Manage laboratory inventory, prepare routine reports, and maintain confidentiality of patient information"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-05-22",
-      "deadline": "2026-06-12",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/medical-laboratory-scientist-excare-services-limited-2",
-      "_source": "myjobmag"
-    },
-    {
       "job_title": "Demand Generation Manager",
       "company": "Tyonex Nigeria Limited",
       "location": "Lagos, Nigeria",
@@ -2093,35 +2358,6 @@
       "contact_phone": "",
       "apply_url": "https://www.myjobmag.com/job/demand-generation-manager-tyonex-nigeria-limited-19",
       "_source": "myjobmag"
-    },
-    {
-      "job_title": "Nephrology Nurse clinician",
-      "company": "Molly Specialist Hospital",
-      "location": "Ibadan, Oyo State, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Nurse",
-      "salary": "NGN450,000 / monthly",
-      "experience": "",
-      "qualification": "",
-      "requirements": [
-        "Registered Nurse (RN) license",
-        "Certification or specialization in nephrology nursing"
-      ],
-      "responsibilities": [
-        "Prepare patients and equipment for hemodialysis and peritoneal dialysis",
-        "Monitor patients during dialysis for adverse reactions, vital signs, and fluid balance",
-        "Administer prescribed medications and IV therapies related to renal care",
-        "Assess and care for vascular access sites: AV fistulas, grafts, catheters"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-05-21",
-      "deadline": "2026-06-16",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/nephrology-nurse-clinician-copy-997",
-      "_source": "medlocum"
     },
     {
       "job_title": "LGA Co-Ordinator",
@@ -2695,57 +2931,6 @@
       "_source": "hotnigerianjobs"
     },
     {
-      "job_title": "Medical Doctor (National)",
-      "company": "International Medical Corps (IMC)",
-      "location": "Kano, Nigeria",
-      "job_type": "volunteer",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "after graduating from medical college, work in low-resource settings preferred.",
-      "qualification": "rn",
-      "requirements": [
-        "Typically, a Medical Degree (primary care physician) with a valid license to practice and be board certified or equivalent (board eligible).",
-        "Typically, 2+ years of relevant clinical work, post graduate medical experience after graduating from medical college, work in low-resource settings preferred.",
-        "Experience in programs relating to primary health care, maternal and child health, obstetrics/gynecology, communicable and non-communicable diseases and emergency/outbreak response is preferable.",
-        "Previous NGO experience preferable.",
-        "Excellent organizational skills and ability to handle multiple tasks in a dynamic, high-pressure environment.",
-        "Excellent communications skills, both oral and written.",
-        "Excellent self-motivation skills.",
-        "Ability to exercise sound judgment and excellent decision-making skills.",
-        "Extremely flexible and can cope with stressful situations.",
-        "Able to work effectively with various personalities and cultures.",
-        "Ability to relate to and motivate local staff effectively.",
-        "Able to work with limited resources.",
-        "Able to deploy to emergencies on short notice.",
-        "Fluency in local languages, fluency in English and other international language is preferred."
-      ],
-      "responsibilities": [
-        "Provide high quality clinical care to patients based on history, appropriate physical exam, available laboratory, imaging tests, and formulary for treatment of acute and chronic conditions.",
-        "Conduct daily rounds on patients, initiate case discussions, monitor and document patient progress with any changes in management and prognosis and ensure adequate handover in case physicians' responsibilities are assigned to an inpatient facility.",
-        "Advise if further testing and/or advanced care is required and initiate the referral process.",
-        "Initiate regular case discussions as part of hands-on training.",
-        "Identify gaps in staff training and provide didactic and/or hands-on training as needed.",
-        "Advocate to supervisors for other necessary training of the team staff working and provide necessary training.",
-        "Utilize given data collection tools and provide training to other staff as needed.",
-        "Collect and analyze medical service data to monitor and improve the quality of care for patients and services.",
-        "Ensure standard precautions of Infection Prevention and Control (IPC) measures are always implemented and adhered to as per MoH and international standards.",
-        "When applicable, participate in a 24-hour health service delivery system at the clinic/facility/hospital as per shift schedules.",
-        "Adhere to international protocols and standards related to patient assessment, diagnostic and medical prescription of drugs.",
-        "Manage and supervise other clinical staff as directed by supervisor; participate in hiring process if needed.",
-        "Provide health education to patients and community members concerning their diagnoses, healthy diets, physical activity, hygiene promotion, and disease prevention."
-      ],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-05-21",
-      "deadline": "2026-06-01",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/900002/medical-doctor-national-at-international-medical-c.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
       "job_title": "Provider Relationship Manager",
       "company": "a Leading Health Insurance Firm - Brasenwall Professional Services",
       "location": "Lagos, Abuja, Kano, Nigeria",
@@ -3219,219 +3404,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.myjobmag.com/job/medical-laboratory-scientist-benin-medical-care",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Care Manager",
-      "company": "Zinance Limited",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Healthcare Management",
-      "salary": "",
-      "experience": "",
-      "qualification": "BSc",
-      "requirements": [
-        "Proven work experience as a Care Manager or similar role",
-        "Proficient with Healthcare Management Systems and Microsoft Office Word and Excel",
-        "Outstanding communication skills, both written and verbal",
-        "Excellent organizational skills."
-      ],
-      "responsibilities": [
-        "Interact with healthcare providers to facilitate patients’ treatments",
-        "Ensure patients’ treatment requirements are met",
-        "Suggest alternative treatment plans when patients’ services requests do not meet medical necessity criteria",
-        "Instruct and educate patients on procedures, healthcare provider instructions, and referrals",
-        "Link patients to social services programs and entitlements such as transportation assistance and translation services",
-        "Conduct regular follow-ups with patients to evaluate progress, promote continuity of care, and ensure improved health outcomes",
-        "Maintain records of case management activities."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-05-21",
-      "deadline": "2026-06-11",
-      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/care-manager-zinance-limited",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Customer Service Officer",
-      "company": "Carpa Healthcare",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "",
-      "experience": "Location",
-      "qualification": "BSc",
-      "requirements": [
-        "Previous experience in a customer support or call center role.",
-        "Active listening, empathy, patience, and the ability to remain calm when dealing with upset customers.",
-        "Basic computer literacy and familiarity with customer service software (CRMs)."
-      ],
-      "responsibilities": [
-        "Manage large amounts of inbound and outbound customer inquiries via phone, email, live chat, or social media.",
-        "Identify customer needs, research issues, and provide accurate, timely solutions or alternatives.",
-        "Log conversation details and update customer interactions in CRM databases.",
-        "Build sustainable customer relationships by going the extra mile and keeping customer satisfaction at the core of all decisions."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-05-21",
-      "deadline": "",
-      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/customer-service-officer-carpa-healthcare",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Laboratory Analyst",
-      "company": "Katchey Company Limited Online Shop",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Medical Laboratory Scientist",
-      "salary": "n,",
-      "experience": "2 - 4 years",
-      "qualification": "BSc",
-      "requirements": [
-        "Graduate of Biochemistry, Industrial Chemistry, or Pure Chemistry",
-        "Minimum grade of 2:1",
-        "2 - 4 years of cognate work experience as a Laboratory Analyst"
-      ],
-      "responsibilities": [
-        "Conduct laboratory tests according to approved standard methods",
-        "Maintain quality management systems and ensure implementation",
-        "Ensure compliance with local and international standards",
-        "Monitor housekeeping programs and environmental conditions",
-        "Develop SOPs and work instructions",
-        "Prepare reagents, chemicals, and reference standards",
-        "Maintain equipment calibration and verification schedules",
-        "Ensure safety policies compliance and good laboratory practices",
-        "Maintain confidentiality and impartiality"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-05-21",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/laboratory-analyst-katchey-company-limited-online-shop-1",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Quality Assurance Officer",
-      "company": "St. Ives Specialist Hospital",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Healthcare Management",
-      "salary": "n,",
-      "experience": "2 - 4 years",
-      "qualification": "BSc",
-      "requirements": [
-        "Bachelor’s degree in Healthcare Management, Public Health, or related field.",
-        "2–4 years’ experience in Quality Assurance within a hospital or healthcare setting.",
-        "Strong knowledge of healthcare quality standards, patient safety practices, and regulatory requirements.",
-        "Excellent analytical, report writing, and problem-solving skills.",
-        "Strong communication and interpersonal skills.",
-        "Proficiency in Microsoft Office applications.",
-        "Professional certifications in Quality Management or Healthcare Quality Assurance will be an added advantage."
-      ],
-      "responsibilities": [
-        "Monitor and ensure compliance with hospital policies, regulatory requirements, and quality standards.",
-        "Conduct routine quality audits across clinical and non-clinical departments.",
-        "Develop, implement, and monitor quality improvement programs and initiatives.",
-        "Review incident reports, patient complaints, and service gaps, and recommend corrective actions.",
-        "Track key quality indicators and prepare periodic quality assurance reports.",
-        "Coordinate accreditation and regulatory compliance activities.",
-        "Support infection prevention, patient safety, and risk management initiatives.",
-        "Conduct staff training and sensitization on quality standards and best practices.",
-        "Ensure proper documentation and adherence to Standard Operating Procedures (SOPs).",
-        "Collaborate with department heads to improve operational efficiency and patient experience."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-05-21",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/quality-assurance-officer-st-ives-specialist-hospital",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Frontdesk Officer",
-      "company": "Caring Habitat",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "₦100,000 - ₦150,000/month",
-      "experience": "2 - 4 years",
-      "qualification": "OND",
-      "requirements": [
-        "Candidates must possess at least a Diploma in any relevant discipline.",
-        "Candidates must be computer literates.",
-        "Candidates must possess at least 2 years of proven working experience as a Frontdesk Officer/Customer Service Personnel/Receptionist.",
-        "Candidate must be friendly and welcoming.",
-        "Candidate must reside within good proximity to Abraham Adesanya, Ajah.",
-        "Candidate must be willing to work (Day and Night) shift duties as will be advised by the line manager."
-      ],
-      "responsibilities": [
-        "Greeting Visitors - The Front Desk Officer is the first point of contact for visitors. They greet guests in person or over the phone.",
-        "Handling Enquiries - answer inquiries from clients, guests, or employees and direct them to the appropriate personnel or departments.",
-        "Managing Reception Area - The Front Desk Officer ensures that the reception area is tidy, presentable, and well-stocked with necessary materials (such as pens, forms, and paper).",
-        "Phone Management - They handle all incoming calls, either redirecting them or taking messages.",
-        "Mail Handling - The Front Desk Officer receives letters and packages, distributes them, and prepares outgoing mail.",
-        "Record keeping - Keeping updated records (including patients record, uploading patient’s record on the EMR) and files.",
-        "Additional Duties – As assigned."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-05-21",
-      "deadline": "2026-06-10",
-      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/frontdesk-officer-caring-habitat",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Customer Service Officer",
-      "company": "Caring Habitat",
-      "location": "Ajah, Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "₦100,000 - ₦150,000/month",
-      "experience": "2 - 4 years",
-      "qualification": "OND",
-      "requirements": [
-        "At least a Diploma in any relevant discipline",
-        "Computer literate",
-        "At least 2 years of proven working experience as a Frontdesk Officer/Customer Service Personnel/Receptionist",
-        "Friendly and welcoming demeanor",
-        "Reside within good proximity to Abraham Adesanya, Ajah",
-        "Willing to work (Day and Night) shift duties as advised by the line manager"
-      ],
-      "responsibilities": [
-        "Greeting Visitors - The Front Desk Officer is the first point of contact for visitors.",
-        "Handling Enquiries - Answer inquiries from clients, guests, or employees and direct them to the appropriate personnel or departments.",
-        "Managing Reception Area - Ensure that the reception area is tidy, presentable, and well-stocked with necessary materials (such as pens, forms, and paper).",
-        "Phone Management - Handle all incoming calls, either redirecting them or taking messages.",
-        "Mail Handling - Receive letters and packages, distribute them, and prepare outgoing mail.",
-        "Record keeping - Keep updated records (including patients record, uploading patient’s record on the EMR) and files.",
-        "Additional Duties – As assigned."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-05-21",
-      "deadline": "2026-06-10",
-      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/customer-service-officer-caring-habitat",
       "_source": "myjobmag"
     },
     {
@@ -4616,80 +4588,6 @@
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/898996/health-information-manager-at-carpa-healthcare-nig.html",
       "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Consultant Cardiologist",
-      "company": "Estrada International Staffing Solutions",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Doctor",
-      "salary": "structure with performance incentives",
-      "experience": "5 years",
-      "qualification": "BSc",
-      "requirements": [
-        "MBBS or equivalent medical qualification.",
-        "Fellowship in Cardiology from a recognized medical institution.",
-        "Valid MDCN practicing license.",
-        "Minimum of 5 years post-specialization clinical experience.",
-        "Strong knowledge of cardiovascular diagnostic and treatment procedures."
-      ],
-      "responsibilities": [
-        "Diagnose and manage cardiovascular diseases and related medical conditions.",
-        "Conduct and interpret diagnostic procedures including ECG, echocardiograms, stress tests, and other cardiac evaluations.",
-        "Develop and implement effective treatment plans for patients with heart-related conditions.",
-        "Provide preventive cardiac care and patient education on lifestyle modifications.",
-        "Monitor patient progress and adjust treatment plans as necessary.",
-        "Collaborate with surgeons, physicians, nurses, and other healthcare professionals to ensure comprehensive patient care.",
-        "Maintain accurate patient records and clinical documentation.",
-        "Participate in medical research, case reviews, and continuous professional development activities.",
-        "Ensure adherence to healthcare standards, ethical practices, and regulatory requirements."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-05-20",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/consultant-cardiologist-estrada-international-staffing-solutions",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "HMO Billing / Receivable Officer",
-      "company": "Soteria Eye Clinic",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "n,",
-      "experience": "",
-      "qualification": "BSc",
-      "requirements": [
-        "Minimum B.Sc Health Information Management, or related field",
-        "Previous experience in HMO billing, medical billing, or healthcare receivables is preferred",
-        "Good understanding of HMO processes and healthcare billing systems",
-        "Excellent communication and negotiation skills",
-        "High level of accuracy and attention to detail",
-        "Ability to work independently and meet deadlines"
-      ],
-      "responsibilities": [
-        "Prepare and process HMO claims and invoices accurately and timely",
-        "Verify patient eligibility and treatment authorization with HMOs",
-        "Ensure proper documentation of patient records, invoices, and claims submissions",
-        "Follow up on outstanding payments and reconcile receivables",
-        "Resolve billing discrepancies and denied claims promptly",
-        "Maintain accurate records of payments, outstanding invoices, and account status",
-        "Liaise with HMOs, corporate organizations, and internal departments regarding billing matters"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-05-20",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/hmo-billing-receivable-officer-soteria-eye-clinic",
-      "_source": "myjobmag"
     },
     {
       "job_title": "International Consultant - Supporting the EMR Component of the WHO Report on the Global Tobacco Epidemic (GTCR XI)",
@@ -18683,65 +18581,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Maternal-Perinatal-and-Child-Death-Surveillance-Responses-MPCDSR-Capacity-Builder-at-Jhpiego-Nigeria?pid=77591",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Senior Registrar - Oncology (Radiotherapy)",
-      "company": "African Medical Centre of Excellence (AMCE)",
-      "location": "Abuja",
-      "job_type": "Full Time",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "in Radiotherapy",
-      "qualification": "bsc",
-      "requirements": [
-        "Provide ongoing psychological support and symptom management throughout the radiotherapy journey.",
-        "Ensure compassionate, professional, and respectful interactions at all times, upholding AMCE’s values of excellence, compassion, and innovation.",
-        "Support the implementation and monitoring of rigorous quality assurance (QA) protocols for all radiotherapy equipment, planning systems, and treatment delivery processes."
-      ],
-      "responsibilities": [
-        "Conduct thorough patient assessments, including history taking, physical examination, and interpretation of diagnostic imaging, pathology, and staging information to determine radiotherapy suitability.",
-        "Prescribe, plan, and oversee the delivery of complex radiotherapy regimens, including curative, adjuvant, and palliative intent treatments, under consultant supervision.",
-        "Perform target volume and organ-at-risk contouring using advanced radiotherapy planning systems, ensuring precision and adherence to international contouring guidelines."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-03-24",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Senior-Registrar-Oncology-Radiotherapy-at-African-Medical-Centre-of-Excellence-AMCE?pid=77586",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Resident Medical Doctor (Obstetrics and Gynaecology Skills)",
-      "company": "Christian Miracle Hospital",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full time",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "Proven interest in Obstetrics and Gynaecology is mandatory.",
-      "qualification": "Bachelor of Medicine, Bachelor of Surgery (MBBS) from an accredited institution.",
-      "requirements": [
-        "Full registration with the Medical and Dental Council of Nigeria (MDCN) with a current practicing license."
-      ],
-      "responsibilities": [
-        "Conduct comprehensive outpatient consultations, manage antenatal and fertility clinics, and provide specialized care for obstetric and gynaecological cases.",
-        "Independently perform or assist in obstetric and gynaecological surgeries, including Caesarean Sections (C-S), fibroid, ovarian cyst, appendectomies, and other gynaecological procedures.",
-        "Lead daily ward rounds, manage pre- and post-operative care, and ensure the delivery of high-quality, patient-centric services.",
-        "Provide 24/7 on-site medical support during scheduled shifts and handle obstetric emergencies with precision and speed.",
-        "Maintain accurate medical records, participate in clinical audits, and collaborate with the nursing and lab teams to optimize patient outcomes."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-03-24",
-      "deadline": "2026-05-19",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Resident-Medical-Doctor-Obstetrics-and-Gynaecology-Skills-at-Christian-Miracle-Hospital?pid=77584",
       "_source": "medicalworldnigeria"
     }
   ]
