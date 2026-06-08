@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "extracted_at": "2026-06-07T07:16:47.010759",
+    "extracted_at": "2026-06-08T07:45:07.947208",
     "model": "gpt-4o-mini",
-    "total_processed": 645,
+    "total_processed": 644,
     "duplicates_removed": 121,
-    "skipped_old": 6,
+    "skipped_old": 7,
     "skipped_empty": 0,
     "errors": 0,
-    "openai_calls": 124
+    "openai_calls": 121
   },
   "jobs": [
     {
@@ -19126,45 +19126,6 @@
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/881163/lead-consultant-radiologist-at-african-medical-cen.html",
       "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Obstetrician Gynaecologist (OBGYN)",
-      "company": "Médecins Sans Frontières (MSF)",
-      "location": "Jahun, Jigawa",
-      "job_type": "Contract",
-      "job_category": "Doctor",
-      "salary": "scale plus 13th month allowance equivalent to 1 month of gross salary",
-      "experience": "Minimum of 2 years certified professional experience as an OBGYN",
-      "qualification": "bsc",
-      "requirements": [
-        "Specialist Diploma in Obstetrics and Gynecology (mandatory)",
-        "Minimum of 2 years certified professional experience as an OBGYN",
-        "Previous experience with MSF or other NGOs in developing countries (desirable)",
-        "Mission language English (essential)",
-        "Local language Hausa, Fulani (desirable)",
-        "computer literacy (word, excel)"
-      ],
-      "responsibilities": [
-        "Deliver high quality gynecological and obstetric care, including antenatal, intrapartum, and postnatal services",
-        "Provide emergency obstetric care, including management of complicated deliveries and surgical procedures",
-        "Conduct daily ward rounds in maternity, hospitalization wards, and ICU",
-        "Assess new admissions and ensure appropriate clinical management and documentation",
-        "Participate in on call duties and provide bedside supervision, coaching, and training to medical and midwifery staff",
-        "Ensure implementation of MSF clinical guidelines, protocols, and tools related to obstetrics and gynecology",
-        "Contribute to maternal mortality and near miss reviews, data collection, and clinical audits",
-        "Support supervision of gynecological staff HR processes, including training and performance follow up",
-        "Oversee rational use, maintenance, and availability of gynecological equipment, drugs, and pharmacy stock"
-      ],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-04-08",
-      "deadline": "2026-04-16",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Obstetrician-Gynaecologist-OBGYN-at-Medecins-Sans-Frontieres-MSF-France?pid=77682",
-      "_source": "medicalworldnigeria"
     }
   ]
 }
