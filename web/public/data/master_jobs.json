@@ -1,15 +1,91 @@
 {
   "metadata": {
-    "extracted_at": "2026-06-13T07:08:46.695992",
+    "extracted_at": "2026-06-14T07:27:46.533433",
     "model": "gpt-4o-mini",
-    "total_processed": 638,
-    "duplicates_removed": 126,
-    "skipped_old": 4,
+    "total_processed": 627,
+    "duplicates_removed": 125,
+    "skipped_old": 15,
     "skipped_empty": 0,
     "errors": 0,
-    "openai_calls": 159
+    "openai_calls": 130
   },
   "jobs": [
+    {
+      "job_title": "Registered Nurse / Midwife",
+      "company": "Alfred and Victoria Associates",
+      "location": "Lekki Phase 1, Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Nurse",
+      "salary": "",
+      "experience": "35",
+      "qualification": "bsc",
+      "requirements": [
+        "B.Sc. in Nursing or its equivalent",
+        "Registered Nurse or Midwife, Obstetrics and Gynaecology",
+        "Minimum of 4 years’ work experience in a care provision and service-related role",
+        "Applicants must be at least 35 years old."
+      ],
+      "responsibilities": [
+        "Daily follow up calls on registered clients and phone-in clients.",
+        "Dispensing of drugs with instructions to the clients and subsequent drug balancing.",
+        "Discharging and dispensing drugs to clients.",
+        "Scheduling of appointment for clients.",
+        "Carry out scan procedures.",
+        "Needle pricking demonstration to clients.",
+        "Ensure dosage and protocols are written and sent to MD as appropriate.",
+        "Donor recruitment and management.",
+        "Ensure nurses work allocation is done weekly and same adhered to.",
+        "Supervise the Nurses aids.",
+        "Liaise with CLO in charge of Endoscopy for booking and counselling sessions.",
+        "Coordinate the housekeepers and Nursing Aid Units.",
+        "Coordinate all training related to Nursing activities.",
+        "Organizing the Monthly IVF and U Forum and understanding infertility.",
+        "Management of Endoscopy instruments and Drugs.",
+        "Scheduling and monitoring clients for treatment.",
+        "Work alongside the CLO’s on follow up and ensure nurses also comply.",
+        "Oversee activities at the Nursing station and Clinic Table.",
+        "Review and approve all requisition.",
+        "Monitor Endoscopy procedures and report any theatre incidence to MD and CM for immediate action.",
+        "Coordinate nursing activities of the Outstation Clinic."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-06-13",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://jobsinnigeria.careers/jobs/registered-nurse-midwife-alfred-victoria-associates/",
+      "_source": "jobsinnigeria"
+    },
+    {
+      "job_title": "School Nurse",
+      "company": "OSNON Academy",
+      "location": "Anambra, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Nurse",
+      "salary": "Pension",
+      "experience": "",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "Bachelor's Degree",
+        "RN/BNSC/RM/RCHP plus a valid practicing licence (School Nurse)",
+        "Experience working in a school or a boarding school is an added advantage",
+        "Safeguarding and child protection certificate is an added advantage"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Email the address shown on the original listing.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-06-13",
+      "deadline": "2026-06-26",
+      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/school-nurse-osnon-academy",
+      "_source": "myjobmag"
+    },
     {
       "job_title": "Case Manager (Freelance)",
       "company": "Reliance HMO",
@@ -89,6 +165,110 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.myjobmag.com/job/pathologist-the-african-medical-centre-of-excellence-amce",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "IT Support / Digital Marketing",
+      "company": "Desol Medical Solutions Limited",
+      "location": "Ebute Metta, Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "₦200,000 - ₦300,000/month",
+      "experience": "2 years",
+      "qualification": "BA/BSc/HND, NCE, OND",
+      "requirements": [
+        "BA/BSc/HND",
+        "NCE",
+        "OND",
+        "2 years experience"
+      ],
+      "responsibilities": [
+        "Content Creation & Digital Marketing",
+        "Website Maintenance",
+        "Search Engine Optimization",
+        "Customer Advice/Support",
+        "Other IT Support"
+      ],
+      "how_to_apply": [
+        "Submit your application through the employer’s online recruitment portal.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-06-13",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/it-support-digital-marketing-desol-medical-solutions-limited-1",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Sales/Marketing Officer",
+      "company": "Desol Medical Solutions Limited",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "₦100,000 - ₦150,000/month",
+      "experience": "2 years",
+      "qualification": "BA/BSc/HND, OND",
+      "requirements": [
+        "BA/BSc/HND",
+        "OND",
+        "2 years experience"
+      ],
+      "responsibilities": [
+        "Promote services",
+        "Sales of medical equipment",
+        "Health services - online and physical",
+        "Health education",
+        "Research",
+        "Partnership with other health facilities",
+        "Recruitment of medical personnels"
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-06-13",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/sales-marketing-officer-desol-medical-solutions-limited-1",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Programme Manager (Human Genomics)",
+      "company": "The Institute of Genomics and Global Health (IGH)",
+      "location": "Osun, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Healthcare Management",
+      "salary": "n,",
+      "experience": "3 years",
+      "qualification": "MBA/MSc/MA, PhD/Fellowship",
+      "requirements": [
+        "Master's degree in Life Sciences, Public Health or a related field with at least 5 years of relevant experience, or a PhD with at least 3 years of experience",
+        "Strong understanding of genomics, multi-omics, NGS workflows and bioinformatics",
+        "Proven experience managing complex scientific or research programmes",
+        "Experience with sequencing analysis software and informatics tools",
+        "Strong stakeholder management, communication and leadership skills",
+        "Familiarity with ISO quality standards and regulatory processes",
+        "Ability to manage multiple priorities and multidisciplinary teams"
+      ],
+      "responsibilities": [
+        "Lead the planning, execution and delivery of human genornics programmes and projects",
+        "Coordinate cross-functional teams including laboratory, bioinformatics and research units",
+        "Manage project timelines, budgets, resources and stakeholder engagement",
+        "Serve as the primary liaison for human genomics initiatives and partnerships",
+        "Oversee regulatory approvals, ethics submissions and compliance requirements",
+        "Ensure laboratory, data quality and operational standards are maintained",
+        "Support grant identification, proposal development and funding applications"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-06-13",
+      "deadline": "2026-06-24",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/programme-manager-human-genomics-the-institute-of-genomics-and-global-health-igh",
       "_source": "myjobmag"
     },
     {
@@ -775,54 +955,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/908377/medical-assistant-at-bioventures-limited.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Registered Nurse / Midwife",
-      "company": "Alfred and Victoria Associates",
-      "location": "Lekki Phase 1, Lagos, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "",
-      "experience": "35",
-      "qualification": "B.Sc",
-      "requirements": [
-        "B.Sc. in Nursing or its equivalent",
-        "Registered Nurse or Midwife, Obstetrics and Gynaecology",
-        "Minimum of 4 years’ work experience in a care provision and service-related role",
-        "Applicants must be at least 35 years old."
-      ],
-      "responsibilities": [
-        "Daily follow up calls on registered clients and phone-in clients.",
-        "Dispensing of drugs with instructions to the clients and subsequent drug balancing.",
-        "Discharging and dispensing drugs to clients.",
-        "Scheduling of appointment for clients.",
-        "Carry out scan procedures.",
-        "Needle pricking demonstration to clients.",
-        "Ensure dosage and protocols are written and sent to MD as appropriate.",
-        "Donor recruitment and management.",
-        "Ensure nurses work allocation is done weekly and same adhered to.",
-        "Supervise the Nurses aids.",
-        "Liaise with CLO in charge of Endoscopy for booking and counselling sessions.",
-        "Coordinate the housekeepers and Nursing Aid Units.",
-        "Coordinate all training related to Nursing activities.",
-        "Organizing the Monthly IVF and U Forum and understanding infertility.",
-        "Management of Endoscopy instruments and Drugs.",
-        "Scheduling and monitoring clients for treatment.",
-        "Work alongside the CLO’s on follow up and ensure nurses also comply.",
-        "Oversee activities at the Nursing station and Clinic Table.",
-        "Review and approve all requisition.",
-        "Monitor Endoscopy procedures and report any theatre incidence to MD and CM for immediate action.",
-        "Coordinate nursing activities of the Outstation Clinic."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-06-12",
-      "deadline": "",
-      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/908447/registered-nurse-midwife-at-alfred-and-victoria-as.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -3482,6 +3614,30 @@
       "_source": "jobsinnigeria"
     },
     {
+      "job_title": "Medical Lab. Scientists",
+      "company": "Union Diagnostic and Clinical Services Plc",
+      "location": "Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Medical Laboratory Scientist",
+      "salary": "n,",
+      "experience": "",
+      "qualification": "BSc",
+      "requirements": [
+        "AMLS / BMILS qualification with current practicing license."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-06-10",
+      "deadline": "2026-06-24",
+      "contact_email": "",
+      "contact_phone": "09154111858",
+      "apply_url": "https://jobsinnigeria.careers/jobs/medical-lab-scientists-union-diagnostic-clinical-services-plc-6-openings/",
+      "_source": "jobsinnigeria"
+    },
+    {
       "job_title": "Medical Officer",
       "company": "Union Diagnostic and Clinical Services Plc",
       "location": "Nigeria",
@@ -4493,153 +4649,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.myjobmag.com/job/fitness-trainer-kubwa-ecofitnesshub-limited",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Fitness Trainer - Lokogoma",
-      "company": "Ecofitnesshub Limited",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "n,",
-      "experience": "3",
-      "qualification": "BSc",
-      "requirements": [
-        "Bachelor’s Degree in Exercise Science, Kinesiology, Physical Education or a related field.",
-        "Recognized fitness certification (e.g., IREP, ACE, NASM, ISSA, or equivalent)",
-        "1-3 years experience as a fitness trainer (preferred)",
-        "Knowledge of exercise techniques, nutrition basics, and injury prevention",
-        "CPR/AED certification is an added advantage"
-      ],
-      "responsibilities": [
-        "Conduct fitness assessments to evaluate clients’ physical condition, goals, and limitations.",
-        "Design and implement personalized training programs tailored to individual client needs.",
-        "Provide one-on-one and group training sessions.",
-        "Demonstrate proper exercise techniques and equipment usage.",
-        "Monitor client progress and adjust training programs accordingly.",
-        "Motivate and guide clients to achieve their fitness and wellness goals.",
-        "Deliver a professional, friendly, and motivating experience to all clients.",
-        "Build and maintain strong relationships with members to encourage retention and satisfaction.",
-        "Actively engage members on the gym floor, offering support and guidance where needed.",
-        "Promote personal training packages and fitness programs.",
-        "Ensure all activities are conducted in line with health and safety standards.",
-        "Monitor the gym floor to ensure safe use of equipment.",
-        "Respond promptly to incidents, injuries, or emergencies.",
-        "Maintain a clean, organized, and safe training environment.",
-        "Maintain accurate records of client programs, progress, and attendance.",
-        "Support the gym in achieving membership and revenue targets.",
-        "Participate in fitness events, challenges, and wellness programs organized by the gym.",
-        "Work closely with the front desk and management team to ensure smooth operations.",
-        "Contribute to a positive team environment and support colleagues when required.",
-        "Attend team meetings, training sessions, and development programs."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-06-10",
-      "deadline": "2026-06-14",
-      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/fitness-trainer-lokogoma-ecofitnesshub-limited",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Fitness Trainer - Maitama",
-      "company": "Ecofitnesshub Limited",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "n,",
-      "experience": "3",
-      "qualification": "BSc",
-      "requirements": [
-        "Bachelor’s Degree in Exercise Science Kinesiology, Physical Education or a related field",
-        "Recognized fitness certification (e.g., IREP, ACE, NASM, ISSA, or equivalent)",
-        "1–3 years experience as a fitness trainer (preferred)",
-        "Knowledge of exercise techniques, nutrition basics, and injury prevention",
-        "CPR/AED certification is an added advantage"
-      ],
-      "responsibilities": [
-        "Conduct fitness assessments to evaluate clients’ physical condition, goals, and limitations.",
-        "Design and implement personalized training programs tailored to individual client needs.",
-        "Provide one-on-one and group training sessions.",
-        "Demonstrate proper exercise techniques and equipment usage.",
-        "Monitor client progress and adjust training programs accordingly.",
-        "Motivate and guide clients to achieve their fitness and wellness goals.",
-        "Deliver a professional, friendly, and motivating experience to all clients.",
-        "Build and maintain strong relationships with members to encourage retention and satisfaction.",
-        "Actively engage members on the gym floor, offering support and guidance where needed.",
-        "Promote personal training packages and fitness programs.",
-        "Ensure all activities are conducted in line with health and safety standards.",
-        "Monitor the gym floor to ensure safe use of equipment.",
-        "Respond promptly to incidents, injuries, or emergencies.",
-        "Maintain a clean, organized, and safe training environment.",
-        "Maintain accurate records of client programs, progress, and attendance.",
-        "Support the gym in achieving membership and revenue targets.",
-        "Participate in fitness events, challenges, and wellness programs organized by the gym.",
-        "Work closely with the front desk and management team to ensure smooth operations.",
-        "Contribute to a positive team environment and support colleagues when required.",
-        "Attend team meetings, training sessions, and development programs."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-06-10",
-      "deadline": "2026-06-14",
-      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/fitness-trainer-maitama-ecofitnesshub-limited",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Fitness Trainer",
-      "company": "Ecofitnesshub Limited",
-      "location": "Wuse, Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "n,",
-      "experience": "3",
-      "qualification": "BSc",
-      "requirements": [
-        "Bachelor’s Degree in Exercise Science, Kinesiology, Physical Education or a related field.",
-        "Recognized fitness certification (e.g., IREP, ACE, NASM, ISSA, or equivalent)",
-        "1–3 years experience as a fitness trainer (preferred)",
-        "Knowledge of exercise techniques, nutrition basics, and injury prevention",
-        "CPR/AED certification is an added advantage"
-      ],
-      "responsibilities": [
-        "Conduct fitness assessments to evaluate clients’ physical condition, goals, and limitations.",
-        "Design and implement personalized training programs tailored to individual client needs.",
-        "Provide one-on-one and group training sessions.",
-        "Demonstrate proper exercise techniques and equipment usage.",
-        "Monitor client progress and adjust training programs accordingly.",
-        "Motivate and guide clients to achieve their fitness and wellness goals.",
-        "Deliver a professional, friendly, and motivating experience to all clients.",
-        "Build and maintain strong relationships with members to encourage retention and satisfaction.",
-        "Actively engage members on the gym floor, offering support and guidance where needed.",
-        "Promote personal training packages and fitness programs.",
-        "Ensure all activities are conducted in line with health and safety standards.",
-        "Monitor the gym floor to ensure safe use of equipment.",
-        "Respond promptly to incidents, injuries, or emergencies.",
-        "Maintain a clean, organized, and safe training environment.",
-        "Maintain accurate records of client programs, progress, and attendance.",
-        "Support the gym in achieving membership and revenue targets.",
-        "Participate in fitness events, challenges, and wellness programs organized by the gym.",
-        "Work closely with the front desk and management team to ensure smooth operations.",
-        "Contribute to a positive team environment and support colleagues when required.",
-        "Attend team meetings, training sessions, and development programs."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-06-10",
-      "deadline": "2026-06-14",
-      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/fitness-trainer-wuse-ecofitnesshub-limited",
       "_source": "myjobmag"
     },
     {
@@ -16206,33 +16215,6 @@
       "_source": "hotnigerianjobs"
     },
     {
-      "job_title": "Occupational Health and Safety Officer",
-      "company": "Sumal Foods Limited",
-      "location": "Ibadan, Oyo, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Other",
-      "salary": "",
-      "experience": "Minimum of 3 years in Occupational Health and Safety.",
-      "qualification": "B.Sc",
-      "requirements": [
-        "B.Sc/M.Sc in Occupational Health and Safety (OHS)",
-        "Master of Public Health (MPH) with a concentration in Occupational Health",
-        "Certified Safety Professional (CSP)",
-        "Safety and Environmental Management"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-05-13",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://jobsinnigeria.careers/jobs/occupational-health-safety-officer-sumal-foods-limited/",
-      "_source": "jobsinnigeria"
-    },
-    {
       "job_title": "School Nurse",
       "company": "Limited",
       "location": "Lagos",
@@ -18209,373 +18191,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/884606/hospital-healthcare-ward-assistant-at-medison-spec.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Experienced Aesthetic Nurse",
-      "company": "Celeb Laser Aesthetics Clinic",
-      "location": "Ikeja, Lagos",
-      "job_type": "",
-      "job_category": "Nurse",
-      "salary": "n,",
-      "experience": "",
-      "qualification": "bsc",
-      "requirements": [
-        "Professional and friendly, good communication skills.",
-        "High level of customer service and exceptional client care.",
-        "Good organizational skills.",
-        "Aesthetic & Great appearance.",
-        "Good sales & marketing ability."
-      ],
-      "responsibilities": [
-        "To provide cosmetic non-surgical aesthetic treatments.",
-        "Give advice on recommended treatment plans.",
-        "Customer service relation."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-04-14",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Senior-Resident-Doctor-Senior-Registrar-Diagnostics-at-African-Medical-Centre-of-Excellence-AMCE?pid=77708",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Senior Resident Doctor / Senior Registrar – Diagnostics",
-      "company": "African Medical Centre of Excellence (AMCE)",
-      "location": "Abuja",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "4",
-      "qualification": "bsc",
-      "requirements": [
-        "Medical Degree (MBBS, MBChB or its equivalent) from a recognized Institution.",
-        "Completion of Residency program/passed the first part of examination of residency program",
-        "Valid medical license and registration",
-        "Membership in relevant medical associations, such as the Nigeria Medical Association (NMA) or its equivalent.",
-        "Completion of at least 4 years residency training in diagnostics.",
-        "Prior experience in mentoring or supervising junior medical staff is an advantage."
-      ],
-      "responsibilities": [
-        "Conduct thorough patient interviews, physical examinations, and reviews medical history to gather essential information for accurate diagnosis and treatment.",
-        "Order and interpret diagnostic tests (e.g., labs, imaging, biopsies) to confirm or rule out diagnoses, and guide treatment decisions.",
-        "Develop and implement evidence-based treatment plans to provide effective management of diagnosed conditions, improve patient outcomes, and enhance quality of life."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-04-14",
-      "deadline": "2026-05-30",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Senior-Resident-Doctor-Senior-Registrar-Diagnostics-at-African-Medical-Centre-of-Excellence-AMCE?pid=77707",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Experienced Medical Officer",
-      "company": "Private Specialist Hospital",
-      "location": "Ukpor Nnewi LGA, Anambra",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "",
-      "experience": "",
-      "qualification": "bsc",
-      "requirements": [
-        "Relevant qualifications",
-        "Completion of NYSC with post-NYSC work experience"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-04-14",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "08067857731",
-      "apply_url": "https://medicalworldnigeria.com/post/Experienced-Medical-Officers-at-a-Private-Specialist-Hospital?pid=77700",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Consultant - Surgery",
-      "company": "Bergstein Hospital",
-      "location": "Ikorodu, Lagos, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "n",
-      "experience": "Strong governance and enforcement capacity",
-      "qualification": "MDCN",
-      "requirements": [
-        "MBBS with full MDCN registration",
-        "Recognised Consultant qualification (FWACP, FMCP, FMCFM or equivalent)",
-        "Demonstrated clinical leadership or hospital management experience",
-        "Strong governance and enforcement capacity",
-        "Ability to operate within a structured executive reporting framework."
-      ],
-      "responsibilities": [
-        "Provide overall clinical leadership at the Ikorodu facility",
-        "Enforce evidence-based protocols and documentation standards",
-        "Lead morbidity & mortality meetings and clinical audits",
-        "Supervise Medical Officers and oversee nursing clinical standards",
-        "Maintain full regulatory compliance (HEFAMAA, MDCN, etc.)",
-        "Drive patient safety, discipline, and accountability",
-        "Submit structured clinical performance reports to the Group CMD",
-        "Support service development and clinical expansion initiatives."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-04-14",
-      "deadline": "",
-      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/883252/consultant-surgery-at-bergstein-hospital.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Consultant - Obstetrics & Gynaecology",
-      "company": "Bergstein Hospital",
-      "location": "Ikorodu, Lagos, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "Strong governance and enforcement capacity",
-      "qualification": "MDCN",
-      "requirements": [
-        "MBBS with full MDCN registration",
-        "Recognised Consultant qualification (FWACP, FMCP, FMCFM or equivalent)",
-        "Demonstrated clinical leadership or hospital management experience",
-        "Strong governance and enforcement capacity",
-        "Ability to operate within a structured executive reporting framework."
-      ],
-      "responsibilities": [
-        "Provide overall clinical leadership at the Ikorodu facility",
-        "Enforce evidence-based protocols and documentation standards",
-        "Lead morbidity & mortality meetings and clinical audits",
-        "Supervise Medical Officers and oversee nursing clinical standards",
-        "Maintain full regulatory compliance (HEFAMAA, MDCN, etc.)",
-        "Drive patient safety, discipline, and accountability",
-        "Submit structured clinical performance reports to the Group CMD",
-        "Support service development and clinical expansion initiatives."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-04-14",
-      "deadline": "",
-      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/883251/consultant-obstetrics-gynaecology-at-bergstein-hos.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Consultant - Paediatrics",
-      "company": "Bergstein Hospital",
-      "location": "Ikorodu, Lagos, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "Strong governance and enforcement capacity",
-      "qualification": "MDCN",
-      "requirements": [
-        "MBBS with full MDCN registration",
-        "Recognised Consultant qualification (FWACP, FMCP, FMCFM or equivalent)",
-        "Demonstrated clinical leadership or hospital management experience",
-        "Strong governance and enforcement capacity",
-        "Ability to operate within a structured executive reporting framework."
-      ],
-      "responsibilities": [
-        "Provide overall clinical leadership at the Ikorodu facility",
-        "Enforce evidence-based protocols and documentation standards",
-        "Lead morbidity & mortality meetings and clinical audits",
-        "Supervise Medical Officers and oversee nursing clinical standards",
-        "Maintain full regulatory compliance (HEFAMAA, MDCN, etc.)",
-        "Drive patient safety, discipline, and accountability",
-        "Submit structured clinical performance reports to the Group CMD",
-        "Support service development and clinical expansion initiatives."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-04-14",
-      "deadline": "",
-      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/883250/consultant-paediatrics-at-bergstein-hospital.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Consultant - Radiology",
-      "company": "Bergstein Hospital",
-      "location": "Ikorodu, Lagos, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "Strong governance and enforcement capacity",
-      "qualification": "MDCN",
-      "requirements": [
-        "MBBS with full MDCN registration",
-        "Recognised Consultant qualification (FWACP, FMCP, FMCFM or equivalent)",
-        "Demonstrated clinical leadership or hospital management experience",
-        "Strong governance and enforcement capacity",
-        "Ability to operate within a structured executive reporting framework"
-      ],
-      "responsibilities": [
-        "Provide overall clinical leadership at the Ikorodu facility",
-        "Enforce evidence-based protocols and documentation standards",
-        "Lead morbidity & mortality meetings and clinical audits",
-        "Supervise Medical Officers and oversee nursing clinical standards",
-        "Maintain full regulatory compliance (HEFAMAA, MDCN, etc.)",
-        "Drive patient safety, discipline, and accountability",
-        "Submit structured clinical performance reports to the Group CMD",
-        "Support service development and clinical expansion initiatives"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-04-14",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/883244/consultant-radiology-at-bergstein-hospital.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Consultant - Internal Medicine",
-      "company": "Bergstein Hospital",
-      "location": "Ikorodu, Lagos, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "Strong governance and enforcement capacity",
-      "qualification": "MBBS with full MDCN registration; Recognised Consultant qualification (FWACP, FMCP, FMCFM or equivalent)",
-      "requirements": [
-        "MBBS with full MDCN registration",
-        "Recognised Consultant qualification (FWACP, FMCP, FMCFM or equivalent)",
-        "Demonstrated clinical leadership or hospital management experience",
-        "Strong governance and enforcement capacity",
-        "Ability to operate within a structured executive reporting framework"
-      ],
-      "responsibilities": [
-        "Provide overall clinical leadership at the Ikorodu facility",
-        "Enforce evidence-based protocols and documentation standards",
-        "Lead morbidity & mortality meetings and clinical audits",
-        "Supervise Medical Officers and oversee nursing clinical standards",
-        "Maintain full regulatory compliance (HEFAMAA, MDCN, etc.)",
-        "Drive patient safety, discipline, and accountability",
-        "Submit structured clinical performance reports to the Group CMD",
-        "Support service development and clinical expansion initiatives."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-04-14",
-      "deadline": "",
-      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/883255/consultant-internal-medicine-at-bergstein-hospital.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Consultant - Family Medicine",
-      "company": "Bergstein Hospital",
-      "location": "Ikorodu, Lagos, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "Strong governance and enforcement capacity",
-      "qualification": "MDCN",
-      "requirements": [
-        "MBBS with full MDCN registration",
-        "Recognised Consultant qualification (FWACP, FMCP, FMCFM or equivalent)",
-        "Demonstrated clinical leadership or hospital management experience",
-        "Strong governance and enforcement capacity",
-        "Ability to operate within a structured executive reporting framework."
-      ],
-      "responsibilities": [
-        "Provide overall clinical leadership at the Ikorodu facility",
-        "Enforce evidence-based protocols and documentation standards",
-        "Lead morbidity & mortality meetings and clinical audits",
-        "Supervise Medical Officers and oversee nursing clinical standards",
-        "Maintain full regulatory compliance (HEFAMAA, MDCN, etc.)",
-        "Drive patient safety, discipline, and accountability",
-        "Submit structured clinical performance reports to the Group CMD",
-        "Support service development and clinical expansion initiatives."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-04-14",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/883247/consultant-family-medicine-at-bergstein-hospital.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Consultant - Anesthesia",
-      "company": "Bergstein Hospital",
-      "location": "Ikorodu, Lagos, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "Strong governance and enforcement capacity",
-      "qualification": "MDCN",
-      "requirements": [
-        "MBBS with full MDCN registration",
-        "Recognised Consultant qualification (FWACP, FMCP, FMCFM or equivalent)",
-        "Demonstrated clinical leadership or hospital management experience",
-        "Strong governance and enforcement capacity",
-        "Ability to operate within a structured executive reporting framework."
-      ],
-      "responsibilities": [
-        "Provide overall clinical leadership at the Ikorodu facility",
-        "Enforce evidence-based protocols and documentation standards",
-        "Lead morbidity & mortality meetings and clinical audits",
-        "Supervise Medical Officers and oversee nursing clinical standards",
-        "Maintain full regulatory compliance (HEFAMAA, MDCN, etc.)",
-        "Drive patient safety, discipline, and accountability",
-        "Submit structured clinical performance reports to the Group CMD",
-        "Support service development and clinical expansion initiatives."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-04-14",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/883245/consultant-anesthesia-at-bergstein-hospital.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Experienced Medical Officer",
-      "company": "a Private Specialist Hospital",
-      "location": "Ukpor Nnewi LGA, Anambra, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "",
-      "experience": "",
-      "qualification": "relevant qualifications",
-      "requirements": [
-        "Have completed NYSC",
-        "post-NYSC work experience"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-04-14",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "08067857731",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/882972/experienced-medical-officers-at-a-private-speciali.html",
       "_source": "hotnigerianjobs"
     }
   ]
