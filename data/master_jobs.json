@@ -1,28 +1,27 @@
 {
   "metadata": {
-    "extracted_at": "2026-06-20T07:13:19.311995",
+    "extracted_at": "2026-06-21T07:36:29.562759",
     "model": "gpt-4o-mini",
-    "total_processed": 649,
-    "duplicates_removed": 121,
-    "skipped_old": 3,
+    "total_processed": 648,
+    "duplicates_removed": 118,
+    "skipped_old": 4,
     "skipped_empty": 0,
     "errors": 0,
-    "openai_calls": 188
+    "openai_calls": 126
   },
   "jobs": [
     {
       "job_title": "Medical Sonographer",
       "company": "Fortics Lifecare Limited",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
+      "location": "Lekki Phase 1, Eti-osa 3 – Lagos, Nigeria",
+      "job_type": "Full-Time",
       "job_category": "Allied Health",
-      "salary": "",
-      "experience": "3 - 4 years",
-      "qualification": "BSc",
+      "salary": "N350,000 – N400,000 per month",
+      "experience": "3-4 years working experience",
+      "qualification": "bsc",
       "requirements": [
         "Relevant qualification in Sonography or Medical Imaging.",
         "Sonography medical valid working licence.",
-        "3-4 years working experience.",
         "Proven experience in diagnostic ultrasound practice.",
         "Strong attention to detail and analytical skills.",
         "Excellent interpersonal and communication skills.",
@@ -41,13 +40,116 @@
         "Stay updated with advancements in sonography and participate in continuous professional development."
       ],
       "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-06-20",
+      "deadline": "2026-06-30",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://jobsinnigeria.careers/jobs/medical-sonographer-fortics-lifecare-limited/",
+      "_source": "jobsinnigeria"
+    },
+    {
+      "job_title": "Mental Health Specialist – OSS",
+      "company": "Achieving Health Nigeria Initiative (AHNi)",
+      "location": "Anambra, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Other",
+      "salary": "n,",
+      "experience": "will be an added advantage",
+      "qualification": "bsc",
+      "requirements": [
+        "M.Sc Degree in Clinical Psychology",
+        "BA/BSc in Psychology (MA degree is preferred)",
+        "At least 6 months experience working within a multidisciplinary team",
+        "Knowledge and experience in substance use disorder treatment and addiction management will be an added advantage",
+        "Experience working in addiction treatment and management will be considered an asset",
+        "Previous training on case management and/or bio-psychosocial approach is an asset",
+        "Experience in working with people with mental health issues as an added advantage",
+        "Fluent in English (speaking, reading, writing)",
+        "Ability to use key computing applications e.g. MS Office Suite"
+      ],
+      "responsibilities": [
+        "Provide group and individual mental health and psychosocial support to identified clients",
+        "Conduct screening and assessment of beneficiaries and develop individualized treatment and rehabilitation plans",
+        "Provide psychoeducation to beneficiaries and their families",
+        "Provide psychological support and counselling services to beneficiaries and their families",
+        "Facilitate group therapy and support group sessions",
+        "Conduct home visits to provide further psycho-social support when needed",
+        "Organize community, rehabilitation and awareness activities for beneficiaries and their families",
+        "Attend and contribute to the weekly clinical supervision meeting",
+        "Ensure complete and updated filing of beneficiary information"
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites).",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-06-20",
+      "deadline": "2026-06-21",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://jobsinnigeria.careers/jobs/mental-health-specialist-oss-achieving-health-nigeria-initiative-ahni/",
+      "_source": "jobsinnigeria"
+    },
+    {
+      "job_title": "State Facilitator, Nutrition - Yobe",
+      "company": "Nina Jojer Limited",
+      "location": "Yobe, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Public Health",
+      "salary": "n,",
+      "experience": "3 years",
+      "qualification": "BSc",
+      "requirements": [
+        "BA/BSc/HND",
+        "3 years experience"
+      ],
+      "responsibilities": [
+        "Provide technical support to the assigned state or LGA and facilitate the delivery and monitoring of nutrition programmes.",
+        "Support states and LGAs in designing context-specific nutrition programmes and activities in line with approved work plans.",
+        "Facilitate and participate in the domestication of state/LGA strategies, job aids and guidelines.",
+        "Participate in nutrition sector coordination meetings at the state level to improve efficiency in programme implementation.",
+        "Support states and LGAs in community mobilization and reporting on activities."
+      ],
+      "how_to_apply": [
         "Apply via the Apply Now button for full details."
       ],
       "date_posted": "2026-06-20",
       "deadline": "",
       "contact_email": "",
       "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/medical-sonographer-fortics-lifecare-limited-3",
+      "apply_url": "https://www.myjobmag.com/job/state-facilitator-nutrition-yobe-nina-jojer-limited",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "State Facilitator, Nutrition",
+      "company": "Nina Jojer Limited",
+      "location": "Sokoto, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Public Health",
+      "salary": "n,",
+      "experience": "3 years",
+      "qualification": "BSc",
+      "requirements": [
+        "BA/BSc/HND",
+        "3 years of experience in a related field"
+      ],
+      "responsibilities": [
+        "Provide technical support to assigned state or LGA for nutrition programmes",
+        "Facilitate the delivery and monitoring of nutrition programmes",
+        "Support programme development and planning at LGA and state levels",
+        "Plan and conduct periodic progress meetings with implementing partners",
+        "Participate in nutrition sector coordination meetings to improve programme design and implementation"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-06-20",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/state-facilitator-nutrition-sokoto-nina-jojer-limited",
       "_source": "myjobmag"
     },
     {
@@ -738,28 +840,14 @@
       "experience": "35",
       "qualification": "ond",
       "requirements": [
-        "Educational Qualification: MBBS",
-        "Professional Qualification: Fellow of the West African College of Surgeons (FWACS)",
+        "MBBS",
+        "Fellow of the West African College of Surgeons (FWACS)",
         "Fellow of the Nigerian Medical College of Surgeons (FNMCS)",
         "Minimum of 3 years post fellowship work experience",
         "Applicants must be at least 35 years old",
         "Proficient in computer",
         "Good knowledge of theatre procedures",
-        "Good knowledge of medical equipment such as scanners etc.",
-        "Pro-activeness and alertness",
-        "Teamwork",
-        "Creativity",
-        "Integrity",
-        "Problem Analysis",
-        "Process Improvement",
-        "Good Leadership skills",
-        "High Energy Level",
-        "Good verbal and written communication",
-        "Good leadership and motivational skills",
-        "Honesty",
-        "Customer Orientation",
-        "Attention to details",
-        "Strong organizational skills, confident, friendly & approachable."
+        "Good knowledge of medical equipment such as scanners"
       ],
       "responsibilities": [
         "Conducts Initial Consultation and clinical evaluation for new clients and way - forward for returning clients.",
@@ -772,7 +860,7 @@
         "Prepares and conducts a failed cycle review with clients, also a member of failed cycle review committee.",
         "Conducts post treatment reviews with clients, including post IUI, post aspiration / PGD and cancelled IVF cycles (including those who had no transfers).",
         "Conducts pre - and post - operative reviews for endoscopy.",
-        "Conducts “egg retrieval” procedures after stimulation.",
+        "Conducts egg retrieval procedures after stimulation.",
         "Conducts Embryo transfers for clients.",
         "Conducts intrauterine insemination procedures.",
         "Supervises BDU to ensure that the policies and programmes of the clinic are being carried out and pursued.",
@@ -789,9 +877,9 @@
       ],
       "date_posted": "2026-06-19",
       "deadline": "",
-      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "contact_email": "",
       "contact_phone": "",
-      "apply_url": "Click the Apply Now button for full details.",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/911448/doctor-gynaecologist-at-alfred-and-victoria-associ.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -851,7 +939,10 @@
       "requirements": [
         "Registered Nurse or Midwife, Obstetrics and Gynaecology",
         "Minimum of 4 years’ post NYSC work experience in a care provision and service-related role",
-        "Knowledge of medical software"
+        "Knowledge of medical software",
+        "Medical and Surgical care",
+        "Obstetric and gynaecological care",
+        "Pre-operative and Post-Operative care"
       ],
       "responsibilities": [
         "Daily follow up calls on registered clients and phone-in clients.",
@@ -881,9 +972,9 @@
       ],
       "date_posted": "2026-06-19",
       "deadline": "",
-      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "contact_email": "",
       "contact_phone": "",
-      "apply_url": "Click the Apply Now button for full details.",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/911800/registered-nurse-midwife-at-alfred-and-victoria-as.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -1697,6 +1788,71 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.myjobmag.com/job/lga-facilitator-nutrition-kebbi-nina-jojer-limited",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "LGA Facilitator, Nutrition, Niger",
+      "company": "Nina Jojer Limited",
+      "location": "Niger, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Public Health",
+      "salary": "n,",
+      "experience": "3 years",
+      "qualification": "BSc",
+      "requirements": [
+        "BA/BSc/HND",
+        "3 years experience"
+      ],
+      "responsibilities": [
+        "Provide technical support to the assigned state or LGA and facilitate the delivery and monitoring of nutrition programmes.",
+        "Support in designing context-specific nutrition programmes and activities in line with the approved UNICEF/Government work plan.",
+        "Assist in preparing memoranda, requisitions, and approvals of work plans by principals.",
+        "Plan and conduct periodic progress meetings with implementing partners.",
+        "Facilitate and participate in state/LGA strategies, job aids, and guidelines.",
+        "Participate in nutrition sector coordination meetings at the state level.",
+        "Facilitate the implementation of planned activities and programmes.",
+        "Support community mobilization and reporting on activities in collaboration with nutrition partners.",
+        "Help in coordinating nutrition responses in hard-to-reach areas.",
+        "Facilitate the development of Nutrition Programme Cooperation Agreements (PCAs)."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-06-19",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/lga-facilitator-nutrition-niger-nina-jojer-limited",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "LGA Facilitator, Nutrition, Oyo",
+      "company": "Nina Jojer Limited",
+      "location": "Oyo, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Public Health",
+      "salary": "n,",
+      "experience": "3 years",
+      "qualification": "BSc",
+      "requirements": [
+        "BA/BSc/HND",
+        "3 years experience"
+      ],
+      "responsibilities": [
+        "Provide technical support to the assigned state or LGA",
+        "Facilitate the delivery and monitoring of nutrition programmes",
+        "Support states and LGAs in designing context-specific nutrition programmes",
+        "Conduct periodic progress meetings with implementing partners",
+        "Participate in nutrition sector coordination meetings"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-06-19",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/lga-facilitator-nutrition-oyo-nina-jojer-limited",
       "_source": "myjobmag"
     },
     {
@@ -3496,36 +3652,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.myjobmag.com/job/technical-officer-quality-improvement-ningi-lga-fhi-360",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Medical Officer / Registrars in Family Medicine",
-      "company": "Faith Mediplex Teaching Hospital",
-      "location": "Benin, Edo, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Doctor",
-      "salary": "",
-      "experience": "2 years",
-      "qualification": "BSc",
-      "requirements": [
-        "MBBS or equivalent medical qualification.",
-        "Current and valid MDCN practicing license.",
-        "Minimum of 2 years post-housemanship clinical experience."
-      ],
-      "responsibilities": [
-        "Conduct patient consultations, examinations, and diagnoses.",
-        "Manage both out-patient and in-patient care.",
-        "Participate in ward rounds and emergency on-call duties."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-06-18",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/medical-officer-registrars-in-family-medicine-faith-mediplex-teaching-hospital",
       "_source": "myjobmag"
     },
     {
@@ -16773,76 +16899,6 @@
       "_source": "hotnigerianjobs"
     },
     {
-      "job_title": "Registered Nurse / Midwife",
-      "company": "Development Africa",
-      "location": "Lekki Phase 1, Lagos, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Nurse",
-      "salary": "n,",
-      "experience": "Minimum of 2 years relevant clinical experience",
-      "qualification": "bsc",
-      "requirements": [
-        "Registered Nurse (RN) and Registered Midwife (RM) certifications from accredited institutions",
-        "Valid practicing license issued by the Nursing and Midwifery Council of Nigeria (NMCN)",
-        "Current practicing license is mandatory."
-      ],
-      "responsibilities": [
-        "Provide quality nursing care to patients.",
-        "Monitor and record patients’ vital signs and clinical conditions.",
-        "Administer medications and treatments as prescribed.",
-        "Provide antenatal, labour, delivery, and postnatal care to mothers and newborns.",
-        "Assist with normal deliveries and identify cases requiring escalation.",
-        "Educate patients and relatives on health, hygiene, nutrition, and family care.",
-        "Maintain accurate nursing and maternity records.",
-        "Ensure compliance with infection prevention and control procedures.",
-        "Support emergency response and patient stabilization when required.",
-        "Work collaboratively with doctors and other healthcare professionals.",
-        "Ensure proper handling of medical equipment and supplies.",
-        "Participate in ward rounds, trainings, and clinical meetings."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-05-19",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://jobsinnigeria.careers/jobs/registered-nurse-midwife-development-africa/",
-      "_source": "jobsinnigeria"
-    },
-    {
-      "job_title": "Medical Laboratory Scientist",
-      "company": "ISN Medical",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Medical Laboratory Scientist",
-      "salary": "n,",
-      "experience": "",
-      "qualification": "bsc",
-      "requirements": [],
-      "responsibilities": [
-        "Provide accurate and precise results to help doctors diagnose, treat, and monitor disease.",
-        "Ensure accurate specimen collection, uphold safety and compliance standards, and support efficient laboratory workflow.",
-        "Ensure proper labeling and storage of specimens.",
-        "Conduct laboratory investigations in different sections accurately.",
-        "Ensure equipment calibrations and maintenance are done at due time.",
-        "Perform quality control tests and appropriately address QC violations.",
-        "Ensure proper documentation of test procedures and results.",
-        "Communicate critical or abnormal results promptly to doctors."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-05-19",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://jobsinnigeria.careers/jobs/medical-laboratory-scientist-isn-medical/",
-      "_source": "jobsinnigeria"
-    },
-    {
       "job_title": "Clinical Specialist (Doctor)",
       "company": "Helium Health",
       "location": "Remote, Nigeria",
@@ -16875,6 +16931,44 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/898395/clinical-specialist-doctor-at-helium-health-remote.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
+      "job_title": "Registered Nurse / Midwife",
+      "company": "Development Africa",
+      "location": "Lekki Phase 1, Lagos, Nigeria",
+      "job_type": "Full-time",
+      "job_category": "Nurse",
+      "salary": "n,",
+      "experience": "Minimum of 2 years relevant clinical experience",
+      "qualification": "Registered Nurse (RN) and Registered Midwife (RM) certifications from accredited institutions.",
+      "requirements": [
+        "Valid practicing license issued by the Nursing and Midwifery Council of Nigeria (NMCN).",
+        "Minimum of 2 years relevant clinical experience."
+      ],
+      "responsibilities": [
+        "Provide quality nursing care to patients.",
+        "Monitor and record patients’ vital signs and clinical conditions.",
+        "Administer medications and treatments as prescribed.",
+        "Provide antenatal, labour, delivery, and postnatal care to mothers and newborns.",
+        "Assist with normal deliveries and identify cases requiring escalation.",
+        "Educate patients and relatives on health, hygiene, nutrition, and family care.",
+        "Maintain accurate nursing and maternity records.",
+        "Ensure compliance with infection prevention and control procedures.",
+        "Support emergency response and patient stabilization when required.",
+        "Work collaboratively with doctors and other healthcare professionals.",
+        "Ensure proper handling of medical equipment and supplies.",
+        "Participate in ward rounds, trainings, and clinical meetings."
+      ],
+      "how_to_apply": [
+        "Submit your application through the employer’s online recruitment portal.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-05-19",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/898452/registered-nurse-midwife-at-development-africa.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -18655,38 +18749,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Medical-Officer-at-Zael-Business-Management-and-Consulting?pid=77782",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Female Medical Doctor (Obstetrics / Gynaecology)",
-      "company": "Christian Miracle Hospital",
-      "location": "Enugu",
-      "job_type": "",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "Proven interest in Obstetrics and Gynaecology is mandatory.",
-      "qualification": "Bachelor of Medicine, Bachelor of Surgery (MBBS) from an accredited institution.",
-      "requirements": [
-        "Full registration with the Medical and Dental Council of Nigeria (MDCN) with a current practicing license.",
-        "Spiritual Alignment: As a faith-based institution, we require a candidate who is a committed, born-again Christian and reflects Christ-like compassion in patient care.",
-        "High level of integrity, excellent communication skills, and the ability to work under pressure."
-      ],
-      "responsibilities": [
-        "Conduct comprehensive outpatient consultations, manage antenatal and fertility clinics, and provide specialized care for obstetric and gynaecological cases.",
-        "Independently perform or assist in obstetric and gynaecological surgeries, including Caesarean Sections (C-S), fibroid, ovarian cyst, appendectomies, and other gynaecological procedures",
-        "Lead daily ward rounds, manage pre- and post-operative care, and ensure the delivery of high-quality, patient-centric services.",
-        "Provide 24/7 on-site medical support during scheduled shifts and handle obstetric emergencies with precision and speed.",
-        "Maintain accurate medical records, participate in clinical audits, and collaborate with the nursing and lab teams to optimize patient outcomes."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-04-21",
-      "deadline": "2026-05-31",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Female-Medical-Doctor-Obstetrics-Gynaecology-at-Christian-Miracle-Hospital?pid=77765",
       "_source": "medicalworldnigeria"
     }
   ]
