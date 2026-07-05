@@ -1,15 +1,139 @@
 {
   "metadata": {
-    "extracted_at": "2026-07-04T06:32:11.022624",
+    "extracted_at": "2026-07-05T06:43:56.257025",
     "model": "gpt-4o-mini",
-    "total_processed": 567,
-    "duplicates_removed": 81,
-    "skipped_old": 0,
+    "total_processed": 565,
+    "duplicates_removed": 79,
+    "skipped_old": 1,
     "skipped_empty": 0,
     "errors": 0,
-    "openai_calls": 145
+    "openai_calls": 82
   },
   "jobs": [
+    {
+      "job_title": "Ophthalmic Nurse",
+      "company": "Credible Eye Care",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Nurse",
+      "salary": "is not based on targets.",
+      "experience": "Location",
+      "qualification": "BSc",
+      "requirements": [
+        "Interested candidates should possess relevant qualifications with work experience",
+        "Applicant must reside close to or within the area of job location."
+      ],
+      "responsibilities": [
+        "Record keeping using excel -this requires good computer skills",
+        "Welcoming of patients to the clinic in a highly professional manner",
+        "Inventory records",
+        "Responding to calls from patients",
+        "Sales recording and submission of daily reports",
+        "Assist in theatre during surgery",
+        "Check patient vitals and keep proper record"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-07-04",
+      "deadline": "2026-07-19",
+      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/ophthalmic-nurse-credible-eye-care-1",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Medical Laboratory Technician",
+      "company": "FAMSAS College of Health Science and Technology, Keffi",
+      "location": "Keffi, Nasarawa, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Medical Laboratory Scientist",
+      "salary": "",
+      "experience": "",
+      "qualification": "diploma",
+      "requirements": [
+        "Relevant academic qualifications from recognised schools with a minimum of a good grade or class",
+        "Current registration and a valid practising licence from the appropriate professional regulatory council or board (for professional positions)",
+        "Evidence of teaching experience in a College or School of Health",
+        "Ability to teach, mentor, and assess students (where required)",
+        "Good communication skills",
+        "High ethical standards",
+        "Basic ICT skills to support teaching and record keeping"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Email the address shown on the original listing.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-07-04",
+      "deadline": "2026-07-14",
+      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/medical-laboratory-technician-famsas-college-of-health-science-and-technology-keffi",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Dental Therapist / Dental Technologist",
+      "company": "FAMSAS College of Health Science and Technology, Keffi",
+      "location": "Keffi, Nasarawa, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Dentist",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "diploma",
+      "requirements": [
+        "Relevant academic qualifications from recognised schools with a minimum of a good grade or class",
+        "Current registration and valid practising licence from the appropriate professional regulatory council or board",
+        "Evidence of teaching experience in a College or School of Health",
+        "Ability to teach, mentor and assess students",
+        "Good communication skills",
+        "High ethical standards",
+        "Basic ICT skills"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Email the address shown on the original listing.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-07-04",
+      "deadline": "2026-07-14",
+      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/dental-therapist-dental-technologist-famsas-college-of-health-science-and-technology-keffi",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Chief Medical Officer",
+      "company": "Zinance Limited",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Doctor",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "BSc",
+      "requirements": [
+        "Clinical risk management experience",
+        "Superb organizational skills",
+        "Excellent written and verbal communication skills",
+        "Exceptional interpersonal abilities."
+      ],
+      "responsibilities": [
+        "Ensure that all healthcare regulations and safety standards are met",
+        "Keep staff updated on new healthcare regulations",
+        "Find ways to improve clinical services",
+        "Liaise between the administration and medical staff",
+        "Report to the Chief Executive Officer or Board of Directors."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-07-04",
+      "deadline": "",
+      "contact_email": "Email the address shown on the original listing (email is protected on some sites.)",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/chief-medical-officer-zinance-limited",
+      "_source": "myjobmag"
+    },
     {
       "job_title": "Marketing Executive",
       "company": "Biorapid Diagnostics Nigeria Limited",
@@ -644,38 +768,6 @@
       "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/918353/business-development-pharmacist-at-agary-pharmaceu.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Chief Medical Officer",
-      "company": "Zinance Limited",
-      "location": "Ikeja, Lagos, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "N150,000 - N200,000 per month",
-      "experience": "Superb organizational skills",
-      "qualification": "",
-      "requirements": [
-        "Clinical risk management experience",
-        "Superb organizational skills",
-        "Excellent written and verbal communication skills",
-        "Exceptional interpersonal abilities."
-      ],
-      "responsibilities": [
-        "Ensure that all healthcare regulations and safety standards are met",
-        "Keep staff updated on new healthcare regulations",
-        "Find ways to improve clinical services",
-        "Liaise between the administration and medical staff",
-        "Report to the Chief Executive Officer or Board of Directors."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-07-03",
-      "deadline": "2026-07-24",
-      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/918392/chief-medical-officer-at-zinance-limited.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -5747,68 +5839,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.myjobmag.com/job/medical-laboratory-scientist-desol-medical-solutions-limited",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Volunteer - Nutrition",
-      "company": "Care Best Initiative (CBI)",
-      "location": "Katsina, Nigeria",
-      "job_type": "Contract",
-      "job_category": "Other",
-      "salary": "n,",
-      "experience": "Location",
-      "qualification": "BA/BSc/HND",
-      "requirements": [
-        "BA/BSc/HND",
-        "Relevant qualifications and experience"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-06-30",
-      "deadline": "2026-07-08",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/volunteer-nutrition-care-best-initiative-cbi",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Head of Molecular Genetics",
-      "company": "The African Medical Centre of Excellence (AMCE)",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "n,",
-      "experience": "3",
-      "qualification": "BSc",
-      "requirements": [
-        "BA/BSc/HND",
-        "MBA/MSc/MA",
-        "PhD/Fellowship",
-        "7 years experience"
-      ],
-      "responsibilities": [
-        "Develop and implement the strategic vision for the Molecular Genetics Department",
-        "Provide executive leadership to the department, overseeing all operational, clinical, and research activities",
-        "Manage departmental resources, including budget planning, staffing, and procurement of advanced laboratory equipment and technologies",
-        "Establish and monitor key performance indicators (KPIs) for quality, turnaround time, and service efficiency",
-        "Oversee delivery of high-complexity molecular genetic testing",
-        "Ensure accurate interpretation and reporting of genetic test results",
-        "Implement and maintain rigorous quality control, proficiency testing, and validation protocols for all assays",
-        "Lead and foster a robust research program in molecular genetics and genomics",
-        "Secure competitive research grants and collaborate with national and international research consortia",
-        "Drive innovation in genomic technologies and bioinformatics pipelines",
-        "Supervise the development, validation, and maintenance of bioinformatics pipelines for genomic data analysis"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-06-30",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/head-of-molecular-genetics-the-african-medical-centre-of-excellence-amce-3",
       "_source": "myjobmag"
     },
     {
@@ -11857,40 +11887,6 @@
       "_source": "hotnigerianjobs"
     },
     {
-      "job_title": "Ophthalmic Nurse",
-      "company": "Credible Eye Care",
-      "location": "Festac, Lagos, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "N80,000 - N130,000 monthly",
-      "experience": "Applicant must reside close to or within the area of job location.",
-      "qualification": "ond",
-      "requirements": [
-        "Interested candidates should possess relevant qualifications with work experience",
-        "Must be proficient with MS Excel",
-        "Must be able to communicate effectively",
-        "Must be able to multitask."
-      ],
-      "responsibilities": [
-        "Record keeping using excel - this requires good computer skills",
-        "Welcoming of patients to the clinic in a highly professional manner",
-        "Inventory records",
-        "Responding to calls from patients",
-        "Sales recording and submission of daily reports",
-        "Assist in theatre during surgery",
-        "Check patient vitals and keep proper record"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-06-18",
-      "deadline": "2026-07-19",
-      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/910967/ophthalmic-nursing-at-credible-eye-care.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
       "job_title": "Specialised Nurse (ICU & Accident and Emergency)",
       "company": "Faith Mediplex Teaching Hospital",
       "location": "Benin, Edo, Nigeria",
@@ -13306,6 +13302,34 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/908580/case-manager-freelance-at-reliance-health-kano.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
+      "job_title": "Telemarketer (Remote)",
+      "company": "Vastovers Group",
+      "location": "Nationwide, Nigeria",
+      "job_type": "Full-time",
+      "job_category": "Other",
+      "salary": "plus commission above N500,000 monthly",
+      "experience": "2 years",
+      "qualification": "OND",
+      "requirements": [
+        "A Pharmacist, Medical Doctor, or an individual with Degrees in Medical or Biological Sciences.",
+        "A minimum of 2 years of experience in Marketing.",
+        "Attention to details.",
+        "Public relations proficiency.",
+        "Strong quantitative reasoning and calculative skills."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-06-15",
+      "deadline": "2026-08-31",
+      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/908527/telemarketer-remote-at-vastovers-group-nationwide.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -17046,47 +17070,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/893650/senior-clinical-services-consultant-at-an-indigeno.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "State Technical Officer",
-      "company": "Catholic Caritas Foundation of Nigeria (Caritas Nigeria)",
-      "location": "Abia, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Public Health",
-      "salary": "n,",
-      "experience": "Minimum five (5) years’ experience in TB/HIV program implementation in a resource-challenged setting.",
-      "qualification": "ond",
-      "requirements": [
-        "BSc or MBBS (Preferred) with NYSC discharge certificate",
-        "A master’s degree in public health/Global Health will be an additional advantage",
-        "Knowledge of and familiarity with key facility and community TB/HIV innovations",
-        "Strong ability to manage men and materials",
-        "Experience with Global Fund policies, regulations, and procedures is desirable",
-        "Proficiency in statistical analysis and the use of computers",
-        "Excellent communication and interpersonal skills",
-        "Exhibits a high level of accuracy in work",
-        "Have a high sense of integrity and transparency",
-        "Ability to manage official information in a confidential manner",
-        "Ability to multitask and work well under pressure"
-      ],
-      "responsibilities": [
-        "Oversee the implementation of all components of the Global Fund GC7 grant in the state.",
-        "Facilitate the engagement of private health facilities and other relevant stakeholders in TB and HIV control.",
-        "Organize & conduct regular data-driven health facility supervision to ensure quality TB, TB/HIV, and DR-TB surveillance, and service delivery.",
-        "Provide regular technical support and supervision to field personnel, including private health sector care providers and community TB/HIV cascade monitors.",
-        "Support facilities to ensure effective linkages for the TB clinical cascade as well as integration with allied interventions, including HIV/AIDS prevention, care, and treatment.",
-        "Work with relevant state staff to disseminate guidelines, tools, and procedures that will support the achievement of quality service delivery.",
-        "Contribute to the development of program strategies, subproject documents, work plans, and budgets."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-05-05",
-      "deadline": "",
-      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/892183/state-technical-officer-at-catholic-caritas-founda.html",
       "_source": "hotnigerianjobs"
     }
   ]
