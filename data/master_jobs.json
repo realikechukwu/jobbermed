@@ -1,15 +1,101 @@
 {
   "metadata": {
-    "extracted_at": "2026-07-11T06:02:04.058522",
+    "extracted_at": "2026-07-12T06:14:41.037785",
     "model": "gpt-4o-mini",
-    "total_processed": 646,
-    "duplicates_removed": 110,
+    "total_processed": 647,
+    "duplicates_removed": 109,
     "skipped_old": 0,
     "skipped_empty": 0,
     "errors": 0,
-    "openai_calls": 186
+    "openai_calls": 114
   },
   "jobs": [
+    {
+      "job_title": "Medical Laboratory Scientist",
+      "company": "Talent pool resources international ltd",
+      "location": "Ojo, Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Medical Laboratory Scientist",
+      "salary": "NGN200,000 / monthly",
+      "experience": "Minimum of 3 years relevant work experience",
+      "qualification": "B.MLS or equivalent qualification in Medical Laboratory Science",
+      "requirements": [
+        "Current practicing license",
+        "Strong knowledge of laboratory procedures, quality assurance, and quality control",
+        "Excellent analytical and communication skills",
+        "Ability to work independently and as part of a multidisciplinary team"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-07-11",
+      "deadline": "2026-07-27",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/medical-laboratory-scientist-1352",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Post NYSC Medical Officer",
+      "company": "Agape Specialist Hospital",
+      "location": "Ondo City, Ondo State, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Doctor",
+      "salary": "NGN400,000 / monthly",
+      "experience": "",
+      "qualification": "",
+      "requirements": [],
+      "responsibilities": [
+        "Run shifts with another Doctor",
+        "Do alternate weekends"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-07-11",
+      "deadline": "2026-07-31",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/post-nysc-medical-officer-1351",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Medical Laboratory Scientist",
+      "company": "Deborah Multi-specialist Hospital & Diagnostics",
+      "location": "Ondo, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Medical Laboratory Scientist",
+      "salary": "",
+      "experience": "3",
+      "qualification": "BSc",
+      "requirements": [
+        "Bachelor of Medical Laboratory Science (BMLS)",
+        "Valid practicing license from the Medical Laboratory Science Council of Nigeria (MLSCN)",
+        "Minimum of 2 years post-NYSC experience in a clinical laboratory",
+        "Proficiency in laboratory information systems and basic computer applications",
+        "Strong attention to detail and analytical skills",
+        "Excellent communication and teamwork abilities"
+      ],
+      "responsibilities": [
+        "Perform routine and specialized laboratory tests on patient samples.",
+        "Analyze and interpret test results accurately and promptly.",
+        "Maintain and calibrate laboratory equipment and instruments.",
+        "Ensure compliance with safety, hygiene, and quality control standards.",
+        "Document and report findings to physicians and other healthcare professionals.",
+        "Participate in internal and external quality assurance programs.",
+        "Maintain accurate records and inventory of laboratory supplies."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-07-11",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/medical-laboratory-scientist-deborah-multi-specialist-hospital-diagnostics-2",
+      "_source": "myjobmag"
+    },
     {
       "job_title": "Anaesthesiologist - CEmONC Capacity Building for Healthcare Workers Consultancy",
       "company": "Jhpiego - John Hopkins University",
@@ -70,6 +156,41 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.myjobmag.com/job/bemonc-master-trainer-jhpiego",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Accountant",
+      "company": "Perez MedCare Hospital",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "",
+      "experience": "2 years",
+      "qualification": "BSc",
+      "requirements": [
+        "B.Sc / HND in Accounting, Finance, or related field",
+        "Minimum of 2 years relevant experience",
+        "Knowledge of accounting software and Microsoft Excel",
+        "Strong analytical and reporting skills",
+        "Good communication and organizational ability",
+        "Experience in hospital or healthcare accounting is an added advantage."
+      ],
+      "responsibilities": [
+        "Prepare financial reports and reconciliations",
+        "Manage hospital accounts and transactions",
+        "Monitor expenses and budgets",
+        "Maintain accurate financial records",
+        "Ensure compliance with financial procedures and policies"
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-07-11",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/accountant-perez-medcare-hospital-1",
       "_source": "myjobmag"
     },
     {
@@ -4807,32 +4928,6 @@
       "_source": "myjobmag"
     },
     {
-      "job_title": "Resident Doctor (Obstetrics & Gynaecology)",
-      "company": "Lagos University Teaching Hospital",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "1 year",
-      "qualification": "BA/BSc/HND",
-      "requirements": [
-        "Fully registered with the Medical & Dental Council of Nigeria",
-        "Completed NYSC",
-        "Success at the Primary Examination of either the West Africa or National Postgraduate Medical College of Nigeria"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-07-09",
-      "deadline": "2026-08-20",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/resident-doctor-obstetrics-gynaecology-lagos-university-teaching-hospital",
-      "_source": "myjobmag"
-    },
-    {
       "job_title": "Front Desk Officer",
       "company": "Ecofitnesshub Limited",
       "location": "Abuja, Nigeria",
@@ -6150,6 +6245,47 @@
       "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/920310/consultant-urologist-at-a-leading-private-healthca.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
+      "job_title": "Consultant Neurologist",
+      "company": "a Leading Private Healthcare - JV Management Consulting - 4 Openings",
+      "location": "Port Harcourt, Rivers, Nigeria",
+      "job_type": "",
+      "job_category": "Doctor",
+      "salary": "n,",
+      "experience": "3–5 years post-fellowship experience in a reputable hospital or healthcare institution.",
+      "qualification": "Medical Degree (MBBS or equivalent)",
+      "requirements": [
+        "Fellowship qualification from the National Postgraduate Medical College of Nigeria (NPMCN), West African College of Surgeons (WACS), West African College of Physicians (WACP), or internationally recognized equivalent.",
+        "Current practicing license with the Medical and Dental Council of Nigeria (MDCN).",
+        "Relevant specialist registration and certification.",
+        "Demonstrated expertise in managing complex clinical cases within your specialty.",
+        "Strong interpersonal, communication, and leadership skills.",
+        "Commitment to clinical excellence, patient safety, and ethical medical practice.",
+        "Ability to work effectively within a multidisciplinary healthcare environment."
+      ],
+      "responsibilities": [
+        "Provide specialist consultations, diagnosis, treatment, and management of patients within your area of specialization.",
+        "Deliver evidence-based clinical care in accordance with established medical standards and hospital protocols.",
+        "Perform specialized procedures and surgeries relevant to your specialty.",
+        "Participate in clinical audits, quality improvement initiatives, and multidisciplinary case reviews.",
+        "Collaborate effectively with other consultants, medical officers, nurses, and allied healthcare professionals.",
+        "Supervise and mentor junior medical personnel where applicable.",
+        "Maintain accurate medical documentation and patient records.",
+        "Participate in emergency call duties and clinical governance activities as required.",
+        "Support continuous improvement of patient safety and healthcare outcomes.",
+        "Contribute to the hospital's reputation for excellence through exceptional patient care and professional conduct."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-07-08",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/920304/consultant-neurologist-at-a-leading-private-health.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -11234,51 +11370,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/paediatric-cardiologist-1272",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Resident Doctor (Paediatrics)",
-      "company": "R-Jolad Plus",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Doctor",
-      "salary": "",
-      "experience": "",
-      "qualification": "relevant qualification and experience",
-      "requirements": [
-        "Interested applicants should possess relevant qualification and experience.",
-        "Aspiring candidates with or without Primary can apply."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-06-30",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/resident-doctor-paediatrics-1271",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Paediatric Nephrologist",
-      "company": "R-Jolad Plus",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Doctor",
-      "salary": "",
-      "experience": "3-5 years",
-      "qualification": "",
-      "requirements": [],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-06-30",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/paediatric-nephrologist-1270",
       "_source": "medlocum"
     },
     {
