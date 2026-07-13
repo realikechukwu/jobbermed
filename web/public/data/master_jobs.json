@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "extracted_at": "2026-07-12T06:14:41.037785",
+    "extracted_at": "2026-07-13T06:26:18.499702",
     "model": "gpt-4o-mini",
-    "total_processed": 647,
+    "total_processed": 646,
     "duplicates_removed": 109,
     "skipped_old": 0,
     "skipped_empty": 0,
     "errors": 0,
-    "openai_calls": 114
+    "openai_calls": 109
   },
   "jobs": [
     {
@@ -11777,36 +11777,6 @@
       "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
       "contact_phone": "",
       "apply_url": "https://www.myjobmag.com/job/clinical-psychologist-3",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Aesthetic Nurse",
-      "company": "EZ Consulting",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Nurse",
-      "salary": "₦200,000 - ₦300,000/month",
-      "experience": "1 - 5 years",
-      "qualification": "BSc",
-      "requirements": [
-        "Registered Nurse (RN) qualification is mandatory.",
-        "Minimum of 2 years' experience in the aesthetic field.",
-        "Must be experienced in facial procedures, injectables, and dermal fillers.",
-        "Must be well presented and professional.",
-        "Must have excellent communication and interpersonal skills.",
-        "Excellent in-clinic/Patient Skills.",
-        "Must reside in Abuja or be willing to work in Asokoro."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-06-30",
-      "deadline": "2026-07-12",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/aesthetic-nurse",
       "_source": "myjobmag"
     },
     {
