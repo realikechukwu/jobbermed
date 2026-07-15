@@ -121,7 +121,7 @@ export function RecruiterJobNewPage() {
 
       navigate(`/recruiter/jobs/${createdJob.id}/applicants`, { replace: true });
     } catch (submitError) {
-      const message = submitError instanceof Error ? submitError.message : "Unable to create native job.";
+      const message = submitError instanceof Error ? submitError.message : "Unable to create job.";
       setError(message);
     } finally {
       setIsSubmitting(false);
@@ -129,9 +129,9 @@ export function RecruiterJobNewPage() {
   }
 
   return (
-    <RouteShell title="Post native job" subtitle="Create a direct-apply listing for candidates.">
-      <section className="shell-content" aria-label="Create native job">
-        <CardPrimitive title="New native job">
+    <RouteShell title="Post a Direct Apply job" subtitle="Create a direct-apply listing for candidates.">
+      <section className="shell-content" aria-label="Create Direct Apply job">
+        <CardPrimitive title="New Direct Apply job">
           <form className="shell-form" onSubmit={handleSubmit}>
             <label className="shell-label" htmlFor="job-title">
               Job title

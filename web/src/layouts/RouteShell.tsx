@@ -13,7 +13,7 @@ export function RouteShell({ title, subtitle, children }: RouteShellProps) {
   return (
     <>
       <TopStrip />
-      <HeroShell title={title} subtitle={subtitle} />
+      <HeroShell title={title} subtitle={subtitle} variant="compact" />
       <div className="page">{children}</div>
       <FooterShell />
     </>

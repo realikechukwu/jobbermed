@@ -1,16 +1,17 @@
-import { NavLink } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useSession } from "../features/auth/session-context";
-import { getSiteNavLinks, type SiteNavState } from "../navigation/site-nav";
+import { getSiteNavLinks, isSiteNavLinkActive, type SiteNavState } from "../navigation/site-nav";
 
 export function FooterShell() {
   const { user, roles } = useSession();
+  const location = useLocation();
 
   const navState: SiteNavState = {
     isAuthenticated: Boolean(user),
     roles,
   };
 
-  const footerLinks = getSiteNavLinks("app", "footer", navState);
+  const footerLinks = getSiteNavLinks("footer", navState);
 
   return (
     <footer className="footer-strip" aria-label="Footer">
@@ -24,10 +25,12 @@ export function FooterShell() {
             );
           }
 
+          const activeClass = isSiteNavLinkActive(link, location.pathname, location.search) ? " active" : "";
+
           return (
-            <NavLink key={link.id} className="footer-link" to={link.to}>
+            <Link key={link.id} className={`footer-link${activeClass}`} to={link.to}>
               {link.label}
-            </NavLink>
+            </Link>
           );
         })}
       </div>

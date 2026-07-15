@@ -47,19 +47,19 @@ export function RecruiterDashboardPage() {
   }, []);
 
   return (
-    <RouteShell title="Recruiter dashboard" subtitle="Create native jobs and manage incoming applicants.">
+    <RouteShell title="Recruiter dashboard" subtitle="Create direct-apply jobs and manage incoming applicants.">
       <section className="shell-grid" aria-label="Recruiter summary cards">
-        <CardPrimitive title="Native jobs" meta="Jobs posted by your account.">
+        <CardPrimitive title="Direct Apply jobs" meta="Jobs posted by your account.">
           <p className="meta">{isLoading ? "Loading..." : `${jobs.length} total jobs`}</p>
           <Link className="shell-button dashboard-link" to="/recruiter/jobs/new">
-            Post new native job
+            Post new job
           </Link>
         </CardPrimitive>
 
         <CardPrimitive title="Review applications" meta="Open applicants by job.">
           <p className="meta">Each job has a dedicated applicant workflow.</p>
-          <Link className="shell-button dashboard-link" to="/native-jobs">
-            View public native jobs
+          <Link className="shell-button dashboard-link" to="/?source=direct">
+            View public Direct Apply jobs
           </Link>
         </CardPrimitive>
       </section>

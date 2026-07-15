@@ -97,10 +97,31 @@ a {
   text-decoration: underline;
 }
 
+.site-nav-link.site-nav-cta {
+  background: var(--accent, #2a9dc9);
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 999px;
+}
+
+.site-nav-link.site-nav-cta:hover {
+  text-decoration: none;
+  filter: brightness(1.08);
+}
+
+.site-nav-email {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 220px;
+  word-break: break-word;
+  font-weight: 700;
+}
+
 .site-mobile-menu-btn {
   display: none;
   align-items: center;
   justify-content: center;
+  gap: 8px;
   background: transparent;
   border: 1px solid #ffffff;
   color: #ffffff;
@@ -242,6 +263,39 @@ a {
   font-weight: 500;
   color: rgba(255, 255, 255, 0.7);
   text-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Compact variant: interior pages get a slim dark header without the photo
+   banner so content starts near the top of the viewport. */
+.hero-banner--compact {
+  background: linear-gradient(120deg, #0b1626 0%, #10233b 55%, #16324f 100%);
+}
+
+.hero-banner--compact .hero-inner {
+  padding: 18px 20px 30px;
+}
+
+.hero-banner--compact .brand-link {
+  margin-bottom: 10px;
+}
+
+.hero-banner--compact .brand-logo {
+  height: clamp(56px, 6vw, 84px);
+}
+
+.hero-banner--compact .hero-title {
+  font-size: clamp(1.3rem, 2.3vw, 1.8rem);
+}
+
+.hero-banner--compact .hero-title::after {
+  height: 4px;
+  margin-top: 10px;
+  width: min(160px, 36vw);
+}
+
+.hero-banner--compact .hero-subtitle {
+  margin-top: 8px;
+  font-size: clamp(0.9rem, 1.6vw, 1.05rem);
 }
 
 .page {

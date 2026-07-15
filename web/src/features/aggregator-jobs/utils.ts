@@ -408,8 +408,8 @@ export function getLocationBuckets(location: string): string[] {
   return [raw];
 }
 
-export function interleaveBySource(list: AggregatorJob[]): AggregatorJob[] {
-  const buckets = new Map<string, AggregatorJob[]>();
+export function interleaveBySource<T extends AggregatorJob>(list: T[]): T[] {
+  const buckets = new Map<string, T[]>();
   const order: string[] = [];
 
   list.forEach((job) => {
@@ -425,7 +425,7 @@ export function interleaveBySource(list: AggregatorJob[]): AggregatorJob[] {
     }
   });
 
-  const interleaved: AggregatorJob[] = [];
+  const interleaved: T[] = [];
   let added = true;
 
   while (added) {

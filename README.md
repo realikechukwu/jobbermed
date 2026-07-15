@@ -76,18 +76,20 @@ Bridge scripts:
 
 The React app exposes:
 
-- Aggregated jobs browsing on `/`
-- Native jobs browsing on `/native-jobs`
-- Native job application flow on `/native-jobs/:jobId`
+- Unified job board on `/` with a source toggle: All jobs, Direct Apply (posted on JobberMed), and External (aggregated)
+- Direct Apply view via `/?source=direct` (legacy `/native-jobs` and `/jobs/direct` redirect here)
+- Direct Apply application flow on `/jobs/direct/:jobId` (legacy `/native-jobs/:jobId` redirects here)
 - Auth flows for sign-up, sign-in, password reset, and password change
 - Role-aware dashboards for candidates, recruiters, MDCN reviewers, and admins
 - Email personalization controls for signed-in users
 
-### 5. Native jobs and role workflows
+Board filter state (source, category, location, keyword, saved-only, page) lives in the URL query string, so filtered views are shareable and survive reloads.
 
-Native jobs live in Supabase and support these flows:
+### 5. Direct Apply (native) jobs and role workflows
 
-- Signed-in candidates browse published native jobs and submit applications
+Direct Apply jobs (internally "native jobs") live in Supabase and support these flows:
+
+- Signed-in candidates browse published Direct Apply jobs and submit applications
 - Recruiters request access, then create jobs and review applicants
 - MDCN reviewers review native applications and update statuses
 - Admins approve recruiter access requests and manage elevated role access
@@ -104,10 +106,11 @@ The repo also runs email automation:
 
 ### Public
 
-- Aggregated jobs homepage
-- Native jobs listing and detail pages
-- About, privacy, and subscribe pages
+- Unified job board homepage (aggregated + Direct Apply, with source toggle)
+- Direct Apply job detail and application pages
+- About, privacy, subscribe, and "Why JobberMed" (`/landing`) pages
 - Sign-in, sign-up, forgot-password, and reset-password flows
+- Not-found page for unknown routes
 
 ### Signed-in account
 

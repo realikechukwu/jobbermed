@@ -27,7 +27,6 @@ export function useDetailPanel({ jobs }: UseDetailPanelArgs): UseDetailPanelResu
   const closeTimerRef = useRef<number | null>(null);
 
   const jobSlugParam = safeText(searchParams.get("job"));
-  const refParam = safeText(searchParams.get("ref"));
   const isMounted = panelSlug !== null;
 
   useBodyScrollLock(isMounted);
@@ -43,12 +42,6 @@ export function useDetailPanel({ jobs }: UseDetailPanelArgs): UseDetailPanelResu
       document.body.classList.remove("panel-open");
     };
   }, [isMounted]);
-
-  useEffect(() => {
-    if (refParam === "dashboard") {
-      sessionStorage.setItem("returnToDashboard", "1");
-    }
-  }, [refParam]);
 
   useEffect(() => {
     if (jobSlugParam) {
@@ -99,15 +92,6 @@ export function useDetailPanel({ jobs }: UseDetailPanelArgs): UseDetailPanelResu
   );
 
   const closeDetail = useCallback(() => {
-    const ref = searchParams.get("ref");
-    const shouldReturnToDashboard = sessionStorage.getItem("returnToDashboard") === "1";
-
-    if (ref === "dashboard" || shouldReturnToDashboard) {
-      sessionStorage.removeItem("returnToDashboard");
-      window.location.assign("/dashboard#saved-jobs");
-      return;
-    }
-
     const next = new URLSearchParams(searchParams);
     next.delete("job");
     setSearchParams(next);

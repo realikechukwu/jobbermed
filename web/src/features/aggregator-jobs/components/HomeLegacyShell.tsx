@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState, type ReactNode } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useSession } from "../../auth/session-context";
 import { getSupabaseClient } from "../../../lib/supabase-client";
 import {
@@ -8,15 +8,18 @@ import {
   getSiteNavLinks,
   type SiteNavState,
 } from "../../../navigation/site-nav";
+import { SiteHeaderNav } from "../../../components/SiteHeaderNav";
 import { SiteMobileDrawer } from "../../../components/SiteMobileDrawer";
 
 type HomeLegacyShellProps = {
   children: ReactNode;
+  heroSearch?: ReactNode;
 };
 
-export function HomeLegacyShell({ children }: HomeLegacyShellProps) {
+export function HomeLegacyShell({ children, heroSearch }: HomeLegacyShellProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
   const { user, roles } = useSession();
 
   const navState = useMemo<SiteNavState>(
@@ -27,8 +30,8 @@ export function HomeLegacyShell({ children }: HomeLegacyShellProps) {
     [roles, user],
   );
 
-  const headerLinks = useMemo(() => getSiteNavLinks("home", "header", navState), [navState]);
-  const mobileLinks = useMemo(() => getSiteNavLinks("home", "mobile", navState), [navState]);
+  const headerLinks = useMemo(() => getSiteNavLinks("header", navState), [navState]);
+  const mobileLinks = useMemo(() => getSiteNavLinks("mobile", navState), [navState]);
   const mobilePrimaryLink = useMemo(() => getHomeMobilePrimaryLink(navState), [navState]);
   const mobileSignUpLink = useMemo(() => getHomeMobileSignUpLink(navState), [navState]);
 
@@ -39,7 +42,7 @@ export function HomeLegacyShell({ children }: HomeLegacyShellProps) {
   async function handleSignOut() {
     const supabase = getSupabaseClient();
     await supabase.auth.signOut();
-    window.location.assign("/");
+    navigate("/");
   }
 
   return (
@@ -49,36 +52,12 @@ export function HomeLegacyShell({ children }: HomeLegacyShellProps) {
       <section className="hero-banner">
         <div className="hero-inner hero-inner-signin">
           <div className="hero-topbar">
-            <nav className="hero-nav" aria-label="Primary">
-              {headerLinks.map((link) => {
-                if (link.kind === "external") {
-                  return (
-                    <a key={link.id} className="hero-nav-link" href={link.href}>
-                      {link.label}
-                    </a>
-                  );
-                }
-
-                return (
-                  <Link key={link.id} className="hero-nav-link" to={link.to}>
-                    {link.label}
-                  </Link>
-                );
-              })}
-            </nav>
-
-            <div className="hero-auth">
-              {user ? <span className="hero-user-email">{user.email}</span> : null}
-              {!user ? (
-                <Link className="hero-auth-link" to="/signin">
-                  Sign In
-                </Link>
-              ) : (
-                <button className="hero-auth-link hero-signout" type="button" onClick={() => void handleSignOut()}>
-                  Sign Out
-                </button>
-              )}
-            </div>
+            <SiteHeaderNav
+              links={headerLinks}
+              email={user?.email ?? ""}
+              showSignOut={Boolean(user)}
+              onSignOut={handleSignOut}
+            />
           </div>
 
           <button
@@ -88,6 +67,9 @@ export function HomeLegacyShell({ children }: HomeLegacyShellProps) {
             aria-expanded={isMobileMenuOpen ? "true" : "false"}
             onClick={() => setIsMobileMenuOpen(true)}
           >
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+              <path fill="currentColor" d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z" />
+            </svg>
             Menu
           </button>
 
@@ -97,6 +79,7 @@ export function HomeLegacyShell({ children }: HomeLegacyShellProps) {
 
           <h2 className="hero-title">Healthcare jobs across Nigeria and Africa.</h2>
           <h3 className="hero-subtitle">Delivered to your email every week.</h3>
+          {heroSearch}
         </div>
       </section>
 
@@ -105,6 +88,7 @@ export function HomeLegacyShell({ children }: HomeLegacyShellProps) {
         isOpen={isMobileMenuOpen}
         onClose={() => setIsMobileMenuOpen(false)}
         pathname={location.pathname}
+        search={location.search}
         email={user?.email ?? ""}
         primaryLink={mobilePrimaryLink}
         links={mobileLinks}

@@ -97,14 +97,14 @@ export function MdcnDashboardPage() {
   }
 
   return (
-    <RouteShell title="MDCN dashboard" subtitle="Regulatory review queue for native job applications.">
+    <RouteShell title="MDCN dashboard" subtitle="Regulatory review queue for direct-apply job applications.">
       <section className="shell-grid" aria-label="MDCN summary cards">
         <CardPrimitive title="Review queue" meta="All applications visible to MDCN reviewers.">
           <p className="meta">{isLoading ? "Loading..." : `${applications.length} applications`}</p>
         </CardPrimitive>
 
         <CardPrimitive title="Workflow" meta="Update statuses as regulatory review progresses.">
-          <p className="meta">Status changes are persisted immediately to the native applications table.</p>
+          <p className="meta">Status changes are saved immediately.</p>
         </CardPrimitive>
       </section>
 

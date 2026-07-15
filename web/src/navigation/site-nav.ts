@@ -1,6 +1,5 @@
 import type { DashboardRole } from "../features/auth/roles";
 
-export type SiteNavContext = "home" | "app";
 export type SiteNavPlacement = "header" | "mobile" | "footer";
 
 export type SiteNavState = {
@@ -8,20 +7,23 @@ export type SiteNavState = {
   roles: DashboardRole[];
 };
 
-type ContextPlacementKey = `${SiteNavContext}_${SiteNavPlacement}`;
-
 type ActiveMatch = "exact" | "prefix" | "none";
+
+// Per-param requirements layered onto path matching: a string value must be
+// present and equal; null means the param must be absent.
+type ActiveQuery = Record<string, string | null>;
 
 type SiteNavDefinitionBase = {
   id: string;
   label: string;
   activeMatch?: ActiveMatch;
-  contexts: SiteNavContext[];
+  activeQuery?: ActiveQuery;
   placements: SiteNavPlacement[];
-  labelsByPlacement?: Partial<Record<ContextPlacementKey, string>>;
+  labelsByPlacement?: Partial<Record<SiteNavPlacement, string>>;
   requiresAuth?: boolean;
   hideWhenAuth?: boolean;
   requiredRolesAny?: DashboardRole[];
+  isCta?: boolean;
 };
 
 type SiteNavInternalDefinition = SiteNavDefinitionBase & {
@@ -42,6 +44,8 @@ export type SiteNavInternalLink = {
   label: string;
   to: string;
   activeMatch: ActiveMatch;
+  activeQuery?: ActiveQuery;
+  isCta?: boolean;
 };
 
 export type SiteNavExternalLink = {
@@ -49,6 +53,7 @@ export type SiteNavExternalLink = {
   kind: "external";
   label: string;
   href: string;
+  isCta?: boolean;
 };
 
 export type SiteNavLink = SiteNavInternalLink | SiteNavExternalLink;
@@ -60,30 +65,17 @@ const NAV_DEFINITIONS: SiteNavDefinition[] = [
     label: "Home",
     to: "/",
     activeMatch: "exact",
-    contexts: ["home", "app"],
+    activeQuery: { source: null },
     placements: ["header", "mobile", "footer"],
   },
   {
     id: "jobs",
     kind: "internal",
-    label: "Native Jobs",
-    to: "/native-jobs",
-    activeMatch: "prefix",
-    contexts: ["home", "app"],
-    placements: ["header", "mobile", "footer"],
-  },
-  {
-    id: "subscribe",
-    kind: "internal",
-    label: "Subscribe",
-    to: "/subscribe",
+    label: "Direct Apply",
+    to: "/?source=direct",
     activeMatch: "exact",
-    contexts: ["home", "app"],
+    activeQuery: { source: "direct" },
     placements: ["header", "mobile", "footer"],
-    labelsByPlacement: {
-      home_footer: "Subscribe to Newsletter",
-      app_footer: "Subscribe to Newsletter",
-    },
   },
   {
     id: "dashboard",
@@ -91,7 +83,6 @@ const NAV_DEFINITIONS: SiteNavDefinition[] = [
     label: "Dashboard",
     to: "/dashboard",
     activeMatch: "prefix",
-    contexts: ["home", "app"],
     placements: ["header", "mobile", "footer"],
     requiresAuth: true,
   },
@@ -101,7 +92,6 @@ const NAV_DEFINITIONS: SiteNavDefinition[] = [
     label: "Recruiter",
     to: "/recruiter",
     activeMatch: "prefix",
-    contexts: ["app"],
     placements: ["header", "mobile", "footer"],
     requiresAuth: true,
     requiredRolesAny: ["recruiter", "admin"],
@@ -112,7 +102,6 @@ const NAV_DEFINITIONS: SiteNavDefinition[] = [
     label: "MDCN",
     to: "/mdcn",
     activeMatch: "prefix",
-    contexts: ["app"],
     placements: ["header", "mobile", "footer"],
     requiresAuth: true,
     requiredRolesAny: ["mdcn_official", "admin"],
@@ -123,10 +112,21 @@ const NAV_DEFINITIONS: SiteNavDefinition[] = [
     label: "Admin",
     to: "/admin",
     activeMatch: "prefix",
-    contexts: ["app"],
     placements: ["header", "mobile", "footer"],
     requiresAuth: true,
     requiredRolesAny: ["admin"],
+  },
+  {
+    id: "subscribe",
+    kind: "internal",
+    label: "Subscribe",
+    to: "/subscribe",
+    activeMatch: "exact",
+    placements: ["header", "mobile", "footer"],
+    labelsByPlacement: {
+      footer: "Subscribe to Newsletter",
+    },
+    isCta: true,
   },
   {
     id: "about",
@@ -134,8 +134,15 @@ const NAV_DEFINITIONS: SiteNavDefinition[] = [
     label: "About Us",
     to: "/about",
     activeMatch: "exact",
-    contexts: ["home", "app"],
-    placements: ["header", "mobile", "footer"],
+    placements: ["mobile", "footer"],
+  },
+  {
+    id: "why-jobbermed",
+    kind: "internal",
+    label: "Why JobberMed",
+    to: "/landing",
+    activeMatch: "exact",
+    placements: ["footer"],
   },
   {
     id: "privacy",
@@ -143,8 +150,7 @@ const NAV_DEFINITIONS: SiteNavDefinition[] = [
     label: "Privacy Policy",
     to: "/privacy",
     activeMatch: "exact",
-    contexts: ["home", "app"],
-    placements: ["header", "mobile", "footer"],
+    placements: ["mobile", "footer"],
   },
   {
     id: "signin",
@@ -152,28 +158,16 @@ const NAV_DEFINITIONS: SiteNavDefinition[] = [
     label: "Sign In",
     to: "/signin",
     activeMatch: "exact",
-    contexts: ["app"],
     placements: ["header", "mobile", "footer"],
     hideWhenAuth: true,
   },
   {
-    id: "signup-app",
+    id: "signup",
     kind: "internal",
     label: "Sign Up",
     to: "/signup",
     activeMatch: "exact",
-    contexts: ["app"],
     placements: ["header", "mobile", "footer"],
-    hideWhenAuth: true,
-  },
-  {
-    id: "signup-home",
-    kind: "internal",
-    label: "Sign Up",
-    to: "/signup",
-    activeMatch: "exact",
-    contexts: ["home"],
-    placements: ["footer"],
     hideWhenAuth: true,
   },
 ];
@@ -198,13 +192,8 @@ function isDefinitionVisible(definition: SiteNavDefinition, state: SiteNavState)
   return true;
 }
 
-function resolveLabel(definition: SiteNavDefinition, context: SiteNavContext, placement: SiteNavPlacement): string {
-  const key = `${context}_${placement}` as ContextPlacementKey;
-  return definition.labelsByPlacement?.[key] ?? definition.label;
-}
-
-function toSiteNavLink(definition: SiteNavDefinition, context: SiteNavContext, placement: SiteNavPlacement): SiteNavLink {
-  const label = resolveLabel(definition, context, placement);
+function toSiteNavLink(definition: SiteNavDefinition, placement: SiteNavPlacement): SiteNavLink {
+  const label = definition.labelsByPlacement?.[placement] ?? definition.label;
 
   if (definition.kind === "external") {
     return {
@@ -212,6 +201,7 @@ function toSiteNavLink(definition: SiteNavDefinition, context: SiteNavContext, p
       kind: "external",
       label,
       href: definition.href,
+      isCta: definition.isCta,
     };
   }
 
@@ -221,21 +211,19 @@ function toSiteNavLink(definition: SiteNavDefinition, context: SiteNavContext, p
     label,
     to: definition.to,
     activeMatch: definition.activeMatch ?? "prefix",
+    activeQuery: definition.activeQuery,
+    isCta: definition.isCta,
   };
 }
 
-export function getSiteNavLinks(context: SiteNavContext, placement: SiteNavPlacement, state: SiteNavState): SiteNavLink[] {
+export function getSiteNavLinks(placement: SiteNavPlacement, state: SiteNavState): SiteNavLink[] {
   return NAV_DEFINITIONS.filter((definition) => {
-    if (!definition.contexts.includes(context)) {
-      return false;
-    }
-
     if (!definition.placements.includes(placement)) {
       return false;
     }
 
     return isDefinitionVisible(definition, state);
-  }).map((definition) => toSiteNavLink(definition, context, placement));
+  }).map((definition) => toSiteNavLink(definition, placement));
 }
 
 export function getHomeMobilePrimaryLink(state: SiteNavState): SiteNavInternalLink {
@@ -272,7 +260,18 @@ export function getHomeMobileSignUpLink(state: SiteNavState): SiteNavInternalLin
   };
 }
 
-export function isSiteNavLinkActive(link: SiteNavLink, pathname: string): boolean {
+function matchesActiveQuery(activeQuery: ActiveQuery | undefined, search: string): boolean {
+  if (!activeQuery) {
+    return true;
+  }
+
+  const params = new URLSearchParams(search);
+  return Object.entries(activeQuery).every(([key, expected]) =>
+    expected === null ? !params.has(key) : params.get(key) === expected,
+  );
+}
+
+export function isSiteNavLinkActive(link: SiteNavLink, pathname: string, search: string = ""): boolean {
   if (link.kind !== "internal") {
     return false;
   }
@@ -281,9 +280,15 @@ export function isSiteNavLinkActive(link: SiteNavLink, pathname: string): boolea
     return false;
   }
 
-  if (link.activeMatch === "exact") {
-    return pathname === link.to;
+  const [targetPath] = link.to.split("?");
+
+  if (!matchesActiveQuery(link.activeQuery, search)) {
+    return false;
   }
 
-  return pathname === link.to || pathname.startsWith(`${link.to}/`);
+  if (link.activeMatch === "exact") {
+    return pathname === targetPath;
+  }
+
+  return pathname === targetPath || pathname.startsWith(`${targetPath}/`);
 }

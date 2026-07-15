@@ -1,6 +1,16 @@
+import type { JobSourceFilter } from "../hooks/useAggregatorQueryState";
 import { type CategoryCounts, type LocationCounts } from "../types";
 
+type SourceCounts = {
+  all: number;
+  direct: number;
+  external: number;
+};
+
 type AggregatorFiltersProps = {
+  activeSource: JobSourceFilter;
+  sourceCounts: SourceCounts;
+  onSourceChange: (source: JobSourceFilter) => void;
   categoryOrder: readonly string[];
   categoryCounts: CategoryCounts;
   activeCategory: string;
@@ -9,15 +19,21 @@ type AggregatorFiltersProps = {
   locationCounts: LocationCounts;
   activeLocation: string;
   onLocationChange: (location: string) => void;
-  keywordQuery: string;
-  onKeywordQueryChange: (keyword: string) => void;
-  onKeywordClear: () => void;
   savedOnly: boolean;
   savedCount: number;
   onToggleSaved: () => void;
 };
 
+const SOURCE_OPTIONS: Array<{ value: JobSourceFilter; label: string }> = [
+  { value: "all", label: "All jobs" },
+  { value: "direct", label: "Direct Apply" },
+  { value: "external", label: "External" },
+];
+
 export function AggregatorFilters({
+  activeSource,
+  sourceCounts,
+  onSourceChange,
   categoryOrder,
   categoryCounts,
   activeCategory,
@@ -26,17 +42,29 @@ export function AggregatorFilters({
   locationCounts,
   activeLocation,
   onLocationChange,
-  keywordQuery,
-  onKeywordQueryChange,
-  onKeywordClear,
   savedOnly,
   savedCount,
   onToggleSaved,
 }: AggregatorFiltersProps) {
-  const hasKeyword = keywordQuery.trim().length > 0;
-
   return (
     <>
+      <div className="filters filters-source" aria-label="Job source filters">
+        {SOURCE_OPTIONS.map((option) => {
+          const isActive = option.value === activeSource;
+          return (
+            <button
+              key={option.value}
+              className={`filter-btn source-btn${isActive ? " active" : ""}`}
+              type="button"
+              aria-pressed={isActive ? "true" : "false"}
+              onClick={() => onSourceChange(option.value)}
+            >
+              {`${option.label} (${sourceCounts[option.value]})`}
+            </button>
+          );
+        })}
+      </div>
+
       <div className="filters" id="filters">
         <div className="filter-mobile">
           <label className="filter-label" htmlFor="categorySelect">
@@ -112,34 +140,6 @@ export function AggregatorFilters({
         </div>
       </div>
 
-      <div className="filters">
-        <div className="filter-search">
-          <label className="filter-label" htmlFor="keywordSearch">
-            Keyword search
-          </label>
-          <div className="search-wrap">
-            <input
-              id="keywordSearch"
-              className="search-input"
-              type="text"
-              placeholder={'eg "medical officer"'}
-              aria-label="Search jobs by keyword"
-              value={keywordQuery}
-              onChange={(event) => onKeywordQueryChange(event.target.value)}
-            />
-
-            <button
-              className={`search-clear${hasKeyword ? " visible" : ""}`}
-              id="searchClear"
-              type="button"
-              aria-label="Clear search"
-              onClick={onKeywordClear}
-            >
-              x
-            </button>
-          </div>
-        </div>
-      </div>
     </>
   );
 }

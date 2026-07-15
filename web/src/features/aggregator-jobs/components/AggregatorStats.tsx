@@ -1,15 +1,16 @@
 type AggregatorStatsProps = {
   jobCountLabel: string;
+  updatedLabel: string;
   listingsPeriodLabel: string;
 };
 
-export function AggregatorStats({ jobCountLabel, listingsPeriodLabel }: AggregatorStatsProps) {
+export function AggregatorStats({ jobCountLabel, updatedLabel, listingsPeriodLabel }: AggregatorStatsProps) {
   return (
     <header>
       <div className="stats-wrap">
         <div className="stat" id="stat-count">
           <strong>{jobCountLabel}</strong>
-          <span>Live jobs - updated daily</span>
+          <span>{updatedLabel}</span>
         </div>
 
         <div className="stat" id="stat-range">

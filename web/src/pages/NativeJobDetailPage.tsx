@@ -100,12 +100,12 @@ export function NativeJobDetailPage() {
 
   return (
     <RouteShell
-      title={job?.title ?? "Native job details"}
+      title={job?.title ?? "Direct Apply job details"}
       subtitle="Submit your application directly on JobberMed."
     >
-      <section className="native-job-detail-page" aria-label="Native job detail">
-        <Link className="native-back-link" to="/native-jobs">
-          ← Back to native jobs
+      <section className="native-job-detail-page" aria-label="Direct Apply job detail">
+        <Link className="native-back-link" to="/?source=direct">
+          ← Back to Direct Apply jobs
         </Link>
 
         {isLoading ? <div className="native-jobs-state">Loading job details...</div> : null}

@@ -1,4 +1,5 @@
-import type { MouseEvent } from "react";
+import { useRef, type MouseEvent } from "react";
+import { useFocusTrap } from "../../../hooks/useFocusTrap";
 import { SOURCE_LABELS } from "../constants";
 import type { AggregatorJob } from "../types";
 import { formatDate, normalizeCategory, safeText } from "../utils";
@@ -48,6 +49,9 @@ export function AggregatorDetailPanel({
   onClose,
   onToggleSave,
 }: AggregatorDetailPanelProps) {
+  const panelRef = useRef<HTMLElement>(null);
+  useFocusTrap(panelRef, isMounted && !isClosing);
+
   if (!isMounted) {
     return null;
   }
@@ -80,9 +84,9 @@ export function AggregatorDetailPanel({
     <>
       <div className={`detail-overlay${overlayVisible ? " visible" : ""}`} role="presentation" onClick={onClose} />
 
-      <aside className={panelClassName} aria-hidden="false" role="dialog" aria-labelledby="detailTitle">
+      <aside ref={panelRef} className={panelClassName} aria-hidden="false" role="dialog" aria-labelledby="detailTitle">
         <button className="detail-close-btn" type="button" aria-label="Close panel" onClick={onClose}>
-          x
+          ✕
         </button>
 
         <button className="detail-back-btn" type="button" onClick={onClose}>

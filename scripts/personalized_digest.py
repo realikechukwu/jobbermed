@@ -442,7 +442,7 @@ def load_native_jobs(config) -> list[dict[str, Any]]:
         normalized.append(
             {
                 "_digest_source": "native",
-                "job_title": str(row.get("title") or "Native healthcare role"),
+                "job_title": str(row.get("title") or "Healthcare role"),
                 "company": "Direct Employer",
                 "location": str(row.get("location") or ""),
                 "job_type": str(row.get("job_type") or ""),
@@ -450,7 +450,7 @@ def load_native_jobs(config) -> list[dict[str, Any]]:
                 "salary": build_native_job_salary(row),
                 "date_posted": row.get("published_at") or row.get("created_at") or "",
                 "deadline": row.get("apply_deadline") or "",
-                "apply_url": f"{site_base_url}/native-jobs/{native_job_id}",
+                "apply_url": f"{site_base_url}/jobs/direct/{native_job_id}",
             }
         )
     return normalized

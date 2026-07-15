@@ -1,7 +1,8 @@
-import { useEffect, useMemo } from "react";
+import { useCallback, useEffect, useMemo } from "react";
+import { useNavigate } from "react-router-dom";
 import { AggregatorDetailPanel } from "../features/aggregator-jobs/components/AggregatorDetailPanel";
 import { AggregatorFilters } from "../features/aggregator-jobs/components/AggregatorFilters";
-import { AggregatorFooter } from "../features/aggregator-jobs/components/AggregatorFooter";
+import { FooterShell } from "../components/FooterShell";
 import { AggregatorJobsGrid } from "../features/aggregator-jobs/components/AggregatorJobsGrid";
 import { AggregatorNewsletter } from "../features/aggregator-jobs/components/AggregatorNewsletter";
 import { AggregatorPagination } from "../features/aggregator-jobs/components/AggregatorPagination";
@@ -9,8 +10,9 @@ import { AggregatorScrollTopButton } from "../features/aggregator-jobs/component
 import { AggregatorStats } from "../features/aggregator-jobs/components/AggregatorStats";
 import { HomeLegacyShell } from "../features/aggregator-jobs/components/HomeLegacyShell";
 import { ALL_CATEGORY, ALL_LOCATIONS, CATEGORY_ORDER, PAGE_SIZE } from "../features/aggregator-jobs/constants";
-import { useAggregatorJobsData } from "../features/aggregator-jobs/hooks/useAggregatorJobsData";
 import { useAggregatorQueryState } from "../features/aggregator-jobs/hooks/useAggregatorQueryState";
+import { useUnifiedJobsData } from "../features/jobs/useUnifiedJobsData";
+import { isDirectJob, type UnifiedJob } from "../features/jobs/unify";
 import { useDetailPanel } from "../features/aggregator-jobs/hooks/useDetailPanel";
 import { useSavedJobsLocal } from "../features/aggregator-jobs/hooks/useSavedJobsLocal";
 import type { CategoryCounts, LocationCounts } from "../features/aggregator-jobs/types";
@@ -64,7 +66,8 @@ function buildListingsPeriodLabel(datesList: Array<{ date_posted: string }>): st
 }
 
 export function HomePage() {
-  const { jobs, isLoading, error } = useAggregatorJobsData(AGGREGATED_JOBS_URL);
+  const { jobs, isLoading, error, directJobsError } = useUnifiedJobsData(AGGREGATED_JOBS_URL);
+  const navigate = useNavigate();
 
   const {
     activeCategory,
@@ -72,17 +75,35 @@ export function HomePage() {
     keywordQuery,
     savedOnly,
     currentPage,
+    activeSource,
     setActiveCategory,
     setActiveLocation,
     setKeywordQuery,
     clearKeyword,
     setSavedOnly,
     setCurrentPage,
+    setActiveSource,
+    hasActiveFilters,
+    clearAllFilters,
   } = useAggregatorQueryState();
 
   const { savedCount, isSaved, toggleSavedJob } = useSavedJobsLocal();
 
   const { panelJob, isMounted, isClosing, overlayVisible, openDetail, closeDetail } = useDetailPanel({ jobs });
+
+  // Direct Apply jobs have a dedicated detail page with the application form;
+  // external jobs keep the slide-in panel.
+  const openJobDetail = useCallback(
+    (job: UnifiedJob) => {
+      if (isDirectJob(job) && job.directJobId) {
+        navigate(`/jobs/direct/${job.directJobId}`);
+        return;
+      }
+
+      openDetail(job);
+    },
+    [navigate, openDetail],
+  );
 
   useEffect(() => {
     if (!VALID_CATEGORY_SET.has(activeCategory)) {
@@ -90,7 +111,30 @@ export function HomePage() {
     }
   }, [activeCategory, setActiveCategory]);
 
-  const activeJobs = useMemo(() => jobs.filter((job) => !isExpired(job.deadline)), [jobs]);
+  const sourceJobs = useMemo(() => {
+    if (activeSource === "direct") {
+      return jobs.filter((job) => isDirectJob(job));
+    }
+
+    if (activeSource === "external") {
+      return jobs.filter((job) => !isDirectJob(job));
+    }
+
+    return jobs;
+  }, [activeSource, jobs]);
+
+  const allActiveJobs = useMemo(() => jobs.filter((job) => !isExpired(job.deadline)), [jobs]);
+
+  const sourceCounts = useMemo(() => {
+    const direct = allActiveJobs.filter((job) => isDirectJob(job)).length;
+    return {
+      all: allActiveJobs.length,
+      direct,
+      external: allActiveJobs.length - direct,
+    };
+  }, [allActiveJobs]);
+
+  const activeJobs = useMemo(() => sourceJobs.filter((job) => !isExpired(job.deadline)), [sourceJobs]);
 
   const categoryCounts = useMemo(
     () =>
@@ -118,13 +162,18 @@ export function HomePage() {
   );
 
   useEffect(() => {
+    if (isLoading || error) {
+      return;
+    }
+
     if (!locationOptions.includes(activeLocation)) {
       setActiveLocation(ALL_LOCATIONS);
     }
-  }, [activeLocation, locationOptions, setActiveLocation]);
+  }, [activeLocation, error, isLoading, locationOptions, setActiveLocation]);
 
   const filteredJobs = useMemo(() => {
-    let list = activeCategory === ALL_CATEGORY ? jobs : jobs.filter((job) => normalizeCategory(job) === activeCategory);
+    let list =
+      activeCategory === ALL_CATEGORY ? sourceJobs : sourceJobs.filter((job) => normalizeCategory(job) === activeCategory);
 
     list = activeLocation === ALL_LOCATIONS ? list : list.filter((job) => job._locationBuckets.includes(activeLocation));
 
@@ -144,12 +193,20 @@ export function HomePage() {
     }
 
     list = list.filter((job) => !isExpired(job.deadline));
-    return interleaveBySource(list);
-  }, [activeCategory, activeLocation, jobs, keywordQuery, savedOnly, isSaved]);
+
+    // Direct Apply jobs lead the interleave order so they surface on page 1.
+    const directJobs = list.filter((job) => isDirectJob(job));
+    const externalJobs = list.filter((job) => !isDirectJob(job));
+    return interleaveBySource([...directJobs, ...externalJobs]);
+  }, [activeCategory, activeLocation, sourceJobs, keywordQuery, savedOnly, isSaved]);
 
   const totalPages = useMemo(() => Math.ceil(filteredJobs.length / PAGE_SIZE), [filteredJobs.length]);
 
   useEffect(() => {
+    if (isLoading || error) {
+      return;
+    }
+
     if (totalPages === 0 && currentPage !== 1) {
       setCurrentPage(1);
       return;
@@ -158,7 +215,7 @@ export function HomePage() {
     if (totalPages > 0 && currentPage > totalPages) {
       setCurrentPage(totalPages);
     }
-  }, [currentPage, setCurrentPage, totalPages]);
+  }, [currentPage, error, isLoading, setCurrentPage, totalPages]);
 
   const pageItems = useMemo(() => {
     const start = (currentPage - 1) * PAGE_SIZE;
@@ -169,14 +226,52 @@ export function HomePage() {
   const jobCountLabel = isLoading ? "-" : String(filteredJobs.length);
   const listingsPeriodLabel = isLoading ? "-" : buildListingsPeriodLabel(filteredJobs);
 
+  const updatedLabel = useMemo(() => {
+    const latest = jobs
+      .map((job) => safeText(job.date_posted))
+      .filter((date) => date.length > 0)
+      .sort()
+      .pop();
+
+    if (!latest) {
+      return "Live jobs";
+    }
+
+    return `Live jobs - updated ${formatDate(latest) ?? latest}`;
+  }, [jobs]);
+
   const panelIsSaved = panelJob ? isSaved(panelJob._id, panelJob._slug) : false;
+
+  const hasKeyword = keywordQuery.trim().length > 0;
+
+  const heroSearch = (
+    <div className="hero-search">
+      <input
+        id="keywordSearch"
+        className="hero-search-input"
+        type="search"
+        placeholder={'Search roles, e.g. "medical officer"'}
+        aria-label="Search jobs by keyword"
+        value={keywordQuery}
+        onChange={(event) => setKeywordQuery(event.target.value)}
+      />
+      {hasKeyword ? (
+        <button className="hero-search-clear" type="button" aria-label="Clear search" onClick={clearKeyword}>
+          Clear
+        </button>
+      ) : null}
+    </div>
+  );
 
   return (
     <div className="aggregator-home">
-      <HomeLegacyShell>
-        <AggregatorStats jobCountLabel={jobCountLabel} listingsPeriodLabel={listingsPeriodLabel} />
+      <HomeLegacyShell heroSearch={heroSearch}>
+        <AggregatorStats jobCountLabel={jobCountLabel} updatedLabel={updatedLabel} listingsPeriodLabel={listingsPeriodLabel} />
 
         <AggregatorFilters
+          activeSource={activeSource}
+          sourceCounts={sourceCounts}
+          onSourceChange={setActiveSource}
           categoryOrder={CATEGORY_ORDER}
           categoryCounts={categoryCounts}
           activeCategory={activeCategory}
@@ -185,15 +280,12 @@ export function HomePage() {
           locationCounts={locationCounts}
           activeLocation={activeLocation}
           onLocationChange={setActiveLocation}
-          keywordQuery={keywordQuery}
-          onKeywordQueryChange={setKeywordQuery}
-          onKeywordClear={clearKeyword}
           savedOnly={savedOnly}
           savedCount={savedCount}
           onToggleSaved={() => setSavedOnly(!savedOnly)}
         />
 
-        <AggregatorNewsletter />
+        {directJobsError ? <p className="aggregator-source-notice">{directJobsError}</p> : null}
 
         <AggregatorPagination
           id="paginationTop"
@@ -223,7 +315,9 @@ export function HomePage() {
               savedOnly={savedOnly}
               isSaved={isSaved}
               onToggleSave={toggleSavedJob}
-              onOpenDetail={openDetail}
+              onOpenDetail={openJobDetail}
+              hasActiveFilters={hasActiveFilters}
+              onClearFilters={clearAllFilters}
             />
 
             <AggregatorPagination
@@ -236,6 +330,8 @@ export function HomePage() {
             />
           </>
         ) : null}
+
+        <AggregatorNewsletter />
       </HomeLegacyShell>
 
       <AggregatorDetailPanel
@@ -248,7 +344,7 @@ export function HomePage() {
         onToggleSave={toggleSavedJob}
       />
 
-      <AggregatorFooter />
+      <FooterShell />
       <AggregatorScrollTopButton />
     </div>
   );

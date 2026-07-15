@@ -1,4 +1,4 @@
-import { Navigate, Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes, useParams } from "react-router-dom";
 import { CardPrimitive } from "./components/CardPrimitive";
 import { RequireAuth, RequireRole } from "./features/auth/guards";
 import { RouteShell } from "./layouts/RouteShell";
@@ -11,7 +11,7 @@ import { HomePage } from "./pages/HomePage";
 import { LandingPage } from "./pages/LandingPage";
 import { MdcnDashboardPage } from "./pages/MdcnDashboardPage";
 import { NativeJobDetailPage } from "./pages/NativeJobDetailPage";
-import { NativeJobsPage } from "./pages/NativeJobsPage";
+import { NotFoundPage } from "./pages/NotFoundPage";
 import { PrivacyPage } from "./pages/PrivacyPage";
 import { RecruiterDashboardPage } from "./pages/RecruiterDashboardPage";
 import { RecruiterJobApplicantsPage } from "./pages/RecruiterJobApplicantsPage";
@@ -39,6 +39,11 @@ function RecruiterAccessRedirectFallback() {
   return <Navigate to="/request-access/recruiter" replace />;
 }
 
+function LegacyNativeJobRedirect() {
+  const { jobId } = useParams();
+  return <Navigate to={jobId ? `/jobs/direct/${jobId}` : "/?source=direct"} replace />;
+}
+
 function MdcnAccessRequiredFallback() {
   return (
     <RouteShell title="MDCN access required" subtitle="This dashboard is reserved for verified MDCN officials.">
@@ -55,8 +60,10 @@ export function App() {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
-      <Route path="/native-jobs" element={<NativeJobsPage />} />
-      <Route path="/native-jobs/:jobId" element={<NativeJobDetailPage />} />
+      <Route path="/jobs/direct" element={<Navigate to="/?source=direct" replace />} />
+      <Route path="/jobs/direct/:jobId" element={<NativeJobDetailPage />} />
+      <Route path="/native-jobs" element={<LegacyNativeJobRedirect />} />
+      <Route path="/native-jobs/:jobId" element={<LegacyNativeJobRedirect />} />
       <Route path="/signin" element={<SigninPage />} />
       <Route path="/signup" element={<SignupPage />} />
       <Route path="/about" element={<AboutPage />} />
@@ -147,7 +154,7 @@ export function App() {
         }
       />
 
-      <Route path="*" element={<Navigate to="/" replace />} />
+      <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );
 }

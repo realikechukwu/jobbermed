@@ -1,21 +1,21 @@
 import { useEffect, useMemo, useState } from "react";
-import { Link, NavLink, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useSession } from "../features/auth/session-context";
 import { getSupabaseClient } from "../lib/supabase-client";
-import {
-  getSiteNavLinks,
-  type SiteNavState,
-} from "../navigation/site-nav";
+import { getSiteNavLinks, type SiteNavState } from "../navigation/site-nav";
+import { SiteHeaderNav } from "./SiteHeaderNav";
 import { SiteMobileDrawer } from "./SiteMobileDrawer";
 
 type HeroShellProps = {
   title: string;
   subtitle?: string;
+  variant?: "hero" | "compact";
 };
 
-export function HeroShell({ title, subtitle }: HeroShellProps) {
+export function HeroShell({ title, subtitle, variant = "hero" }: HeroShellProps) {
   const { user, roles } = useSession();
   const location = useLocation();
+  const navigate = useNavigate();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navState = useMemo<SiteNavState>(
@@ -26,24 +26,21 @@ export function HeroShell({ title, subtitle }: HeroShellProps) {
     [roles, user],
   );
 
-  const headerLinks = useMemo(() => getSiteNavLinks("app", "header", navState), [navState]);
-  const mobileLinks = useMemo(() => getSiteNavLinks("app", "mobile", navState), [navState]);
+  const headerLinks = useMemo(() => getSiteNavLinks("header", navState), [navState]);
+  const mobileLinks = useMemo(() => getSiteNavLinks("mobile", navState), [navState]);
 
   useEffect(() => {
     setIsMobileMenuOpen(false);
   }, [location.pathname, location.search]);
 
-  const navClassName = ({ isActive }: { isActive: boolean }) =>
-    isActive ? "site-nav-link active" : "site-nav-link";
-
   async function handleSignOut() {
     const supabase = getSupabaseClient();
     await supabase.auth.signOut();
-    window.location.assign("/");
+    navigate("/");
   }
 
   return (
-    <section className="hero-banner">
+    <section className={`hero-banner${variant === "compact" ? " hero-banner--compact" : ""}`}>
       <div className="hero-inner">
         <div className="hero-top-row">
           <button
@@ -53,32 +50,13 @@ export function HeroShell({ title, subtitle }: HeroShellProps) {
             aria-expanded={isMobileMenuOpen ? "true" : "false"}
             onClick={() => setIsMobileMenuOpen(true)}
           >
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+              <path fill="currentColor" d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z" />
+            </svg>
             Menu
           </button>
 
-          <nav className="site-nav" aria-label="Primary">
-            {headerLinks.map((link) => {
-              if (link.kind === "external") {
-                return (
-                  <a key={link.id} className="site-nav-link" href={link.href}>
-                    {link.label}
-                  </a>
-                );
-              }
-
-              return (
-                <NavLink key={link.id} className={navClassName} to={link.to}>
-                  {link.label}
-                </NavLink>
-              );
-            })}
-
-            {user ? (
-              <button className="site-nav-button" type="button" onClick={() => void handleSignOut()}>
-                Sign Out
-              </button>
-            ) : null}
-          </nav>
+          <SiteHeaderNav links={headerLinks} showSignOut={Boolean(user)} onSignOut={handleSignOut} />
         </div>
 
         <Link className="brand-link" to="/" aria-label="Go to homepage">
@@ -94,6 +72,7 @@ export function HeroShell({ title, subtitle }: HeroShellProps) {
         isOpen={isMobileMenuOpen}
         onClose={() => setIsMobileMenuOpen(false)}
         pathname={location.pathname}
+        search={location.search}
         email={user?.email ?? ""}
         links={mobileLinks}
         showSignOut={Boolean(user)}

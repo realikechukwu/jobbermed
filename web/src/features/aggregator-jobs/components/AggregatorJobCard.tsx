@@ -1,12 +1,13 @@
 import type { MouseEvent } from "react";
-import type { AggregatorJob } from "../types";
+import { Link } from "react-router-dom";
+import { isDirectJob, type UnifiedJob } from "../../jobs/unify";
 import { formatDate, safeText } from "../utils";
 
 type AggregatorJobCardProps = {
-  job: AggregatorJob;
+  job: UnifiedJob;
   isSaved: boolean;
-  onToggleSave: (job: AggregatorJob) => void;
-  onOpenDetail: (job: AggregatorJob) => void;
+  onToggleSave: (job: UnifiedJob) => void;
+  onOpenDetail: (job: UnifiedJob) => void;
 };
 
 function BookmarkIcon({ filled }: { filled: boolean }) {
@@ -31,6 +32,8 @@ export function AggregatorJobCard({ job, isSaved, onToggleSave, onOpenDetail }: 
   const posted = formatDate(job.date_posted);
   const deadline = formatDate(job.deadline);
   const applyUrl = safeText(job.apply_url);
+  const isDirect = isDirectJob(job);
+  const directDetailPath = job.directJobId ? `/jobs/direct/${job.directJobId}` : null;
 
   function handleCardClick(event: MouseEvent<HTMLElement>) {
     const target = event.target as HTMLElement;
@@ -81,6 +84,7 @@ export function AggregatorJobCard({ job, isSaved, onToggleSave, onOpenDetail }: 
       </div>
 
       <div className="tags">
+        {isDirect ? <div className="tag direct-badge">Apply on JobberMed</div> : null}
         {posted ? <div className="tag posted">{`Posted ${posted}`}</div> : null}
         {job.job_type ? <div className="tag job-type">{job.job_type}</div> : null}
         {deadline ? <div className="tag deadline">{`Closes ${deadline}`}</div> : null}
@@ -91,7 +95,11 @@ export function AggregatorJobCard({ job, isSaved, onToggleSave, onOpenDetail }: 
           View Details
         </button>
 
-        {applyUrl ? (
+        {isDirect && directDetailPath ? (
+          <Link className="apply-btn" to={directDetailPath} onClick={(event) => event.stopPropagation()}>
+            Apply Now
+          </Link>
+        ) : applyUrl ? (
           <a className="apply-btn" href={applyUrl} target="_blank" rel="noopener noreferrer" onClick={(event) => event.stopPropagation()}>
             Apply Now
           </a>

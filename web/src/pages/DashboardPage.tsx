@@ -175,7 +175,7 @@ export function DashboardPage() {
     : "All locations";
 
   return (
-    <RouteShell title="Dashboard" subtitle="Manage your role access, native job activity, and email delivery settings.">
+    <RouteShell title="Dashboard" subtitle="Manage your role access, direct applications, and email delivery settings.">
       <section className="shell-grid" aria-label="Dashboard cards">
         <CardPrimitive title="Account roles" meta="Active roles from claims and platform assignments.">
           <p className="meta">{roleList.join(" • ")}</p>
@@ -256,13 +256,13 @@ export function DashboardPage() {
         </CardPrimitive>
       </section>
 
-      <section className="shell-content dashboard-applications" aria-label="My native applications">
-        <CardPrimitive title="My native applications" meta="Your latest direct applications.">
+      <section className="shell-content dashboard-applications" aria-label="My direct applications">
+        <CardPrimitive title="My direct applications" meta="Your latest direct applications.">
           {isLoadingApps ? <p className="meta">Loading applications...</p> : null}
           {appsError ? <p className="native-form-message native-form-error">{appsError}</p> : null}
 
           {!isLoadingApps && !appsError && applications.length === 0 ? (
-            <p className="meta">No native applications yet.</p>
+            <p className="meta">No direct applications yet.</p>
           ) : null}
 
           {!isLoadingApps && !appsError && applications.length > 0 ? (
