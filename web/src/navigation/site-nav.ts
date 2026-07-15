@@ -9,6 +9,8 @@ export type SiteNavState = {
 
 type ActiveMatch = "exact" | "prefix" | "none";
 
+export type SiteNavGroup = "primary" | "account" | "legal" | "auth";
+
 // Per-param requirements layered onto path matching: a string value must be
 // present and equal; null means the param must be absent.
 type ActiveQuery = Record<string, string | null>;
@@ -16,6 +18,7 @@ type ActiveQuery = Record<string, string | null>;
 type SiteNavDefinitionBase = {
   id: string;
   label: string;
+  group: SiteNavGroup;
   activeMatch?: ActiveMatch;
   activeQuery?: ActiveQuery;
   placements: SiteNavPlacement[];
@@ -42,6 +45,7 @@ export type SiteNavInternalLink = {
   id: string;
   kind: "internal";
   label: string;
+  group: SiteNavGroup;
   to: string;
   activeMatch: ActiveMatch;
   activeQuery?: ActiveQuery;
@@ -52,6 +56,7 @@ export type SiteNavExternalLink = {
   id: string;
   kind: "external";
   label: string;
+  group: SiteNavGroup;
   href: string;
   isCta?: boolean;
 };
@@ -63,6 +68,7 @@ const NAV_DEFINITIONS: SiteNavDefinition[] = [
     id: "home",
     kind: "internal",
     label: "Home",
+    group: "primary",
     to: "/",
     activeMatch: "exact",
     activeQuery: { source: null },
@@ -72,6 +78,7 @@ const NAV_DEFINITIONS: SiteNavDefinition[] = [
     id: "jobs",
     kind: "internal",
     label: "Direct Apply",
+    group: "primary",
     to: "/?source=direct",
     activeMatch: "exact",
     activeQuery: { source: "direct" },
@@ -81,6 +88,7 @@ const NAV_DEFINITIONS: SiteNavDefinition[] = [
     id: "dashboard",
     kind: "internal",
     label: "Dashboard",
+    group: "account",
     to: "/dashboard",
     activeMatch: "prefix",
     placements: ["header", "mobile", "footer"],
@@ -90,6 +98,7 @@ const NAV_DEFINITIONS: SiteNavDefinition[] = [
     id: "recruiter",
     kind: "internal",
     label: "Recruiter",
+    group: "account",
     to: "/recruiter",
     activeMatch: "prefix",
     placements: ["header", "mobile", "footer"],
@@ -100,6 +109,7 @@ const NAV_DEFINITIONS: SiteNavDefinition[] = [
     id: "mdcn",
     kind: "internal",
     label: "MDCN",
+    group: "account",
     to: "/mdcn",
     activeMatch: "prefix",
     placements: ["header", "mobile", "footer"],
@@ -110,6 +120,7 @@ const NAV_DEFINITIONS: SiteNavDefinition[] = [
     id: "admin",
     kind: "internal",
     label: "Admin",
+    group: "account",
     to: "/admin",
     activeMatch: "prefix",
     placements: ["header", "mobile", "footer"],
@@ -120,6 +131,7 @@ const NAV_DEFINITIONS: SiteNavDefinition[] = [
     id: "subscribe",
     kind: "internal",
     label: "Subscribe",
+    group: "primary",
     to: "/subscribe",
     activeMatch: "exact",
     placements: ["header", "mobile", "footer"],
@@ -132,6 +144,7 @@ const NAV_DEFINITIONS: SiteNavDefinition[] = [
     id: "about",
     kind: "internal",
     label: "About Us",
+    group: "legal",
     to: "/about",
     activeMatch: "exact",
     placements: ["mobile", "footer"],
@@ -140,22 +153,33 @@ const NAV_DEFINITIONS: SiteNavDefinition[] = [
     id: "why-jobbermed",
     kind: "internal",
     label: "Why JobberMed",
+    group: "legal",
     to: "/landing",
     activeMatch: "exact",
-    placements: ["footer"],
+    placements: ["mobile", "footer"],
   },
   {
     id: "privacy",
     kind: "internal",
     label: "Privacy Policy",
+    group: "legal",
     to: "/privacy",
     activeMatch: "exact",
+    placements: ["mobile", "footer"],
+  },
+  {
+    id: "contact",
+    kind: "external",
+    label: "Contact Us",
+    group: "legal",
+    href: "mailto:hello@jobbermed.com",
     placements: ["mobile", "footer"],
   },
   {
     id: "signin",
     kind: "internal",
     label: "Sign In",
+    group: "auth",
     to: "/signin",
     activeMatch: "exact",
     placements: ["header", "mobile", "footer"],
@@ -165,6 +189,7 @@ const NAV_DEFINITIONS: SiteNavDefinition[] = [
     id: "signup",
     kind: "internal",
     label: "Sign Up",
+    group: "auth",
     to: "/signup",
     activeMatch: "exact",
     placements: ["header", "mobile", "footer"],
@@ -200,6 +225,7 @@ function toSiteNavLink(definition: SiteNavDefinition, placement: SiteNavPlacemen
       id: definition.id,
       kind: "external",
       label,
+      group: definition.group,
       href: definition.href,
       isCta: definition.isCta,
     };
@@ -209,6 +235,7 @@ function toSiteNavLink(definition: SiteNavDefinition, placement: SiteNavPlacemen
     id: definition.id,
     kind: "internal",
     label,
+    group: definition.group,
     to: definition.to,
     activeMatch: definition.activeMatch ?? "prefix",
     activeQuery: definition.activeQuery,
@@ -224,40 +251,6 @@ export function getSiteNavLinks(placement: SiteNavPlacement, state: SiteNavState
 
     return isDefinitionVisible(definition, state);
   }).map((definition) => toSiteNavLink(definition, placement));
-}
-
-export function getHomeMobilePrimaryLink(state: SiteNavState): SiteNavInternalLink {
-  if (state.isAuthenticated) {
-    return {
-      id: "home-mobile-primary-dashboard",
-      kind: "internal",
-      label: "Dashboard",
-      to: "/dashboard",
-      activeMatch: "prefix",
-    };
-  }
-
-  return {
-    id: "home-mobile-primary-signin",
-    kind: "internal",
-    label: "Sign In",
-    to: "/signin",
-    activeMatch: "exact",
-  };
-}
-
-export function getHomeMobileSignUpLink(state: SiteNavState): SiteNavInternalLink | null {
-  if (state.isAuthenticated) {
-    return null;
-  }
-
-  return {
-    id: "home-mobile-signup",
-    kind: "internal",
-    label: "Sign Up",
-    to: "/signup",
-    activeMatch: "exact",
-  };
 }
 
 function matchesActiveQuery(activeQuery: ActiveQuery | undefined, search: string): boolean {

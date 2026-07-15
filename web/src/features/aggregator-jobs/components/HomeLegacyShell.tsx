@@ -2,12 +2,7 @@ import { useEffect, useMemo, useState, type ReactNode } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useSession } from "../../auth/session-context";
 import { getSupabaseClient } from "../../../lib/supabase-client";
-import {
-  getHomeMobilePrimaryLink,
-  getHomeMobileSignUpLink,
-  getSiteNavLinks,
-  type SiteNavState,
-} from "../../../navigation/site-nav";
+import { getSiteNavLinks, type SiteNavState } from "../../../navigation/site-nav";
 import { SiteHeaderNav } from "../../../components/SiteHeaderNav";
 import { SiteMobileDrawer } from "../../../components/SiteMobileDrawer";
 
@@ -32,8 +27,6 @@ export function HomeLegacyShell({ children, heroSearch }: HomeLegacyShellProps) 
 
   const headerLinks = useMemo(() => getSiteNavLinks("header", navState), [navState]);
   const mobileLinks = useMemo(() => getSiteNavLinks("mobile", navState), [navState]);
-  const mobilePrimaryLink = useMemo(() => getHomeMobilePrimaryLink(navState), [navState]);
-  const mobileSignUpLink = useMemo(() => getHomeMobileSignUpLink(navState), [navState]);
 
   useEffect(() => {
     setIsMobileMenuOpen(false);
@@ -90,9 +83,7 @@ export function HomeLegacyShell({ children, heroSearch }: HomeLegacyShellProps) 
         pathname={location.pathname}
         search={location.search}
         email={user?.email ?? ""}
-        primaryLink={mobilePrimaryLink}
         links={mobileLinks}
-        supplementalLink={mobileSignUpLink}
         showSignOut={Boolean(user)}
         onSignOut={handleSignOut}
       />
