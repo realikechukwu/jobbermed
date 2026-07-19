@@ -1,15 +1,629 @@
 {
   "metadata": {
-    "extracted_at": "2026-07-18T05:36:07.361716",
+    "extracted_at": "2026-07-19T06:06:06.060439",
     "model": "gpt-4o-mini",
-    "total_processed": 636,
-    "duplicates_removed": 111,
+    "total_processed": 642,
+    "duplicates_removed": 102,
     "skipped_old": 0,
     "skipped_empty": 0,
     "errors": 0,
-    "openai_calls": 200
+    "openai_calls": 129
   },
   "jobs": [
+    {
+      "job_title": "Physiotherapists",
+      "company": "Divine Mercy Specialist Hospital",
+      "location": "Ibele-Umuaka, Imo, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Allied Health",
+      "salary": "",
+      "experience": "",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "Relevant qualifications and experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-07-18",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/physiotherapists-divine-mercy-specialist-hospital",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Radiographers",
+      "company": "Divine Mercy Specialist Hospital",
+      "location": "Ibele-Umuaka, Imo, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Allied Health",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "Relevant qualifications and experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-07-18",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/radiographers-divine-mercy-specialist-hospital",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Medical Laboratory Scientists",
+      "company": "Divine Mercy Specialist Hospital",
+      "location": "Ibele-Umuaka, Imo, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Medical Laboratory Scientist",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "BA/BSc/HND",
+        "Relevant qualifications and experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-07-18",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/medical-laboratory-scientists-divine-mercy-specialist-hospital",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Midwives",
+      "company": "Divine Mercy Specialist Hospital",
+      "location": "Ibele-Umuaka, Imo, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Nurse",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "BA/BSc/HND",
+        "Interested applicant(s) should possess relevant qualifications and experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-07-18",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/midwives-divine-mercy-specialist-hospital",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Registered Nurses",
+      "company": "Divine Mercy Specialist Hospital",
+      "location": "Ibele-Umuaka, Imo, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Nurse",
+      "salary": "",
+      "experience": "",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "BA/BSc/HND",
+        "Relevant qualifications and experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-07-18",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/registered-nurses-divine-mercy-specialist-hospital",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Medical Officers",
+      "company": "Divine Mercy Specialist Hospital",
+      "location": "Ibele-Umuaka, Imo, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Doctor",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "BA/BSc/HND",
+        "Interested applicant(s) should possess relevant qualifications and experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-07-18",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/medical-officers-divine-mercy-specialist-hospital",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Consultants (All Specialties)",
+      "company": "Divine Mercy Specialist Hospital",
+      "location": "Imo, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Doctor",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "BA/BSc/HND",
+        "Relevant qualifications and experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-07-18",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/consultants-all-specialties-divine-mercy-specialist-hospital",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Registered Nurses",
+      "company": "Edgewood College",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Nurse",
+      "salary": "",
+      "experience": "3",
+      "qualification": "BSc",
+      "requirements": [
+        "BA/BSc/HND",
+        "3 years experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-07-18",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/registered-nurses-edgewood-college",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "MNCH Technical Advisor",
+      "company": "Jhpiego - John Hopkins University",
+      "location": "Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Public Health",
+      "salary": "n,",
+      "experience": "10 years",
+      "qualification": "BSc",
+      "requirements": [
+        "BA/BSc/HND",
+        "MBA/MSc/MA",
+        "PhD/Fellowship"
+      ],
+      "responsibilities": [
+        "Provide technical expertise on high impact integrated maternal, newborn and child health (MNCH), nutrition, routine immunization (RI), TB screening and PMTCT services that are sound, evidence-based and responsive to the needs of the state in alignment with national guidelines.",
+        "Provide advice on the integration of (MNCH, nutrition, RI, TB and HIV) services into established delivery systems at different levels of care in the State.",
+        "Collaborate with other stakeholders at the National and State level to apply lessons learned, innovations and quality methods to ensure evidence-based practices are translated to improved implementation.",
+        "Provide technical expertise to the building of national and local capacity using proven training approaches and quality improvement methodologies.",
+        "Design and deliver capacity-building activities, including provider trainings, Training of Trainers (ToT), follow-up support, and clinical mentoring as required.",
+        "Work in partnership with the State Ministry of Health, SPHCDA and other stakeholders to implement a transition program of services to the government and ensuring sustainability.",
+        "Provide technical support to key stakeholders at the State level including review of technical documents and provide input to relevant policies and strategies."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-07-18",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/mnch-technical-advisor-jhpiego",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Service / Quality Improvement Officer",
+      "company": "Jhpiego - John Hopkins University",
+      "location": "Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Public Health",
+      "salary": "n,",
+      "experience": "7 years",
+      "qualification": "BSc",
+      "requirements": [
+        "BA/BSc/HND",
+        "MBA/MSc/MA"
+      ],
+      "responsibilities": [
+        "Provide technical guidance on integrated MNCH+ Nutrition, Immunization and Malaria services and quality improvement that is sound, evidence-based and responsive to the needs of the appropriate State and US",
+        "Provide technical leadership, and build local capacity using proven training approaches and quality improvement methodologies.",
+        "Provide trainings (providers and training of trainers) as well as follow-up support and clinical mentoring as necessary for QI at secondary and primary health care facilities.",
+        "Support service/quality improvement efforts, approaches and tools at all supported health facilities in selected states.",
+        "Support referral services and systems at the state to ensure they are functional.",
+        "Develop strategies for increasing the percentage of pregnant women, including married adolescents, who deliver under the care of a skilled birth attendant",
+        "Advocate with State Ministry of Health, SPHCDA, LGA for adoption of new evidence based quality improvement (QI) best practices at health facilities in project sites.",
+        "Advocate with other ministries, community, NGO’s, and religious leaders to support and promote service/quality improvement components and increase uptake of health facility services by women and their children.",
+        "Contribute to and coordinate with the program’s monitoring and evaluation (M&E) team on activities to ensure that the program meets set targets in accordance with national and USG standards."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-07-18",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/service-quality-improvement-officer-jhpiego",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Maintenance Officer",
+      "company": "Divine Mercy Specialist Hospital",
+      "location": "Ibele-Umuaka, Imo, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "",
+      "experience": "",
+      "qualification": "BA/BSc/HND, OND",
+      "requirements": [
+        "BA/BSc/HND",
+        "OND",
+        "Relevant qualifications and experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-07-18",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/maintenance-officer-divine-mercy-specialist-hospital",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Kitchen/Catering Staff",
+      "company": "Divine Mercy Specialist Hospital",
+      "location": "Imo, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "rn",
+      "requirements": [
+        "Interested applicant(s) should possess relevant qualifications and experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-07-18",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/kitchen-catering-staff-divine-mercy-specialist-hospital",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Laundry Staff",
+      "company": "Divine Mercy Specialist Hospital",
+      "location": "Ibele-Umuaka, Imo",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "Secondary School (SSCE)",
+      "requirements": [
+        "Relevant qualifications and experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-07-18",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/laundry-staff-divine-mercy-specialist-hospital",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Driver",
+      "company": "Divine Mercy Specialist Hospital",
+      "location": "Ibele-Umuaka, Imo, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "Secondary School (SSCE)",
+      "requirements": [
+        "Relevant qualifications and experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-07-18",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/driver-divine-mercy-specialist-hospital",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Security Personnel",
+      "company": "Divine Mercy Specialist Hospital",
+      "location": "Ibele-Umuaka, Imo, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "rn",
+      "requirements": [
+        "Relevant qualifications and experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-07-18",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/security-personnel-divine-mercy-specialist-hospital",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Cleaner",
+      "company": "Divine Mercy Specialist Hospital",
+      "location": "Ibele-Umuaka, Imo, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "",
+      "experience": "",
+      "qualification": "Secondary School (SSCE)",
+      "requirements": [
+        "Relevant qualifications and experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-07-18",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/cleaner-divine-mercy-specialist-hospital",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Receptionist",
+      "company": "Divine Mercy Specialist Hospital",
+      "location": "Imo, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "BA/BSc/HND",
+        "Relevant qualifications and experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-07-18",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/receptionist-divine-mercy-specialist-hospital",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "ICT Officer",
+      "company": "Divine Mercy Specialist Hospital",
+      "location": "Ibele-Umuaka, Imo, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "BA/BSc/HND",
+        "Experience",
+        "Location",
+        "Imo",
+        "Job Field ICT / Computer"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-07-18",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/ict-officer-divine-mercy-specialist-hospital",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Procurement Officer",
+      "company": "Divine Mercy Specialist Hospital",
+      "location": "Ibele-Umuaka, Imo, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "",
+      "experience": "",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "BA/BSc/HND",
+        "Relevant qualifications and experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-07-18",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/procurement-officer-divine-mercy-specialist-hospital",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Human Resources Officer",
+      "company": "Divine Mercy Specialist Hospital",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "",
+      "experience": "",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "BA/BSc/HND",
+        "Relevant qualifications and experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-07-18",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/human-resources-officer-divine-mercy-specialist-hospital",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Accountant",
+      "company": "Divine Mercy Specialist Hospital",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "BA/BSc/HND",
+        "Relevant qualifications and experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-07-18",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/accountant-divine-mercy-specialist-hospital",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Health Information Officer",
+      "company": "Divine Mercy Specialist Hospital",
+      "location": "Ibele-Umuaka, Imo, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "BA/BSc/HND",
+        "Relevant qualifications and experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-07-18",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/health-information-officer-divine-mercy-specialist-hospital",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Hospital Administrators",
+      "company": "Divine Mercy Specialist Hospital",
+      "location": "Ibele-Umuaka, Imo, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Healthcare Management",
+      "salary": "",
+      "experience": "",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "Relevant qualifications and experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-07-18",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/hospital-administrators-divine-mercy-specialist-hospital",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Laboratory Technicians",
+      "company": "Divine Mercy Specialist Hospital",
+      "location": "Imo, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Medical Laboratory Scientist",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "Relevant qualifications and experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-07-18",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/laboratory-technicians-divine-mercy-specialist-hospital",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Pharmacists",
+      "company": "Divine Mercy Specialist Hospital",
+      "location": "Ibele-Umuaka, Imo, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Pharmacist",
+      "salary": "",
+      "experience": "",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "BA/BSc/HND",
+        "Relevant qualifications and experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-07-18",
+      "deadline": "",
+      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/pharmacists-divine-mercy-specialist-hospital",
+      "_source": "myjobmag"
+    },
     {
       "job_title": "Professional Nurse",
       "company": "Raforn Pharmacy",
@@ -2322,161 +2936,6 @@
       "_source": "myjobmag"
     },
     {
-      "job_title": "Billing / Accounts Officers",
-      "company": "Holy Trinity Hospital",
-      "location": "Ikorodu, Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "",
-      "experience": "Location",
-      "qualification": "BSc",
-      "requirements": [
-        "BA/BSc/HND",
-        "Experienced Billing/Claims Officers",
-        "Information Technology with BSc Accounts is an advantage",
-        "Must be familiar with EMRs and Quick Books Accounts package"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-07-17",
-      "deadline": "2026-08-01",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/billing-accounts-officers-holy-trinity-hospital",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Accounts Officer",
-      "company": "Sterling Health HMO",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "is negotiable",
-      "experience": "5 years",
-      "qualification": "BSc",
-      "requirements": [
-        "BA/BSc/HND",
-        "Experience in Hospital or HMO setting is an advantage",
-        "Must be familiar with Quick Books accounting package",
-        "Must be familiar with Hospital billing and Claims"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-07-17",
-      "deadline": "2026-08-01",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/accounts-officer-sterling-health-hmo-6",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Hospital Accountant",
-      "company": "Sterling Health HMO",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "",
-      "experience": "5 years",
-      "qualification": "HND",
-      "requirements": [
-        "Professional Certificate",
-        "Experience in a Hospital setting is an advantage",
-        "Must be ready to start immediately"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-07-17",
-      "deadline": "2026-08-01",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/hospital-accountant-sterling-health-hmo",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Biomedical Engineer - Medical Equipment Installation & Support",
-      "company": "Surgi -X Health Solutions Ltd",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "₦300,000 - ₦400,000/month",
-      "experience": "2 - 4 years",
-      "qualification": "BSc",
-      "requirements": [
-        "Bachelor's degree in Biomedical Engineering, Electrical/Electronic Engineering, or a related field",
-        "2+ years of hands-on experience installing, maintaining, or repairing medical equipment — operating theatre, endoscopy/laparoscopy, imaging, or critical-care equipment preferred",
-        "Strong electro-mechanical troubleshooting skills; able to read schematics and service manuals",
-        "Understanding of medical device safety standards and hospital biomedical practices",
-        "Excellent communication skills: you can explain a technical issue to a surgeon, a nurse, and an administrator in language each understands",
-        "Organized and self-directed; comfortable managing multiple hospital sites and travel schedules",
-        "Registration with relevant professional bodies (e.g., COREN) is an advantage; manufacturer service training/certifications are a plus"
-      ],
-      "responsibilities": [
-        "Install, commission, and validate medical and surgical equipment at hospital sites, ensuring full compliance with manufacturer specifications and safety standards",
-        "Carry out planned preventive maintenance, calibration, and repairs across the installed base; keep equipment uptime high",
-        "Train hospital clinical and technical staff on safe operation, care, and first-line troubleshooting of installed equipment",
-        "Provide responsive technical support — on-site and remote — and manage escalations through to resolution",
-        "Conduct pre-installation site assessments: power, space, utilities, and infrastructure readiness",
-        "Maintain accurate service records, installation reports, and equipment documentation",
-        "Monitor consumables usage and equipment performance at customer sites and report insights to the commercial team",
-        "Liaise with equipment manufacturers and suppliers on warranties, spare parts, and technical updates",
-        "Support demonstrations and evaluations with technical setup and expertise"
-      ],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-07-17",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/biomedical-engineer-medical-equipment-installation-support-surgi-x-health-solutions-ltd",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Business Development Manager (Sales Manager)",
-      "company": "Surgi -X Health Solutions Ltd",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Healthcare Management",
-      "salary": "₦500,000 - ₦750,000/month",
-      "experience": "4 - 8 years",
-      "qualification": "BA/BSc/HND, MBA/MSc/MA",
-      "requirements": [
-        "BA/BSc/HND",
-        "MBA/MSc/MA",
-        "4+ years of B2B sales or business development experience"
-      ],
-      "responsibilities": [
-        "Own the sales pipeline end-to-end: prospect, qualify, pitch, negotiate, and close new business with hospitals and healthcare institutions",
-        "Plan and deliver product demonstrations and presentations to surgeons, hospital administrators, and department heads",
-        "Develop and execute territory and account strategies to grow market share across target hospitals and their networks",
-        "Build strong relationships with key opinion leaders and reference customers to drive adoption",
-        "Prepare commercial proposals and coordinate with finance and legal stakeholders to structure deals through to funding",
-        "Collaborate cross-functionally with clinical and technical teams to ensure smooth customer onboarding and delivery",
-        "Recruit, train, and manage a growing sales team; set targets and drive performance",
-        "Maintain accurate CRM records and report weekly on pipeline, revenue, and customer-acquisition KPIs"
-      ],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-07-17",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/business-development-manager-sales-manager-surgi-x-health-solutions-ltd",
-      "_source": "myjobmag"
-    },
-    {
       "job_title": "Pulmonologist",
       "company": "Graceland International Hospital",
       "location": "Awka, Anambra, Nigeria",
@@ -4580,217 +5039,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.myjobmag.com/job/clinical-director-careone-digital-hospitals",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Research Project Manager",
-      "company": "Malaria Consortium",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Healthcare Management",
-      "salary": "n,",
-      "experience": "15",
-      "qualification": "BSc",
-      "requirements": [
-        "BA/BSc/HND",
-        "MBA/MSc/MA",
-        "12 - 15 years experience"
-      ],
-      "responsibilities": [
-        "Provide effective programme management to the research portfolio of the PF/SMC programme and other projects co-implemented/delivered or integrated on the SMC platform.",
-        "Oversee effective planning and management quality implementation of the research agenda for SMC and allied projects.",
-        "Support the review and contribute to strong research concept notes as required, in collaboration with the Operations Research Specialist (ORS), Country Office and UK teams.",
-        "Extract lessons and ideas from findings of relevant Malaria Consortium/non research for programme improvement and/or business development and share with the Programme Director (PD).",
-        "Line-manage the programme Research team in the day-to-day preparations towards actual rollout of research activities, implementation and supervision of research activities in SMC states.",
-        "Support the coordination of the implementation of in-country dissemination and research uptake activity plans, such as stakeholder consultations, media engagements, and country specific project learning outputs.",
-        "Contribute to the development of the annual OR budget and forecasts; and support the PD in budget management/implementation, tracking and reforecasting."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-07-16",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/research-project-manager-malaria-consortium-1",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Medical Officer",
-      "company": "Silver Cross Healthcare and Diagnostics Centre",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "3",
-      "qualification": "BSc",
-      "requirements": [
-        "MBBS or equivalent medical degree from a recognized institution.",
-        "Current practicing licence with the Medical and Dental Council of Nigeria (MDCN).",
-        "Completion of the mandatory NYSC programme (where applicable).",
-        "Minimum of 1–3 years of post-qualification clinical experience is an added advantage.",
-        "Excellent clinical judgment and decision-making skills.",
-        "Strong communication and interpersonal skills.",
-        "Ability to work independently and as part of a multidisciplinary team.",
-        "Good knowledge of electronic medical records is an added advantage."
-      ],
-      "responsibilities": [
-        "Evaluate, diagnose, and treat patients presenting with acute and chronic medical conditions.",
-        "Conduct comprehensive medical examinations and develop appropriate treatment plans.",
-        "Prescribe medications and monitor patients’ responses to treatment.",
-        "Request, interpret, and utilize laboratory and diagnostic investigations appropriately.",
-        "Provide emergency and urgent medical care when required.",
-        "Maintain accurate and timely medical records in accordance with professional standards.",
-        "Educate patients and their families on disease prevention, health promotion, and treatment plans.",
-        "Collaborate with nurses, laboratory scientists, pharmacists, and other healthcare professionals to ensure quality patient care.",
-        "Participate in clinical audits, continuous medical education, and quality improvement activities.",
-        "Adhere to hospital policies, ethical standards, and infection prevention and control guidelines."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-07-16",
-      "deadline": "2026-07-30",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/medical-officer-silver-cross-healthcare-and-diagnostics-centre-5",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Dietician",
-      "company": "Graceland International Hospital",
-      "location": "Awka, Anambra, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "",
-      "experience": "",
-      "qualification": "rn",
-      "requirements": [
-        "Interested candidates should possess relevant qualifications with experience."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-07-16",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/dietician-graceland-international-hospital",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Nurses",
-      "company": "Graceland International Hospital",
-      "location": "Awka, Anambra, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Nurse",
-      "salary": "",
-      "experience": "Location",
-      "qualification": "rn",
-      "requirements": [
-        "Interested candidates should possess relevant qualifications with experience."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-07-16",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/nurses-graceland-international-hospital",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Consultant Intensivist",
-      "company": "The African Medical Centre of Excellence (AMCE)",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "5 years",
-      "qualification": "BA/BSc/HND, Professional Certificate",
-      "requirements": [
-        "BA/BSc/HND",
-        "Professional Certificate",
-        "5 years experience"
-      ],
-      "responsibilities": [
-        "Lead daily multidisciplinary ward rounds, developing and implementing comprehensive, evidence-based management plans for all ICU patients.",
-        "Perform and interpret advanced diagnostic and monitoring procedures, including point-of-care ultrasound (e.g., echocardiography, lung ultrasound), bronchoscopy, and hemodynamic monitoring.",
-        "Demonstrate proficiency in the management of a wide spectrum of critical illnesses, such as severe sepsis, ARDS, multi-organ failure, neurocritical care, and post-operative complications.",
-        "Prescribe and manage complex pharmacological regimens, including vasoactive drugs, sedatives, analgesics, and antimicrobials, tailored to individual patient needs.",
-        "Ensure timely and accurate documentation in the electronic medical record (EMR), including daily progress notes, procedure notes, and discharge summaries.",
-        "Perform a range of invasive procedures with a high degree of skill and safety, including central venous catheterization, arterial line insertion, endotracheal intubation, percutaneous tracheostomy, chest tube insertion, and lumbar puncture.",
-        "Adhere to strict infection control and sterile techniques during all procedures to minimize the risk of healthcare-associated infections, including Central Line-Associated Bloodstream Infections (CLABSI) and Ventilator-Associated Pneumonia (VAP).",
-        "Oversee the management of advanced life support, including mechanical ventilation (invasive and non-invasive), renal replacement therapy (CRRT), and therapeutic hypothermia.",
-        "Manage complications and emergencies during procedures, demonstrating rapid assessment and intervention skills.",
-        "Ensure all equipment used for procedures is checked, maintained, and used according to safety protocols."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-07-16",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/consultant-intensivist-the-african-medical-centre-of-excellence-amce-2",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Finance Officer",
-      "company": "Medbury Healthcare Group",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "n,",
-      "experience": "3 years",
-      "qualification": "BSc",
-      "requirements": [
-        "BA/BSc/HND",
-        "Professional Certificate"
-      ],
-      "responsibilities": [
-        "Prepare and raise daily payment requisitions for management approval",
-        "Record and post supplier invoices and other financial transactions into the Sage accounting system",
-        "Prepare and review monthly bank reconciliation statements",
-        "Prepare PAYE and Pension schedules for all business units",
-        "Maintain accurate, complete accounting records"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-07-16",
-      "deadline": "2026-12-16",
-      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/finance-officer-medbury-medical-services",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Facility Manager",
-      "company": "Zoom36 Dental Care",
-      "location": "Lekki, Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Healthcare Management",
-      "salary": "",
-      "experience": "Location",
-      "qualification": "",
-      "requirements": [
-        "Relevant qualifications"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-07-16",
-      "deadline": "",
-      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/facility-manager-zoom36-dental-care",
       "_source": "myjobmag"
     },
     {
@@ -14998,6 +15246,43 @@
       "_source": "hotnigerianjobs"
     },
     {
+      "job_title": "Marshal Inspector I",
+      "company": "the Federal Road Safety Corps (FRSC)",
+      "location": "Nigeria",
+      "job_type": "",
+      "job_category": "Other",
+      "salary": "Grade CONPASS 07",
+      "experience": "",
+      "qualification": "RN",
+      "requirements": [
+        "Double Qualifications RN & RM, Accident & Emergency Nurses, Pediatric Nurses, Anesthetic Nurses, Orthopedic Nurses, Radiographers from recognized institutions.",
+        "Applicants must not be less than 18 or more than 30 years of age.",
+        "Be Nigerian by birth.",
+        "Be computer literate.",
+        "Possession of a valid National Driver's Licence will be an added advantage.",
+        "Ensure that all certificates and qualifications are declared and presented at the point of recruitment.",
+        "Be medically fit and present a certificate of Medical Fitness issued by approved government hospital.",
+        "Be single.",
+        "Have a minimum height of 1.65 meters for males and 1.58 meters for females.",
+        "Possess current practicing licenses where applicable for Medical and allied professional disciplines.",
+        "Be of good character, free from financial indebtedness, and must not have been convicted of any criminal offence.",
+        "Must not have tattoos on any part of his/her body.",
+        "Must use his/her personal email address and phone number when submitting application.",
+        "Prospective applicants who are pregnant are advised not to apply."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Submit your application through the employer’s online recruitment portal.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-07-03",
+      "deadline": "2026-07-31",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/918173/marshal-inspector-i-at-the-federal-road-safety-cor.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
       "job_title": "Telemarketer",
       "company": "Vastovers Group",
       "location": "Abuja, Nigeria",
@@ -16522,6 +16807,37 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Gynaecology-Colposcopy-Surgeon-at-African-Medical-Centre-of-Excellence-AMCE?pid=78100",
+      "_source": "medicalworldnigeria"
+    },
+    {
+      "job_title": "Medical Consultant",
+      "company": "The Lamb Hospital",
+      "location": "Lagos, Ogun",
+      "job_type": "Full-time",
+      "job_category": "Doctor",
+      "salary": "N300,000 - N700,000 monthly",
+      "experience": "10",
+      "qualification": "bsc",
+      "requirements": [
+        "Relevant qualifications with 3 - 10 years experience"
+      ],
+      "responsibilities": [
+        "Develop and implement healthcare policies and protocols.",
+        "Conduct thorough analysis and assessment of clinical services and patient care models.",
+        "Collaborate with healthcare teams to enhance operational efficiency and patient outcomes.",
+        "Evaluate and recommend adoption of new medical technologies and treatments.",
+        "Ensure compliance with healthcare regulations and quality standards.",
+        "Participate in strategic planning and decision-making processes."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-06-25",
+      "deadline": "2026-08-10",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Medical-Consultant-at-Dorisfit-Gym-and-SPA?pid=78098",
       "_source": "medicalworldnigeria"
     },
     {
