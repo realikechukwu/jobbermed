@@ -1,15 +1,44 @@
 {
   "metadata": {
-    "extracted_at": "2026-07-19T06:06:06.060439",
+    "extracted_at": "2026-07-20T06:22:54.455172",
     "model": "gpt-4o-mini",
     "total_processed": 642,
-    "duplicates_removed": 102,
+    "duplicates_removed": 98,
     "skipped_old": 0,
     "skipped_empty": 0,
     "errors": 0,
-    "openai_calls": 129
+    "openai_calls": 103
   },
   "jobs": [
+    {
+      "job_title": "Medical Officer",
+      "company": "ToFaans Hospital",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Doctor",
+      "salary": "NGN500,000 / monthly",
+      "experience": "",
+      "qualification": "MBBS degree and current MDCN license",
+      "requirements": [
+        "NYSC completed or exemption certificate",
+        "Ability to work independently and as part of a team",
+        "Good communication and clinical skills"
+      ],
+      "responsibilities": [
+        "Providing quality patient care",
+        "Emergency cover",
+        "Clinical duties as assigned"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-07-19",
+      "deadline": "2026-07-30",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/medical-officer-1401",
+      "_source": "medlocum"
+    },
     {
       "job_title": "Physiotherapists",
       "company": "Divine Mercy Specialist Hospital",
@@ -3957,6 +3986,28 @@
       "_source": "hotnigerianjobs"
     },
     {
+      "job_title": "Dialysis Nurse",
+      "company": "Osiris Health Limited (Delta and Ondo)",
+      "location": "Warri, Delta and Akure, Ondo, Nigeria",
+      "job_type": "",
+      "job_category": "Nurse",
+      "salary": "",
+      "experience": "",
+      "qualification": "Ond",
+      "requirements": [],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Email the address shown on the original listing.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-07-16",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/925278/dialysis-nurses-at-osiris-health-limited-delta-and.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
       "job_title": "Nurse / Midwife",
       "company": "a Private Hospital - UHR Consult Limited",
       "location": "Asaba, Delta, Nigeria",
@@ -4437,6 +4488,28 @@
       "_source": "hotnigerianjobs"
     },
     {
+      "job_title": "Dialysis Technician",
+      "company": "Osiris Health Limited (Delta and Ondo)",
+      "location": "Warri, Delta",
+      "job_type": "",
+      "job_category": "Allied Health",
+      "salary": "",
+      "experience": "",
+      "qualification": "Ond",
+      "requirements": [],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Email the address shown on the original listing.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-07-16",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/925279/dialysis-technicians-at-osiris-health-limited-delt.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
       "job_title": "Consultant Nephrologist",
       "company": "Osiris Health Limited (Delta and Ondo)",
       "location": "Warri, Delta and Akure, Ondo, Nigeria",
@@ -4459,6 +4532,28 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/925281/consultant-nephrologists-at-osiris-health-limited.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
+      "job_title": "Medical Officer",
+      "company": "Osiris Health Limited (Delta and Ondo)",
+      "location": "Warri, Delta and Akure, Ondo, Nigeria",
+      "job_type": "",
+      "job_category": "Doctor",
+      "salary": "",
+      "experience": "",
+      "qualification": "Ond",
+      "requirements": [],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Email the address shown on the original listing.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-07-16",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/925280/medical-officers-at-osiris-health-limited-delta-an.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -7923,6 +8018,39 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/922910/nurse-at-everkind-healthcare.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
+      "job_title": "Programme Service Delivery Quality of Care Officer (Kano)",
+      "company": "Society for Family Health (SFH)",
+      "location": "Kano, Nigeria",
+      "job_type": "Full-time",
+      "job_category": "Public Health",
+      "salary": "n,",
+      "experience": "5 years",
+      "qualification": "First Degree in Nursing and/or Midwifery",
+      "requirements": [
+        "Must be registered with the Nursing and Midwifery Council of Nigeria.",
+        "An observable commitment to professional improvement will be an added advantage."
+      ],
+      "responsibilities": [
+        "The Officer leads/coordinates TA and implementation in six broad objective areas:",
+        "TA for Government System Strengthening (aligned with SRH & MNCH projections)",
+        "Instituting Quality of Care (QoC) Frameworks & Mechanisms",
+        "Data Management, Analysis & Use (high RDQA performance)",
+        "Supply Chain Management for Essential Commodities",
+        "Strategic Engagement, Coordination & Resource Alignment (scale & sustainability)",
+        "Planning/Budgeting, Knowledge Management & Reporting"
+      ],
+      "how_to_apply": [
+        "Submit your application through the employer’s online recruitment portal.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-07-14",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/922840/programme-service-delivery-quality-of-care-officer.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -13394,31 +13522,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/haematology-intern-1320",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Histopathology Intern",
-      "company": "The University of Benin Teaching Hospital",
-      "location": "Benin, Edo, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Other",
-      "salary": "",
-      "experience": "",
-      "qualification": "",
-      "requirements": [
-        "Candidates must possess the necessary academic qualifications (including a university degree in their chosen specialties) and must have provisional registration with their respective Regulatory Bodies."
-      ],
-      "responsibilities": [
-        "Successful candidates would be expected to perform the duties corresponding to the positions for which they have been considered and such other duties that may be assigned to them from time to time by the Hospital Management through its authorized officers."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-07-07",
-      "deadline": "2026-07-24",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/histopathology-intern-1319",
       "_source": "medlocum"
     },
     {
