@@ -1,52 +1,150 @@
 {
   "metadata": {
-    "extracted_at": "2026-07-25T06:05:12.546105",
+    "extracted_at": "2026-07-26T06:14:38.685239",
     "model": "gpt-4o-mini",
     "total_processed": 628,
-    "duplicates_removed": 93,
+    "duplicates_removed": 96,
     "skipped_old": 0,
     "skipped_empty": 0,
     "errors": 0,
-    "openai_calls": 241
+    "openai_calls": 101
   },
   "jobs": [
     {
-      "job_title": "Surgical Aesthetic Nurse",
-      "company": "Prestigious Consulting Group",
-      "location": "Lekki, Lagos, Nigeria",
-      "job_type": "Full-time",
+      "job_title": "Stabilization Center Nurse",
+      "company": "Premiere Urgence Internationale (PUI)",
+      "location": "Gusau, Zamfara, Nigeria",
+      "job_type": "Full-Time",
       "job_category": "Nurse",
-      "salary": "N150,000 - N200,000 monthly",
-      "experience": "2 - 3 years",
-      "qualification": "B.N.Sc. or equivalent nursing qualification",
+      "salary": "n,",
+      "experience": "2",
+      "qualification": "bsc",
       "requirements": [
-        "Registered Nurse (RN) with a valid Nursing and Midwifery Council of Nigeria (NMCN) licence",
-        "2 - 3 years' experience in surgical, cosmetic, or aesthetic nursing",
-        "Experience assisting with cosmetic or plastic surgery procedures is an added advantage",
-        "Strong clinical, communication, and interpersonal skills",
-        "Excellent attention to detail and ability to work in a fast-paced environment",
-        "Must reside within the Lekki axis"
+        "Good command in English and any local Dialects: Hausa",
+        "Proficient user of MS office (including Word, Excel, Outlook, PowerPoint)",
+        "Diploma in Clinical Nurse or Above",
+        "At least 2 years of progressive work experience in Nutrition Activities",
+        "Demonstrated understanding of the inpatient SAM management protocols",
+        "Previous work of CMAM program and with humanitarian organizations is an added plus"
       ],
       "responsibilities": [
-        "Prepare patients for aesthetic and cosmetic surgical procedures",
-        "Provide pre-operative and post-operative nursing care",
-        "Assist surgeons during procedures and maintain a sterile operating environment",
-        "Monitor patients' vital signs and recovery progress",
-        "Educate patients on treatment plans, recovery, and aftercare instructions",
-        "Maintain accurate patient records and treatment documentation",
-        "Ensure compliance with infection prevention and patient safety protocols",
-        "Support the clinical team in delivering excellent patient experiences"
+        "Welcome patients to the facility",
+        "Apply the procedures of triage and perform admissions for the new cases as per the protocol",
+        "Ensure quality and timely identification and treatment of medical complications associated with malnutrition in liaison with the Physicians",
+        "Give and advise on the drug regimen for the patients",
+        "Supervise and coordinate the strict patient management in the Stabilization center and ensure the laid protocols are followed",
+        "Participate in daily SC ward rounds with the Physicians",
+        "Strictly monitor and record the vital signs regularly as per the protocol",
+        "Ensure that all required observations, prescribed treatment and procedures are properly carried out and documented on patient’s charts"
       ],
       "how_to_apply": [
-        "Email the address shown on the original listing.",
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-07-25",
+      "deadline": "2026-07-30",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://jobsinnigeria.careers/jobs/stabilization-center-nurse-premiere-urgence-internationale-pui/",
+      "_source": "jobsinnigeria"
+    },
+    {
+      "job_title": "Dentist",
+      "company": "Smile 360 Dental Specialists",
+      "location": "Maitama, Abuja, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Dentist",
+      "salary": "Competitive salary and performance-based incentives.",
+      "experience": "3",
+      "qualification": "Degree in Dental Medicine or Surgery from an accredited Institution",
+      "requirements": [
+        "Valid dental license",
+        "A minimum of 3 years of experience practicing as a Dentist in a clinical setting",
+        "Proficiency in performing a wide range of dental procedures with precision and efficiency",
+        "Excellent communication skills and ability to build rapport with patients",
+        "Strong decision-making and problem-solving abilities",
+        "Commitment to delivering compassionate and personalized care to every patient",
+        "Willingness to mentor and supervise junior dental staff as needed."
+      ],
+      "responsibilities": [
+        "Perform comprehensive dental examinations and assessments",
+        "Create tailored treatment plans and provide exceptional dental care to patients",
+        "Administer various dental procedures including restorative, cosmetic, surgical, and emergency treatments",
+        "Educate patients on oral health maintenance and preventive care",
+        "Collaborate with a multidisciplinary team to ensure optimal patient outcomes",
+        "Maintain accurate and detailed patient records in compliance with regulations",
+        "Stay current with advancements in dentistry and participate in professional development activities"
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
         "Click Apply Now for full details."
       ],
-      "date_posted": "2026-07-20",
-      "deadline": "",
-      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "date_posted": "2026-07-25",
+      "deadline": "2026-08-10",
+      "contact_email": "",
       "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/926697/surgical-aesthetic-nurse-at-prestigious-consulting.html",
-      "_source": "hotnigerianjobs"
+      "apply_url": "https://jobsinnigeria.careers/jobs/dentist-smile-360-dental-specialists/",
+      "_source": "jobsinnigeria"
+    },
+    {
+      "job_title": "Physiotherapist",
+      "company": "Kels Global Ventures",
+      "location": "Abuja, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Allied Health",
+      "salary": "",
+      "experience": "2 years",
+      "qualification": "BSc",
+      "requirements": [
+        "Minimum of 2 years relevant work experience",
+        "Valid MRTB license (mandatory)",
+        "Strong communication and interpersonal skills."
+      ],
+      "responsibilities": [
+        "Assess patients’ physical conditions and develop appropriate treatment plans",
+        "Provide hands-on therapy, exercise programs, and rehabilitation services",
+        "Monitor patient progress and adjust treatment plans as needed",
+        "Educate patients and caregivers on injury prevention and home exercises",
+        "Maintain accurate patient records and reports."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-07-25",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/physiotherapist-kels-global-ventures-7",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Occupational Therapist",
+      "company": "Kels Global Ventures",
+      "location": "Abuja, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Allied Health",
+      "salary": "n,",
+      "experience": "2",
+      "qualification": "BSc",
+      "requirements": [
+        "Bachelor's degree in Occupational Therapy",
+        "At least 2 years of experience in a rehabilitation setting",
+        "Registration with the Medical Rehabilitation Therapists Board of Nigeria (MRTB)",
+        "Must reside in Abuja"
+      ],
+      "responsibilities": [
+        "Assess, plan, and implement personalized treatment programs to help patients develop, recover, or maintain daily living and work skills."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-07-25",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/occupational-therapist-kels-global-ventures-6",
+      "_source": "myjobmag"
     },
     {
       "job_title": "Theatre Scheduler / Coordinator",
@@ -145,6 +243,112 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.myjobmag.com/job/dietitian-enugu-international-hospital-eih",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Pharmacy Technician",
+      "company": "NEM Health Limited",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Pharmacist",
+      "salary": "n,",
+      "experience": "Location",
+      "qualification": "",
+      "requirements": [
+        "Interested candidates should possess relevant qualifications with experience."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-07-25",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/pharmacy-technician-nem-health-limited",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Case Manager",
+      "company": "NEM Health Limited",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Healthcare Management",
+      "salary": "n,",
+      "experience": "",
+      "qualification": "",
+      "requirements": [
+        "Interested candidates should possess relevant qualifications with experience."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-07-25",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/case-manager-nem-health-limited",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Security Officer",
+      "company": "Meridian Hospital",
+      "location": "Port Harcourt, Rivers, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "n,",
+      "experience": "Location",
+      "qualification": "ond",
+      "requirements": [
+        "Security training or experience.",
+        "Physical fitness & alertness.",
+        "Good communication skills.",
+        "Integrity & discipline."
+      ],
+      "responsibilities": [
+        "Ensure safety of staff, patients & ass",
+        "Control access & monitor premises.",
+        "Respond to security incidents.",
+        "Enforce hospital security protocols."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-07-25",
+      "deadline": "2026-07-31",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/security-officer-meridian-hospital",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Accountant",
+      "company": "Meridian Hospital",
+      "location": "Port Harcourt, Rivers, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "n,",
+      "experience": "3 years",
+      "qualification": "BA/BSc/HND, Professional Certificate",
+      "requirements": [
+        "Bachelor's Degree or HND in Accounting, Finance, or a related field.",
+        "Professional qualification (ICAN, ACCA, ACA) is an added advantage.",
+        "Minimum of three (3) years relevant accounting experience, preferably in a healthcare setting.",
+        "Proficiency in accounting software and Microsoft Office applications.",
+        "Strong analytical, organizational, and problem-solving skills.",
+        "Excellent communication and interpersonal skills.",
+        "High level of integrity, confidentiality, and attention to detail."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-07-25",
+      "deadline": "2026-07-31",
+      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/accountant-meridian-hospital",
       "_source": "myjobmag"
     },
     {
@@ -1385,62 +1589,64 @@
     },
     {
       "job_title": "Pharmacist Sales Assistant",
-      "company": "BridgeHedge Limited",
+      "company": "a Reputable Community Pharmacy - BridgeHedge Limited",
       "location": "Okota, Isolo - Lagos, Nigeria",
       "job_type": "Full-time",
       "job_category": "Pharmacist",
       "salary": "n,",
       "experience": "is a strong prerequisite for this role.",
-      "qualification": "Minimum of a B.Sc., or relevant qualification in a pharmacy, pharmacology, health, science, sales, or related fields",
+      "qualification": "rn",
       "requirements": [
-        "Previous experience in pharmacy retail, healthcare sales, pharmaceutical sales, customer service, or retail sales.",
-        "Strong sales ability is very important.",
-        "Good communication and interpersonal skills.",
-        "Knowledge of medicines, supplements, wellness products, and personal care products.",
-        "Ability to write simple, clear, and engaging health-related articles or social media content.",
-        "Good inventory and stock management skills.",
-        "Strong attention to detail.",
-        "Good customer service attitude.",
-        "Ability to follow instructions and work under the supervision of a Pharmacist.",
-        "Basic computer literacy and ability to use POS, inventory systems, Microsoft Office, or Google Workspace.",
-        "Must be honest, organised, proactive, and responsible.",
-        "Ability to multitask in a busy pharmacy environment.",
-        "Must be willing to learn and grow within the company."
+        "Minimum of a B.Sc., or relevant qualification in a pharmacy, pharmacology, health, science, sales, or related fields",
+        "Previous experience in pharmacy retail, healthcare sales, pharmaceutical sales, customer service, or retail sales",
+        "Strong sales ability is very important",
+        "Good communication and interpersonal skills",
+        "Knowledge of medicines, supplements, wellness products, and personal care products",
+        "Ability to write simple, clear, and engaging health-related articles or social media content",
+        "Good inventory and stock management skills",
+        "Strong attention to detail",
+        "Good customer service attitude",
+        "Ability to follow instructions and work under the supervision of a Pharmacist",
+        "Basic computer literacy and ability to use POS, inventory systems, Microsoft Office, or Google Workspace",
+        "Must be honest, organised, proactive, and responsible",
+        "Ability to multitask in a busy pharmacy environment",
+        "Must be willing to learn and grow within the company"
       ],
       "responsibilities": [
-        "Attend to customers professionally and warmly.",
-        "Promote and sell pharmacy products, wellness items, supplements, personal care products, and other approved healthcare products.",
-        "Identify customer needs and recommend suitable products where appropriate.",
-        "Support the pharmacy’s sales targets through active selling, upselling, cross-selling, and customer relationship management.",
-        "Provide accurate product information to customers within approved limits.",
-        "Ensure excellent customer experience from enquiry to purchase.",
-        "Handle customer complaints or concerns politely and escalate when necessary.",
-        "Maintain good relationships with walk-in customers, repeat customers, and corporate clients.",
-        "Support patients with basic guidance on product use, dosage reminders, refill reminders, and general wellness support under the supervision of the Pharmacist.",
-        "Follow up with customers after purchases where necessary to encourage adherence, refill, and continued care.",
-        "Maintain a patient/customer follow-up tracker.",
-        "Support chronic care patients with reminders for routine refills and wellness checks.",
-        "Ensure all patient-related information is handled with confidentiality and professionalism.",
-        "Escalate health-related concerns to the Pharmacist immediately.",
-        "Assist in receiving, arranging, and monitoring stock.",
-        "Track inventory levels and notify management when products are low.",
-        "Support stock-taking, product counts, and reconciliation.",
-        "Monitor expiry dates and ensure proper stock rotation using FIFO/FEFO methods.",
-        "Ensure shelves are properly arranged, clean, labelled, and well stocked.",
-        "Report damaged, expired, or slow-moving products promptly.",
-        "Help maintain accurate sales, stock, and inventory records.",
-        "Assist the Pharmacist and pharmacy team in daily operations.",
-        "Support prescription processing under the supervision of the Pharmacist.",
-        "Package and label products appropriately as directed."
+        "Attend to customers professionally and warmly",
+        "Promote and sell pharmacy products, wellness items, supplements, personal care products, and other approved healthcare products",
+        "Identify customer needs and recommend suitable products where appropriate",
+        "Support the pharmacy’s sales targets through active selling, upselling, cross-selling, and customer relationship management",
+        "Provide accurate product information to customers within approved limits",
+        "Ensure excellent customer experience from enquiry to purchase",
+        "Handle customer complaints or concerns politely and escalate when necessary",
+        "Maintain good relationships with walk-in customers, repeat customers, and corporate clients",
+        "Support patients with basic guidance on product use, dosage reminders, refill reminders, and general wellness support under the supervision of the Pharmacist",
+        "Follow up with customers after purchases where necessary to encourage adherence, refill, and continued care",
+        "Maintain a patient/customer follow-up tracker",
+        "Support chronic care patients with reminders for routine refills and wellness checks",
+        "Ensure all patient-related information is handled with confidentiality and professionalism",
+        "Escalate health-related concerns to the Pharmacist immediately",
+        "Assist in receiving, arranging, and monitoring stock",
+        "Track inventory levels and notify management when products are low",
+        "Support stock-taking, product counts, and reconciliation",
+        "Monitor expiry dates and ensure proper stock rotation using FIFO/FEFO methods",
+        "Ensure shelves are properly arranged, clean, labelled, and well stocked",
+        "Report damaged, expired, or slow-moving products promptly",
+        "Help maintain accurate sales, stock, and inventory records",
+        "Assist the Pharmacist and pharmacy team in daily operations",
+        "Support prescription processing under the supervision of the Pharmacist",
+        "Package and label products appropriately as directed",
+        "Ensure the pharmacy environment is clean, organised, and professional"
       ],
       "how_to_apply": [
         "Apply via the Apply Now button for full details."
       ],
       "date_posted": "2026-07-24",
       "deadline": "2026-08-07",
-      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "contact_email": "",
       "contact_phone": "",
-      "apply_url": "Apply via the Apply Now button for full details.",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/928982/pharmacist-sales-assistant-at-a-reputable-communit.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -1918,45 +2124,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/929566/mother-baby-corner-mbc-nurse-at-premiere-urgence-i.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Stabilization Center Nurse",
-      "company": "Premiere Urgence Internationale (PUI)",
-      "location": "Gusau, Zamfara, Nigeria",
-      "job_type": "Contract",
-      "job_category": "Nurse",
-      "salary": "n,",
-      "experience": "2",
-      "qualification": "Diploma in Clinical Nurse or Above",
-      "requirements": [
-        "Good command in English and any local Dialects: Hausa",
-        "Proficient user of MS Office (including Word, Excel, Outlook, PowerPoint)",
-        "At least 2 years of progressive work experience in Nutrition Activities",
-        "Demonstrated understanding of inpatient SAM management protocols",
-        "Previous work of CMAM program and with humanitarian organizations is an added plus"
-      ],
-      "responsibilities": [
-        "Welcome patients to the facility",
-        "Apply the procedures of triage and perform admissions for new cases",
-        "Ensure quality and timely identification and treatment of medical complications associated with malnutrition",
-        "Give and advise on the drug regimen for the patients",
-        "Supervise and coordinate strict patient management in the Stabilization center",
-        "Participate in daily SC ward rounds with the Physicians",
-        "Monitor and record the vital signs regularly and report deviations",
-        "Ensure all required observations, prescribed treatments and procedures are documented",
-        "Refer relevant information to the doctor in charge",
-        "Monitor therapeutic feeds and ensure children receive them as required",
-        "Carry out regular procedures like taking blood samples and providing IV medications"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-07-24",
-      "deadline": "2026-07-30",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/929559/stabilization-center-nurse-at-premiere-urgence-int.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -2648,45 +2815,6 @@
       "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
       "contact_phone": "08120796570",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/928908/medical-laboratory-scientist-at-a-leading-private.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Dentist",
-      "company": "Smile 360 Dental Specialists",
-      "location": "Maitama, Abuja (FCT), Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Dentist",
-      "salary": "and performance-based incentives.",
-      "experience": "3",
-      "qualification": "ond",
-      "requirements": [
-        "Degree in Dental Medicine or Surgery from an accredited Institution",
-        "Valid dental license",
-        "A minimum of 3 years of experience practicing as a Dentist in a clinical setting",
-        "Proficiency in performing a wide range of dental procedures with precision and efficiency",
-        "Excellent communication skills and ability to build rapport with patients",
-        "Strong decision-making and problem-solving abilities",
-        "Commitment to delivering compassionate and personalized care to every patient",
-        "Willingness to mentor and supervise junior dental staff as needed."
-      ],
-      "responsibilities": [
-        "Perform comprehensive dental examinations and assessments",
-        "Create tailored treatment plans and provide exceptional dental care to patients",
-        "Administer various dental procedures including restorative, cosmetic, surgical, and emergency treatments",
-        "Educate patients on oral health maintenance and preventive care",
-        "Collaborate with a multidisciplinary team to ensure optimal patient outcomes",
-        "Maintain accurate and detailed patient records in compliance with regulations",
-        "Stay current with advancements in dentistry and participate in professional development activities"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-07-24",
-      "deadline": "2026-08-10",
-      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/929536/dentist-at-smile-360-dental-specialists.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -3707,66 +3835,6 @@
       "_source": "hotnigerianjobs"
     },
     {
-      "job_title": "Occupational Therapist",
-      "company": "Kels Global Ventures",
-      "location": "Kado, Abuja (FCT), Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Allied Health",
-      "salary": "N180,000 - N200,000 / Month",
-      "experience": "2",
-      "qualification": "Bachelor",
-      "requirements": [
-        "Bachelor's degree in Occupational Therapy",
-        "At least 2 years of experience in a rehabilitation setting",
-        "Registration with the Medical Rehabilitation Therapists Board of Nigeria (MRTB)",
-        "Must reside in Abuja"
-      ],
-      "responsibilities": [
-        "Assess, plan, and implement personalized treatment programs",
-        "Help patients develop, recover, or maintain daily living and work skills"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-07-24",
-      "deadline": "2026-08-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/928921/occupational-therapist-at-kels-global-ventures.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Physiotherapist",
-      "company": "Kels Global Ventures",
-      "location": "Kado, Abuja (FCT), Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Allied Health",
-      "salary": "N180,000 - N200,000 monthly",
-      "experience": "Minimum of 2 years relevant work experience",
-      "qualification": "ond",
-      "requirements": [
-        "Valid MRTB license (mandatory)",
-        "Strong communication and interpersonal skills."
-      ],
-      "responsibilities": [
-        "Assess patients’ physical conditions and develop appropriate treatment plans",
-        "Provide hands-on therapy, exercise programs, and rehabilitation services",
-        "Monitor patient progress and adjust treatment plans as needed",
-        "Educate patients and caregivers on injury prevention and home exercises",
-        "Maintain accurate patient records and reports."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-07-24",
-      "deadline": "2026-08-16",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/928914/physiotherapist-at-kels-global-ventures.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
       "job_title": "Speech Therapist",
       "company": "Kels Global Ventures",
       "location": "Kado, Abuja (FCT), Nigeria",
@@ -4725,72 +4793,6 @@
       "_source": "myjobmag"
     },
     {
-      "job_title": "Specialist Nurse (ICU / Theatre / A&E)",
-      "company": "Enugu International Hospital (EIH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Nurse",
-      "salary": "n,",
-      "experience": "5 years",
-      "qualification": "RN with relevant post-basic specialty qualification and NMCN registration",
-      "requirements": [
-        "BA/BSc/HND",
-        "Current registration with the applicable Nigerian regulatory body",
-        "Evidence of continuing professional development",
-        "Strong communication skills and a patient-first mindset"
-      ],
-      "responsibilities": [
-        "Deliver high-quality clinical care within the Nursing & Midwifery service",
-        "Participate in multidisciplinary ward rounds and case conferences",
-        "Mentor junior staff and contribute to teaching programmes",
-        "Uphold clinical governance, documentation, and patient safety standards",
-        "Support quality improvement and audit initiatives",
-        "Collaborate with allied specialties to ensure seamless patient pathways"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-07-24",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/specialist-nurse-icu-theatre-a-e-enugu-international-hospital-eih",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Consultant Pathologist",
-      "company": "Enugu International Hospital (EIH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "8",
-      "qualification": "PhD/Fellowship",
-      "requirements": [
-        "MBBS with Fellowship in Anaesthesia and full MDCN registration",
-        "Current registration with the applicable Nigerian regulatory body, where required",
-        "Evidence of continuing professional development",
-        "8+ years experience"
-      ],
-      "responsibilities": [
-        "Deliver high-quality clinical care within the Medical service",
-        "Participate in multidisciplinary ward rounds and case conferences",
-        "Mentor junior staff and contribute to teaching programmes",
-        "Uphold clinical governance, documentation, and patient safety standards",
-        "Support quality improvement and audit initiatives",
-        "Collaborate with allied specialties to ensure seamless patient pathways"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-07-24",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/consultant-pathologist-enugu-international-hospital-eih",
-      "_source": "myjobmag"
-    },
-    {
       "job_title": "Head of Compliance, Risk & Governance",
       "company": "Enugu International Hospital (EIH)",
       "location": "Enugu, Nigeria",
@@ -5162,39 +5164,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.myjobmag.com/job/pharmacist-enugu-international-hospital-eih",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Linen-Store / Distribution Officer",
-      "company": "Enugu International Hospital (EIH)",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "",
-      "experience": "5 years",
-      "qualification": "Secondary School (SSCE)",
-      "requirements": [
-        "Basic literacy with 5+ years stores / distribution experience",
-        "Current registration with the applicable Nigerian regulatory body, where required",
-        "Evidence of continuing professional development",
-        "Strong communication skills and a patient-first mindset."
-      ],
-      "responsibilities": [
-        "Deliver a high-quality, reliable service within the Laundry & Linen function",
-        "Collaborate with colleagues across departments to achieve shared goals",
-        "Maintain accurate records and uphold organisational standards",
-        "Support quality improvement and process-efficiency initiatives",
-        "Uphold health, safety, and compliance requirements at all times",
-        "Contribute to a professional and patient-focused hospital environment."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-07-24",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/linen-store-distribution-officer-enugu-international-hospital-eih",
       "_source": "myjobmag"
     },
     {
@@ -8623,6 +8592,44 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/926187/technical-lead-integrated-mnch-nutrition-routine-i.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
+      "job_title": "Surgical Aesthetic Nurse",
+      "company": "Prestigious Consulting Group",
+      "location": "Lekki, Lagos, Nigeria",
+      "job_type": "Full-time",
+      "job_category": "Nurse",
+      "salary": "N150,000 - N200,000 monthly",
+      "experience": "2 - 3 years",
+      "qualification": "B.N.Sc. or equivalent nursing qualification",
+      "requirements": [
+        "Registered Nurse (RN) with a valid Nursing and Midwifery Council of Nigeria (NMCN) licence",
+        "2 - 3 years' experience in surgical, cosmetic, or aesthetic nursing",
+        "Experience assisting with cosmetic or plastic surgery procedures is an added advantage",
+        "Strong clinical, communication, and interpersonal skills",
+        "Excellent attention to detail and ability to work in a fast-paced environment",
+        "Must reside within the Lekki axis"
+      ],
+      "responsibilities": [
+        "Prepare patients for aesthetic and cosmetic surgical procedures",
+        "Provide pre-operative and post-operative nursing care",
+        "Assist surgeons during procedures and maintain a sterile operating environment",
+        "Monitor patients' vital signs and recovery progress",
+        "Educate patients on treatment plans, recovery, and aftercare instructions",
+        "Maintain accurate patient records and treatment documentation",
+        "Ensure compliance with infection prevention and patient safety protocols",
+        "Support the clinical team in delivering excellent patient experiences"
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-07-20",
+      "deadline": "",
+      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/926697/surgical-aesthetic-nurse-at-prestigious-consulting.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -17323,82 +17330,6 @@
       "_source": "medicalworldnigeria"
     },
     {
-      "job_title": "Medical Consultant",
-      "company": "The Lamb Hospital",
-      "location": "Lagos, Ogun",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "N300,000 - N700,000 monthly",
-      "experience": "10",
-      "qualification": "bsc",
-      "requirements": [
-        "Relevant qualifications with 3 - 10 years experience"
-      ],
-      "responsibilities": [
-        "Develop and implement healthcare policies and protocols.",
-        "Conduct thorough analysis and assessment of clinical services and patient care models.",
-        "Collaborate with healthcare teams to enhance operational efficiency and patient outcomes.",
-        "Evaluate and recommend adoption of new medical technologies and treatments.",
-        "Ensure compliance with healthcare regulations and quality standards.",
-        "Participate in strategic planning and decision-making processes."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-06-25",
-      "deadline": "2026-08-10",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Medical-Consultant-at-Dorisfit-Gym-and-SPA?pid=78098",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Colorectal / Colonoscopy Surgeon",
-      "company": "African Medical Centre of Excellence (AMCE)",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "7 years or more post-completion of specialty training and certification",
-      "qualification": "bsc",
-      "requirements": [
-        "Medical Degree (MBBS, MBChB, or equivalent) from a recognised institution",
-        "Completion of an accredited residency programme in General Surgery",
-        "Fellowship in Colorectal Surgery (e.g., from the West African College of Surgeons (WACS), American Society of Colon and Rectal Surgeons (ASCRS), or equivalent international body)",
-        "Valid medical license and registration with the relevant medical council (e.g., MDCN)",
-        "Membership of relevant professional associations (e.g., Nigerian Society for Colorectal Disorders (NSCRD), or equivalent)",
-        "Consultant-level experience in Colorectal Surgery (7 years or more post-completion of specialty training and certification)",
-        "Proven expertise in a high volume of diagnostic and therapeutic colonoscopy procedures",
-        "Extensive experience in performing complex open and laparoscopic colorectal resections for both benign and malignant diseases",
-        "Demonstrated ability to manage complex cases, including re-do surgeries and pelvic floor disorders",
-        "Familiarity with Enhanced Recovery After Surgery (ERAS) protocols",
-        "Prior experience in supervising, teaching, or mentoring junior medical staff is preferred",
-        "Evidence of research publication and participation in clinical trials is highly desirable."
-      ],
-      "responsibilities": [
-        "Perform advanced diagnostic and therapeutic colonoscopy procedures, including polypectomy, mucosal resection, and stricture dilation.",
-        "Conduct complex surgical operations for colorectal conditions, including laparoscopic and open resections for cancer, inflammatory bowel disease, and diverticular disease.",
-        "Manage emergency colorectal conditions such as obstruction, perforation, and massive lower gastrointestinal (GI) bleeding.",
-        "Utilize minimally invasive techniques to reduce patient morbidity, enhance recovery, and shorten hospital stays.",
-        "Evaluate patient medical history, symptoms, and diagnostic test results to develop personalized surgical and non-surgical care plans.",
-        "Educate patients and their families on surgical procedures, risks, benefits, and post-operative care to promote informed decision-making.",
-        "Obtain informed consent for all procedures, respecting patient autonomy and ensuring ethical care.",
-        "Monitor patient progress and manage post-operative care, adjusting treatment plans as needed to ensure optimal recovery and outcomes.",
-        "Interpret and correlate endoscopic findings with radiological imaging (CT, MRI, PET/CT) and histopathology to ensure accurate diagnosis and staging.",
-        "Lead and actively participate in multidisciplinary team (MDT) meetings with oncologists, radiologists, and pathologists to coordinate comprehensive patient care."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-06-25",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Colorectal-Colonoscopy-Surgeon-at-African-Medical-Centre-of-Excellence-AMCE?pid=78097",
-      "_source": "medicalworldnigeria"
-    },
-    {
       "job_title": "Neurosurgeon",
       "company": "African Medical Centre of Excellence (AMCE)",
       "location": "Abuja, Nigeria",
@@ -18153,77 +18084,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/senior-physiotherapist-clinic-coordinator-hrmaven/",
-      "_source": "jobsinnigeria"
-    },
-    {
-      "job_title": "Health Financing Specialist",
-      "company": "Health Strategy and Delivery Foundation",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Other",
-      "salary": "n,",
-      "experience": "3–5 years’ experience implementing or supporting health financing or public finance management projects",
-      "qualification": "Bachelors Degree in public health, health economics, health services, or a related field (Master’s degree will be an advantage)",
-      "requirements": [
-        "Experience working with or implementing DRF programs in Nigeria or any low-income country",
-        "Familiarity with the health insurance space or experience implementing donor-supported health insurance projects",
-        "Good understanding of public health finance systems",
-        "Excellent stakeholder management skills",
-        "Ability to create high-impact decks and other resources using MS PowerPoint, Word, Excel and Publisher",
-        "Data-driven decision-making skills",
-        "Strong communication and coordination skills",
-        "Problem-solving skills and adaptive thinking",
-        "Ability to work in complex multi-stakeholder environments"
-      ],
-      "responsibilities": [
-        "Provide technical support to state DRF committees, DMAs, State health insurance agencies (SHIA) and other relevant stakeholders to deliver on project objectives",
-        "Strengthen DRF Governance and Accountability Structures",
-        "Facilitate the training and reactivation of non-functional or weak DRF committees across the 5 states",
-        "Track reconstituted DRF committee meeting frequency, agendas, and outputs",
-        "Lead advocacy to DRF committees for early policy adoption",
-        "Facilitate the establishment and actively participate in states quarterly DRF commodity replenishment and performance review meetings",
-        "Co-develop state-level dashboards with SLDA and state stakeholders to routinely track DRF budgeting, allocation and replenishment performance targets"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-06-11",
-      "deadline": "2026-06-30",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://jobsinnigeria.careers/jobs/health-financing-specialist-health-strategy-delivery-foundation/",
-      "_source": "jobsinnigeria"
-    },
-    {
-      "job_title": "Health Information Technician",
-      "company": "EMADOR Nigeria Integrated Resources",
-      "location": "Ikeja, Lagos, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Other",
-      "salary": "N100,000 – N150,000 per month",
-      "experience": "as a Health Information Technician or similar role",
-      "qualification": "bsc",
-      "requirements": [
-        "Experience as a Health Information Technician or similar role",
-        "Excellent research, coding and analytical abilities",
-        "In-depth knowledge of computers and information systems",
-        "Outstanding organizational and communication skills."
-      ],
-      "responsibilities": [
-        "Ensure compliance with confidentiality laws and regulations",
-        "Manage and update data for clinical databases and registries",
-        "Use classification software to allocate appropriate clinical codes for insurance compensation and data examination",
-        "Implement an effective electronic health record system"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-06-11",
-      "deadline": "2026-07-02",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://jobsinnigeria.careers/jobs/health-information-technician-emador-nigeria-integrated-resources/",
       "_source": "jobsinnigeria"
     }
   ]
