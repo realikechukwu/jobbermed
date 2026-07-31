@@ -12,6 +12,12 @@ This repository contains the full operating stack for that product:
 - Supabase-backed auth, roles, native jobs, access requests, and email preferences
 - Email delivery workflows for weekly and personalized job digests
 
+## Not Open Source
+
+This project is not open source. All rights are reserved. No permission is granted to use, copy, modify, deploy, or redistribute this code or the job data it contains. See [`LICENSE`](LICENSE).
+
+Issues and pull requests are not accepted.
+
 ## What This Repo Does
 
 At a high level, the repo does four things:
