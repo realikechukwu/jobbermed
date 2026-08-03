@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "extracted_at": "2026-08-02T06:15:29.634688",
+    "extracted_at": "2026-08-03T06:32:52.135437",
     "model": "gpt-4o-mini",
     "total_processed": 644,
     "duplicates_removed": 103,
     "skipped_old": 0,
     "skipped_empty": 0,
     "errors": 0,
-    "openai_calls": 113
+    "openai_calls": 104
   },
   "jobs": [
     {
@@ -8881,6 +8881,35 @@
       "_source": "myjobmag"
     },
     {
+      "job_title": "Nurse - Maiduguri",
+      "company": "Medecins Du Monde",
+      "location": "Maiduguri, Borno, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Nurse",
+      "salary": "₦500,000 - ₦750,000/month",
+      "experience": "3 years",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "BA/BSc/HND",
+        "3 years experience"
+      ],
+      "responsibilities": [
+        "Provide high-quality nursing care in the CTU",
+        "Ensure effective triage, patient monitoring, treatment support",
+        "Manage infection prevention and control (IPC)",
+        "Conduct health education and promote cholera prevention"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-07-28",
+      "deadline": "2026-08-09",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/nurse-maiduguri-medecins-du-monde",
+      "_source": "myjobmag"
+    },
+    {
       "job_title": "Radiologist",
       "company": "Kennedia Consulting Limited",
       "location": "Lagos, Nigeria",
@@ -16466,38 +16495,6 @@
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/922840/programme-service-delivery-quality-of-care-officer.html",
       "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Quality Assurance Coordinator",
-      "company": "Desol Medical Solutions Limited",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Healthcare Management",
-      "salary": "₦200,000 - ₦300,000/month",
-      "experience": "3 years",
-      "qualification": "BA/BSc/HND, MBA/MSc/MA",
-      "requirements": [
-        "Bachelor's degree in Healthcare Administration, Public Health, Business Administration, Medical Laboratory Science, Nursing, Pharmacy, or a related field.",
-        "Minimum of 3 years' experience in quality assurance, compliance, operations, or process improvement.",
-        "Strong analytical, organisational, communication, and report-writing skills.",
-        "Proficiency in Microsoft Office (especially Excel); experience with quality management systems is an advantage."
-      ],
-      "responsibilities": [
-        "Develop and implement quality standards, SOPs, and quality improvement initiatives.",
-        "Conduct internal audits and monitor compliance with company policies.",
-        "Analyse customer feedback and recommend service improvements.",
-        "Monitor KPIs, prepare quality reports, and follow up on corrective actions.",
-        "Train staff on quality processes and promote a culture of continuous improvement."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-07-13",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/quality-assurance-coordinator-desol-medical-solutions-limited",
-      "_source": "myjobmag"
     },
     {
       "job_title": "Massage Therapist",
