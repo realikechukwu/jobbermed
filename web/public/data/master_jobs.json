@@ -1,15 +1,746 @@
 {
   "metadata": {
-    "extracted_at": "2026-08-15T03:50:30.620360",
+    "extracted_at": "2026-08-16T03:51:45.462909",
     "model": "gpt-4o-mini",
-    "total_processed": 650,
-    "duplicates_removed": 134,
+    "total_processed": 643,
+    "duplicates_removed": 127,
     "skipped_old": 0,
     "skipped_empty": 0,
     "errors": 0,
-    "openai_calls": 210
+    "openai_calls": 159
   },
   "jobs": [
+    {
+      "job_title": "Home care nurse",
+      "company": "TSA",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Nurse",
+      "salary": "NGN80,000 - NGN90,000 / monthly",
+      "experience": "",
+      "qualification": "",
+      "requirements": [],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-08-15",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/home-care-nurse-150000-the-price-is-only-for-nurse-caregiver-1608",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Carer, Nurse assistant, ChEw",
+      "company": "TSA",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Nurse",
+      "salary": "",
+      "experience": "",
+      "qualification": "",
+      "requirements": [],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-08-15",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/carer-nurse-assistant-chew-1607",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Consultant Cardiologist",
+      "company": "Sigma Consult",
+      "location": "Victoria Island, Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Doctor",
+      "salary": "Above ₦1,000,000/month",
+      "experience": "5 years",
+      "qualification": "BA/BSc/HND, Professional Certificate",
+      "requirements": [
+        "BA/BSc/HND",
+        "Professional Certificate",
+        "5 years of experience"
+      ],
+      "responsibilities": [
+        "Provide specialist consultation and comprehensive management of cardiovascular conditions",
+        "Conduct outpatient consultations, follow-up clinics and inpatient reviews",
+        "Develop appropriate, evidence-based treatment and management plans",
+        "Provide cardiovascular risk assessment, preventive care and patient counselling",
+        "Manage complex cardiac cases in collaboration with relevant specialists",
+        "Perform and interpret relevant cardiovascular investigations",
+        "Support cardiac imaging interpretation and clinical decision-making",
+        "Provide specialist management of acute cardiovascular presentations",
+        "Collaborate with physicians, surgeons, intensivists, radiologists, nurses and other healthcare professionals",
+        "Lead or participate in cardiology ward rounds and specialist clinics"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-08-15",
+      "deadline": "",
+      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/consultant-cardiologist-sigma-consult-2",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Health Attendants",
+      "company": "Maduka University Teaching Hospital",
+      "location": "Enugu, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "BA/BSc/HND",
+        "Experience",
+        "Location",
+        "Enugu"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-08-15",
+      "deadline": "2026-08-23",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/health-attendants-maduka-university-teaching-hospital",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Theatre/CSSD Technicians",
+      "company": "Maduka University Teaching Hospital",
+      "location": "Enugu, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "",
+      "experience": "",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "BA/BSc/HND",
+        "Relevant qualifications and experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-08-15",
+      "deadline": "2026-08-23",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/theatre-cssd-technicians-maduka-university-teaching-hospital",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Medical Laboratory Scientists",
+      "company": "Maduka University Teaching Hospital",
+      "location": "Enugu, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Medical Laboratory Scientist",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "BA/BSc/HND",
+        "Relevant qualifications and experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-08-15",
+      "deadline": "2026-08-23",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/medical-laboratory-scientists-maduka-university-teaching-hospital",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Physiotherapists",
+      "company": "Maduka University Teaching Hospital",
+      "location": "Enugu, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Allied Health",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "BA/BSc/HND",
+        "Relevant qualifications and experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-08-15",
+      "deadline": "2026-08-23",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/physiotherapists-maduka-university-teaching-hospital",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Sonographers",
+      "company": "Maduka University Teaching Hospital",
+      "location": "Enugu, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Allied Health",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "BA/BSc/HND",
+        "Interested applicant(s) should possess relevant qualifications and experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-08-15",
+      "deadline": "2026-08-23",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/sonographers-maduka-university-teaching-hospital",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Radiographers",
+      "company": "Maduka University Teaching Hospital",
+      "location": "Enugu, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Allied Health",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "BA/BSc/HND",
+        "Relevant qualifications and experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-08-15",
+      "deadline": "2026-08-23",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/radiographers-maduka-university-teaching-hospital",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Dentists",
+      "company": "Maduka University Teaching Hospital",
+      "location": "Enugu, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Dentist",
+      "salary": "",
+      "experience": "",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "BA/BSc/HND",
+        "Relevant qualifications and experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-08-15",
+      "deadline": "2026-08-23",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/dentists-maduka-university-teaching-hospital",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Nursing Assistants",
+      "company": "Maduka University Teaching Hospital",
+      "location": "Enugu, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Nurse",
+      "salary": "",
+      "experience": "",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "Relevant qualifications and experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-08-15",
+      "deadline": "2026-08-23",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/nursing-assistants-maduka-university-teaching-hospital",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Midwives",
+      "company": "Maduka University Teaching Hospital",
+      "location": "Enugu, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Nurse",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "BA/BSc/HND",
+        "Relevant qualifications and experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-08-15",
+      "deadline": "2026-08-23",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/midwives-maduka-university-teaching-hospital",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Registered Nurses",
+      "company": "Maduka University Teaching Hospital",
+      "location": "Enugu, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Nurse",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "BA/BSc/HND",
+        "Relevant qualifications and experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-08-15",
+      "deadline": "2026-08-23",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/registered-nurses-maduka-university-teaching-hospital",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Senior Nurses",
+      "company": "Maduka University Teaching Hospital",
+      "location": "Enugu, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Nurse",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "BA/BSc/HND",
+        "Interested applicant(s) should possess relevant qualifications and experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-08-15",
+      "deadline": "2026-08-23",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/senior-nurses-maduka-university-teaching-hospital",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Medical Officers",
+      "company": "Maduka University Teaching Hospital",
+      "location": "Enugu, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Doctor",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "BA/BSc/HND",
+        "Relevant qualifications and experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-08-15",
+      "deadline": "2026-08-23",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/medical-officers-maduka-university-teaching-hospital",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Medical Doctors",
+      "company": "Maduka University Teaching Hospital",
+      "location": "Enugu, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Doctor",
+      "salary": "",
+      "experience": "",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "Relevant qualifications and experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-08-15",
+      "deadline": "2026-08-23",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/medical-doctors-maduka-university-teaching-hospital",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Medical Doctor",
+      "company": "Sumal Foods Limited",
+      "location": "Ibadan, Oyo, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Doctor",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "BSc",
+      "requirements": [
+        "MBBS Degree from a recognized University home or abroad plus NYSC discharged certificate or an exemption letter from such.",
+        "Registration and membership of the Nigeria Medical Association (NMA) is required."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-08-15",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/medical-doctor-sumal-foods-limited-1",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Security Personal",
+      "company": "Maduka University Teaching Hospital",
+      "location": "Enugu, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "rn",
+      "requirements": [
+        "Interested applicant(s) should possess relevant qualifications and experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-08-15",
+      "deadline": "2026-08-23",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/security-personal-maduka-university-teaching-hospital",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Ambulance Drivers",
+      "company": "Maduka University Teaching Hospital",
+      "location": "Enugu, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "Secondary School (SSCE)",
+      "requirements": [
+        "Secondary School (SSCE)",
+        "Relevant qualifications and experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-08-15",
+      "deadline": "2026-08-23",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/ambulance-drivers-maduka-university-teaching-hospital",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Cleaners",
+      "company": "Maduka University Teaching Hospital",
+      "location": "Enugu, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "Secondary School (SSCE)",
+      "requirements": [
+        "Secondary School (SSCE)",
+        "Relevant qualifications and experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-08-15",
+      "deadline": "2026-08-23",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/cleaners-maduka-university-teaching-hospital",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Plumbers",
+      "company": "Maduka University Teaching Hospital",
+      "location": "Enugu, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "rn",
+      "requirements": [
+        "Interested applicant(s) should possess relevant qualifications and experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-08-15",
+      "deadline": "2026-08-23",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/plumbers-maduka-university-teaching-hospital",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Electricians",
+      "company": "Maduka University Teaching Hospital",
+      "location": "Enugu, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "rn",
+      "requirements": [
+        "Others",
+        "Experience",
+        "Location"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-08-15",
+      "deadline": "2026-08-23",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/electricians-maduka-university-teaching-hospital",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Orderlies",
+      "company": "Maduka University Teaching Hospital",
+      "location": "Enugu, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "rn",
+      "requirements": [
+        "Others",
+        "Experience",
+        "Location",
+        "General qualifications"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-08-15",
+      "deadline": "2026-08-23",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/orderlies-maduka-university-teaching-hospital",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Porters",
+      "company": "Maduka University Teaching Hospital",
+      "location": "Enugu, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "rn",
+      "requirements": [
+        "Others",
+        "Experience",
+        "Location",
+        "Enugu",
+        "Job Field",
+        "General"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-08-15",
+      "deadline": "2026-08-23",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/porters-maduka-university-teaching-hospital",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Accounts Clerks/Cashiers",
+      "company": "Maduka University Teaching Hospital",
+      "location": "Enugu, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "BA/BSc/HND",
+        "Relevant qualifications and experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-08-15",
+      "deadline": "2026-08-23",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/accounts-clerks-cashiers-maduka-university-teaching-hospital",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "ICT Officers",
+      "company": "Maduka University Teaching Hospital",
+      "location": "Enugu, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "BA/BSc/HND",
+        "Relevant qualifications and experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-08-15",
+      "deadline": "2026-08-23",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/ict-officers-maduka-university-teaching-hospital",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Laboratory Assistants",
+      "company": "Maduka University Teaching Hospital",
+      "location": "Enugu, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Medical Laboratory Scientist",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "BA/BSc/HND",
+        "Relevant qualifications and experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-08-15",
+      "deadline": "2026-08-23",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/laboratory-assistants-maduka-university-teaching-hospital",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Laboratory Technicians",
+      "company": "Maduka University Teaching Hospital",
+      "location": "Enugu, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Medical Laboratory Scientist",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "BA/BSc/HND",
+        "Relevant qualifications and experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-08-15",
+      "deadline": "2026-08-23",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/laboratory-technicians-maduka-university-teaching-hospital",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Pharmacy Technicians",
+      "company": "Maduka University Teaching Hospital",
+      "location": "Enugu, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Pharmacist",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "BA/BSc/HND",
+        "Relevant qualifications and experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-08-15",
+      "deadline": "2026-08-23",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/pharmacy-technicians-maduka-university-teaching-hospital",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Pharmacists",
+      "company": "Maduka University Teaching Hospital",
+      "location": "Enugu, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Pharmacist",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "Relevant qualifications and experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-08-15",
+      "deadline": "2026-08-23",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/pharmacists-maduka-university-teaching-hospital",
+      "_source": "myjobmag"
+    },
     {
       "job_title": "Registered nurse/midwife",
       "company": "Utomi Hospital Limited",
@@ -1304,232 +2035,6 @@
       "_source": "myjobmag"
     },
     {
-      "job_title": "General Nursing Officer",
-      "company": "Cedarcrest Hospitals",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Nurse",
-      "salary": "",
-      "experience": "Location",
-      "qualification": "BA/BSc/HND",
-      "requirements": [
-        "BA/BSc/HND",
-        "Relevant qualifications and experience"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-08-14",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/general-nursing-officer-cedarcrest-hospitals",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Healthcare Assistant",
-      "company": "Cedarcrest Hospitals",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Allied Health",
-      "salary": "",
-      "experience": "",
-      "qualification": "BA/BSc/HND",
-      "requirements": [
-        "BA/BSc/HND",
-        "Relevant qualifications and experience"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-08-14",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/healthcare-assistant-cedarcrest-hospitals-3",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Theatre Assistant",
-      "company": "Cedarcrest Hospitals",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "",
-      "experience": "",
-      "qualification": "BA/BSc/HND",
-      "requirements": [
-        "Relevant qualifications and experience"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-08-14",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/theatre-assistant-cedarcrest-hospitals-1",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Medical Quality Lead",
-      "company": "Cedarcrest Hospitals",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Healthcare Management",
-      "salary": "",
-      "experience": "Location",
-      "qualification": "BA/BSc/HND",
-      "requirements": [
-        "Relevant qualifications and experience"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-08-14",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/medical-quality-lead-cedarcrest-hospitals",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Radiographer/Sonographer",
-      "company": "Cedarcrest Hospitals",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Allied Health",
-      "salary": "",
-      "experience": "",
-      "qualification": "BA/BSc/HND",
-      "requirements": [
-        "BA/BSc/HND",
-        "Relevant qualifications and experience"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-08-14",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/radiographer-sonographer-cedarcrest-hospitals-1",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Physiotherapist",
-      "company": "Cedarcrest Hospitals",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Allied Health",
-      "salary": "",
-      "experience": "",
-      "qualification": "BA/BSc/HND",
-      "requirements": [
-        "BA/BSc/HND",
-        "Relevant qualifications and experience"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-08-14",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/physiotherapist-cedarcrest-hospitals-15",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Medical Officer",
-      "company": "Cedarcrest Hospitals",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Doctor",
-      "salary": "",
-      "experience": "",
-      "qualification": "BA/BSc/HND",
-      "requirements": [
-        "BA/BSc/HND",
-        "Relevant qualifications and experience"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-08-14",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/medical-officer-cedarcrest-hospitals-16",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Family Physician",
-      "company": "Cedarcrest Hospitals",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Doctor",
-      "salary": "",
-      "experience": "Location",
-      "qualification": "BA/BSc/HND",
-      "requirements": [
-        "BA/BSc/HND",
-        "Relevant qualifications and experience"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-08-14",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/family-physician-cedarcrest-hospitals-8",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "School Nurse",
-      "company": "Arrupe Jesuit College",
-      "location": "Delta, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Nurse",
-      "salary": "N,",
-      "experience": "2",
-      "qualification": "BSc",
-      "requirements": [
-        "BNSC, RN, or its equivalent is required",
-        "Any higher degree or qualification, especially in the field of Nursing, is an advantage",
-        "At least 2 years experience in a similar role",
-        "Any experience relating to Nursing is an advantage",
-        "Effective communication and presentation skills",
-        "Good command of English Language",
-        "Good understanding of adolescent psychology",
-        "Good interpersonal skills",
-        "A team player, ability to work effectively with minimum supervision",
-        "Proficiency in use of Office Suites like Microsoft Word and Power Point"
-      ],
-      "responsibilities": [
-        "Attend to the health of every student",
-        "Work on shift everyday including weekends"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-14",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/school-nurse-arrupe-jesuit-college-1",
-      "_source": "myjobmag"
-    },
-    {
       "job_title": "Support Worker (Cleaner)",
       "company": "Imo Robotic Surgery and Oncology Centre Limited",
       "location": "Owerri, Imo, Nigeria",
@@ -1575,705 +2080,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.myjobmag.com/job/support-worker-laundry-assistant-imo-robotic-surgery-and-oncology-centre-limited",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Front Desk Officer",
-      "company": "Imo Robotic Surgery and Oncology Centre Limited",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "",
-      "experience": "",
-      "qualification": "BA/BSc/HND",
-      "requirements": [
-        "Relevant qualifications"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-14",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/front-desk-officer-imo-robotic-surgery-and-oncology-centre-limited",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Support Worker (Cook)",
-      "company": "Imo Robotic Surgery and Oncology Centre Limited",
-      "location": "Owerri, Imo, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "",
-      "experience": "Location",
-      "qualification": "Others",
-      "requirements": [
-        "Interested candidates should possess relevant qualifications with experience."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-14",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/support-worker-cook-imo-robotic-surgery-and-oncology-centre-limited",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Credit Control Officer",
-      "company": "Uni-Medical Healthcare Ltd Nigeria",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "n,",
-      "experience": "4 years",
-      "qualification": "BSc",
-      "requirements": [
-        "BA/BSc/HND",
-        "Professional Certificate",
-        "4 years experience in credit control/collections, preferably in medical device or diagnostics industry",
-        "B.Sc/HND in Accountancy or Finance + ICAN/ACCA certification"
-      ],
-      "responsibilities": [
-        "Manage the full credit control cycle — debt collection, credit risk assessment, receivables management, and customer relationships — to keep collections timely and accounts in control."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-08-14",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/credit-control-officer-uni-medical-healthcare-ltd-nigeria-4",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Financial Accountant",
-      "company": "Uni-Medical Healthcare Ltd Nigeria",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "",
-      "experience": "5",
-      "qualification": "BSc",
-      "requirements": [
-        "BA/BSc/HND",
-        "Professional Certificate",
-        "5 years of experience"
-      ],
-      "responsibilities": [
-        "Drive accurate financial reporting",
-        "Budgeting",
-        "Tax compliance",
-        "Regulatory adherence",
-        "Ensuring the company's overall financial health"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-08-14",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/financial-accountant-uni-medical-healthcare-ltd-nigeria-3",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Senior Sales Executive – Endoscopy",
-      "company": "Uni-Medical Healthcare Ltd Nigeria",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "",
-      "experience": "4 years",
-      "qualification": "BSc",
-      "requirements": [
-        "BA/BSc/HND",
-        "4 years experience"
-      ],
-      "responsibilities": [
-        "Drive sales growth",
-        "Build strong relationships with surgeons, physicians, and healthcare facilities",
-        "Deliver tailored endoscopy solutions and technical support to hospitals and clinics."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-08-14",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/senior-sales-executive-endoscopy-uni-medical-healthcare-ltd-nigeria",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Key Account Executive – IVD (In-Vtro Diagnostics)",
-      "company": "Uni-Medical Healthcare Ltd Nigeria",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "",
-      "experience": "3 - 5 years",
-      "qualification": "BSc",
-      "requirements": [
-        "BA/BSc/HND",
-        "3 - 5 years experience"
-      ],
-      "responsibilities": [
-        "Drive profitable revenue growth and market expansion for IVD analysers and reagents.",
-        "Own your territory's commercial performance, key accounts, and strategic pipeline."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-08-14",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/key-account-executive-ivd-in-vtro-diagnostics-uni-medical-healthcare-ltd-nigeria",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Service Engineer – IVD",
-      "company": "Uni-Medical Healthcare Ltd Nigeria",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "",
-      "experience": "",
-      "qualification": "BSc",
-      "requirements": [
-        "BA/BSc/HND",
-        "Relevant qualifications and experience"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-08-14",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/service-engineer-ivd-uni-medical-healthcare-ltd-nigeria",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Engagement Assistant",
-      "company": "eHealth4everyone",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "n,",
-      "experience": "3 years",
-      "qualification": "BSc",
-      "requirements": [
-        "Bachelor’s Degree in Marketing, Communications, Public Relations, Business Administration, or a related field is required."
-      ],
-      "responsibilities": [
-        "Assist in developing and executing engagement strategies that align with our organization’s goals.",
-        "Contribute to the creation and curation of engaging content to keep stakeholders informed and interested in our activities.",
-        "Assist in conducting market research, competitor analysis, and audience segmentation to gain insights into engagement trends and opportunities for improvement.",
-        "Work with cross-functional teams, such as business development and public health team on joint projects and products that align with engagement objectives and support overall business goals.",
-        "Help collect and analyze feedback from stakeholders through surveys, reviews, and other sources.",
-        "Assist in gathering and analyzing data related to engagement metrics, feedback, and customer satisfaction to measure the effectiveness of engagement strategies."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-08-14",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/engagement-assistant-ehealth4everyone-18",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Administrative Assistant",
-      "company": "eHealth4everyone",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "n,",
-      "experience": "3 years",
-      "qualification": "BSc",
-      "requirements": [
-        "BA/BSc/HND",
-        "Minimum of three (3) years experience in a related role",
-        "Bachelor’s Degree in Business Administration, Management or related field",
-        "Legal Background",
-        "Ability to multitask and prioritize tasks",
-        "Negotiation skills",
-        "People/project management",
-        "Attention to details"
-      ],
-      "responsibilities": [
-        "Customer service role.",
-        "Front desk management.",
-        "Carrying out other clerical duties such as preparing documents, including office correspondence, memos, resumes, and presentations.",
-        "Performing bookkeeping tasks such as invoicing.",
-        "Maintaining general office files, including vendor files, and other files related to the company’s operations.",
-        "Support staff supervision.",
-        "Purchasing office supplies, equipment, and furniture.",
-        "Overseeing the maintenance of office facilities, and equipment.",
-        "Event planning.",
-        "Has some experience in supervising a building project.",
-        "Performing other relevant duties when needed."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-08-14",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/administrative-assistant-ehealth4everyone-7",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "UI / UX Designer",
-      "company": "eHealth4everyone",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "Competitive salary and benefits package.",
-      "experience": "Minimum of three years of proven experience in UI/UX design.",
-      "qualification": "BSc",
-      "requirements": [
-        "Minimum of a Bachelor's Degree in Design, Human-Computer Interaction, Product Design, or a related field.",
-        "A minimum of three years of proven experience in UI/UX design, with a diverse portfolio.",
-        "Strong knowledge of industry tools such as Figma and Adobe XD.",
-        "Deep understanding of user-centered design principles.",
-        "Proficiency in creating UX documentation, including user stories, personas, sitemaps, wireframes, prototypes, assets, icons, mockups, and storyboards.",
-        "Ability to plan and conduct user testing, surveys, and formal evaluations."
-      ],
-      "responsibilities": [
-        "Creating intuitive and seamless user experiences for our products, ensuring they meet the needs of the end-users.",
-        "Work closely with cross-functional teams including developers, product managers, and healthcare experts to gather insights and implement design solutions that align with our users' needs.",
-        "Develop wireframes, mockups, and prototypes to effectively communicate design concepts and functionality, iterating based on user feedback and usability testing.",
-        "Conduct user interviews, surveys, and usability testing to gain valuable insights into user behaviors and preferences, driving data-informed design decisions.",
-        "Craft visually appealing and consistent user interfaces that enhance the overall user experience, adhering to design systems and brand guidelines.",
-        "Ensure designs are accessible to users of all abilities, incorporating inclusive design principles to create an accessible and inclusive healthcare experience.",
-        "Stay abreast of industry trends, emerging technologies, and best practices in UX/UI design to continuously enhance our products."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-08-14",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/ui-ux-designer-ehealth4everyone-8",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Backend (PHP) Developer",
-      "company": "eHealth4everyone",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "",
-      "experience": "3 years",
-      "qualification": "BSc",
-      "requirements": [
-        "BA/BSc/HND",
-        "3 years of experience in Backend Web Development",
-        "Good knowledge and intermediate skills in PHP (laravel) & Javascript (node, express)",
-        "Intermediate skills in databases like MySQL (MariaDB), MongoDB and PostgreSQL",
-        "Knowledge of front-end technologies including CSS3, JavaScript, and HTML5",
-        "Understanding of object-oriented PHP programming",
-        "Previous experience creating scalable applications",
-        "Proficient with code versioning tools including Git, Mercurial, CVS, and SVN",
-        "Good problem-solving skills"
-      ],
-      "responsibilities": [
-        "Analyzing website and application requirements",
-        "Writing back-end code and building efficient PHP modules",
-        "Developing back-end portals with an optimized database",
-        "Troubleshooting application and code issues",
-        "Integrating data storage solutions",
-        "Responding to integration requests from front-end developers",
-        "Finalizing back-end features and testing web applications",
-        "Updating and altering application features to enhance performance"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-08-14",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/backend-php-developer-ehealth4everyone-6",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Product Designer",
-      "company": "eHealth4everyone",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "n,",
-      "experience": "3 years",
-      "qualification": "BSc",
-      "requirements": [
-        "Bachelor's Degree in Design, Human-Computer Interaction, Product Design, or a related field (A postgraduate qualification is an added advantage)",
-        "A minimum of three (3) years of experience in Product Design",
-        "Proven success defining, launching, and maintaining excellent products",
-        "In-depth knowledge of market trends, competition, and user needs through continuous research and analysis",
-        "Proficiency in design tools such as Sketch, Figma, Adobe Creative Suite, and prototyping tools to create mockups and interactive prototypes"
-      ],
-      "responsibilities": [
-        "Define, prepare, maintain, and promote the product roadmap which defines product enhancements for short and long-term releases based on business opportunities and by conducting primary and secondary market research.",
-        "Client and User Engagement regularly via multiple channels, gathering feedback.",
-        "Specify and prioritize market and product requirements, feature sets, and key positioning and messaging elements in collaboration with cross-functional teams.",
-        "Collaborating with designers and engineers to solve problems.",
-        "Analyze external and internal data to identify gaps and opportunities.",
-        "Define KPIs and set targets that move the team toward success.",
-        "Develop internal and external product training plans.",
-        "Design incredibly simple/neat design flows & lead the design process, from mockups, user flows, and prototypes to final designs for products.",
-        "Conduct customer interviews and usability testing, running design sprints, and participating in feature prioritization to gather insights and validate design decisions.",
-        "Conduct thorough customer experience analysis, identifying pain points and opportunities for improvement to enhance overall product satisfaction."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-08-14",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/product-designer-ehealth4everyone-4",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Devops Engineer / Linux Administrator",
-      "company": "eHealth4everyone",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "n,",
-      "experience": "3 years",
-      "qualification": "BSc",
-      "requirements": [
-        "Degree in Computer Science / Computer Engineering or other related areas.",
-        "Demonstrable experience in Linux Administration.",
-        "Knowledge of scripting and automation (Python, Bash etc).",
-        "Demonstrable experience with CI/CD tools for pipeline creation and management e.g. GitLab, Jenkins, CircleCI, etc.",
-        "Skills in Relational Database Administration, Systems Security and Design.",
-        "Technical experience working with cloud technologies.",
-        "Working understanding of Load balancing technologies.",
-        "Working understanding of IT service management.",
-        "Experience with Chef, Docker, Puppet or Ansible.",
-        "Solid background in the deployment of web applications based on Python, Vue.js and Node.js.",
-        "Good understanding of distributed systems and container technologies like Docker/Kubernetes.",
-        "Experience with DNS, Networking, and High Availability solutions.",
-        "Experience with webservers in a linux environment, i.e. Nginx, Apache2."
-      ],
-      "responsibilities": [
-        "Deploy product updates and fixes.",
-        "Identify production issues and implement integrations that meet customer needs.",
-        "Execute and automate operational processes fast, accurately and securely.",
-        "Build tools to reduce the occurrence of errors and improve customer experience.",
-        "Develop software to integrate with internal back-end systems.",
-        "Perform root cause analysis for production errors.",
-        "Investigate and resolve technical issues.",
-        "Deployment and maintenance of open source software.",
-        "Design procedures for system troubleshooting and maintenance.",
-        "Continuously analyse system performance in production, troubleshoot reported issues, and proactively identify areas in need of optimization.",
-        "Developing and driving real-time monitoring solutions."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-08-14",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/devops-engineer-linux-administrator-ehealth4everyone-12",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "AI Engineer",
-      "company": "eHealth4everyone",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "n,",
-      "experience": "3 years",
-      "qualification": "BSc",
-      "requirements": [
-        "Degree or Coursework in Engineering, Computer Science, in a related discipline, or equivalent experience",
-        "Three(3) years of Experience using machine learning frameworks (Pytorch, Tensorflow, etc.)",
-        "Experience with Python and multiple libraries (NumPy, OpenCV, Scikit, Pandas, etc.)",
-        "Experience with C++, Java, GO, and other compiled languages.",
-        "Familiarity with DevOps tools: Docker, Git [GitLab, GitHub], Continuous Integration [CI], Continuous Deployment [CD].",
-        "Familiarity with modern Computer Vision",
-        "Familiarity with high-performance computing.",
-        "Familiarity with network/messaging (UDP, ZeroMQ, RESTful API, etc.).",
-        "Familiarity interfacing with databases (SQL, MongoDB, etc.)"
-      ],
-      "responsibilities": [
-        "Assisting with the development of technologies and products that leverage Artificial Intelligence to provide the discriminating capability to our customers.",
-        "Utilizing current AI paradigms including computer vision, deep learning, and reinforcement learning, applying these techniques to help solve complex problems and field innovative solutions.",
-        "Conducting statistical analysis and interpreting the results so that they can guide the organization’s decision-making process.",
-        "Automating important infrastructure for the data science team.",
-        "Developing infrastructures for data transformation and ingestion.",
-        "Explaining the usefulness of the AI models they create to a wide range of individuals within the organization, including stakeholders and product managers."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-08-14",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/al-engineer-ehealth4everyone-10",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Marketing / Business Development Executive",
-      "company": "Skipper Eye-Q Hospital",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "n,",
-      "experience": "3 - 5 years",
-      "qualification": "BA/BSc/HND",
-      "requirements": [
-        "Bachelor’s degree in Marketing, Business Administration, Healthcare Management, or a related field.",
-        "3–5 years of proven experience in healthcare marketing, hospital sales, business development, or a similar role.",
-        "Strong understanding of hospital processes, healthcare sales, and systems.",
-        "Experience with tenders and contract negotiations is an added advantage.",
-        "Proven track record of winning contracts and driving revenue growth.",
-        "Excellent communication and presentation skills.",
-        "Strong negotiation and stakeholder management abilities.",
-        "Result-oriented with strong business acumen.",
-        "Ability to work independently and meet sales targets.",
-        "Proficiency in Microsoft Office and CRM tools is an advantage."
-      ],
-      "responsibilities": [
-        "Develop and execute marketing plans and campaigns to enhance the hospital’s brand visibility and increase awareness of eye care services.",
-        "Identify and pursue new business opportunities to drive revenue growth.",
-        "Build and maintain strong relationships with corporate clients, HMOs, referral partners, and key stakeholders.",
-        "Generate leads, manage the sales pipeline, and convert prospects into long-term clients.",
-        "Prepare and submit proposals, tenders, and quotations for business opportunities.",
-        "Negotiate contracts and service agreements to secure profitable partnerships.",
-        "Conduct market research to identify trends, competitor activities, and customer needs.",
-        "Collaborate with internal teams to ensure smooth onboarding and service delivery for new clients.",
-        "Monitor performance metrics and prepare periodic business development reports."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-14",
-      "deadline": "",
-      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/marketing-business-development-executive-skipper-eye-q-hospital-1",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Promotional Marketing Officer",
-      "company": "Skipper Eye-Q Hospital",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "n,",
-      "experience": "1 - 4 years",
-      "qualification": "BA/BSc/HND",
-      "requirements": [
-        "B.Sc., HND, or equivalent in Marketing, Business Administration, Mass Communications, or a related field.",
-        "1–4 years of proven marketing experience, ideally within the healthcare, pharmaceutical, or hospitality sectors.",
-        "Exceptional interpersonal, networking, and direct field-marketing negotiation skills.",
-        "High proficiency in MS Office (specifically Excel) and familiarity with digital promotion channels.",
-        "Willingness to travel locally & interstate for mobile clinic activities and manage occasional weekend outreach events."
-      ],
-      "responsibilities": [
-        "Organize and coordinate community eye screening camps, corporate health talks, and neighborhood outreach programs to drive facility footfall.",
-        "Identify, secure, and maintain strategic relationships with corporate entities and schools for Eye screening camps & referral networks.",
-        "Plan and execute targeted promotional campaigns for specialized eye care packages, seasonal discounts, and specialized clinic services.",
-        "Create, manage, and distribute field marketing materials, including flyers, brochures, and banners.",
-        "Support localized digital marketing initiatives and manage local community visibility.",
-        "Track and submit daily or weekly performance reports on referral leads, event outcomes, and campaign ROI using MS Excel or CRM software."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-14",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/promotional-marketing-officer-skipper-eye-q-hospital-2",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Contact / Call Center Executive",
-      "company": "Skipper Eye-Q Hospital",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "",
-      "experience": "3",
-      "qualification": "BA/BSc/HND",
-      "requirements": [
-        "1 - 3 years of experience in a call center, customer service, or healthcare environment",
-        "Previous hospital experience is an added advantage"
-      ],
-      "responsibilities": [
-        "Answer incoming calls professionally and courteously.",
-        "Make outbound calls for appointment confirmations, follow-ups, reminders, and patient feedback.",
-        "Schedule, reschedule, and cancel patient appointments.",
-        "Provide accurate information about hospital services, doctors, procedures, locations, and operating hours.",
-        "Handle patient complaints and escalate unresolved issues to the appropriate department.",
-        "Register patient information accurately in the hospital management system.",
-        "Follow up on missed appointments and encourage rescheduling.",
-        "Maintain confidentiality of patient information in accordance with hospital policies.",
-        "Coordinate with clinical and administrative departments to ensure smooth patient service.",
-        "Meet daily call handling and service quality targets.",
-        "Document all customer interactions and maintain accurate records.",
-        "Support marketing campaigns by contacting existing and prospective patients when required."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-14",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/contact-call-center-executive-skipper-eye-q-hospital",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Sales Manager – Ancillary Business (Procedures, Opticals & Pharmacy)",
-      "company": "Skipper Eye-Q Hospital",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Pharmacist",
-      "salary": "n,",
-      "experience": "5 - 8 years",
-      "qualification": "BA/BSc/HND, MBA/MSc/MA",
-      "requirements": [
-        "BA/BSc/HND",
-        "MBA/MSc/MA",
-        "5 - 8 years experience"
-      ],
-      "responsibilities": [
-        "Develop and implement strategies to increase revenue from surgical procedures and optical sales.",
-        "Achieve monthly, quarterly, and annual revenue targets.",
-        "Monitor the conversion of diagnosed patients into surgical/procedure bookings.",
-        "Increase spectacle and contact lens sales.",
-        "Ensure proper merchandising of frames and lenses.",
-        "Increase prescription fulfilment within the hospital pharmacy.",
-        "Build relationships with HMOs and corporate organizations.",
-        "Lead and supervise sales teams.",
-        "Ensure excellent customer service throughout the patient journey."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-08-14",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/sales-manager-ancillary-business-procedures-opticals-pharmacy-skipper-eye-q-hospital-1",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Floor Coordinator / Floor Manager",
-      "company": "Skipper Eye-Q Hospital",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Healthcare Management",
-      "salary": "n,",
-      "experience": "3 years",
-      "qualification": "BA/BSc/HND",
-      "requirements": [
-        "BA/BSc/HND",
-        "3 years of experience"
-      ],
-      "responsibilities": [
-        "Oversee daily operations of the assigned hospital floor.",
-        "Monitor patient movement from registration through consultation, investigations, procedures, optical, pharmacy, billing, and discharge.",
-        "Ensure minimal patient waiting time and smooth workflow.",
-        "Conduct regular floor inspections to maintain cleanliness and organization.",
-        "Ensure compliance with hospital operational policies and SOPs.",
-        "Deliver exceptional customer service throughout the patient's visit.",
-        "Welcome and guide patients and their attendants.",
-        "Resolve patient complaints promptly and professionally.",
-        "Escalate unresolved issues to management.",
-        "Ensure patients receive timely updates regarding appointments and procedures.",
-        "Monitor patient satisfaction and implement service improvement initiatives.",
-        "Supervise Patient Relationship Executives, Receptionists, Housekeeping staff, Porters, and other support personnel.",
-        "Allocate daily duties and monitor staff performance.",
-        "Conduct daily briefings before clinic operations.",
-        "Ensure staff maintain professionalism, punctuality, and proper grooming.",
-        "Support onboarding and training of new floor staff.",
-        "Coordinate effectively with various departments.",
-        "Monitor daily patient appointments.",
-        "Track consultation turnaround times.",
-        "Ensure consultation rooms are adequately prepared.",
-        "Monitor the availability of consumables and equipment.",
-        "Coordinate room readiness and patient scheduling.",
-        "Prepare daily operational reports.",
-        "Maintain patient escalation logs.",
-        "Record incident reports.",
-        "Monitor patient feedback and complaint registers.",
-        "Submit weekly and monthly operational reports to management.",
-        "Ensure compliance with hospital policies and accreditation standards."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-08-14",
-      "deadline": "",
-      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/floor-coordinator-floor-manager-skipper-eye-q-hospital-2",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Account Executive",
-      "company": "Skipper Eye-Q Hospital",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "",
-      "experience": "3",
-      "qualification": "BA/BSc/HND",
-      "requirements": [
-        "BSc / HND in Accounting",
-        "1–3 years of experience as an Account Officer, preferably in a healthcare or hospital setting",
-        "Strong analytical skills",
-        "Proficiency in MS Excel (VLOOKUP, Pivot Tables) and accounting software",
-        "Excellent communication skills",
-        "Meticulous approach to recording data",
-        "Ability to work with little supervision"
-      ],
-      "responsibilities": [
-        "Maintain and update records of referral doctors, clinics, and HMOs",
-        "Calculate, verify, and process payments to referring practitioners and institutions",
-        "Manage invoices for referred patients and follow up on outstanding payments",
-        "Maintain accurate and up-to-date databases of all referral sources",
-        "Reconcile referral account transactions with the general ledger",
-        "Act as the primary contact for inquiries from referral partners",
-        "Collaborate with the marketing department to track promotional events"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-14",
-      "deadline": "",
-      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/account-executive-skipper-eye-q-hospital-1",
       "_source": "myjobmag"
     },
     {
@@ -2822,6 +2628,38 @@
       "_source": "jobsinnigeria"
     },
     {
+      "job_title": "Consultant",
+      "company": "PATH Nigeria",
+      "location": "Lagos, Kano, Enugu",
+      "job_type": "contract",
+      "job_category": "Public Health",
+      "salary": "n,",
+      "experience": "5",
+      "qualification": "bsc",
+      "requirements": [
+        "Conduct a rapid landscaping assessment of infectious disease surveillance systems.",
+        "Identify key stakeholders and map existing surveillance platforms and data flows."
+      ],
+      "responsibilities": [
+        "Support the scale-up of event-based and community-based surveillance in assigned states.",
+        "Assist in adapting and rolling out training materials for EBS, CBS, IDSR, and zoonotic disease preparedness.",
+        "Contribute to the review and updating of standard operating procedures (SOPs), job aids, guidelines, and communication tools.",
+        "Support mentorship and peer-learning initiatives.",
+        "Assist in monitoring and assessing IDSR implementation and digital health information systems.",
+        "Coordinate with state-level counterparts, partners, and stakeholders."
+      ],
+      "how_to_apply": [
+        "Submit your application through the employer’s online recruitment portal.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-08-13",
+      "deadline": "2026-08-27",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Consultant-at-PATH-Nigeria?pid=78361",
+      "_source": "medicalworldnigeria"
+    },
+    {
       "job_title": "Medical Sales Executive",
       "company": "Grunlab Limited",
       "location": "Anambra / Enugu, Nigeria",
@@ -2916,31 +2754,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/940528/medical-laboratory-scientist-at-excare-health-serv.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Medical Doctor",
-      "company": "Sumal Foods Limited",
-      "location": "Ring Road, Ibadan, Oyo, Nigeria",
-      "job_type": "",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "",
-      "qualification": "MBBS",
-      "requirements": [
-        "MBBS Degree from a recognized University home or abroad plus NYSC discharged certificate or an exemption letter from such.",
-        "Registration and membership of the Nigeria Medical Association (NMA) is required."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-13",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/940671/medical-doctor-at-sumal-foods-limited.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -8255,40 +8068,6 @@
       "_source": "hotnigerianjobs"
     },
     {
-      "job_title": "Health Assistant",
-      "company": "Homa Clinic & Maternity Home",
-      "location": "Ota, Ogun, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Allied Health",
-      "salary": "N53,000 - N58,000",
-      "experience": "1 - 2 years",
-      "qualification": "BA/BSc/HND, OND, Professional Certificate",
-      "requirements": [
-        "Certificate or National Diploma (ND) in Community Health / Health Technology (e.g., CHEW / JCHEW or Health Assistant Certificate)",
-        "Basic First Aid and CPR/BLS (Basic Life Support) certification is a strong advantage",
-        "Minimum of 1 year hands-on clinical experience in a hospital or clinic",
-        "Proven hands-on experience in taking vital signs, patient hygiene, and supporting medical staff during minor procedures"
-      ],
-      "responsibilities": [
-        "Provide direct basic clinical care, monitor vital signs (blood pressure, temperature, pulse), and administer prescribed medications and treatments under the supervision of qualified practitioners.",
-        "Assist doctors and nurses during clinical procedures, examinations, and minor surgeries.",
-        "Assist in delivering compassionate maternal and child care services (prenatal, intrapartum, and postnatal monitoring).",
-        "Maintain accurate, up-to-date patient records and clinical documentation.",
-        "Ensure strict adherence to infection control protocols, hygiene, bed-making, and general patient safety standards.",
-        "Respond promptly to clinical emergencies and provide basic triage support."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-10",
-      "deadline": "2026-08-22",
-      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/health-assistant-homa-clinic-maternity-home",
-      "_source": "myjobmag"
-    },
-    {
       "job_title": "Sonographer (Festac)",
       "company": "Echolab Laboratory & Radiology Services",
       "location": "Festac, Lagos, Nigeria",
@@ -11384,74 +11163,42 @@
       "_source": "myjobmag"
     },
     {
-      "job_title": "Senior Program Officer - Child Survival",
-      "company": "Nutrition International (NI)",
-      "location": "Ajegunle, Lagos, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Public Health",
-      "salary": "",
-      "experience": "At least 10 years",
-      "qualification": "Postgraduate level Degree, Master's (at a minimum) in nutrition or public health",
+      "job_title": "Aesthetics Nurse",
+      "company": "Reverse Aesthetics Limited",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Nurse",
+      "salary": "N150,000 gross monthly salary",
+      "experience": "1 - 3 years",
+      "qualification": "BA/BSc/HND, Professional Certificate",
       "requirements": [
-        "Postgraduate certificate in project management is an added advantage.",
-        "Training in epidemiology, data analysis and research methodologies is desirable."
+        "Registered Nurse qualification (RN or B.NSc)",
+        "Valid practicing license",
+        "Minimum of 1 year experience in aesthetics, dermatology, wellness, or cosmetic clinic setting",
+        "Knowledge of aesthetic procedures and skincare treatments is an added advantage",
+        "Strong communication and interpersonal skills",
+        "Professional appearance and positive attitude",
+        "Ability to work in a fast-paced environment."
       ],
       "responsibilities": [
-        "Ensure a regularly updated landscape analysis is available on Vitamin A supplementation programs in Northern Nigeria states.",
-        "Develop and plan projects in collaboration with key stakeholders and partners.",
-        "Manage a team of LGA level Coordinators and oversee their workplans.",
-        "Prepare and share high quality periodic and annual project updates and reports."
+        "Assist doctors during aesthetic procedures and treatments",
+        "Carry out approved aesthetic treatments and wellness procedures",
+        "Prepare treatment rooms and maintain cleanliness and hygiene standards",
+        "Educate clients on treatment processes and aftercare",
+        "Monitor patient comfort and progress during treatments",
+        "Maintain accurate patient records and documentation",
+        "Ensure excellent customer service and client experience."
       ],
       "how_to_apply": [
-        "Apply via the Apply Now button for full details."
+        "Email the address shown on the original listing.",
+        "Click Apply Now for full details."
       ],
-      "date_posted": "2026-08-04",
-      "deadline": "2026-08-24",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/senior-program-officer-child-survival-1526",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Sonologist",
-      "company": "Clinix Healthcare Nigeria",
-      "location": "Ajegunle, Lagos, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Allied Health",
-      "salary": "",
-      "experience": "",
-      "qualification": "Degree or Diploma in Radiography, Medical Imaging, Ultrasonography, or a related field from a recognized institution.",
-      "requirements": [
-        "Valid practicing license/registration with the relevant professional regulatory body in Nigeria (e.g., RRBN).",
-        "Previous experience as a Sonologist/Sonographer in a diagnostic center or hospital is preferred.",
-        "NYSC certificate (completed) is an added advantage.",
-        "Strong technical knowledge of ultrasound techniques and modern sonography equipment.",
-        "High level of accuracy, attention to detail, and good hand-eye coordination.",
-        "Excellent communication and interpersonal skills with a patient-centered approach.",
-        "Ability to work independently and as part of a multidisciplinary team.",
-        "Good organizational skills and ability to manage patient workflow efficiently.",
-        "Commitment to ethical practice, confidentiality, and continuous professional development."
-      ],
-      "responsibilities": [
-        "Perform a wide range of ultrasound examinations (abdominal, obstetric, pelvic, soft tissue, and other relevant scans).",
-        "Ensure proper patient preparation, positioning, and clear communication throughout the procedure.",
-        "Operate and maintain ultrasound equipment according to standard operating procedures.",
-        "Capture high-quality images and provide preliminary findings to the reporting clinician.",
-        "Maintain accurate patient records, documentation, and image archiving.",
-        "Adhere strictly to radiation safety (where applicable), infection control, and patient confidentiality protocols.",
-        "Collaborate with clinicians and other healthcare professionals to support accurate diagnosis.",
-        "Ensure equipment cleanliness, basic troubleshooting, and timely reporting of technical issues.",
-        "Contribute to quality assurance and continuous improvement of imaging services."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-08-04",
+      "date_posted": "2026-08-05",
       "deadline": "",
-      "contact_email": "",
+      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
       "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/sonologist-1525",
-      "_source": "medlocum"
+      "apply_url": "https://www.myjobmag.com/job/aesthetics-nurse-reverse-aesthetics-limited-1",
+      "_source": "myjobmag"
     },
     {
       "job_title": "Clinical Pharmacist",
@@ -11897,6 +11644,43 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/934727/research-formulation-scientist-at-natural-girl-wig.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
+      "job_title": "Sonologist",
+      "company": "Clinix Healthcare Nigeria",
+      "location": "Ajegunle, Lagos, Nigeria",
+      "job_type": "Full-time",
+      "job_category": "Allied Health",
+      "salary": "n,",
+      "experience": "",
+      "qualification": "Degree",
+      "requirements": [
+        "Degree or Diploma in Radiography, Medical Imaging, Ultrasonography, or a related field from a recognized institution.",
+        "Valid practicing license/registration with the relevant professional regulatory body in Nigeria (e.g., RRBN).",
+        "Previous experience as a Sonologist/Sonographer in a diagnostic center or hospital is preferred.",
+        "NYSC certificate (completed) is an added advantage."
+      ],
+      "responsibilities": [
+        "Perform a wide range of ultrasound examinations (abdominal, obstetric, pelvic, soft tissue, and other relevant scans).",
+        "Ensure proper patient preparation, positioning, and clear communication throughout the procedure.",
+        "Operate and maintain ultrasound equipment according to standard operating procedures.",
+        "Capture high-quality images and provide preliminary findings to the reporting clinician.",
+        "Maintain accurate patient records, documentation, and image archiving.",
+        "Adhere strictly to radiation safety (where applicable), infection control, and patient confidentiality protocols.",
+        "Collaborate with clinicians and other healthcare professionals to support accurate diagnosis.",
+        "Ensure equipment cleanliness, basic troubleshooting, and timely reporting of technical issues.",
+        "Contribute to quality assurance and continuous improvement of imaging services."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites).",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-08-04",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/934314/sonologist-at-clinix-healthcare-nigeria.html",
       "_source": "hotnigerianjobs"
     },
     {
