@@ -1,15 +1,108 @@
 {
   "metadata": {
-    "extracted_at": "2026-08-16T03:51:45.462909",
+    "extracted_at": "2026-08-17T03:52:57.717454",
     "model": "gpt-4o-mini",
-    "total_processed": 643,
-    "duplicates_removed": 127,
+    "total_processed": 642,
+    "duplicates_removed": 124,
     "skipped_old": 0,
     "skipped_empty": 0,
     "errors": 0,
-    "openai_calls": 159
+    "openai_calls": 130
   },
   "jobs": [
+    {
+      "job_title": "Medical Doctor",
+      "company": "ToFaans Hospital",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Doctor",
+      "salary": "NGN500,000 / monthly",
+      "experience": "",
+      "qualification": "MBBS degree and current MDCN license, NYSC completed or exemption certificate",
+      "requirements": [
+        "MBBS degree and current MDCN license",
+        "NYSC completed or exemption certificate",
+        "Ability to work independently and as part of a team",
+        "Good communication and clinical skills"
+      ],
+      "responsibilities": [
+        "Providing quality patient care",
+        "Emergency cover",
+        "Clinical duties as assigned"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-08-17",
+      "deadline": "2026-09-02",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/medical-doctor-1612",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Medical Laboratory Technician",
+      "company": "AZZON MEDICAL DIAGNOSTICS",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Medical Laboratory Scientist",
+      "salary": "",
+      "experience": "",
+      "qualification": "",
+      "requirements": [],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-08-17",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/medical-laboratory-technician-1611",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Medical Laboratory Scientist",
+      "company": "AZZON MEDICAL DIAGNOSTICS",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Medical Laboratory Scientist",
+      "salary": "",
+      "experience": "",
+      "qualification": "",
+      "requirements": [],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-08-17",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/medical-laboratory-scientist-1610",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Medical Sonographer / Radiographer",
+      "company": "AZZON MEDICAL DIAGNOSTICS",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Allied Health",
+      "salary": "",
+      "experience": "",
+      "qualification": "Pgd in Sonography Module",
+      "requirements": [],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-08-17",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/medical-sonographer-radiographer-1609",
+      "_source": "medlocum"
+    },
     {
       "job_title": "Home care nurse",
       "company": "TSA",
@@ -10576,150 +10669,6 @@
       "_source": "medlocum"
     },
     {
-      "job_title": "Pharmacy Technician",
-      "company": "Greenlife Hospital",
-      "location": "Amuwo Odofin, Lagos, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Pharmacist",
-      "salary": "NGN350,000 / monthly",
-      "experience": "",
-      "qualification": "",
-      "requirements": [],
-      "responsibilities": [
-        "Taking proper stock and audit of drugs in the pharmacy.",
-        "Dispensing of drugs for inpatients and out patients.",
-        "Filling and labelling of medical containers.",
-        "Proper dispensing of all medications.",
-        "Checking of all prescriptions for errors, ensuring they are appropriate and safe for the individual patient.",
-        "Provide advice on the dosage of medicines and the most appropriate form of medication, which could be by tablet, injection, ointment or inhaler.",
-        "Maintaining of sufficient stock of all needed medications.",
-        "Detailing of medicines to doctors, nurses, interns etc.",
-        "Being in charge of requisition of all medicines.",
-        "Checking the quality and the sources of drugs before dispensing.",
-        "To keep up to date with technical developments, especially those which can save time and improve reliability.",
-        "To ensure and adhere to standard pharmacy safety measures and checks.",
-        "Involved with scientific meetings in the department."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-08-05",
-      "deadline": "2026-08-30",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/pharmacy-technician-1530",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Medical Laboratory Scientist",
-      "company": "Greenlife Hospital",
-      "location": "Okota - Lagos, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Medical Laboratory Scientist",
-      "salary": "",
-      "experience": "",
-      "qualification": "",
-      "requirements": [],
-      "responsibilities": [
-        "To perform laboratory tests in order to produce reliable and precise data to support scientific investigations",
-        "To prepare specimens, samples and reagents",
-        "To operate and ensure regular maintenance of laboratory equipment",
-        "To participate in equipment validations, calibrations, quality controls and assessment",
-        "To ensure the laboratory is well-stocked and resourced",
-        "To promptly and accurately record laboratory results and present to pathologist for approval",
-        "To ensure safety of all data records generated in the laboratory",
-        "To keep up to date with technical developments, especially those which can save time and improve reliability",
-        "To ensure and adhere to standard laboratory safety measures and checks",
-        "Involved with scientific meetings in the department."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-08-05",
-      "deadline": "2026-08-30",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/medical-laboratory-scientist-1529",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Longevity Diagnostics Specialist / Health Optimisation Physician Specialist",
-      "company": "a Premium Lifestyle Brand - Protégé Management",
-      "location": "Abuja (FCT), Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Doctor",
-      "salary": "",
-      "experience": "4–8 years of post-qualification clinical experience",
-      "qualification": "Mandatory MBBS with valid MDCN registration and licence to practise in Nigeria",
-      "requirements": [
-        "Ability to conduct, interpret, and clearly communicate results from body composition analysis (InBody), VO2 max / metabolic testing, blood pressure, oximetry, spirometry, and related assessments.",
-        "Confident presenting complex health data to non-medical, high-achieving clients in plain, motivating language.",
-        "Excellent written and spoken English; polished professional presence.",
-        "Comfortable engaging executives, diplomats, and high-net-worth individuals.",
-        "Proficient with clinical software, reporting tools, and data handling."
-      ],
-      "responsibilities": [
-        "Lead all diagnostics services: baseline assessments, periodic re-testing, and results consultations.",
-        "Design and oversee personalised health optimisation protocols in collaboration with trainers, physiotherapists, and the wellness coach.",
-        "Deliver diagnostics as a premium standalone service for members and non-member clients.",
-        "Maintain rigorous clinical standards, record-keeping, consent, and confidentiality.",
-        "Ensure diagnostic equipment is calibrated, maintained, and operated safely.",
-        "Contribute to protocol packages and service development for the Longevity Suite.",
-        "Refer members to external specialists where clinically indicated."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-08-05",
-      "deadline": "2026-08-10",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/longevity-diagnostics-specialist-health-optimisation-physicians-specialist-1528",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Physiotherapist",
-      "company": "a Premium Lifestyle Company - Protege Management",
-      "location": "Abuja (FCT), Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Allied Health",
-      "salary": "",
-      "experience": "4–7 years",
-      "qualification": "Degree in physiotherapy with valid MRTB registration and licence to practise in Nigeria",
-      "requirements": [
-        "Degree in physiotherapy with valid MRTB registration and licence to practise in Nigeria",
-        "4–7 years of clinical experience, predominantly musculoskeletal",
-        "Strong manual therapy skills and proficiency with electrotherapy modalities",
-        "Ability to assess, diagnose, and manage a full caseload independently",
-        "Confident designing progressive rehabilitation programmes through to full performance",
-        "Excellent written and spoken English; polished professional presence with senior clientele",
-        "Meticulous clinical documentation; proficient with clinical software",
-        "Candidate must be based in Abuja",
-        "Preferred Background: Sports physiotherapy (teams, athletes, or performance centres), Premium private practice or hospital MSK departments, Post-surgical rehabilitation, Dry needling, shockwave therapy, or advanced manual therapy certifications",
-        "Clinically excellent and outcomes-driven",
-        "Reassuring, clear communicator",
-        "Discreet and professional with high-profile clients",
-        "Organised and self-managing"
-      ],
-      "responsibilities": [
-        "Deliver assessment, treatment, and rehabilitation services to members and private clients",
-        "Run the physiotherapy suite: scheduling, clinical records, equipment care, consumables, and safety",
-        "Design return-to-training pathways in collaboration with personal trainers",
-        "Coordinate with the physician and wellness coach on integrated member care",
-        "Provide injury-prevention screening and advice as part of member programming",
-        "Maintain the suite to premium clinical and presentation standards"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-08-05",
-      "deadline": "2026-08-10",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/physiotherapist-1527",
-      "_source": "medlocum"
-    },
-    {
       "job_title": "Nurse (Remote)",
       "company": "Pharmachain Technologies",
       "location": "Lagos, Abuja, Rivers",
@@ -11684,6 +11633,41 @@
       "_source": "hotnigerianjobs"
     },
     {
+      "job_title": "Sonologist / Sonographer (Festac)",
+      "company": "Clinix Healthcare Nigeria",
+      "location": "Festac, Lagos",
+      "job_type": "Part-time (Sundays only)",
+      "job_category": "Allied Health",
+      "salary": "n,",
+      "experience": "",
+      "qualification": "Degree",
+      "requirements": [
+        "Degree or Diploma in Radiography, Medical Imaging, Ultrasonography, or a related field from a recognized institution.",
+        "Valid practicing license/registration with the relevant professional regulatory body in Nigeria (e.g., RRBN).",
+        "Previous experience as a Sonologist/Sonographer in a diagnostic center or hospital is preferred."
+      ],
+      "responsibilities": [
+        "Perform a range of ultrasound examinations (abdominal, obstetric, pelvic, soft tissue, and other relevant scans).",
+        "Ensure proper patient preparation, positioning, and clear communication during procedures.",
+        "Operate and maintain ultrasound equipment according to standard operating procedures.",
+        "Capture high-quality images and provide preliminary findings as required.",
+        "Maintain accurate patient records and documentation.",
+        "Adhere strictly to infection control, patient safety, and confidentiality protocols.",
+        "Collaborate with clinical staff to support timely and accurate diagnosis.",
+        "Ensure equipment cleanliness and report any technical issues promptly."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites).",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-08-04",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/934308/sonologist-sonographer-festac-at-clinix-healthcare.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
       "job_title": "ABA Therapist",
       "company": "TransitEdge Solutions Limited",
       "location": "Lagos, Nigeria",
@@ -12118,6 +12102,39 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/933529/nurse-nutrition-at-international-medical-corps-imc.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
+      "job_title": "Medical Laboratory Scientist",
+      "company": "Greenlife Hospital",
+      "location": "Okota - Lagos, Nigeria",
+      "job_type": "Full-time",
+      "job_category": "Medical Laboratory Scientist",
+      "salary": "",
+      "experience": "",
+      "qualification": "",
+      "requirements": [],
+      "responsibilities": [
+        "To perform laboratory tests in order to produce reliable and precise data to support scientific investigations",
+        "To prepare specimens, samples and reagents",
+        "To operate and ensure regular maintenance of laboratory equipment",
+        "To participate in equipment validations, calibrations, quality controls and assessment",
+        "To ensure the laboratory is well-stocked and resourced",
+        "To promptly and accurately record laboratory results and present to pathologist for approval.",
+        "To ensure safety of all data records generated in the laboratory",
+        "To keep up to date with technical developments, especially those which can save time and improve reliability",
+        "To ensure and adhere to standard laboratory safety measures and checks.",
+        "Involved with scientific meetings in the department."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-08-03",
+      "deadline": "2026-08-30",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/934129/medical-laboratory-scientist-at-greenlife-hospital.html",
       "_source": "hotnigerianjobs"
     },
     {
