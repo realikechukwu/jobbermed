@@ -39,11 +39,11 @@ SCRAPER_CONFIG = {
         "enabled": True,
         "rate_limit": 2.0,
         "field_pages": {
-            247: 2,  # Doctors
-            248: 2,  # Nurses and midwives
-            246: 1,  # Pharmacy
-            249: 1,  # Med lab / radiography / sonography
-            250: 1,  # Optometry / dentistry / allied health
+            247: 4,  # Doctors
+            248: 4,  # Nurses and midwives
+            246: 4,  # Pharmacy
+            249: 3,  # Med lab / radiography / sonography
+            250: 6,  # Optometry / dentistry / allied health
         },
     },
     "myjobmag": {
@@ -57,7 +57,7 @@ SCRAPER_CONFIG = {
 EXTRACTION_CONFIG = {
     "model": "gpt-4o-mini",
     "max_age_days": 60,
-    "max_jobs": 800,  # Limit OpenAI API calls
+    "max_jobs": 1300,  # Limit OpenAI API calls
 }
 
 # Output files
