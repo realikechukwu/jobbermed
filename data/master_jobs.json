@@ -1,15 +1,203 @@
 {
   "metadata": {
-    "extracted_at": "2026-09-19T08:37:19.024376",
+    "extracted_at": "2026-09-20T08:55:35.158057",
     "model": "gpt-4o-mini",
-    "total_processed": 1171,
-    "duplicates_removed": 205,
-    "skipped_old": 16,
+    "total_processed": 1165,
+    "duplicates_removed": 202,
+    "skipped_old": 21,
     "skipped_empty": 0,
     "errors": 0,
-    "openai_calls": 255
+    "openai_calls": 225
   },
   "jobs": [
+    {
+      "job_title": "Hospital cleaners",
+      "company": "Medical Locum Jobs",
+      "location": "Lagos, Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Other",
+      "salary": "NGN70,000 - NGN80,000 / monthly",
+      "experience": "",
+      "qualification": "SSCE / First School Leaving Certificate",
+      "requirements": [
+        "Good personal hygiene & physical fitness",
+        "Honest, reliable & hardworking",
+        "Ability to follow instructions & work with minimal supervision",
+        "Previous hospital/healthcare cleaning experience is an advantage"
+      ],
+      "responsibilities": [
+        "Clean & disinfect wards, offices, restrooms, waiting areas & hospital premises",
+        "Proper disposal of general & medical waste following infection control guidelines",
+        "Sanitise high-touch surfaces, floors, furniture & equipment",
+        "Restock cleaning supplies & report maintenance needs",
+        "Follow all health, safety & hygiene protocols to prevent infection spread"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-09-20",
+      "deadline": "2026-09-28",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/hospital-cleaners-2-1875",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Medical Laboratory Technician",
+      "company": "Medical Locum Jobs",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Medical Laboratory Scientist",
+      "salary": "NGN120,000 - NGN150,000 / monthly",
+      "experience": "",
+      "qualification": "OND / ND or HND in Medical Laboratory Technology or Certificate in Medical Laboratory Technology from a MLSCN‑accredited institution",
+      "requirements": [
+        "OND / ND or HND in Medical Laboratory Technology from an accredited institution recognized by the Medical Laboratory Science Council of Nigeria (MLSCN)",
+        "OR Certificate in Medical Laboratory Technology from a MLSCN‑accredited institution",
+        "SSCE / WAEC / NECO — minimum 5 credits including English, Mathematics, Biology, Chemistry, Physics — at not more than two sittings"
+      ],
+      "responsibilities": [
+        "Collect, receive, log, label, and process patient specimens following standard protocols",
+        "Perform phlebotomy — venipuncture and capillary blood collection — safely from all age groups",
+        "Verify patient identity; label specimens correctly and ensure proper transport, storage, and preservation",
+        "Identify, document, and reject unsuitable specimens; coordinate recollection with clinical staff",
+        "Operate, calibrate, and maintain equipment — microscopes, centrifuges, analyzers, incubators, autoclaves, refrigerators",
+        "Run daily quality control; investigate and resolve out‑of‑control results before reporting"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-09-20",
+      "deadline": "2026-09-28",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/medical-laboratory-technician-1874",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Female Medical officer",
+      "company": "Medical Locum Jobs",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Doctor",
+      "salary": "NGN500,000 - NGN650,000 / monthly",
+      "experience": "",
+      "qualification": "MBBS / MBChB or equivalent medical degree from a fully accredited institution, Full, active registration & licence with the Medical and Dental Council of Nigeria (MDCN) — MANDATORY, Completed NYSC or possess valid exemption certificate, Current practicing licence valid and verifiable",
+      "requirements": [
+        "MBBS / MBChB or equivalent medical degree from a fully accredited institution",
+        "Full, active registration & licence with the Medical and Dental Council of Nigeria (MDCN) — MANDATORY",
+        "Completed NYSC or possess valid exemption certificate",
+        "Current practicing licence valid and verifiable"
+      ],
+      "responsibilities": [
+        "Conduct comprehensive patient consultations — history taking, physical examinations, diagnosis, and treatment planning for all medical conditions",
+        "Manage outpatient and inpatient care; prescribe medications, order and interpret laboratory/radiology investigations, and perform minor surgical procedures as required",
+        "Provide preventive care, health education, and counselling on lifestyle, chronic disease management, and follow-up plans",
+        "Coordinate referrals to specialists and tertiary facilities when necessary",
+        "Monitor and review patient progress; adjust treatment plans accordingly",
+        "Maintain accurate, complete, and up-to-date patient medical records, treatment cards, and hospital registers",
+        "Complete all medical reports, certificates, and insurance/HMO documentation promptly and correctly",
+        "Adhere strictly to guidelines from MDCN, Federal Ministry of Health, NHIS, and HMO partners",
+        "Ensure confidentiality, data protection, and ethical standards in all patient interactions"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-09-20",
+      "deadline": "2026-09-28",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/female-medical-officer-1873",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Male Nurse assistant",
+      "company": "TSA",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Nurse",
+      "salary": "150,000",
+      "experience": "",
+      "qualification": "",
+      "requirements": [],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-09-19",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "08152725147",
+      "apply_url": "https://medlocumjobs.com/jobs/male-nurse-assistant-1872",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Medical Laboratory Scientist – Immunophenotyping",
+      "company": "African Medical Centre of Excellence (AMCE)",
+      "location": "Abuja, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Medical Laboratory Scientist",
+      "salary": "n,",
+      "experience": "3",
+      "qualification": "BSc",
+      "requirements": [
+        "Bachelor’s Degree in Medical Laboratory Science, Medical Technology, or a related field",
+        "Specialist certification in flow cytometry or immunophenotyping is highly desirable",
+        "In-depth understanding of haematological malignancies, immunology, and cell biology",
+        "Strong analytical skills with the ability to interpret complex cytometric data",
+        "Minimum of 3 years of experience in a clinical flow cytometry laboratory, preferably within a large or specialist haematology setting",
+        "Proven expertise in performing and interpreting complex immunophenotyping for leukaemia, lymphoma, and stem cell analysis",
+        "Demonstrated experience in method development, validation, and troubleshooting of flow cytometry assays",
+        "Solid understanding of ISO 15189 quality standards, including participation in IQC and EQA schemes",
+        "Experience in training and assessing the competency of junior laboratory staff",
+        "Proficiency in using flow cytometry software and Laboratory Information Systems (LIS)"
+      ],
+      "responsibilities": [
+        "Perform, analyze, and interpret complex flow cytometry assays for stem cell analysis, leukaemia, lymphoma, and related immunophenotyping applications",
+        "Provide accurate and timely interpretations of findings to support diagnostic reports authorized by consultant/clinical scientists",
+        "Assist in the development, optimization, and validation of new flow cytometry procedures and panels to enhance diagnostic capabilities",
+        "Run, monitor, and evaluate Internal Quality Control (IQC) and External Quality Assurance (EQA) samples to ensure the laboratory meets ISO 15189:2022 standards",
+        "Operate, calibrate, and maintain flow cytometers and associated laboratory equipment",
+        "Provide comprehensive training and competency assessment to junior staff, trainees, and medical laboratory technicians"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-09-19",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://jobsinnigeria.careers/jobs/medical-laboratory-scientist-immunophenotyping-african-medical-centre-excellence-amce/",
+      "_source": "jobsinnigeria"
+    },
+    {
+      "job_title": "Cyclotron Manager",
+      "company": "African Medical Centre of Excellence (AMCE)",
+      "location": "Abuja, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Healthcare Management",
+      "salary": "n,",
+      "experience": "in team leadership, maintenance program management, and regulatory compliance within a cyclotron or nuclear medicine facility.",
+      "qualification": "bsc",
+      "requirements": [],
+      "responsibilities": [
+        "Schedule daily and weekly cyclotron operations to meet clinical, commercial and research demands.",
+        "Oversee the daily operation of medical cyclotrons and associated equipment to ensure safe and efficient production of medical isotopes.",
+        "Coordinate closely with radiochemistry and nuclear medicine teams in scheduling of clinical radiopharmaceuticals.",
+        "Monitor cyclotron system performance, analyse production data, and implement process improvements to optimise isotope yield and quality.",
+        "Manage the upkeep of associated cyclotron equipment, including hot cells, targetry and synthesis modules.",
+        "Ensure all radiopharmaceutical production activities comply with Good Manufacturing Practice (cGMP) standards and regulatory requirements."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-09-19",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://jobsinnigeria.careers/jobs/cyclotron-manager-african-medical-centre-excellence-amce/",
+      "_source": "jobsinnigeria"
+    },
     {
       "job_title": "Audiologist",
       "company": "African Medical Centre of Excellence (AMCE)",
@@ -73,6 +261,214 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/medical-physicist-brachytherapy-african-medical-centre-excellence-amce/",
       "_source": "jobsinnigeria"
+    },
+    {
+      "job_title": "Operations Officer",
+      "company": "Harmony 360 Health",
+      "location": "Oyo, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Healthcare Management",
+      "salary": "n,",
+      "experience": "3 years",
+      "qualification": "BA/BSc/HND, MBA/MSc/MA",
+      "requirements": [
+        "Bachelor's degree in Business Administration, Healthcare Administration, Management, or a related field",
+        "Minimum of 3 years of relevant experience in operations, administration, facility coordination, or a similar role",
+        "Demonstrated experience independently managing tasks, coordinating multiple stakeholders, and delivering results",
+        "Strong organizational, time-management, and problem-solving skills",
+        "Excellent written and verbal communication skills",
+        "Proficiency in Google Workspace or Microsoft Office, particularly spreadsheets, shared documents, and reporting tools",
+        "Ability to prioritize competing demands and work effectively with minimal supervision",
+        "Strong sense of accountability, professionalism, and attention to detail",
+        "Added advantage: Previous experience in healthcare operations, a growing business, or managing the setup of a new facility"
+      ],
+      "responsibilities": [
+        "Oversee daily administrative and operational activities at the facility",
+        "Coordinate facility setup, vendors, suppliers, contractors, and service providers",
+        "Manage operational tasks, timelines, procurement, and follow-up to ensure timely completion",
+        "Develop, implement, and maintain administrative processes, SOPs, and documentation",
+        "Support staff onboarding, scheduling, and coordination",
+        "Maintain accurate operational records, track expenses, and prepare regular reports",
+        "Identify operational gaps, troubleshoot problems, and recommend practical solutions",
+        "Serve as the primary point of coordination between the on-site team and the Founder/Medical Director",
+        "Support the smooth launch and ongoing operations of H360's healthcare and wellness services"
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing. Subject: Application – Operations Officer Build your CV for free.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-09-19",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/operations-officer-harmony-360-health",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Operations Manager",
+      "company": "Chiron ICU & Surgical Centre",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Healthcare Management",
+      "salary": "n,",
+      "experience": "3",
+      "qualification": "BSc",
+      "requirements": [
+        "Bachelor's Degree in Hospitality Management, Business Administration, or a related field.",
+        "Minimum of 4 years' experience in the healthcare sector",
+        "At least 3 years in a hospital",
+        "Strong leadership, communication, and people management skills.",
+        "Good analytical, financial, and problem-solving abilities.",
+        "Proficiency in Microsoft Office"
+      ],
+      "responsibilities": [
+        "Oversee and coordinate daily operational activities of the company.",
+        "Ensure efficient management of logistics, inventory, and operational processes.",
+        "Develop and implement operational strategies to improve productivity and efficiency.",
+        "Supervise operational staff and ensure compliance with company policies and industry standards.",
+        "Monitor operational performance and prepare periodic reports for management.",
+        "Ensure proper coordination between departments for smooth workflow.",
+        "Maintain high standards of biosecurity, quality control, and operational safety.",
+        "Identify operational challenges and provide practical solutions.",
+        "Support management in achieving organizational goals and business growth."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-09-19",
+      "deadline": "2026-09-30",
+      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/operations-manager-chiron-icu-surgical-centre",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Hygiene Assistant (Nguru)",
+      "company": "Action Against Hunger | ACF Nigeria LTD/GTE",
+      "location": "Yobe, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Public Health",
+      "salary": "n,",
+      "experience": "Location",
+      "qualification": "OND",
+      "requirements": [
+        "OND"
+      ],
+      "responsibilities": [
+        "Assist in context assessment and developing materials for hygiene promotion.",
+        "Conduct initial rapid needs assessment for affected communities and health facilities.",
+        "Assist in conducting home visits and visits to the community to identify gaps in hygiene, sanitation, and water use.",
+        "Assist in preparing training modules for the promotion of hygiene practices at household and community levels.",
+        "Conduct emergency hygiene promotion awareness raising sessions.",
+        "Mobilize communities and health facilities to adopt safe hygiene practices.",
+        "Assist in conducting training sessions for community workers and targeted populations.",
+        "Conduct focus group discussions for women and girls to identify locations for WASH facilities.",
+        "Assist in the process of beneficiaries' selection to receive NFI assistance.",
+        "Assist in beneficiary registration and distributing shelter, hygiene, and NFI kits."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-09-19",
+      "deadline": "2026-09-24",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/hygiene-assistant-nguru-acf-international",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Manicurist / Pedicurist",
+      "company": "Skingenic Pro Esthetics",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "n,",
+      "experience": "Location",
+      "qualification": "",
+      "requirements": [
+        "Relevant qualifications",
+        "Experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-09-19",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/manicurist-pedicurist-skingenic-pro-esthetics",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Therapist",
+      "company": "Skingenic Pro Esthetics",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Allied Health",
+      "salary": "n,",
+      "experience": "Location",
+      "qualification": "",
+      "requirements": [
+        "Relevant qualifications with experience."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-09-19",
+      "deadline": "",
+      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/therapist-skingenic-pro-esthetics",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Esthetician (Advanced, Basic & Laser)",
+      "company": "Skingenic Pro Esthetics",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "n,",
+      "experience": "Experience",
+      "qualification": "",
+      "requirements": [
+        "Relevant qualifications with experience."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-09-19",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/esthetician-advanced-basic-laser-skingenic-pro-esthetics",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Esthetic Nurse & Injector",
+      "company": "Skingenic Pro Esthetics",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Nurse",
+      "salary": "n,",
+      "experience": "",
+      "qualification": "",
+      "requirements": [
+        "Relevant qualifications with experience."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-09-19",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/esthetic-nurse-injector-skingenic-pro-esthetics",
+      "_source": "myjobmag"
     },
     {
       "job_title": "Perioperative Nurse",
@@ -362,6 +758,209 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.myjobmag.com/job/family-physician-cedarcrest-hospitals-9",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Marketing Manager – Healthcare",
+      "company": "Lagos Executive Cardiovascular Centre",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Healthcare Management",
+      "salary": "n,",
+      "experience": "5 - 8 years",
+      "qualification": "BSc",
+      "requirements": [
+        "Minimum of 5 years’ experience in marketing, business development, sales, or a related role, preferably within the healthcare sector.",
+        "Proven experience working with HMOs, corporate organizations, insurance companies, or healthcare providers.",
+        "Strong business development and client relationship management skills.",
+        "Demonstrated ability to generate leads, secure partnerships, and drive measurable business growth.",
+        "Excellent communication, negotiation, presentation, and interpersonal skills.",
+        "Strong understanding of the Nigerian healthcare market.",
+        "Ability to work independently, meet targets, and deliver measurable results.",
+        "Bachelor’s degree in Marketing, Business Administration, Healthcare Management, or a related field."
+      ],
+      "responsibilities": [
+        "Develop and execute marketing strategies to increase patient volume and brand visibility.",
+        "Identify, target, and secure partnerships with corporate organizations, HMOs, insurance companies, and other healthcare stakeholders.",
+        "Build and maintain strong relationships with HMO representatives and corporate clients.",
+        "Drive corporate healthcare contracts, referrals, and patient acquisition.",
+        "Develop strategies to increase utilization of the Centre’s clinical and diagnostic services.",
+        "Conduct market research to identify new business opportunities and emerging healthcare trends.",
+        "Represent the Centre at corporate meetings, health fairs, conferences, and other relevant events.",
+        "Collaborate with clinical and administrative teams to develop marketable healthcare services and packages.",
+        "Monitor marketing activities, leads, referrals, conversions, and revenue, providing regular performance reports.",
+        "Manage digital and offline marketing initiatives to strengthen the Centre’s brand and reach.",
+        "Develop and maintain a database of corporate and HMO contacts and opportunities."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-09-19",
+      "deadline": "2026-10-01",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/marketing-manager-healthcare-lagos-executive-cardiovascular-centre",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Executive / Personal Assistant",
+      "company": "Skingenic Pro Esthetics",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "n,",
+      "experience": "Location",
+      "qualification": "",
+      "requirements": [
+        "Interested candidates should possess relevant qualifications with experience."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-09-19",
+      "deadline": "",
+      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/executive-personal-assistant-skingenic-pro-esthetics",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Social Media Manager & Content Creator",
+      "company": "Skingenic Pro Esthetics",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Healthcare Management",
+      "salary": "n,",
+      "experience": "",
+      "qualification": "",
+      "requirements": [
+        "Relevant qualifications with experience."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-09-19",
+      "deadline": "",
+      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/social-media-manager-content-creator-skingenic-pro-esthetics",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Cosmetic Formulator & Production Coordinator (Advanced)",
+      "company": "Skingenic Pro Esthetics",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Healthcare Management",
+      "salary": "n,",
+      "experience": "Location",
+      "qualification": "",
+      "requirements": [
+        "Interested candidates should possess relevant qualifications with experience."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-09-19",
+      "deadline": "",
+      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/cosmetic-formulator-production-coordinator-advanced-skingenic-pro-esthetics",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Janitor",
+      "company": "Skingenic Pro Esthetics",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "n,",
+      "experience": "",
+      "qualification": "",
+      "requirements": [
+        "Relevant qualifications",
+        "Experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-09-19",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/janitor-skingenic-pro-esthetics",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Office Assistant",
+      "company": "Skingenic Pro Esthetics",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "n,",
+      "experience": "Location",
+      "qualification": "",
+      "requirements": [],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-09-19",
+      "deadline": "",
+      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/office-assistant-skingenic-pro-esthetics",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Front Desk / Client Service Officer",
+      "company": "Skingenic Pro Esthetics",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "n,",
+      "experience": "",
+      "qualification": "",
+      "requirements": [
+        "Relevant qualifications with experience."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-09-19",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/front-desk-client-service-officer-skingenic-pro-esthetics",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "People & Culture Manager (HR)",
+      "company": "Skingenic Pro Esthetics",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Healthcare Management",
+      "salary": "n,",
+      "experience": "Location",
+      "qualification": "",
+      "requirements": [
+        "Relevant qualifications with experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-09-19",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/people-culture-manager-hr-skingenic-pro-esthetics",
       "_source": "myjobmag"
     },
     {
@@ -1759,201 +2358,6 @@
       "_source": "myjobmag"
     },
     {
-      "job_title": "Research Associate",
-      "company": "Lily Hospitals Limited",
-      "location": "Warri, Delta, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "n,",
-      "experience": "3 - 5 years",
-      "qualification": "BSc",
-      "requirements": [
-        "A Bachelor's Degree in Health Sciences, Biomedical Sciences, Public Health, Healthcare Administration, or a related field",
-        "3-5 years' experience",
-        "Experience supporting research, clinical administration, medical education, or programme coordination",
-        "Strong research, writing, organisational, and administrative skills",
-        "Ability to manage confidential information with discretion and professionalism",
-        "Excellent communication skills"
-      ],
-      "responsibilities": [
-        "Support the coordination of clinical research studies, including maintaining study records, preparing documentation, tracking timelines, and assisting with ethics and governance submissions.",
-        "Conduct literature reviews and prepare clear research summaries, reports, presentations, and briefing materials.",
-        "Help collect, organise, and manage research data in line with hospital policies, ethics requirements, and data-protection standards.",
-        "Support resident onboarding, rotation schedules, teaching sessions, assessments, and programme communications.",
-        "Act as a point of contact for residents, supervising consultants, research teams, and external partners.",
-        "Coordinate research meetings, journal clubs, educational events, workshops, and resident activities.",
-        "Maintain accurate records relating to resident attendance, training requirements, research participation, and programme outcomes.",
-        "Assist with grant applications, publications, audit projects, and dissemination of research findings where appropriate.",
-        "Identify opportunities to improve research processes and the resident learning experience."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-18",
-      "deadline": "",
-      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/research-associate-lily-hospitals-limited",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Cashier",
-      "company": "Lily Hospitals Limited",
-      "location": "Warri, Delta, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "based on experience and qualifications",
-      "experience": "",
-      "qualification": "OND",
-      "requirements": [
-        "Minimum of OND or an equivalent qualification.",
-        "Previous experience as a cashier, sales attendant, store assistant, or customer-service representative is an advantage.",
-        "Ability to calculate figures accurately and handle cash responsibly.",
-        "Familiarity with POS machines, payment terminals, and basic computer applications.",
-        "Strong communication and interpersonal skills.",
-        "Good organisational skills and the ability to work with minimal supervision."
-      ],
-      "responsibilities": [
-        "Welcome customers warmly and provide courteous, professional service.",
-        "Process cash, card, bank transfer, POS, and other approved payments accurately.",
-        "Issue receipts, invoices, and correct change for every transaction.",
-        "Balance the cash drawer at the beginning and end of each shift.",
-        "Maintain accurate daily records of sales, payments, refunds, discounts, and expenses.",
-        "Report cash shortages, overages, payment errors, or suspicious transactions immediately.",
-        "Ensure all money, receipts, and payment records are handled securely and confidentially.",
-        "Assist customers with enquiries about prices, products, promotions, and payment options.",
-        "Keep the checkout counter and surrounding area neat, clean, and properly arranged.",
-        "Support stock checks, product arrangement, and basic administrative duties when required.",
-        "Work closely with supervisors and other team members to ensure smooth daily operations.",
-        "Follow company policies, financial procedures, and customer-service standards at all times."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-18",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/cashier-lily-hospitals-limited-9",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Financial Controller",
-      "company": "Medbury Healthcare Group",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "payments.",
-      "experience": "7 - 9 years",
-      "qualification": "BSc",
-      "requirements": [
-        "Bachelor's degree in Accounting, Finance, or a related field.",
-        "ACA, ACCA, or equivalent professional certification is required.",
-        "Minimum of 7 years' relevant experience, with experience in a financial control or senior finance role.",
-        "Strong experience in preparing and reviewing financial statements and management accounts.",
-        "Demonstrable experience in cash flow and liquidity management.",
-        "Experience preparing and managing budgets, including cash budgets.",
-        "Experience in investment analysis and financial reporting.",
-        "Strong knowledge of accounting principles, financial reporting, taxation, payroll, and regulatory compliance.",
-        "Experience coordinating internal and external audits.",
-        "Strong knowledge of internal controls, reconciliations, and financial risk management.",
-        "Proficiency in Microsoft Excel and accounting/ERP software.",
-        "Excellent analytical, leadership, communication, and problem-solving skills."
-      ],
-      "responsibilities": [
-        "Oversee the preparation of accurate and timely financial statements and monthly management accounts.",
-        "Lead month-end and year-end financial closing processes.",
-        "Monitor cash flow, liquidity, and working capital to support effective financial management.",
-        "Prepare and review budgets, cash budgets, forecasts, and financial performance reports.",
-        "Prepare and review investment analysis and financial reports to support management decision-making.",
-        "Ensure accurate and timely bank, account, and balance sheet reconciliations.",
-        "Oversee payroll processing and ensure timely salary payments.",
-        "Ensure compliance with tax, statutory, regulatory, and audit requirements.",
-        "Coordinate internal and external audit activities and ensure timely resolution of audit findings.",
-        "Maintain accurate accounting records, fixed asset registers, and financial documentation.",
-        "Strengthen and monitor internal controls, financial policies, and accounting processes.",
-        "Identify opportunities to improve financial processes, cost efficiency, and liquidity.",
-        "Supervise, support, and develop the finance team to achieve departmental objectives.",
-        "Provide financial insights and reports to management to support business decisions."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-18",
-      "deadline": "2026-09-30",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/financial-controller-medbury-medical-services",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Learning & Development Partner",
-      "company": "Medbury Healthcare Group",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "n,",
-      "experience": "2 - 5 years",
-      "qualification": "BA/BSc/HND",
-      "requirements": [
-        "BA/BSc/HND",
-        "2 - 5 years experience"
-      ],
-      "responsibilities": [
-        "Develop and implement an organisation-wide learning plan aligned with business strategy, talent priorities, and identified capability needs.",
-        "Partner with business leaders, HR, managers, and employees to identify current and future learning and capability requirements.",
-        "Design, develop, curate, and continuously improve learning content, programmes, tools, and resources.",
-        "Facilitate engaging learning workshops, training sessions, and other development interventions across the organisation.",
-        "Manage and continuously improve the organisation's Learning Management System (LMS).",
-        "Identify, evaluate, engage, and manage external L&D providers and learning partners.",
-        "Establish effective mechanisms for gathering learner feedback and evaluating the effectiveness of learning interventions."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-09-18",
-      "deadline": "2026-10-16",
-      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/learning-development-partner-medbury-medical-services",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Project Management Assistant – Sexual Reproductive Health (SRH) Project",
-      "company": "eHealth4everyone",
-      "location": "Nigeria",
-      "job_type": "Contract",
-      "job_category": "Other",
-      "salary": "n,",
-      "experience": "7",
-      "qualification": "BSc",
-      "requirements": [
-        "BA/BSc/HND",
-        "5 - 7 years"
-      ],
-      "responsibilities": [
-        "Support tracking and monitoring of project workplans, deliverables, milestones, and implementation timelines.",
-        "Coordinate routine engagement with government stakeholders, including Ministries of Health, Primary Health Care Development Agencies, Hospital Management Boards, SWAp offices, and other relevant partners.",
-        "Support planning, coordination, and documentation of supportive supervision visits, monitoring activities, review meetings, and stakeholder engagements.",
-        "Compile, review, and consolidate weekly, monthly, quarterly, and annual programme reports from field teams and State Coordinators.",
-        "Maintain project trackers, activity monitoring tools, and documentation repositories to support effective implementation and reporting.",
-        "Support preparation of donor reports, presentations, briefing notes, concept notes, activity reports, and other programme documentation.",
-        "Follow up with field teams on implementation progress, reporting requirements, action points, and outstanding deliverables."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-09-18",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/project-management-assistant-sexual-reproductive-health-srh-project-ehealth4everyone",
-      "_source": "myjobmag"
-    },
-    {
       "job_title": "Medical Doctor",
       "company": "EHA Clinics",
       "location": "Sangotedo, Lagos, Nigeria",
@@ -3190,33 +3594,6 @@
       "_source": "hotnigerianjobs"
     },
     {
-      "job_title": "Cyclotron Manager",
-      "company": "African Medical Centre of Excellence (AMCE)",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Healthcare Management",
-      "salary": "n,",
-      "experience": "in team leadership, maintenance program management, and regulatory compliance within a cyclotron or nuclear medicine facility.",
-      "qualification": "",
-      "requirements": [],
-      "responsibilities": [
-        "Oversee the daily operation of medical cyclotrons and associated equipment to ensure safe and efficient production of medical isotopes.",
-        "Schedule daily and weekly cyclotron operations to meet clinical, commercial and research demands.",
-        "Coordinate closely with radiochemistry and nuclear medicine teams in scheduling of clinical radiopharmaceuticals.",
-        "Monitor cyclotron system performance, analyse production data, and implement process improvements to optimise isotope yield and quality.",
-        "Manage the upkeep of associated cyclotron equipment, including hot cells, targetry and synthesis modules."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-09-17",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/960606/cyclotron-manager-at-african-medical-centre-of-exc.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
       "job_title": "Cyclotron Technician",
       "company": "African Medical Centre of Excellence (AMCE)",
       "location": "Abuja, Nigeria",
@@ -4007,394 +4384,6 @@
       "contact_phone": "",
       "apply_url": "https://www.myjobmag.com/job/consultant-interventional-cardiologist-the-african-medical-centre-of-excellence-amce-2",
       "_source": "myjobmag"
-    },
-    {
-      "job_title": "Audiologist",
-      "company": "The African Medical Centre of Excellence (AMCE)",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Allied Health",
-      "salary": "n,",
-      "experience": "5 years",
-      "qualification": "BSc",
-      "requirements": [],
-      "responsibilities": [
-        "Obtain relevant clinical histories and perform otoscopic examination and age-appropriate behavioural hearing assessments.",
-        "Conduct and interpret pure-tone and speech audiometry, tympanometry, acoustic reflex testing, otoacoustic emissions, and other middle- and inner-ear assessments.",
-        "Perform or support electrophysiological testing, including auditory brainstem response and auditory steady-state response, in accordance with scope of practice and clinical protocols.",
-        "Conduct vestibular assessments and contribute to the evaluation of patients presenting with dizziness, imbalance, tinnitus, or suspected auditory processing difficulties.",
-        "Prepare clear diagnostic reports, communicate findings, and make timely referrals for medical, surgical, rehabilitative, or educational intervention.",
-        "Develop individualised audiological management plans in partnership with patients, families, carers, and referring clinicians.",
-        "Select, fit, verify, programme, and review hearing aids and other assistive listening devices using recognised clinical protocols.",
-        "Provide counselling on hearing loss, tinnitus, communication strategies, device use, hearing conservation, and realistic rehabilitation outcomes.",
-        "Support cochlear implant and other implantable hearing-device pathways, including candidacy assessment, counselling, activation, mapping support, and follow-up where applicable.",
-        "Provide paediatric and adult aural rehabilitation and coordinate onward referral to speech and language therapy, education, psychology, or other services as required.",
-        "Work closely with ENT surgeons, physicians, paediatricians, neurologists, nurses, speech and language therapists, and other allied health professionals.",
-        "Participate in multidisciplinary clinics and case conferences, contributing specialist audiological advice to diagnosis and treatment planning."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-09-17",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/audiologist-the-african-medical-centre-of-excellence-amce",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Medical Physicist (Nuclear Medicine)",
-      "company": "The African Medical Centre of Excellence (AMCE)",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Allied Health",
-      "salary": "n,",
-      "experience": "5 years",
-      "qualification": "BSc",
-      "requirements": [
-        "BA/BSc/HND",
-        "5 years experience"
-      ],
-      "responsibilities": [
-        "Design, develop, and optimize nuclear medicine protocols for diagnostic imaging and therapeutic procedures.",
-        "Oversee and implement radiation protection programs to minimize radiation exposure.",
-        "Conduct regular quality assurance (QA) and calibration of nuclear medicine equipment.",
-        "Oversee the safe handling, storage, and administration of radiopharmaceuticals.",
-        "Analyze nuclear medicine imaging data."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-09-17",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/medical-physicist-nuclear-medicine-the-african-medical-centre-of-excellence-amce-3",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Cyclotron Medical Physicist",
-      "company": "The African Medical Centre of Excellence (AMCE)",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "n,",
-      "experience": "5 years",
-      "qualification": "MSc",
-      "requirements": [
-        "MBA/MSc/MA",
-        "PhD/Fellowship"
-      ],
-      "responsibilities": [
-        "Oversee the safe, reliable, and efficient operation of the cyclotron facility.",
-        "Perform calibration, preventive maintenance, and troubleshooting of cyclotron systems and associated equipment.",
-        "Coordinate radionuclide production schedules to meet clinical demand for PET imaging.",
-        "Develop and implement QA protocols for cyclotron operations and radionuclide production.",
-        "Conduct regular safety audits, risk assessments, and radiation monitoring.",
-        "Ensure compliance with Nigeria Atomic Energy Commission (NAEC) and international radiation safety standards.",
-        "Oversee safe handling, storage, and disposal of radioactive materials.",
-        "Implement emergency response protocols for cyclotron-related incidents.",
-        "Provide radiation safety training and guidance to staff.",
-        "Engage in research and development to optimize radionuclide production and enhance imaging applications.",
-        "Contribute to clinical trials, protocol development, and departmental innovation projects.",
-        "Publish and present research findings in peer-reviewed platforms and conferences.",
-        "Train and mentor junior physicists, technologists, and local staff on cyclotron operations and radiation safety.",
-        "Build capacity and transfer knowledge to strengthen local expertise.",
-        "Support academic collaborations with external institutions.",
-        "Work closely with nuclear medicine physicians, radiologists, technologists, and multidisciplinary teams.",
-        "Represent the department in institutional committees and strategic planning initiatives.",
-        "Support AMCE’s vision for excellence in diagnostics and contribute to continuous service improvement."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-09-17",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/cyclotron-medical-physicist-the-african-medical-centre-of-excellence-amce-1",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Consultant Family Medicine",
-      "company": "The African Medical Centre of Excellence (AMCE)",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Doctor",
-      "salary": "",
-      "experience": "",
-      "qualification": "BSc",
-      "requirements": [],
-      "responsibilities": [
-        "Conduct thorough assessments of patients with undifferentiated and chronic conditions.",
-        "Develop and implement individualized care plans for acute and chronic diseases.",
-        "Provide preventive health services, including vaccinations and screenings.",
-        "Manage complex comorbidities and polypharmacy cases.",
-        "Ensure continuity of care through follow-up visits and care coordination.",
-        "Address psychosocial and lifestyle factors impacting health.",
-        "Monitor and optimize treatment for chronic conditions (e.g., diabetes, hypertension).",
-        "Utilize evidence-based guidelines for disease management.",
-        "Educate patients on self-management strategies.",
-        "Coordinate with specialists for complex cases.",
-        "Deliver age-appropriate preventive care (e.g., cancer screenings, immunizations).",
-        "Promote health education and lifestyle modifications.",
-        "Conduct risk assessments for hereditary and lifestyle-related diseases.",
-        "Organize community health outreach programs.",
-        "Lead multidisciplinary team rounds and case discussions.",
-        "Mentor junior doctors and medical students.",
-        "Foster a collaborative environment with nursing and allied health staff.",
-        "Advocate for patient-centered care models."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-09-17",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/consultant-family-medicine-the-african-medical-centre-of-excellence-amce",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Consultant General Surgery",
-      "company": "The African Medical Centre of Excellence (AMCE)",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "5 years",
-      "qualification": "BSc",
-      "requirements": [
-        "BSc"
-      ],
-      "responsibilities": [
-        "Provide consultant-level management of a broad range of elective and emergency general surgical conditions in line with approved clinical privileges and evidence-based practice.",
-        "Conduct comprehensive patient assessments, establish diagnoses, develop and implement appropriate treatment plans, and provide continuity of care from admission through discharge and follow-up.",
-        "Perform general surgical procedures independently within areas of demonstrated competence and approved clinical privileges, including the management of complex surgical cases.",
-        "Lead and participate in outpatient clinics, ward rounds, theatre lists, emergency surgical reviews, and multidisciplinary team meetings.",
-        "Provide specialist opinions and second opinions for complex surgical cases and determine appropriate treatment or referral pathways.",
-        "Provide clear counselling to patients and families regarding diagnoses, treatment options, surgical risks, expected outcomes, and postoperative care, and obtain informed consent as appropriate.",
-        "Provide appropriate peri-operative and postoperative management, including recognition and management of surgical complications.",
-        "Participate in the consultant on-call rota and provide timely emergency surgical cover as required.",
-        "Provide clinical leadership within the General Surgery service and support the development of safe, efficient, and patient-centred surgical pathways.",
-        "Maintain accurate, timely, and comprehensive clinical documentation and ensure effective communication and handover of patient care.",
-        "Comply with hospital policies, clinical protocols, infection prevention standards, ethical requirements, and applicable regulatory standards.",
-        "Lead and participate in morbidity and mortality meetings, clinical audits, incident reviews, and quality-improvement initiatives to improve patient safety and surgical outcomes."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-09-17",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/consultant-general-surgery-the-african-medical-centre-of-excellence-amce",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Consultant Intensivist",
-      "company": "The African Medical Centre of Excellence (AMCE)",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "5 years",
-      "qualification": "BSc",
-      "requirements": [
-        "BA/BSc/HND",
-        "5 years of experience"
-      ],
-      "responsibilities": [
-        "Lead daily multidisciplinary ward rounds, developing and implementing comprehensive, evidence-based management plans for all ICU patients.",
-        "Perform and interpret advanced diagnostic and monitoring procedures, including point-of-care ultrasound, bronchoscopy, and hemodynamic monitoring.",
-        "Demonstrate proficiency in the management of critical illnesses, such as severe sepsis, ARDS, multi-organ failure, neurocritical care, and post-operative complications.",
-        "Prescribe and manage complex pharmacological regimens tailored to individual patient needs.",
-        "Ensure timely and accurate documentation in the electronic medical record (EMR).",
-        "Perform a range of invasive procedures, including central venous catheterization and endotracheal intubation, ensuring safety protocols are followed.",
-        "Oversee advanced life support management, including mechanical ventilation and renal replacement therapy.",
-        "Manage complications and emergencies during procedures."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-09-17",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/consultant-intensivist-the-african-medical-centre-of-excellence-amce-3",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Consultant Neurologist",
-      "company": "The African Medical Centre of Excellence (AMCE)",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "5 years",
-      "qualification": "BSc",
-      "requirements": [
-        "BA/BSc/HND",
-        "5 years of experience"
-      ],
-      "responsibilities": [
-        "Conduct comprehensive neurological assessments, including detailed history taking and physical examination.",
-        "Diagnose and manage a wide range of neurological conditions.",
-        "Develop and implement evidence-based treatment plans.",
-        "Provide acute stroke management.",
-        "Manage neurological emergencies."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-09-17",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/consultant-neurologist-the-african-medical-centre-of-excellence-amce-1",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Junior Human Resource Officer",
-      "company": "Fortics Lifecare Limited",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "n,",
-      "experience": "1 - 2 years",
-      "qualification": "BSc",
-      "requirements": [
-        "HND or B.Sc. Degree in Human Resources, Business Administration, Industrial Relations, Management, or a related discipline.",
-        "1–2 years of relevant HR experience.",
-        "Good knowledge of basic HR practices and documentation.",
-        "Good communication and interpersonal skills.",
-        "Strong organisational and administrative abilities.",
-        "Proficiency in Microsoft Office, especially Word and Excel.",
-        "Ability to maintain confidentiality and handle employee information professionally.",
-        "Must be proactive, responsible, detail-oriented, and willing to learn."
-      ],
-      "responsibilities": [
-        "Support the recruitment and selection process, including CV screening, interview scheduling, and candidate communication.",
-        "Assist with staff onboarding and documentation.",
-        "Maintain accurate and up-to-date employee records and HR files.",
-        "Support attendance, leave, and staff records management.",
-        "Assist with staff communication, engagement, and welfare activities.",
-        "Prepare and maintain HR reports, trackers, and other documentation.",
-        "Support the implementation of HR policies and procedures.",
-        "Assist with performance management and staff evaluation activities.",
-        "Handle routine employee enquiries and escalate issues when necessary.",
-        "Support disciplinary and administrative processes as directed by management.",
-        "Perform other HR-related duties assigned by the HR/Management team."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-17",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/junior-human-resource-officer-fortics-lifecare-limited",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Front Desk Officer",
-      "company": "Physio Centers of Africa",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "n,",
-      "experience": "with orthopedics, sports-medicine, neurology, pediatrics, geriatrics and home health care",
-      "qualification": "BSc",
-      "requirements": [
-        "Good communication skills.",
-        "Customer service experience (healthcare experience is an advantage).",
-        "Organised and detail-oriented.",
-        "Friendly and professional attitude."
-      ],
-      "responsibilities": [
-        "Welcome and attend to clients.",
-        "Manage calls and appointments.",
-        "Provide excellent customer service.",
-        "Support clinic administration."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-17",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/front-desk-officer-physio-centers-of-africa",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Cleaning Technician",
-      "company": "Physio Centers of Africa",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "n,",
-      "experience": "",
-      "qualification": "Others",
-      "requirements": [
-        "Previous cleaning experience (healthcare environment is an advantage)",
-        "Reliable and hardworking",
-        "Attention to detail",
-        "Ability to work independently and as part of a team"
-      ],
-      "responsibilities": [
-        "Maintain cleanliness of clinic areas",
-        "Ensure hygiene and sanitation standards",
-        "Proper care of cleaning equipment and supplies"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-17",
-      "deadline": "",
-      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/cleaning-technician-physio-centers-of-africa",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Pharmacy Technician",
-      "company": "Medical Locum Jobs",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Pharmacist",
-      "salary": "NGN120,000 - NGN150,000 / monthly",
-      "experience": "",
-      "qualification": "National Diploma (ND) or HND in Pharmacy Technology or Pharmacy Technician Certificate from a PCN accredited institution",
-      "requirements": [
-        "National Diploma (ND) or HND in Pharmacy Technology from an accredited institution",
-        "Pharmacy Technician Certificate from a Pharmacists Council of Nigeria (PCN) accredited institution",
-        "Current registration / practising licence with the Pharmacists Council of Nigeria (PCN) — mandatory"
-      ],
-      "responsibilities": [
-        "Receive, verify, and prepare prescriptions under pharmacist supervision",
-        "Label medications with complete instructions, dosage, usage directions, warnings, and expiry dates",
-        "Assist with compounding pharmaceutical preparations and extemporaneous products as directed by the Pharmacist",
-        "Process both prescription and Over-The-Counter (OTC) medication sales accurately through the POS system",
-        "Refer all clinical, medical advice, or prescription clarification questions directly to the Pharmacist",
-        "Monitor stock levels, reorder thresholds, and expiry dates",
-        "Organize shelves, dispensary, and storage areas for optimal workflow, visibility, and compliance",
-        "Receive incoming supplies and verify against invoices",
-        "Conduct periodic stock audits and report discrepancies",
-        "Maintain optimal storage conditions for pharmaceuticals and controlled substances"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-09-16",
-      "deadline": "2026-09-25",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/pharmacy-technician-copy-1848",
-      "_source": "medlocum"
     },
     {
       "job_title": "Quality Specialist",
@@ -5592,6 +5581,42 @@
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/959202/local-capacity-strengthening-health-workforce-deve.html",
       "_source": "hotnigerianjobs"
+    },
+    {
+      "job_title": "Pharmacy Technician",
+      "company": "Medical Locum Jobs",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Pharmacist",
+      "salary": "NGN120,000 - NGN150,000 / monthly",
+      "experience": "",
+      "qualification": "National Diploma (ND) or HND in Pharmacy Technology or Pharmacy Technician Certificate",
+      "requirements": [
+        "National Diploma (ND) or HND in Pharmacy Technology from an accredited institution (School of Health Technology or Polytechnic)",
+        "Pharmacy Technician Certificate from a Pharmacists Council of Nigeria (PCN) accredited institution",
+        "Current registration / practising licence with the Pharmacists Council of Nigeria (PCN) — mandatory"
+      ],
+      "responsibilities": [
+        "Receive, verify, and prepare prescriptions under pharmacist supervision — counting, measuring, and packaging medications accurately",
+        "Label medications with complete instructions, dosage, usage directions, warnings, and expiry dates",
+        "Assist with compounding pharmaceutical preparations and extemporaneous products as directed by the Pharmacist",
+        "Process both prescription and Over-The-Counter (OTC) medication sales accurately through the POS system",
+        "Refer all clinical, medical advice, or prescription clarification questions directly to the Pharmacist",
+        "Monitor stock levels, reorder thresholds, and expiry dates — rotate stock and remove expired/defective products promptly",
+        "Organize shelves, dispensary, and storage areas for optimal workflow, visibility, and compliance",
+        "Receive incoming supplies — verify quantity, quality, batch numbers, and expiry dates against invoices",
+        "Conduct periodic stock audits, reconcile physical stock with records, and report discrepancies",
+        "Maintain optimal storage conditions (temperature, light, humidity) for pharmaceuticals and controlled substances"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-09-15",
+      "deadline": "2026-09-25",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/pharmacy-technician-1836",
+      "_source": "medlocum"
     },
     {
       "job_title": "Hospital Administrator",
@@ -9601,77 +9626,6 @@
       "_source": "medlocum"
     },
     {
-      "job_title": "Nurse",
-      "company": "Gramaze Healthcare",
-      "location": "Abuja, Abia, Enugu, and Lagos, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Nurse",
-      "salary": "",
-      "experience": "",
-      "qualification": "MDCN license or a caregiving certificate",
-      "requirements": [
-        "Interested candidates should possess an MDCN license or a caregiving certificate."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-09-10",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/nurse-1794",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Caregiver",
-      "company": "Gramaze Healthcare",
-      "location": "Abuja, Abia, Enugu, and Lagos, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Other",
-      "salary": "",
-      "experience": "",
-      "qualification": "MDCN license, or care-giving certificate",
-      "requirements": [
-        "MDCN license",
-        "care-giving certificate"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-09-10",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/caregiver-1793",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Medical Doctor",
-      "company": "Gramaze Healthcare",
-      "location": "Abuja, FCT, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Doctor",
-      "salary": "",
-      "experience": "",
-      "qualification": "",
-      "requirements": [
-        "Interested candidates should possess an MDCN license",
-        "care-giving certificate"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-09-10",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/medical-doctor-1792",
-      "_source": "medlocum"
-    },
-    {
       "job_title": "Medical Laboratory Technician",
       "company": "EHA Clinics",
       "location": "Sangotedo, Lagos, Nigeria",
@@ -9947,6 +9901,55 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/medical-laboratory-scientist-amaiden-energy-nigeria-limited/",
       "_source": "jobsinnigeria"
+    },
+    {
+      "job_title": "Medical Doctor",
+      "company": "Gramaze Healthcare",
+      "location": "Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Doctor",
+      "salary": "",
+      "experience": "",
+      "qualification": "bsc",
+      "requirements": [
+        "Possess an MDCN license",
+        "Care-giving certificate"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Email the address shown on the original listing.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-09-10",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://jobsinnigeria.careers/jobs/medical-doctor-gramaze-healthcare-4-openings/",
+      "_source": "jobsinnigeria"
+    },
+    {
+      "job_title": "Nurse",
+      "company": "Gramaze Healthcare",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full-time",
+      "job_category": "Nurse",
+      "salary": "n,",
+      "experience": "",
+      "qualification": "bsc",
+      "requirements": [
+        "MDCN license or a caregiving certificate"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Submit your application through the employer’s online recruitment portal.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-09-10",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Nurse-at-Gramaze-Healthcare?pid=78465",
+      "_source": "medicalworldnigeria"
     },
     {
       "job_title": "Pharmaceutical Detailing Representative",
@@ -26214,67 +26217,6 @@
       "_source": "jobsinnigeria"
     },
     {
-      "job_title": "Medical Laboratory Technician",
-      "company": "Zamfara State Primary Health Care Board",
-      "location": "Zamfara, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Medical Laboratory Scientist",
-      "salary": "",
-      "experience": "",
-      "qualification": "bsc",
-      "requirements": [
-        "National Diploma or Technician Certificate in Medical Laboratory Technology from an MLSCN‑recognized institution",
-        "Current annual practicing license issued by MLSCN",
-        "Nigerian citizen by birth",
-        "Valid National ID/NIN",
-        "Age: 18–40 years",
-        "Medically and physically fit",
-        "No criminal record; not dismissed from public service",
-        "Willingness to work in rural areas and be deployed anywhere in the state."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-11",
-      "deadline": "2026-08-13",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://jobsinnigeria.careers/jobs/medical-laboratory-technicians-zamfara-state-primary-health-care-board/",
-      "_source": "jobsinnigeria"
-    },
-    {
-      "job_title": "Nutrition Technician",
-      "company": "Zamfara State Primary Health Care Board",
-      "location": "Zamfara, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Other",
-      "salary": "",
-      "experience": "",
-      "qualification": "bsc",
-      "requirements": [
-        "National Diploma in Nutrition and Dietetics from an accredited institution",
-        "Nigerian citizen by birth",
-        "Valid National ID/NIN",
-        "Age: 18–40 years",
-        "Medically and physically fit",
-        "No criminal record; not dismissed from public service",
-        "Willingness to work in rural areas and be deployed anywhere in the state"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-11",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://jobsinnigeria.careers/jobs/nutrition-technicians-zamfara-state-primary-health-care-board/",
-      "_source": "jobsinnigeria"
-    },
-    {
       "job_title": "Community Health Extension Worker (CHEW)",
       "company": "JCP MAX Medical Diagnostics",
       "location": "Lagos, Nigeria",
@@ -31767,211 +31709,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/927608/patient-service-representative-at-emador-nigeria-i.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Quality & Infection Prevention & Control (IPC) Officer",
-      "company": "LIfeline Children's Hospital",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Other",
-      "salary": "",
-      "experience": "Minimum of 3 years' experience in Quality Management, Infection Prevention & Control, Patient Safety, Clinical Governance, or a similar role within a hospital.",
-      "qualification": "Bachelor's Degree in Nursing, Medical Laboratory Science, Pharmacy, Public Health, Medicine, or another relevant health-related discipline",
-      "requirements": [
-        "Sound knowledge of Infection Prevention & Control principles and quality improvement methodologies.",
-        "Experience conducting clinical and quality audits.",
-        "Strong report-writing, analytical, and presentation skills.",
-        "Proficiency in Microsoft Office (Excel, Word, and PowerPoint).",
-        "Professional certification or formal training in Infection Prevention & Control.",
-        "Certification or training in Healthcare Quality Improvement, Patient Safety, Lean Healthcare, Six Sigma, or ISO Internal Auditing.",
-        "Experience supporting healthcare accreditation or regulatory inspections.",
-        "Excellent communication and interpersonal skills."
-      ],
-      "responsibilities": [
-        "Coordinate the hospital's Quality Improvement and Infection Prevention & Control programmes.",
-        "Conduct routine quality, IPC, hand hygiene, environmental cleaning, and clinical documentation audits.",
-        "Monitor compliance with hospital policies, national guidelines, and international best practices.",
-        "Investigate incidents, conduct Root Cause Analyses (RCA), and monitor implementation of corrective and preventive actions.",
-        "Collect, analyze, and report quality and patient safety indicators.",
-        "Develop and review policies, SOPs, protocols, and quality improvement tools.",
-        "Plan and facilitate staff training on Quality Improvement, Patient Safety, and Infection Prevention & Control.",
-        "Conduct surveillance of healthcare-associated infections (HAIs) and monitor IPC compliance.",
-        "Support departmental quality improvement projects and performance monitoring.",
-        "Participate in risk assessments, patient safety initiatives, and accreditation activities.",
-        "Prepare monthly quality and IPC reports for management."
-      ],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-07-21",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/927352/quality-infection-prevention-control-ipc-officer-a.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Integrated Primary Healthcare Advisor",
-      "company": "Jhpiego Nigeria",
-      "location": "Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Public Health",
-      "salary": "Jhpiego offers competitive salaries and a comprehensive employee benefits package.",
-      "experience": "At least eight (8) years relevant experience in one or more of technical areas: maternal health, newborn health, child health, nutrition, immunization and malaria;",
-      "qualification": "MBBS/MD or Nursing or Midwifery degree plus a master’s degree in public health, Nursing or a related field or an advanced post graduate degree in a related field is essential;",
-      "requirements": [
-        "At least eight (8) years relevant experience in one or more of technical areas: maternal health, newborn health, child health, nutrition, immunization and malaria;",
-        "Experience in integrated PHC service delivery at health facilities and community;",
-        "Experience implementing programmes at the primary health care level is an advantage;",
-        "Familiarity with performance indicators in at least 2 technical areas",
-        "Familiarity with applying quality improvement methodologies to improve quality of primary services, including identifying and overcoming critical gaps and monitoring performance indicators to guide continuous improvement",
-        "Familiarity with Nigerian public and private sector health systems at the state, LGHA and community levels is highly desirable;",
-        "Knowledge of local culture and a deep understanding of the social, political and ethical issues surrounding the delivery of MNCH +NM and immunization, HIV, TB services;",
-        "High degree of proficiency in written and spoken English communication. Ability to speak local language relevant to state of operation;",
-        "Demonstrated experience managing stakeholders and building capacity at sub-national levels;",
-        "Demonstrated knowledge and proficiency delivering relevant IMNCH +NM and immunization training packages and supporting retention of health worker competencies (e.g. through mentoring, supervision)",
-        "Ability to function/work independently as well as part of a team."
-      ],
-      "responsibilities": [
-        "Provide technical guidance on and oversight of integrated primary health service and General hospital activities, including capacity building and mentoring at state, local government health authority (LGHA), facility, and community levels;",
-        "Provide ongoing technical assistance and capacity building to relevant state level MDAs and technical working groups such as with the State Primary Healthcare Development Agency (SPHCDA), the LGHA, Ward Development Committees (WDCs), local non-governmental organizations (NGOs) and PHCs to implement State strategies and plans that guide IMNCH+N, immunization and malaria.",
-        "Contribute to building the capacity of MTOTs, TOTs, relevant SPHCDA, LGHA and relevant HRH structures to use proven and sustainable skill building and learning approaches and quality improvement methodologies for the delivery of high-impact IMNCH +N, immunization and malaria HIV, TB interventions at the community level."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-07-21",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/927401/integrated-primary-healthcare-advisor-at-jhpiego-n.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Medical Secretary",
-      "company": "Onyibiz Consult",
-      "location": "Maryland, Lagos, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Other",
-      "salary": "N85,000 - N100,000 per month",
-      "experience": "as a medical secretary or similar administrative position",
-      "qualification": "High school diploma; an SSCE / GCE or NECO",
-      "requirements": [
-        "Proven experience as a medical secretary or similar administrative position",
-        "Knowledge of medical terminology, regulations, and medical office procedures; knowledge of medical coding is strongly desired",
-        "Experience processing insurance claims",
-        "Familiarity with basic bookkeeping",
-        "Knowledge of MS Office, databases and EHR systems",
-        "Outstanding communication skills",
-        "Patience and discretion",
-        "Organizational and multitasking skills"
-      ],
-      "responsibilities": [
-        "Receive and assist patients as needed",
-        "Type medical documents (e.g. physician dictations and patient charts)",
-        "Maintain detailed patient and medical records",
-        "Manage office communications (e.g., phone, correspondence)",
-        "Schedule medical appointments",
-        "Work with insurance companies to process claims",
-        "Process invoices, bills, and payments",
-        "Ensure confidentiality of sensitive information."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-07-21",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/927127/medical-secretary-at-onyibiz-consult.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Senior Malaria Technical Advisor",
-      "company": "Jhpiego Nigeria",
-      "location": "Abuja, Nigeria",
-      "job_type": "",
-      "job_category": "Public Health",
-      "salary": "n,",
-      "experience": "5",
-      "qualification": "rn",
-      "requirements": [
-        "Medical Degree (Doctor or Nurse) or Master’s Degree in Public Health.",
-        "Minimum of 8 years’ experience implementing malaria programs (community malaria or malaria in pregnancy).",
-        "At least 5 years’ experience managing large donor-funded projects (≥ $10M annually), including design and implementation of overseas health projects; experience in Malaria program in Africa, Nigeria preferred.",
-        "Certified “Master Trainer” with proven experience training health workers on malaria case management.",
-        "Demonstrate experience in capacity building at both individual and organizational levels.",
-        "Strong background in malaria service delivery at provincial, clinical, and community levels.",
-        "In-depth understanding of the Nigerian healthcare system, particularly the public health system; prior experience living and working in Nigeria preferred.",
-        "Familiarity with UNITAID management and reporting procedures.",
-        "Fluency in English (written and spoken)."
-      ],
-      "responsibilities": [
-        "Provide overall technical vision and guidance in the area of integrated service delivery models that combine malaria, MNCH, TB, and HIV screening across the antenatal, birth, postnatal, infant, and child health continuum.",
-        "Provide technical leadership, ensuring alignment with global and national policies, guidelines, and best practices.",
-        "Work with subnational institutions, networks, relevant NGOs and professional associations, and government bodies in Nigeria to ensure implementation of project activities.",
-        "Advise on national and global best practice examples and their potential replicability, as well as opportunities for knowledge exchange among country-based institutions and individuals.",
-        "Support the development and dissemination of technical standards, tools, and reports.",
-        "Collaborate with other project staff to implement all projects related to integrated service delivery models that combine malaria, MNCH, TB, and HIV screening across the antenatal, birth, postnatal, infant, and child health continuum.",
-        "Support project activities during the Annual World Malaria Day and biannual MNCH weeks."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-07-21",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/927132/senior-malaria-technical-advisor-at-jhpiego-nigeri.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Healthcare Provider Acquisition Officer (Field-Based)",
-      "company": "Helium Health",
-      "location": "Lagos, Nigeria",
-      "job_type": "",
-      "job_category": "Other",
-      "salary": "n,",
-      "experience": "for participating facilities",
-      "qualification": "Bachelor's Degree or equivalent qualification in any discipline",
-      "requirements": [
-        "Previous experience in field sales, healthcare sales, pharmaceutical sales, HMO marketing, business development, provider relations, or customer acquisition is an added advantage",
-        "Technical skills for basic reporting with the ability to troubleshoot issues and provide user support",
-        "Excellent communication and interpersonal skills with the ability to engage effectively with diverse communities",
-        "Ability to work independently and manage assigned territories effectively",
-        "Strong relationship-building skills",
-        "Comfortable engaging healthcare professionals and decision-makers",
-        "Comfortable working in a target-driven, field-based environment",
-        "Willingness to commute extensively within Lagos State",
-        "Good organizational and time management skills",
-        "Professional conduct, integrity, and a customer-focused attitude"
-      ],
-      "responsibilities": [
-        "Identify, prospect, and engage eligible private hospitals, maternity clinics, pharmacies, and laboratories within Lagos",
-        "Promote the Maternal Health Fund (MHF) and clearly communicate its benefits to prospective healthcare providers",
-        "Generate qualified leads and achieve assigned recruitment and onboarding targets",
-        "Build and maintain strong relationships with facility owners, Medical Directors, hospital administrators, pharmacists, laboratory managers, and other key decision-makers",
-        "Support interested facilities throughout the application and onboarding process, ensuring all required documentation is accurately completed and submitted",
-        "Coordinate facility verification and other onboarding activities with the MHF implementation team",
-        "Conduct facility presentations, sensitization sessions, and one-on-one engagements to increase participation in the program",
-        "Serve as the primary point of contact for participating facilities throughout the onboarding journey, responding promptly to enquiries and providing support where required",
-        "Maintain accurate records of facility visits, leads, applications, onboarding status, and recruitment activities",
-        "Submit timely reports on field activities, onboarding progress, challenges, and market feedback",
-        "Work closely with the MHF Operations Team to ensure a seamless onboarding experience for participating facilities",
-        "Perform any other duties required to support the successful recruitment and onboarding of healthcare providers"
-      ],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-07-21",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/926770/healthcare-provider-acquisition-officer-fieldbased.html",
       "_source": "hotnigerianjobs"
     }
   ]
