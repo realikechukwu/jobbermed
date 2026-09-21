@@ -1,15 +1,99 @@
 {
   "metadata": {
-    "extracted_at": "2026-09-20T08:55:35.158057",
+    "extracted_at": "2026-09-21T09:07:40.953992",
     "model": "gpt-4o-mini",
-    "total_processed": 1165,
-    "duplicates_removed": 202,
-    "skipped_old": 21,
+    "total_processed": 1048,
+    "duplicates_removed": 185,
+    "skipped_old": 14,
     "skipped_empty": 0,
     "errors": 0,
-    "openai_calls": 225
+    "openai_calls": 193
   },
   "jobs": [
+    {
+      "job_title": "Blistering Operator",
+      "company": "Sagar Vitaceuticals Nigeria Limited",
+      "location": "Makun, Sagamu, Ogun, Nigeria",
+      "job_type": "Full-time",
+      "job_category": "Other",
+      "salary": "N120,000 - N240,000 / month",
+      "experience": "3",
+      "qualification": "SSCE",
+      "requirements": [
+        "Must have minimum of SSCE",
+        "Must be currently working as Blistering operator in a recognized pharmaceutical company with minimum of 3 years experience."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-09-21",
+      "deadline": "2026-09-28",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/961439/blistering-operator-at-sagar-vitaceuticals-nigeria.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
+      "job_title": "Medical Administrative Assistant",
+      "company": "Placid Health Limited",
+      "location": "",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "₦150,000 - ₦200,000/month",
+      "experience": "2 - 5 years",
+      "qualification": "BSc",
+      "requirements": [
+        "BA/BSc/HND",
+        "2 - 5 years experience"
+      ],
+      "responsibilities": [
+        "Handle incoming and outgoing calls professionally and efficiently.",
+        "Serve as an initial point of contact for patients and other callers.",
+        "Respond to patient questions and direct clinical questions to the appropriate provider when necessary.",
+        "Maintain excellent telephone etiquette at all times.",
+        "Document relevant communications accurately in the appropriate system.",
+        "Monitor designated communication channels throughout scheduled working hours.",
+        "Schedule, confirm, reschedule, and cancel patient appointments.",
+        "Follow up with patients regarding upcoming appointments.",
+        "Monitor appointment schedules and identify scheduling conflicts.",
+        "Communicate appointment-related information to providers and clinical staff.",
+        "Enter and maintain accurate patient information in the Electronic Health Record (EHR).",
+        "Assist with insurance verification and related administrative processes.",
+        "Maintain accurate documentation of insurance and administrative activities."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-09-21",
+      "deadline": "2026-09-22",
+      "contact_email": "admin@myplacidhealth.com",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/medical-administrative-assistant-placid-health-limited-1",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Medical Officer",
+      "company": "T & S Hospital Ltd",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Doctor",
+      "salary": "NGN450,000 - NGN500,000 / monthly",
+      "experience": "",
+      "qualification": "",
+      "requirements": [],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-09-20",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/medical-officer-1876",
+      "_source": "medlocum"
+    },
     {
       "job_title": "Hospital cleaners",
       "company": "Medical Locum Jobs",
@@ -2773,6 +2857,32 @@
       "_source": "jobsinnigeria"
     },
     {
+      "job_title": "Medical Officer",
+      "company": "Federal College of Education",
+      "location": "Yola, Adamawa",
+      "job_type": "Permanent",
+      "job_category": "Doctor",
+      "salary": "List of Publications (where applicable)",
+      "experience": "1 year post registration cognate experience",
+      "qualification": "BSc",
+      "requirements": [
+        "Good Degree in Medicine from a recognized institution",
+        "Registrable with the Medical and Dental Council of Nigeria (MDCN)",
+        "NYSC discharge certificate"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Email the address shown on the original listing.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-09-17",
+      "deadline": "2026-10-08",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Medical-Officer-at-Federal-College-of-Education-Yola?pid=78507",
+      "_source": "medicalworldnigeria"
+    },
+    {
       "job_title": "Account Executive Officer",
       "company": "Fortics Lifecare Limited",
       "location": "Agric, Ikorodu, Lagos, Nigeria",
@@ -3033,6 +3143,40 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/960325/assistant-manager-regulatory-affairs-at-zamiva-tra.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
+      "job_title": "Superintendent Pharmacist",
+      "company": "TNL Pharmaceutical Company (2 Openings)",
+      "location": "Abuja, Nasarawa, FCT, Nigeria",
+      "job_type": "Full-time",
+      "job_category": "Pharmacist",
+      "salary": "N,",
+      "experience": "3–5 years",
+      "qualification": "Bachelor of Pharmacy (B.Pharm) or Doctor of Pharmacy (Pharm.D)",
+      "requirements": [
+        "Current PCN license and registration",
+        "Strong knowledge of pharmaceutical regulations and compliance requirements",
+        "Excellent leadership, communication, and organizational skills"
+      ],
+      "responsibilities": [
+        "Oversee pharmaceutical operations in line with PCN, NAFDAC, and other regulatory requirements",
+        "Ensure compliance with all applicable laws, regulations, and professional standards",
+        "Supervise the storage, distribution, and handling of pharmaceutical products",
+        "Maintain all required licenses, permits, and regulatory documentation",
+        "Liaise with regulatory agencies during inspections and audits",
+        "Provide professional guidance and supervision to pharmacy personnel",
+        "Ensure the implementation of quality and safety standards"
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites).",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-09-17",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/960265/superintendent-pharmacist-at-tnl-pharmaceutical-co.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -3909,40 +4053,6 @@
       "_source": "hotnigerianjobs"
     },
     {
-      "job_title": "Chief Operations Officer",
-      "company": "Capitol Hill Hospitals",
-      "location": "Warri, Delta, Nigeria",
-      "job_type": "",
-      "job_category": "Healthcare Management",
-      "salary": "n",
-      "experience": "7 - 10 years",
-      "qualification": "Bachelor's / Master's Degree",
-      "requirements": [],
-      "responsibilities": [
-        "Provide strategic and operational leadership across the organisation.",
-        "Oversee day-to-day operations and ensure efficient delivery of healthcare and support services.",
-        "Develop and implement operational strategies, policies, and performance standards.",
-        "Drive organisational growth, efficiency, profitability, and service excellence.",
-        "Establish and monitor departmental KPIs and ensure accountability for results.",
-        "Lead and coordinate departmental heads towards the achievement of organisational objectives.",
-        "Identify operational risks and implement effective solutions.",
-        "Ensure compliance with healthcare regulations, quality standards, and organisational policies.",
-        "Analyse operational and business data to support informed management decisions.",
-        "Promote a culture of accountability, teamwork, innovation, and continuous improvement.",
-        "Work closely with the Managing Director and leadership team to execute the organisation's strategic vision."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-17",
-      "deadline": "2026-09-20",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/959984/chief-operation-officer-at-capitol-hill-hospitals.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
       "job_title": "Medical Aesthetician",
       "company": "Khadasha Innovations Africa",
       "location": "Lagos, Nigeria",
@@ -4344,45 +4454,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.myjobmag.com/job/consultant-psychiatrist-the-african-medical-centre-of-excellence-amce",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Consultant Interventional Cardiologist",
-      "company": "The African Medical Centre of Excellence (AMCE)",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "5 years",
-      "qualification": "BSc",
-      "requirements": [
-        "Medical Degree (MBBS, MBBCh, MD) from a recognized medical school.",
-        "Completed Fellowship or Residency in Cardiology from a reputable institution.",
-        "Valid medical license."
-      ],
-      "responsibilities": [
-        "Take leadership in the explanation of procedures and diagnostic results to patients.",
-        "Take ownership of approving patient discharges, follow-up plans, and medical reports.",
-        "Take ownership of collaboration with colleagues to deliver a high-quality, timely service and work towards meeting the AMCE’s and departmental objectives.",
-        "Provide leadership and training for staff in relation to interventional cardiology.",
-        "Discuss the risks and benefits associated with any potential interventional procedure and how it would benefit the patient.",
-        "Participate in clinical research to develop new interventional cardiology techniques for treating disease.",
-        "Assist in the review of current policies and procedures relating to interventional cardiology, offering advice on new practices that could be implemented within the department.",
-        "Develop and implement strategic plans to improve patient outcomes.",
-        "Interpret complex test results, using information to provide diagnoses and treatment options to patients and other healthcare professionals.",
-        "Explain to patients how they can prepare for any procedures that are to be carried out.",
-        "Ensure correct governance arrangements, including the management of finance and regulatory activities where appropriate.",
-        "Assist in monitoring resource utilisation, supplies, and expenses, ensuring compliance with organisational parameters.",
-        "Ensure personal and departmental compliance with applicable statutory guidance, carrying out practices that meet statutory regulations and guidelines."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-09-17",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/consultant-interventional-cardiologist-the-african-medical-centre-of-excellence-amce-2",
       "_source": "myjobmag"
     },
     {
@@ -4888,34 +4959,6 @@
       "_source": "hotnigerianjobs"
     },
     {
-      "job_title": "Pharmacy Technician",
-      "company": "BetaCare Multi-Specialist Hospital Limited",
-      "location": "Gunduwawa, Kano, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Pharmacist",
-      "salary": "",
-      "experience": "appropriate to the position.",
-      "qualification": "relevant professional qualifications and experience appropriate to the position.",
-      "requirements": [
-        "professionalism",
-        "good communication skills",
-        "teamwork",
-        "integrity",
-        "ability to work effectively in a healthcare environment"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-16",
-      "deadline": "2026-09-20",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/959503/pharmacy-technician-at-betacare-multispecialist-ho.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
       "job_title": "HR Officer",
       "company": "Elizabeth Maddeux Limited",
       "location": "Egbeda, Lagos, Nigeria",
@@ -5133,31 +5176,6 @@
       "_source": "hotnigerianjobs"
     },
     {
-      "job_title": "Registered Midwife",
-      "company": "BetaCare Multi-Specialist Hospital Limited",
-      "location": "Gunduwawa, Kano, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "",
-      "experience": "appropriate to the position.",
-      "qualification": "relevant professional qualifications and experience appropriate to the position",
-      "requirements": [
-        "Candidates should possess a relevant professional qualifications and experience appropriate to the position.",
-        "Candidates must demonstrate professionalism, good communication skills, teamwork, integrity and the ability to work effectively in a healthcare environment."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-16",
-      "deadline": "2026-09-20",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/959500/registered-midwives-at-betacare-multispecialist-ho.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
       "job_title": "Histopathology Scientist",
       "company": "Clinix Healthcare Nigeria",
       "location": "Ilupeju, Lagos, Nigeria",
@@ -5192,31 +5210,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/959909/histopathology-scientist-at-at-clinix-healthcare-n.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Medical Lab Technician",
-      "company": "BetaCare Multi-Specialist Hospital Limited",
-      "location": "Gunduwawa, Kano, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Medical Laboratory Scientist",
-      "salary": "",
-      "experience": "appropriate to the position.",
-      "qualification": "relevant professional qualifications and experience appropriate to the position.",
-      "requirements": [
-        "Candidates should possess relevant professional qualifications and experience appropriate to the position.",
-        "Candidates must demonstrate professionalism, good communication skills, teamwork, integrity, and the ability to work effectively in a healthcare environment."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-16",
-      "deadline": "2026-09-20",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/959672/medical-lab-technician-at-betacare-multispecialist.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -5306,31 +5299,6 @@
       "_source": "hotnigerianjobs"
     },
     {
-      "job_title": "Health Information Technician",
-      "company": "BetaCare Multi-Specialist Hospital Limited",
-      "location": "Gunduwawa, Kano, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Other",
-      "salary": "",
-      "experience": "appropriate to the position.",
-      "qualification": "",
-      "requirements": [
-        "Candidates should possess relevant professional qualifications and experience appropriate to the position.",
-        "Candidates must demonstrate professionalism, good communication skills, teamwork, integrity, and the ability to work effectively in a healthcare environment."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-16",
-      "deadline": "2026-09-20",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/959671/health-information-technician-at-betacare-multispe.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
       "job_title": "Pediatrics Clinical Services Officer (Short-Term Hire)",
       "company": "an Indigenous Non-profit and Non-governmental Organization",
       "location": "Kogi, Nigeria",
@@ -5363,31 +5331,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/959519/pediatrics-clinical-services-officer-shortterm-hir.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Optometrist",
-      "company": "BetaCare Multi-Specialist Hospital Limited",
-      "location": "Gunduwawa, Kano, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Allied Health",
-      "salary": "",
-      "experience": "appropriate to the position.",
-      "qualification": "relevant professional qualifications",
-      "requirements": [
-        "Candidates should possess a relevant professional qualifications and experience appropriate to the position.",
-        "Candidate must demonstrate professionalism, good communication skills, teamwork, intergrity and the ability to work effectively in an healthcare environment."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-16",
-      "deadline": "2026-09-20",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/959501/optometrist-at-betacare-multispecialist-hospital-l.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -7359,133 +7302,6 @@
     },
     {
       "job_title": "Consultant Cardiologist",
-      "company": "Lily Hospitals Limited",
-      "location": "Warri, Delta, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "package",
-      "experience": "3",
-      "qualification": "MBBS or equivalent medical qualification",
-      "requirements": [
-        "Full registration and valid practising licence with the Medical and Dental Council of Nigeria (MDCN)",
-        "Fellowship in Cardiology/Internal Medicine (FWACP, FMCP, FWACP Cardiology, or equivalent recognized qualification)",
-        "Minimum 3 years’ post-fellowship experience as a Consultant Cardiologist",
-        "Demonstrable experience in the diagnosis and management of complex cardiovascular conditions and cardiac emergencies",
-        "Experience in echocardiography and interpretation of ECG and other cardiovascular investigations is desirable",
-        "Strong clinical judgement, communication, leadership, and teamwork skills",
-        "Experience in clinical audit, quality improvement, teaching, and research is desirable",
-        "Ability to work effectively under pressure while maintaining a high standard of patient-centred care"
-      ],
-      "responsibilities": [
-        "Conduct comprehensive cardiovascular assessments, including history taking, physical examination, and risk assessment.",
-        "Diagnose and manage a wide range of cardiovascular conditions, including hypertension, heart failure, coronary artery disease, arrhythmias, and valvular heart disease.",
-        "Perform and interpret relevant cardiac investigations, including ECG, echocardiography, Holter monitoring, and other appropriate diagnostic tests.",
-        "Develop and implement individualized treatment plans in line with current clinical guidelines and best practices.",
-        "Manage acute and emergency cardiac presentations, including acute coronary syndromes, arrhythmias, and cardiac emergencies.",
-        "Provide inpatient and outpatient cardiology consultations and follow-up care.",
-        "Collaborate with other medical and surgical specialists in the multidisciplinary management of patients.",
-        "Supervise and mentor junior doctors, medical officers, and other clinical staff.",
-        "Participate in clinical audits, quality improvement programmes, and patient-safety initiatives.",
-        "Maintain accurate, comprehensive, and timely clinical documentation and medical records.",
-        "Promote preventive cardiology through patient education, cardiovascular risk-factor modification, and lifestyle counselling.",
-        "Keep abreast of current developments, guidelines, and best practices in cardiology and cardiovascular medicine.",
-        "Participate in clinical teaching, research, and continuous professional development.",
-        "Contribute to the development and implementation of departmental protocols and clinical pathways.",
-        "Participate in on-call duties and departmental rosters as required."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-14",
-      "deadline": "2026-09-20",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/958356/consultant-cardiologist-at-lily-hospitals-limited.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Consultant Anaesthesiologist",
-      "company": "Lily Hospitals Limited",
-      "location": "Warri, Delta, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "package",
-      "experience": "Minimum of 3 years’ post-fellowship experience as a Consultant Anaesthesiologist",
-      "qualification": "MBBS or equivalent qualification",
-      "requirements": [
-        "Full registration and valid practising licence with the Medical and Dental Council of Nigeria (MDCN)",
-        "Fellowship in Anaesthesia (FMCA/FWACS) or equivalent recognized qualification",
-        "Demonstrable experience managing complex anaesthetic and emergency cases",
-        "Strong clinical judgement, communication, leadership, and teamwork skills",
-        "Experience in clinical audit, quality improvement, teaching, and research is desirable",
-        "Ability to work effectively under pressure while maintaining a high standard of patient care"
-      ],
-      "responsibilities": [
-        "Conduct pre-operative assessment and develop appropriate anaesthetic plans.",
-        "Administer and manage general and regional anaesthesia.",
-        "Provide intra-operative monitoring and post-operative care.",
-        "Manage emergency cases, resuscitation, and critical care support.",
-        "Provide anaesthetic support across surgical specialties, including Obstetrics & Gynaecology and Paediatrics.",
-        "Supervise and mentor junior doctors and other anaesthetic staff.",
-        "Lead and participate in clinical audits, quality improvement, and patient-safety initiatives.",
-        "Ensure anaesthetic equipment is functional, safe, and properly maintained.",
-        "Maintain accurate clinical documentation and comply with professional and regulatory standards.",
-        "Keep abreast of current developments and best practices in anaesthesia and intensive care.",
-        "Participate in clinical research, teaching, and continuous professional development.",
-        "Participate in on-call duties and departmental rosters."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-14",
-      "deadline": "2026-09-20",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/958343/consultant-anaesthesiologist-at-lily-hospitals-lim.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Consultant Ophthalmologist",
-      "company": "Lily Hospitals Limited",
-      "location": "Warri, Delta, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "package + incentives",
-      "experience": "3 to 5 years of relevant work experience, preferably in the Health sector",
-      "qualification": "Minimum academic qualification of a Fellowship degree at either West African College of Surgeons or National Postgraduate Medical College or relevant qualification.",
-      "requirements": [
-        "Membership of the Nigeria Medical Association",
-        "Member of the Ophthalmology Society of Nigeria, both local and national",
-        "Knowledge of the Microsoft Office package",
-        "Outstanding communication (oral and written), interpersonal, and people management skills",
-        "Possess a high degree of accuracy and attention to detail."
-      ],
-      "responsibilities": [
-        "Renew glasses if necessary",
-        "Listen and respond immediately with an appropriate level of concern to all customer issues",
-        "Educate and counsel patients on contact lens care, visual hygiene, lighting arrangements, and safety factors",
-        "Communicate with patients regarding surgeries, follow-up care, tests, and carry out procedures",
-        "Coordinate the delivery of eyewear products to customers according to specified guidelines",
-        "Educate patients on how to use the various eyewear, especially contact lenses",
-        "Advise patients on lens and frame selections",
-        "Ensuring of maintenance of the equipment",
-        "Keeping stock of unit equipment and consumables"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-14",
-      "deadline": "2026-09-20",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/958334/consultant-ophtalmologist-at-lily-hospitals-limite.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Consultant Cardiologist",
       "company": "Bergstein Hospital",
       "location": "Ikorodu, Lagos, Nigeria",
       "job_type": "",
@@ -7807,47 +7623,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/957474/dermatologist-at-a-reputable-medical-organization.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Midwife",
-      "company": "Premiere Urgence Internationale (PUI)",
-      "location": "Gusau, Zamfara, Nigeria",
-      "job_type": "Contract",
-      "job_category": "Nurse",
-      "salary": "n,",
-      "experience": "",
-      "qualification": "rn",
-      "requirements": [],
-      "responsibilities": [
-        "Prepare all the materials and ensure that everything is ready before starting the activities.",
-        "Perform antenatal consultations including screening tests according to the protocols, detect and mention all the risk factors.",
-        "Conduct delivery according to the protocols, precautions, hygiene standards.",
-        "Perform postnatal consultations during the 6 weeks following the delivery, give appropriate treatment and refers to secondary care when needed.",
-        "Perform family planning consultations and counseling according to protocol.",
-        "Give systematic prophylactic treatments to pregnant women.",
-        "Verify the tetanus vaccination of each pregnant woman.",
-        "Manage SRH emergency cases with the assistance of the Health supervisor according to PUI protocols and regulation.",
-        "Identify Sexually Gender-Based Violence victims and collaborate with the medical team for treatment.",
-        "Explain clearly the diagnosis and treatment to the patient and make sure that the patients comply with the treatment.",
-        "Request for a 2nd evaluation of the patient when needed.",
-        "Provide individual health promotion during consultations.",
-        "Give health education sessions to the patients in the waiting areas.",
-        "Execute any action requested by the PM, Health supervisor as part of the outbreak response plan.",
-        "Actively participate in the good cohesion and coordination of the team.",
-        "Record on a readable manner the health status and medical prescription.",
-        "Participate in the follow-up of waste management according to the waste management procedures.",
-        "Participate in any other activities such as vaccination, survey according to the needs and as directed."
-      ],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-14",
-      "deadline": "2026-09-20",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/958130/midwife-at-premiere-urgence-internationale-pui.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -9122,61 +8897,6 @@
       "_source": "hotnigerianjobs"
     },
     {
-      "job_title": "Assistant Quality Assurance Manager",
-      "company": "Sagar Vitaceuticals Nigeria Limited",
-      "location": "Makun City, Sagamu - Ogun, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Healthcare Management",
-      "salary": "N250,000 - N300,000 per month",
-      "experience": "",
-      "qualification": "Candidates should possess relevant qualifications and experiences.",
-      "requirements": [],
-      "responsibilities": [
-        "Establishing quality Standard and System",
-        "Data-Driven Process Improvement",
-        "Reducing Scraps, defects, rework and risk",
-        "Ensuring Compliance and Regulatory Alignment",
-        "Leading teams and trining employees",
-        "Acting as customer advocates",
-        "Reporting and startegic quality planning."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-11",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/956897/assistant-quality-assurance-manager-at-sagar-vitac.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Capsule Filling Operator",
-      "company": "Sagar Vitaceuticals Nigeria Limited",
-      "location": "Makun City, Sagamu - Ogun, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Other",
-      "salary": "N120,000 - N240,000 per month",
-      "experience": "",
-      "qualification": "",
-      "requirements": [
-        "Candidates should be able to operate new machine",
-        "Must be an experienced capsule filling operator"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-11",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/956884/capsule-filling-operators-at-sagar-vitaceuticals-n.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
       "job_title": "Ophthalmic Resident",
       "company": "Eye Foundation Hospital",
       "location": "Lagos, Abuja, Ogun, Nigeria",
@@ -9591,38 +9311,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/icu-nurse-lead-1796",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Registered Nurse (Multiple Specialties)",
-      "company": "Crystal Thorpe Limited",
-      "location": "Gwagwalada, Abuja, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Nurse",
-      "salary": "Competitive (Based on experience)",
-      "experience": "1–2 years of post-qualification clinical experience",
-      "qualification": "B.Sc . Nursing or Registered Nurse (RN) diploma from an accredited nursing institution",
-      "requirements": [
-        "Current registration and valid practicing license with the Nursing and Midwifery Council of Nigeria (NMCN)",
-        "Strong IT literacy",
-        "Clinical judgment and ability to work under pressure",
-        "Exceptional interpersonal, organizational, and patient-relation skills"
-      ],
-      "responsibilities": [
-        "Provide high-quality clinical care, patient monitoring, and nursing interventions",
-        "Maintain strict adherence to medical safety protocols and patient hygiene standards",
-        "Operate hospital IT tools, medical record systems, and diagnostic equipment",
-        "Deliver polite, patient, and empathetic patient communication to ensure a positive patient experience",
-        "Work collaboratively with doctors, specialists, and healthcare teams under fast-paced clinical conditions"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-09-10",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/registered-nurse-multiple-specialties-1795",
       "_source": "medlocum"
     },
     {
@@ -10300,50 +9988,6 @@
       "_source": "hotnigerianjobs"
     },
     {
-      "job_title": "Home Care Community Health Extension Worker (CHEW)",
-      "company": "Lusso Care",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Public Health",
-      "salary": "N80,000 - N130,000 monthly",
-      "experience": "1–2 years",
-      "qualification": "ond",
-      "requirements": [
-        "1–2 years' experience as a caregiver, nursing assistant, healthcare assistant, or support worker",
-        "Healthcare-related training or certification is an added advantage",
-        "Experience caring for elderly clients, diabetic patients, stroke patients, dementia patients, post-operative patients, or individuals with disabilities",
-        "Ability to communicate clearly in English",
-        "Compassionate, patient, trustworthy, and dependable",
-        "Physically fit and able to assist clients safely",
-        "Excellent interpersonal and observation skills",
-        "Willingness to work live-in, live-out, day, night, weekend, or rotational shifts as assigned"
-      ],
-      "responsibilities": [
-        "Assist clients with activities of daily living (bathing, dressing, grooming, toileting, and feeding)",
-        "Support safe mobility, transfers, and ambulation",
-        "Monitor and report changes in clients' health or behaviour",
-        "Record and maintain accurate daily care notes",
-        "Assist with medication reminders (where applicable)",
-        "Prepare light meals according to clients' dietary requirements",
-        "Maintain a clean, safe, and comfortable environment",
-        "Provide companionship and emotional support",
-        "Accompany clients to appointments when required",
-        "Follow each client's individualized care plan",
-        "Adhere strictly to infection prevention and control protocols",
-        "Maintain professionalism, confidentiality, and respect for clients at all times"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-10",
-      "deadline": "2026-09-20",
-      "contact_email": "",
-      "contact_phone": "07039101148",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/956670/home-care-community-health-extension-workers-chew.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
       "job_title": "Home Care Supervisor (Registered Nurse)",
       "company": "Lusso Care",
       "location": "Lagos, Nigeria",
@@ -10483,74 +10127,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/956603/radiography-intern-at-university-of-benin-teaching.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Medical Laboratory Technician",
-      "company": "Solid Rock Hospital",
-      "location": "Ojodu Berger, Lagos, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Medical Laboratory Scientist",
-      "salary": "",
-      "experience": "2 - 10 years",
-      "qualification": "Diploma in Medical Laboratory Technology (MLT) from an accredited School of Health Technology",
-      "requirements": [
-        "Up-to-date registration / practicing license",
-        "Computer literacy",
-        "Excellent Communication and Customer Service Skills",
-        "Caring, Compassionate, Dedicated and Professional",
-        "Ability to Work Under Pressure",
-        "Must reside within Ojodu Berger and its environs."
-      ],
-      "responsibilities": [
-        "Perform phlebotomy on adults and children",
-        "Provide assistance in various functions of the laboratory",
-        "Maintain and update laboratory checklists regularly",
-        "Operate and manage automatic hematology and chemistry analyzers, thermometers, balances, and other lab apparatus.",
-        "Label, sort and record specimens and organize all information into the computer system",
-        "Proficiency in performing laboratory inventory.",
-        "Use a Lab Information Management System for specimen tracking, results entry, and reporting.",
-        "Enhance laboratory services and laboratory reputation."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-10",
-      "deadline": "2026-09-20",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/956554/medical-laboratory-technician-at-solid-rock-hospit.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Head of Hospital",
-      "company": "Fortics Lifecare Limited",
-      "location": "Ikorudu, Lagos, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Healthcare Management",
-      "salary": "N200,000 - N250,000 Monthly",
-      "experience": "Regulatory & Compliance Oversight",
-      "qualification": "ond",
-      "requirements": [],
-      "responsibilities": [
-        "Ensure efficient day-to-day operations",
-        "Maintain compliance with all regulatory and internal standards",
-        "Deliver revenue and performance targets for the centre",
-        "Oversee the day-to-day operations of the centre",
-        "Maintain high standards of patient/customer experience",
-        "Act as the HR point person at the centre",
-        "Act as the finance coordination point at the centre"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-10",
-      "deadline": "2026-09-20",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/956792/head-of-hospital-at-fortics-lifecare-limited.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -11358,6 +10934,63 @@
       "_source": "hotnigerianjobs"
     },
     {
+      "job_title": "Nurse",
+      "company": "Gramaze Healthcare (4 Openings)",
+      "location": "Lagos, Abuja, Enugu, Nigeria",
+      "job_type": "Full-time",
+      "job_category": "Nurse",
+      "salary": "",
+      "experience": "",
+      "qualification": "MDCN",
+      "requirements": [
+        "MDCN license or a caregiving certificate."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Submit your application through the employer’s online recruitment portal.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-09-09",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/956089/nurse-at-gramaze-healthcare-4-openings.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
+      "job_title": "Registered Nurse (Multiple Specialties)",
+      "company": "Crystal Thorpe Limited",
+      "location": "Gwagwalada, Abuja, Nigeria",
+      "job_type": "Full-Time (Onsite)",
+      "job_category": "Nurse",
+      "salary": "Competitive (Based on experience)",
+      "experience": "2",
+      "qualification": "B.Sc. Nursing or Registered Nurse (RN) diploma",
+      "requirements": [
+        "Current registration and valid practicing license with the Nursing and Midwifery Council of Nigeria (NMCN)",
+        "1–2 years of post-qualification clinical experience",
+        "Strong IT literacy",
+        "Exceptional interpersonal, organizational, and patient-relation skills"
+      ],
+      "responsibilities": [
+        "Provide high-quality clinical care, patient monitoring, and nursing interventions",
+        "Maintain strict adherence to medical safety protocols and patient hygiene standards",
+        "Operate hospital IT tools, medical record systems, and diagnostic equipment",
+        "Deliver polite, patient, and empathetic patient communication to ensure a positive patient experience",
+        "Work collaboratively with doctors, specialists, and healthcare teams under fast-paced clinical conditions"
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites).",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-09-09",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/956081/registered-nurse-multiple-specialties-at-crystal-t.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
       "job_title": "Registered Nurse",
       "company": "Gramaze Healthcare",
       "location": "Lagos, Abuja, Enugu, Nigeria",
@@ -11586,42 +11219,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/955935/sonographer-at-mecure-healthcare-limited-mhl.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Sonographer",
-      "company": "Ekris Bio Health Foods Nigeria Limited",
-      "location": "Ado, Abuja, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Allied Health",
-      "salary": "N150,000,000 monthly",
-      "experience": "Minimum of 2 years’ relevant work experience as a Sonographer",
-      "qualification": "Relevant qualification/certification in Sonography or Medical Imaging",
-      "requirements": [
-        "Strong knowledge of ultrasound procedures and equipment.",
-        "Excellent attention to detail and patient-care skills.",
-        "Good communication and interpersonal skills.",
-        "Ability to work professionally and efficiently in a clinical environment.",
-        "Applicants must reside within Ado, Mararaba, Nyanya, Karu, or Nasarawa."
-      ],
-      "responsibilities": [
-        "Perform ultrasound examinations according to clinical requests.",
-        "Operate and maintain ultrasound equipment appropriately.",
-        "Obtain clear and accurate diagnostic images.",
-        "Ensure patients are properly prepared and comfortable during procedures.",
-        "Maintain accurate patient and examination records.",
-        "Work closely with doctors and other healthcare professionals.",
-        "Observe all applicable safety, hygiene, and professional standards."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-09",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/955891/sonographer-at-ekris-bio-health-foods-nigeria-limi.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -13118,32 +12715,6 @@
       "_source": "hotnigerianjobs"
     },
     {
-      "job_title": "Dental Surgeon",
-      "company": "Garki Hospital Abuja",
-      "location": "Abuja (FCT), Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Dentist",
-      "salary": "",
-      "experience": "Minimum of two (2) years post NYSC experience",
-      "qualification": "Bachelor",
-      "requirements": [
-        "BDS (Bachelor of Dental Surgery) degree from any recognized University within or outside Nigeria",
-        "Licensed by the Medical and Dental Council of Nigeria (MDCN)",
-        "Current practising license"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-08",
-      "deadline": "2026-09-22",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/954435/dental-surgeon-at-garki-hospital-abuja.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
       "job_title": "Dental Therapist",
       "company": "Garki Hospital Abuja",
       "location": "Abuja (FCT), Nigeria",
@@ -13661,83 +13232,6 @@
       "_source": "hotnigerianjobs"
     },
     {
-      "job_title": "Care Team Lead (Doctor)",
-      "company": "Fortics Lifecare Limited",
-      "location": "Agric, Ikorodu - Lagos, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "N500,000 - N700,000 Monthly",
-      "experience": "Minimum of 3 years of post-clinical experience",
-      "qualification": "MBBS from a recognised institution",
-      "requirements": [
-        "Valid and current medical licence",
-        "Previous leadership or supervisory experience is an advantage",
-        "Strong clinical, leadership, communication, and decision-making skills",
-        "Ability to work effectively in a growing healthcare environment",
-        "Applicants residing within Mile 12, Agric, Ikorodu, and surrounding areas are strongly encouraged to apply."
-      ],
-      "responsibilities": [
-        "Provide clinical leadership and supervision to the Care Team",
-        "Oversee the quality and safety of patient care",
-        "Coordinate doctors, nurses, and other clinical personnel",
-        "Ensure compliance with clinical protocols, hospital policies, and professional standards",
-        "Monitor patient management and clinical documentation",
-        "Support clinical audits, quality improvement, and patient safety initiatives",
-        "Supervise and mentor clinical team members",
-        "Liaise with management on clinical operations and service delivery",
-        "Handle clinical escalations and ensure timely resolution of patient-care issues",
-        "Promote a culture of professionalism, teamwork, accountability, and excellent patient experience."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-07",
-      "deadline": "2026-09-20",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/953904/care-team-lead-doctor-at-fortics-lifecare-limited.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Medical Officer",
-      "company": "Fortics Lifecare Limited",
-      "location": "Agric, Ikorodu, Lagos, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "N350,000 – N450,000 Monthly",
-      "experience": "2–3 years",
-      "qualification": "MBBS",
-      "requirements": [
-        "Valid and current medical licence",
-        "Strong clinical reasoning and decision-making skills",
-        "Excellent communication and patient-management skills",
-        "Ability to work effectively in a team environment"
-      ],
-      "responsibilities": [
-        "Conduct patient consultations and clinical assessments.",
-        "Diagnose and manage patients appropriately.",
-        "Request and interpret relevant investigations.",
-        "Prescribe appropriate medications and treatments.",
-        "Maintain accurate and complete patient documentation.",
-        "Refer patients when specialist intervention is required.",
-        "Participate in emergency and clinical care activities.",
-        "Collaborate effectively with nurses, laboratory, pharmacy, and other healthcare teams.",
-        "Comply with clinical protocols and hospital policies.",
-        "Support quality improvement and patient safety initiatives."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-07",
-      "deadline": "2026-09-20",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/953810/medical-officer-at-fortics-lifecare-limited.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
       "job_title": "Optometrist",
       "company": "Eye Foundation Hospital",
       "location": "Ijebu-Imushin, Ogun, Nigeria",
@@ -13915,84 +13409,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/953855/oss-triage-nurse-specialist-at-achieving-health-ni.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Nurse / Midwife",
-      "company": "a Private Hospital - UHR Consult Limited",
-      "location": "Asaba, Delta, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "n,",
-      "experience": "",
-      "qualification": "RN and RM or any other specialty with Valid Nursing Practicing License",
-      "requirements": [
-        "Computer literacy",
-        "Good organizational skills",
-        "Good interpersonal and communication skills",
-        "Attention to details",
-        "Ability to handle stress and crisis situations"
-      ],
-      "responsibilities": [
-        "Implementing nursing care plan for patients in designated work station",
-        "Assist medical team in patients diagnosis and treatment",
-        "Performing procedures such as admission & discharge, taking histories, monitoring vital signs with necessary follow up, wound dressings, administering medication, IV placement, insertions and providing other assistance needed",
-        "Prompt incidence reporting and management of patients grievances",
-        "Admission and discharge of patients",
-        "Maintain complete and accurate documentation of patients encounters",
-        "Maintaining a clean and safe environment always",
-        "Comply with the use of Standard Operating Procedures and policies",
-        "Complete and accurate documentation",
-        "Incidence reporting",
-        "Adherence to quality standards"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-07",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/953891/nurse-midwife-at-a-private-hospital-uhr-consult-li.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Nurse",
-      "company": "Fortics Lifecare Limited",
-      "location": "Ikorodu, Lagos, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "N100,000 - N150,000 Monthly",
-      "experience": "Minimum of 2 years post-clinical experience",
-      "qualification": "ond",
-      "requirements": [
-        "CHEW or Registered Nurse (RN) qualification",
-        "Valid professional licence where applicable",
-        "Good clinical, communication, and interpersonal skills",
-        "Compassionate, disciplined, and patient-focused"
-      ],
-      "responsibilities": [
-        "Provide safe and compassionate patient care.",
-        "Assess and monitor patients' conditions.",
-        "Administer medications and treatments as prescribed.",
-        "Assist doctors during consultations and procedures.",
-        "Maintain accurate nursing and patient records.",
-        "Monitor vital signs and promptly report changes in patient condition.",
-        "Educate patients and relatives on appropriate care.",
-        "Maintain infection prevention and control standards.",
-        "Ensure proper handover and continuity of care.",
-        "Maintain a clean, safe, and professional clinical environment."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-07",
-      "deadline": "2026-09-20",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/953825/nurse-at-fortics-lifecare-limited.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -14183,44 +13599,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/953854/medical-laboratory-scientist-hybrid-at-excare-grou.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Laboratory Technician",
-      "company": "Fortics Lifecare Limited",
-      "location": "Agric, Ikorodu, Lagos, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Medical Laboratory Scientist",
-      "salary": "N150,000 – N170,000 Monthly",
-      "experience": "3–5 years post-clinical experience",
-      "qualification": "HND in Medical Laboratory Technology or relevant qualification.",
-      "requirements": [
-        "HND in Medical Laboratory Technology or relevant qualification.",
-        "3–5 years post-clinical experience.",
-        "Valid professional registration/licence where applicable.",
-        "Good knowledge of laboratory procedures and quality"
-      ],
-      "responsibilities": [
-        "Collect, receive, label, and process patient samples appropriately.",
-        "Perform laboratory investigations according to approved procedures.",
-        "Operate and maintain laboratory equipment.",
-        "Ensure accurate and timely laboratory results.",
-        "Maintain proper laboratory records and documentation.",
-        "Follow infection prevention, biosafety, and quality control procedures.",
-        "Monitor laboratory supplies and report shortages.",
-        "Ensure proper handling and storage of samples and reagents.",
-        "Support internal quality assurance activities.",
-        "Maintain a clean, safe, and organised laboratory environment."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-07",
-      "deadline": "2026-09-20",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/953796/laboratory-technician-at-fortics-lifecare-limited.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -14592,34 +13970,6 @@
       "_source": "hotnigerianjobs"
     },
     {
-      "job_title": "Pharmacist",
-      "company": "a Pharmacy and Store - Extramileage Consults Limited",
-      "location": "Ibadan, Oyo, Nigeria",
-      "job_type": "",
-      "job_category": "Pharmacist",
-      "salary": "N180,000 - N200,000 (+ Performance-Based incentives)",
-      "experience": "2-3 years",
-      "qualification": "1st Degree in Pharmacy",
-      "requirements": [
-        "1st Degree in Pharmacy",
-        "PSN certification",
-        "2-3 years verifiable professional experience",
-        "Proficient in MS Office (Emphasis on PowerPoint & Excel)",
-        "Male or Female."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-04",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/953071/pharmacist-at-a-pharmacy-and-store-extramileage-co.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
       "job_title": "Pharmacy Technician",
       "company": "Applinet Technology",
       "location": "Lagos, Nigeria",
@@ -14971,49 +14321,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/952788/medical-doctor-at-bluorchid-aesthetics.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Hostel / Assistant Nurse",
-      "company": "Jewels Leading Lights",
-      "location": "Life Camp, Abuja (FCT), Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "n,",
-      "experience": "in a boarding school, hostel, residential care, or similar environment is an advantage",
-      "qualification": "Certified Nursing Assistant qualification or equivalent nursing/healthcare training",
-      "requirements": [
-        "Previous experience in a boarding school, hostel, residential care, or similar environment is an advantage",
-        "Strong child-care and interpersonal skills",
-        "Patience, empathy, and emotional intelligence",
-        "Excellent organizational and communication skills",
-        "The ability to remain calm and responsible during medical or emergency situations",
-        "Strong hygiene awareness and the ability to enforce appropriate hygiene standards",
-        "Initiative, reliability, and a strong sense of responsibility",
-        "Professional conduct both online and offline",
-        "A genuine passion for working with children and supporting their wellbeing"
-      ],
-      "responsibilities": [
-        "Attend promptly to the day-to-day medical needs of hostel learners",
-        "Monitor learners who are sick or recovering and promptly escalate concerns to the Head Nurse",
-        "Maintain accurate medical records and hostel health logs",
-        "Ensure proper personal hygiene and health routines among hostel learners",
-        "Monitor and promote cleanliness and hygiene within the hostel environment",
-        "Coordinate with hostel staff, janitors, and kitchen personnel on health and hygiene matters",
-        "Support school-wide health initiatives, health education, medical screenings, and emergency response activities",
-        "Liaise appropriately with parents/guardians and approved healthcare providers when required",
-        "Participate in health briefings, emergency drills, and other relevant school activities",
-        "Ensure medical concerns are addressed promptly and appropriately"
-      ],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-04",
-      "deadline": "2026-09-19",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/953131/hostelassistant-nurse-at-jewels-leading-lights.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -16008,6 +15315,37 @@
       "_source": "hotnigerianjobs"
     },
     {
+      "job_title": "Capsule Filling Operator",
+      "company": "Sagar Vitaceuticals Nigeria Limited",
+      "location": "Makun City, Ogun, Nigeria",
+      "job_type": "Full-time",
+      "job_category": "Other",
+      "salary": "N200,000 - N250,000 / month",
+      "experience": "Minimum qualification of OND/HND/B.Sc. in Pharmacy, Pharmaceutical Technology, Chemistry, Biochemistry, Chemical Engineering, or a related discipline.",
+      "qualification": "",
+      "requirements": [],
+      "responsibilities": [
+        "Operate automatic and/or semi-automatic capsule filling machines in accordance with approved SOPs and batch manufacturing records.",
+        "Set up, adjust, and monitor capsule filling machines to achieve required production specifications.",
+        "Perform machine changeovers, product changeovers, and equipment adjustments as required.",
+        "Ensure correct dispensing and filling of powder/granule formulations into capsules according to approved batch instructions.",
+        "Monitor critical process parameters such as fill weight, machine speed, capsule locking, powder flow, and rejection rates.",
+        "Conduct in-process checks and record results accurately in batch documentation.",
+        "Identify and report machine abnormalities, deviations, product defects, and equipment malfunctions promptly.",
+        "Perform routine cleaning and line clearance of capsule filling equipment and production areas.",
+        "Ensure equipment and production areas are maintained according to GMP and contamination-control requirements."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-09-02",
+      "deadline": "2026-10-31",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/951727/capsule-filling-operator-at-sagar-vitaceuticals-ni.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
       "job_title": "Pharmacologist",
       "company": "a Fertility and Wellness Company",
       "location": "Ebute Metta, Lagos, Nigeria",
@@ -16112,32 +15450,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/951353/consultant-surgeon-at-abuja-clinics-limited.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Dental Nurse",
-      "company": "Medics Partners Multi-specialist",
-      "location": "Victoria Island, Lagos, Nigeria",
-      "job_type": "",
-      "job_category": "Dentist",
-      "salary": "",
-      "experience": "1-2 years proven work experience",
-      "qualification": "Relevant qualification/certification",
-      "requirements": [
-        "Relevant qualification/certification",
-        "1-2 years proven work experience",
-        "Ability to work well with children."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-02",
-      "deadline": "2026-09-20",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/951770/dental-nurse-at-medics-partners-multispecialist.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -16482,30 +15794,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/951700/cathlab-assistant-at-dr-peter-odili-cancer-cardiov.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Dental Therapist",
-      "company": "Medics Partners Multi-specialist",
-      "location": "Victoria Island, Lagos, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Dentist",
-      "salary": "",
-      "experience": "1-2 years proven work experience",
-      "qualification": "Relevant qualification/certification",
-      "requirements": [
-        "Ability to work well with children."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-02",
-      "deadline": "2026-09-20",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/951771/dental-therapist-at-medics-partners-multispecialis.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -17746,41 +17034,6 @@
       "_source": "hotnigerianjobs"
     },
     {
-      "job_title": "Clinical Assistant",
-      "company": "Bioventures Limited",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Other",
-      "salary": "N150,000 - N250,000 monthly",
-      "experience": "",
-      "qualification": "Bachelor Degree, HND, OND in relevant discipline",
-      "requirements": [
-        "Relevant working experience in clinical procedures such as specimen collection and diagnostic testing",
-        "Ability to record, monitor and report a patient’s condition to professional personnel",
-        "Knowledge of healthcare practices, standards and medical terminology"
-      ],
-      "responsibilities": [
-        "Welcoming patients as they enter the facility",
-        "Obtaining patient information before their appointment",
-        "Sterilizing equipment throughout the facility",
-        "Performing minor diagnostic tests and procedures as directed by healthcare professionals",
-        "Promoting patient safety by maintaining a clean and hygienic environment",
-        "Mediating between patients and healthcare providers",
-        "Guiding patients through the clinic’s various facilities and procedures",
-        "Setting up and stocking examination and procedure rooms"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-28",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/949508/clinical-assistant-at-bioventures-limited.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
       "job_title": "Medical Assistant",
       "company": "Bioventures Limited",
       "location": "Lagos, Nigeria",
@@ -18966,50 +18219,6 @@
       "_source": "hotnigerianjobs"
     },
     {
-      "job_title": "Medical Laboratory Scientist – Haematology",
-      "company": "St. Dominic Catholic Hospital",
-      "location": "Ibadan, Oyo, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Medical Laboratory Scientist",
-      "salary": "N150,000 - N350,000",
-      "experience": "Minimum of 2–10 years Post- NYSC experience in a medical laboratory setting.",
-      "qualification": "OND",
-      "requirements": [
-        "Bachelor of Medical Laboratory Science (BMLS) or equivalent qualification.",
-        "Specialization, professional training, or postgraduate qualification in Haematology is an added advantage.",
-        "Registration with the Medical Laboratory Science Council of Nigeria (MLSCN).",
-        "Valid current practising licence."
-      ],
-      "responsibilities": [
-        "Perform routine and specialized haematological investigations accurately and efficiently.",
-        "Conduct full blood count (FBC), differential white blood cell counts, platelet counts, ESR, and other relevant haematological tests.",
-        "Perform blood film preparation, staining, examination, and interpretation.",
-        "Conduct coagulation studies and other investigations within the scope of practice.",
-        "Assist with blood grouping, cross-matching, and other transfusion-related laboratory procedures where applicable.",
-        "Process, handle, and store blood and other clinical specimens appropriately.",
-        "Identify and report abnormal or critical laboratory findings promptly to the appropriate healthcare professional.",
-        "Ensure strict adherence to standard operating procedures, quality control measures, and laboratory protocols.",
-        "Operate, maintain, and perform basic troubleshooting of haematology analysers and other laboratory equipment.",
-        "Monitor the performance of laboratory equipment and report faults promptly.",
-        "Maintain accurate records of laboratory procedures, test results, quality control activities, and equipment maintenance.",
-        "Ensure proper storage and monitoring of reagents, blood samples, and laboratory consumables.",
-        "Participate in internal quality assurance, audits, and continuous improvement activities.",
-        "Maintain strict compliance with biosafety, infection prevention, and waste disposal procedures.",
-        "Work collaboratively with doctors, nurses, pharmacists, and other laboratory professionals to support effective patient care.",
-        "Maintain patient confidentiality and uphold professional and ethical standards at all times."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-26",
-      "deadline": "2026-09-20",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947218/medical-laboratory-scientist-haematology-at-st-dom.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
       "job_title": "Community Health Extension Worker (CHEW)",
       "company": "EHA Clinics",
       "location": "Kuje, Abuja, Nigeria",
@@ -19147,96 +18356,6 @@
     },
     {
       "job_title": "Pharmacist",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Pharmacist",
-      "salary": "scale is very attractive.",
-      "experience": "and professional competence.",
-      "qualification": "Bachelor",
-      "requirements": [
-        "Bachelor of Pharmacy Certificate",
-        "Current registration/ practicing license with the Pharmacists Registration Board of Nigeria",
-        "NYSC discharge/exemption certificate.",
-        "Demonstrate relevant post-qualification experience and professional competence.",
-        "Exhibit integrity, excellent interpersonal skills, and the ability to work effectively in a multidisciplinary healthcare environment.",
-        "Must be ICT compliant."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947017/pharmacist-at-godfrey-okoye-university-teaching-ho.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Pharmacy Assistant",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Pharmacist",
-      "salary": "scale is very attractive.",
-      "experience": "would be an added advantage.",
-      "qualification": "rn",
-      "requirements": [
-        "Should possess any biological sciences / community health extension worker (CHEW) qualification or relate field.",
-        "Relevant work experience would be an added advantage.",
-        "Applicants must possess the prescribed academic and professional qualifications relevant to the position applied for.",
-        "Be duly registered with the appropriate professional regulatory body, where applicable.",
-        "Possess a valid practicing license where required.",
-        "Demonstrate relevant post-qualification experience and professional competence.",
-        "Exhibit integrity, excellent interpersonal skills, and the ability to work effectively in a multidisciplinary healthcare environment.",
-        "Must be ICT compliant."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947014/pharmacy-assistant-at-godfrey-okoye-university-tea.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Pharmacy Technician",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Pharmacist",
-      "salary": "scale is very attractive.",
-      "experience": "One year cognate experience.",
-      "qualification": "Diploma",
-      "requirements": [
-        "National Diploma in Pharmacy Technician from a recognized institution",
-        "General Requirements: Applicants must possess the prescribed academic and professional qualifications relevant to the position applied for",
-        "Be duly registered with the appropriate professional regulatory body, where applicable",
-        "Possess a valid practicing license where required",
-        "Demonstrate relevant post-qualification experience and professional competence",
-        "Exhibit integrity, excellent interpersonal skills, and the ability to work effectively in a multidisciplinary healthcare environment",
-        "Must be ICT compliant."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947010/pharmacy-technician-at-godfrey-okoye-university-te.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Pharmacist",
       "company": "a Renowned Multi-specialist Hospital - Solution Impact Global Resources",
       "location": "Ibadan, Oyo, Nigeria",
       "job_type": "Full-time",
@@ -19313,874 +18432,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/946883/pharmacist-deputy-at-dp-world.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "House Officer (Internal Medicine)",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "scale is very attractive",
-      "experience": "and professional competence",
-      "qualification": "MBBS Degree or its equivalent from a recognized University.",
-      "requirements": [
-        "Have a current temporary practicing license issued by the Medical and Dental Council of Nigeria.",
-        "Possess the prescribed academic and professional qualifications relevant to the position applied for.",
-        "Be duly registered with the appropriate professional regulatory body, where applicable.",
-        "Possess a valid practicing license where required.",
-        "Demonstrate relevant post-qualification experience and professional competence.",
-        "Exhibit integrity, excellent interpersonal skills, and the ability to work effectively in a multidisciplinary healthcare environment.",
-        "Must be ICT compliant."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947043/house-officer-internal-medicine-at-godfrey-okoye-u.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "House Officer (Family Medicine)",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "scale is very attractive.",
-      "experience": "",
-      "qualification": "MBBS",
-      "requirements": [
-        "MBBS Degree or its equivalent from a recognized University.",
-        "A current temporary practicing license issued by the Medical and Dental Council of Nigeria.",
-        "Possess the prescribed academic and professional qualifications relevant to the position applied for.",
-        "Be duly registered with the appropriate professional regulatory body, where applicable.",
-        "Possess a valid practicing license where required.",
-        "Demonstrate relevant post-qualification experience and professional competence.",
-        "Exhibit integrity, excellent interpersonal skills, and the ability to work effectively in a multidisciplinary healthcare environment.",
-        "Must be ICT compliant."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947041/house-officer-family-medicine-at-godfrey-okoye-uni.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "House Officer (Surgery)",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "scale is very attractive",
-      "experience": "and professional competence",
-      "qualification": "MBBS",
-      "requirements": [
-        "MBBS Degree or its equivalent from a recognized University",
-        "A current temporary practicing license issued by the Medical and Dental Council of Nigeria",
-        "Possess the prescribed academic and professional qualifications relevant to the position applied for",
-        "Be duly registered with the appropriate professional regulatory body, where applicable",
-        "Possess a valid practicing license where required",
-        "Demonstrate relevant post-qualification experience and professional competence",
-        "Exhibit integrity, excellent interpersonal skills, and the ability to work effectively in a multidisciplinary healthcare environment",
-        "Must be ICT compliant."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947039/house-officer-surgery-at-godfrey-okoye-university.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Junior Resident Doctor (Internal Medicine)",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "scale is very attractive.",
-      "experience": "from a tertiary institution and post-NYSC will be an added advantage.",
-      "qualification": "MBBS Degree or its equivalent from a recognized University, NYSC discharge or exemption certificate, Current Registration/ Practicing License with the Medical and Dental Council of Nigeria (MDCN)",
-      "requirements": [
-        "MBBS Degree or its equivalent from a recognized University.",
-        "NYSC discharge or exemption certificate.",
-        "Current Registration/ Practicing License with the Medical and Dental Council of Nigeria (MDCN).",
-        "Experience from a tertiary institution and post-NYSC will be an added advantage.",
-        "Possess the prescribed academic and professional qualifications relevant to the position applied for.",
-        "Be duly registered with the appropriate professional regulatory body, where applicable.",
-        "Possess a valid practicing license where required.",
-        "Demonstrate relevant post-qualification experience and professional competence.",
-        "Exhibit integrity, excellent interpersonal skills, and the ability to work effectively in a multidisciplinary healthcare environment.",
-        "Must be ICT compliant."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947029/junior-resident-doctor-internal-medicine-at-godfre.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Junior Resident Doctor (Family Medicine)",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "scale is very attractive.",
-      "experience": "from a tertiary institution and post-NYSC will be an added advantage.",
-      "qualification": "MBBS",
-      "requirements": [
-        "MBBS Degree or its equivalent from a recognized University.",
-        "NYSC discharge or exemption certificate.",
-        "Current Registration/ Practicing License with the Medical and Dental Council of Nigeria (MDCN).",
-        "Experience from a tertiary institution and post-NYSC will be an added advantage."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947028/junior-resident-doctor-family-medicine-at-godfrey.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Junior Resident Doctor (Surgery)",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "scale is very attractive.",
-      "experience": "from a tertiary institution and post-NYSC will be an added advantage.",
-      "qualification": "MBBS",
-      "requirements": [
-        "MBBS Degree or its equivalent from a recognized University.",
-        "NYSC discharge or exemption certificate.",
-        "Current Registration/ Practicing License with the Medical and Dental Council of Nigeria (MDCN).",
-        "Experience from a tertiary institution and post-NYSC will be an added advantage."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947025/junior-resident-doctor-surgery-at-godfrey-okoye-un.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Junior Resident Doctor (Obstetrics and Gynaecology)",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "scale is very attractive",
-      "experience": "from a tertiary institution and post-NYSC will be an added advantage",
-      "qualification": "MBBS",
-      "requirements": [
-        "MBBS Degree or its equivalent from a recognized University.",
-        "NYSC discharge or exemption certificate.",
-        "Current Registration/ Practicing License with the Medical and Dental Council of Nigeria (MDCN).",
-        "Experience from a tertiary institution and post-NYSC will be an added advantage."
-      ],
-      "responsibilities": [
-        "Possess the prescribed academic and professional qualifications relevant to the position applied for.",
-        "Be duly registered with the appropriate professional regulatory body, where applicable.",
-        "Possess a valid practicing license where required.",
-        "Demonstrate relevant post-qualification experience and professional competence.",
-        "Exhibit integrity, excellent interpersonal skills, and the ability to work effectively in a multidisciplinary healthcare environment.",
-        "Must be ICT compliant."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947024/junior-resident-doctor-obstetrics-and-gynaecology.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Junior Resident Doctor (Paediatrics)",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "scale is very attractive",
-      "experience": "from a tertiary institution and post-NYSC will be an added advantage",
-      "qualification": "MBBS",
-      "requirements": [
-        "MBBS Degree or its equivalent from a recognized University.",
-        "NYSC discharge or exemption certificate.",
-        "Current Registration/ Practicing License with the Medical and Dental Council of Nigeria (MDCN).",
-        "Experience from a tertiary institution and post-NYSC will be an added advantage."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947021/junior-resident-doctor-paediatrics-at-godfrey-okoy.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Junior Resident Doctor (Radiology)",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "scale is very attractive",
-      "experience": "from a tertiary institution and post-NYSC will be an added advantage",
-      "qualification": "MBBS",
-      "requirements": [
-        "MBBS Degree or its equivalent from a recognized University.",
-        "NYSC discharge or exemption certificate.",
-        "Current Registration/ Practicing License with the Medical and Dental Council of Nigeria (MDCN).",
-        "Experience from a tertiary institution and post-NYSC will be an added advantage."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947019/junior-resident-doctor-radiology-at-godfrey-okoye.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Medical Officer / Registrar",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "scale is very attractive",
-      "experience": "at least one year of post-registration cognate experience",
-      "qualification": "MBBS",
-      "requirements": [
-        "MBBS Degree from a recognized University",
-        "Current Registration/Practising Licence with the Medical and Dental Council of Nigeria (MDCN)",
-        "NYSC discharge or exemption certificate",
-        "Relevant post-qualification experience and professional competence",
-        "Integrity and excellent interpersonal skills",
-        "Ability to work in a multidisciplinary healthcare environment",
-        "ICT compliant"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947018/medical-officer-registrar-at-godfrey-okoye-univers.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Senior Registrar (Otorhinolaryngology and ENT)",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "scale is very attractive",
-      "experience": "3",
-      "qualification": "MBBS",
-      "requirements": [
-        "MBBS Degree or its equivalent from a recognized University.",
-        "Evidence of full registration with the Medical and Dental Council of Nigeria (MDCN).",
-        "NYSC discharge certificate or evidence of exemption.",
-        "Current Practicing License.",
-        "A pass in the Primary Examination in either National PMCN or West Africa College of Surgeons/Physicians in the relevant field plus at least 3 years cognate experience after obtaining the Part 1 Fellowship."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947007/r-at-godfrey-okoye-university-teaching-hospital-go.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Director",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Healthcare Management",
-      "salary": "scale is very attractive",
-      "experience": "Minimum of 15 years work experience",
-      "qualification": "B.Sc",
-      "requirements": [
-        "Current practicing license with the Medical Rehabilitation Therapists Registration Board of Nigeria (MRTB)",
-        "B.Sc Degree in Physiotherapy or Medical Rehabilitation",
-        "Duly registered with the appropriate professional regulatory body",
-        "Valid practicing license where required",
-        "Relevant post-qualification experience and professional competence",
-        "Integrity and excellent interpersonal skills",
-        "Ability to work effectively in a multidisciplinary healthcare environment",
-        "ICT compliant"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947005/director-at-godfrey-okoye-university-teaching-hosp.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Assistant Director of Nursing I (Anaesthetics)",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "scale is very attractive",
-      "experience": "Minimum of 15 years work experience",
-      "qualification": "B.NSc",
-      "requirements": [
-        "A registered nurse with active practicing license",
-        "Specialist certification from an accredited Post-Basic School of Nurse Anaesthesia",
-        "Possess the prescribed academic and professional qualifications relevant to the position applied for",
-        "Be duly registered with the appropriate professional regulatory body, where applicable",
-        "Possess a valid practicing license where required",
-        "Demonstrate relevant post-qualification experience and professional competence",
-        "Exhibit integrity, excellent interpersonal skills, and the ability to work effectively in a multidisciplinary healthcare environment",
-        "Must be ICT compliant"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947042/assistant-director-of-nursing-i-anaesthetics-at-go.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Deputy Director, Nursing Sciences",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "scale is very attractive.",
-      "experience": "15",
-      "qualification": "Degree",
-      "requirements": [
-        "B.NSc Degree",
-        "Current registration / practicing license with the Nursing and Midwifery Council of Nigeria",
-        "At least 15 years post-qualification cognate experience",
-        "NYSC discharge/exemption certificate."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947037/deputy-director-nursing-sciences-at-godfrey-okoye.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Director, Nursing Sciences",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "scale is very attractive.",
-      "experience": "15",
-      "qualification": "Degree",
-      "requirements": [
-        "B.NSc Degree",
-        "Current registration / practicing license with the Nursing and Midwifery Council of Nigeria",
-        "At least 15 years post-qualification cognate experience",
-        "NYSC discharge/exemption certificate."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947032/director-nursing-sciences-at-godfrey-okoye-univers.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Chief Nursing Officer (CNO)",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "scale is very attractive",
-      "experience": "15",
-      "qualification": "Degree",
-      "requirements": [
-        "B.NSc Degree",
-        "Current registration / practicing license with the Nursing and Midwifery Council of Nigeria",
-        "Minimum of 15 years post qualification cognate experience",
-        "NYSC discharge/exemption certificate"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947031/chief-nursing-officer-cno-at-godfrey-okoye-univers.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Senior Nursing Officer I",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "scale is very attractive",
-      "experience": "3",
-      "qualification": "Degree",
-      "requirements": [
-        "B.NSc Degree",
-        "Current registration / practicing license with the Nursing and Midwifery Council of Nigeria",
-        "At least 3 years post-qualification cognate experience",
-        "NYSC discharge/exemption certificate."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947026/senior-nursing-officer-i-at-godfrey-okoye-universi.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Nursing Officer I",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "scale is very attractive",
-      "experience": "Minimum of 5 years of practice in Anaesthetics",
-      "qualification": "B.NSc or Registered Nurse (NRN) equivalent",
-      "requirements": [
-        "Specialist certification from an accredited Post-Basic School of Nurse Anaesthesia",
-        "Current practicing license",
-        "Demonstrate relevant post-qualification experience and professional competence",
-        "Exhibit integrity, excellent interpersonal skills",
-        "Ability to work effectively in a multidisciplinary healthcare environment",
-        "Must be ICT compliant"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947023/nursing-officer-i-at-godfrey-okoye-university-teac.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Nursing Officer II",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "scale is very attractive",
-      "experience": "and professional competence",
-      "qualification": "RN",
-      "requirements": [
-        "NRN or NRM from a recognized institution registrable with the Nursing and Midwifery Council of Nigeria",
-        "Current registration/ practicing license with the Nursing and Midwifery Council of Nigeria",
-        "An additional qualification in any relevant specialty will be an advantage.",
-        "Demonstrate relevant post-qualification experience and professional competence.",
-        "Exhibit integrity, excellent interpersonal skills, and the ability to work effectively in a multidisciplinary healthcare environment.",
-        "Must be ICT compliant."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947020/nursing-officer-ii-at-godfrey-okoye-university-tea.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Medical Radiographer",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Allied Health",
-      "salary": "scale is very attractive",
-      "experience": "3",
-      "qualification": "B.Sc",
-      "requirements": [
-        "B.Sc from a recognized institution",
-        "Registered with the Radiographer Registration Board of Nigeria",
-        "At least 3 years cognate experience",
-        "NYSC discharge / exemption certificate",
-        "Other relevant certificates and valid license as applicable"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947081/medical-radiographer-at-godfrey-okoye-university-t.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Diagnostic Radiographer",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Allied Health",
-      "salary": "scale is very attractive.",
-      "experience": "3",
-      "qualification": "B.Sc",
-      "requirements": [
-        "B.Sc from a recognized institution",
-        "Registered with the Radiographer Registration Board of Nigeria",
-        "At least 3 years cognate experience",
-        "NYSC discharge / exemption certificate",
-        "Other relevant certificates and valid license as applicable"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947080/diagnostic-radiographer-at-godfrey-okoye-universit.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Radiographer",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Allied Health",
-      "salary": "scale is very attractive",
-      "experience": "3",
-      "qualification": "B.Sc",
-      "requirements": [
-        "B.Sc from a recognized institution",
-        "Registered with the Radiographer Registration Board of Nigeria",
-        "At least 3 years cognate experience",
-        "NYSC discharge / exemption certificate",
-        "Other relevant certificates and valid license as applicable",
-        "Integrity and excellent interpersonal skills",
-        "ICT compliant"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947078/radiographer-at-godfrey-okoye-university-teaching.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "X-Ray Technician",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Allied Health",
-      "salary": "scale is very attractive.",
-      "experience": "At least two years cognate experience.",
-      "qualification": "Candidate must have completed the prescribed three (3) years training programme of the school of Health Technology and passed the prescribed examinations.",
-      "requirements": [
-        "Fully registered with the appropriate registration body of council.",
-        "Possess a valid practicing license where required.",
-        "Demonstrate relevant post-qualification experience and professional competence.",
-        "Exhibit integrity, excellent interpersonal skills, and the ability to work effectively in a multidisciplinary healthcare environment.",
-        "Must be ICT compliant."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947075/xray-technician-at-godfrey-okoye-university-teachi.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Medical Laboratory Scientist (Microbiology)",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Medical Laboratory Scientist",
-      "salary": "scale is very attractive",
-      "experience": "4",
-      "qualification": "Bachelor",
-      "requirements": [
-        "Bachelor of Medical Laboratory Science (BMLS) Degree",
-        "NYSC discharge/Exemption Certificate",
-        "Current registration / practising licence with the Institute of Medical Laboratory Science of Nigeria",
-        "Relevant post-qualification experience",
-        "Excellent interpersonal skills",
-        "ICT compliant"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947059/medical-laboratory-scientist-microbiology-at-godfr.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Medical Laboratory Scientist (Histopathology)",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Medical Laboratory Scientist",
-      "salary": "scale is very attractive",
-      "experience": "4",
-      "qualification": "Bachelor",
-      "requirements": [
-        "Candidates must possess a Bachelor of Medical Laboratory Science (BMLS) Degree with at least 4 years cognate experience",
-        "NYSC discharge/Exemption Certificate",
-        "Current registration / practising licence with the Institute of Medical Laboratory Science of Nigeria",
-        "Possess the prescribed academic and professional qualifications relevant to the position applied for",
-        "Be duly registered with the appropriate professional regulatory body, where applicable",
-        "Possess a valid practicing license where required",
-        "Demonstrate relevant post-qualification experience and professional competence",
-        "Exhibit integrity, excellent interpersonal skills, and the ability to work effectively in a multidisciplinary healthcare environment",
-        "Must be ICT compliant"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947058/medical-laboratory-scientist-histopathology-at-god.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Medical Laboratory Scientist (Chemical Pathology)",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Medical Laboratory Scientist",
-      "salary": "scale is very attractive",
-      "experience": "4",
-      "qualification": "Bachelor",
-      "requirements": [
-        "Bachelor of Medical Laboratory Science (BMLS) Degree",
-        "NYSC discharge/Exemption Certificate",
-        "Current registration / practising licence with the Institute of Medical Laboratory Science of Nigeria"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947055/medical-laboratory-scientist-chemical-pathology-at.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Medical Laboratory Scientist (Heamatology)",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Medical Laboratory Scientist",
-      "salary": "scale is very attractive.",
-      "experience": "4",
-      "qualification": "Bachelor",
-      "requirements": [
-        "Bachelor of Medical Laboratory Science (BMLS) Degree",
-        "NYSC discharge/Exemption Certificate",
-        "Current registration / practising licence with the Institute of Medical Laboratory Science of Nigeria"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947052/medical-laboratory-scientist-heamatology-at-godfre.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Laboratory Assistant",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Medical Laboratory Scientist",
-      "salary": "scale is very attractive.",
-      "experience": "relevant post-qualification experience and professional competence.",
-      "qualification": "Certificate in Medical Laboratory Technology from a recognized institution or College of Health Technology",
-      "requirements": [
-        "Possess the prescribed academic and professional qualifications relevant to the position applied for.",
-        "Be duly registered with the appropriate professional regulatory body, where applicable.",
-        "Possess a valid practicing license where required.",
-        "Exhibit integrity, excellent interpersonal skills, and the ability to work effectively in a multidisciplinary healthcare environment.",
-        "Must be ICT compliant."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947038/laboratory-assistant-at-godfrey-okoye-university-t.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Laboratory Technician",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Medical Laboratory Scientist",
-      "salary": "scale is very attractive.",
-      "experience": "and professional competence.",
-      "qualification": "Certificate in Medical Laboratory Technology from a recognized institution or College of Health Technology",
-      "requirements": [
-        "Possess a Certificate in Medical Laboratory Technology from a recognized institution or College of Health Technology with relevant work experience.",
-        "Be duly registered with the appropriate professional regulatory body, where applicable.",
-        "Possess a valid practicing license where required.",
-        "Demonstrate relevant post-qualification experience and professional competence.",
-        "Exhibit integrity, excellent interpersonal skills, and the ability to work effectively in a multidisciplinary healthcare environment.",
-        "Must be ICT compliant."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947033/laboratory-technician-at-godfrey-okoye-university.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "House Officer (Radiology)",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "scale is very attractive",
-      "experience": "and professional competence",
-      "qualification": "MBBS",
-      "requirements": [
-        "MBBS Degree or its equivalent from a recognized University.",
-        "A current temporary practicing license issued by the Medical and Dental Council of Nigeria.",
-        "Possess the prescribed academic and professional qualifications relevant to the position applied for.",
-        "Be duly registered with the appropriate professional regulatory body, where applicable.",
-        "Possess a valid practicing license where required.",
-        "Demonstrate relevant post-qualification experience and professional competence.",
-        "Exhibit integrity, excellent interpersonal skills, and the ability to work effectively in a multidisciplinary healthcare environment.",
-        "Must be ICT compliant."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947030/junior-resident-doctor-internal-medicine-at-godfre.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -20261,733 +18512,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/946865/front-desk-officer-at-life-point-medical-diagnosti.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Graduate Assistant (Anatomic Pathology)",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "scale is very attractive",
-      "experience": "At least two years cognate experience",
-      "qualification": "B.Sc",
-      "requirements": [
-        "B.Sc. Human Anatomy or related fields",
-        "NYSC Discharge/Exemption Certificate",
-        "General Requirements: Applicants must possess the prescribed academic and professional qualifications relevant to the position applied for",
-        "Be duly registered with the appropriate professional regulatory body, where applicable",
-        "Possess a valid practicing license where required",
-        "Demonstrate relevant post-qualification experience and professional competence",
-        "Exhibit integrity, excellent interpersonal skills, and the ability to work effectively in a multidisciplinary healthcare environment",
-        "Must be ICT compliant."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947084/graduate-assistant-anatomic-pathology-at-godfrey-o.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Chief Medical Artist",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Other",
-      "salary": "scale is very attractive",
-      "experience": "applicable",
-      "qualification": "rn",
-      "requirements": [
-        "Must possess the relevant qualification and experience applicable",
-        "Other professional certificates will be an added advantage",
-        "Possess the prescribed academic and professional qualifications relevant to the position applied for",
-        "Be duly registered with the appropriate professional regulatory body, where applicable",
-        "Possess a valid practicing license where required",
-        "Demonstrate relevant post-qualification experience and professional competence",
-        "Exhibit integrity, excellent interpersonal skills, and the ability to work effectively in a multidisciplinary healthcare environment",
-        "Must be ICT compliant"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947072/chief-medical-artist-at-godfrey-okoye-university-t.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Head, Central Sterile Services Department (CSSD)",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Healthcare Management",
-      "salary": "scale is very attractive",
-      "experience": "Minimum of 5 years' experience in sterile processing or related healthcare environment",
-      "qualification": "Bachelor's Degree in healthcare management, nursing or related discipline",
-      "requirements": [
-        "Possession of a relevant certification such as certified registered central service technician (CRCST)",
-        "Health and Safety Certification is an added advantage",
-        "Be duly registered with the appropriate professional regulatory body, where applicable",
-        "Possess a valid practicing license where required",
-        "Demonstrate relevant post-qualification experience and professional competence",
-        "Exhibit integrity, excellent interpersonal skills, and the ability to work effectively in a multidisciplinary healthcare environment",
-        "Must be ICT compliant."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947068/head-cssd-at-godfrey-okoye-university-teaching-hos.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Attendant",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Allied Health",
-      "salary": "scale is very attractive",
-      "experience": "in CSSD, theatre, or hospital sterilization services is preferred",
-      "qualification": "rn",
-      "requirements": [
-        "Certification or training in CSSD/Sterile processing is an added advantage",
-        "Previous experience in CSSD, theatre, or hospital sterilization services is preferred",
-        "Strong attention to detail, accuracy and ability to work effectively in a fast-paced environment",
-        "High level of responsibility, cleanliness and professionalism",
-        "Applicants must possess the prescribed academic and professional qualifications relevant to the position applied for",
-        "Be duly registered with the appropriate professional regulatory body, where applicable",
-        "Possess a valid practicing license where required",
-        "Demonstrate relevant post-qualification experience and professional competence",
-        "Exhibit integrity, excellent interpersonal skills, and the ability to work effectively in a multidisciplinary healthcare environment",
-        "Must be ICT compliant."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947065/attendant-at-godfrey-okoye-university-teaching-hos.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Director of Administration and Policy",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Healthcare Management",
-      "salary": "scale is very attractive",
-      "experience": "15",
-      "qualification": "degree",
-      "requirements": [
-        "Must possess a good honours degree in any of the disciplines of Social Sciences or Humanities from a recognized university or its equivalent.",
-        "Possession of a Master's Degree or any relevant Nighen degree, or possession of a Master's Degree or fellow or associate membership of the Institute of Health Administrators of Nigeria (IHSAN) or any of the disciplines specified above would be an added advantage.",
-        "Working experience of at least 15 years in a hospital is an added advantage.",
-        "Possess the prescribed academic and professional qualifications relevant to the position applied for.",
-        "Be duly registered with the appropriate professional regulatory body, where applicable.",
-        "Possess a valid practicing license where required.",
-        "Demonstrate relevant post-qualification experience and professional competence.",
-        "Exhibit integrity, excellent interpersonal skills, and the ability to work effectively in a multidisciplinary healthcare environment.",
-        "Must be ICT compliant."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947063/director-of-administration-and-policy-at-godfrey-o.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "ECG Technician I",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Other",
-      "salary": "scale is very attractive.",
-      "experience": "At least two years cognate experience.",
-      "qualification": "B.Sc or HND in Physiology, Anatomy, or Biomedical Engineering",
-      "requirements": [
-        "Completed the prescribed 3 years training programme at the School of Health Technology and obtained Registration of Institute of Medical Laboratory Technology of Nigeria for Technicians cadre",
-        "NYSC Discharge/Exemption certificate",
-        "Duly registered with the appropriate professional regulatory body, where applicable",
-        "Possess a valid practicing license where required",
-        "Demonstrate relevant post-qualification experience and professional competence",
-        "Exhibit integrity, excellent interpersonal skills, and the ability to work effectively in a multidisciplinary healthcare environment",
-        "Must be ICT compliant."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947062/ecg-technician-i-at-godfrey-okoye-university-teach.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Medical Records Officer",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Other",
-      "salary": "scale is very attractive",
-      "experience": "At least two years post qualification experience",
-      "qualification": "B.Sc./HND in Health Information Management",
-      "requirements": [
-        "Registered / current license with the Health Records Officers Registration Board of Nigeria",
-        "NYSC discharge/exemption certificate",
-        "Knowledge of Electronic Medical Records system will be an added advantage",
-        "Exhibit integrity, excellent interpersonal skills, and the ability to work effectively in a multidisciplinary healthcare environment",
-        "Must be ICT compliant"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947060/medical-records-officer-at-godfrey-okoye-universit.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Mortuary Technician (Anatomy Dissecting Hall)",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Other",
-      "salary": "scale is very attractive.",
-      "experience": "and professional competence.",
-      "qualification": "rn",
-      "requirements": [
-        "Must possess the prescribed academic and professional qualifications relevant to the position applied for.",
-        "Be duly registered with the appropriate professional regulatory body, where applicable.",
-        "Possess a valid practicing license where required.",
-        "Demonstrate relevant post-qualification experience and professional competence.",
-        "Exhibit integrity, excellent interpersonal skills, and the ability to work effectively in a multidisciplinary healthcare environment.",
-        "Must be ICT compliant."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947057/mortuary-technician-anatomy-dissecting-hall-at-god.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Morbid Anatomy Personnel",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Other",
-      "salary": "scale is very attractive",
-      "experience": "At least two years cognate experience",
-      "qualification": "B.Sc Degree in Human Anatomy or related fields",
-      "requirements": [
-        "NYSC Discharge/Exemption Certificate",
-        "General professional qualifications relevant to the position",
-        "Registration with a professional regulatory body where applicable",
-        "Valid practicing license where required",
-        "Demonstrable post-qualification experience and professional competence",
-        "Excellent interpersonal skills",
-        "ICT compliance"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947054/morbid-anatomy-personnel-at-godfrey-okoye-universi.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Phlebotomist",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Other",
-      "salary": "scale is very attractive.",
-      "experience": "and professional competence.",
-      "qualification": "rn",
-      "requirements": [
-        "Possess the prescribed academic and professional qualifications relevant to the position applied for.",
-        "Be duly registered with the appropriate professional regulatory body, where applicable.",
-        "Possess a valid practicing license where required.",
-        "Demonstrate relevant post-qualification experience and professional competence.",
-        "Exhibit integrity, excellent interpersonal skills, and the ability to work effectively in a multidisciplinary healthcare environment.",
-        "Must be ICT compliant."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947047/phlebotomist-at-godfrey-okoye-university-teaching.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Health Information Manager, Technologist",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Healthcare Management",
-      "salary": "scale is very attractive.",
-      "experience": "At least two years post qualification experience",
-      "qualification": "B.Sc./HND in Health Information Management",
-      "requirements": [
-        "Registered / current license with the Health Records Officers Registration Board of Nigeria.",
-        "NYSC discharge/exemption certificate",
-        "Knowledge of Electronic Medical Records system will be an added advantage."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947045/health-information-manager-technologist-at-godfrey.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "HIV Testing Services (HTS) Personnel",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Other",
-      "salary": "scale is very attractive.",
-      "experience": "relevant post-qualification experience and professional competence.",
-      "qualification": "relevant certifications and experience.",
-      "requirements": [
-        "Possess the prescribed academic and professional qualifications relevant to the position applied for.",
-        "Be duly registered with the appropriate professional regulatory body, where applicable.",
-        "Possess a valid practicing license where required.",
-        "Demonstrate relevant post-qualification experience and professional competence.",
-        "Exhibit integrity, excellent interpersonal skills, and the ability to work effectively in a multidisciplinary healthcare environment.",
-        "Must be ICT compliant."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947044/hiv-testing-services-hts-personnel-at-godfrey-okoy.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "House Officer (Obstetrics and Gynaecology)",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "scale is very attractive.",
-      "experience": "and professional competence.",
-      "qualification": "MBBS",
-      "requirements": [
-        "Possess the prescribed academic and professional qualifications relevant to the position applied for.",
-        "Be duly registered with the appropriate professional regulatory body, where applicable.",
-        "Possess a valid practicing license where required.",
-        "Demonstrate relevant post-qualification experience and professional competence.",
-        "Exhibit integrity, excellent interpersonal skills, and the ability to work effectively in a multidisciplinary healthcare environment.",
-        "Must be ICT compliant."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947036/house-officer-obstetrics-and-gynaecology-at-godfre.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "House Officer (Paediatrics)",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "scale is very attractive.",
-      "experience": "and professional competence.",
-      "qualification": "MBBS",
-      "requirements": [
-        "MBBS Degree or its equivalent from a recognized University.",
-        "A current temporary practicing license issued by the Medical and Dental Council of Nigeria.",
-        "Applicants must possess the prescribed academic and professional qualifications relevant to the position applied for.",
-        "Be duly registered with the appropriate professional regulatory body, where applicable.",
-        "Possess a valid practicing license where required.",
-        "Demonstrate relevant post-qualification experience and professional competence.",
-        "Exhibit integrity, excellent interpersonal skills, and the ability to work effectively in a multidisciplinary healthcare environment.",
-        "Must be ICT compliant."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947035/house-officer-paediatrics-at-godfrey-okoye-univers.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Senior Physiotherapist",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Allied Health",
-      "salary": "scale is very attractive.",
-      "experience": "Minimum of 3 years work experience",
-      "qualification": "B.Sc in Physiotherapy of Medical Rehabilitation",
-      "requirements": [
-        "Current practicing license with the Medical Rehabilitation Therapists Registration Board of Nigeria (MRTB).",
-        "Possess the prescribed academic and professional qualifications relevant to the position applied for.",
-        "Be duly registered with the appropriate professional regulatory body, where applicable.",
-        "Possess a valid practicing license where required.",
-        "Demonstrate relevant post-qualification experience and professional competence.",
-        "Exhibit integrity, excellent interpersonal skills, and the ability to work effectively in a multidisciplinary healthcare environment.",
-        "Must be ICT compliant."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947027/senior-physiotherapist-at-godfrey-okoye-university.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Senior Registrar (Paediatrics)",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "scale is very attractive",
-      "experience": "3",
-      "qualification": "MBBS",
-      "requirements": [
-        "MBBS Degree or its equivalent from a recognized University.",
-        "Evidence of full registration with the Medical and Dental Council of Nigeria (MDCN).",
-        "NYSC discharge certificate or evidence of exemption.",
-        "Current Practicing License.",
-        "A pass in the Primary Examination in either National PMCN or West Africa College of Surgeons/Physicians in the relevant field plus at least 3 years cognate experience after obtaining the Part 1 Fellowship."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947015/senior-registrar-paediatrics-at-godfrey-okoye-univ.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Senior Registrar (Internal Medicine)",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "scale is very attractive",
-      "experience": "3",
-      "qualification": "MBBS Degree or its equivalent from a recognized University",
-      "requirements": [
-        "Evidence of full registration with the Medical and Dental Council of Nigeria (MDCN)",
-        "NYSC discharge certificate or evidence of exemption",
-        "Current Practicing License",
-        "A pass in the Primary Examination in either National PMCN or West Africa College of Surgeons/Physicians in the relevant field plus at least 3 years cognate experience after obtaining the Part 1 Fellowship",
-        "Possess the prescribed academic and professional qualifications relevant to the position applied for",
-        "Be duly registered with the appropriate professional regulatory body, where applicable",
-        "Possess a valid practicing license where required",
-        "Demonstrate relevant post-qualification experience and professional competence",
-        "Exhibit integrity, excellent interpersonal skills, and the ability to work effectively in a multidisciplinary healthcare environment",
-        "Must be ICT compliant."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947013/senior-registrar-internal-medicine-at-godfrey-okoy.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Renal Physiologist",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Allied Health",
-      "salary": "scale is very attractive",
-      "experience": "and professional competence",
-      "qualification": "B.Sc",
-      "requirements": [
-        "B.Sc in Human Physiology",
-        "Valid practicing license",
-        "NYSC discharge/exemption certificate",
-        "Relevant post-qualification experience and professional competence",
-        "Excellent interpersonal skills",
-        "ICT compliant"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947012/renal-physiologist-at-godfrey-okoye-university-tea.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Senior Registrar (Rheumatology)",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "scale is very attractive",
-      "experience": "3",
-      "qualification": "MBBS",
-      "requirements": [
-        "MBBS Degree or its equivalent from a recognized University.",
-        "Evidence of full registration with the Medical and Dental Council of Nigeria (MDCN).",
-        "NYSC discharge certificate or evidence of exemption.",
-        "Current Practicing License.",
-        "A pass in the Primary Examination in either National PMCN or West Africa College of Surgeons/Physicians in the relevant field plus at least 3 years cognate experience after obtaining the Part 1 Fellowship."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947011/senior-registrar-rheumatology-at-godfrey-okoye-uni.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Chief Plaster Technician",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Allied Health",
-      "salary": "scale is very attractive",
-      "experience": "extensive years of progressive work experience",
-      "qualification": "certificate in Plaster Technician from a recognized Institution or college of health technology",
-      "requirements": [
-        "Duly registered with the appropriate professional regulatory body, where applicable",
-        "Possess a valid practicing license where required",
-        "Demonstrate relevant post-qualification experience and professional competence",
-        "Exhibit integrity and excellent interpersonal skills",
-        "Ability to work effectively in a multidisciplinary healthcare environment",
-        "Must be ICT compliant"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/947009/chief-plaster-technician-at-godfrey-okoye-universi.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Head of Department",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Other",
-      "salary": "scale is very attractive.",
-      "experience": "6",
-      "qualification": "B.Sc",
-      "requirements": [
-        "B.Sc/ HND in Environmental Health Science with at least 6 years post qualification cognate experience",
-        "West African Health Examination Board Certificate",
-        "Current practicing license from the Environmental Health Council of Nigeria",
-        "NYSC discharge or exemption certificate."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/946995/head-of-department-at-godfrey-okoye-university-tea.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Environmental Health Officer / Technologist",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Other",
-      "salary": "scale is very attractive",
-      "experience": "2",
-      "qualification": "B.Sc / HND in Environmental Health Science",
-      "requirements": [
-        "B.Sc / HND in Environmental Health Science with at least 2 years post qualification cognate experience",
-        "West African Health Examination Board Certificate",
-        "Current practicing license from the Environmental Health Council of Nigeria",
-        "NYSC discharge or exemption certificate"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/946994/environmental-health-officer-technologist-at-godfr.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Porter",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Other",
-      "salary": "scale is very attractive",
-      "experience": "Able-bodied candidates can apply",
-      "qualification": "rn",
-      "requirements": [
-        "Candidates should possess relevant qualifications and experience",
-        "Able-bodied candidates can apply."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/946985/porter-at-godfrey-okoye-university-teaching-hospit.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Labourer",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Other",
-      "salary": "scale is very attractive",
-      "experience": "Able-bodied candidates can apply",
-      "qualification": "rn",
-      "requirements": [
-        "Candidates should possess relevant qualifications and experience"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/946982/labourer-at-godfrey-okoye-university-teaching-hosp.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Orderly",
-      "company": "Godfrey Okoye University Teaching Hospital (GOUNITH)",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Other",
-      "salary": "scale is very attractive.",
-      "experience": "and professional competence.",
-      "qualification": "ond",
-      "requirements": [
-        "Candidates should possess a Junior Secondary School Certificate",
-        "Must be physically fit.",
-        "Must possess the prescribed academic and professional qualifications relevant to the position applied for.",
-        "Demonstrate relevant post-qualification experience and professional competence.",
-        "Exhibit integrity, excellent interpersonal skills, and the ability to work effectively in a multidisciplinary healthcare environment.",
-        "Must be ICT compliant."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-25",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/946971/orderlies-at-godfrey-okoye-university-teaching-hos.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -21268,45 +18792,6 @@
       "contact_phone": "",
       "apply_url": "https://medicalworldnigeria.com/post/Nursing-Officer?pid=78400",
       "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Pharmacist",
-      "company": "Living Faith Pharmacy",
-      "location": "Oyo, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Pharmacist",
-      "salary": "N200,000 – N250,000/month",
-      "experience": "2",
-      "qualification": "B.Pharm or Pharm.D degree",
-      "requirements": [
-        "Valid PCN License",
-        "Must reside in Oyo or be willing to relocate",
-        "Retail pharmacy experience is an added advantage",
-        "E-commerce experience required",
-        "Exceptional IT skills required",
-        "Strong commitment to patient care and professional service",
-        "Ability to work in a fast-paced retail environment."
-      ],
-      "responsibilities": [
-        "Dispensing prescription medications",
-        "Counseling patients on proper use of medications",
-        "Ensuring compliance with healthcare regulations",
-        "Reviewing prescriptions for accuracy",
-        "Maintaining patient records",
-        "Managing inventory",
-        "Providing expert advice on over-the-counter solutions",
-        "Collaborating with other healthcare professionals to ensure optimal patient outcomes."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-24",
-      "deadline": "2026-09-20",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/946696/pharmacist-at-living-faith-pharmacy.html",
-      "_source": "hotnigerianjobs"
     },
     {
       "job_title": "DP World GROW Graduate Programme - Pharmacy",
@@ -21919,42 +19404,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/945323/manager-at-hero-concept-4-openings.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Food Scientist",
-      "company": "Applinet Technology",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Other",
-      "salary": "N150,000 - N300,000 monthly",
-      "experience": "as a Food Scientist or similar role",
-      "qualification": "",
-      "requirements": [
-        "Proven work experience as a Food Scientist or similar role",
-        "Proven ability to work in a laboratory for long periods of time",
-        "Knowledge and understanding of data science",
-        "Excellent verbal and written communication skills",
-        "Relevant training and/or certifications as a Food Scientist"
-      ],
-      "responsibilities": [
-        "Work on new products from conceptualization to launch",
-        "Arrange and ship sales samples",
-        "Update product information sheets for sales preparation and food labels",
-        "Record, analyze, and summarize research data",
-        "Coordinate independent laboratory testing",
-        "Adhere to our organization’s quality standards and other safety regulations",
-        "Perform other duties assigned by supervisor"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-21",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/945233/food-scientist-at-applinet-technology.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -23444,44 +20893,6 @@
       "_source": "jobsinnigeria"
     },
     {
-      "job_title": "Locum Pharmacist",
-      "company": "Castville Solutions",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Pharmacist",
-      "salary": "N1,000 - N1,400 per hour",
-      "experience": "is an added advantage",
-      "qualification": "Bachelor",
-      "requirements": [
-        "Bachelor’s Degree in Pharmacy (B.Pharm or Pharm.D)",
-        "Must possess a valid PCN license",
-        "Previous pharmacy experience is an added advantage",
-        "Strong communication and interpersonal skills",
-        "Ability to work with minimal supervision",
-        "Must be professional, detail-oriented, and reliable",
-        "Candidate should be able to resume immediately"
-      ],
-      "responsibilities": [
-        "Dispense prescribed medications accurately and efficiently.",
-        "Provide professional counseling to patients on medication usage and dosage.",
-        "Ensure compliance with pharmacy regulations and ethical standards.",
-        "Maintain proper records of medications and inventory.",
-        "Monitor drug stock levels and report shortages when necessary.",
-        "Handle customer inquiries professionally and courteously.",
-        "Ensure the pharmacy environment remains clean, organized, and compliant with health regulations."
-      ],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-18",
-      "deadline": "2026-09-18",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/943058/locum-pharmacist-at-castville-solutions-7-openings.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
       "job_title": "Pharmacy Assistant",
       "company": "a Pharmaceutical Company",
       "location": "Ibafo, Mowe - Ogun, Nigeria",
@@ -24099,36 +21510,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/942515/nurse-at-redemption-academy.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Radiographer / Sonographer",
-      "company": "OCA Consulting",
-      "location": "Benin City, Edo, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Allied Health",
-      "salary": "n,",
-      "experience": "",
-      "qualification": "ond",
-      "requirements": [],
-      "responsibilities": [
-        "Perform general radiographic examinations in accordance with physician requests and established imaging protocols.",
-        "Conduct diagnostic ultrasound examinations, including abdominal, pelvic, obstetric, gynecological, vascular, musculoskeletal, thyroid, breast, and small-parts imaging where applicable.",
-        "Position patients correctly to obtain optimal diagnostic images while ensuring their comfort and safety.",
-        "Operate, adjust, and maintain X-ray and ultrasound equipment efficiently.",
-        "Produce high-quality diagnostic images suitable for accurate clinical interpretation.",
-        "Evaluate image quality and repeat examinations only when clinically necessary.",
-        "Assist radiologists during specialized imaging procedures when required.",
-        "Ensure accurate documentation and electronic storage of all imaging studies."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-08-17",
-      "deadline": "2026-09-19",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/942374/radiographer-sonographer-at-oca-consulting.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -25179,90 +22560,6 @@
       "contact_email": "",
       "contact_phone": "09070971440",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/940659/aesthetic-medical-doctor-at-trident-clinics-and-sp.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Cardiac Surgery Medical Officer",
-      "company": "Ascentech Services Limited",
-      "location": "Port Harcourt, Rivers, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "3",
-      "qualification": "MBBS",
-      "requirements": [
-        "MBBS / MD or equivalent medical degree or relevant surgical qualification",
-        "Current professional registration and practising licence",
-        "Minimum 3 years’ relevant surgical experience",
-        "Experience in cardiac or cardiothoracic surgery is highly desirable",
-        "Strong clinical assessment, communication, and technical skills",
-        "Ability to work effectively in an operating theatre and multidisciplinary environment",
-        "Good understanding of perioperative and postoperative surgical care",
-        "Strong commitment to patient safety, professionalism, and continuous learning"
-      ],
-      "responsibilities": [
-        "Assist with preoperative assessment and preparation of patients",
-        "Review clinical records, investigations, imaging, and laboratory results",
-        "Assist the Consultant Cardiac Surgeon during cardiac surgical procedures",
-        "Prepare surgical instruments, equipment, and materials for procedures",
-        "Support postoperative patient care in collaboration with the Cardiac ICU and clinical teams",
-        "Monitor patients and promptly escalate complications when identified",
-        "Participate in ward rounds and multidisciplinary cardiac case discussions",
-        "Maintain accurate clinical and surgical documentation",
-        "Support clinical audits, quality improvement, teaching, and service development",
-        "Ensure compliance with infection prevention, patient safety, and hospital policies"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-13",
-      "deadline": "2026-09-09",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/940638/cardiac-surgery-medical-officer-at-ascentech-servi.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Associate Cardiac Surgeon",
-      "company": "Ascentech Services Limited",
-      "location": "Port Harcourt, Rivers, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "3",
-      "qualification": "MBBS",
-      "requirements": [
-        "MBBS/MD or equivalent medical degree or relevant surgical qualification.",
-        "Current professional registration and practising licence.",
-        "Minimum 3 years’ relevant surgical experience.",
-        "Experience in cardiac or cardiothoracic surgery is highly desirable.",
-        "Strong clinical assessment, communication, and technical skills.",
-        "Ability to work effectively in an operating theatre and multidisciplinary environment.",
-        "Good understanding of perioperative and postoperative surgical care.",
-        "Strong commitment to patient safety, professionalism, and continuous learning."
-      ],
-      "responsibilities": [
-        "Assist with preoperative assessment and preparation of patients.",
-        "Review clinical records, investigations, imaging, and laboratory results.",
-        "Assist the Consultant Cardiac Surgeon during cardiac surgical procedures.",
-        "Prepare surgical instruments, equipment, and materials for procedures.",
-        "Support postoperative patient care in collaboration with the Cardiac ICU and clinical teams.",
-        "Monitor patients and promptly escalate complications when identified.",
-        "Participate in ward rounds and multidisciplinary cardiac case discussions.",
-        "Maintain accurate clinical and surgical documentation.",
-        "Support clinical audits, quality improvement, teaching, and service development.",
-        "Ensure compliance with infection prevention, patient safety, and hospital policies."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-13",
-      "deadline": "2026-09-19",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/940609/associate-cardiac-surgeon-at-ascentech-services-li.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -27574,39 +24871,6 @@
       "contact_phone": "08073832415",
       "apply_url": "https://medicalworldnigeria.com/post/School-Nurse-at-Chucklers-Heights-Montessori?pid=78324",
       "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Medical Laboratory Scientist",
-      "company": "ExCare Health Services Ltimited",
-      "location": "Chevron, Lagos, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Medical Laboratory Scientist",
-      "salary": "N240,000 - N300,000 / month",
-      "experience": "Minimum of one year of experience in a similar role.",
-      "qualification": "Bachelor’s Degree in Medical Laboratory Science (BMLS)",
-      "requirements": [
-        "Registration and a valid practicing license with the Medical Laboratory Science Council of Nigeria",
-        "Strong documentation, quality management, and laboratory data management skills",
-        "Attention to detail, accountability, and the ability to work effectively in a team."
-      ],
-      "responsibilities": [
-        "Perform routine and specialized laboratory tests on blood, tissues, and body fluids using standard procedures",
-        "Operate, calibrate, and maintain laboratory equipment while monitoring quality control measures",
-        "Ensure proper specimen handling, documentation, and reporting of test results",
-        "Maintain a sterile laboratory environment and comply with safety, quality, and regulatory standards",
-        "Support blood grouping, compatibility testing, and identification of infectious agents",
-        "Manage laboratory inventory, prepare routine reports, and maintain confidentiality of patient information"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-06",
-      "deadline": "2026-09-19",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/936567/medical-laboratory-scientist-at-excare-health-serv.html",
-      "_source": "hotnigerianjobs"
     },
     {
       "job_title": "Musculoskeletal & Sports Rehabilitation Therapist",
@@ -30579,42 +27843,6 @@
       "_source": "hotnigerianjobs"
     },
     {
-      "job_title": "Porter",
-      "company": "Enugu International Hospital",
-      "location": "Enugu, Nigeria",
-      "job_type": "Full time",
-      "job_category": "Other",
-      "salary": "1,240",
-      "experience": "2",
-      "qualification": "rn",
-      "requirements": [
-        "Physical fitness",
-        "Basic literacy",
-        "Hospital-portering aptitude",
-        "Current registration with the applicable Nigerian regulatory body, where required",
-        "Evidence of continuing professional development",
-        "Strong communication skills",
-        "Patient-first mindset"
-      ],
-      "responsibilities": [
-        "Deliver a high-quality, reliable service within the Cleaning & Housekeeping function",
-        "Collaborate with colleagues across departments to achieve shared goals",
-        "Maintain accurate records and uphold organisational standards",
-        "Support quality improvement and process-efficiency initiatives",
-        "Uphold health, safety, and compliance requirements at all times"
-      ],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-07-24",
-      "deadline": "2026-09-19",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/929135/porters-at-enugu-international-hospital.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
       "job_title": "Assistant Embryologist",
       "company": "Halimatu Musa Hospital",
       "location": "Edo, Nigeria",
@@ -31322,393 +28550,6 @@
       "contact_email": "",
       "contact_phone": "08133821605",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/928521/optometrist-at-stfaith-multispecialist-hospital.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Medical Representative",
-      "company": "Alpha Pharmacy and Stores Limited",
-      "location": "Lagos, Nigeria",
-      "job_type": "",
-      "job_category": "Other",
-      "salary": "",
-      "experience": "1-3 years post-graduation experience for Medical Rep",
-      "qualification": "B.Pharm / Pharm.D from a reputable Institution.",
-      "requirements": [
-        "Strong sales Negotiation and communication skills.",
-        "A valid Driver's license with driving experience.",
-        "Proficiency in the use of ERP software and Microsoft 365."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-07-22",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/928124/medical-representative-at-alpha-pharmacy-and-store.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Pharmacist",
-      "company": "Valuemart Limited",
-      "location": "Wuye, Abuja (FCT), Nigeria",
-      "job_type": "Part-time",
-      "job_category": "Pharmacist",
-      "salary": "",
-      "experience": "4",
-      "qualification": "Relevant qualifications",
-      "requirements": [
-        "2-4 years experience"
-      ],
-      "responsibilities": [
-        "Dispense and label medications accurately.",
-        "Counsel patients on dosage, side effects, and proper use of medicines.",
-        "Review prescriptions for accuracy and possible drug interactions.",
-        "Maintain proper storage and inventory of medications.",
-        "Keep patient medication records up to date.",
-        "Ensure compliance with pharmacy laws and professional standards."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-07-22",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/928122/pharmacist-at-valuemart-limited.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Pharmacist (Deputy)",
-      "company": "DP World",
-      "location": "Isolo / Oshodi, Lagos, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Pharmacist",
-      "salary": "n,",
-      "experience": "Minimum of 2-5 years’ experience in supply chain quality management system",
-      "qualification": "Bachelor’s Degree in Pharmacy (B. Pharm.) or any related field.",
-      "requirements": [
-        "Sound understanding of HSE, Quality and Regulatory management systems.",
-        "Cold chain storage management.",
-        "Experience with Regulatory Agencies such as PCN and NAFDAC.",
-        "WMS experience (SAP and related software).",
-        "Process or workflow management.",
-        "Standard Operating Procedure management."
-      ],
-      "responsibilities": [
-        "Oversee the implementation of quality control measures.",
-        "Monitor HSE practices.",
-        "Ensure compliance of operational activities within the DC with relevant regulations.",
-        "Oversee the registration and maintenance of premises licence of the Pharma warehouse.",
-        "Ensure compliance and monitoring of operational staff with GWP, GSP, and clients’ SOPs.",
-        "Drive quality culture related to receipt, storage, dispatch, and distribution of products in the DC.",
-        "Prepare and forward relevant Monthly Reports to line managers.",
-        "Ensure adherence to Service Level Agreements (SLA).",
-        "Support monitoring and evaluation of third-party service providers' performance.",
-        "Lead engagements on all audits and regulatory inquiries.",
-        "Carry out scheduled self-inspections for compliance.",
-        "Ensure efficient service delivery to customers and resolution of quality complaints.",
-        "Monitor and report on product storage conditions.",
-        "Ensure accuracy of batch and shelf-life management.",
-        "Manage controlled drugs and maintain poison book entries."
-      ],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-07-22",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/927564/pharmacist-deputy-at-dp-world.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Medical Officer",
-      "company": "Daniel Adewole Awe Medical Center (DAAMC)",
-      "location": "Ilesa, Osun, Nigeria",
-      "job_type": "Full time",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "Experience in Surgery or basic surgical procedures, including preoperative and postoperative patient management, is an added advantage.",
-      "qualification": "ond",
-      "requirements": [
-        "Strong foundation in Medicine and clinical decision-making, with the ability to manage a range of primary and secondary healthcare conditions.",
-        "Demonstrated Patient Care skills, including compassionate bedside manner, effective communication, and commitment to patient safety and confidentiality.",
-        "Ability to provide Training to junior staff or students, and willingness to participate in continuous professional development activities.",
-        "Proven experience Working with Physicians and other healthcare team members in a collaborative, multidisciplinary environment.",
-        "Recognized medical degree and full registration with relevant medical regulatory bodies.",
-        "Previous clinical experience in a hospital or primary care setting; experience in community-based healthcare is beneficial.",
-        "Strong ethical standards, resilience in a busy clinical environment, and readiness to work shifts, weekends, or on-call as required."
-      ],
-      "responsibilities": [
-        "Conducting consultations, ordering and interpreting investigations, prescribing medications, and maintaining accurate medical records.",
-        "Assisting with surgical procedures, managing emergency cases, and coordinating care with other physicians and healthcare professionals.",
-        "Participating in patient education, clinical audits, and training activities to support continuous improvement in care quality and safety."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-07-22",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/928081/medical-officer-at-daniel-adewole-awe-medical-cent.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Programme Officer",
-      "company": "Malaria Consortium",
-      "location": "Kaduna, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Public Health",
-      "salary": "Competitive Salary",
-      "experience": "Five years’ experience of working in the Public Health sector",
-      "qualification": "Training in Nursing or Public Health",
-      "requirements": [
-        "Experience in programme management at the LGA / state level",
-        "Excellent project planning, management and monitoring & evaluation skills",
-        "Experience managing project budgets",
-        "Experience in using digital data collection tools in SMC campaigns and other health programmes",
-        "Some practical experience in Health Information and Disease Surveillance Systems",
-        "Experience working at the LGA and community levels",
-        "Experience working on campaign style interventions"
-      ],
-      "responsibilities": [
-        "Support the SPM and the state management team to lead activities for smooth programme management",
-        "Build and performance manage an effective project team",
-        "Engagement of stakeholders including government, communities and beneficiaries",
-        "Support M&E activities and reporting of SPAQ admin",
-        "Representative activities at the LGA levels"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-07-22",
-      "deadline": "2026-08-05",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/928179/programme-officer-at-malaria-consortium.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "School Nurse",
-      "company": "Totsland Schools",
-      "location": "Abuja, Nigeria",
-      "job_type": "",
-      "job_category": "Nurse",
-      "salary": "n,",
-      "experience": "in pediatric nursing or school nursing preferred but not required.",
-      "qualification": "ond",
-      "requirements": [
-        "Registered Nurse (RN) license in Nigeria required.",
-        "CPR and first aid certification required.",
-        "Strong communication and interpersonal skills."
-      ],
-      "responsibilities": [
-        "Provide compassionate and competent healthcare services to students, staff, and visitors.",
-        "Assess and address the healthcare needs of students, including administering medication, treating minor injuries and illnesses, and managing chronic health conditions.",
-        "Develop and implement health education programs and initiatives.",
-        "Collaborate with teachers, administrators, and parents to create individualized healthcare plans.",
-        "Uphold the values of love, compassion, and respect in all interactions."
-      ],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-07-22",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/927936/school-nurse-at-totsland-schools.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Registered Nurse",
-      "company": "Cov-optics Eye Clinic",
-      "location": "Awka, Anambra, Nigeria",
-      "job_type": "",
-      "job_category": "Nurse",
-      "salary": "",
-      "experience": "",
-      "qualification": "Relevant qualifications for the position applied for",
-      "requirements": [
-        "Strong communication and interpersonal skills",
-        "Ability to work effectively in a team",
-        "Professionalism and a commitment to excellent patient care."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-07-22",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "09024808662",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/927808/registered-nurse-male-or-female-at-covoptics-eye-c.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Laboratory Instructor",
-      "company": "the DNA Learning Center Nigeria (DNALC Nigeria)",
-      "location": "Enugu, Nigeria",
-      "job_type": "",
-      "job_category": "Medical Laboratory Scientist",
-      "salary": "n,",
-      "experience": "in laboratory work or teaching is preferred",
-      "qualification": "Bachelor’s degree (B.Sc.)",
-      "requirements": [
-        "Prior experience in laboratory work or teaching is preferred",
-        "Strong knowledge of laboratory procedures and safety standards",
-        "Good communication and teaching skills",
-        "Attention to detail and organizational ability",
-        "Basic computer skills for reporting and documentation"
-      ],
-      "responsibilities": [
-        "Explain scientific concepts and experimental procedures clearly and effectively.",
-        "Conduct engaging laboratory and science practical sessions for students.",
-        "Prepare, manage, and maintain laboratory materials, equipment, and reagents.",
-        "Guide and supervise students during experiments to ensure safety and accuracy.",
-        "Monitor student performance, troubleshoot lab issues, and support curriculum development."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-07-22",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/928021/laboratory-instructor-at-the-dna-learning-center-n.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Laboratory Technician",
-      "company": "Ginos Ventures Limited",
-      "location": "Aro, Abeokuta - Ogun, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Medical Laboratory Scientist",
-      "salary": "n,",
-      "experience": "Minimum of 3 years of relevant laboratory experience.",
-      "qualification": "HND or B.Sc. in Medical Laboratory Technology/Science or a related field.",
-      "requirements": [
-        "Proficiency in laboratory equipment and diagnostic procedures.",
-        "Good analytical, organizational, and communication skills.",
-        "Ability to work independently and as part of a team.",
-        "High level of integrity and attention to detail."
-      ],
-      "responsibilities": [
-        "Perform laboratory tests and procedures in accordance with established protocols.",
-        "Collect, prepare, label, and process patient specimens accurately.",
-        "Operate, calibrate, and maintain laboratory equipment.",
-        "Record and report test results accurately and promptly.",
-        "Maintain proper laboratory documentation and records.",
-        "Ensure compliance with quality assurance and laboratory safety standards.",
-        "Monitor laboratory inventory and report shortages of reagents and consumables.",
-        "Maintain cleanliness and organization of the laboratory environment.",
-        "Collaborate with other healthcare professionals to ensure efficient laboratory services.",
-        "Perform any other duties assigned by Management."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-07-22",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/927669/laboratory-technician-at-ginos-ventures-limited.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Optician (Male)",
-      "company": "Cov-optics Eye Clinic",
-      "location": "Awka, Anambra, Nigeria",
-      "job_type": "",
-      "job_category": "Allied Health",
-      "salary": "",
-      "experience": "",
-      "qualification": "Relevant qualifications for the position applied for",
-      "requirements": [
-        "Strong communication and interpersonal skills",
-        "Ability to work effectively in a team",
-        "Professionalism and a commitment to excellent patient care."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-07-22",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "09024808662",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/927809/optician-male-at-covoptics-eye-clinic.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Public Health Officer (Female)",
-      "company": "Cov-optics Eye Clinic",
-      "location": "Awka, Anambra, Nigeria",
-      "job_type": "",
-      "job_category": "Public Health",
-      "salary": "",
-      "experience": "",
-      "qualification": "Relevant qualifications for the position applied for",
-      "requirements": [
-        "Strong communication and interpersonal skills",
-        "Ability to work effectively in a team",
-        "Professionalism and a commitment to excellent patient care."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-07-22",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "09024808662",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/927805/public-health-officer-female-at-covoptics-eye-clin.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Patient Service Representative",
-      "company": "EMADOR Nigeria Integrated Resources",
-      "location": "Ikeja, Lagos, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Other",
-      "salary": "N100,000 - N150,000 / Month",
-      "experience": "2",
-      "qualification": "OND",
-      "requirements": [
-        "Knowledge of medical terms and practices",
-        "Professional manner and appearance",
-        "Strong interpersonal and communication skills",
-        "Meticulous attention to detail",
-        "Proficient in Microsoft Office Suite (Word, Excel, Outlook, and Access)"
-      ],
-      "responsibilities": [
-        "Update and verify patient information at every visit",
-        "Assist patients with filling out patient history forms, consent forms and payment contract forms",
-        "Receive and process cash and credit card payments for medical services rendered",
-        "Review patient accounts, identify delinquent accounts and collect overdue payments",
-        "Answer, investigate and/or direct patient inquiries or complaints to the appropriate medical staff member"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-07-22",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/927608/patient-service-representative-at-emador-nigeria-i.html",
       "_source": "hotnigerianjobs"
     }
   ]
