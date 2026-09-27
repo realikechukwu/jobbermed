@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "extracted_at": "2026-09-26T09:00:12.563289",
+    "extracted_at": "2026-09-27T09:25:04.860293",
     "model": "gpt-4o-mini",
-    "total_processed": 1201,
-    "duplicates_removed": 211,
-    "skipped_old": 5,
+    "total_processed": 1175,
+    "duplicates_removed": 206,
+    "skipped_old": 32,
     "skipped_empty": 0,
     "errors": 0,
-    "openai_calls": 298
+    "openai_calls": 209
   },
   "jobs": [
     {
@@ -34,6 +34,72 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/pharmacist-1926",
       "_source": "medlocum"
+    },
+    {
+      "job_title": "Medical Officer",
+      "company": "a Fast Growing Hospital",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Doctor",
+      "salary": "₦400,000 - ₦500,000/month",
+      "experience": "2 years",
+      "qualification": "BSc",
+      "requirements": [
+        "MBBS/MBChB from a recognized institution",
+        "Must have completed NYSC",
+        "Must possess a valid and current MDCN Annual Practising Licence",
+        "Full registration with the Medical and Dental Council of Nigeria (MDCN)",
+        "Good clinical assessment, diagnosis and patient-management skills",
+        "Ability to manage medical emergencies and make appropriate clinical decisions",
+        "Good communication, documentation and interpersonal skills",
+        "Ability to work effectively within a multidisciplinary healthcare team",
+        "Willingness to work scheduled shifts as required",
+        "Candidates residing within Igando, Ikotun, Egbeda, Idimu, Isheri-Olofin, Iyana-Ipaja and surrounding areas will have an added advantage."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Email the address shown on the original listing.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-09-26",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/medical-officer-46",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Medical Laboratory Technician",
+      "company": "a Fast Growing Hospital",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Medical Laboratory Scientist",
+      "salary": "n,",
+      "experience": "2 years",
+      "qualification": "OND",
+      "requirements": [
+        "Relevant recognized qualification in Medical Laboratory Technology",
+        "Must be duly registered with the appropriate regulatory body",
+        "Must possess a valid and current practising licence",
+        "Previous experience working in a hospital or diagnostic laboratory will be an added advantage",
+        "Good knowledge of specimen collection, handling, processing and basic laboratory procedures",
+        "Ability to operate and properly maintain basic laboratory equipment",
+        "Good understanding of infection prevention, laboratory safety and quality-control procedures",
+        "Good documentation and record-keeping skills",
+        "Ability to work effectively as part of a multidisciplinary healthcare team",
+        "Candidates residing within Igando, Ikotun, Egbeda, Idimu and surrounding areas will have an added advantage."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Email the address shown on the original listing.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-09-26",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/medical-laboratory-technician-9",
+      "_source": "myjobmag"
     },
     {
       "job_title": "Consultant Specialist Grade I (Surgery - Plastic Surgery)",
@@ -2694,6 +2760,82 @@
       "_source": "myjobmag"
     },
     {
+      "job_title": "Senior Accountant",
+      "company": "Ginos Ventures Limited",
+      "location": "Abuja, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "N,",
+      "experience": "5 - 7 years",
+      "qualification": "BSc",
+      "requirements": [
+        "BA/BSc/HND",
+        "5 - 7 years of relevant accounting experience, preferably in a senior accounting role",
+        "ACA, ACCA, ICAN, or equivalent certification is an added advantage",
+        "Strong knowledge of accounting principles, financial reporting, and tax regulations",
+        "Proficient in accounting software and Microsoft Excel",
+        "Strong problem-solving, analytical, and organizational abilities",
+        "Excellent communication and interpersonal skills",
+        "Demonstrates a high level of integrity, accuracy, and attention to detail",
+        "Ability to drive is an added advantage",
+        "Must be resident in Abuja"
+      ],
+      "responsibilities": [
+        "Prepare and maintain accurate financial records and reports",
+        "Prepare monthly, quarterly, and annual financial statements",
+        "Monitor and reconcile bank statements, ledgers, and accounts",
+        "Oversee Accounts Payable and Accounts Receivable processes",
+        "Ensure compliance with statutory requirements, tax regulations, and Company policies",
+        "Handle payroll processing and monitor financial transactions",
+        "Conduct financial analysis and provide actionable insights and recommendations",
+        "Coordinate internal and external audit processes",
+        "Monitor budgets and cash flow activities",
+        "Supervise and support accounting staff where applicable",
+        "Ensure timely filing of taxes and statutory deductions",
+        "Implement and continuously improve accounting systems, processes, and financial controls."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-09-25",
+      "deadline": "",
+      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/senior-accountant-ginos-ventures-limited-1",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Oncology Pharmacy Technician",
+      "company": "The African Medical Centre of Excellence (AMCE)",
+      "location": "Abuja, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Pharmacist",
+      "salary": "n,",
+      "experience": "1",
+      "qualification": "OND",
+      "requirements": [
+        "OND"
+      ],
+      "responsibilities": [
+        "Support Clinical Pharmacist in aseptic preparation of cancer therapies.",
+        "Perform accuracy checks on prepared doses before pharmacist verification.",
+        "Label and package oncology medications following safety standards.",
+        "Manage procurement and storage of oncology pharmaceuticals.",
+        "Conduct daily temperature monitoring for storage of biologics.",
+        "Adhere to PPE protocols for hazardous drug handling."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-09-25",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/oncology-pharmacy-technician-the-african-medical-centre-of-excellence-amce-2",
+      "_source": "myjobmag"
+    },
+    {
       "job_title": "Medical Laboratory Scientist – Stem Cell",
       "company": "The African Medical Centre of Excellence (AMCE)",
       "location": "Abuja, Nigeria",
@@ -2771,82 +2913,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.myjobmag.com/job/colorectal-colonoscopy-surgeon-the-african-medical-centre-of-excellence-amce-1",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Senior Accountant",
-      "company": "Ginos Ventures Limited",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "N,",
-      "experience": "5 - 7 years",
-      "qualification": "BSc",
-      "requirements": [
-        "BA/BSc/HND",
-        "5 - 7 years of relevant accounting experience, preferably in a senior accounting role",
-        "ACA, ACCA, ICAN, or equivalent certification is an added advantage",
-        "Strong knowledge of accounting principles, financial reporting, and tax regulations",
-        "Proficient in accounting software and Microsoft Excel",
-        "Strong problem-solving, analytical, and organizational abilities",
-        "Excellent communication and interpersonal skills",
-        "Demonstrates a high level of integrity, accuracy, and attention to detail",
-        "Ability to drive is an added advantage",
-        "Must be resident in Abuja"
-      ],
-      "responsibilities": [
-        "Prepare and maintain accurate financial records and reports",
-        "Prepare monthly, quarterly, and annual financial statements",
-        "Monitor and reconcile bank statements, ledgers, and accounts",
-        "Oversee Accounts Payable and Accounts Receivable processes",
-        "Ensure compliance with statutory requirements, tax regulations, and Company policies",
-        "Handle payroll processing and monitor financial transactions",
-        "Conduct financial analysis and provide actionable insights and recommendations",
-        "Coordinate internal and external audit processes",
-        "Monitor budgets and cash flow activities",
-        "Supervise and support accounting staff where applicable",
-        "Ensure timely filing of taxes and statutory deductions",
-        "Implement and continuously improve accounting systems, processes, and financial controls."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-25",
-      "deadline": "",
-      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/senior-accountant-ginos-ventures-limited-1",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Oncology Pharmacy Technician",
-      "company": "The African Medical Centre of Excellence (AMCE)",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Pharmacist",
-      "salary": "n,",
-      "experience": "1",
-      "qualification": "OND",
-      "requirements": [
-        "OND"
-      ],
-      "responsibilities": [
-        "Support Clinical Pharmacist in aseptic preparation of cancer therapies.",
-        "Perform accuracy checks on prepared doses before pharmacist verification.",
-        "Label and package oncology medications following safety standards.",
-        "Manage procurement and storage of oncology pharmaceuticals.",
-        "Conduct daily temperature monitoring for storage of biologics.",
-        "Adhere to PPE protocols for hazardous drug handling."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-09-25",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/oncology-pharmacy-technician-the-african-medical-centre-of-excellence-amce-2",
       "_source": "myjobmag"
     },
     {
@@ -5140,11 +5206,13 @@
       "job_category": "Doctor",
       "salary": "N7,684,304 annually",
       "experience": "",
-      "qualification": "MBBS or MBChB or equivalent qualification; postgraduate medical qualification such as the Fellowship of FMCN, FWACP, or FWACS",
+      "qualification": "MBBS or MBChB or equivalent qualification, plus full registration with the Medical and Dental Council of Nigeria",
       "requirements": [
+        "MBBS or MBChB or equivalent qualification",
         "Full registration with the Medical and Dental Council of Nigeria",
-        "Evidence of completion of/exemption/exclusion from NYSC",
-        "Current practicing license"
+        "Evidence of completion of / or exemption / exclusion from NYSC",
+        "Current practicing license",
+        "Postgraduate medical qualification such as FMCN, FWACP, or FWACS"
       ],
       "responsibilities": [],
       "how_to_apply": [
@@ -19064,47 +19132,6 @@
       "_source": "hotnigerianjobs"
     },
     {
-      "job_title": "Healthcare Trainer (Nurse / Medical Doctor)",
-      "company": "Community Trust Network",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Nurse",
-      "salary": "₦200,000 - ₦300,000/month",
-      "experience": "3 - 5 years",
-      "qualification": "BSc",
-      "requirements": [
-        "Bachelor's degree in Nursing or Medicine",
-        "Must be a Registered Nurse or Medical Doctor with relevant professional registration",
-        "Minimum of 3 years' experience in healthcare training, facilitation, clinical teaching, public speaking or a related field",
-        "Proven experience as a healthcare trainer, clinical educator, nurse educator or facilitator",
-        "A recognized training/teaching/facilitation qualification from an accredited institution is highly desirable",
-        "Demonstrable experience delivering practical, competency-based healthcare training",
-        "Experience training healthcare assistants, caregivers, nurses or other healthcare professionals"
-      ],
-      "responsibilities": [
-        "Plan, develop and deliver engaging healthcare training programs for new and experienced healthcare professionals",
-        "Deliver both classroom-based and practical hands-on training",
-        "Facilitate training in specified healthcare competencies",
-        "Demonstrate practical procedures using mannequins and other training apparatus",
-        "Assess trainees' practical competencies and provide feedback",
-        "Develop training plans, lesson materials, assessments and practical demonstrations",
-        "Adapt teaching methods to accommodate different learning styles",
-        "Maintain accurate training and assessment records",
-        "Stay up to date with healthcare standards and practices",
-        "Conduct online training sessions using appropriate digital platforms",
-        "Support continuous professional development among healthcare professionals"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-09-08",
-      "deadline": "2026-10-08",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/healthcare-trainer-nurse-medical-doctor-community-trust-network",
-      "_source": "myjobmag"
-    },
-    {
       "job_title": "Associate Medical Laboratory Scientist",
       "company": "Reliance Health",
       "location": "Lagos, Nigeria",
@@ -31750,690 +31777,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/931808/assistant-field-manager-at-new-incentives-4-openin.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "General Practitioner",
-      "company": "Deda Hospital",
-      "location": "Nigeria",
-      "job_type": "",
-      "job_category": "Doctor",
-      "salary": "",
-      "experience": "in a professional clinical environment.",
-      "qualification": "bsc",
-      "requirements": [
-        "MBBS or equivalent medical degree",
-        "Valid registration with relevant professional bodies",
-        "Strong clinical and patient management skills",
-        "Computer literacy"
-      ],
-      "responsibilities": [
-        "Provide urgent medical care and conduct inpatient assessments",
-        "Perform ward rounds and collaborate with consultants and specialists",
-        "Manage outpatient cases including acute and chronic conditions",
-        "Attend to emergencies and communicate treatment plans with patients and families",
-        "Support maternal and reproductive health services including antenatal, postnatal, and obstetric care",
-        "Maintain accurate documentation and ensure compliance with hospital policies"
-      ],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-07-28",
-      "deadline": "July 31 2026",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/General-Practitioner?pid=78291",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Lead Cardiologist",
-      "company": "African Medical Centre of Excellence (AMCE)",
-      "location": "Apapa, Lagos",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "Minimum of 10 years’ Consultant-level experience in cardiology practice.",
-      "qualification": "bsc",
-      "requirements": [
-        "professional standards, and AMCE policies.",
-        "Lead clinical audit, morbidity and mortality review, incident review, and quality improvement activities within cardiology.",
-        "Monitor service performance indicators, patient outcomes, safety standards, and documentation quality.",
-        "Promote safe use of cardiology equipment, infection prevention standards, medication safety, and effective clinical risk management.",
-        "Support accreditation readiness and continuous improvement across the cardiovascular service.",
-        "Provide clinical leadership, mentorship, and supervision to consultants, fellows, residents, cardiac physiologists, nurses, and allied health professionals.",
-        "Facilitate teaching, case reviews, grand rounds, clinical training, and continuing professional development activities.",
-        "Promote a culture of teamwork, accountability, ethical practice, compassion, and patient-centred care.",
-        "Lead or participate in cardiology research, innovation, publications, and collaboration with AMCE’s clinical and academic partners.",
-        "Support performance management, capability development, and succession planning within the cardiology team."
-      ],
-      "responsibilities": [
-        "Provide expert clinical assessment, diagnosis, treatment, and ongoing management for patients with complex cardiovascular conditions.",
-        "Lead consultant-level decision-making across outpatient clinics, inpatient reviews, emergency consultations, and multidisciplinary case discussions.",
-        "Provide clinical oversight for non-invasive and invasive cardiology services, ensuring appropriate escalation, referral, and continuity of care.",
-        "Communicate clearly with patients and families on diagnosis, treatment options, risks, benefits, and expected outcomes.",
-        "Review and approve clinical reports, treatment plans, discharge summaries, and follow-up recommendations where required.",
-        "Develop and implement strategic plans, clinical pathways, and service improvement initiatives for AMCE’s cardiology service.",
-        "Strengthen integration between cardiology, cardiac diagnostics, interventional cardiology, electrophysiology, intensive care, emergency medicine, and other relevant specialties.",
-        "Drive improvements in access, patient flow, turnaround time, patient experience, and clinical outcomes across the cardiology service.",
-        "Support the development of advanced cardiac programmes, including preventive cardiology, heart failure, cardiac imaging, rhythm management, and multidisciplinary cardiac care.",
-        "Contribute to workforce planning, equipment planning, and resource optimisation for sustainable service growth.",
-        "Ensure compliance with applicable clinical guidelines, regulatory requirements, professional standards, and AMCE policies."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-07-28",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Lead-Cardiologist-at-African-Medical-Centre-of-Excellence-AMCE?pid=78285",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Pharmacist",
-      "company": "a Leading Oncology Clinic - Workforce Group",
-      "location": "Lekki, Lagos, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Pharmacist",
-      "salary": "N350,000 Net Monthly",
-      "experience": "is an advantage",
-      "qualification": "Bachelor",
-      "requirements": [
-        "Bachelor of Pharmacy (B.Pharm) or Doctor of Pharmacy (PharmD)",
-        "Current practising licence with the Pharmacists Council of Nigeria (PCN)",
-        "Relevant hospital or clinical pharmacy experience is an advantage"
-      ],
-      "responsibilities": [
-        "Dispense medications accurately and efficiently",
-        "Provide medication counselling to patients",
-        "Manage pharmaceutical inventory",
-        "Ensure compliance with PCN regulations and medication safety standards",
-        "Support clinical teams in medication management"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-07-28",
-      "deadline": "2026-09-28",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/931217/pharmacist-at-a-leading-oncology-clinic-workforce.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Cath Lab Technician",
-      "company": "Margaret Lawrence University Teaching Hospital (MLUTH)",
-      "location": "Abuja (FCT), Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Allied Health",
-      "salary": "n,",
-      "experience": "3",
-      "qualification": "BSc Degree in Physiology or Anatomy with additional Diploma in Cath Lab Technologist",
-      "requirements": [
-        "BSc Degree in Physiology or Anatomy",
-        "Additional Diploma in Cath Lab Technologist",
-        "Minimum 3 years of work experience in an invasive Cardiac Laboratory"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-07-28",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/930814/cath-lab-technician-at-margaret-lawrence-universit.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Biomedical Engineer",
-      "company": "Margaret Lawrence University Teaching Hospital (MLUTH)",
-      "location": "Abuja (FCT), Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Other",
-      "salary": "n,",
-      "experience": "3",
-      "qualification": "BSc Degree in Biomedical Engineering",
-      "requirements": [
-        "BSc Degree in Biomedical Engineering",
-        "Minimum 3 years of work experience in a medical laboratory, clinic or hospital"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-07-28",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/930804/biomedical-engineer-at-margaret-lawrence-universit.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Pharmacist / Pharmacy Technician",
-      "company": "Margaret Lawrence University Teaching Hospital (MLUTH)",
-      "location": "Abuja (FCT), Nigeria",
-      "job_type": "",
-      "job_category": "Pharmacist",
-      "salary": "",
-      "experience": "3 years and above",
-      "qualification": "Bachelor",
-      "requirements": [
-        "Bachelor’s Degree in Pharmacy from a recognized institution.",
-        "Post-qualification experience of 3 years and above.",
-        "Current practicing license from the Pharmacists Council of Nigeria (PCN)."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-07-28",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/930803/pharmacist-pharmacy-technician-at-margaret-lawrenc.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Pharmacy Assistant",
-      "company": "Castville Solutions",
-      "location": "Egbeda, Lagos, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Pharmacist",
-      "salary": "N70,000 - N80,000 per month",
-      "experience": "1",
-      "qualification": "ond",
-      "requirements": [
-        "Minimum of OND, or equivalent qualification.",
-        "At least 1 year of prior experience working in a community pharmacy is required.",
-        "Good understanding of community pharmacy operations and over-the-counter (OTC) products.",
-        "Excellent customer service and communication skills.",
-        "Strong organisational skills and attention to detail.",
-        "Ability to work efficiently in a fast-paced environment.",
-        "Basic computer literacy and experience using a Point of Sale (POS) system is an added advantage.",
-        "Professional appearance, integrity, and a positive attitude."
-      ],
-      "responsibilities": [
-        "Welcome and attend to customers in a professional and courteous manner.",
-        "Assist in processing prescriptions under the supervision of the pharmacist.",
-        "Prepare and package medications for dispensing.",
-        "Receive, arrange, and replenish stock on shelves.",
-        "Monitor stock levels and report low stock or expired products.",
-        "Maintain a clean, organised, and well-stocked pharmacy environment.",
-        "Process sales transactions and issue receipts where required.",
-        "Respond to customer enquiries and refer clinical questions to the pharmacist.",
-        "Ensure compliance with pharmacy policies and standard operating procedures.",
-        "Support the pharmacist with day-to-day administrative and operational tasks."
-      ],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-07-28",
-      "deadline": "2026-10-28",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/930598/pharmacy-assistant-at-castville-solutions.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Senior Pharmacy Technician",
-      "company": "Castville Solutions",
-      "location": "Egbeda, Lagos, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Pharmacist",
-      "salary": "N130,000 - N180,000 monthly",
-      "experience": "Minimum of 3 years' experience as a Pharmacy Technician in a hospital, retail, or community pharmacy.",
-      "qualification": "Diploma",
-      "requirements": [
-        "Diploma or recognised qualification in Pharmacy Technician studies.",
-        "Valid registration or licence with the relevant regulatory authority (PCN).",
-        "Strong knowledge of pharmaceutical products, dispensing procedures, and medication safety practices.",
-        "Proven experience in inventory management, stock reconciliation, and pharmacy operations.",
-        "Experience supervising or mentoring junior staff is an added advantage.",
-        "Excellent organisational, problem-solving, and time management skills.",
-        "Demonstrated ability to remain composed, exercise sound judgement, and prioritise tasks effectively in high-pressure environments.",
-        "Proficiency in pharmacy management systems and Microsoft Office applications.",
-        "Strong communication skills and the ability to work collaboratively within a multidisciplinary healthcare team.",
-        "High level of professionalism, integrity, and commitment to patient safety."
-      ],
-      "responsibilities": [
-        "Accurately prepare, label, and dispense medications under the supervision of a licensed pharmacist.",
-        "Review prescriptions for completeness and identify discrepancies before pharmacist verification.",
-        "Coordinate daily dispensing activities to ensure timely service delivery.",
-        "Oversee inventory management, including procurement requests, stock reconciliation, expiry monitoring, and storage.",
-        "Perform regular inventory audits and investigate stock discrepancies.",
-        "Supervise, mentor, and provide guidance to junior pharmacy technicians and support staff.",
-        "Ensure adherence to pharmacy policies, standard operating procedures, and regulatory requirements."
-      ],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-07-28",
-      "deadline": "2026-10-28",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/930595/senior-pharmacy-technician-at-castville-solutions.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Medical Doctor & Consultant",
-      "company": "Margaret Lawrence University Teaching Hospital (MLUTH)",
-      "location": "Abuja (FCT), Nigeria",
-      "job_type": "",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "",
-      "qualification": "MBBS Degree from a recognized institution, Fellowship of National Postgraduate Medical College or West African College in relevant subspecialty or its equivalent, Current practicing license, NYSC discharge certificate or exemption letter",
-      "requirements": [
-        "An MBBS Degree from a recognized institution.",
-        "Fellowship of National Postgraduate Medical College or West African College in relevant subspecialty or its equivalent.",
-        "Current practicing license.",
-        "NYSC discharge certificate or exemption letter (applicable to only Nigerians)."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-07-28",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/930797/medical-doctor-consultant-at-margaret-lawrence-uni.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Specialty Nurse",
-      "company": "Margaret Lawrence University Teaching Hospital (MLUTH)",
-      "location": "Abuja (FCT), Nigeria",
-      "job_type": "",
-      "job_category": "Nurse",
-      "salary": "",
-      "experience": "5",
-      "qualification": "Bachelor",
-      "requirements": [
-        "Post Basic Nursing qualification in a relevant nursing subspecialty",
-        "Minimum 5 years of practice in the subspecialty of interest",
-        "Current practicing license from Nursing and Midwifery Council of Nigeria",
-        "Clinical experience in direct patient care"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-07-28",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/930798/specialty-nurse-at-margaret-lawrence-university-te.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Radiographer / Imaging Technologist",
-      "company": "Margaret Lawrence University Teaching Hospital (MLUTH)",
-      "location": "Abuja (FCT), Nigeria",
-      "job_type": "",
-      "job_category": "Allied Health",
-      "salary": "",
-      "experience": "Minimum of 3 years of work experience in the imaging department of a clinic or hospital.",
-      "qualification": "BSc",
-      "requirements": [
-        "BSc Degree in Radiography / Imaging",
-        "Current practicing license registered with the Radiographers Registration Board of Nigeria."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-07-28",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/930807/radiographer-imaging-technologist-at-margaret-lawr.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Medical Lab Scientist / Technologist",
-      "company": "Margaret Lawrence University Teaching Hospital (MLUTH)",
-      "location": "Abuja (FCT), Nigeria",
-      "job_type": "",
-      "job_category": "Medical Laboratory Scientist",
-      "salary": "",
-      "experience": "in a medical laboratory, clinic, or hospital",
-      "qualification": "Degree",
-      "requirements": [
-        "A good university Degree (for Scientists) or a minimum of a Diploma in Medical Laboratory Technology (MLT) (for Technologists)",
-        "Minimum of 3 years work experience in a medical laboratory, clinic, or hospital",
-        "Certification from the Associate of the Institute of Medical Laboratory Science Council of Nigeria (AMLSCN)",
-        "Current practicing license",
-        "Relevant certification will be an added advantage."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-07-28",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/930801/medical-lab-scientist-technologist-at-margaret-law.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Radiographer",
-      "company": "Abuja Clinics Limited",
-      "location": "Maitama, Abuja (FCT)",
-      "job_type": "",
-      "job_category": "Allied Health",
-      "salary": "",
-      "experience": "2 years",
-      "qualification": "BSc in Radiography and Radiological Sciences",
-      "requirements": [
-        "BSc in Radiography and Radiological Sciences",
-        "NYSC discharge certificate",
-        "2 years post qualification relevant experience in a good hospital",
-        "Registered under the Radiographers Registration Board of Nigeria",
-        "Member of the Association of Radiographers of Nigeria"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-07-28",
-      "deadline": "2026-09-28",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/930608/radiographer-at-abuja-clinics-limited.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Medical Delegate",
-      "company": "Shalina Healthcare",
-      "location": "Abeokuta, Ogun, Nigeria",
-      "job_type": "",
-      "job_category": "Other",
-      "salary": "",
-      "experience": "3 - 5 years’ experience in Pharmaceutical Industry",
-      "qualification": "B.Sc",
-      "requirements": [
-        "B.Pharm / B.Sc Degree in Science Biological Sciences",
-        "Excellent verbal and written communication skills."
-      ],
-      "responsibilities": [
-        "Achievement of the sales budget for the assigned products within the territory",
-        "Detailing to doctors, pharmacist etc. to support sales.",
-        "Promotion of the ethical products to healthcare professional",
-        "Implementation of the marketing activities",
-        "Direct institutional orders & collections."
-      ],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-07-28",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/931208/medical-delegate-at-shalina-healthcare.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Optometrist",
-      "company": "Margaret Lawrence University Teaching Hospital (MLUTH)",
-      "location": "Abuja (FCT), Nigeria",
-      "job_type": "",
-      "job_category": "Allied Health",
-      "salary": "",
-      "experience": "Minimum of 3 years work experience as an optometrist.",
-      "qualification": "Doctor of Optometry (OD) from a recognised university.",
-      "requirements": [
-        "Current practicing license registered with the Optometrist and Dispensing Optician Registration Board of Nigeria (ODORBN)."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-07-28",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/930812/optometrist-at-margaret-lawrence-university-teachi.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Mortician",
-      "company": "Margaret Lawrence University Teaching Hospital (MLUTH)",
-      "location": "Abuja (FCT), Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Other",
-      "salary": "n,",
-      "experience": "3",
-      "qualification": "BSc Degree in Anatomy from a recognized institution.",
-      "requirements": [
-        "BSc Degree in Anatomy from a recognized institution.",
-        "Minimum 3 years of work experience in a mortuary."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-07-28",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/930811/mortician-at-margaret-lawrence-university-teaching.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Physiotherapist",
-      "company": "Margaret Lawrence University Teaching Hospital (MLUTH)",
-      "location": "Abuja (FCT), Nigeria",
-      "job_type": "",
-      "job_category": "Allied Health",
-      "salary": "",
-      "experience": "Minimum of 3 years work experience in a clinic or hospital",
-      "qualification": "BSc Degree in Physiotherapy or Medical Rehabilitation",
-      "requirements": [
-        "BSc Degree in Physiotherapy or Medical Rehabilitation",
-        "Current practicing license registered with the Medical Rehabilitation Therapists Registration Board of Nigeria (MRTB)"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-07-28",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/930810/physiotherapist-at-margaret-lawrence-university-te.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Health Information Management Officer",
-      "company": "Margaret Lawrence University Teaching Hospital (MLUTH)",
-      "location": "Abuja (FCT), Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Other",
-      "salary": "n,",
-      "experience": "Minimum of 3 years post-NYSC experience in a hospital setting.",
-      "qualification": "HND / BSc in Health Information Management or Data Science.",
-      "requirements": [
-        "HND / BSc in Health Information Management or Data Science.",
-        "Proficiency in computer packages including Microsoft Word, Excel.",
-        "Good knowledge of statistical packages such as SPSS, SAS EPI-info will be an added advantage."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-07-28",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/930800/health-information-management-officer-at-margaret.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "General Practitioner - Tele Consultation",
-      "company": "iSON Health",
-      "location": "Nigeria",
-      "job_type": "remote",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "2",
-      "qualification": "MBBS (or equivalent medical degree) recognized in Nigeria",
-      "requirements": [
-        "Valid medical license to practice in Nigeria.",
-        "Minimum 2 years of post-internship clinical experience preferred.",
-        "Excellent communication and patient management skills.",
-        "Comfortable using digital healthcare platforms.",
-        "Reliable internet connection and a laptop or desktop for consultations."
-      ],
-      "responsibilities": [
-        "Conduct virtual consultations through audio and video calls.",
-        "Assess patients, provide medical advice, and recommend appropriate treatment plans.",
-        "Issue digital prescriptions when clinically appropriate and in accordance with Nigerian medical regulations.",
-        "Maintain accurate and complete electronic medical records.",
-        "Escalate emergency cases and refer patients to appropriate healthcare facilities when required.",
-        "Adhere to clinical protocols, ethical standards, and patient confidentiality requirements."
-      ],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-07-28",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/930720/general-practitioner-tele-consultation-at-ison-hea.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Spa Therapist (Entry-Level)",
-      "company": "a Hospitality Company - Future Moves Recruitment Agency (FMR Agency)",
-      "location": "Ojodu Berger, Lagos, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Allied Health",
-      "salary": "N100,000 per month",
-      "experience": "2",
-      "qualification": "ond",
-      "requirements": [
-        "Minimum of an OND in Beauty Therapy, Cosmetology, Spa Therapy, or a related field",
-        "1–2 years of experience as a Spa Therapist or Beauty Therapist",
-        "Strong knowledge of facial and body treatments",
-        "Excellent communication and interpersonal skills",
-        "Professional appearance with high standards of personal hygiene and grooming",
-        "Good customer service and sales skills",
-        "Ability to work independently and as part of a team"
-      ],
-      "responsibilities": [
-        "Perform professional spa treatments including facials, body massages, body scrubs, waxing, manicure, and pedicure.",
-        "Conduct client consultations and recommend suitable skincare and wellness treatments.",
-        "Prepare treatment rooms and maintain strict hygiene and infection control standards.",
-        "Educate clients on treatment procedures and aftercare.",
-        "Monitor treatment products and report low stock levels.",
-        "Participate in approved photo and video content creation for the company's social media platforms.",
-        "Deliver exceptional customer service while maintaining professionalism and confidentiality."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-07-28",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/930629/spa-therapist-entrylevel-at-a-hospitality-industry.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Physiotherapist",
-      "company": "Abuja Clinics Limited",
-      "location": "Maitama, Abuja (FCT), Nigeria",
-      "job_type": "",
-      "job_category": "Allied Health",
-      "salary": "",
-      "experience": "4 years",
-      "qualification": "Degree in Physiotherapy",
-      "requirements": [
-        "Candidates should possess a Degree in Physiotherapy",
-        "4 years post qualification (2 years post NYSC)",
-        "Must have completed NYSC, or Certificate of Exemption."
-      ],
-      "responsibilities": [
-        "Work with patients who have a range of conditions, including neurological, neuromusculoskeletal, cardiovascular, and respiratory, sometimes over a period of weeks.",
-        "Diagnose, assess and treat patient’s physical problem/condition.",
-        "To be legally responsible and accountable",
-        "Assisting trauma patients with how to walk again",
-        "To act in a caring, compassionate and professional at all times.",
-        "Develop and review treatment programs that encourage exercise and movement by the use of a range of techniques.",
-        "Formulating treatment plans to address the conditions and needs of patients.",
-        "Involve parents and carers in the treatment, review, and rehabilitation of patients.",
-        "Educating patients, family members, and the community on how to prevent injuries and live a healthy lifestyle.",
-        "Write patient case notes and reports and collect statistics.",
-        "Liaise with other healthcare professionals, such as GPs, occupational therapists and social workers, to exchange information about the background and progress of patients, as well as to refer patients who require other medical attention.",
-        "Keeping up to date with new techniques and technologies available for treating patients.",
-        "Supervise student and junior physiotherapists and physiotherapy support workers.",
-        "Rehabilitation and pain management - introducing exercises to reduce and manage pain following surgery, injury or illness",
-        "Planning and organizing physiotherapy and fitness programs.",
-        "Performs other tasks as assigned."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-07-28",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/930607/physiotherapist-at-abuja-clinics-limited.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Orderly / Potter",
-      "company": "Dr. Peter Odili Cancer & Cardiovascular Hospital (POCCH)",
-      "location": "Port Harcourt, Rivers, Nigeria",
-      "job_type": "",
-      "job_category": "Other",
-      "salary": "n,",
-      "experience": "Minimum of one (1) year relevant experience as an Orderly, Hospital Attendant, Healthcare Assistant, or in a similar healthcare support role.",
-      "qualification": "Minimum of WAEC / SSCE or its equivalent.",
-      "requirements": [
-        "Basic knowledge of safe patient handling techniques, infection prevention and control practices, and hospital safety procedures.",
-        "Ability to safely operate wheelchairs, stretchers, patient trolleys, and other patient transport equipment.",
-        "Good physical fitness with the ability to lift, transfer, and support patients safely.",
-        "Strong interpersonal, communication, and teamwork skills.",
-        "Professional conduct, compassion, reliability, and the ability to work effectively with minimal supervision."
-      ],
-      "responsibilities": [
-        "Provide essential non-clinical support to contribute to patient care delivery.",
-        "Assist with patient transportation and mobility support.",
-        "Ensure environmental upkeep and safety procedures. "
-      ],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-07-28",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/930576/orderly-potter-at-dr-peter-odili-cancer-cardiovasc.html",
       "_source": "hotnigerianjobs"
     }
   ]
