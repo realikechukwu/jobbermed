@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "extracted_at": "2026-10-03T09:40:48.083194",
+    "extracted_at": "2026-10-04T09:49:48.828590",
     "model": "gpt-4o-mini",
-    "total_processed": 1251,
-    "duplicates_removed": 252,
-    "skipped_old": 7,
+    "total_processed": 1245,
+    "duplicates_removed": 248,
+    "skipped_old": 13,
     "skipped_empty": 0,
     "errors": 0,
-    "openai_calls": 319
+    "openai_calls": 256
   },
   "jobs": [
     {
@@ -33,6 +33,65 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/post-nysc-medical-officer-1983",
       "_source": "medlocum"
+    },
+    {
+      "job_title": "School Nurse",
+      "company": "Elite International School",
+      "location": "Kano, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Nurse",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "rn",
+      "requirements": [
+        "Relevant qualifications and experience",
+        "Strong communication and interpersonal skills",
+        "Passion for teaching and working with children",
+        "Commitment, professionalism and integrity",
+        "Ability to work as part of a team."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-10-03",
+      "deadline": "",
+      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/school-nurse-elite-international-school",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Optometrist",
+      "company": "RightSight Specialist Eye Centre",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Allied Health",
+      "salary": "",
+      "experience": "2 years",
+      "qualification": "Doctor of Optometry (O.D) degree",
+      "requirements": [
+        "Must be duly registered with the board and have a valid practicing license",
+        "Must be an intermediate user of Microsoft office suite",
+        "Must have completed NYSC",
+        "Must be ready to learn",
+        "Residence within or around Isolo is an added advantage"
+      ],
+      "responsibilities": [
+        "Recognize and treat common eye conditions",
+        "Prescribe vision aids",
+        "Recognize serious optical diseases that should be referred to the ophthalmologist"
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-10-03",
+      "deadline": "2026-10-31",
+      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/optometrist-rightsight-specialist-eye-centre-5",
+      "_source": "myjobmag"
     },
     {
       "job_title": "Associate Medical Officer",
@@ -83,6 +142,64 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.myjobmag.com/job/associate-medical-officer-reliance-hmo-1",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Medical Laboratory Scientist (Clinicals)",
+      "company": "Synlab",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Medical Laboratory Scientist",
+      "salary": "",
+      "experience": "3 - 5 years",
+      "qualification": "BSc",
+      "requirements": [
+        "3-5 Years Cognate Experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-10-03",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/medical-laboratory-scientist-clinicals-synlab",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Front Desk Officer",
+      "company": "Royash Dental Clinic",
+      "location": "Ogba, Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "expectation",
+      "experience": "0 - 1 years",
+      "qualification": "BSc",
+      "requirements": [
+        "OND/HND/Bachelor's degree in any discipline.",
+        "Good communication and interpersonal skills.",
+        "Good computer skills, including the ability to use Microsoft Office applications.",
+        "Organised, reliable and attentive to detail.",
+        "Willingness to learn."
+      ],
+      "responsibilities": [
+        "Welcome and attend to patients in a friendly and professional manner.",
+        "Respond to telephone, WhatsApp and other patient enquiries.",
+        "Book, confirm and follow up patient appointments.",
+        "Assist with HMO documentation and authorisation processes.",
+        "Handle routine billing and payment documentation.",
+        "Maintain accurate Front Desk and patient records.",
+        "Provide general Front Desk and administrative support as required."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-10-03",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/front-desk-officer-royash-dental-clinic",
       "_source": "myjobmag"
     },
     {
@@ -660,8 +777,8 @@
       "location": "Sokoto, Nigeria",
       "job_type": "Full-Time",
       "job_category": "Public Health",
-      "salary": "Employee Benefits Include (but are not limited to): 100% health care coverage, Free and direct access to Talent Soft e-learning platform, Maternity or Paternity leave, Compassionate leave for a hospitalized child, Creche facilities for babies.",
-      "experience": "Minimum of one (1) year of experience in Nutrition programming",
+      "salary": "Employee Benefits Include (but are not limited to):",
+      "experience": "Minimum of one (1) year experience in Nutrition programming",
       "qualification": "Diploma in Public Health, Nutrition, Dietetics, Food science, or other relevant qualifications",
       "requirements": [
         "Experience in Nutrition programming especially at community level",
@@ -670,23 +787,23 @@
         "Fluent in written and spoken English, Hausa and Kanuri",
         "Ability to observe and to provide feedback on the activities",
         "Willingness and capacity to be flexible and accommodating when faced with difficult and frustrating working conditions",
-        "Commitment to and understanding of ACF’s aims, values and principles."
+        "Commitment to and understanding of ACF’s aims, values and principles"
       ],
       "responsibilities": [
-        "Maintain a database of all porridge mom beneficiaries and update regularly as needed.",
-        "Work closely with community structures to follow up on the implementation of the porridge mum (Infant Young Child Feeding (IYCF) activities, cooking demonstration, MUAC screening, hygiene promotion and complementary feeding with the support from the Nutrition Officer;",
-        "Participate in sensitization meetings with vendors before each disbursement;",
-        "Mobilize porridge mum beneficiaries with support from the community nutrition mobilizers during disbursement;",
-        "Oversee and maintain constructed porridge mom kitchens to ensure they are in good condition and used appropriately;",
-        "Ensure proper documentation of all activities and prepare / share monthly reports on porridge activities;",
-        "Using approved tools, document all referrals and follow-up information of all children with MAM;",
-        "Support the M&E team in data collection for screening, PDMs, KAP surveys or other nutrition-related assessments;",
-        "Supervise routine MUAC screenings by CNMs;",
-        "Prepare and submit weekly/monthly summaries of all nutrition information captured;",
-        "Organize and participate in community sensitization meetings including community entry meetings, feedback meetings with stakeholders, community nutrition mobilizers etc.;",
-        "Support the development of banners and placement;",
-        "Participate in local coordination meetings as required;",
-        "Supervise activities of CHIPS agents / CVs."
+        "Maintain a database of all porridge mom beneficiaries and update regularly as needed",
+        "Work closely with community structures to follow up on the implementation of the porridge mum (IYCF) activities",
+        "Participate in sensitization meetings with vendors before each disbursement",
+        "Mobilize porridge mum beneficiaries with support from community nutrition mobilizers during disbursement",
+        "Oversee and maintain constructed porridge mom kitchens",
+        "Ensure proper documentation of all activities and prepare/share monthly reports on porridge activities",
+        "Document all referrals and follow-up information of all children with MAM",
+        "Support the M&E team in data collection for screenings and surveys",
+        "Supervise routine MUAC screenings by CNMs",
+        "Prepare and submit weekly/monthly summaries of nutrition information captured",
+        "Organize and participate in community sensitization meetings",
+        "Support the development of banners and placement",
+        "Participate in local coordination meetings as required",
+        "Supervise activities of CHIPS agents/CVs."
       ],
       "how_to_apply": [
         "Submit your application through the employer’s online recruitment portal.",
@@ -696,7 +813,7 @@
       "deadline": "8th October, 2026 at 05:00 pm (Nigerian Time).",
       "contact_email": "",
       "contact_phone": "",
-      "apply_url": "Click the Apply Now button for full details.",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/968128/nutrition-and-health-assistant-at-action-against-h.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -3151,68 +3268,6 @@
       "_source": "myjobmag"
     },
     {
-      "job_title": "Medical Laboratory Technician",
-      "company": "King Solomon Hospital",
-      "location": "Anthony Village, Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Medical Laboratory Scientist",
-      "salary": "",
-      "experience": "5",
-      "qualification": "OND",
-      "requirements": [
-        "OND",
-        "2-5 years experience",
-        "Must live close to Anthony",
-        "Possess a practicing license"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-10-01",
-      "deadline": "2026-10-15",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/medical-laboratory-technician-king-solomon-hospital-6",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Hospital Administrator (Aliko Dangotge Foundation Surgical & Diagostic Centre)",
-      "company": "Dangote",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Healthcare Management",
-      "salary": "n,",
-      "experience": "10 years",
-      "qualification": "BA/BSc/HND",
-      "requirements": [
-        "Bachelor’s degree in Hospital Administration, Health Management, Public Health, Business Administration, Finance, Engineering, or related discipline.",
-        "Relevant postgraduate qualification is an advantage.",
-        "Minimum of 10 years relevant experience, including at least 5 years in a senior administrative or operational role within a large healthcare institution."
-      ],
-      "responsibilities": [
-        "Lead the operationalization and day-to-day management of the Surgical & Diagnostic Centre.",
-        "Coordinate clinical support services, patient flow, admissions, discharges, diagnostics, and theatre operations.",
-        "Oversee facilities, medical equipment, maintenance programs, and asset management systems.",
-        "Ensure effective implementation and utilization of hospital information systems and digital platforms.",
-        "Drive service excellence, patient satisfaction, institutional culture, and performance improvement initiatives.",
-        "Maintain strong governance, compliance, risk management, and resource accountability frameworks.",
-        "Coordinate workforce planning, staff performance monitoring, training, and stakeholder engagement.",
-        "Monitor quality, safety, infection prevention, and patient experience standards across the facility.",
-        "Manage approved budgets, procurement plans, inventory controls, and financial reporting requirements."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-10-01",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/hospital-administrator-aliko-dangotge-foundation-surgical-diagostic-centre-dangote",
-      "_source": "myjobmag"
-    },
-    {
       "job_title": "Medical Laboratory Scientist",
       "company": "Queens Clinic Limited",
       "location": "Abuja, Nigeria",
@@ -3358,6 +3413,33 @@
       "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
       "contact_phone": "",
       "apply_url": "https://www.myjobmag.com/job/senior-finance-officer-nsia-luth-cancer-center-nlcc-3",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Medical Laboratory Technician",
+      "company": "King Solomon Hospital",
+      "location": "Anthony Village, Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Medical Laboratory Scientist",
+      "salary": "",
+      "experience": "5",
+      "qualification": "OND",
+      "requirements": [
+        "OND",
+        "2-5 years experience",
+        "Must live close to Anthony",
+        "Possess a practicing license"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Email the address shown on the original listing.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-10-01",
+      "deadline": "2026-10-15",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/medical-laboratory-technician-king-solomon-hospital-6",
       "_source": "myjobmag"
     },
     {
@@ -5347,6 +5429,39 @@
       "_source": "hotnigerianjobs"
     },
     {
+      "job_title": "Medical Officer II (Rivers)",
+      "company": "a Growing Multi-Specialist Healthcare Group - Dragnet Solutions Limited",
+      "location": "Port Harcourt, Rivers, Nigeria",
+      "job_type": "",
+      "job_category": "Doctor",
+      "salary": "n,",
+      "experience": "Minimum of 3 years of post-NYSC clinical experience, including time at Medical Officer I grade or equivalent.",
+      "qualification": "Bachelor of Dental Surgery (BDS or BChD) or an equivalent registrable dental qualification from a recognised institution.",
+      "requirements": [
+        "Demonstrable clinical competence relevant to dentistry, managing patients with decreasing levels of supervision.",
+        "Sound clinical knowledge relevant to dentistry and the ability to manage presentations appropriate to the role.",
+        "Sound clinical record-keeping and competent use of hospital clinical systems.",
+        "Effective communication with patients, families and colleagues.",
+        "Ability to work within a multidisciplinary team."
+      ],
+      "responsibilities": [
+        "Assess, diagnose and manage patients in dentistry with decreasing levels of supervision, appropriate to the level of the role, escalating appropriately.",
+        "Participate in clinics, ward rounds, on-call rotas and procedures as required, contributing to audit and quality-improvement activities.",
+        "Maintain accurate, timely clinical records and current MDCN registration/licence in line with internal clinical policy.",
+        "Work effectively within the multidisciplinary team, coordinating care with other services and supporting managed-care/HMO processes through evidence-based, cost-effective practice."
+      ],
+      "how_to_apply": [
+        "Submit your application through the employer’s online recruitment portal.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-09-30",
+      "deadline": "2026-10-06",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/967356/medical-officer-ii-rivers-at-a-growing-multispecia.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
       "job_title": "Consultant - Family Medicine",
       "company": "a Growing Multi-specialist Healthcare Group - Dragnet Solutions Limited",
       "location": "Benin, Edo, Nigeria",
@@ -6966,6 +7081,39 @@
       "_source": "hotnigerianjobs"
     },
     {
+      "job_title": "Optometrist (Rivers)",
+      "company": "a Growing Multi-specialist Healthcare Group - Dragnet Solutions Limited",
+      "location": "Port Harcourt, Rivers, Nigeria",
+      "job_type": "internship",
+      "job_category": "Allied Health",
+      "salary": "n,",
+      "experience": "Minimum of 1 year of post-registration/post-internship experience in the relevant profession; newly registered practitioners may be considered.",
+      "qualification": "Doctor of Optometry (OD) from a recognised institution; completion of the required national internship and NYSC, or a valid exemption where applicable.",
+      "requirements": [
+        "Knowledge of optometric assessment and clinical eye care appropriate to the role",
+        "Ability to diagnose and manage refractive and common ocular conditions",
+        "Sound clinical record-keeping",
+        "Effective communication with patients and colleagues",
+        "Ability to work within a multidisciplinary team."
+      ],
+      "responsibilities": [
+        "Conduct comprehensive eye examinations and assess visual function.",
+        "Diagnose and manage refractive and common ocular conditions, and refer appropriately.",
+        "Prescribe and oversee optical and therapeutic management within scope of practice.",
+        "Maintain accurate clinical records."
+      ],
+      "how_to_apply": [
+        "Submit your application through the employer’s online recruitment portal.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-09-30",
+      "deadline": "2026-10-06",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/967366/optometrist-rivers-at-a-growing-multispecialist-he.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
       "job_title": "Head Medical Records",
       "company": "Dragnet Solutions Limited",
       "location": "Port Harcourt, Rivers, Nigeria",
@@ -7067,6 +7215,40 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/967357/optometrist-delta-at-a-growing-multispecialist-hea.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
+      "job_title": "Physiotherapist (Delta)",
+      "company": "a Growing Multi-specialist Healthcare Group - Dragnet Solutions Limited",
+      "location": "Warri, Delta, Nigeria",
+      "job_type": "internship",
+      "job_category": "Allied Health",
+      "salary": "n,",
+      "experience": "Minimum of 1 year of post-registration / post-internship experience in the relevant profession; newly registered practitioners may be considered.",
+      "qualification": "Bachelor of Physiotherapy / BSc Physiotherapy (or BMR-PT / equivalent recognised qualification) from a recognised institution.",
+      "requirements": [
+        "Knowledge of physiotherapy assessment and rehabilitation practice appropriate to the role.",
+        "Ability to plan and deliver evidence-based interventions for an assigned caseload.",
+        "Sound clinical record-keeping and outcome measurement.",
+        "Effective communication with patients, families and colleagues.",
+        "Ability to work within a multidisciplinary team."
+      ],
+      "responsibilities": [
+        "Assess, plan and deliver physiotherapy and rehabilitation interventions for patients.",
+        "Manage an assigned caseload and deliver care to professional standards.",
+        "Maintain accurate clinical records and outcome measures.",
+        "Apply patient-safety and infection-prevention standards.",
+        "Participate in audit and quality-improvement activities."
+      ],
+      "how_to_apply": [
+        "Submit your application through the employer’s online recruitment portal.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-09-30",
+      "deadline": "2026-10-06",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/967348/physiotherapist-delta-at-a-growing-multispecialist.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -7657,108 +7839,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.myjobmag.com/job/chief-technology-officer-technology-digital-channels-tokiye-integrated-medical-services",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Head of Finance and Control",
-      "company": "Tokiye Integrated Medical Services",
-      "location": "Port Harcourt, Rivers, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Healthcare Management",
-      "salary": "N,",
-      "experience": "10 years",
-      "qualification": "BA/BSc/HND, MBA/MSc/MA",
-      "requirements": [
-        "BA/BSc/HND",
-        "MBA/MSc/MA",
-        "10 years experience"
-      ],
-      "responsibilities": [
-        "Maintain the Bank's general ledger and ensure all financial records are complete, accurate and up to date.",
-        "Prepare timely monthly, quarterly and annual financial statements and management accounts.",
-        "Ensure appropriate accounting treatment for all transactions in accordance with applicable accounting standards and Bank policies.",
-        "Review reconciliations, journals, schedules and supporting documentation to ensure financial accuracy and completeness.",
-        "Monitor suspense accounts and ensure outstanding items are investigated and cleared promptly.",
-        "Maintain appropriate financial records and documentation to support audit and regulatory requirements.",
-        "Lead the preparation of the Bank's annual budget in collaboration with Management and Heads of Function.",
-        "Prepare financial forecasts and periodic reforecasts based on business performance and changing assumptions.",
-        "Monitor actual performance against approved budgets and provide meaningful variance analysis.",
-        "Identify significant cost trends, financial risks and opportunities and recommend appropriate corrective actions.",
-        "Provide financial analysis and commercial insights to support Management's strategic and operational decisions.",
-        "Monitor the Bank's cost structure and promote effective financial resource utilization.",
-        "Prepare and submit accurate and timely financial and regulatory returns to the CBN, NDIC and other relevant regulatory authorities.",
-        "Ensure regulatory reports are supported by accurate underlying financial records and reconciliations.",
-        "Monitor changes in applicable financial reporting, tax and regulatory requirements and coordinate implementation."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-09-30",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/head-of-finance-and-control-tokiye-integrated-medical-services",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Head of Operations and Customer Experience",
-      "company": "Tokiye Integrated Medical Services",
-      "location": "Port Harcourt, Rivers, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Healthcare Management",
-      "salary": "n,",
-      "experience": "10 years",
-      "qualification": "BA/BSc/HND",
-      "requirements": [
-        "10 years experience",
-        "BA/BSc/HND qualification"
-      ],
-      "responsibilities": [
-        "Oversee daily branch and operational activities",
-        "Ensure efficient and uninterrupted service delivery",
-        "Monitor operational service standards",
-        "Manage cash operations and vault management",
-        "Develop customer service standards"
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-09-30",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/head-of-operations-and-customer-experience-tokiye-integrated-medical-services",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Chief Compliance Officer",
-      "company": "Tokiye Integrated Medical Services",
-      "location": "Port Harcourt, Rivers, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "n,",
-      "experience": "10 years",
-      "qualification": "BA/BSc/HND",
-      "requirements": [
-        "BA/BSc/HND",
-        "Experience 10 years"
-      ],
-      "responsibilities": [
-        "Develop, maintain and continuously improve the Bank's compliance framework, policies, and procedures.",
-        "Monitor changes in applicable laws, regulations, CBN directives, and advise Management on implications.",
-        "Conduct periodic compliance assessments across the Bank's business and operational functions.",
-        "Identify regulatory compliance gaps and recommend appropriate corrective actions.",
-        "Maintain appropriate documentation and evidence of compliance activities.",
-        "Provide independent compliance advice to Management and the Board on material regulatory matters."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-09-30",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/chief-compliance-officer-tokiye-integrated-medical-services",
       "_source": "myjobmag"
     },
     {
@@ -13768,34 +13848,6 @@
       "_source": "hotnigerianjobs"
     },
     {
-      "job_title": "School Nurse",
-      "company": "Elite International School",
-      "location": "Kano, Nigeria",
-      "job_type": "",
-      "job_category": "Nurse",
-      "salary": "",
-      "experience": "Strong communication and interpersonal skills",
-      "qualification": "rn",
-      "requirements": [
-        "Relevant qualifications and experience",
-        "Strong communication and interpersonal skills",
-        "Passion for teaching and working with children",
-        "Commitment, professionalism and integrity",
-        "Ability to work as part of a team"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-23",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "+234 813 334 7021",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/963638/school-nurse-at-elite-international-school.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
       "job_title": "Radiographer I",
       "company": "Obafemi Awolowo University Teaching Hospitals Complex (OAUTHC)",
       "location": "Ile-Ife, Osun, Nigeria",
@@ -14916,6 +14968,44 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/962482/community-pharmacist-at-bridgehedge-limited.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
+      "job_title": "Medical Sales Representative",
+      "company": "Kiyix Recruitment Hub (8 Openings)",
+      "location": "Lagos Mainland, Surulere, Ajao Estate, Yaba, Ejigbo - Lagos, Kwara, Akure - Ondo, Abakaliki - Ebonyi, Nigeria",
+      "job_type": "Full-time",
+      "job_category": "Other",
+      "salary": "N400,000 Monthly",
+      "experience": "2–3 years’ experience as a Medical Sales Representative",
+      "qualification": "Ond",
+      "requirements": [
+        "Strong knowledge of the pharmaceutical industry and healthcare market",
+        "Proven ability to meet sales targets and drive business growth",
+        "Excellent communication, negotiation, and relationship management skills",
+        "Strong territory management and business development skills",
+        "Ability to work independently and achieve set targets",
+        "A valid driver’s licence is an added advantage."
+      ],
+      "responsibilities": [
+        "Promote and sell pharmaceutical products to hospitals, clinics, pharmacies, and other healthcare professionals",
+        "Build and maintain strong relationships with existing and prospective clients",
+        "Achieve monthly and quarterly sales targets",
+        "Identify new business opportunities and expand market coverage within assigned territories",
+        "Provide product information and presentations to healthcare professionals",
+        "Monitor market trends, competitor activities, and customer needs",
+        "Follow up on leads, client orders, and business opportunities",
+        "Submit regular sales reports and market feedback."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites).",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-09-22",
+      "deadline": "2026-10-06",
+      "contact_email": "",
+      "contact_phone": "07035183843",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/962433/medical-sales-representative-at-kiyix-recruitment.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -32535,175 +32625,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/935426/oncosurgeon-laparascopic-experience-at-dr-peter-od.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Superintendent Pharmacist",
-      "company": "HealthPlus Limited",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full-time (On-site)",
-      "job_category": "Pharmacist",
-      "salary": "N300,000 Monthly gross, N800,000 Superintendent Fee",
-      "experience": "Minimum of 2 years' post-qualification experience in a retail or community pharmacy.",
-      "qualification": "Bachelor's Degree in Pharmacy (B.Pharm or Pharm.D)",
-      "requirements": [
-        "Current registration and practicing licence with the Pharmacists Council of Nigeria (PCN).",
-        "Strong leadership, communication, and problem-solving skills.",
-        "Good knowledge of pharmacy regulations and inventory management.",
-        "Proficiency in Microsoft Office and pharmacy management systems is an added advantage."
-      ],
-      "responsibilities": [
-        "Ensure compliance with all regulatory and professional standards.",
-        "Oversee the day-to-day operations of the pharmacy.",
-        "Manage inventory, controlled medicines, and stock accuracy.",
-        "Lead, supervise, and develop pharmacy staff.",
-        "Deliver high-quality pharmaceutical care and patient counseling.",
-        "Monitor prescription dispensing and ensure accuracy.",
-        "Drive sales, customer satisfaction, and operational excellence.",
-        "Liaise with regulatory bodies and ensure license renewals and compliance."
-      ],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-04",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/934619/head-of-marketing-growth-at-glovo-nigeria.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "ER Nurse",
-      "company": "TransitEdge Solutions Limited",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "",
-      "experience": "as an ER Nurse or similar role",
-      "qualification": "",
-      "requirements": [
-        "Proven work experience as an ER Nurse or similar role",
-        "Able to work under high-pressure",
-        "Attention to detail to quickly determine the medical needs of patients",
-        "Good organizational skills to ensure the ER has essential supplies",
-        "Excellent written and verbal communication",
-        "Relevant training and/or certifications as an ER Nurse"
-      ],
-      "responsibilities": [
-        "Perform minor medical operations with Doctors",
-        "Clean wounds and reset bones for patients who enter the Emergency Room",
-        "Draw blood to send for testing",
-        "Maintain Emergency Room care standards",
-        "Assist with insurance paperwork as needed",
-        "Ensure the efficiency of the patient check-in process",
-        "Display strong decision-making skills in emergency scenarios"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-04",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/934550/er-nurse-at-transitedge-solutions-limited.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "School Nurse",
-      "company": "Calvary International College",
-      "location": "Akure, Ondo, Nigeria",
-      "job_type": "",
-      "job_category": "Nurse",
-      "salary": "n,",
-      "experience": "",
-      "qualification": "Minimum of ND in related fields",
-      "requirements": [],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-08-04",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "07061048535, 08060498606",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/934555/school-nurse-at-calvary-international-college.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Nurse",
-      "company": "EMADOR Nigeria Integrated Resources",
-      "location": "Ikeja, Lagos, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "N100,000 - N150,000 monthly",
-      "experience": "2",
-      "qualification": "OND / HND",
-      "requirements": [
-        "Candidates should possess OND / HND qualifications with 2 years experience and a valid licensed certified nurse approved by the nursing program.",
-        "Working practice in intensive care and the emergency room.",
-        "Ability to communicate with patients, their families, hospital staff and the doctors.",
-        "Exceptional knowledge of healthcare at home.",
-        "Excellent knowledge of emergency care, nursing care methods and procedures.",
-        "Basic computer skills like MS Office, printing commands, etc.",
-        "Outstanding multitasking and problem-solving skills.",
-        "Strong organizational skills.",
-        "Ability to work in a team.",
-        "Ability to work under pressure.",
-        "Excellent attention to detail.",
-        "A critical thinker."
-      ],
-      "responsibilities": [
-        "Recognize patient's necessities and emphasize on their needs.",
-        "Develop a considerate environment and offer emotional support to the patients.",
-        "Administer medication to the patient and monitor its side effects.",
-        "Ensure the patients are ready for checkups and carry out regular investigative examinations like temperature, blood pressure, pulse rate and provide the required drugs and vaccines.",
-        "Train and supervise nursing assistants in nursing homes.",
-        "Educate patients about their treatment plans.",
-        "Assist surgeons during operations.",
-        "Record and maintain the patient’s health reports.",
-        "Handle medical emergencies with caution and patience.",
-        "Follow proper health care and patient care guidelines.",
-        "Inspect and maintain a safe and hygienic work environment by complying with rules, and regulations.",
-        "Stay up to date about the latest technical knowledge in the medical industry.",
-        "Attend educational workshops and seminars on a regular basis."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-04",
-      "deadline": "2026-08-25",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/934429/nurse-at-emador-nigeria-integrated-resources.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Staff Nurse (Nursing Officer II)",
-      "company": "Jimoh Babalola University",
-      "location": "Ilorin, Kwara, Nigeria",
-      "job_type": "",
-      "job_category": "Nurse",
-      "salary": "n,",
-      "experience": "",
-      "qualification": "Registered Nurse (RN) and Registered Midwife (RM) certificates.",
-      "requirements": [
-        "SSCE/NECO/WASC/GCE O/L with a minimum of 5 credit passes, including English Language, Mathematics, Biology, and two other relevant subjects.",
-        "Current registration with the Nursing and Midwifery Council of Nigeria (NMCN) and a valid practising licence.",
-        "Evidence of completion of NYSC Discharge or Exemption Certificate."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-04",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/934342/staff-nurse-nursing-officer-ii-at-jimoh-babalola-u.html",
       "_source": "hotnigerianjobs"
     }
   ]
