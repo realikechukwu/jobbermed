@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "extracted_at": "2026-10-10T09:46:31.548879",
+    "extracted_at": "2026-10-11T09:58:36.039177",
     "model": "gpt-4o-mini",
-    "total_processed": 1160,
-    "duplicates_removed": 194,
-    "skipped_old": 35,
+    "total_processed": 1083,
+    "duplicates_removed": 160,
+    "skipped_old": 32,
     "skipped_empty": 0,
     "errors": 0,
-    "openai_calls": 262
+    "openai_calls": 177
   },
   "jobs": [
     {
@@ -195,6 +195,50 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.myjobmag.com/job/general-dentist-blossom-dental-clinic",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Field Sales Officer",
+      "company": "Lexmedical Services Limited",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "n,",
+      "experience": "2",
+      "qualification": "BSc",
+      "requirements": [
+        "Bachelor's degree or HND in Business, Marketing, Healthcare Administration, Health/Biological Sciences or a related field.",
+        "0–2 years of experience in field sales, business development, customer acquisition or a related role.",
+        "Healthcare-sector experience is an advantage but not mandatory.",
+        "Strong communication, presentation and negotiation skills.",
+        "Comfortable engaging directly with hospital and clinic decision-makers.",
+        "Willingness to conduct regular field visits and work towards sales targets.",
+        "Strong follow-up and relationship-management skills.",
+        "Ability to understand and explain digital-health products in simple, practical terms."
+      ],
+      "responsibilities": [
+        "Identify and visit target hospitals, clinics and specialist centres within assigned territories.",
+        "Identify and engage key decision-makers, including hospital owners, medical directors, administrators and clinic managers.",
+        "Present LexMedical's products and digital healthcare solutions to prospective partners.",
+        "Understand each organisation's needs and service gaps to identify suitable sales opportunities.",
+        "Qualify prospects and maintain an accurate sales pipeline.",
+        "Schedule and coordinate follow-up meetings, product demonstrations, presentations and proposal discussions.",
+        "Follow up consistently with prospects and move qualified opportunities through the sales process.",
+        "Support the onboarding and activation of new healthcare partners.",
+        "Maintain relationships with newly activated partners and support early utilisation.",
+        "Escalate complex, high-value or integration-related opportunities to the Head, Partnerships & Integrations.",
+        "Provide market feedback, including competitor activity, customer objections, pricing concerns and emerging healthcare needs.",
+        "Maintain accurate records of prospects, follow-ups, opportunities and outcomes."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-10-10",
+      "deadline": "",
+      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/field-sales-officer-lexmedical-services-limited",
       "_source": "myjobmag"
     },
     {
@@ -2373,30 +2417,6 @@
       "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
       "contact_phone": "",
       "apply_url": "https://www.myjobmag.com/job/system-network-administrator-integrated-health-care-limited",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Pharmacy Technician",
-      "company": "Toptee Medical Centre",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Pharmacist",
-      "salary": "",
-      "experience": "1 - 3 years",
-      "qualification": "ond",
-      "requirements": [
-        "BA/BSc/HND",
-        "Post-NYSC with licence to practice"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-10-09",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/pharmacy-technician-toptee-medical-centre-3",
       "_source": "myjobmag"
     },
     {
@@ -8846,34 +8866,6 @@
       "_source": "jobsinnigeria"
     },
     {
-      "job_title": "Male Nurse",
-      "company": "TNL Pharmaceuticals",
-      "location": "Lagos",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "N200,000 - N250,000 / month",
-      "experience": "is an advantage",
-      "qualification": "bsc",
-      "requirements": [
-        "Registered Nurse with a valid practising licence.",
-        "Clinical / aesthetic experience is an advantage.",
-        "Good communication and interpersonal skills.",
-        "Professional, neat and hardworking.",
-        "Ability to assist with aesthetic procedures and provide excellent client care."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-10-02",
-      "deadline": "2026-11-02",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Male-Nurse-at-Bluorchid-Aesthetics?pid=78556",
-      "_source": "medicalworldnigeria"
-    },
-    {
       "job_title": "Pharmaceutical Sales Manager",
       "company": "a Pharmaceuticals Company - Ascentech Services Limited",
       "location": "Victoria Island, Lagos, Nigeria",
@@ -10179,81 +10171,6 @@
       "_source": "jobsinnigeria"
     },
     {
-      "job_title": "Consultant Paediatric",
-      "company": "Dragnet Solutions Limited",
-      "location": "Warri, Delta",
-      "job_type": "internship",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "Minimum of 3 years of post-fellowship specialist experience in the relevant discipline.",
-      "qualification": "Bachelor of Medicine, Bachelor of Surgery (MBBS or MBChB)",
-      "requirements": [
-        "Bachelor of Medicine, Bachelor of Surgery (MBBS or MBChB) from a recognised institution.",
-        "Completion of the required national housemanship/internship and NYSC, or a valid exemption where applicable.",
-        "Minimum of 3 years of post-fellowship specialist experience in the relevant discipline.",
-        "Post-fellowship specialist experience, or equivalent recognised consultant-level practice in the relevant discipline.",
-        "Demonstrable competence in the independent specialist management of complex cases in paediatrics.",
-        "Experience teaching, training and supervising junior medical staff."
-      ],
-      "responsibilities": [
-        "Provide specialist assessment, diagnosis and management of patients in paediatrics, including complex cases, and act as a senior point of referral for junior medical staff.",
-        "Supervise, teach and support the training and development of senior medical officers, medical officers and trainees.",
-        "Contribute to clinical governance, audit, quality improvement and patient-safety activities.",
-        "Coordinate care with other specialties, diagnostics, pharmacy, nursing, allied health and managed-care/HMO functions, applying evidence-based, cost-effective practice.",
-        "Maintain accurate, timely clinical records and current MDCN registration/licence in line with internal clinical policy."
-      ],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-30",
-      "deadline": "2026-10-06",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Consultant-Paediatric-Delta-at-a-Growing-Multi-specialist-Healthcare-Group-Dragnet-Solutions-Limited?pid=78550",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Senior Medical Officer",
-      "company": "Dragnet Solutions Limited",
-      "location": "Warri, Delta",
-      "job_type": "internship",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "Minimum of 5 years of post-NYSC clinical experience, including progression through Medical Officer grades.",
-      "qualification": "Bachelor of Medicine, Bachelor of Surgery (MBBS or MBChB) from a recognised institution.",
-      "requirements": [
-        "Completion of the required national housemanship/internship and NYSC, or a valid exemption where applicable.",
-        "Substantial post-registration clinical experience, including experience at medical/dental officer level.",
-        "Demonstrable competence in the independent clinical management of patients in family medicine, and in supporting and supervising junior medical staff.",
-        "Strong clinical knowledge of family medicine and the ability to manage most cases independently.",
-        "Ability to supervise and support junior medical officers.",
-        "Understanding of clinical governance, audit and patient safety.",
-        "Sound clinical record-keeping and competent use of hospital clinical systems.",
-        "Effective communication with patients, families and colleagues.",
-        "Ability to work within a multidisciplinary team.",
-        "Evidence of progress toward a postgraduate fellowship (e.g. primary or part examinations of the National Postgraduate Medical College or the West African College).",
-        "Additional training relevant to the area of practice (e.g. life support, clinical skills, quality improvement)."
-      ],
-      "responsibilities": [
-        "Provide largely independent assessment, diagnosis and management of patients in family medicine, appropriate to the level of the role, referring complex cases appropriately.",
-        "Support consultant-led clinics, ward rounds and procedures.",
-        "Supervise and support medical officers and trainees, contributing to their development, and participate in clinical audit, quality improvement and patient-safety activities.",
-        "Maintain accurate, timely clinical records and current MDCN registration/licence in line with internal clinical policy.",
-        "Work effectively within the multidisciplinary team, coordinating care with other services and supporting managed-care/HMO processes through evidence-based, cost-effective practice."
-      ],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-30",
-      "deadline": "2026-10-06",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Senior-Medical-Officer-at-a-Growing-Multi-specialist-Healthcare-Group-Dragnet-Solutions-Limited?pid=78549",
-      "_source": "medicalworldnigeria"
-    },
-    {
       "job_title": "Medical Sales Representative",
       "company": "Poweredup Consulting",
       "location": "Ibadan, Oyo, Nigeria",
@@ -10562,78 +10479,6 @@
       "_source": "jobsinnigeria"
     },
     {
-      "job_title": "Medical Doctor",
-      "company": "International Medical Corps (IMC)",
-      "location": "Borno",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "2+ years of relevant clinical work, post graduate medical experience",
-      "qualification": "bsc",
-      "requirements": [
-        "Medical degree (primary care physician) with a valid license to practice",
-        "Board certified or equivalent (board eligible)",
-        "Experience in programs relating to primary health care, maternal and child health, obstetrics/gynecology, and emergency/outbreak response",
-        "Excellent organizational skills",
-        "Ability to handle multiple tasks in a dynamic environment",
-        "Fluency in local languages and English preferred"
-      ],
-      "responsibilities": [
-        "Provide high quality clinical care to patients",
-        "Conduct daily rounds on patients and monitor progress",
-        "Initiate case discussions as part of training",
-        "Advise on further testing and initiate referral process",
-        "Identify gaps in staff training and provide necessary training",
-        "Ensure standard precautions of Infection Prevention and Control (IPC) measures are implemented"
-      ],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-29",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Medical-Doctor-at-International-Medical-Corps-IMC?pid=78537",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Anaesthetic Nurse",
-      "company": "Benin Medical Care and Diagnostic Centre",
-      "location": "Benin City, Edo",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "n,",
-      "experience": "Minimum of 2–3 years' relevant clinical experience",
-      "qualification": "bsc",
-      "requirements": [
-        "Registered Nurse (RN) qualification",
-        "Valid registration and practising licence with the Nursing and Midwifery Council of Nigeria (NMCN)",
-        "Relevant post-basic qualification or certification in Perioperative/Theatre Nursing, Anaesthetic Nursing or a related speciality is an advantage",
-        "Current knowledge of anaesthetic procedures, patient monitoring and emergency care"
-      ],
-      "responsibilities": [
-        "Prepare and assess patients before anaesthesia and surgery, ensuring proper identification, consent, medical history, investigations and readiness",
-        "Assist the anaesthetist with induction, maintenance and recovery from anaesthesia, including medication preparation and airway management",
-        "Monitor patients' vital signs and clinical condition throughout anaesthesia, promptly identifying and responding to emergencies",
-        "Provide appropriate post-anaesthetic care, monitor recovery and ensure safe patient handover",
-        "Prepare, check, clean and maintain anaesthetic equipment, medications and supplies",
-        "Maintain strict infection prevention, patient safety and theatre standards",
-        "Accurately document patient care, anaesthetic procedures and relevant clinical observations",
-        "Communicate effectively with anaesthetists, surgeons, nurses and other healthcare professionals"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-29",
-      "deadline": "2026-10-20",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Anaesthetic-Nurse-at-Benin-Medical-Care?pid=78539",
-      "_source": "medicalworldnigeria"
-    },
-    {
       "job_title": "Medical Sales Representative",
       "company": "a Leading Pharmaceutical Company",
       "location": "Lagos, Nigeria",
@@ -10867,6 +10712,45 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/966482/doctors-at-a-reputable-mental-health-services-medi.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
+      "job_title": "Medical Doctor",
+      "company": "International Medical Corps (IMC)",
+      "location": "Borno, Nigeria",
+      "job_type": "Full-time",
+      "job_category": "Doctor",
+      "salary": "n,",
+      "experience": "2+ years of relevant clinical work, post graduate medical experience",
+      "qualification": "Typically, a medical degree (primary care physician) with a valid license to practice and be board certified or equivalent",
+      "requirements": [
+        "Medical degree (primary care physician)",
+        "Valid license to practice",
+        "2+ years of relevant clinical work",
+        "Experience in primary health care, maternal and child health, communicable and non-communicable diseases"
+      ],
+      "responsibilities": [
+        "Provide high quality clinical care to patients",
+        "Conduct daily rounds on patients",
+        "Advise if further testing and/or advanced care is required",
+        "Initiate regular case discussions as part of training",
+        "Identify gaps in staff training and provide didactic or hands-on training",
+        "Collect and analyze medical service data",
+        "Ensure implementation of Infection Prevention and Control (IPC) measures",
+        "Participate in a 24-hour health service delivery system",
+        "Adhere to international protocols related to patient assessment",
+        "Manage and supervise other clinical staff",
+        "Provide health education to patients and community members"
+      ],
+      "how_to_apply": [
+        "Submit your application through the employer’s online recruitment portal.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-09-29",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/966460/medical-doctor-at-international-medical-corps-imc.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -11827,6 +11711,44 @@
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/965708/health-and-safety-trainer-at-hsetrain-internationa.html",
       "_source": "hotnigerianjobs"
+    },
+    {
+      "job_title": "Medical Lab Technician / Science Lab Technician",
+      "company": "Cypresshill Hospital",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Medical Laboratory Scientist",
+      "salary": "₦100,000 - ₦150,000/month",
+      "experience": "3 years",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "Minimum of 3 years working experience"
+      ],
+      "responsibilities": [
+        "Maintaining accurate, complete health care records and reports.",
+        "Monitoring, reporting, recording changes and escalating critical values in patient laboratory results.",
+        "Storing and setting up laboratory equipment",
+        "Collecting samples: Collecting blood, tissue, and other samples from patients",
+        "Preparing samples: Labeling and preparing samples for testing",
+        "Running tests: Performing routine tests and analyzing samples",
+        "Recording data: Recording test data and results in patients' medical records",
+        "Operating equipment: Using and maintaining laboratory equipment, such as microscopes and cell counters",
+        "Reporting results: Discussing results and findings with physicians or supervisors",
+        "Ensuring quality control: Maintaining quality control of samples and adhering to laboratory standards",
+        "Maintaining records: Maintaining accurate records and reporting data",
+        "Matching blood: Matching blood for transfusions",
+        "Testing for drug levels: Testing for drug levels in the blood"
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-09-28",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/medical-lab-technician-science-lab-technician-cypresshill-hospital-2",
+      "_source": "myjobmag"
     },
     {
       "job_title": "Medical Officer",
@@ -13241,63 +13163,6 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/medic-rig-nurse-petro-tracking-services-limited/",
       "_source": "jobsinnigeria"
-    },
-    {
-      "job_title": "Chief Medical Director",
-      "company": "Lagos State University Teaching Hospital",
-      "location": "Lagos, Abuja, Nigeria",
-      "job_type": "",
-      "job_category": "Healthcare Management",
-      "salary": "AND ALLOWANCES",
-      "experience": "20",
-      "qualification": "bsc",
-      "requirements": [
-        "Candidate must be a Medical Professor with administrative experience.",
-        "Candidate must be fully registered with the Medical and Dental Council of Nigeria for at least 20 years and possess a current practicing license.",
-        "Candidate must be a Fellow of either the National Postgraduate Medical College or the West African College of Surgeons/Physicians or any other equivalent recognized by the Medical and Dental Council of Nigeria.",
-        "Candidate must have been a Medical Consultant for at least 10 years.",
-        "Candidate must have a proven record of integrity, leadership, and possess evidence of management training as well as clinical and medical research experience.",
-        "Candidate must be medically fit (attach recent certificate of medical fitness).",
-        "Candidate must possess basic ICT competence."
-      ],
-      "responsibilities": [
-        "Is accountable to the Management Board and in its absence the Top Management Committee.",
-        "Relates with the Honourable Commissioner for Health.",
-        "Is charged with the responsibility of the execution of policies and matters affecting the day to day management of the hospital."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-09-24",
-      "deadline": "2026-09-24",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Executive-Career-Opportunity-Lagos-State-University-Teaching-Hospital-Seeks-Chief-Medical-Director?pid=78533",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Medical Officer",
-      "company": "TNL Pharmaceuticals",
-      "location": "Lafia, Nasarawa",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "1 year NYSC or Exception certificate",
-      "qualification": "MBBS",
-      "requirements": [
-        "The candidate must possess MBBS plus one (1) year NYSC or Exception certificate."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-24",
-      "deadline": "2026-10-28",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Medical-Officer-at-Federal-University-of-Lafia-FULafia?pid=78527",
-      "_source": "medicalworldnigeria"
     },
     {
       "job_title": "Pharmacy Technician",
@@ -16852,36 +16717,6 @@
       "_source": "jobsinnigeria"
     },
     {
-      "job_title": "Resident Medical Officer",
-      "company": "Sales Force Consulting",
-      "location": "Abakaliki, Ebonyi",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "is negotiable",
-      "experience": "A minimum of two years post-NYSC work experience",
-      "qualification": "Bachelor of Medicine, Bachelor of Surgery (MBBS)",
-      "requirements": [
-        "Bachelor of Medicine, Bachelor of Surgery (MBBS)",
-        "A minimum of two years post-NYSC work experience"
-      ],
-      "responsibilities": [
-        "Provide professional-level support by carrying out medical services and activities within the limits of their capacity/authority as applicable.",
-        "Work closely with other medical personnel to ensure the completion of effective and safe procedures.",
-        "Follow up with patients after completing a surgery to determine its success to ensure recuperation.",
-        "Respond to medical questions and provide clinical information."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-21",
-      "deadline": "2026-09-28",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Resident-Medical-Officer-at-a-Mega-Hospital-Facility-Sales-Force-Consulting?pid=78522",
-      "_source": "medicalworldnigeria"
-    },
-    {
       "job_title": "Assistant Manager, Quality Assurance",
       "company": "Emzor Pharmaceutical Industries Limited",
       "location": "Sagamu, Ogun, Nigeria",
@@ -18025,48 +17860,6 @@
       "_source": "jobsinnigeria"
     },
     {
-      "job_title": "Operations Officer",
-      "company": "Harmony 360 Health",
-      "location": "Oyo, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Healthcare Management",
-      "salary": "n,",
-      "experience": "3 years",
-      "qualification": "BA/BSc/HND, MBA/MSc/MA",
-      "requirements": [
-        "Bachelor's degree in Business Administration, Healthcare Administration, Management, or a related field.",
-        "Minimum of 3 years of relevant experience in operations, administration, facility coordination, or a similar role.",
-        "Demonstrated experience independently managing tasks, coordinating multiple stakeholders, and delivering results.",
-        "Strong organizational, time-management, and problem-solving skills.",
-        "Excellent written and verbal communication skills.",
-        "Proficiency in Google Workspace or Microsoft Office, particularly spreadsheets, shared documents, and reporting tools.",
-        "Ability to prioritize competing demands and work effectively with minimal supervision.",
-        "Strong sense of accountability, professionalism, and attention to detail.",
-        "Added advantage: Previous experience in healthcare operations, a growing business, or managing the setup of a new facility."
-      ],
-      "responsibilities": [
-        "Oversee daily administrative and operational activities at the facility.",
-        "Coordinate facility setup, vendors, suppliers, contractors, and service providers.",
-        "Manage operational tasks, timelines, procurement, and follow-up to ensure timely completion.",
-        "Develop, implement, and maintain administrative processes, SOPs, and documentation.",
-        "Support staff onboarding, scheduling, and coordination.",
-        "Maintain accurate operational records, track expenses, and prepare regular reports.",
-        "Identify operational gaps, troubleshoot problems, and recommend practical solutions.",
-        "Serve as the primary point of coordination between the on-site team and the Founder/Medical Director.",
-        "Support the smooth launch and ongoing operations of H360's healthcare and wellness services."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Application – Operations Officer Build your CV for free.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-19",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/operations-officer-harmony-360-health",
-      "_source": "myjobmag"
-    },
-    {
       "job_title": "Radiographer",
       "company": "Perez Medcare Hospital",
       "location": "Lekki, Lagos, Nigeria",
@@ -18484,57 +18277,6 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/head-molecular-genetics-african-medical-centre-excellence-amce-2/",
       "_source": "jobsinnigeria"
-    },
-    {
-      "job_title": "Medical Officer",
-      "company": "Federal College of Education",
-      "location": "Yola, Adamawa",
-      "job_type": "Permanent",
-      "job_category": "Doctor",
-      "salary": "List of Publications (where applicable)",
-      "experience": "minimum of 1 year post registration",
-      "qualification": "bsc",
-      "requirements": [
-        "Candidate must possess a good Degree in Medicine from a recognized institution registrable with the Medical and Dental Council of Nigeria (MDCN)",
-        "NYSC discharge certificate"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-17",
-      "deadline": "2026-10-08",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Medical-Officer-at-Federal-College-of-Education-Yola?pid=78507",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Nursing Officer I",
-      "company": "Federal College of Education, Yola",
-      "location": "Yola, Adamawa",
-      "job_type": "Permanent",
-      "job_category": "Nurse",
-      "salary": "List of Publications (where applicable)",
-      "experience": "minimum of 3 years cognate experience and NYSC discharge certificate",
-      "qualification": "bsc",
-      "requirements": [
-        "Candidate must possess a good Degree in Nursing from a recognized institution registrable with the Nursing and Midwifery Council of Nigeria (NMCN)",
-        "minimum of 3 years cognate experience",
-        "NYSC discharge certificate."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-17",
-      "deadline": "2026-10-08",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Nursing-Officer-I-at-Federal-College-of-Education-Yola?pid=78509",
-      "_source": "medicalworldnigeria"
     },
     {
       "job_title": "Full Time Pharmacist",
@@ -19045,6 +18787,30 @@
       "_source": "hotnigerianjobs"
     },
     {
+      "job_title": "Nursing Officer I",
+      "company": "Federal College of Education, Yola",
+      "location": "Yola, Adamawa, Nigeria",
+      "job_type": "Permanent",
+      "job_category": "Nurse",
+      "salary": "List of Publications (where applicable)",
+      "experience": "minimum of 3 years cognate experience and NYSC discharge certificate",
+      "qualification": "Degree",
+      "requirements": [
+        "Candidate must possess a good Degree in Nursing from a recognized institution registrable with the Nursing and Midwifery Council of Nigeria (NMCN)"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Email the address shown on the original listing.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-09-17",
+      "deadline": "2026-10-08",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/960221/nursing-officer-i-at-federal-college-of-education.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
       "job_title": "Medical Laboratory Technician - Blood Bank",
       "company": "African Medical Centre of Excellence (AMCE)",
       "location": "Abuja, Nigeria",
@@ -19540,59 +19306,6 @@
       "_source": "jobsinnigeria"
     },
     {
-      "job_title": "Director, Clinical Quality & GCP Compliance",
-      "company": "Afro-Reach Research Organisation",
-      "location": "Wuse Zone 5, Abuja (FCT)",
-      "job_type": "Full-time",
-      "job_category": "Healthcare Management",
-      "salary": "n,",
-      "experience": "Typically 7+ years of progressive experience in clinical research, GCP Quality Assurance, clinical quality, regulatory compliance, or a related area",
-      "qualification": "bsc",
-      "requirements": [],
-      "responsibilities": [
-        "Serve as ARO's functional lead for Clinical Quality Assurance and GCP compliance.",
-        "Provide day-to-day leadership, direction, prioritization, and oversight for QA personnel and activities.",
-        "Establish and maintain effective Clinical Quality oversight across ARO programs and applicable functional areas.",
-        "Interpret and apply applicable ICH-GCP, NAFDAC, NHREC, and other applicable Nigerian requirements, sponsor requirements, and ARO procedures.",
-        "Promote a proactive culture of quality, compliance, accountability, and continuous improvement.",
-        "Escalate significant, systemic, or emerging quality risks to executive leadership in a timely manner."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-09-16",
-      "deadline": "2026-09-30",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Director-Clinical-Quality-and-GCP-Compliance-at-Afro-reach-Research-Organisation?pid=78495",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Registered Nurse",
-      "company": "BetaCare Multi-Specialist Hospital Limited",
-      "location": "Gunduwawa, Kano",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "",
-      "experience": "appropriate to the position.",
-      "qualification": "bsc",
-      "requirements": [
-        "Candidates should possess a relevant professional qualification and experience appropriate to the position.",
-        "Candidate must demonstrate professionalism, good communication skills, teamwork, integrity, and the ability to work effectively in a healthcare environment."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-16",
-      "deadline": "2026-09-20",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Registered-Nurses-at-BetaCare-Multi-Specialist-Hospital-Limited?pid=78501",
-      "_source": "medicalworldnigeria"
-    },
-    {
       "job_title": "Medical Sales Executive",
       "company": "Grunlab Limited",
       "location": "Abeokuta, Ogun, Nigeria",
@@ -20079,79 +19792,6 @@
       "_source": "jobsinnigeria"
     },
     {
-      "job_title": "Consultant Obstetrician & Gynaecologist",
-      "company": "Lily Hospitals Limited",
-      "location": "Warri, Delta, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "package",
-      "experience": "3",
-      "qualification": "bsc",
-      "requirements": [
-        "Full registration and valid practising licence with the Medical and Dental Council of Nigeria (MDCN)",
-        "Fellowship in Obstetrics & Gynaecology (FMCOG, FWACS, or equivalent recognized qualification)",
-        "Minimum 3 years’ post-fellowship experience as a Consultant Obstetrician & Gynaecologist",
-        "Demonstrable experience managing routine and high-risk pregnancies and complex obstetric and gynaecological cases",
-        "Proven experience in obstetric and gynaecological surgery, including Caesarean section and management of obstetric emergencies",
-        "Strong clinical judgement, communication, leadership, and teamwork skills",
-        "Experience in clinical audit, quality improvement, teaching, and research is desirable",
-        "Ability to work effectively under pressure while maintaining a high standard of patient-centred care"
-      ],
-      "responsibilities": [
-        "Conduct comprehensive antenatal, obstetric, and gynaecological assessments",
-        "Provide expert management of normal and high-risk pregnancies",
-        "Manage obstetric emergencies, including postpartum haemorrhage, pre-eclampsia/eclampsia, obstructed labour, and other maternal emergencies",
-        "Perform and supervise obstetric and gynaecological procedures, including Caesarean sections and other relevant surgical interventions",
-        "Provide comprehensive management of gynaecological conditions, including menstrual disorders, fibroids, infertility, endometriosis, pelvic infections, and menopausal conditions",
-        "Provide intrapartum care and make appropriate decisions regarding induction of labour, assisted vaginal delivery, and operative delivery",
-        "Provide postnatal care and manage maternal complications following delivery",
-        "Provide appropriate contraceptive counselling and family-planning services",
-        "Collaborate with Paediatricians, Anaesthesiologists, Midwives, and other healthcare professionals to ensure comprehensive patient care",
-        "Supervise, mentor, and support junior doctors, medical officers, and other clinical staff",
-        "Participate in clinical audits, quality improvement programmes, and patient-safety initiatives",
-        "Maintain accurate, comprehensive, and timely clinical documentation and medical records",
-        "Ensure compliance with professional, ethical, and regulatory standards",
-        "Keep abreast of current developments, clinical guidelines, and best practices in Obstetrics and Gynaecology",
-        "Participate in clinical teaching, research, and continuous professional development",
-        "Contribute to the development and implementation of departmental protocols and clinical pathways",
-        "Participate in on-call duties and departmental rosters as required"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-15",
-      "deadline": "2026-09-20",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Consultant-Obstetrician-and-Gynaecologist-at-Lily-Hospitals-Limited?pid=78488",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Nurse",
-      "company": "Aster Bloom Academy",
-      "location": "GRA - Benin City, Edo",
-      "job_type": "",
-      "job_category": "Nurse",
-      "salary": "",
-      "experience": "",
-      "qualification": "bsc",
-      "requirements": [
-        "Candidates should possess a relevant qualification."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-15",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "08073832415, 08130716980",
-      "apply_url": "https://medicalworldnigeria.com/post/Nurse-at-Aster-Bloom-Academy?pid=78491",
-      "_source": "medicalworldnigeria"
-    },
-    {
       "job_title": "Product Manager",
       "company": "Codix Pharma Limited",
       "location": "Lagos, Nigeria",
@@ -20409,6 +20049,30 @@
       "_source": "hotnigerianjobs"
     },
     {
+      "job_title": "Nurse",
+      "company": "Aster Bloom Academy",
+      "location": "GRA - Benin City, Edo, Nigeria",
+      "job_type": "",
+      "job_category": "Nurse",
+      "salary": "",
+      "experience": "",
+      "qualification": "ond",
+      "requirements": [
+        "Candidates should possess a relevant qualification."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-09-15",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "08073832415, 08130716980",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/958468/nurse-at-aster-bloom-academy.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
       "job_title": "Part Time Dentist",
       "company": "Signature Smiles Clinic",
       "location": "Orchid road, Lekki - Lagos, Nigeria",
@@ -20589,87 +20253,6 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/health-safety-environment-hse-specialist-sany-nigeria/",
       "_source": "jobsinnigeria"
-    },
-    {
-      "job_title": "Consultant, LN",
-      "company": "International Medical Corps (IMC)",
-      "location": "Kaduna",
-      "job_type": "volunteer",
-      "job_category": "Public Health",
-      "salary": "n,",
-      "experience": "required for the assignment",
-      "qualification": "bsc",
-      "requirements": [
-        "A health professional or nutritionist with MPH or MSc or advanced professional Degree.",
-        "Experience in epidemiology, surveys using SQUEAC methodology.",
-        "Significant experience, at least five years, in community-based studies including conduct of surveys, SQUEAC and other coverage assessments.",
-        "At least 2-year experience with the implementation of IMAM programs.",
-        "Excellent analytical and statistical skills.",
-        "Strong communication skills, with excellent written and spoken English.",
-        "Excellent computing and analytical skills including at least in one of the following: Xmind, Bayes SQUEAC, EPI INFO, SPSS, ENA Software.",
-        "Ability to work on own initiative and to meet deadlines.",
-        "Excellent reporting and data consolidation skills.",
-        "Proven competency and experience in monitoring, evaluation and impact assessment (with experience in the sectors of public health and nutrition).",
-        "Proven experience in participatory research methods.",
-        "Experience of working with pastoral community and in Northern Nigeria is desirable."
-      ],
-      "responsibilities": [
-        "Train IMC staff and SMOH representatives in SQUEAC methodology.",
-        "Lead full coverage survey including planning, data collection, analysis, and reporting.",
-        "Conduct SQUEAC survey from inception to finalization.",
-        "Develop and design SQUEAC survey protocol and tools.",
-        "Build capacity on SQUEAC of IMC nutrition team and SMOH representatives.",
-        "Train SQUEAC data collection teams.",
-        "Supervise SQUEAC teams and ensure data quality assurance.",
-        "Be responsible for data cleaning and analysis using relevant software.",
-        "Prepare draft and final SQUEAC reports."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-09-14",
-      "deadline": "2026-09-14",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Consultant-LN-Kaduna-at-International-Medical-Corps-IMC?pid=78485",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Medical Doctor",
-      "company": "Groupe Aldelia Limited",
-      "location": "Lagos, Ogun, Rivers",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "Open to Negotiation",
-      "experience": "8",
-      "qualification": "bsc",
-      "requirements": [
-        "MBBS",
-        "a minimum of 8 years post-qualification experience",
-        "experience in Emergency Medicine",
-        "Up-to-date knowledge in global medical issues",
-        "Good communication skill and networking with other professional colleagues"
-      ],
-      "responsibilities": [
-        "Consultation, Diagnosis and Treatment of all Staff and their dependents including all authorized contracted personnel",
-        "Twice daily visit and review of the in-house hospitalized cases",
-        "Referral of cases to Medical Specialists that need specialized attention to external clinics when necessary",
-        "Reports on Monthly bases all activities carried out on Monthly bases to the Lagos SMO",
-        "Counselling of patients on health matters and follow up on referral cases",
-        "Regular contact with the external specialists in our referral centres",
-        "Annual medical check for spouses and retirees and reviews",
-        "Carry out other ancillary services as may be requested from time to time by the Chief Medical Officer"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-14",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Medical-Doctor-at-Group-Aldelia-Nigeria?pid=78484",
-      "_source": "medicalworldnigeria"
     },
     {
       "job_title": "Medical Laboratory Scientist",
@@ -21598,46 +21181,6 @@
       "_source": "jobsinnigeria"
     },
     {
-      "job_title": "Consultant Urologist",
-      "company": "African Medical Centre of Excellence (AMCE)",
-      "location": "Abuja",
-      "job_type": "",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "Minimum of 7 years’ post-fellowship experience in urological practice, with a strong surgical portfolio.",
-      "qualification": "BSc",
-      "requirements": [
-        "MBBS or equivalent medical degree from a recognized institution",
-        "Fellowship in Urology or related surgical specialty (e.g., FMCS, FWACS, FRCS or international equivalent)",
-        "Full registration with the Medical and Dental Council of Nigeria (MDCN) and a valid practicing license",
-        "Sub-specialization in areas such as uro-oncology, endourology, pediatric urology, or andrology is advantageous",
-        "Proficiency in a broad range of urological procedures, including minimally invasive techniques",
-        "Demonstrated leadership experience in managing a clinical team or department",
-        "Proven track record in teaching, supervision, and clinical research",
-        "Excellent interpersonal, communication, and decision-making skills",
-        "Commitment to ethical practice, patient safety, and professional development"
-      ],
-      "responsibilities": [
-        "Manage a wide range of urological cases, including elective and emergency care.",
-        "Perform diagnostic and therapeutic cystoscopy, tumour resections, and stone extractions.",
-        "Conduct minimally invasive and open urological procedures, including robotic-assisted surgeries.",
-        "Provide comprehensive patient care from initial consultation through follow-up and recovery.",
-        "Ensure accurate documentation of clinical assessments and operative outcomes.",
-        "Engage in clinical audits, governance activities, and surgical protocol development.",
-        "Serve as a core member of the Urology Multidisciplinary Team (MDT) and contribute to cancer care planning.",
-        "Support the implementation of local and national clinical and quality targets."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-09-11",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Consultant-Urologist-at-African-Medical-Centre-of-Excellence-AMCE?pid=78471",
-      "_source": "medicalworldnigeria"
-    },
-    {
       "job_title": "Pharmaceutical Trade Officer / Executive Assistant (Female)",
       "company": "Nkoyo Pharmaceuticals Limited",
       "location": "Aguda, Surulere - Lagos, Nigeria",
@@ -21847,6 +21390,52 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/956931/neurosurgeon-at-african-medical-centre-of-excellen.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
+      "job_title": "Consultant Urologist",
+      "company": "African Medical Centre of Excellence (AMCE)",
+      "location": "Abuja, Nigeria",
+      "job_type": "",
+      "job_category": "Doctor",
+      "salary": "n,",
+      "experience": "in urological practice, with a strong surgical portfolio.",
+      "qualification": "ond",
+      "requirements": [
+        "MBBS or equivalent medical degree from a recognized institution",
+        "Fellowship in Urology or related surgical specialty (e.g., FMCS, FWACS, FRCS or international equivalent)",
+        "Full registration with the Medical and Dental Council of Nigeria (MDCN) and a valid practicing license.",
+        "Sub-specialization in areas such as uro-oncology, endourology, pediatric urology, or andrology is advantageous.",
+        "Minimum of 7 years’ post-fellowship experience in urological practice, with a strong surgical portfolio.",
+        "Proficiency in a broad range of urological procedures, including minimally invasive techniques.",
+        "Demonstrated leadership experience in managing a clinical team or department.",
+        "Proven track record in teaching, supervision, and clinical research.",
+        "Excellent interpersonal, communication, and decision-making skills.",
+        "Commitment to ethical practice, patient safety, and professional development."
+      ],
+      "responsibilities": [
+        "Manage a wide range of urological cases, including elective and emergency care.",
+        "Perform diagnostic and therapeutic cystoscopy, tumour resections, and stone extractions.",
+        "Conduct minimally invasive and open urological procedures, including robotic-assisted surgeries.",
+        "Provide comprehensive patient care from initial consultation through follow-up and recovery.",
+        "Ensure accurate documentation of clinical assessments and operative outcomes.",
+        "Engage in clinical audits, governance activities, and surgical protocol development.",
+        "Serve as a core member of the Urology Multidisciplinary Team (MDT) and contribute to cancer care planning.",
+        "Support the implementation of local and national clinical and quality targets.",
+        "Provide expert diagnosis, management, and treatment of urological conditions including cancers of the prostate, bladder, kidney, and testis; urinary stones; benign prostatic hyperplasia (BPH); urinary incontinence; and male infertility.",
+        "Perform a wide range of urological surgeries, including minimally invasive and robotic-assisted procedures (laparoscopic, endoscopic), open surgeries, and laser surgeries.",
+        "Conduct and interpret diagnostic procedures such as cystoscopy, urodynamic studies, prostate biopsies, and imaging reviews.",
+        "Manage urological emergencies including renal colic, urinary retention, hematuria, and trauma.",
+        "Lead and supervise the urology department, including junior doctors, residents, nurses, and allied health professionals."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-09-11",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/956925/consultant-urologist-at-african-medical-centre-of.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -22150,31 +21739,6 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/medical-doctor-gramaze-healthcare-4-openings/",
       "_source": "jobsinnigeria"
-    },
-    {
-      "job_title": "Nurse",
-      "company": "Gramaze Healthcare",
-      "location": "Lagos, Abuja, Enugu",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "",
-      "experience": "",
-      "qualification": "bsc",
-      "requirements": [
-        "MDCN license",
-        "caregiving certificate"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-10",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Nurse-at-Gramaze-Healthcare?pid=78465",
-      "_source": "medicalworldnigeria"
     },
     {
       "job_title": "Pharmaceutical Detailing Representative",
@@ -23025,31 +22589,6 @@
       "_source": "jobsinnigeria"
     },
     {
-      "job_title": "Medical Doctor",
-      "company": "Sumal Foods Limited",
-      "location": "Ring Road- Ibadan, Oyo",
-      "job_type": "",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "",
-      "qualification": "bsc",
-      "requirements": [
-        "MBBS Degree from a recognized university, either at home or abroad",
-        "NYSC discharge certificate or an exemption from such"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-09",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Medical-Doctor-at-Sumal-Foods-Limited?pid=78462",
-      "_source": "medicalworldnigeria"
-    },
-    {
       "job_title": "Pharmacist",
       "company": "Gramaze Healthcare",
       "location": "Lagos, Abuja, Enugu, Nigeria",
@@ -23129,6 +22668,31 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/955813/specialist-doctor-physician-at-gramaze-healthcare.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
+      "job_title": "Medical Doctor",
+      "company": "Sumal Foods Limited",
+      "location": "Ring Road- Ibadan, Oyo, Nigeria",
+      "job_type": "",
+      "job_category": "Doctor",
+      "salary": "n,",
+      "experience": "",
+      "qualification": "MBBS",
+      "requirements": [
+        "MBBS Degree from a recognized university, either at home or abroad",
+        "NYSC discharge certificate or an exemption from such."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-09-09",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/955490/medical-doctor-at-sumal-foods-limited.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -23639,48 +23203,6 @@
       "_source": "hotnigerianjobs"
     },
     {
-      "job_title": "Healthcare Trainer (Nurse / Medical Doctor) - Hybrid",
-      "company": "Community Trust Network (CTN)",
-      "location": "Abuja",
-      "job_type": "Contract (Hybrid)",
-      "job_category": "Nurse",
-      "salary": "N200,000 - N300,000 monthly",
-      "experience": "Minimum of 3 years' experience in healthcare training, facilitation, clinical teaching, public speaking or a related field.",
-      "qualification": "bsc",
-      "requirements": [
-        "Bachelor's Degree in Nursing or Medicine.",
-        "Must be a Registered Nurse or Medical Doctor with relevant professional registration.",
-        "Proven experience as a healthcare trainer, clinical educator, nurse educator or facilitator.",
-        "A recognized training/teaching/facilitation qualification from an accredited institution is highly desirable.",
-        "Demonstrable experience delivering practical, competency-based healthcare training.",
-        "Experience training healthcare assistants, caregivers, nurses or other healthcare professionals.",
-        "Strong knowledge of practical healthcare procedures and patient-care standards.",
-        "Excellent communication, presentation and interpersonal skills.",
-        "Ability to deliver training effectively both online and face-to-face."
-      ],
-      "responsibilities": [
-        "Plan, develop and deliver engaging healthcare training programs for new and experienced healthcare professionals.",
-        "Deliver both classroom-based and practical hands-on training.",
-        "Facilitate training in areas including: Phlebotomy and blood collection, Vital signs monitoring, observation and interpretation, Medication management and administration, Skin integrity and pressure area care, Falls prevention and risk management, Moving and handling, Infection prevention and control, Basic clinical skills and patient care, Health and safety within the healthcare environment, Other relevant healthcare competencies.",
-        "Demonstrate practical procedures using mannequins, simulation equipment and other healthcare training apparatus.",
-        "Train healthcare workers to confidently apply theoretical knowledge in real-life care environments.",
-        "Assess trainees' practical competencies and provide constructive feedback.",
-        "Develop training plans, lesson materials, assessments and practical demonstrations.",
-        "Adapt teaching methods to accommodate different learning styles and levels of experience.",
-        "Maintain accurate training and assessment records.",
-        "Stay up to date with healthcare standards, clinical practices and relevant regulatory requirements."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-09-08",
-      "deadline": "2026-10-08",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Healthcare-Trainer-Nurse-Medical-Doctor-Hybrid-at-Community-Trust-Network-CTN?pid=78453",
-      "_source": "medicalworldnigeria"
-    },
-    {
       "job_title": "Senior Lecturer (Pharmaceutical Chemistry)",
       "company": "Maduka University",
       "location": "Ekwegbe-Nsukka, Enugu, Nigeria",
@@ -24070,39 +23592,6 @@
       "_source": "jobsinnigeria"
     },
     {
-      "job_title": "Medical Officer",
-      "company": "St. Ives Specialist Hospital",
-      "location": "Abeokuta, Ogun",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "",
-      "experience": "",
-      "qualification": "bsc",
-      "requirements": [],
-      "responsibilities": [
-        "Conducting medical examinations and assessments of patients.",
-        "Diagnosing and treating acute and chronic illnesses.",
-        "Ordering and interpreting diagnostic tests such as blood tests, X-rays, and MRIs.",
-        "Prescribing medications and other treatments as necessary.",
-        "Collaborating with other healthcare professionals to develop comprehensive treatment plans.",
-        "Providing counselling and education to patients about their health conditions and treatment options.",
-        "Monitoring patients' progress and adjusting treatment plans as needed.",
-        "Maintaining accurate and up-to-date medical records.",
-        "Participating in multidisciplinary team meetings to discuss patient care and treatment strategies.",
-        "Adhering to all relevant medical laws, regulations, and ethical standards."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-07",
-      "deadline": "2026-09-20",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Medical-Officer-at-St-Ives-Specialist-Hospital?pid=78447",
-      "_source": "medicalworldnigeria"
-    },
-    {
       "job_title": "Field Sales Representative (Pharmaceutical)",
       "company": "MeCure Healthcare Limited (MHL)",
       "location": "Lagos, Nigeria",
@@ -24483,133 +23972,6 @@
     },
     {
       "job_title": "Medical Officer",
-      "company": "British Community Hospital and Outpatient Clinic (BCHOC)",
-      "location": "Port Harcourt, Rivers",
-      "job_type": "",
-      "job_category": "Doctor",
-      "salary": "N300,000 - N500,000 / month",
-      "experience": "preferably at least two years’ post-NYSC experience",
-      "qualification": "bsc",
-      "requirements": [
-        "MBBS / MBChB",
-        "full MDCN registration",
-        "current practising licence",
-        "completed housemanship and NYSC",
-        "BLS certification is desirable",
-        "Current professional registration and practising licence where applicable",
-        "Verifiable employment history and references",
-        "Good communication and interpersonal skills",
-        "Commitment to patient safety, confidentiality and professional conduct",
-        "Willingness to undertake shift, weekend or night duties where required",
-        "Ability to work effectively in a multidisciplinary team"
-      ],
-      "responsibilities": [
-        "Conduct consultations",
-        "diagnose and manage medical conditions",
-        "prescribe medicines",
-        "review laboratory results",
-        "manage emergencies and admitted patients",
-        "supervise clinical care",
-        "arrange referrals",
-        "maintain accurate records",
-        "participate in day, night and weekend duties"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-04",
-      "deadline": "2026-09-05",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Medical-Officer-at-British-Community-Hospital-and-Outpatient-Clinic-BCHOC?pid=78436",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Locum Medical Officer",
-      "company": "British Community Hospital and Outpatient Clinic (BCHOC)",
-      "location": "Port Harcourt, Rivers",
-      "job_type": "Locum",
-      "job_category": "Doctor",
-      "salary": "N100,000 - N200,000 monthly or an agreed sessional rate",
-      "experience": "",
-      "qualification": "bsc",
-      "requirements": [
-        "MBBS / MBChB",
-        "full MDCN registration",
-        "current practising licence",
-        "completed housemanship and NYSC",
-        "relevant clinical experience",
-        "ability to attend assigned duties reliably",
-        "current professional registration and practising licence where applicable",
-        "verifiable employment history and references",
-        "good communication and interpersonal skills",
-        "commitment to patient safety, confidentiality and professional conduct",
-        "willingness to undertake shift, weekend or night duties where required",
-        "ability to work effectively in a multidisciplinary team"
-      ],
-      "responsibilities": [
-        "Provide relief, night, weekend and emergency medical coverage",
-        "review patients",
-        "prescribe appropriately",
-        "arrange referrals",
-        "maintain records",
-        "provide proper handovers"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-04",
-      "deadline": "2026-09-05",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Locum-Medical-Officers-at-British-Community-Hospital-and-Outpatient-Clinic-BCHOC?pid=78435",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Aesthetic Nurse",
-      "company": "Bluorchid Aesthetics",
-      "location": "Lagos",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "N200,000 - N250,000 per month",
-      "experience": "1",
-      "qualification": "bsc",
-      "requirements": [
-        "Registered Nurse (RN) with a valid Nursing and Midwifery Council of Nigeria license.",
-        "At least 1 year experience of working in a med spa or aesthetic clinic.",
-        "Strong knowledge of infection control and patient safety practices.",
-        "Excellent communication, interpersonal, and customer service skills.",
-        "Ability to work independently and as part of a multidisciplinary team.",
-        "Professional appearance and positive attitude."
-      ],
-      "responsibilities": [
-        "Conduct patient assessments, vital signs monitoring, and medical history documentation.",
-        "Prepare treatment rooms, equipment, and consumables for aesthetic procedures.",
-        "Assist physicians during Botox, dermal filler, liposuction, weight loss, and other aesthetic treatments.",
-        "Provide pre-treatment and post-treatment patient education and aftercare instructions.",
-        "Maintain accurate patient records and treatment documentation.",
-        "Perform phlebotomy, injections, IV therapy, and other nursing procedures within scope of practice.",
-        "Ensure strict compliance with infection prevention, sterilization, and clinical safety protocols.",
-        "Monitor patients during and after procedures and promptly report any complications.",
-        "Manage inventory of medications, consumables, and clinical supplies.",
-        "Participate in client follow-ups to ensure excellent treatment outcomes and patient satisfaction.",
-        "Maintain professionalism, confidentiality, and excellent customer service at all times."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-04",
-      "deadline": "2026-10-30",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Aesthetic-Nurse-at-Bluorchid-Aesthetics?pid=78439",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Medical Officer",
       "company": "First Cardiology Consultants",
       "location": "Lagos, Nigeria",
       "job_type": "contract",
@@ -24683,6 +24045,47 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/952788/medical-doctor-at-bluorchid-aesthetics.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
+      "job_title": "Aesthetic Nurse",
+      "company": "Bluorchid Aesthetics",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full-time",
+      "job_category": "Nurse",
+      "salary": "N200,000 - N250,000 per month",
+      "experience": "1",
+      "qualification": "ond",
+      "requirements": [
+        "Registered Nurse (RN) with a valid Nursing and Midwifery Council of Nigeria license.",
+        "Atleast 1 year experience of working in a med spa or aesthetic clinic.",
+        "Strong knowledge of infection control and patient safety practices.",
+        "Excellent communication, interpersonal, and customer service skills.",
+        "Ability to work independently and as part of a multidisciplinary team.",
+        "Professional appearance and positive attitude."
+      ],
+      "responsibilities": [
+        "Conduct patient assessments, vital signs monitoring, and medical history documentation.",
+        "Prepare treatment rooms, equipment, and consumables for aesthetic procedures.",
+        "Assist physicians during Botox, dermal filler, liposuction, weight loss, and other aesthetic treatments.",
+        "Provide pre-treatment and post-treatment patient education and aftercare instructions.",
+        "Maintain accurate patient records and treatment documentation.",
+        "Perform phlebotomy, injections, IV therapy, and other nursing procedures within scope of practice.",
+        "Ensure strict compliance with infection prevention, sterilization, and clinical safety protocols.",
+        "Monitor patients during and after procedures and promptly report any complications.",
+        "Manage inventory of medications, consumables, and clinical supplies.",
+        "Participate in client follow-ups to ensure excellent treatment outcomes and patient satisfaction.",
+        "Maintain professionalism, confidentiality, and excellent customer service at all times."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-09-04",
+      "deadline": "2026-10-30",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/952794/aesthetic-nurse-at-bluorchid-aesthetics.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -24897,155 +24300,6 @@
       "contact_phone": "",
       "apply_url": "https://jobsinnigeria.careers/jobs/senior-nurse-midwife-abuja-clinics-limited/",
       "_source": "jobsinnigeria"
-    },
-    {
-      "job_title": "Chief Medical Director/CEO",
-      "company": "University College Hospital (UCH)",
-      "location": "Ibadan, Oyo State",
-      "job_type": "",
-      "job_category": "Healthcare Management",
-      "salary": "Salary and allowances will be in accordance with the Public Service Salary Structure for this category of Officer.",
-      "experience": "not less than twelve (12) years post qualification",
-      "qualification": "bsc",
-      "requirements": [
-        "Candidate must be a Medical or Dental Practitioner registered with the Medical and Dental Council of Nigeria (MDCN) with not less than twelve (12) years post qualification",
-        "Candidate must possess a current practicing license from MDCN",
-        "Candidate must be a Fellow of either the National Postgraduate Medical College of Nigeria or West African Postgraduate Medical College, or equivalent, recognized by the MDCN",
-        "Candidate must have been a Consultant for a minimum of five (5) years",
-        "Candidate must be medically fit (at chief executive)",
-        "Candidate must be of proven good character and integrity",
-        "Evidence of Medical Researches is an added advantage",
-        "Administrative qualification and experience are added advantages",
-        "Knowledge of Information and Communication Technology (ICT) is an added advantage",
-        "Acquisition of funded grants by individual candidate is an added advantage"
-      ],
-      "responsibilities": [
-        "The Chief Medical Director is the Head/Chief Executive of the institution. He is accountable to the Board of Management and the Coordinating Minister of Health & Social Welfare.",
-        "The Chief Medical Director is charged with the responsibility of the execution of policies and matters affecting the day-to-day management of the hospital."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-09-03",
-      "deadline": "2026-10-15",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Advertisement-for-the-Position-of-the-Chief-Medical-Director-University-College-Hospital-UCH-Ibadan-Oyo-State?pid=78427",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Nurse, Nutrition",
-      "company": "International Medical Corps (IMC)",
-      "location": "Damboa, Borno",
-      "job_type": "volunteer",
-      "job_category": "Nurse",
-      "salary": "n,",
-      "experience": "Over two (2) years",
-      "qualification": "BSc",
-      "requirements": [
-        "Registered Nurse with a Degree in Nursing from a recognized Nursing institute.",
-        "Valid and current practicing license.",
-        "Excellent report-writing skills.",
-        "Fluent in written and spoken English and required national/local language.",
-        "Commitment to and understanding of IMC’s aims, values and principles."
-      ],
-      "responsibilities": [
-        "Ensuring comprehensive medical examination, vital signs, frequent medicines, and treatment according to the protocols.",
-        "Following and adhering to the current protocols on drug administration i.e., antibiotics, antimalarial, anthelminthic.",
-        "Ensuring timely therapeutic preparation and administering the appropriate feeds and medicines for the malnourished children in the SC.",
-        "Carrying out daily nutritional status monitoring of severely malnourished children as prescribed in the protocol.",
-        "Providing appropriate nutrition counselling and health education to the mothers and caretakers in the SC based on the protocols and guidelines.",
-        "Ensuring adequate availability of all drugs and nutrition supply and ensuring stock is pre-positioned as planned.",
-        "Consulting and informing the SC Doctor and/or Nutrition Manager on issues that may affect the smooth operations of the stabilization Centre.",
-        "Ensuring proper handing over of duties within the SC.",
-        "Preparing and updating the medical and nutritional record for ward rounds daily.",
-        "Ensuring all criteria are adhered to and documented, including admission, discharge and transfer to and from the OTP.",
-        "Completing and updating the patient file to ensure a track of patient progress.",
-        "Compiling the statistical data (admission, default, cured, absent, death) and drafting a report on activities.",
-        "Maintaining supply consumption reports."
-      ],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-03",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Nurse-Nutrition-at-International-Medical-Corps-IMC?pid=78432",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Registered Nurse",
-      "company": "EHA Clinics",
-      "location": "Abuja",
-      "job_type": "",
-      "job_category": "Nurse",
-      "salary": "N181,440 monthly gross",
-      "experience": "3 years",
-      "qualification": "bsc",
-      "requirements": [
-        "Bachelor’s Degree OR Diploma of Nursing from an accredited nursing college",
-        "High distinction (Top 10% of graduating class)",
-        "Hold and maintain a current nursing license to practice in Nigeria",
-        "Current clinical experience in direct patient care for minimum of 2 years in the last 3 years",
-        "Minimum 3 years postgraduate nursing experience in an accredited University Teaching, Federal Medical Centre, or International hospital."
-      ],
-      "responsibilities": [
-        "Perform patient assessment using appropriate, problem-focused, and age-specific assessment techniques",
-        "Analyze assessment data, derive nursing interventions, set priorities according to patient needs, formulate a plan of care, implement and evaluate the outcome",
-        "Provide emotional support and measures to alleviate fear and anxiety",
-        "Participate in voluntary community health activities to promote, maintain and restore health and prevent diseases",
-        "Document all relevant data in the electronic medical record",
-        "Administer medications, monitor desirable and undesirable effects, and intervene appropriately",
-        "Travel to patients’ homes to deliver care as required",
-        "Manage pediatric patients with infectious diseases when applicable."
-      ],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-03",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Registered-Nurse-at-EHA-Clinics?pid=78429",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Registered Nurse",
-      "company": "St. Claire Beauty Clinic",
-      "location": "Ikeja, Lagos",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "",
-      "experience": "1",
-      "qualification": "bsc",
-      "requirements": [
-        "HND / School of Nursing - Minimum Qualification",
-        "Minimum 1 year relevant clinical experience",
-        "Must be able to set IV line seamlessly",
-        "Experience in Aesthetics, IV Therapy, Skin Treatments is an advantage",
-        "Strong clinical, communication and patient-care skills",
-        "Professional, reliable, detail-oriented, and confidential",
-        "Willing to work in a fast-paced aesthetic clinic environment"
-      ],
-      "responsibilities": [
-        "Provide excellent clinical and patient care",
-        "Administer IV therapy, injections and monitor patients",
-        "Assist during advanced aesthetic procedures",
-        "Support clients with pre and post-treatment care"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-03",
-      "deadline": "2026-09-17",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Registered-Nurse-at-St-Claire-Beauty-Clinic?pid=78425",
-      "_source": "medicalworldnigeria"
     },
     {
       "job_title": "Pharmacist, Dispensing",
@@ -25342,6 +24596,82 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/952298/radiation-therapist-at-ascentech-services-limited.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
+      "job_title": "Registered Nurse",
+      "company": "EHA Clinics",
+      "location": "Abuja, Nigeria",
+      "job_type": "",
+      "job_category": "Nurse",
+      "salary": "N181,440 monthly gross",
+      "experience": "3",
+      "qualification": "rn",
+      "requirements": [],
+      "responsibilities": [
+        "Perform patient assessment using appropriate, problem-focused, and age-specific assessment techniques.",
+        "Analyze the assessment data, derive nursing interventions, set priorities according to patient needs, formulate a plan of care, implement and evaluate the outcome.",
+        "Provide emotional support and measures to alleviate fear and anxiety.",
+        "Assess patient and family readiness and identify learning needs.",
+        "Participate in voluntary community health activities to promote, maintain and restore health and prevent diseases.",
+        "Provide basic life support when needed.",
+        "Document all relevant data in the electronic medical record according Administer medications, monitor desirable and undesirable effects, and intervene appropriately.",
+        "Travel to patients’ homes to deliver care as required.",
+        "Manage patients with infectious diseases when applicable.",
+        "Perform clerical duties when needed.",
+        "Ensure that patients are provided with appropriate nutrition."
+      ],
+      "how_to_apply": [
+        "Submit your application through the employer’s online recruitment portal.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-09-03",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/952134/registered-nurse-at-eha-clinics.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
+      "job_title": "Nurse, Nutrition",
+      "company": "International Medical Corps (IMC)",
+      "location": "Damboa, Borno, Nigeria",
+      "job_type": "volunteer",
+      "job_category": "Nurse",
+      "salary": "n,",
+      "experience": "Over two (2) years’ experiences in CMAM and IYCF programmes",
+      "qualification": "Registered Nurse with a Degree in Nursing from a recognized Nursing institute.",
+      "requirements": [
+        "Registered Nurse with a Degree in Nursing from a recognized Nursing institute.",
+        "Over two (2) years’ experiences in CMAM and IYCF programmes",
+        "Valid and current practicing license.",
+        "Excellent report-writing skills",
+        "Fluent in written and spoken English and required national/local language.",
+        "Commitment to and understanding of IMC’s aims, values and principles."
+      ],
+      "responsibilities": [
+        "Ensuring comprehensive medical examination, vital signs, frequent medicines, and treatment according to the protocols.",
+        "Following and adhering to the current protocols on drug administration i.e., antibiotics, antimalarial, anthelminthic.",
+        "Ensuring timely therapeutic preparation and administering the appropriate feeds and medicines for the malnourished children in the SC.",
+        "Carrying out daily nutritional status monitoring of severely malnourished children as prescribed in the protocol.",
+        "Providing appropriate nutrition counselling and health education to the mothers and caretakers in the SC based on the protocols and guidelines.",
+        "Ensuring adequate availability of all drugs and nutrition supply and ensuring stock is pre-positioned as planned.",
+        "Consulting and informing the SC Doctor and/or Nutrition Manager on issues that may affect the smooth operations of the stabilization Centre.",
+        "Ensuring proper handing over of duties within the SC.",
+        "Preparing and updating the medical and nutritional record for ward rounds daily.",
+        "Ensuring all criteria are adhered to and documented, including admission, discharge and transfer to and from the OTP.",
+        "Completing and updating the patient file to ensure a track of patient progress.",
+        "Compiling the statistical data (admission, default, cured, absent, death) and drafting a report on activities."
+      ],
+      "how_to_apply": [
+        "Submit your application through the employer’s online recruitment portal.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-09-03",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/952084/nurse-nutrition-at-international-medical-corps-imc.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -26571,99 +25901,6 @@
       "_source": "hotnigerianjobs"
     },
     {
-      "job_title": "Medical Officer",
-      "company": "Lily Hospitals Limited",
-      "location": "Warri, Delta",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "3 years",
-      "qualification": "Bachelor's Degree in Medicine and Surgery",
-      "requirements": [
-        "Must have 1-3 years experience as a medical officer.",
-        "Candidate must be licensed to practice medicine from the Nigerian Medical and Dental Association of Nigeria.",
-        "Knowledgeable in General Medicine and other related areas of medical practice.",
-        "Valuable sympathetic bedside manners, strong active listening skills, and advanced problem-solving abilities.",
-        "Excellent communication skills, strong ability to work well under extreme pressure and self-discipline."
-      ],
-      "responsibilities": [
-        "Providing quality medical care to patients.",
-        "Performing administrative duties and risk management.",
-        "Analyzing records, reports, test results, or examining patients to diagnose medical conditions.",
-        "Assisting consultants in performing cesarean sections or other surgical procedures as needed.",
-        "Ensuring comprehensive, accurate, and concise medical records are maintained for patients.",
-        "Participating in case planning and discharge planning.",
-        "Arranging investigations, medical treatment, and discharge as directed by senior registrars or consultants.",
-        "Participating in shift rosters or being 'on-call' as required."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-28",
-      "deadline": "2026-09-07",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Medical-Officer-at-Lily-Hospitals-Limited?pid=78424",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Senior Radiographer",
-      "company": "University of Benin (UNIBEN)",
-      "location": "Benin City, Edo",
-      "job_type": "Remote",
-      "job_category": "Allied Health",
-      "salary": "Grade CONHESS 09",
-      "experience": "List of Publications (where applicable, in chronological order)",
-      "qualification": "bsc",
-      "requirements": [
-        "A good Honours degree in Radiography not below Second Class (Lower Division)",
-        "Evidence of registration with the Radiographer Registration Board of Nigeria",
-        "Post-intern and NYSC certificate."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-28",
-      "deadline": "2026-10-08",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Senior-Radiographer-at-University-of-Benin-UNIBEN?pid=78422",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Registered Nurse",
-      "company": "LEAM Consulting Limited",
-      "location": "Old Bodija, Ibadan - Oyo",
-      "job_type": "Shift/Full-time",
-      "job_category": "Nurse",
-      "salary": "n,",
-      "experience": "4",
-      "qualification": "bsc",
-      "requirements": [
-        "Registered Nurse (RN) with a valid current practising licence.",
-        "3-4 years post-qualification clinical experience.",
-        "Previous experience in a Neurology, Neurosurgery, Stroke, ICU, or Neurorehabilitation Ward in a Teaching Hospital or Government Hospital will be an added advantage.",
-        "Strong clinical assessment and patient management skills.",
-        "Ability to work independently with minimal supervision.",
-        "Excellent teamwork, communication, and documentation skills.",
-        "Willingness to work rotational shifts, including weekends and public holidays."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-28",
-      "deadline": "2026-09-30",
-      "contact_email": "",
-      "contact_phone": "09022167744",
-      "apply_url": "https://medicalworldnigeria.com/post/Registered-Nurse-at-LEAM-Consulting-Limited?pid=78417",
-      "_source": "medicalworldnigeria"
-    },
-    {
       "job_title": "Tablet Coating Operator",
       "company": "KCH Consumer Healthcare Limited",
       "location": "Lagos, Nigeria",
@@ -27513,204 +26750,6 @@
       "_source": "hotnigerianjobs"
     },
     {
-      "job_title": "Medical Officer",
-      "company": "Aniso Specialist Medical Centre",
-      "location": "Benin City, Edo",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "1",
-      "qualification": "bsc",
-      "requirements": [
-        "MBBS or equivalent medical degree.",
-        "Full registration with the Medical and Dental Council of Nigeria (MDCN).",
-        "Valid and up-to-date MDCN practising licence.",
-        "At least 1 year post-NYSC clinical experience is preferred.",
-        "Good clinical reasoning, decision-making and patient management skills.",
-        "Strong communication and interpersonal skills.",
-        "Ability to work effectively both independently and as part of a multidisciplinary team.",
-        "Professionalism, reliability, accountability and respect for hospital structure.",
-        "Must reside in Benin City."
-      ],
-      "responsibilities": [
-        "Conducting patient consultations, clinical examinations and assessments.",
-        "Making appropriate diagnoses and developing suitable treatment plans.",
-        "Providing medical treatment, follow-up care and emergency management as required.",
-        "Requesting and interpreting relevant laboratory and diagnostic investigations.",
-        "Monitoring patients' progress and referring or escalating cases when necessary.",
-        "Maintaining accurate, complete and confidential patient records.",
-        "Communicating effectively with patients, relatives and other healthcare professionals.",
-        "Working collaboratively with nurses, specialists and other members of the clinical team.",
-        "Adhering to clinical guidelines, hospital policies, infection-control standards and patient-safety protocols.",
-        "Participating in clinical audits, quality improvement and continuing professional development activities."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-24",
-      "deadline": "7th Sepember, 2026",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Medical-Officer-at-Aniso-Specialist-Medical-Centre?pid=78404",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Quality Assurance Nurse",
-      "company": "Ronsberger Nigeria Limited",
-      "location": "Garki II, Abuja (FCT)",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "n,",
-      "experience": "1",
-      "qualification": "bsc",
-      "requirements": [
-        "A Bachelor Degree in Nursing, or Registered Nurse and Midwifery Certificate",
-        "Completed at least 1 year Licensed Practical Nurse training.",
-        "At least 3 years of post NYSC Practical experience.",
-        "Excellent verbal and written communication skills.",
-        "Organizational and management skills.",
-        "Must be computer literate",
-        "Interpersonal skills, research skills and time management skills.",
-        "Highly detail oriented, caring, and able to work well on a team and under pressure."
-      ],
-      "responsibilities": [
-        "Carrying out administrative function at the Health Service Unit",
-        "Carrying out quality assurance functions including hospital visitations.",
-        "Vetting of bills from Hospitals",
-        "Liaising with the Call Centre and Healthcare providers from time to time for effective services."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-24",
-      "deadline": "2026-08-31",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Quality-Assurance-Nurse-at-Ronsberger-Nigeria-Limited?pid=78408",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Registered Nurse",
-      "company": "Future Moves Recruitment Agency (FMR Agency)",
-      "location": "Lekki, Lagos",
-      "job_type": "Full Time",
-      "job_category": "Nurse",
-      "salary": "N120,000 – N150,000 monthly",
-      "experience": "and clinic operations",
-      "qualification": "bsc",
-      "requirements": [
-        "Must be a Registered Nurse with relevant qualifications",
-        "Knowledge of clinical procedures, hygiene and safety standards",
-        "Strong communication and client-care skills",
-        "Professional, friendly and presentable",
-        "Detail-oriented and able to multitask",
-        "Ability to maintain strict confidentiality",
-        "Team player with a customer-focused mindset",
-        "Interest or experience in aesthetics is an added advantage"
-      ],
-      "responsibilities": [
-        "Assist with aesthetic treatments and clinical procedures",
-        "Conduct client consultations and pre-treatment assessments",
-        "Prepare treatment rooms and equipment",
-        "Monitor clients during procedures and assist with aftercare",
-        "Maintain accurate client and treatment records",
-        "Ensure strict hygiene, safety and professional standards",
-        "Support excellent client experience and clinic operations",
-        "Collaborate with the Social Media Manager on content and outreach initiatives"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-24",
-      "deadline": "2026-09-01",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Registered-Nurse-at-Future-Moves-Recruitment-Agency-FMR-Agency?pid=78407",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Nurse",
-      "company": "Blooms Academy",
-      "location": "Abuja (FCT)",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "n,",
-      "experience": "Minimum of 2 years' relevant work experience is an added advantage.",
-      "qualification": "bsc",
-      "requirements": [
-        "Relevant qualification or experience in the respective field.",
-        "Good communication and interpersonal skills.",
-        "Commitment to maintaining a safe, supportive and professional school",
-        "Strong IT and digital skills, including proficiency with computers and relevant software"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-24",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Nurse-at-Blooms-Academy?pid=78406",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Nurse",
-      "company": "Wexford College",
-      "location": "Akure, Ondo",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "n,",
-      "experience": "in their respective fields.",
-      "qualification": "bsc",
-      "requirements": [
-        "Candidates must possess relevant qualifications and experience in their respective fields."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-24",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Nurse-at-Wexford-College?pid=78402",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Nursing Officer",
-      "company": "Seeks Chief Medical Director",
-      "location": "Lagos, Abuja",
-      "job_type": "",
-      "job_category": "Nurse",
-      "salary": "n,",
-      "experience": "2",
-      "qualification": "bsc",
-      "requirements": [
-        "Registered Nurse (RN) with a valid current practising license with 0-2 years post-qualification clinical experience",
-        "Strong clinical assessment and patient management skills.",
-        "Ability to work independently with minimal supervision.",
-        "Excellent teamwork, communication, and documentation skills.",
-        "Willingness to work rotational shifts, including weekends and public holidays."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-24",
-      "deadline": "2026-08-31",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Nursing-Officer?pid=78400",
-      "_source": "medicalworldnigeria"
-    },
-    {
       "job_title": "DP World GROW Graduate Programme - Pharmacy",
       "company": "DP World",
       "location": "Lagos, Nigeria",
@@ -27816,6 +26855,33 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/946674/medical-doctor-at-a-reputable-clinic-mymedicalbank.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
+      "job_title": "Nurse",
+      "company": "Blooms Academy",
+      "location": "Abuja (FCT), Nigeria",
+      "job_type": "Full-time",
+      "job_category": "Nurse",
+      "salary": "n,",
+      "experience": "Minimum of 2 years' relevant work experience is an added advantage.",
+      "qualification": "ond",
+      "requirements": [
+        "Relevant qualification or experience in the respective field.",
+        "Good communication and interpersonal skills.",
+        "Commitment to maintaining a safe, supportive and professional school",
+        "Strong IT and digital skills, including proficiency with computers and relevant software."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-08-24",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/946040/nurse-at-blooms-academy.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -27958,22 +27024,17 @@
     {
       "job_title": "Head, Medical Operations",
       "company": "Oceanic Health Management Limited",
-      "location": "Lagos",
+      "location": "Lagos, Nigeria",
       "job_type": "Full-time",
       "job_category": "Doctor",
       "salary": "",
       "experience": "5",
-      "qualification": "bsc",
+      "qualification": "ond",
       "requirements": [
         "Must be a Medical Doctor with a minimum of 5 years of experience.",
         "Valid registration and license to practice in Nigeria.",
         "Relevant post-qualification experience in healthcare management, HMO operations, or a related field.",
-        "Demonstrated leadership experience in a healthcare environment.",
-        "Strong clinical and healthcare-management expertise.",
-        "Excellent leadership and decision-making skills.",
-        "Understanding of managed healthcare and health insurance operations.",
-        "Strong analytical and strategic-thinking abilities.",
-        "Excellent communication and stakeholder-management skills."
+        "Demonstrated leadership experience in a healthcare environment."
       ],
       "responsibilities": [
         "Provide strategic leadership for medical operations.",
@@ -27996,84 +27057,8 @@
       "deadline": "",
       "contact_email": "",
       "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Head-Medical-Operations-at-Oceanic-Health-Management-Limited?pid=78394",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Hospice Nurse",
-      "company": "Zinance Limited",
-      "location": "Lagos, Ogun, Delta",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "",
-      "experience": "",
-      "qualification": "bsc",
-      "requirements": [
-        "Knowledge of nursing care processes and medication guidelines/side-effects",
-        "Committed to safety precautions and high ethical standards",
-        "Proficient in English",
-        "Sound judgement and attention to detail",
-        "Excellent communication skills and a compassionate nature",
-        "Cool-tempered and patient",
-        "Emotional/mental stability and stamina"
-      ],
-      "responsibilities": [
-        "Collaborate with physicians and other professionals to plan care",
-        "Make frequent visits to the patient to evaluate their condition",
-        "Provide support and comfort according to individual patient’s needs",
-        "Work with caregivers to plan and execute excellent patient care",
-        "Help in administering medication",
-        "Alleviate sudden symptoms of the disease’s end phase",
-        "Notify a doctor for a patient’s condition when deemed necessary",
-        "Assist patients and their families with paperwork",
-        "Maintain accurate records",
-        "Help relatives cope with the upcoming loss and provide post-mortem support."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-21",
-      "deadline": "2026-09-11",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Hospice-Nurse-at-Zinance-Limited?pid=78397",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Registered RN / RM",
-      "company": "CypressHill Hospital",
-      "location": "Lagos",
-      "job_type": "",
-      "job_category": "Nurse",
-      "salary": "N200,000 - N300,000 / month",
-      "experience": "Minimum of 4 years working experience.",
-      "qualification": "bsc",
-      "requirements": [
-        "Minimum of 4 years working experience."
-      ],
-      "responsibilities": [
-        "Maintaining accurate, complete health care records and reports.",
-        "Providing complete prenatal care, including screening tests, and also postnatal visits",
-        "Overseeing and monitoring the labour process and advising mothers on their options to manage pain",
-        "Identifying high-risk pregnancies and referring such patients to the relevant medical specialists",
-        "Providing training and guidance for junior colleagues",
-        "Administering medications to patients and monitoring them for side effects and reactions.",
-        "Prescribing assistive medical advices and related treatments.",
-        "Recording patient vital signs and medical information.",
-        "Ordering medical diagnostic and clinical tests.",
-        "Monitoring, reporting, and recording symptoms or changes in patient conditions."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-21",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Registered-RN-RM-at-CypressHill-Hospital?pid=78396",
-      "_source": "medicalworldnigeria"
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/945501/head-medical-operations-at-oceanic-health-manageme.html",
+      "_source": "hotnigerianjobs"
     },
     {
       "job_title": "Pharmacist Executive, WorldWide Healthcare",
@@ -28128,6 +27113,39 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/945502/call-centre-executives-at-oceanic-health-managemen.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
+      "job_title": "Registered RN / RM",
+      "company": "CypressHill Hospital",
+      "location": "Lagos, Nigeria",
+      "job_type": "",
+      "job_category": "Nurse",
+      "salary": "N200,000 - N300,000 / month",
+      "experience": "Minimum of 4 years working experience",
+      "qualification": "RN",
+      "requirements": [],
+      "responsibilities": [
+        "Maintaining accurate, complete health care records and reports.",
+        "Providing complete prenatal care, including screening tests, and also postnatal visits",
+        "Overseeing and monitoring the labour process and advising mothers on their options to manage pain",
+        "Identifying high-risk pregnancies and referring such patients to the relevant medical specialists",
+        "Providing training and guidance for junior colleagues",
+        "Administering medications to patients and monitoring them for side effects and reactions.",
+        "Prescribing assistive medical advices and related treatments.",
+        "Recording patient vital signs and medical information.",
+        "Ordering medical diagnostic and clinical tests.",
+        "Monitoring, reporting, and recording symptoms or changes in patient conditions."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites).",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-08-21",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/945437/registered-rn-rm-at-cypresshill-hospital.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -28310,60 +27328,6 @@
       "_source": "hotnigerianjobs"
     },
     {
-      "job_title": "Medical Doctor",
-      "company": "St. Catherine's Specialist Hospital",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full time",
-      "job_category": "Doctor",
-      "salary": "",
-      "experience": "3",
-      "qualification": "bsc",
-      "requirements": [
-        "MBBS or equivalent medical degree.",
-        "Must be duly registered with the Medical and Dental Council of Nigeria (MDCN).",
-        "1–3 years post-qualification experience.",
-        "Good clinical knowledge and communication skills.",
-        "Ability to work in a team and provide patient-centred care."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-20",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Medical-Doctor-at-St-Catherines-Specialist-Hospital?pid=78393",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Medical Scientist",
-      "company": "St. Catherine's Specialist Hospital",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full time",
-      "job_category": "Medical Laboratory Scientist",
-      "salary": "",
-      "experience": "1–3 years",
-      "qualification": "B.Sc. in Medical Laboratory Science or related field",
-      "requirements": [
-        "Registered with the Medical Laboratory Science Council of Nigeria (MLSCN)",
-        "Proficiency in laboratory techniques and equipment",
-        "Strong analytical skills and attention to detail"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-20",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Medical-Scientist-at-St-Catherines-Specialist-Hospital?pid=78387",
-      "_source": "medicalworldnigeria"
-    },
-    {
       "job_title": "Clinical Pharmacist (ICU)",
       "company": "African Medical Centre of Excellence (AMCE)",
       "location": "Abuja, Nigeria",
@@ -28390,6 +27354,59 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/944863/clinical-pharmacist-icu-at-african-medical-centre.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
+      "job_title": "Medical Scientist",
+      "company": "St. Catherine's Specialist Hospital",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full time",
+      "job_category": "Medical Laboratory Scientist",
+      "salary": "",
+      "experience": "1–3 years relevant experience",
+      "qualification": "B.Sc. in Medical Laboratory Science or related field",
+      "requirements": [
+        "Registered with the Medical Laboratory Science Council of Nigeria (MLSCN)",
+        "Proficiency in laboratory techniques and equipment",
+        "Strong analytical skills and attention to detail"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-08-20",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/944609/medical-scientist-at-st-catherines-specialist-hosp.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
+      "job_title": "Medical Doctor",
+      "company": "St. Catherine's Specialist Hospital",
+      "location": "Abuja, Nigeria",
+      "job_type": "Full time",
+      "job_category": "Doctor",
+      "salary": "",
+      "experience": "3",
+      "qualification": "MBBS or equivalent medical degree",
+      "requirements": [
+        "Must be duly registered with the Medical and Dental Council of Nigeria (MDCN)",
+        "1–3 years post-qualification experience",
+        "Good clinical knowledge and communication skills",
+        "Ability to work in a team and provide patient-centred care"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-08-20",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/944612/medical-doctor-at-st-catherines-specialist-hospita.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -28447,193 +27464,6 @@
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/944860/therapeutic-radiographer-at-african-medical-centre.html",
       "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Pediatrics Clinical Services Support (Short-Term Hire)",
-      "company": "Indigenous Non-profit and Non-governmental Organization",
-      "location": "Lokoja, Kogi, Nigeria",
-      "job_type": "Short-Term Hire",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "Bachelor of Medicine and Bachelor of Surgery (MBBS) or equivalent qualification from a recognized institution",
-      "qualification": "bsc",
-      "requirements": [],
-      "responsibilities": [
-        "Provide technical oversight for pediatric and adolescent HIV prevention, treatment, care, and support services across supported facilities.",
-        "Strengthen pediatric HIV case finding through EID, index testing, PMTCT, TB, nutrition, inpatient, outpatient, and other high-risk entry points.",
-        "Support timely ART initiation, appropriate pediatric dosing, regimen optimization, and management of treatment failure.",
-        "Strengthen EID and HIV-exposed infant (HEI) follow-up, including sample collection, result return, linkage, and treatment initiation.",
-        "Monitor pediatric and adolescent viral load eligibility, sample collection, result documentation, suppression, and management of unsuppressed clients.",
-        "Strengthen implementation of pediatric AHD, TB/HIV, TPT, opportunistic infection, and other relevant clinical interventions.",
-        "Support adolescent-focused interventions, including OTZ, adherence, disclosure, psychosocial support, retention, and transition to adult care.",
-        "Conduct routine supportive supervision, clinical mentorship, case reviews, and capacity building for healthcare workers.",
-        "Analyze pediatric program performance and support facility-specific remediation and Continuous Quality Improvement (CQI) interventions.",
-        "Work with M&E, laboratory, pharmacy, community, and other technical teams to strengthen multidisciplinary pediatric HIV service delivery.",
-        "Support integration of pediatric HIV services into broader maternal, newborn, child and adolescent health services.",
-        "Work with SAPC, SACA, SMOH and other government structures to strengthen state ownership, skill transfer, and sustainability of pediatric HIV services.",
-        "Prepare and submit timely technical reports and track identified program gaps through resolution."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-08-19",
-      "deadline": "2026-09-01",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Pediatrics-Clinical-Services-Support-Short-Term-Hire-at-an-Indigenous-Non-profit-and-Non-governmental-Organization?pid=78384",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Medical Director",
-      "company": "Vantegral Consulting",
-      "location": "Orifite, Anambra",
-      "job_type": "Full-time",
-      "job_category": "Healthcare Management",
-      "salary": "n,",
-      "experience": "",
-      "qualification": "bsc",
-      "requirements": [],
-      "responsibilities": [
-        "Provide overall strategic and executive leadership for the Hospital.",
-        "Translate the Hospital's strategic objectives into measurable clinical, operational, financial, people and business development priorities.",
-        "Develop and implement annual operating plans and performance objectives.",
-        "Ensure effective integration of clinical, administrative and support functions.",
-        "Monitor overall Hospital performance and initiate corrective actions where required.",
-        "Promote a culture of professionalism, accountability, collaboration, innovation and continuous improvement.",
-        "Ensure Hospital activities and resources remain aligned with strategic objectives.",
-        "Ensure the delivery of safe, ethical, effective and patient-centred healthcare services.",
-        "Establish and maintain effective clinical governance, quality assurance and patient-safety systems.",
-        "Monitor clinical outcomes, morbidity and mortality trends, patient safety indicators and clinical quality metrics."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-08-19",
-      "deadline": "2026-10-17",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Medical-Director-at-Vantegral-Consulting?pid=78383",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Medical Officer",
-      "company": "BlueCoral Healthcare Services Limited",
-      "location": "Agungi Lekki, Lagos",
-      "job_type": "",
-      "job_category": "Doctor",
-      "salary": "n,",
-      "experience": "4 years",
-      "qualification": "Bachelor of Medicine and Bachelor of Surgery (MBBS)",
-      "requirements": [
-        "Bachelor of Medicine and Bachelor of Surgery (MBBS)",
-        "Registered with the NMA and Medical Guild Council",
-        "Minimum of 4 years’ experience as a General Duty Officer or equivalent",
-        "Good command of written and spoken English",
-        "Good interpersonal skills",
-        "Ability to communicate at all levels",
-        "Proactive approach and capable of working on own initiative",
-        "Ability and flexibility to deal with pressure and deadlines"
-      ],
-      "responsibilities": [
-        "Provide medical opinions and recommendations on health check plans",
-        "Liaise with digital marketer on generating content and strategies",
-        "Assist visiting medical consultants during procedures",
-        "Attend to medical reports for interpretation and recommendations",
-        "Maintain current medical registration",
-        "Assist with projects as required by the medical director",
-        "Plan, implement, and monitor health activities alongside marketing departments",
-        "Provide medical assessments for periodic checks and reports."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-19",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Medical-Officer-at-BlueCoral-Healthcare-Services-Limited?pid=78381",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Senior Pharmaceutical Project Manager - Manufacturing and Commercialization",
-      "company": "Prestigious Consulting Group",
-      "location": "Remote",
-      "job_type": "Full-time",
-      "job_category": "Healthcare Management",
-      "salary": "N400,000 - N600,000 monthly",
-      "experience": "Minimum of 6 years' experience in pharmaceutical manufacturing, operations, regulatory affairs, or pharmaceutical project management.",
-      "qualification": "Bachelor's Degree in Pharmacy, Pharmaceutical Sciences, Industrial Pharmacy, Pharmaceutical Technology, Biochemistry, Industrial Chemistry, or a related field.",
-      "requirements": [
-        "Minimum of 6 years' experience in pharmaceutical manufacturing, operations, regulatory affairs, or pharmaceutical project management.",
-        "Practical experience within a pharmaceutical manufacturing consulting company.",
-        "Strong knowledge of GMP, NAFDAC regulatory processes, manufacturing operations, and commercialization.",
-        "Experience with contract manufacturing, GMP remediation, and pharmaceutical product commercialization.",
-        "PMP, PRINCE2, or similar project management certification is an added advantage.",
-        "Excellent leadership, stakeholder management, communication, and project management skills."
-      ],
-      "responsibilities": [
-        "Lead pharmaceutical manufacturing projects from planning through commercialization.",
-        "Develop project plans, timelines, budgets, and execution strategies.",
-        "Coordinate manufacturing scale-up and operational readiness.",
-        "Identify and manage contract manufacturing opportunities.",
-        "Lead GMP gap assessments and remediation programmes.",
-        "Coordinate NAFDAC registration, regulatory approvals, and support WHO GMP/WHO Prequalification initiatives where applicable.",
-        "Prepare feasibility studies, business cases, and investment support documentation.",
-        "Manage relationships with regulators, manufacturers, consultants, suppliers, and investors.",
-        "Monitor industry trends and identify new pharmaceutical manufacturing opportunities.",
-        "Ensure compliance with GMP and applicable pharmaceutical regulations."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-19",
-      "deadline": "2026-09-16",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Senior-Pharmaceutical-Project-Manager-Manufacturing-and-Commercialization-Remote-at-Prestigious-Consulting-Group?pid=78377",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Registered Nurse (Aesthetic Nurse Assistant)",
-      "company": "Future Moves Recruitment Agency (FMR Agency)",
-      "location": "Lekki, Lagos",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "N120,000 – N150,000 Monthly",
-      "experience": "in human Capital development and staffing",
-      "qualification": "bsc",
-      "requirements": [
-        "Must be a Registered Nurse with relevant qualifications.",
-        "Knowledge of clinical procedures, hygiene, and safety standards.",
-        "Strong communication and client-care skills.",
-        "Professional, friendly, and presentable.",
-        "Detail-oriented with the ability to multitask.",
-        "Ability to maintain strict confidentiality.",
-        "Strong teamwork and customer-service skills.",
-        "Interest or experience in aesthetics is an added advantage."
-      ],
-      "responsibilities": [
-        "Assist with aesthetic treatments and clinical procedures.",
-        "Conduct client consultations and pre-treatment assessments.",
-        "Prepare treatment rooms and equipment.",
-        "Monitor clients during procedures and assist with aftercare.",
-        "Maintain accurate client and treatment records.",
-        "Ensure strict hygiene, safety, and professional standards.",
-        "Support excellent client experience and smooth clinic operations.",
-        "Collaborate with the Social Media Manager on content and outreach initiatives."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-19",
-      "deadline": "2026-08-25",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Registered-Nurse-Aesthetic-Nurse-Assistant-at-Future-Moves-Recruitment-Agency-FMR-Agency?pid=78373",
-      "_source": "medicalworldnigeria"
     },
     {
       "job_title": "Market Access Executive",
@@ -28717,6 +27547,38 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/943993/aesthetician-at-nectar-beauty-hub.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
+      "job_title": "Medical Director",
+      "company": "Vantegral Consulting",
+      "location": "Orifite, Anambra, Nigeria",
+      "job_type": "Full-time",
+      "job_category": "Healthcare Management",
+      "salary": "n,",
+      "experience": "",
+      "qualification": "",
+      "requirements": [],
+      "responsibilities": [
+        "Provide overall strategic and executive leadership for the Hospital.",
+        "Translate the Hospital's strategic objectives into measurable clinical, operational, financial, people and business development priorities.",
+        "Develop and implement annual operating plans and performance objectives.",
+        "Ensure effective integration of clinical, administrative and support functions.",
+        "Monitor overall Hospital performance and initiate corrective actions where required.",
+        "Promote a culture of professionalism, accountability, collaboration, innovation and continuous improvement.",
+        "Ensure Hospital activities and resources remain aligned with strategic objectives.",
+        "Ensure the delivery of safe, ethical, effective and patient-centred healthcare services.",
+        "Establish and maintain effective clinical governance, quality assurance and patient-safety systems.",
+        "Monitor clinical outcomes, morbidity and mortality trends, patient safety indicators and clinical quality metrics."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-08-19",
+      "deadline": "2026-10-17",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/943891/medical-director-at-vantegral-consulting.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -29115,6 +27977,45 @@
       "_source": "hotnigerianjobs"
     },
     {
+      "job_title": "Medical Officer",
+      "company": "BlueCoral Healthcare Services Limited",
+      "location": "Agungi Lekki, Lagos, Nigeria",
+      "job_type": "",
+      "job_category": "Doctor",
+      "salary": "n",
+      "experience": "A minimum of 4 years’ experience as a General Duty Officer or equivalent experience.",
+      "qualification": "Bachelor of Medicine and Bachelor of Surgery (MBBS) and must be registered with the NMA and Medical Guild Council.",
+      "requirements": [
+        "Bachelor of Medicine and Bachelor of Surgery (MBBS)",
+        "Must be registered with the NMA and Medical Guild Council",
+        "A minimum of 4 years’ experience as a General Duty Officer or equivalent experience",
+        "Good command of written and spoken English",
+        "Good interpersonal skills",
+        "Ability to communicate at all levels",
+        "Proactive approach and capable of working on own initiative",
+        "Flexibility to deal with pressure"
+      ],
+      "responsibilities": [
+        "Provide medical opinions, recommendations on health check, plans and medical packages for periodic screenings",
+        "Liaise with the digital marketer on generating contents on a monthly basis",
+        "Attend to medical reports that are presented for interpretation opinion and recommendations",
+        "Assist with projects as required by the medical director",
+        "Plan, implement and monitor health activities alongside marketing departments",
+        "Provide opinions and recommendations in the coordination of medical case management",
+        "Provide medical assessments for periodic checks of clients and the overall provision of medical reports"
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites).",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-08-19",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/944006/medical-officer-at-bluecoral-healthcare-services-l.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
       "job_title": "Medical Administrative Assistant",
       "company": "TransitEdge Solutions Limited",
       "location": "Lagos, Nigeria",
@@ -29438,36 +28339,6 @@
       "_source": "hotnigerianjobs"
     },
     {
-      "job_title": "Medical Officer",
-      "company": "Zenith Medicare and Maternity Limited",
-      "location": "Plot 112, Inezu, Okpuno, Awka, Anambra",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "N400,000 Monthly",
-      "experience": "30",
-      "qualification": "bsc",
-      "requirements": [
-        "MBBS or equivalent qualification.",
-        "4 - 5 years post-NYSC clinical experience.",
-        "Valid MDCN licence/registration.",
-        "Good clinical, communication, leadership, and administrative skills."
-      ],
-      "responsibilities": [
-        "Provide quality patient care, including assessment, diagnosis, treatment, emergency care, and follow-up.",
-        "Participate in ward rounds, supervise/support clinical staff, maintain proper patient records, assist with hospital administration, and contribute to the smooth running of the hospital."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-17",
-      "deadline": "2026-09-15",
-      "contact_email": "",
-      "contact_phone": "09039739550",
-      "apply_url": "https://medicalworldnigeria.com/post/Medical-Officer-at-Zenith-Medicare-and-Maternity-Limited?pid=78370",
-      "_source": "medicalworldnigeria"
-    },
-    {
       "job_title": "Pharmacist",
       "company": "Lifebank",
       "location": "Onipanu, Lagos, Nigeria",
@@ -29645,42 +28516,6 @@
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/942310/health-advisor-at-dorisfit-gym-and-spa-4-openings.html",
       "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "School Nurse",
-      "company": "Arrupe Jesuit College (AJC)",
-      "location": "Abbi, Delta",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "N,",
-      "experience": "2",
-      "qualification": "bsc",
-      "requirements": [
-        "BNSC, RN, or its equivalent is required",
-        "Any higher degree or qualification, especially in the field of Nursing, is an advantage",
-        "At least 2 years experience in a similar role",
-        "Any experience relating to Nursing is an advantage",
-        "Effective communication and presentation skills",
-        "Good command of English Language",
-        "Good understanding of adolescent psychology",
-        "Good interpersonal skills",
-        "A team player, ability to work effectively with minimum supervision",
-        "Proficiency in use of Office Suites like Microsoft Word and Power Point"
-      ],
-      "responsibilities": [
-        "Attend to the health of every student",
-        "Work on shift every day including weekends"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-14",
-      "deadline": "2026-08-30",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/School-Nurse-at-Arrupe-Jesuit-College-AJC?pid=78364",
-      "_source": "medicalworldnigeria"
     },
     {
       "job_title": "Medical Secretary",
@@ -30097,66 +28932,6 @@
       "_source": "hotnigerianjobs"
     },
     {
-      "job_title": "Consultant - Infectious Disease Surveillance Pilot Field Officer",
-      "company": "PATH Nigeria",
-      "location": "Lagos, Kano, Enugu",
-      "job_type": "contract",
-      "job_category": "Public Health",
-      "salary": "n,",
-      "experience": "5",
-      "qualification": "bsc",
-      "requirements": [],
-      "responsibilities": [
-        "Support the scale-up of event-based and community-based surveillance in assigned states, including assisting with community-level early warning systems for priority infectious diseases.",
-        "Assist in adapting and rolling out training materials for EBS, CBS, IDSR, and zoonotic disease preparedness, including planning and facilitating workshops, documenting sessions, and providing post-training follow-up.",
-        "Contribute to the review and updating of standard operating procedures (SOPs), job aids, guidelines, and communication tools to strengthen surveillance systems and clarify roles.",
-        "Support mentorship and peer-learning initiatives, including organizing refresher sessions, troubleshooting, and providing practical support to trained health workers.",
-        "Assist in monitoring and assessing IDSR implementation and digital health information systems, including data entry, validation, and basic analysis.",
-        "Coordinate with state-level counterparts, partners, and stakeholders, and assist in the development of reports, meeting minutes, action trackers, field visit summaries, and training reports."
-      ],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-13",
-      "deadline": "2026-08-27",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Consultant-at-PATH-Nigeria?pid=78361",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Medical Officer",
-      "company": "Ekiti State College of Technology",
-      "location": "Ijero-Ekiti, Ekiti",
-      "job_type": "",
-      "job_category": "Doctor",
-      "salary": "CONMESS",
-      "experience": "",
-      "qualification": "bsc",
-      "requirements": [
-        "M.B.B.S",
-        "registered with the Medical and Dental Council of Nigeria",
-        "observed mandatory NYSC service evidenced by discharge certificate"
-      ],
-      "responsibilities": [
-        "Provide leadership to the officers working in the Polytechnic Health Centre",
-        "Hold consultations with patients visiting for diagnosis",
-        "Prescribe required interventions",
-        "Provide general practices appropriate for a tertiary institution."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-13",
-      "deadline": "2026-09-24",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Medical-Officers-at-Ekiti-State-College-of-Technology?pid=78359",
-      "_source": "medicalworldnigeria"
-    },
-    {
       "job_title": "Business Development Pharmacist",
       "company": "Agary Pharmaceutical Limited",
       "location": "Lagos, Nigeria",
@@ -30452,85 +29227,6 @@
       "contact_phone": "09070971440",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/940646/dentist-at-trident-clinics-and-spa.html",
       "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Practice & Quality Assurance Coordinator (REACH)",
-      "company": "EHA Clinics",
-      "location": "Kuje, Abuja",
-      "job_type": "remote",
-      "job_category": "Healthcare Management",
-      "salary": "N490,000 monthly gross",
-      "experience": "Minimum of 2 years post NYSC",
-      "qualification": "BSc or Degree in Medicine - MBBS, MbChB, MD, DO",
-      "requirements": [
-        "Up-to-date registration and license from the MDCN",
-        "Completion of compulsory internship",
-        "Completion of BLS, ACLS"
-      ],
-      "responsibilities": [
-        "Develop medical policies and procedures and monitor adherence",
-        "Assess trends in the health care needs of clients",
-        "Contribute to the operation and running of research projects",
-        "Review medical KPIs and OKRs regularly",
-        "Provide ongoing advice and consultation to clinical staff",
-        "Organise and assign duties to clinical team members",
-        "Evaluate team activities, needs, and problems",
-        "Oversee staff schedules for productivity",
-        "Evaluate performance of clinical team members",
-        "Supervise and coordinate patient care delivery",
-        "Conduct face-to-face medical consultations",
-        "Conduct periodic staff meetings",
-        "Present data to the Management team",
-        "Resolve complaints in a timely manner",
-        "Coordinate healthcare delivery among health team members"
-      ],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-12",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Practice-and-Quality-Assurance-Coordinator-REACH-at-EHA-Clinics?pid=78348",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Registered Nurse",
-      "company": "Dr Dimple Medicare",
-      "location": "Wuse 2, Abuja (FCT)",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "n,",
-      "experience": "2",
-      "qualification": "bsc",
-      "requirements": [
-        "BSc Nursing / HND Nursing + Active License",
-        "Minimum 2 years relevant clinical experience",
-        "NYSC Completed Preferred. Serving Corps members may apply",
-        "Experience in IV Therapy, Aesthetics, Wellness, Dermatology is an advantage",
-        "Competent in venepuncture, cannulation & injections",
-        "Strong clinical, communication & patient-care skills",
-        "Professional, reliable, detail-oriented & confidential",
-        "Willing to work in a fast-paced aesthetics / wellness environment"
-      ],
-      "responsibilities": [
-        "Provide excellent clinical and patient care",
-        "Administer IV therapy, injections & monitor patients",
-        "Take/document vital signs and maintain accurate patient records",
-        "Ensure infection prevention and clinical protocols are followed",
-        "Liaise with clients and support doctors in treatments."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-12",
-      "deadline": "2026-09-01",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Registered-Nurse-at-Dr-Dimple-Medicare?pid=78353",
-      "_source": "medicalworldnigeria"
     },
     {
       "job_title": "Medical Officer",
@@ -30927,131 +29623,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/939497/healthcare-assistant-at-dorisfit-gym-and-spa.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Community Health Extension Worker (CHEW)",
-      "company": "JCP MAX Medical Diagnostics",
-      "location": "Lagos, Nigeria",
-      "job_type": "",
-      "job_category": "Public Health",
-      "salary": "",
-      "experience": "",
-      "qualification": "relevant qualifications and experience",
-      "requirements": [],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-11",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/938344/community-health-extension-worker-chew-at-jcp-max.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Medical Officer",
-      "company": "JCP MAX Medical Diagnostics",
-      "location": "Lagos, Nigeria",
-      "job_type": "",
-      "job_category": "Doctor",
-      "salary": "",
-      "experience": "",
-      "qualification": "relevant qualifications and experience",
-      "requirements": [],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-11",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/938341/medical-officers-at-jcp-max-medical-diagnostics.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Perioperative Care Nurse – Cardiac Surgery",
-      "company": "Ascentech Services Limited",
-      "location": "Port Harcourt, Rivers, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "n,",
-      "experience": "4",
-      "qualification": "Registered Nurse with a valid NMCN licence",
-      "requirements": [
-        "Minimum 4 years of relevant nursing experience, preferably in cardiac surgery, cardiothoracic theatre, ICU, or perioperative care.",
-        "Strong clinical assessment, monitoring, and emergency-response skills.",
-        "Excellent communication, teamwork, and attention to detail."
-      ],
-      "responsibilities": [
-        "Prepare and assess patients for cardiac surgery.",
-        "Provide perioperative and postoperative nursing care.",
-        "Assist the surgical team with cardiac procedures and theatre preparation.",
-        "Monitor patients and promptly identify and escalate complications.",
-        "Administer medications and treatments safely.",
-        "Maintain accurate patient records and documentation.",
-        "Adhere to infection prevention, patient safety, and clinical protocols.",
-        "Collaborate effectively with surgeons, anaesthetists, perfusionists, and other healthcare professionals."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-11",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/938649/perioperative-care-nurse-cardiac-surgery-at-ascent.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Scientist",
-      "company": "JCP MAX Medical Diagnostics",
-      "location": "Lagos, Nigeria",
-      "job_type": "",
-      "job_category": "Medical Laboratory Scientist",
-      "salary": "",
-      "experience": "",
-      "qualification": "",
-      "requirements": [
-        "Candidates should possess relevant qualifications and experience."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-11",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/938334/scientist-at-jcp-max-medical-diagnostics.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Radiographer",
-      "company": "JCP MAX Medical Diagnostics",
-      "location": "Lagos, Nigeria",
-      "job_type": "",
-      "job_category": "Allied Health",
-      "salary": "",
-      "experience": "",
-      "qualification": "relevant qualifications and experience",
-      "requirements": [],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-11",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/938333/radiographer-at-jcp-max-medical-diagnostics.html",
       "_source": "hotnigerianjobs"
     }
   ]
