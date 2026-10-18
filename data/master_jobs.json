@@ -1,15 +1,82 @@
 {
   "metadata": {
-    "extracted_at": "2026-10-17T08:15:07.266878",
+    "extracted_at": "2026-10-18T08:20:24.546311",
     "model": "gpt-4o-mini",
-    "total_processed": 1110,
-    "duplicates_removed": 169,
-    "skipped_old": 4,
+    "total_processed": 1100,
+    "duplicates_removed": 164,
+    "skipped_old": 17,
     "skipped_empty": 0,
     "errors": 0,
-    "openai_calls": 495
+    "openai_calls": 174
   },
   "jobs": [
+    {
+      "job_title": "Medical doctor",
+      "company": "Utomi hospital limited",
+      "location": "Delta, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Doctor",
+      "salary": "NGN400,000 - NGN450,000 / monthly",
+      "experience": "",
+      "qualification": "",
+      "requirements": [],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-10-17",
+      "deadline": "2026-11-30",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/medical-doctor-2094",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Spa Therapist",
+      "company": "Dermaoaks Aesthetics & Laser Clinic",
+      "location": "Gbagada, Lagos",
+      "job_type": "Full Time",
+      "job_category": "Allied Health",
+      "salary": "",
+      "experience": "Experience",
+      "qualification": "",
+      "requirements": [
+        "Interested candidates should possess relevant qualifications with experience."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-10-17",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/spa-therapist-dermaoaks-aesthetics-laser-clinic",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Aesthetic Nurse",
+      "company": "Dermaoaks Aesthetics & Laser Clinic",
+      "location": "Gbagada, Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Nurse",
+      "salary": "",
+      "experience": "Experience",
+      "qualification": "",
+      "requirements": [
+        "Relevant qualifications with experience."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-10-17",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/aesthetic-nurse-dermaoaks-aesthetics-laser-clinic",
+      "_source": "myjobmag"
+    },
     {
       "job_title": "Dentist",
       "company": "JV Management Consulting",
@@ -39,6 +106,104 @@
       "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
       "contact_phone": "",
       "apply_url": "https://www.myjobmag.com/job/dentist-jv-management-consulting-4",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "ISN Medical Graduate Trainee Program: ELEVATE 3.0",
+      "company": "ISN Medical",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "",
+      "experience": "0 - 2 years",
+      "qualification": "BSc",
+      "requirements": [
+        "Minimum of a 2nd Class Upper degree in Medical Sciences, Biomedical Sciences, Engineering, Business Management or Finance from a recognized university",
+        "Must have completed NYSC",
+        "Willing to relocate locally for both short and long term"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-10-17",
+      "deadline": "2026-11-04",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/isn-medical-graduate-trainee-program-elevate-3-0-isn-medical",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Receptionist / Front Desk Officer",
+      "company": "Dermaoaks Aesthetics & Laser Clinic",
+      "location": "Gbagada, Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "",
+      "requirements": [
+        "Interested candidates should possess relevant qualifications with experience."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-10-17",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/receptionist-front-desk-officer-dermaoaks-aesthetics-laser-clinic",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Business & Employment Lawyer (Retainer)",
+      "company": "Dermaoaks Aesthetics & Laser Clinic",
+      "location": "Gbagada, Lagos, Nigeria",
+      "job_type": "Part Time",
+      "job_category": "Other",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "",
+      "requirements": [
+        "Must have relevant legal qualifications and experience in employment contracts, HR policies, business agreements and employment-related legal matters."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-10-17",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/business-employment-lawyer-dermaoaks-aesthetics-laser-clinic",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Clinic Operations & HR Manager",
+      "company": "Dermaoaks Aesthetics & Laser Clinic",
+      "location": "Gbagada, Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Healthcare Management",
+      "salary": "n,",
+      "experience": "Location",
+      "qualification": "",
+      "requirements": [
+        "Must have proven experience in staff supervision.",
+        "Must have HR administration experience.",
+        "Must have operational management experience.",
+        "Must have performance monitoring experience.",
+        "Must have implementation of workplace policies experience."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-10-17",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/clinic-operations-hr-manager-dermaoaks-aesthetics-laser-clinic",
       "_source": "myjobmag"
     },
     {
@@ -1700,71 +1865,6 @@
       "_source": "myjobmag"
     },
     {
-      "job_title": "Medical Officer",
-      "company": "Arogyam Multispecialty Healthcare",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Doctor",
-      "salary": "₦400,000 - ₦500,000/month",
-      "experience": "2 - 4 years",
-      "qualification": "MBBS/MBChB (or equivalent) from a recognised institution",
-      "requirements": [
-        "Full registration with the Medical and Dental Council of Nigeria (MDCN) and a valid annual practising licence.",
-        "Completed housemanship and NYSC (or exemption) with Minimum of 2 years post-NYSC/Internship clinical experience.",
-        "Current BLS/ACLS certification (preferred)"
-      ],
-      "responsibilities": [
-        "Take histories, examine patients, and make diagnoses and treatment plans.",
-        "Order and interpret laboratory and radiology investigations.",
-        "Prescribe medications rationally and in line with clinic protocols and the national essential medicines list.",
-        "Perform minor procedures within scope of training and competence.",
-        "Recognise, stabilise, and refer or escalate emergencies and complex cases.",
-        "Work with specialists, nurses, pharmacy, laboratory, and front-desk teams for seamless patient flow.",
-        "Maintain accurate, timely, confidential patient records.",
-        "Follow infection prevention and control, patient safety, and clinical governance standards.",
-        "Take part in clinical audits, case reviews, and continuous quality improvement.",
-        "Counsel patients and families on diagnosis, treatment, and preventive care.",
-        "Obtain informed consent and uphold patient rights and dignity.",
-        "Participate in duty rosters, including shifts, weekends, and on-call duties as required.",
-        "Support health promotion, outreach, and screening programmes.",
-        "Mentor junior clinical staff and interns where applicable."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-10-16",
-      "deadline": "2026-10-25",
-      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/medical-officer-arogyam-multispecialty-healthcare",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Beauty Therapist / Esthetician",
-      "company": "Maya Organics",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Allied Health",
-      "salary": "",
-      "experience": "Location",
-      "qualification": "BSc",
-      "requirements": [
-        "Relevant qualifications"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-10-16",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/beauty-therapist-esthetician-maya-organics",
-      "_source": "myjobmag"
-    },
-    {
       "job_title": "Ambulance Driver / Hospital Driver",
       "company": "Solid Rock Hospital",
       "location": "Lagos, Nigeria",
@@ -1840,32 +1940,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.myjobmag.com/job/sales-and-marketing-officer-tokiye-integrated-medical-services",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Junior Residency Training Programme (PAEDIATRICS)",
-      "company": "Obafemi Awolowo University Teaching Hospitals Complex (OAUTHC)",
-      "location": "Osun, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Doctor",
-      "salary": "Grade Level",
-      "experience": "",
-      "qualification": "MBBS or MBChB Degree or equivalent qualifications",
-      "requirements": [
-        "Full registration with the Medical and Dental Council of Nigeria",
-        "Evidence of completion of / or exemption / exclusion from NYSC",
-        "Current practicing license",
-        "A pass in the relevant primary examination of the National Postgraduate Medical College of Nigeria or the West African Postgraduate Medical College (Not Compulsory)"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-10-16",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/junior-residency-training-programme-paediatrics-obafemi-awolowo-university-teaching-hospitals-complex-oauthc",
       "_source": "myjobmag"
     },
     {
@@ -5122,30 +5196,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/973858/consultant-special-grade-i-surgery-at-nnamdi-azikw.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Aesthetic Nurse",
-      "company": "Dermaoaks Aesthetics & Laser Clinic",
-      "location": "Gbagada, Lagos, Nigeria",
-      "job_type": "",
-      "job_category": "Nurse",
-      "salary": "n,",
-      "experience": "in staff supervision, HR administration, operational management, performance monitoring and implementation of workplace policies.",
-      "qualification": "",
-      "requirements": [
-        "Must have proven experience in staff supervision, HR administration, operational management, performance monitoring and implementation of workplace policies."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-10-13",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/974178/aesthetic-nurse-at-dermaoaks-aesthetics-laser-clin.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -9797,38 +9847,6 @@
       "_source": "hotnigerianjobs"
     },
     {
-      "job_title": "State Immunization Consultant",
-      "company": "JSI Research & Training Institute, Inc",
-      "location": "Kwara, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Public Health",
-      "salary": "Above ₦1,000,000/month",
-      "experience": "6 years",
-      "qualification": "MSc",
-      "requirements": [
-        "MBA/MSc/MA",
-        "Others"
-      ],
-      "responsibilities": [
-        "Provide technical assistance to the State PHCDA/B and SEOC.",
-        "Serve as a strategic advisor to SPHCDA/B.",
-        "Align state-level support to national strategies.",
-        "Adapt and disseminate operational guidelines.",
-        "Generate evidence and prepare donor reports.",
-        "Build capacity for health personnel on immunization.",
-        "Support delivery of nOPV2 through opportunistic platforms."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-10-08",
-      "deadline": "2026-10-17",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/state-immunization-consultant-jsi-research-training-institute-inc",
-      "_source": "myjobmag"
-    },
-    {
       "job_title": "Male Carer",
       "company": "TSA",
       "location": "Lagos, Nigeria",
@@ -9928,40 +9946,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/medical-doctor-2014",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Medical Assistant",
-      "company": "The Nigerian Navy (NN)",
-      "location": "Nigeria, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Other",
-      "salary": "",
-      "experience": "",
-      "qualification": "SSCE or equivalent with 5 credits in English Language, Mathematics, Chemistry, Biology/Health Science and Physics.",
-      "requirements": [
-        "Basic first aid and CPR certificate would be an added advantage.",
-        "Applicant must be a citizen of Nigeria by birth (No dual citizenship allowed).",
-        "Applicant must provide a valid and accessible email address.",
-        "Documents uploaded to the portal must be in JPG, PDF, or PNG format, with a maximum file size of 500kb.",
-        "Applicants must be between the ages of 18 - 22 years by 31 December 2026.",
-        "The O’Level WAEC/NECO/NABTEB result should not be older than 6 years from the date of application.",
-        "Applicants with additional qualifications such as OND, NCE, etc., are to provide their statement of results.",
-        "Applicants must not be married, pregnant or nursing.",
-        "Applicants must be free from any previous criminal conviction by a court of law.",
-        "Applicants with specific medical/physical challenges are NOT to apply: sight problem, ear problem, communicable diseases, mental problems, stammering, or any physical disability.",
-        "Applicants must not be below the height of 1.68 meters for males and 1.65 meters for females."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-10-07",
-      "deadline": "2026-10-31",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/medical-assistant-2013",
       "_source": "medlocum"
     },
     {
@@ -10881,9 +10865,10 @@
       "job_category": "Dentist",
       "salary": "n,",
       "experience": "",
-      "qualification": "Recognized Degree or equivalent in their areas of specialization",
+      "qualification": "Recognized Degree or equivalent in their areas of specialization from reputable University in Nigeria or abroad and must have provisional registration with their Councils.",
       "requirements": [
-        "Must have provisional registration with their Councils."
+        "Recognized Degree or equivalent in their areas of specialization",
+        "Provisional registration with their Councils"
       ],
       "responsibilities": [],
       "how_to_apply": [
@@ -10894,7 +10879,7 @@
       "deadline": "Friday 13th November, 2026; on or before 11:59PM.",
       "contact_email": "",
       "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/970666/dental-technologist-interns-at-alexekuwaeme-federa.html",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/970666/dental-technologist-interns-at-alex-ekwueme-federa.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -12072,6 +12057,49 @@
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/969706/optometrist-at-medvical-international.html",
       "_source": "hotnigerianjobs"
+    },
+    {
+      "job_title": "Medical Equipment Sales Representatives",
+      "company": "a Reputable Company",
+      "location": "Abuja, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "BA/BSc/HND, OND",
+      "requirements": [
+        "OND or HND in Biomedical Engineering",
+        "Recent graduates are welcome to apply",
+        "Sales, marketing or healthcare experience is an advantage",
+        "Strong communication and interpersonal skills",
+        "Ability to learn and explain medical equipment specifications",
+        "Ability to travel within assigned territory",
+        "Ability to use WhatsApp, Instagram, Facebook and other digital platforms",
+        "Must be target-oriented, disciplined and willing to learn"
+      ],
+      "responsibilities": [
+        "Promote and sell medical, hospital and rehabilitation equipment",
+        "Candidates with knowledge and experience in Neonatal and Infant Intensive Care is also vital.",
+        "Develop relationships with hospitals, clinics, laboratories, NGOs and healthcare professionals",
+        "Identify new customers and generate qualified sales leads",
+        "Visit healthcare facilities and understand their equipment needs",
+        "Present approved product specifications and demonstrations",
+        "Prepare and follow up on customer enquiries",
+        "Work with the company's technical team on equipment demonstrations and installations",
+        "Monitor market opportunities and competitor activities",
+        "Maintain accurate customer and sales records",
+        "Achieve agreed sales and business-development targets"
+      ],
+      "how_to_apply": [
+        "Submit your application through the employer’s online recruitment portal.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-10-06",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/medical-equipment-sales-representatives",
+      "_source": "myjobmag"
     },
     {
       "job_title": "Medical Laboratory Scientist (Clinicals)",
@@ -15123,36 +15151,54 @@
       "_source": "myjobmag"
     },
     {
-      "job_title": "Medical Laboratory Technician",
-      "company": "a Fast Growing Hospital",
-      "location": "Alimosho, Lagos, Nigeria",
+      "job_title": "Digital Concierge",
+      "company": "My Haire Concierge",
+      "location": "Lagos, Nigeria",
       "job_type": "Full Time",
-      "job_category": "Medical Laboratory Scientist",
-      "salary": "n,",
-      "experience": "2 years",
-      "qualification": "OND",
+      "job_category": "Other",
+      "salary": "₦150,000 - ₦200,000/month",
+      "experience": "1 - 2 years",
+      "qualification": "BSc",
       "requirements": [
-        "Relevant recognized qualification in Medical Laboratory Technology",
-        "Must be duly registered with the appropriate regulatory body",
-        "Must possess a valid and current practising licence",
-        "Previous experience working in a hospital or diagnostic laboratory will be an added advantage",
-        "Good knowledge of specimen collection, handling, processing and basic laboratory procedures",
-        "Ability to operate and properly maintain basic laboratory equipment",
-        "Good understanding of infection prevention, laboratory safety and quality-control procedures",
-        "Good documentation and record-keeping skills",
-        "Ability to work effectively as part of a multidisciplinary healthcare team",
-        "Candidates residing within Igando, Ikotun, Egbeda, Idimu and surrounding areas will have an added advantage."
+        "Excellent written and verbal communication skills",
+        "Strong customer service skills",
+        "Strong WhatsApp and social media communication skills",
+        "Sales and conversion ability",
+        "Excellent follow-up discipline",
+        "Strong attention to detail"
       ],
-      "responsibilities": [],
+      "responsibilities": [
+        "Manage WhatsApp, Instagram and online client enquiries",
+        "Respond to clients promptly and professionally",
+        "Understand client needs and recommend appropriate services and products",
+        "Check appointment availability before requesting payment",
+        "Communicate approved payment instructions",
+        "Receive and verify payment evidence",
+        "Send verified payment and client details to the Studio Concierge for formal booking",
+        "Drive digital enquiry-to-payment conversion",
+        "Support online service and product sales",
+        "Follow up warm leads",
+        "Conduct post-service and rebooking follow-ups",
+        "Manage subscription client follow-up",
+        "Manage digital complaints and follow-up",
+        "Maintain accurate digital client records",
+        "Publish approved content across social media platforms",
+        "Maintain an active and relevant Stories presence",
+        "Manage the content calendar",
+        "Publish studio content, promotions, services and announcements",
+        "Support ambassador and influencer outreach",
+        "Provide temporary front-desk coverage when the Studio Concierge is unavailable",
+        "Complete required daily reports and checklists"
+      ],
       "how_to_apply": [
         "Email the address shown on the original listing.",
         "Click Apply Now for full details."
       ],
-      "date_posted": "2026-09-26",
+      "date_posted": "2026-09-28",
       "deadline": "",
       "contact_email": "",
       "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/medical-laboratory-technician-9",
+      "apply_url": "https://www.myjobmag.com/job/digital-concierge-my-haire-concierge",
       "_source": "myjobmag"
     },
     {
@@ -27063,6 +27109,41 @@
       "_source": "hotnigerianjobs"
     },
     {
+      "job_title": "Medical Laboratory Scientist (Kano)",
+      "company": "EHA Clinics",
+      "location": "Kano, Nigeria",
+      "job_type": "Full-time",
+      "job_category": "Medical Laboratory Scientist",
+      "salary": "NGN181,440 monthly gross",
+      "experience": "Minimum of 3 years working experience in a Medical Laboratory, Clinic or hospital",
+      "qualification": "Bachelor",
+      "requirements": [
+        "Bachelor of Science degree in laboratory science from an accredited university",
+        "Certification from the Associate of the Institute of Medical Laboratory Science Council of Nigeria (AMLSCN)",
+        "Current practicing license"
+      ],
+      "responsibilities": [
+        "Compile and analyze body fluids, tissue, and other substances to determine normal or abnormal findings.",
+        "Gather and organize work by matching computer orders with specimen labeling; sorting specimens; checking labels; logging specimens; arranging reports for delivery; keeping work surfaces clean and orderly.",
+        "Perform molecular diagnostics such as PCR using open and closed systems. Perform hematology, chemistry, immunology and microbiology tests as required. Perform infectious disease testing including COVID-19.",
+        "Identify and communicate abnormal results by alerting supervisory personnel, the patient, physician, or nurse.",
+        "Communicate with patients and family members in a professional, compassionate and respectful manner to facilitate healthcare delivery as a team member.",
+        "Process and enhance laboratory services and laboratory reputation by accepting ownership for accomplishing new and different requests; exploring opportunities to add value to job accomplishments.",
+        "Operate sophisticated equipment and instruments to perform diagnostic tests and assays following standard operating procedures.",
+        "Process and maintain quality results by running standards and controls, verifying equipment function through routine equipment maintenance and advanced troubleshooting; calibrating equipment utilizing approved testing procedures; monitoring quality control measures and protocols."
+      ],
+      "how_to_apply": [
+        "Submit your application through the employer’s online recruitment portal.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-09-03",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/952118/medical-laboratory-scientist-kano-at-eha-clinics.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
       "job_title": "Capsule Filling Operator",
       "company": "Sagar Vitaceuticals Nigeria Limited",
       "location": "Makun City, Ogun, Nigeria",
@@ -29670,288 +29751,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/944006/medical-officer-at-bluecoral-healthcare-services-l.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Head of Molecular Genetics",
-      "company": "African Medical Centre of Excellence (AMCE)",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time (Onsite)",
-      "job_category": "Other",
-      "salary": "n,",
-      "experience": "3",
-      "qualification": "MD/PhD in Genetics, Molecular Biology, Genomics, or a closely related field.",
-      "requirements": [
-        "An MD/PhD or equivalent clinical genetics qualification is highly advantageous.",
-        "Certification or fellowship in Clinical Molecular Genetics, Laboratory Genetics, or a relevant specialty board is preferred.",
-        "Demonstrated experience with NGS technologies, bioinformatics, and genomic data interpretation.",
-        "Minimum of 7 years of progressive experience in a molecular genetics or genomics laboratory, with at least 3 years in a leadership role.",
-        "Proven track record in managing a high-complexity clinical genetics laboratory.",
-        "Strong publication record and success in securing competitive research funding.",
-        "Expertise in genetic variant interpretation, classification, and reporting standards (ACMG/AMP guidelines).",
-        "Experience with laboratory information management systems (LIMS) and bioinformatics tools.",
-        "Excellent leadership, communication, and stakeholder engagement skills.",
-        "Knowledge of ethical, legal, and social implications (ELSI) of genetic testing and data sharing."
-      ],
-      "responsibilities": [
-        "Develop and implement the strategic vision for the Molecular Genetics Department in alignment with the hospital’s mission and goals.",
-        "Provide executive leadership to the department, overseeing all operational, clinical, and research activities.",
-        "Manage departmental resources, including budget planning, staffing, and procurement of advanced laboratory equipment and technologies.",
-        "Establish and monitor key performance indicators (KPIs) for quality, turnaround time, and service efficiency.",
-        "Oversee the delivery of high-complexity molecular genetic testing, including next-generation sequencing (NGS), PCR-based assays, Sanger sequencing, and cytogenetic/molecular cytogenetic analyses.",
-        "Ensure accurate interpretation and reporting of genetic test results, including variant classification and clinical correlation.",
-        "Implement and maintain rigorous quality control, proficiency testing, and validation protocols for all assays.",
-        "Serve as the primary consultant for clinicians regarding test selection, result interpretation, and patient management implications.",
-        "Lead and foster a robust research program in molecular genetics and genomics, focusing on translational and clinical research.",
-        "Secure competitive research grants and collaborate with national and international research consortia.",
-        "Drive innovation in genomic technologies, bioinformatics pipelines, and data integration for precision medicine.",
-        "Publish findings in high-impact journals and present at scientific conferences."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-08-18",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/943216/head-of-molecular-genetics-at-african-medical-cent.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Medical Administrative Assistant",
-      "company": "TransitEdge Solutions Limited",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Other",
-      "salary": "",
-      "experience": "as a Medical administrative assistant",
-      "qualification": "diploma",
-      "requirements": [
-        "Proven work experience as a Medical administrative assistant",
-        "Hands-on experience with medical software and MS Office",
-        "Knowledge of healthcare operations",
-        "Familiarity with medical and insurance legislation",
-        "Excellent organizational and multitasking skills",
-        "Customer-oriented communication skills",
-        "High school diploma; certification in medical administration is a plus."
-      ],
-      "responsibilities": [
-        "Interview patients for case histories before appointments",
-        "Update and maintain patients’ health records",
-        "Assist patients with initial paperwork",
-        "Schedule and coordinate appointments",
-        "Process insurance claims in compliance with legal requirements",
-        "Use medical software to support all transactions",
-        "Manage accounts receivable and accounts payable and maintain financial records",
-        "Answer patients’ queries and ensure quality customer service",
-        "Collaborate with doctors and nurses to help with medical examinations, schedule tests, and order supplies",
-        "Ensure compliance with procedures",
-        "Keep up-to-date with changes in medical and insurance legislation."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-18",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/942931/medical-administrative-assistant-at-transitedge-so.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Nurse Assistant",
-      "company": "a Health and Wellness Company - JV Management Consulting",
-      "location": "Berger, Lagos, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "N100,000 - N110,000 Monthly",
-      "experience": "as a Health Worker or Care Assistant is an advantage",
-      "qualification": "ond",
-      "requirements": [
-        "Minimum of HND (relevant health-related training is an added advantage)",
-        "Previous experience as a Health Worker or Care Assistant is an advantage",
-        "Basic knowledge of hygiene, patient care, and safety practices",
-        "Good communication and interpersonal skills",
-        "Compassionate, reliable, and physically fit",
-        "Willing to work in Ogudu Berger."
-      ],
-      "responsibilities": [
-        "Assist in providing basic care and support to patients/clients",
-        "Support medical staff during routine procedures and wellness activities",
-        "Maintain cleanliness and hygiene within the facility",
-        "Monitor and report patients’ conditions when necessary",
-        "Ensure proper handling of basic medical supplies and equipment",
-        "Maintain confidentiality and adhere to health and safety standards."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-18",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/943146/nurse-assistant-at-a-health-and-wellness-company-j.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Registered Nurse",
-      "company": "Zugreen Aesthetics Clinic & Academy",
-      "location": "Abuja, Nigeria",
-      "job_type": "",
-      "job_category": "Nurse",
-      "salary": "",
-      "experience": "",
-      "qualification": "relevant certificate and license where applicable with relevant experience",
-      "requirements": [
-        "Excellent communication and customer service skills",
-        "Professional appearance and positive attitude",
-        "Ability to work effectively in a team environment"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-18",
-      "deadline": "2026-08-30",
-      "contact_email": "",
-      "contact_phone": "07032679517",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/943042/registered-nurse-at-zugreen-aesthetics-clinic-acad.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "ICU Nurse",
-      "company": "TransitEdge Solutions Limited",
-      "location": "Lagos, Nigeria",
-      "job_type": "",
-      "job_category": "Nurse",
-      "salary": "",
-      "experience": "as an ICU Nurse or similar role.",
-      "qualification": "ond",
-      "requirements": [
-        "Proven work experience as an ICU Nurse or similar role.",
-        "Good understanding of health information structures and technology.",
-        "Available to work 12-hour day and night shifts.",
-        "Demonstrate brilliant empathy and communication skills.",
-        "Relevant training and/or certifications as an ICU Nurse."
-      ],
-      "responsibilities": [
-        "Deliver regular updates to doctors, patients and their family members.",
-        "Begin treatment and monitor doses.",
-        "Respond to a medical emergency and alert the appropriate Doctors as needed.",
-        "Care for patient needs throughout their recovery in the ICU unit.",
-        "Complete all necessary paperwork before transferring a patient.",
-        "Maintain patient records.",
-        "Create and implement effective care plans."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-18",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/942921/icu-nurse-at-transitedge-solutions-limited.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Patient Liaison Volunteer",
-      "company": "Congenital Heart Disease Foundation of Nigeria (CHDF)",
-      "location": "Nigeria",
-      "job_type": "Contract",
-      "job_category": "Other",
-      "salary": "",
-      "experience": "",
-      "qualification": "",
-      "requirements": [
-        "Relevant qualifications and experience."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-18",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/943488/patient-liaison-volunteer-at-congenital-heart-dise.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Orthodontist",
-      "company": "Schubbs Dental Clinics",
-      "location": "Lagos, Nigeria",
-      "job_type": "",
-      "job_category": "Dentist",
-      "salary": "",
-      "experience": "planning and managing Invisalign cases is an advantage.",
-      "qualification": "Bachelor of Dental Surgery (BDS) or an equivalent dental qualification",
-      "requirements": [
-        "A postgraduate qualification in Orthodontics from a recognized institution.",
-        "Full registration with the Medical and Dental Council of Nigeria (MDCN).",
-        "Completed NYSC, with a valid Discharge Certificate or Exemption Certificate.",
-        "Working knowledge of Invisalign and clear aligner treatment.",
-        "Strong clinical, diagnostic and treatment-planning skills.",
-        "Excellent communication and interpersonal skills.",
-        "A professional, patient-focused and compassionate approach to care."
-      ],
-      "responsibilities": [
-        "You will consult, examine and diagnose, then build the treatment plan and see it through, whether the case runs on fixed appliances, aligners or another corrective approach.",
-        "You will review progress at each visit and adjust when a case moves differently to how it was projected.",
-        "Retention and post-treatment follow-up are part of the case, not the end of it.",
-        "You will explain the treatment, the oral hygiene it demands and the aftercare to every patient, keep records current as you go, and hold to our infection control and patient safety standards.",
-        "Where a case needs a restorative dentist, an oral surgeon or another colleague, you work with them directly."
-      ],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-18",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/943288/orthodontist-at-schubbs-dental-clinics.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Dentist",
-      "company": "Schubbs Dental Clinics",
-      "location": "Lagos, Nigeria",
-      "job_type": "",
-      "job_category": "Dentist",
-      "salary": "",
-      "experience": "is an advantage, not a requirement.",
-      "qualification": "Bachelor of Dental Surgery (BDS) or an equivalent qualification from a recognized institution.",
-      "requirements": [
-        "Full registration with the Medical and Dental Council of Nigeria (MDCN).",
-        "A valid licence to practise dentistry in Nigeria.",
-        "Completed NYSC, with a valid Discharge Certificate or Exemption Certificate.",
-        "Good communication and interpersonal skills.",
-        "A professional, responsible and compassionate approach to patient care.",
-        "The ability to work with other healthcare professionals.",
-        "Dentists who have recently completed NYSC are welcome to apply."
-      ],
-      "responsibilities": [
-        "Examine and diagnose patients.",
-        "Plan treatment and deliver general dental care: check-ups, scaling and polishing, fillings, crowns, root canal therapy and extractions.",
-        "Keep accurate records and adhere to infection control and patient safety standards.",
-        "Refer cases requiring specialists.",
-        "Work alongside dental surgery assistants and front desk team.",
-        "Explain every treatment to the patient in plain language before it begins."
-      ],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-08-18",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/943283/dentist-at-schubbs-dental-clinics.html",
       "_source": "hotnigerianjobs"
     }
   ]
