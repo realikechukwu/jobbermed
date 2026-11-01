@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "extracted_at": "2026-10-31T09:46:26.367703",
+    "extracted_at": "2026-11-01T10:31:15.854021",
     "model": "gpt-4o-mini",
-    "total_processed": 1209,
-    "duplicates_removed": 218,
-    "skipped_old": 35,
+    "total_processed": 1207,
+    "duplicates_removed": 217,
+    "skipped_old": 37,
     "skipped_empty": 0,
     "errors": 0,
-    "openai_calls": 272
+    "openai_calls": 221
   },
   "jobs": [
     {
@@ -30,6 +30,41 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/x-ray-ultrasound-technician-2216",
       "_source": "medlocum"
+    },
+    {
+      "job_title": "Medical Doctor NG MMC",
+      "company": "Alliance for International Medical Action (ALIMA)",
+      "location": "Borno, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Doctor",
+      "salary": "n,",
+      "experience": "2 - 5 years",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "MBBS with full registration with the Medical and Dental Council of Nigeria.",
+        "Experience with pediatric patients below 5 years is an asset.",
+        "English and Local language essential (Hausa, Kanuri). Mission language desirable."
+      ],
+      "responsibilities": [
+        "Serve as a dedicated medical doctor specializing in the admission, assessment, and ongoing care of children presenting with Severe Acute Malnutrition (SAM) and paediatric patients aged 0 to 59 months.",
+        "Apply specialized medical knowledge and skills to diagnose and prevent illnesses in pediatric patients under the age of 5.",
+        "Conduct both outpatient and inpatient consultations, adhering to ALIMA protocols.",
+        "Communicate clearly with young patients and their families about their health conditions.",
+        "Monitor the progress of hospitalized paediatric patients through daily visits, consultations, and examinations.",
+        "Prescribe treatments in line with ALIMA protocols.",
+        "Maintain accurate and comprehensive patient records.",
+        "Participate in continuous training sessions with the multidisciplinary medical team.",
+        "Adhere to and implement all ALIMA medical protocols."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-10-31",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/medical-doctor-ng-mmc-alliance-for-international-medical-action-alima",
+      "_source": "myjobmag"
     },
     {
       "job_title": "Cardiovascular Disease (CVD) Delegate",
@@ -3581,48 +3616,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.myjobmag.com/job/laboratory-scientist-troop-pharmacy",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "NYSC Medical Laboratory Scientist",
-      "company": "Medbury Healthcare Group",
-      "location": "Delta, Nigeria",
-      "job_type": "Contract",
-      "job_category": "Medical Laboratory Scientist",
-      "salary": "n,",
-      "experience": "1 - 2 years",
-      "qualification": "BSc",
-      "requirements": [
-        "Bachelor's degree in Medical Laboratory Science or an equivalent recognised qualification.",
-        "Current and valid professional licence/registration with the Medical Laboratory Science Council of Nigeria (MLSCN).",
-        "Relevant experience in a clinical or diagnostic laboratory setting.",
-        "Good knowledge of laboratory procedures, quality control, biosafety, and infection prevention.",
-        "Ability to operate laboratory equipment and handle specimens appropriately.",
-        "Strong attention to detail, analytical skills, and accuracy in reporting results.",
-        "Good communication, teamwork, and organisational skills.",
-        "Ability to work effectively in a fast-paced healthcare environment."
-      ],
-      "responsibilities": [
-        "Collect, receive, process, and analyse patient specimens for laboratory investigations.",
-        "Perform routine and specialised laboratory tests in line with established procedures.",
-        "Ensure accurate documentation, interpretation, and timely reporting of test results.",
-        "Operate, calibrate, and maintain laboratory equipment to ensure optimal performance.",
-        "Conduct quality control checks and participate in quality assurance activities.",
-        "Ensure compliance with laboratory safety standards, infection prevention protocols, and regulatory requirements.",
-        "Maintain accurate laboratory records and proper handling and storage of specimens.",
-        "Monitor laboratory reagents and consumables and report stock requirements promptly.",
-        "Collaborate with doctors, nurses, and other healthcare professionals to support effective patient diagnosis and management.",
-        "Participate in equipment maintenance, troubleshooting, and laboratory improvement initiatives."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-10-29",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/nysc-medical-laboratory-scientist-medbury-medical-services",
       "_source": "myjobmag"
     },
     {
@@ -8168,6 +8161,43 @@
       "_source": "hotnigerianjobs"
     },
     {
+      "job_title": "Medical Officer",
+      "company": "Marie Stopes Medical Centres (2 Openings)",
+      "location": "Lagos, Abuja, Port Harcourt, Nigeria",
+      "job_type": "",
+      "job_category": "Doctor",
+      "salary": "n,",
+      "experience": "MBBS with a minimum of 2 years' post-NYSC Experience as a clinical officer",
+      "qualification": "",
+      "requirements": [
+        "MBBS with a minimum of 2 years' post-NYSC Experience as a clinical officer in an established healthcare facility(private or public)",
+        "Experience working in sexual and reproductive and maternal health will be an added advantage",
+        "Current MDCN License",
+        "BLS Certification is an added advantage",
+        "Females are strongly encouraged to apply"
+      ],
+      "responsibilities": [
+        "Contributing towards MSIN’s strategy and future programme direction, focusing on sustainability and increasing access to family planning and SRH services",
+        "Actively participate in MSIN quarterly performance reviews",
+        "Contributing to annual business plans and facilitating the business planning process",
+        "Assisting the development of project ideas and providing input into proposals to attract donor funds",
+        "Prepares clinical services annual targets and ensures their implementation.",
+        "Provide overall leadership and direction to the medical team",
+        "Coordinate different clinic units (OPD, OR, Lab.) and supervise clinic staff",
+        "Set up effective communication systems within the clinic",
+        "Monitor and evaluate clinical services and control quality"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-10-23",
+      "deadline": "2026-10-30",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/980170/medical-officer-at-marie-stopes-medical-centres-2.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
       "job_title": "Nurses / Midwifery Personnel",
       "company": "Fortics Lifecare Limited",
       "location": "Agric, Ikorodu, Lagos, Nigeria",
@@ -8505,37 +8535,47 @@
       "_source": "myjobmag"
     },
     {
-      "job_title": "Medical Laboratory Scientist",
-      "company": "MELSW Limited",
-      "location": "Benue, Nigeria",
+      "job_title": "Medical Lab Scientist - Chemistry Major and Med Lab Tech",
+      "company": "Cypresshill Hospital",
+      "location": "Lagos, Nigeria",
       "job_type": "Full Time",
       "job_category": "Medical Laboratory Scientist",
-      "salary": "",
-      "experience": "5 years",
-      "qualification": "BSc",
+      "salary": "₦200,000 - ₦300,000/month",
+      "experience": "3 years",
+      "qualification": "BA/BSc/HND",
       "requirements": [
-        "BMLS or equivalent recognised qualification",
-        "Full MLSCN registration and a current practising licence",
-        "At least five years’ post-registration clinical laboratory experience",
-        "Practical experience with analysers, microscopy, electrophoresis and blood transfusion procedures",
-        "Willingness to live in Olago or nearby",
-        "Experience with Mindray BS-230 or BA-88A analysers, laboratory setup or staff training is an advantage"
+        "Must be able to proficiently use 5 parts Hematology Analyzer",
+        "Semi-Auto Chemistry Analyzer",
+        "FIA Immunoassay Machine",
+        "ISE Machine",
+        "ABG Analyzer",
+        "Lab Incubator for MCS",
+        "Minimum of 3 years Working Experience"
       ],
       "responsibilities": [
-        "Coordinate daily laboratory activities and maintain quality assurance",
-        "Perform investigations across clinical chemistry, haematology, microbiology, parasitology and serology",
-        "Support haemoglobin electrophoresis, blood grouping and compatibility testing",
-        "Operate and maintain laboratory analysers, manage records and supplies, and supervise support staff"
+        "Maintaining accurate, complete health care records and reports.",
+        "Monitoring, reporting, recording changes and escalating critical values in patient laboratory results.",
+        "Storing and setting up laboratory equipment.",
+        "Collecting samples: Collecting blood, tissue, and other samples from patients.",
+        "Preparing samples: Labeling and preparing samples for testing.",
+        "Running tests: Performing routine tests and analyzing samples.",
+        "Recording data: Recording test data and results in patients' medical records.",
+        "Operating equipment: Using and maintaining laboratory equipment, such as microscopes and cell counters.",
+        "Reporting results: Discussing results and findings with physicians or supervisors.",
+        "Ensuring quality control: Maintaining quality control of samples and adhering to laboratory standards.",
+        "Maintaining records: Maintaining accurate records and reporting data.",
+        "Matching blood: Matching blood for transfusions.",
+        "Testing for drug levels: Testing for drug levels in the blood."
       ],
       "how_to_apply": [
         "Email the address shown on the original listing.",
         "Click Apply Now for full details."
       ],
       "date_posted": "2026-10-23",
-      "deadline": "2026-11-30",
+      "deadline": "",
       "contact_email": "",
       "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/medical-laboratory-scientist-melsw-limited",
+      "apply_url": "https://www.myjobmag.com/job/medical-lab-scientist-chemistry-major-and-med-lab-tech-cypresshill-hospital",
       "_source": "myjobmag"
     },
     {
@@ -22867,12 +22907,14 @@
       "job_category": "Doctor",
       "salary": "N7,684,304 annually",
       "experience": "",
-      "qualification": "MBBS or MBChB or equivalent qualification",
+      "qualification": "MBBS or MBChB or equivalent qualification, postgraduate medical qualification",
       "requirements": [
         "Full registration with the Medical and Dental Council of Nigeria",
         "Evidence of completion of / or exemption / exclusion from NYSC",
         "Current practicing license",
-        "Postgraduate medical qualification (Fellowship of FMCN, FWACP, or FWACS)"
+        "Fellowship of the National Postgraduate Medical College of Nigeria (FMCN)",
+        "Fellowship of the West African College of Physicians (FWACP)",
+        "Fellowship of the West African College of Surgeons (FWACS)"
       ],
       "responsibilities": [],
       "how_to_apply": [
@@ -22883,7 +22925,7 @@
       "deadline": "2026-11-04",
       "contact_email": "",
       "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/963888/consultant-specialist-grade-i-haematology-blood-trans.html",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/963888/consultant-specialist-grade-i-haematology-blood-tr.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -30832,77 +30874,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/951653/senior-registrar-cardiology-at-african-medical-cen.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Optometry Intern",
-      "company": "Lily Hospitals Limited",
-      "location": "Warri, Delta, Nigeria",
-      "job_type": "Internship",
-      "job_category": "Allied Health",
-      "salary": "n,",
-      "experience": "supporting eye care services while working under the supervision of qualified optometrists.",
-      "qualification": "Currently graduated from an accredited Optometry programme.",
-      "requirements": [
-        "Strong interest in eye health, patient care, and clinical learning.",
-        "Good communication, interpersonal, and customer-service skills.",
-        "High attention to detail, professionalism, and respect for patient confidentiality.",
-        "Ability to work effectively as part of a multidisciplinary team.",
-        "Basic computer and record-keeping skills."
-      ],
-      "responsibilities": [
-        "Assist with patient intake, appointment preparation, and preliminary eye assessments.",
-        "Support optometrists during eye examinations, including visual acuity tests, refraction support, and diagnostic procedures.",
-        "Prepare, clean, and maintain examination rooms, equipment, and optical instruments.",
-        "Record patient information accurately and maintain confidentiality at all times.",
-        "Provide courteous guidance to patients on appointment processes, eyewear options, and follow-up care.",
-        "Assist with dispensing, fitting, adjustment, and basic care instructions for spectacles and contact lenses.",
-        "Help manage stock of frames, lenses, contact lenses, and clinical supplies.",
-        "Follow all clinic policies, health and safety standards, and professional ethical guidelines.",
-        "Participate in training, supervision sessions, and other learning opportunities."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-01",
-      "deadline": "7th September, September.",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/951192/optometry-intern-at-lily-hospitals-limited.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Care Worker (Mental Health Rehabilitation)",
-      "company": "The Olive Prime Psychological Center",
-      "location": "Lekki, Lagos, Nigeria",
-      "job_type": "",
-      "job_category": "Other",
-      "salary": "N70,000 - N80,000 monthly",
-      "experience": "in care work, healthcare support, or a related field (mental health experience an advantage)",
-      "qualification": "rn",
-      "requirements": [],
-      "responsibilities": [
-        "Support nurses and clinicians in the safe delivery of patient care",
-        "Assist in providing personal care (bathing, dressing, feeding, grooming) under nursing guidance",
-        "Welcome new patients and help them settle into a friendly, supportive environment",
-        "Ensure patient safety at all times, both within the facility and during external activities",
-        "Support patients during therapeutic and recreational activities",
-        "Assist with de-escalation and safe management of aggressive or distressed patients when necessary",
-        "Supervise cleaning and upkeep of patient rooms and shared spaces",
-        "Accurately and promptly complete observation charts and handover documentation",
-        "Monitor and report facility maintenance needs (electrical appliances, damages, repairs)",
-        "Carry out other duties as assigned by nurses or clinicians"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-01",
-      "deadline": "2026-11-01",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/950825/care-worker-mental-health-rehabilitation-at-the-ol.html",
       "_source": "hotnigerianjobs"
     }
   ]
