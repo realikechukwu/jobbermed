@@ -56,7 +56,10 @@ function upsertMeta(attr: "name" | "property", key: string, content: string) {
 export function applyPageMeta(meta: PageMeta) {
   const title = meta.title ?? DEFAULT_TITLE;
   const description = meta.description ?? DEFAULT_DESCRIPTION;
-  const canonical = `${SITE_URL}${meta.path ?? "/"}`;
+  // Pages are served from directories, so the canonical form ends in a slash
+  // (the bare path redirects there).
+  const path = meta.path ?? "/";
+  const canonical = `${SITE_URL}${path.endsWith("/") ? path : `${path}/`}`;
 
   document.title = title;
   upsertMeta("name", "description", description);

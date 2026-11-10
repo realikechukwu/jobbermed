@@ -92,6 +92,10 @@ const EMPLOYMENT_TYPES = [
   [/volunt/i, "VOLUNTEER"],
 ];
 
+// GitHub Pages serves each page from a directory and redirects the bare path
+// to the trailing-slash form, so every URL we publish uses the slash.
+const href = (path) => (path === "/" || path.endsWith("/") ? path : `${path}/`);
+const abs = (path) => `${SITE_URL}${href(path)}`;
 const lowerFirst = (value) => value.charAt(0).toLowerCase() + value.slice(1);
 const text = (value) => (value === null || value === undefined ? "" : String(value).trim());
 const list = (value) => (Array.isArray(value) ? value.map(text).filter(Boolean) : []);
@@ -127,7 +131,7 @@ function isExpired(deadline) {
 const isoDate = (value) => (/^\d{4}-\d{2}-\d{2}/.test(text(value)) ? text(value).slice(0, 10) : "");
 
 function renderPage({ path, title, description, headExtra = "", body, noindex = false }) {
-  const canonical = `${SITE_URL}${path}`;
+  const canonical = `${abs(path)}`;
   let html = template
     .replace(/<title>[\s\S]*?<\/title>/, `<title>${esc(title)}</title>`)
     .replace(/(<meta\s+name="description"\s+content=")[^"]*(")/, `$1${esc(description)}$2`)
@@ -200,14 +204,14 @@ function jobBody(job, parent) {
 
   return [
     `<nav><a href="/">JobberMed</a> &rsaquo; <a href="/">Healthcare jobs</a>${
-      parent ? ` &rsaquo; <a href="${parent.path}">${esc(parent.linkLabel)}</a>` : ""
+      parent ? ` &rsaquo; <a href="${href(parent.path)}">${esc(parent.linkLabel)}</a>` : ""
     }</nav>`,
     `<h1>${esc(role)}${company ? ` at ${esc(company)}` : ""}</h1>`,
     `<dl>${facts.map(([label, value]) => `<dt><strong>${label}</strong></dt><dd>${esc(value)}</dd>`).join("")}</dl>`,
     section("Responsibilities", list(job.responsibilities)),
     section("Requirements", list(job.requirements)),
     text(job.how_to_apply) ? `<h2>How to apply</h2><p>${esc(job.how_to_apply)}</p>` : "",
-    parent ? `<p><a href="${parent.path}">More ${esc(lowerFirst(parent.linkLabel))}</a></p>` : "",
+    parent ? `<p><a href="${href(parent.path)}">More ${esc(lowerFirst(parent.linkLabel))}</a></p>` : "",
     `<p><a href="/">Browse all healthcare jobs on JobberMed</a></p>`,
   ].join("");
 }
@@ -259,7 +263,7 @@ function jobStructuredData(job, url, parent) {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Healthcare jobs", item: `${SITE_URL}/` },
-      ...(parent ? [{ "@type": "ListItem", position: 2, name: parent.linkLabel, item: `${SITE_URL}${parent.path}` }] : []),
+      ...(parent ? [{ "@type": "ListItem", position: 2, name: parent.linkLabel, item: `${abs(parent.path)}` }] : []),
       { "@type": "ListItem", position: parent ? 3 : 2, name: role, item: url },
     ],
   };
@@ -320,10 +324,10 @@ for (const bucket of landing.LANDING_LOCATION_BUCKETS) {
 }
 
 const linkList = (pages) =>
-  `<ul>${pages.map((page) => `<li><a href="${page.path}">${esc(page.linkLabel)}</a> (${page.entries.length})</li>`).join("")}</ul>`;
+  `<ul>${pages.map((page) => `<li><a href="${href(page.path)}">${esc(page.linkLabel)}</a> (${page.entries.length})</li>`).join("")}</ul>`;
 const jobListItem = ({ job, path }) => {
   const { role, company, place } = jobHeadline(job);
-  return `<li><a href="${path}">${esc(role)}</a>${company ? `, ${esc(company)}` : ""}${place ? ` (${esc(place)})` : ""}</li>`;
+  return `<li><a href="${href(path)}">${esc(role)}</a>${company ? `, ${esc(company)}` : ""}${place ? ` (${esc(place)})` : ""}</li>`;
 };
 const specialtyPages = landingPages.filter((page) => page.category !== ALL_CATEGORY && page.location === ALL_LOCATIONS);
 const locationPages = landingPages
@@ -364,7 +368,7 @@ for (const page of landingPages) {
             "@type": "ListItem",
             position: index + 1,
             name: crumb.name,
-            item: `${SITE_URL}${crumb.path}`,
+            item: `${abs(crumb.path)}`,
           })),
         }) +
         jsonLd({
@@ -375,13 +379,13 @@ for (const page of landingPages) {
           itemListElement: listed.slice(0, 30).map(({ path }, index) => ({
             "@type": "ListItem",
             position: index + 1,
-            url: `${SITE_URL}${path}`,
+            url: `${abs(path)}`,
           })),
         }),
       body: [
         `<nav><a href="/">JobberMed</a>${crumbs
           .slice(0, -1)
-          .map((crumb) => ` &rsaquo; <a href="${crumb.path}">${esc(crumb.name)}</a>`)
+          .map((crumb) => ` &rsaquo; <a href="${href(crumb.path)}">${esc(crumb.name)}</a>`)
           .join("")}</nav>`,
         `<h1>${esc(page.heading)}</h1>`,
         `<p>${esc(page.intro)}</p>`,
@@ -405,7 +409,7 @@ for (const entry of jobPages) {
       path,
       title: `${role}${company ? ` at ${company}` : ""}${place ? `, ${place}` : ""} | JobberMed`,
       description: `${role}${company ? ` at ${company}` : ""}${place ? ` in ${place}` : ""}. See requirements, responsibilities and how to apply on JobberMed.`,
-      headExtra: jobStructuredData(job, `${SITE_URL}${path}`, parent),
+      headExtra: jobStructuredData(job, `${abs(path)}`, parent),
       body: jobBody(job, parent),
     }),
   );
@@ -438,7 +442,7 @@ const homeItemList = {
   itemListElement: latest.slice(0, 30).map(({ path }, index) => ({
     "@type": "ListItem",
     position: index + 1,
-    url: `${SITE_URL}${path}`,
+    url: `${abs(path)}`,
   })),
 };
 writePage(
@@ -475,7 +479,7 @@ writeFileSync(
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls
     .map(
       (url) =>
-        `  <url><loc>${SITE_URL}${esc(url.loc)}</loc>${url.lastmod ? `<lastmod>${url.lastmod}</lastmod>` : ""}<changefreq>${url.changefreq}</changefreq><priority>${url.priority}</priority></url>`,
+        `  <url><loc>${abs(esc(url.loc))}</loc>${url.lastmod ? `<lastmod>${url.lastmod}</lastmod>` : ""}<changefreq>${url.changefreq}</changefreq><priority>${url.priority}</priority></url>`,
     )
     .join("\n")}\n</urlset>\n`,
 );
