@@ -4,7 +4,7 @@
   --on-photo-muted: rgba(255, 255, 255, 0.84);
   --glass-line: rgba(255, 255, 255, 0.28);
   --brand-gradient: linear-gradient(135deg, var(--med) 0%, var(--jobber) 100%);
-  --story-gradient: linear-gradient(45deg, #feda75, #fa7e1e 25%, #d62976 50%, #962fbf 75%, #4f5bd5);
+  --story-gradient: linear-gradient(135deg, var(--med) 0%, var(--jobber) 100%);
   color: var(--ink);
   background: var(--bg);
   padding-top: 12px;
