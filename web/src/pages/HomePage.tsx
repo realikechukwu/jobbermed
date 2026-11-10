@@ -4,7 +4,6 @@ import { AggregatorDetailPanel } from "../features/aggregator-jobs/components/Ag
 import { AggregatorFilters } from "../features/aggregator-jobs/components/AggregatorFilters";
 import { FooterShell } from "../components/FooterShell";
 import { AggregatorJobsGrid } from "../features/aggregator-jobs/components/AggregatorJobsGrid";
-import { AggregatorNewsletter } from "../features/aggregator-jobs/components/AggregatorNewsletter";
 import { AggregatorPagination } from "../features/aggregator-jobs/components/AggregatorPagination";
 import { AggregatorScrollTopButton } from "../features/aggregator-jobs/components/AggregatorScrollTopButton";
 import { AggregatorStats } from "../features/aggregator-jobs/components/AggregatorStats";
@@ -383,7 +382,6 @@ export function HomePage() {
           </>
         ) : null}
 
-        <AggregatorNewsletter />
       </HomeLegacyShell>
 
       <AggregatorDetailPanel

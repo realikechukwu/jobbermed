@@ -128,19 +128,6 @@ const NAV_DEFINITIONS: SiteNavDefinition[] = [
     requiredRolesAny: ["admin"],
   },
   {
-    id: "subscribe",
-    kind: "internal",
-    label: "Subscribe",
-    group: "primary",
-    to: "/subscribe",
-    activeMatch: "exact",
-    placements: ["header", "mobile", "footer"],
-    labelsByPlacement: {
-      footer: "Subscribe to Newsletter",
-    },
-    isCta: true,
-  },
-  {
     id: "about",
     kind: "internal",
     label: "About Us",

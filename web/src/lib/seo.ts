@@ -27,10 +27,6 @@ const ROUTE_META: Record<string, PageMeta> = {
     title: "Privacy Policy | JobberMed",
     description: "How JobberMed collects, uses and protects your personal information.",
   },
-  "/subscribe": {
-    title: "Healthcare Job Alerts by Email | JobberMed",
-    description: "Subscribe to JobberMed and get new healthcare jobs in Nigeria and Africa sent to your inbox.",
-  },
   "/landing": {
     title: "Find Healthcare Jobs Faster | JobberMed",
     description:

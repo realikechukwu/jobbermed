@@ -24,7 +24,3 @@ export const SOURCE_LABELS: Record<string, string> = {
   hotnigerianjobs: "HotNigerianJobs",
   medicalworldnigeria: "Medical World Nigeria",
 };
-
-export const NEWSLETTER_STORAGE_KEY = "jobbermed_newsletter_dismissed";
-
-export const NEWSLETTER_DISMISS_DAYS = 14;

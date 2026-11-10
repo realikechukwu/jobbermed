@@ -30,12 +30,6 @@ const LINK_ICONS: Record<string, ReactNode> = {
       <path fill="none" stroke="currentColor" strokeWidth="2" d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2" />
     </svg>
   ),
-  subscribe: (
-    <svg viewBox="0 0 24 24" aria-hidden="true">
-      <rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" strokeWidth="2" />
-      <path fill="none" stroke="currentColor" strokeWidth="2" d="m3 7 9 6 9-6" />
-    </svg>
-  ),
   dashboard: (
     <svg viewBox="0 0 24 24" aria-hidden="true">
       <path fill="currentColor" d="M3 3h8v8H3V3zm10 0h8v5h-8V3zM3 13h8v8H3v-8zm10-3h8v11h-8V10z" />

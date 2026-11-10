@@ -30,12 +30,6 @@ const PUBLIC_PAGES = [
     heading: "Privacy Policy",
   },
   {
-    path: "/subscribe",
-    title: "Healthcare Job Alerts by Email | JobberMed",
-    description: "Subscribe to JobberMed and get new healthcare jobs in Nigeria and Africa sent to your inbox.",
-    heading: "Healthcare job alerts by email",
-  },
-  {
     path: "/landing",
     title: "Find Healthcare Jobs Faster | JobberMed",
     description:

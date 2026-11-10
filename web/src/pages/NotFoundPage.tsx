@@ -15,9 +15,6 @@ export function NotFoundPage() {
             <Link className="shell-button dashboard-link" to="/?source=direct">
               Direct Apply jobs
             </Link>
-            <Link className="shell-button dashboard-link" to="/subscribe">
-              Subscribe to the newsletter
-            </Link>
           </div>
         </CardPrimitive>
       </section>

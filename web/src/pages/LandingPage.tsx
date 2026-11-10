@@ -35,10 +35,6 @@ const FEATURES = [
     title: "Clean interface, less clutter",
     desc: "Browse relevant healthcare jobs without the noise of generic job boards.",
   },
-  {
-    title: "Tailored job alerts",
-    desc: "Get curated alerts based on your profession and preferred location.",
-  },
 ];
 
 const HEADLINE_STATS = [
@@ -100,16 +96,13 @@ export function LandingPage() {
 
           <p className="landing-copy">
             Built for doctors, nurses, pharmacists, med lab professionals, radiographers, dentists,
-            and allied health workers. Filter by specialty and location, and get tailored job alerts
-            straight to your inbox.
+            and allied health workers. Filter by specialty and location to find the right role
+            quickly.
           </p>
 
           <div className="landing-ctas">
             <a className="landing-cta-primary" href="https://jobbermed.com/">
               Browse jobs
-            </a>
-            <a className="landing-cta-secondary" href="https://jobbermed.com/subscribe">
-              Get job alerts
             </a>
           </div>
         </div>
@@ -252,15 +245,12 @@ export function LandingPage() {
             Join the professionals who want better
           </h2>
           <p className="final-cta-sub reveal-item">
-            Stop relying on WhatsApp forwards and word of mouth. Get verified, curated healthcare
-            job opportunities delivered straight to you.
+            Stop relying on WhatsApp forwards and word of mouth. Find verified, curated healthcare
+            job opportunities in one place.
           </p>
           <div className="landing-ctas final-ctas reveal-item" style={{ transitionDelay: "100ms" }}>
             <a className="landing-cta-primary" href="https://jobbermed.com/">
               Browse jobs
-            </a>
-            <a className="landing-cta-secondary" href="https://jobbermed.com/subscribe">
-              Get job alerts
             </a>
           </div>
         </div>
@@ -283,7 +273,6 @@ export function LandingPage() {
         <div className="landing-footer-inner">
           <div className="footer-inner">
             <a className="footer-link" href="https://jobbermed.com/">Home</a>
-            <a className="footer-link" href="https://jobbermed.com/subscribe">Subscribe</a>
             <a className="footer-link" href="https://jobbermed.com/about">About</a>
           </div>
           <p className="landing-footer-copy">&copy; JobberMed 2026</p>

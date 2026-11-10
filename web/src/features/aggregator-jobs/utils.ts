@@ -457,7 +457,9 @@ export function normalizeJob(raw: RawJobRecord, index: number): AggregatorJob {
   const location = toOptionalString(raw.location) ?? toOptionalString(raw.job_location) ?? "";
   const job_type = toOptionalString(raw.job_type) ?? "";
   const job_category = toOptionalString(raw.job_category) ?? "";
-  const salary = toOptionalString(raw.salary) ?? "";
+  // Scraped salaries are sometimes junk like "n," — keep only values containing a number.
+  const rawSalary = toOptionalString(raw.salary) ?? "";
+  const salary = /\d/.test(rawSalary) ? rawSalary : "";
   const requirements = toStringArray(raw.requirements);
   const responsibilities = toStringArray(raw.responsibilities);
   const date_posted = toOptionalString(raw.date_posted) ?? "";

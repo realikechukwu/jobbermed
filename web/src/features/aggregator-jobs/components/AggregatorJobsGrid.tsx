@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import type { UnifiedJob } from "../../jobs/unify";
 import { AggregatorJobCard } from "./AggregatorJobCard";
 
@@ -43,9 +42,6 @@ export function AggregatorJobsGrid({
                 Clear all filters
               </button>
             ) : null}
-            <span className="empty-state-subscribe">
-              Want new roles in your inbox? <Link to="/subscribe">Subscribe for job alerts</Link>.
-            </span>
           </div>
         )}
       </main>
