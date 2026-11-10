@@ -60,6 +60,16 @@ EXTRACTION_CONFIG = {
     "max_jobs": 1300,  # Limit OpenAI API calls
 }
 
+# Email settings
+EMAIL_CONFIG = {
+    # Master switch for the weekly newsletter campaign (newsletter.py).
+    # Set to True to resume sending.
+    "weekly_newsletter_enabled": False,
+    # Master switch for the personalized digest sent to opted-in users
+    # (scripts/personalized_digest.py). Set to True to resume sending.
+    "personalized_digest_enabled": False,
+}
+
 # Output files
 OUTPUT_FILES = {
     "master_jobs": MASTER_JOBS_PATH,

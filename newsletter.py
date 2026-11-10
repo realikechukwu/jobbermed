@@ -11,7 +11,7 @@ from pathlib import Path
 import requests
 from dotenv import load_dotenv
 
-from config import MASTER_JOBS_PATH
+from config import EMAIL_CONFIG, MASTER_JOBS_PATH
 
 
 def is_expired(deadline_str: str) -> bool:
@@ -318,6 +318,10 @@ def main() -> None:
     print("=" * 60)
     print("  JOBBERMED WEEKLY NEWSLETTER")
     print("=" * 60)
+
+    if not EMAIL_CONFIG.get("weekly_newsletter_enabled", False):
+        print("\n⏸️  Weekly newsletter is switched off in config.py (EMAIL_CONFIG). Nothing sent.")
+        return
 
     jobs_file = MASTER_JOBS_PATH
     jobs = load_jobs(jobs_file, limit=20)

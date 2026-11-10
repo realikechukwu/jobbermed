@@ -16,7 +16,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from config import MASTER_JOBS_PATH
+from config import EMAIL_CONFIG, MASTER_JOBS_PATH
 from newsletter import build_email_html
 
 from email_runtime import (
@@ -620,6 +620,10 @@ def main() -> int:
     print("=" * 64)
     print("  JOBBERMED PERSONALIZED DIGEST")
     print("=" * 64)
+
+    if not EMAIL_CONFIG.get("personalized_digest_enabled", False):
+        print("⏸️  Personalized digest is switched off in config.py (EMAIL_CONFIG). Nothing sent.")
+        return 0
 
     if not has_supabase_credentials(config):
         print("⚠️  Missing Supabase runtime credentials. Skipping personalized digest.")
