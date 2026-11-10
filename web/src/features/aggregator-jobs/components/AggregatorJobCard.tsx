@@ -56,52 +56,63 @@ export function AggregatorJobCard({ job, isSaved, onToggleSave, onOpenDetail }: 
     onOpenDetail(job);
   }
 
+  const initials =
+    (company || job.job_title || "J")
+      .replace(/[^A-Za-z0-9 ]/g, " ")
+      .split(/\s+/)
+      .filter(Boolean)
+      .slice(0, 2)
+      .map((word) => word[0].toUpperCase())
+      .join("") || "J";
+
   return (
     <article className="card clickable job-card" data-job-id={job._id} onClick={handleCardClick}>
-      <button
-        className={`save-btn${isSaved ? " saved" : ""}`}
-        type="button"
-        aria-label="Save job"
-        aria-pressed={isSaved ? "true" : "false"}
-        onClick={handleSaveClick}
-      >
-        <span className="save-icon" aria-hidden="true">
-          <BookmarkIcon filled={isSaved} />
+      <div className="job-head">
+        <span className="job-avatar" aria-hidden="true">
+          <span>{initials}</span>
         </span>
-      </button>
+
+        <div className="job-who">
+          <span className="job-company">{company || "Company not listed"}</span>
+          {location ? <span className="job-location">{location}</span> : null}
+        </div>
+
+        <button
+          className={`save-btn${isSaved ? " saved" : ""}`}
+          type="button"
+          aria-label={isSaved ? "Remove from saved jobs" : "Save job"}
+          aria-pressed={isSaved ? "true" : "false"}
+          onClick={handleSaveClick}
+        >
+          <span className="save-icon" aria-hidden="true">
+            <BookmarkIcon filled={isSaved} />
+          </span>
+        </button>
+      </div>
 
       <h3 className="title job-title">{job.job_title || "Untitled role"}</h3>
 
-      <div className="meta">
-        {company || location ? (
-          <>
-            <span className="job-company">{company || location}</span>
-            {company && location ? <span className="job-location">{` - ${location}`}</span> : null}
-          </>
-        ) : (
-          <span className="job-company">Company not listed</span>
-        )}
-      </div>
-
       <div className="tags">
         {isDirect ? <div className="tag direct-badge">Apply on JobberMed</div> : null}
-        {posted ? <div className="tag posted">{`Posted ${posted}`}</div> : null}
         {job.job_type ? <div className="tag job-type">{job.job_type}</div> : null}
+        {/\d/.test(safeText(job.salary)) ? <div className="tag salary">{safeText(job.salary)}</div> : null}
         {deadline ? <div className="tag deadline">{`Closes ${deadline}`}</div> : null}
       </div>
 
       <div className="card-actions">
+        <span className="job-posted">{posted ? `Posted ${posted}` : ""}</span>
+
         <button className="view-btn" type="button" onClick={handleOpenDetail}>
-          View Details
+          Details
         </button>
 
         {isDirect && directDetailPath ? (
           <Link className="apply-btn" to={directDetailPath} onClick={(event) => event.stopPropagation()}>
-            Apply Now
+            Apply
           </Link>
         ) : applyUrl ? (
           <a className="apply-btn" href={applyUrl} target="_blank" rel="noopener noreferrer" onClick={(event) => event.stopPropagation()}>
-            Apply Now
+            Apply
           </a>
         ) : (
           <a

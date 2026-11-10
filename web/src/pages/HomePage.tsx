@@ -16,7 +16,8 @@ import { isDirectJob, type UnifiedJob } from "../features/jobs/unify";
 import { useDetailPanel } from "../features/aggregator-jobs/hooks/useDetailPanel";
 import { useSavedJobsLocal } from "../features/aggregator-jobs/hooks/useSavedJobsLocal";
 import type { CategoryCounts, LocationCounts } from "../features/aggregator-jobs/types";
-import { formatDate, interleaveBySource, isExpired, normalizeCategory, safeText } from "../features/aggregator-jobs/utils";
+import { formatDate, getJobPageSlug, interleaveBySource, isExpired, normalizeCategory, safeText } from "../features/aggregator-jobs/utils";
+import { applyPageMeta } from "../lib/seo";
 import "../styles/aggregator-home.css";
 
 const AGGREGATED_JOBS_URL = `${import.meta.env.BASE_URL}data/master_jobs.json`;
@@ -240,17 +241,46 @@ export function HomePage() {
     return `Live jobs - updated ${formatDate(latest) ?? latest}`;
   }, [jobs]);
 
+  useEffect(() => {
+    if (panelJob && !panelJob._slug.startsWith("direct-")) {
+      const company = safeText(panelJob.company);
+      const place = safeText(panelJob.location);
+      const role = panelJob.job_title || "Healthcare job";
+      applyPageMeta({
+        title: `${role}${company ? ` at ${company}` : ""}${place ? `, ${place}` : ""} | JobberMed`,
+        description: `${role}${company ? ` at ${company}` : ""}${place ? ` in ${place}` : ""}. See requirements, responsibilities and how to apply on JobberMed.`,
+        path: `/jobs/${getJobPageSlug(panelJob._slug)}`,
+      });
+      return;
+    }
+
+    if (activeCategory !== ALL_CATEGORY && VALID_CATEGORY_SET.has(activeCategory)) {
+      applyPageMeta({
+        title: `${activeCategory} Jobs in Nigeria & Africa | JobberMed`,
+        description: `Live ${activeCategory.toLowerCase()} vacancies in Nigeria and across Africa, updated daily on JobberMed.`,
+        path: "/",
+      });
+      return;
+    }
+
+    applyPageMeta({ path: "/" });
+  }, [activeCategory, panelJob]);
+
   const panelIsSaved = panelJob ? isSaved(panelJob._id, panelJob._slug) : false;
 
   const hasKeyword = keywordQuery.trim().length > 0;
 
   const heroSearch = (
-    <div className="hero-search">
+    <div className="hero-search" role="search">
+      <svg className="hero-search-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+        <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" strokeWidth="2" />
+        <path d="M20 20l-3.5-3.5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+      </svg>
       <input
         id="keywordSearch"
         className="hero-search-input"
         type="search"
-        placeholder={'Search roles, e.g. "medical officer"'}
+        placeholder="Search roles or hospitals"
         aria-label="Search jobs by keyword"
         value={keywordQuery}
         onChange={(event) => setKeywordQuery(event.target.value)}
@@ -263,10 +293,39 @@ export function HomePage() {
     </div>
   );
 
+  const specialtyCount = useMemo(
+    () => new Set(allActiveJobs.map((job) => normalizeCategory(job))).size,
+    [allActiveJobs],
+  );
+  const boardCount = useMemo(
+    () => new Set(allActiveJobs.filter((job) => !isDirectJob(job)).map((job) => job._source).filter(Boolean)).size,
+    [allActiveJobs],
+  );
+
+  const heroEyebrow = (
+    <p className="hero-eyebrow">
+      <span className="hero-live-dot" aria-hidden="true" />
+      {isLoading ? "Loading live roles" : `${sourceCounts.all} live roles, updated daily`}
+    </p>
+  );
+
+  const heroStats = isLoading ? null : (
+    <ul className="hero-stats">
+      <li>
+        <strong>{sourceCounts.all}</strong> live roles
+      </li>
+      <li>
+        <strong>{specialtyCount}</strong> specialties
+      </li>
+      <li>
+        <strong>{boardCount}</strong> job boards
+      </li>
+    </ul>
+  );
+
   return (
     <div className="aggregator-home">
-      <HomeLegacyShell heroSearch={heroSearch}>
-        <AggregatorStats jobCountLabel={jobCountLabel} updatedLabel={updatedLabel} listingsPeriodLabel={listingsPeriodLabel} />
+      <HomeLegacyShell heroSearch={heroSearch} heroEyebrow={heroEyebrow} heroStats={heroStats}>
 
         <AggregatorFilters
           activeSource={activeSource}
@@ -285,16 +344,9 @@ export function HomePage() {
           onToggleSaved={() => setSavedOnly(!savedOnly)}
         />
 
-        {directJobsError ? <p className="aggregator-source-notice">{directJobsError}</p> : null}
+        <AggregatorStats jobCountLabel={jobCountLabel} updatedLabel={updatedLabel} listingsPeriodLabel={listingsPeriodLabel} />
 
-        <AggregatorPagination
-          id="paginationTop"
-          ariaLabel="Pagination controls (top)"
-          currentPage={currentPage}
-          totalPages={totalPages}
-          includeNumbers={false}
-          onPageChange={setCurrentPage}
-        />
+        {directJobsError ? <p className="aggregator-source-notice">{directJobsError}</p> : null}
 
         {error ? (
           <main className="grid" id="grid">

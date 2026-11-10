@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { useSearchParams } from "react-router-dom";
+import { useNavigate, useParams, useSearchParams } from "react-router-dom";
 import { useBodyScrollLock } from "../../../hooks/useBodyScrollLock";
 import type { AggregatorJob } from "../types";
 import { findJobBySlug, getJobSlug, safeText } from "../utils";
@@ -21,12 +21,18 @@ const CLOSE_ANIMATION_MS = 450;
 
 export function useDetailPanel({ jobs }: UseDetailPanelArgs): UseDetailPanelResult {
   const [searchParams, setSearchParams] = useSearchParams();
-  const [panelSlug, setPanelSlug] = useState<string | null>(() => safeText(searchParams.get("job")) || null);
+  // /jobs/:jobSlug is the indexable address of a listing; ?job= is used when a
+  // card is opened in place.
+  const { jobSlug: routeSlug } = useParams();
+  const navigate = useNavigate();
+  const [panelSlug, setPanelSlug] = useState<string | null>(
+    () => safeText(searchParams.get("job")) || safeText(routeSlug) || null,
+  );
   const [isClosing, setIsClosing] = useState(false);
 
   const closeTimerRef = useRef<number | null>(null);
 
-  const jobSlugParam = safeText(searchParams.get("job"));
+  const jobSlugParam = safeText(searchParams.get("job")) || safeText(routeSlug);
   const isMounted = panelSlug !== null;
 
   useBodyScrollLock(isMounted);
@@ -94,8 +100,15 @@ export function useDetailPanel({ jobs }: UseDetailPanelArgs): UseDetailPanelResu
   const closeDetail = useCallback(() => {
     const next = new URLSearchParams(searchParams);
     next.delete("job");
+
+    if (routeSlug) {
+      const search = next.toString();
+      navigate({ pathname: "/", search: search ? `?${search}` : "" });
+      return;
+    }
+
     setSearchParams(next);
-  }, [searchParams, setSearchParams]);
+  }, [navigate, routeSlug, searchParams, setSearchParams]);
 
   useEffect(() => {
     if (!panelSlug) {

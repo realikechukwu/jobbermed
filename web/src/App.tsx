@@ -2,6 +2,7 @@ import { Navigate, Route, Routes, useParams } from "react-router-dom";
 import { CardPrimitive } from "./components/CardPrimitive";
 import { RequireAuth, RequireRole } from "./features/auth/guards";
 import { RouteShell } from "./layouts/RouteShell";
+import { RouteMeta } from "./lib/seo";
 import { AdminDashboardPage } from "./pages/AdminDashboardPage";
 import { AboutPage } from "./pages/AboutPage";
 import { ChangePasswordPage } from "./pages/ChangePasswordPage";
@@ -58,8 +59,11 @@ function MdcnAccessRequiredFallback() {
 
 export function App() {
   return (
+    <>
+    <RouteMeta />
     <Routes>
       <Route path="/" element={<HomePage />} />
+      <Route path="/jobs/:jobSlug" element={<HomePage />} />
       <Route path="/jobs/direct" element={<Navigate to="/?source=direct" replace />} />
       <Route path="/jobs/direct/:jobId" element={<NativeJobDetailPage />} />
       <Route path="/native-jobs" element={<LegacyNativeJobRedirect />} />
@@ -156,5 +160,6 @@ export function App() {
 
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
+    </>
   );
 }

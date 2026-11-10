@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Disallow: /dashboard
+Disallow: /account/
+Disallow: /recruiter
+Disallow: /admin
+Disallow: /mdcn
+Disallow: /request-access/
+Disallow: /reset-password
+Disallow: /forgot-password
+
+Sitemap: https://jobbermed.com/sitemap.xml

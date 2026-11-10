@@ -211,6 +211,13 @@ export function getJobSlug(job: Pick<AggregatorJob, "apply_url" | "job_title">):
     .substring(0, 60);
 }
 
+/** URL-safe form of the slug used for /jobs/:slug pages (no query string or .html). */
+export function getJobPageSlug(slug: string): string {
+  return safeText(slug)
+    .replace(/[?#].*$/, "")
+    .replace(/\.html?$/i, "");
+}
+
 export function getJobId(job: Pick<AggregatorJob, "apply_url" | "job_title">): string {
   const normalizedUrl = normalizeApplyUrl(job.apply_url);
   return normalizedUrl || getJobSlug(job);
@@ -492,6 +499,9 @@ export function findJobBySlug(jobs: AggregatorJob[], slug: string | null): Aggre
     return null;
   }
 
-  const match = jobs.find((job) => job._slug === normalizedSlug || safeText(job.apply_url).includes(normalizedSlug));
+  const match =
+    jobs.find((job) => job._slug === normalizedSlug) ??
+    jobs.find((job) => getJobPageSlug(job._slug) === normalizedSlug) ??
+    jobs.find((job) => safeText(job.apply_url).includes(normalizedSlug));
   return match ?? null;
 }

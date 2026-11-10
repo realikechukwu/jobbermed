@@ -9,9 +9,11 @@ import { SiteMobileDrawer } from "../../../components/SiteMobileDrawer";
 type HomeLegacyShellProps = {
   children: ReactNode;
   heroSearch?: ReactNode;
+  heroEyebrow?: ReactNode;
+  heroStats?: ReactNode;
 };
 
-export function HomeLegacyShell({ children, heroSearch }: HomeLegacyShellProps) {
+export function HomeLegacyShell({ children, heroSearch, heroEyebrow, heroStats }: HomeLegacyShellProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
@@ -40,18 +42,18 @@ export function HomeLegacyShell({ children, heroSearch }: HomeLegacyShellProps) 
 
   return (
     <>
-      <div className="top-strip" />
+      <header className="hero-card">
+        <div className="glass-nav">
+          <Link className="brand-wordmark" to="/" aria-label="JobberMed home">
+            Jobber<span>Med</span>
+          </Link>
 
-      <section className="hero-banner">
-        <div className="hero-inner hero-inner-signin">
-          <div className="hero-topbar">
-            <SiteHeaderNav
-              links={headerLinks}
-              email={user?.email ?? ""}
-              showSignOut={Boolean(user)}
-              onSignOut={handleSignOut}
-            />
-          </div>
+          <SiteHeaderNav
+            links={headerLinks}
+            email={user?.email ?? ""}
+            showSignOut={Boolean(user)}
+            onSignOut={handleSignOut}
+          />
 
           <button
             className="mobile-menu-btn"
@@ -60,21 +62,23 @@ export function HomeLegacyShell({ children, heroSearch }: HomeLegacyShellProps) 
             aria-expanded={isMobileMenuOpen ? "true" : "false"}
             onClick={() => setIsMobileMenuOpen(true)}
           >
-            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
-              <path fill="currentColor" d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z" />
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+              <path fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" d="M4 8h16M4 16h16" />
             </svg>
-            Menu
           </button>
-
-          <Link className="brand-link" to="/" aria-label="Go to homepage">
-            <img src="/images/logo.png" alt="JobberMed" className="brand-logo" />
-          </Link>
-
-          <h2 className="hero-title">Healthcare jobs across Nigeria and Africa.</h2>
-          <h3 className="hero-subtitle">Delivered to your email every week.</h3>
-          {heroSearch}
         </div>
-      </section>
+
+        <div className="hero-copy">
+          {heroEyebrow}
+          <h1 className="hero-title">Healthcare jobs across Nigeria and Africa.</h1>
+          <p className="hero-subtitle">
+            Roles for doctors, nurses, pharmacists and allied health professionals, gathered from trusted job boards
+            into one feed.
+          </p>
+          {heroSearch}
+          {heroStats}
+        </div>
+      </header>
 
       <SiteMobileDrawer
         variant="home"

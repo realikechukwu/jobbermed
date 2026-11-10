@@ -10,7 +10,7 @@ body,
 
 body {
   margin: 0;
-  font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", "Segoe UI", Roboto, sans-serif;
   color: var(--ink);
   background: #ffffff;
 }
@@ -1289,5 +1289,143 @@ a {
 
   .hero-inner {
     padding: 40px 16px 52px;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   Photo Glass alignment for interior pages: same rounded hero card, pill
+   controls and light footer as the homepage.
+   ------------------------------------------------------------------------ */
+body {
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+.top-strip {
+  display: none;
+}
+
+.hero-banner {
+  width: calc(100% - 24px);
+  max-width: 1220px;
+  min-height: 0;
+  margin: 12px auto 0;
+  border-radius: 32px;
+  overflow: hidden;
+  background:
+    linear-gradient(100deg, rgba(6, 4, 40, 0.93) 0%, rgba(14, 6, 90, 0.74) 44%, rgba(12, 192, 223, 0.14) 100%),
+    url("/images/banner-hero.jpg") 70% 28% / cover #0b0640;
+}
+
+.hero-banner--compact {
+  background: linear-gradient(105deg, #070428 0%, #150a78 62%, #0b6f9c 125%);
+}
+
+.hero-banner--compact .hero-inner {
+  padding: 16px clamp(18px, 3vw, 32px) 34px;
+}
+
+.hero-title {
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 1.08;
+  text-shadow: none;
+}
+
+.hero-title::after,
+.hero-banner--compact .hero-title::after {
+  display: none;
+}
+
+.hero-subtitle {
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.84);
+  text-shadow: none;
+}
+
+.site-nav {
+  gap: 6px 22px;
+}
+
+.site-nav-link,
+.site-nav-button {
+  font-size: 0.86rem;
+  font-weight: 500;
+}
+
+.site-nav-link:hover,
+.site-nav-button:hover,
+.site-nav-link.active {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.site-nav-link.site-nav-cta {
+  background: #ffffff;
+  color: var(--ink);
+  font-weight: 600;
+  padding: 9px 18px;
+}
+
+.site-mobile-menu-btn {
+  border: 0;
+  border-radius: 999px;
+  background: #ffffff;
+  color: var(--ink);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.page {
+  padding-top: 8px;
+}
+
+.card {
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 22px;
+  box-shadow: 0 8px 24px -18px rgba(0, 0, 0, 0.3);
+}
+
+.shell-input {
+  border-radius: 14px;
+}
+
+.shell-button {
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--med) 0%, var(--jobber) 100%);
+  padding: 13px 18px;
+}
+
+.shell-button:hover {
+  background: linear-gradient(135deg, var(--med) 0%, var(--jobber) 100%);
+  filter: brightness(1.1);
+}
+
+.footer-strip {
+  background: var(--bg);
+  border-top: 1px solid var(--line);
+  padding: 28px 20px 36px;
+}
+
+.footer-inner {
+  gap: 10px 26px;
+}
+
+.footer-link {
+  color: var(--muted);
+  font-size: 0.84rem;
+}
+
+.footer-link:hover {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .hero-banner {
+    width: calc(100% - 16px);
+    margin-top: 8px;
+    border-radius: 26px;
   }
 }

@@ -84,15 +84,18 @@ export function LandingPage() {
 
   return (
     <div className="landing-page">
-      <div className="top-strip" />
-
       {/* ── Hero ── */}
-      <section className="hero-banner">
-        <div className="hero-inner">
-          <a className="brand-link" href="https://jobbermed.com/" aria-label="Go to homepage">
-            <img src="/images/logo.png" alt="JobberMed" className="brand-logo" />
+      <header className="hero-banner">
+        <div className="glass-nav">
+          <a className="brand-wordmark" href="https://jobbermed.com/" aria-label="JobberMed home">
+            Jobber<span>Med</span>
           </a>
+          <a className="glass-nav-cta" href="https://jobbermed.com/">
+            Browse jobs
+          </a>
+        </div>
 
+        <div className="hero-inner">
           <h1 className="landing-headline">Find healthcare jobs faster</h1>
 
           <p className="landing-copy">
@@ -100,33 +103,27 @@ export function LandingPage() {
             and allied health workers. Filter by specialty and location, and get tailored job alerts
             straight to your inbox.
           </p>
-        </div>
-      </section>
 
-      {/* ── Primary CTAs ── */}
-      <section className="landing-action">
-        <div className="landing-action-inner">
           <div className="landing-ctas">
-            <a className="landing-cta-primary" href="https://jobbermed.com/subscribe">
-              Get weekly job alerts
-            </a>
-            <a className="landing-cta-secondary" href="https://jobbermed.com/">
+            <a className="landing-cta-primary" href="https://jobbermed.com/">
               Browse jobs
             </a>
+            <a className="landing-cta-secondary" href="https://jobbermed.com/subscribe">
+              Get job alerts
+            </a>
           </div>
-
-          <div className="landing-roles" aria-label="Roles covered">
-            <div className="landing-roles-track">
-              {[...ROLES, ...ROLES].map((role, i) => (
-                <span key={`${role}-${i}`} className="landing-role-chip">
-                  {role}
-                </span>
-              ))}
-            </div>
-          </div>
-
         </div>
-      </section>
+
+        <div className="landing-roles" aria-label="Roles covered">
+          <div className="landing-roles-track">
+            {[...ROLES, ...ROLES, ...ROLES].map((role, i) => (
+              <span key={`${role}-${i}`} className="landing-role-chip">
+                {role}
+              </span>
+            ))}
+          </div>
+        </div>
+      </header>
 
       {/* ── Survey Intro ── */}
       <section className="survey-intro" ref={surveyRef}>
@@ -259,11 +256,11 @@ export function LandingPage() {
             job opportunities delivered straight to you.
           </p>
           <div className="landing-ctas final-ctas reveal-item" style={{ transitionDelay: "100ms" }}>
-            <a className="landing-cta-primary" href="https://jobbermed.com/subscribe">
-              Get weekly job alerts
-            </a>
-            <a className="landing-cta-secondary" href="https://jobbermed.com/">
+            <a className="landing-cta-primary" href="https://jobbermed.com/">
               Browse jobs
+            </a>
+            <a className="landing-cta-secondary" href="https://jobbermed.com/subscribe">
+              Get job alerts
             </a>
           </div>
         </div>

@@ -6,18 +6,14 @@ type AggregatorStatsProps = {
 
 export function AggregatorStats({ jobCountLabel, updatedLabel, listingsPeriodLabel }: AggregatorStatsProps) {
   return (
-    <header>
-      <div className="stats-wrap">
-        <div className="stat" id="stat-count">
-          <strong>{jobCountLabel}</strong>
-          <span>{updatedLabel}</span>
-        </div>
-
-        <div className="stat" id="stat-range">
-          <strong>{listingsPeriodLabel}</strong>
-          <span>Listings period</span>
-        </div>
-      </div>
-    </header>
+    <div className="results-bar" aria-live="polite">
+      <h2 className="results-count" id="stat-count">
+        <strong>{jobCountLabel}</strong> {jobCountLabel === "1" ? "job" : "jobs"}
+      </h2>
+      <p className="results-meta" id="stat-range">
+        <span>{updatedLabel}</span>
+        <span>{`Listings from ${listingsPeriodLabel}`}</span>
+      </p>
+    </div>
   );
 }

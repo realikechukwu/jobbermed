@@ -44,7 +44,7 @@ export function AggregatorJobsGrid({
               </button>
             ) : null}
             <span className="empty-state-subscribe">
-              Want new roles in your inbox? <Link to="/subscribe">Subscribe to the weekly digest</Link>.
+              Want new roles in your inbox? <Link to="/subscribe">Subscribe for job alerts</Link>.
             </span>
           </div>
         )}
