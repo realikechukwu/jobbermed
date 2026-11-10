@@ -1,6 +1,7 @@
 import { Navigate, Route, Routes, useParams } from "react-router-dom";
 import { CardPrimitive } from "./components/CardPrimitive";
 import { RequireAuth, RequireRole } from "./features/auth/guards";
+import { ALL_CATEGORY_SLUG, LANDING_CATEGORIES } from "./features/aggregator-jobs/landing";
 import { RouteShell } from "./layouts/RouteShell";
 import { RouteMeta } from "./lib/seo";
 import { AdminDashboardPage } from "./pages/AdminDashboardPage";
@@ -63,6 +64,13 @@ export function App() {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/jobs/:jobSlug" element={<HomePage />} />
+      {/* Search landing pages: the home feed filtered by specialty and/or location. */}
+      {LANDING_CATEGORIES.flatMap(({ slug }) => [
+        <Route key={slug} path={`/${slug}`} element={<HomePage />} />,
+        <Route key={`${slug}/location`} path={`/${slug}/:locationSlug`} element={<HomePage />} />,
+      ])}
+      <Route path={`/${ALL_CATEGORY_SLUG}`} element={<Navigate to="/" replace />} />
+      <Route path={`/${ALL_CATEGORY_SLUG}/:locationSlug`} element={<HomePage />} />
       <Route path="/jobs/direct" element={<Navigate to="/?source=direct" replace />} />
       <Route path="/jobs/direct/:jobId" element={<NativeJobDetailPage />} />
       <Route path="/native-jobs" element={<LegacyNativeJobRedirect />} />

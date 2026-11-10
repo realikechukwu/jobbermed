@@ -1,6 +1,6 @@
 import type { AggregatedJobsPayload, AggregatorJob, RawJobRecord } from "./types";
 
-const NIGERIAN_STATES = [
+export const NIGERIAN_STATES = [
   "Abia",
   "Adamawa",
   "Akwa Ibom",
@@ -86,7 +86,7 @@ const CITY_TO_STATE: Record<string, string> = {
   "keffi": "Nasarawa",
 };
 
-const COUNTRY_ALIASES: Array<[needle: string, label: string]> = [
+export const COUNTRY_ALIASES: Array<[needle: string, label: string]> = [
   ["uk", "UK"],
   ["united kingdom", "UK"],
   ["zambia", "Zambia"],

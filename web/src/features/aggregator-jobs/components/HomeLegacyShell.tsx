@@ -11,9 +11,22 @@ type HomeLegacyShellProps = {
   heroSearch?: ReactNode;
   heroEyebrow?: ReactNode;
   heroStats?: ReactNode;
+  heroTitle?: string;
+  heroSubtitle?: string;
 };
 
-export function HomeLegacyShell({ children, heroSearch, heroEyebrow, heroStats }: HomeLegacyShellProps) {
+const DEFAULT_HERO_TITLE = "Healthcare jobs across Nigeria and Africa.";
+const DEFAULT_HERO_SUBTITLE =
+  "Roles for doctors, nurses, pharmacists and allied health professionals, gathered from trusted job boards into one feed.";
+
+export function HomeLegacyShell({
+  children,
+  heroSearch,
+  heroEyebrow,
+  heroStats,
+  heroTitle,
+  heroSubtitle,
+}: HomeLegacyShellProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
@@ -70,11 +83,8 @@ export function HomeLegacyShell({ children, heroSearch, heroEyebrow, heroStats }
 
         <div className="hero-copy">
           {heroEyebrow}
-          <h1 className="hero-title">Healthcare jobs across Nigeria and Africa.</h1>
-          <p className="hero-subtitle">
-            Roles for doctors, nurses, pharmacists and allied health professionals, gathered from trusted job boards
-            into one feed.
-          </p>
+          <h1 className="hero-title">{heroTitle ?? DEFAULT_HERO_TITLE}</h1>
+          <p className="hero-subtitle">{heroSubtitle ?? DEFAULT_HERO_SUBTITLE}</p>
           {heroSearch}
           {heroStats}
         </div>

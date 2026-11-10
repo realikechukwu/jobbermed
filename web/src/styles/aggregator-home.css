@@ -1011,6 +1011,45 @@
 
 
 /* ---------- footer ---------- */
+.aggregator-home .browse-links {
+  display: grid;
+  gap: 26px;
+  margin-top: 48px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+}
+
+.aggregator-home .browse-heading {
+  margin: 0 0 12px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.aggregator-home .browse-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.aggregator-home .browse-list a {
+  display: inline-block;
+  padding: 7px 13px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 0.84rem;
+  text-decoration: none;
+}
+
+.aggregator-home .browse-list a:hover {
+  border-color: var(--ink);
+}
+
 .aggregator-home .footer-strip {
   margin-top: 0;
   padding: 28px 20px 36px;

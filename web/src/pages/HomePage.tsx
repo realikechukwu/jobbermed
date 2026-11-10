@@ -7,8 +7,10 @@ import { AggregatorJobsGrid } from "../features/aggregator-jobs/components/Aggre
 import { AggregatorPagination } from "../features/aggregator-jobs/components/AggregatorPagination";
 import { AggregatorScrollTopButton } from "../features/aggregator-jobs/components/AggregatorScrollTopButton";
 import { AggregatorStats } from "../features/aggregator-jobs/components/AggregatorStats";
+import { LandingBrowseLinks } from "../features/aggregator-jobs/components/LandingBrowseLinks";
 import { HomeLegacyShell } from "../features/aggregator-jobs/components/HomeLegacyShell";
 import { ALL_CATEGORY, ALL_LOCATIONS, CATEGORY_ORDER, PAGE_SIZE } from "../features/aggregator-jobs/constants";
+import { getLandingMeta } from "../features/aggregator-jobs/landing";
 import { useAggregatorQueryState } from "../features/aggregator-jobs/hooks/useAggregatorQueryState";
 import { useUnifiedJobsData } from "../features/jobs/useUnifiedJobsData";
 import { isDirectJob, type UnifiedJob } from "../features/jobs/unify";
@@ -240,6 +242,12 @@ export function HomePage() {
     return `Live jobs - updated ${formatDate(latest) ?? latest}`;
   }, [jobs]);
 
+  // Set when the active specialty/location pair has its own landing page.
+  const landingMeta = useMemo(() => {
+    const count = isLoading ? undefined : (categoryCounts[activeCategory] ?? 0);
+    return getLandingMeta(activeCategory, activeLocation, count);
+  }, [activeCategory, activeLocation, categoryCounts, isLoading]);
+
   useEffect(() => {
     if (panelJob && !panelJob._slug.startsWith("direct-")) {
       const company = safeText(panelJob.company);
@@ -253,17 +261,13 @@ export function HomePage() {
       return;
     }
 
-    if (activeCategory !== ALL_CATEGORY && VALID_CATEGORY_SET.has(activeCategory)) {
-      applyPageMeta({
-        title: `${activeCategory} Jobs in Nigeria & Africa | JobberMed`,
-        description: `Live ${activeCategory.toLowerCase()} vacancies in Nigeria and across Africa, updated daily on JobberMed.`,
-        path: "/",
-      });
+    if (landingMeta) {
+      applyPageMeta({ title: landingMeta.title, description: landingMeta.description, path: landingMeta.path });
       return;
     }
 
     applyPageMeta({ path: "/" });
-  }, [activeCategory, panelJob]);
+  }, [landingMeta, panelJob]);
 
   const panelIsSaved = panelJob ? isSaved(panelJob._id, panelJob._slug) : false;
 
@@ -324,7 +328,13 @@ export function HomePage() {
 
   return (
     <div className="aggregator-home">
-      <HomeLegacyShell heroSearch={heroSearch} heroEyebrow={heroEyebrow} heroStats={heroStats}>
+      <HomeLegacyShell
+        heroSearch={heroSearch}
+        heroEyebrow={heroEyebrow}
+        heroStats={heroStats}
+        heroTitle={landingMeta ? `${landingMeta.heading}.` : undefined}
+        heroSubtitle={landingMeta?.intro}
+      >
 
         <AggregatorFilters
           activeSource={activeSource}
@@ -378,6 +388,13 @@ export function HomePage() {
               totalPages={totalPages}
               includeNumbers
               onPageChange={setCurrentPage}
+            />
+
+            <LandingBrowseLinks
+              activeCategory={activeCategory}
+              activeLocation={activeLocation}
+              categoryCounts={categoryCounts}
+              locationCounts={locationCounts}
             />
           </>
         ) : null}

@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { getLandingMeta, parseLandingPath } from "../features/aggregator-jobs/landing";
 
 export const SITE_URL = "https://jobbermed.com";
 export const SITE_NAME = "JobberMed";
@@ -80,6 +81,12 @@ export function getRouteMeta(pathname: string): PageMeta {
   const known = ROUTE_META[normalized];
   if (known) {
     return { ...known, path: normalized };
+  }
+
+  const landing = parseLandingPath(normalized);
+  const landingMeta = landing ? getLandingMeta(landing.category, landing.location) : null;
+  if (landingMeta) {
+    return { title: landingMeta.title, description: landingMeta.description, path: landingMeta.path };
   }
 
   if (normalized.startsWith("/jobs/")) {

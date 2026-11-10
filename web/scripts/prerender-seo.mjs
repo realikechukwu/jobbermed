@@ -4,12 +4,45 @@
 // real HTML file (200 status) for every public route and every live job, each
 // with its own title, description, canonical URL, structured data and a
 // crawlable copy of the content, then writes sitemap.xml.
-import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import { tmpdir } from "node:os";
 import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
+import { fileURLToPath, pathToFileURL } from "node:url";
+import { build } from "vite";
 
 const SITE_URL = "https://jobbermed.com";
 const DIST = join(dirname(fileURLToPath(import.meta.url)), "..", "dist");
+const WEB_ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
+
+// The landing-page URL scheme, copy and the specialty/location rules live in
+// the app's TypeScript. Bundle that module so these pages can never drift from
+// what the app resolves.
+async function loadLandingModule() {
+  const outDir = mkdtempSync(join(tmpdir(), "jobbermed-seo-"));
+  try {
+    await build({
+      root: WEB_ROOT,
+      configFile: false,
+      logLevel: "error",
+      publicDir: false,
+      build: {
+        ssr: join(WEB_ROOT, "src/features/aggregator-jobs/landing.ts"),
+        outDir,
+        emptyOutDir: true,
+        rollupOptions: { output: { format: "es", entryFileNames: "landing.mjs" } },
+      },
+    });
+    return await import(pathToFileURL(join(outDir, "landing.mjs")).href);
+  } finally {
+    rmSync(outDir, { recursive: true, force: true });
+  }
+}
+
+const landing = await loadLandingModule();
+const ALL_CATEGORY = "All";
+const ALL_LOCATIONS = "All locations";
+const MAX_LANDING_JOBS_LISTED = 100;
+
 const template = readFileSync(join(DIST, "index.html"), "utf8");
 const payload = JSON.parse(readFileSync(join(DIST, "data", "master_jobs.json"), "utf8"));
 const rawJobs = Array.isArray(payload) ? payload : Array.isArray(payload.jobs) ? payload.jobs : [];
@@ -59,6 +92,7 @@ const EMPLOYMENT_TYPES = [
   [/volunt/i, "VOLUNTEER"],
 ];
 
+const lowerFirst = (value) => value.charAt(0).toLowerCase() + value.slice(1);
 const text = (value) => (value === null || value === undefined ? "" : String(value).trim());
 const list = (value) => (Array.isArray(value) ? value.map(text).filter(Boolean) : []);
 const esc = (value) =>
@@ -130,7 +164,26 @@ function jobHeadline(job) {
   return { role, company, place };
 }
 
-function jobBody(job) {
+// The most specific published landing page for a job, used for breadcrumbs.
+// Filled in once the landing pages are known.
+const publishedLandingPaths = new Map();
+
+function jobLanding(entry) {
+  const candidates = [
+    ...entry.buckets.map((bucket) => [entry.category, bucket]),
+    [entry.category, ALL_LOCATIONS],
+    ...entry.buckets.map((bucket) => [ALL_CATEGORY, bucket]),
+  ];
+  for (const [category, location] of candidates) {
+    const path = landing.buildLandingPath(category, location);
+    if (path && publishedLandingPaths.has(path)) {
+      return publishedLandingPaths.get(path);
+    }
+  }
+  return null;
+}
+
+function jobBody(job, parent) {
   const { role, company, place } = jobHeadline(job);
   const facts = [
     ["Employer", company],
@@ -146,17 +199,20 @@ function jobBody(job) {
     items.length ? `<h2>${heading}</h2><ul>${items.map((item) => `<li>${esc(item)}</li>`).join("")}</ul>` : "";
 
   return [
-    `<nav><a href="/">JobberMed</a> &rsaquo; <a href="/">Healthcare jobs</a></nav>`,
+    `<nav><a href="/">JobberMed</a> &rsaquo; <a href="/">Healthcare jobs</a>${
+      parent ? ` &rsaquo; <a href="${parent.path}">${esc(parent.linkLabel)}</a>` : ""
+    }</nav>`,
     `<h1>${esc(role)}${company ? ` at ${esc(company)}` : ""}</h1>`,
     `<dl>${facts.map(([label, value]) => `<dt><strong>${label}</strong></dt><dd>${esc(value)}</dd>`).join("")}</dl>`,
     section("Responsibilities", list(job.responsibilities)),
     section("Requirements", list(job.requirements)),
     text(job.how_to_apply) ? `<h2>How to apply</h2><p>${esc(job.how_to_apply)}</p>` : "",
+    parent ? `<p><a href="${parent.path}">More ${esc(lowerFirst(parent.linkLabel))}</a></p>` : "",
     `<p><a href="/">Browse all healthcare jobs on JobberMed</a></p>`,
   ].join("");
 }
 
-function jobStructuredData(job, url) {
+function jobStructuredData(job, url, parent) {
   const { role, company, place } = jobHeadline(job);
   const datePosted = isoDate(job.date_posted);
   if (!company || !place || !datePosted) {
@@ -203,7 +259,8 @@ function jobStructuredData(job, url) {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Healthcare jobs", item: `${SITE_URL}/` },
-      { "@type": "ListItem", position: 2, name: role, item: url },
+      ...(parent ? [{ "@type": "ListItem", position: 2, name: parent.linkLabel, item: `${SITE_URL}${parent.path}` }] : []),
+      { "@type": "ListItem", position: parent ? 3 : 2, name: role, item: url },
     ],
   };
   return jsonLd(posting) + jsonLd(breadcrumbs);
@@ -222,10 +279,125 @@ for (const job of rawJobs) {
     continue;
   }
   seen.add(slug);
-  jobPages.push({ job, slug, path: `/jobs/${slug}` });
+  jobPages.push({
+    job,
+    slug,
+    path: `/jobs/${slug}`,
+    category: landing.normalizeCategory({ job_title: text(job.job_title), job_category: text(job.job_category) }),
+    buckets: landing.getLocationBuckets(text(job.location)),
+  });
 }
 
-for (const { job, path } of jobPages) {
+// ---- landing pages (specialty, location, specialty x location) --------------
+const byDate = (a, b) => text(b.job.date_posted).localeCompare(text(a.job.date_posted));
+const landingPages = [];
+
+function addLanding(category, location, minJobs) {
+  const entries = jobPages
+    .filter(
+      (entry) =>
+        (category === ALL_CATEGORY || entry.category === category) &&
+        (location === ALL_LOCATIONS || entry.buckets.includes(location)),
+    )
+    .sort(byDate);
+  const meta = landing.getLandingMeta(category, location, entries.length);
+  if (!meta || entries.length < minJobs) {
+    return;
+  }
+  const page = { ...meta, category, location, entries };
+  landingPages.push(page);
+  publishedLandingPaths.set(meta.path, page);
+}
+
+for (const { category } of landing.LANDING_CATEGORIES) {
+  addLanding(category, ALL_LOCATIONS, 1);
+}
+for (const bucket of landing.LANDING_LOCATION_BUCKETS) {
+  addLanding(ALL_CATEGORY, bucket, landing.MIN_LANDING_JOBS);
+  for (const { category } of landing.LANDING_CATEGORIES) {
+    addLanding(category, bucket, landing.MIN_LANDING_JOBS);
+  }
+}
+
+const linkList = (pages) =>
+  `<ul>${pages.map((page) => `<li><a href="${page.path}">${esc(page.linkLabel)}</a> (${page.entries.length})</li>`).join("")}</ul>`;
+const jobListItem = ({ job, path }) => {
+  const { role, company, place } = jobHeadline(job);
+  return `<li><a href="${path}">${esc(role)}</a>${company ? `, ${esc(company)}` : ""}${place ? ` (${esc(place)})` : ""}</li>`;
+};
+const specialtyPages = landingPages.filter((page) => page.category !== ALL_CATEGORY && page.location === ALL_LOCATIONS);
+const locationPages = landingPages
+  .filter((page) => page.category === ALL_CATEGORY)
+  .sort((a, b) => b.entries.length - a.entries.length);
+
+for (const page of landingPages) {
+  const hasCategory = page.category !== ALL_CATEGORY;
+  const hasLocation = page.location !== ALL_LOCATIONS;
+  const categoryPage = hasCategory && hasLocation ? publishedLandingPaths.get(landing.buildLandingPath(page.category, ALL_LOCATIONS)) : null;
+  // Same specialty in other places, and other specialties in the same place.
+  const sameCategory = landingPages
+    .filter((other) => other.category === page.category && other.location !== ALL_LOCATIONS && other !== page)
+    .sort((a, b) => b.entries.length - a.entries.length);
+  const sameLocation = hasLocation
+    ? landingPages.filter((other) => other.location === page.location && other !== page)
+    : hasCategory
+      ? specialtyPages.filter((other) => other !== page)
+      : [];
+  const crumbs = [
+    { name: "Healthcare jobs", path: "/" },
+    ...(categoryPage ? [{ name: categoryPage.linkLabel, path: categoryPage.path }] : []),
+    { name: page.linkLabel, path: page.path },
+  ];
+  const listed = page.entries.slice(0, MAX_LANDING_JOBS_LISTED);
+
+  writePage(
+    page.path,
+    renderPage({
+      path: page.path,
+      title: page.title,
+      description: page.description,
+      headExtra:
+        jsonLd({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: crumbs.map((crumb, index) => ({
+            "@type": "ListItem",
+            position: index + 1,
+            name: crumb.name,
+            item: `${SITE_URL}${crumb.path}`,
+          })),
+        }) +
+        jsonLd({
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          name: page.heading,
+          numberOfItems: page.entries.length,
+          itemListElement: listed.slice(0, 30).map(({ path }, index) => ({
+            "@type": "ListItem",
+            position: index + 1,
+            url: `${SITE_URL}${path}`,
+          })),
+        }),
+      body: [
+        `<nav><a href="/">JobberMed</a>${crumbs
+          .slice(0, -1)
+          .map((crumb) => ` &rsaquo; <a href="${crumb.path}">${esc(crumb.name)}</a>`)
+          .join("")}</nav>`,
+        `<h1>${esc(page.heading)}</h1>`,
+        `<p>${esc(page.intro)}</p>`,
+        `<h2>Latest ${esc(lowerFirst(page.linkLabel))}</h2>`,
+        `<ul>${listed.map(jobListItem).join("")}</ul>`,
+        sameCategory.length ? `<h2>${esc(hasCategory ? page.linkLabel.replace(/ in .*$/, "") : "Healthcare jobs")} by location</h2>${linkList(sameCategory)}` : "",
+        sameLocation.length ? `<h2>${hasLocation ? `More jobs in ${esc(landing.getLandingLocationName(page.location))}` : "Other specialties"}</h2>${linkList(sameLocation)}` : "",
+        `<p><a href="/">Browse all healthcare jobs on JobberMed</a></p>`,
+      ].join(""),
+    }),
+  );
+}
+
+for (const entry of jobPages) {
+  const { job, path } = entry;
+  const parent = jobLanding(entry);
   const { role, company, place } = jobHeadline(job);
   writePage(
     path,
@@ -233,8 +405,8 @@ for (const { job, path } of jobPages) {
       path,
       title: `${role}${company ? ` at ${company}` : ""}${place ? `, ${place}` : ""} | JobberMed`,
       description: `${role}${company ? ` at ${company}` : ""}${place ? ` in ${place}` : ""}. See requirements, responsibilities and how to apply on JobberMed.`,
-      headExtra: jobStructuredData(job, `${SITE_URL}${path}`),
-      body: jobBody(job),
+      headExtra: jobStructuredData(job, `${SITE_URL}${path}`, parent),
+      body: jobBody(job, parent),
     }),
   );
 }
@@ -257,9 +429,7 @@ writeFileSync(
 );
 
 // ---- home -----------------------------------------------------------------
-const latest = [...jobPages]
-  .sort((a, b) => text(b.job.date_posted).localeCompare(text(a.job.date_posted)))
-  .slice(0, 60);
+const latest = [...jobPages].sort(byDate).slice(0, 60);
 const homeDescription = template.match(/<meta\s+name="description"\s+content="([^"]*)"/)[1];
 const homeItemList = {
   "@context": "https://schema.org",
@@ -277,12 +447,9 @@ writePage(
     .replace("<!--seo:head-->", jsonLd(homeItemList))
     .replace(
       "<!--seo:body-->",
-      `<div style="${SHELL_STYLE}"><h1>Healthcare jobs across Nigeria and Africa</h1><p>${homeDescription}</p><h2>Latest jobs</h2><ul>${latest
-        .map(({ job, path }) => {
-          const { role, company, place } = jobHeadline(job);
-          return `<li><a href="${path}">${esc(role)}</a>${company ? `, ${esc(company)}` : ""}${place ? ` (${esc(place)})` : ""}</li>`;
-        })
-        .join("")}</ul></div>`,
+      `<div style="${SHELL_STYLE}"><h1>Healthcare jobs across Nigeria and Africa</h1><p>${homeDescription}</p><h2>Latest jobs</h2><ul>${latest.map(jobListItem).join("")}</ul>${
+        specialtyPages.length ? `<h2>Browse by specialty</h2>${linkList(specialtyPages)}` : ""
+      }${locationPages.length ? `<h2>Healthcare jobs by location</h2>${linkList(locationPages)}` : ""}</div>`,
     ),
 );
 
@@ -295,6 +462,7 @@ const urls = [
     changefreq: "monthly",
     priority: "0.4",
   })),
+  ...landingPages.map((page) => ({ loc: page.path, lastmod: today, changefreq: "daily", priority: "0.9" })),
   ...jobPages.map(({ job, path }) => ({
     loc: path,
     lastmod: isoDate(job.date_posted) || today,
@@ -313,5 +481,5 @@ writeFileSync(
 );
 
 console.log(
-  `SEO prerender: ${jobPages.length} job pages (${rawJobs.length - jobPages.length} skipped), ${PUBLIC_PAGES.length} static pages, sitemap with ${urls.length} URLs.`,
+  `SEO prerender: ${jobPages.length} job pages (${rawJobs.length - jobPages.length} skipped), ${landingPages.length} landing pages, ${PUBLIC_PAGES.length} static pages, sitemap with ${urls.length} URLs.`,
 );
