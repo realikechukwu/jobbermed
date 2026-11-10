@@ -85,6 +85,23 @@ const NAV_DEFINITIONS: SiteNavDefinition[] = [
     placements: ["header", "mobile", "footer"],
   },
   {
+    id: "blog",
+    kind: "internal",
+    label: "Career Guides",
+    group: "primary",
+    to: "/blog",
+    activeMatch: "prefix",
+    placements: ["header", "mobile", "footer"],
+  },
+  {
+    id: "cv-match",
+    kind: "external",
+    label: "CV Match",
+    group: "primary",
+    href: "https://cv.jobbermed.com",
+    placements: ["header", "mobile", "footer"],
+  },
+  {
     id: "dashboard",
     kind: "internal",
     label: "Dashboard",

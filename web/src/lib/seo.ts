@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { BLOG_INDEX_META, getArticle } from "../features/blog/articles";
 import { getLandingMeta, parseLandingPath } from "../features/aggregator-jobs/landing";
 
 export const SITE_URL = "https://jobbermed.com";
@@ -90,6 +91,17 @@ export function getRouteMeta(pathname: string): PageMeta {
   const landingMeta = landing ? getLandingMeta(landing.category, landing.location) : null;
   if (landingMeta) {
     return { title: landingMeta.title, description: landingMeta.description, path: landingMeta.path };
+  }
+
+  if (normalized === BLOG_INDEX_META.path) {
+    return { title: BLOG_INDEX_META.title, description: BLOG_INDEX_META.description, path: normalized };
+  }
+
+  if (normalized.startsWith("/blog/")) {
+    const article = getArticle(normalized.slice("/blog/".length));
+    if (article) {
+      return { title: `${article.title} | JobberMed`, description: article.description, path: normalized };
+    }
   }
 
   if (normalized.startsWith("/jobs/")) {

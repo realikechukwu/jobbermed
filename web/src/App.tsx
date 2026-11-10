@@ -6,6 +6,8 @@ import { RouteShell } from "./layouts/RouteShell";
 import { RouteMeta } from "./lib/seo";
 import { AdminDashboardPage } from "./pages/AdminDashboardPage";
 import { AboutPage } from "./pages/AboutPage";
+import { BlogArticlePage } from "./pages/BlogArticlePage";
+import { BlogIndexPage } from "./pages/BlogIndexPage";
 import { ChangePasswordPage } from "./pages/ChangePasswordPage";
 import { DashboardPage } from "./pages/DashboardPage";
 import { ForgotPasswordPage } from "./pages/ForgotPasswordPage";
@@ -78,6 +80,8 @@ export function App() {
       <Route path="/signin" element={<SigninPage />} />
       <Route path="/signup" element={<SignupPage />} />
       <Route path="/about" element={<AboutPage />} />
+      <Route path="/blog" element={<BlogIndexPage />} />
+      <Route path="/blog/:articleSlug" element={<BlogArticlePage />} />
       <Route path="/privacy" element={<PrivacyPage />} />
       <Route path="/landing" element={<LandingPage />} />
       <Route path="/forgot-password" element={<ForgotPasswordPage />} />

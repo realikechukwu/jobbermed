@@ -14,10 +14,10 @@ const SITE_URL = "https://jobbermed.com";
 const DIST = join(dirname(fileURLToPath(import.meta.url)), "..", "dist");
 const WEB_ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 
-// The landing-page URL scheme, copy and the specialty/location rules live in
-// the app's TypeScript. Bundle that module so these pages can never drift from
-// what the app resolves.
-async function loadLandingModule() {
+// The landing-page URL scheme and the blog articles live in the app's
+// TypeScript. Bundle those modules so the static pages can never drift from
+// what the app renders.
+async function loadAppModule(entry) {
   const outDir = mkdtempSync(join(tmpdir(), "jobbermed-seo-"));
   try {
     await build({
@@ -26,19 +26,20 @@ async function loadLandingModule() {
       logLevel: "error",
       publicDir: false,
       build: {
-        ssr: join(WEB_ROOT, "src/features/aggregator-jobs/landing.ts"),
+        ssr: join(WEB_ROOT, entry),
         outDir,
         emptyOutDir: true,
-        rollupOptions: { output: { format: "es", entryFileNames: "landing.mjs" } },
+        rollupOptions: { output: { format: "es", entryFileNames: "module.mjs" } },
       },
     });
-    return await import(pathToFileURL(join(outDir, "landing.mjs")).href);
+    return await import(pathToFileURL(join(outDir, "module.mjs")).href);
   } finally {
     rmSync(outDir, { recursive: true, force: true });
   }
 }
 
-const landing = await loadLandingModule();
+const landing = await loadAppModule("src/features/aggregator-jobs/landing.ts");
+const blog = await loadAppModule("src/features/blog/articles.ts");
 const ALL_CATEGORY = "All";
 const ALL_LOCATIONS = "All locations";
 const MAX_LANDING_JOBS_LISTED = 100;
@@ -415,6 +416,100 @@ for (const entry of jobPages) {
   );
 }
 
+// ---- blog -------------------------------------------------------------------
+const inlineHtml = (value) =>
+  blog
+    .parseInline(value)
+    .map((segment) =>
+      segment.href
+        ? `<a href="${esc(segment.href.startsWith("/") ? href(segment.href) : segment.href)}">${esc(segment.text)}</a>`
+        : esc(segment.text),
+    )
+    .join("");
+const cvMatchHtml = `<aside><p><strong>${esc(blog.CV_MATCH_CTA.heading)}</strong></p><p>${esc(blog.CV_MATCH_CTA.text)}</p><p><a href="${blog.CV_MATCH_URL}">${esc(blog.CV_MATCH_CTA.button)}</a></p></aside>`;
+
+function articleHtml(blocks) {
+  return blocks
+    .map((block) => {
+      switch (block.type) {
+        case "h2":
+          return `<h2>${esc(block.text)}</h2>`;
+        case "ul":
+          return `<ul>${block.items.map((item) => `<li>${inlineHtml(item)}</li>`).join("")}</ul>`;
+        case "example":
+          return `<blockquote>${block.lines.map((line) => `<p>${esc(line)}</p>`).join("")}</blockquote>`;
+        case "cta":
+          return cvMatchHtml;
+        default:
+          return `<p>${inlineHtml(block.text)}</p>`;
+      }
+    })
+    .join("");
+}
+
+const articleLinks = (articles) =>
+  `<ul>${articles.map((article) => `<li><a href="${href(`/blog/${article.slug}`)}">${esc(article.title)}</a></li>`).join("")}</ul>`;
+
+writePage(
+  blog.BLOG_INDEX_META.path,
+  renderPage({
+    ...blog.BLOG_INDEX_META,
+    body: [
+      `<nav><a href="/">JobberMed</a></nav>`,
+      `<h1>${esc(blog.BLOG_INDEX_META.heading)}</h1>`,
+      `<p>${esc(blog.BLOG_INDEX_META.intro)}</p>`,
+      `<ul>${blog.ARTICLES.map(
+        (article) =>
+          `<li><a href="${href(`/blog/${article.slug}`)}">${esc(article.title)}</a><br>${esc(article.description)}</li>`,
+      ).join("")}</ul>`,
+      cvMatchHtml,
+    ].join(""),
+  }),
+);
+
+for (const article of blog.ARTICLES) {
+  const path = `/blog/${article.slug}`;
+  const publisher = { "@type": "Organization", name: "JobberMed", url: `${SITE_URL}/`, logo: `${SITE_URL}/images/jm-logo.jpg` };
+  writePage(
+    path,
+    renderPage({
+      path,
+      title: `${article.title} | JobberMed`,
+      description: article.description,
+      headExtra:
+        jsonLd({
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          headline: article.title,
+          description: article.description,
+          datePublished: article.published,
+          dateModified: article.published,
+          mainEntityOfPage: abs(path),
+          image: `${SITE_URL}/images/og-banner.jpg`,
+          author: publisher,
+          publisher,
+        }) +
+        jsonLd({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Career guides", item: abs(blog.BLOG_INDEX_META.path) },
+            { "@type": "ListItem", position: 2, name: article.title, item: abs(path) },
+          ],
+        }),
+      body: [
+        `<nav><a href="/">JobberMed</a> &rsaquo; <a href="${href(blog.BLOG_INDEX_META.path)}">Career guides</a></nav>`,
+        `<article><h1>${esc(article.title)}</h1>`,
+        `<p>${esc(blog.formatArticleDate(article.published))}</p>`,
+        articleHtml(article.body),
+        `</article>`,
+        `<h2>More career guides</h2>${articleLinks(blog.ARTICLES.filter((other) => other !== article))}`,
+        `<p><a href="/">Browse healthcare jobs on JobberMed</a></p>`,
+      ].join(""),
+    }),
+  );
+}
+
 // ---- static routes --------------------------------------------------------
 for (const page of PUBLIC_PAGES) {
   writePage(
@@ -453,7 +548,7 @@ writePage(
       "<!--seo:body-->",
       `<div style="${SHELL_STYLE}"><h1>Healthcare jobs across Nigeria and Africa</h1><p>${homeDescription}</p><h2>Latest jobs</h2><ul>${latest.map(jobListItem).join("")}</ul>${
         specialtyPages.length ? `<h2>Browse by specialty</h2>${linkList(specialtyPages)}` : ""
-      }${locationPages.length ? `<h2>Healthcare jobs by location</h2>${linkList(locationPages)}` : ""}</div>`,
+      }${locationPages.length ? `<h2>Healthcare jobs by location</h2>${linkList(locationPages)}` : ""}<h2>Career guides</h2>${articleLinks(blog.ARTICLES)}</div>`,
     ),
 );
 
@@ -465,6 +560,13 @@ const urls = [
     loc: page.path,
     changefreq: "monthly",
     priority: "0.4",
+  })),
+  { loc: blog.BLOG_INDEX_META.path, lastmod: blog.ARTICLES[0]?.published, changefreq: "weekly", priority: "0.7" },
+  ...blog.ARTICLES.map((article) => ({
+    loc: `/blog/${article.slug}`,
+    lastmod: article.published,
+    changefreq: "monthly",
+    priority: "0.7",
   })),
   ...landingPages.map((page) => ({ loc: page.path, lastmod: today, changefreq: "daily", priority: "0.9" })),
   ...jobPages.map(({ job, path }) => ({
@@ -485,5 +587,5 @@ writeFileSync(
 );
 
 console.log(
-  `SEO prerender: ${jobPages.length} job pages (${rawJobs.length - jobPages.length} skipped), ${landingPages.length} landing pages, ${PUBLIC_PAGES.length} static pages, sitemap with ${urls.length} URLs.`,
+  `SEO prerender: ${jobPages.length} job pages (${rawJobs.length - jobPages.length} skipped), ${landingPages.length} landing pages, ${blog.ARTICLES.length} articles, ${PUBLIC_PAGES.length} static pages, sitemap with ${urls.length} URLs.`,
 );
