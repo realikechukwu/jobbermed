@@ -62,7 +62,7 @@ export const ARTICLES: Article[] = [
     slug: "healthcare-cv-nigeria",
     title: "How to write a CV for a healthcare job in Nigeria",
     description:
-      "What Nigerian hospitals, clinics and pharmacies look for on a CV, based on 959 healthcare job adverts: licence, NYSC status, numbers and the advert's own words.",
+      "What Nigerian hospitals, clinics and pharmacies look for on a CV, based on more than 900 healthcare job adverts: licence, NYSC status, numbers and the advert's own words.",
     published: "2026-11-10",
     readMinutes: 5,
     body: [
@@ -72,12 +72,12 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "We read healthcare job adverts all day. JobberMed collected 959 of them from five Nigerian job boards between 11 September and 10 November 2026. This guide follows what those adverts ask for.",
+        text: "We read healthcare job adverts all day. JobberMed collected more than 900 of them from five Nigerian job boards between 11 September and 10 November 2026. This guide follows what those adverts ask for.",
       },
       { type: "h2", text: "Put your licence at the top" },
       {
         type: "p",
-        text: "428 of the 959 adverts asked for a licence or registration with a professional council. For doctors and dentists that council is MDCN. For nurses and midwives it is NMCN, for pharmacists PCN, and for medical laboratory scientists MLSCN.",
+        text: "About 45% of the adverts asked for a licence or registration with a professional council. For doctors and dentists that council is MDCN. For nurses and midwives it is NMCN, for pharmacists PCN, and for medical laboratory scientists MLSCN.",
       },
       {
         type: "p",
@@ -87,7 +87,7 @@ export const ARTICLES: Article[] = [
       { type: "h2", text: "Say where you stand on NYSC" },
       {
         type: "p",
-        text: "185 adverts mentioned NYSC. Teaching hospitals ask for a discharge or exemption certificate. Some private pharmacies and laboratories want the opposite and advertise for serving corps members. Either way the employer is sorting applicants by NYSC status, so state yours in one line.",
+        text: "About one in five adverts mentioned NYSC. Teaching hospitals ask for a discharge or exemption certificate. Some private pharmacies and laboratories want the opposite and advertise for serving corps members. Either way the employer is sorting applicants by NYSC status, so state yours in one line.",
       },
       { type: "example", lines: ["NYSC completed, Kaduna State, 2025."] },
       { type: "h2", text: "Describe the work with numbers" },
@@ -159,7 +159,7 @@ export const ARTICLES: Article[] = [
     body: [
       {
         type: "p",
-        text: "JobberMed collected 959 healthcare job adverts from five Nigerian job boards between 11 September and 10 November 2026. 503 of them asked applicants to apply by email. Another 197 pointed to an online recruitment portal.",
+        text: "JobberMed collected more than 900 healthcare job adverts from five Nigerian job boards between 11 September and 10 November 2026. Just over half asked applicants to apply by email. About one in five pointed to an online recruitment portal.",
       },
       {
         type: "p",
@@ -168,7 +168,7 @@ export const ARTICLES: Article[] = [
       { type: "h2", text: "Copy the subject line from the advert" },
       {
         type: "p",
-        text: "284 of the adverts told applicants what to write in the subject line. Most asked for the job title. Some asked for the job title with a location or a reference code.",
+        text: "More than half of the email adverts told applicants what to write in the subject line. Most asked for the job title. Some asked for the job title with a location or a reference code.",
       },
       {
         type: "p",
@@ -209,7 +209,7 @@ export const ARTICLES: Article[] = [
       { type: "h2", text: "Apply in the first few days" },
       {
         type: "p",
-        text: "497 of the adverts gave a closing date. Among the ones we could measure, half closed within 28 days of posting and a quarter closed within 14. The other 462 adverts gave no closing date, so you cannot tell when the employer will stop reading. Treat those as urgent.",
+        text: "About half of the adverts gave a closing date. Among the ones we could measure, half closed within 28 days of posting and a quarter closed within 14. The rest gave no closing date, so you cannot tell when the employer will stop reading. Treat those as urgent.",
       },
       {
         type: "p",
@@ -236,7 +236,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "JobberMed collected 959 healthcare job adverts from five Nigerian job boards between 11 September and 10 November 2026. 118 of them quoted a salary grade and 152 quoted a figure in naira. The other 689 gave no usable pay information.",
+        text: "JobberMed collected more than 900 healthcare job adverts from five Nigerian job boards between 11 September and 10 November 2026. About 12% quoted a salary grade and 16% quoted a figure in naira. The remaining 72% gave no usable pay information.",
       },
       { type: "h2", text: "The two salary structures" },
       {
@@ -250,11 +250,11 @@ export const ARTICLES: Article[] = [
       { type: "h2", text: "Which grades the adverts used for doctors" },
       {
         type: "p",
-        text: "42 adverts quoted CONMESS 2 or CONMESS 3. All but one were residency posts in teaching hospitals, in specialties such as anaesthesia, psychiatry, radiology and internal medicine.",
+        text: "All but one of the adverts that quoted CONMESS 2 or CONMESS 3 were residency posts in teaching hospitals, in specialties such as anaesthesia, psychiatry, radiology and internal medicine.",
       },
       {
         type: "p",
-        text: "27 adverts quoted CONMESS 5 or CONMESS 6, and 25 of those were consultant posts. Three adverts at CONMESS 7 were for a director of medical or health services.",
+        text: "More than 90% of the adverts that quoted CONMESS 5 or CONMESS 6 were consultant posts. Most of the few at CONMESS 7 were for a director of medical or health services.",
       },
       { type: "h2", text: "Which grades the adverts used for other professions" },
       {
@@ -281,11 +281,11 @@ export const ARTICLES: Article[] = [
       { type: "h2", text: "How private pay compares" },
       {
         type: "p",
-        text: "Private employers print naira when they print anything. Ten medical officer adverts stated a salary, and most fell between ₦470,000 and ₦670,000 a month. 22 registered nurse and midwife adverts stated a salary, mostly between ₦125,000 and ₦260,000 a month. 24 adverts for qualified pharmacists stated a salary, mostly between ₦170,000 and ₦300,000 a month.",
+        text: "Private employers print naira when they print anything. Medical officer adverts that stated a salary mostly fell between ₦470,000 and ₦670,000 a month. Registered nurse and midwife adverts mostly fell between ₦125,000 and ₦260,000 a month. Adverts for qualified pharmacists mostly fell between ₦170,000 and ₦300,000 a month.",
       },
       {
         type: "p",
-        text: "These are advertised figures from a small sample, and 105 of the 152 adverts with a naira salary were in Lagos. Use them to judge whether an offer is in the normal range. Do not treat them as a national average.",
+        text: "These are advertised figures from a small sample, a few dozen adverts at most for each profession. About two thirds of the adverts with a naira salary were in Lagos. Use them to judge whether an offer is in the normal range. Do not treat them as a national average.",
       },
       { type: "h2", text: "Show that you qualify for the grade" },
       {
@@ -370,13 +370,13 @@ export const ARTICLES: Article[] = [
     slug: "where-healthcare-jobs-are-nigeria",
     title: "Where Nigeria's healthcare jobs are, by state and profession",
     description:
-      "We counted 959 Nigerian healthcare job adverts by state, employer, profession and pay. Lagos and Abuja had almost half. Elsewhere, teaching hospitals hire in large rounds.",
+      "We counted more than 900 Nigerian healthcare job adverts by state, employer, profession and pay. Lagos and Abuja had almost half. Elsewhere, teaching hospitals hire in large rounds.",
     published: "2026-11-10",
     readMinutes: 6,
     body: [
       {
         type: "p",
-        text: "Between 11 September and 10 November 2026, JobberMed collected 959 healthcare job adverts from five Nigerian job boards. We counted where the jobs were, who posted them and what they paid.",
+        text: "Between 11 September and 10 November 2026, JobberMed collected more than 900 healthcare job adverts from five Nigerian job boards. We counted where the jobs were, who posted them and what they paid.",
       },
       {
         type: "p",
@@ -385,11 +385,11 @@ export const ARTICLES: Article[] = [
       { type: "h2", text: "Almost half the adverts were in Lagos and Abuja" },
       {
         type: "p",
-        text: "Lagos had 292 adverts, which is 30% of the total. Abuja had 179, which is 19%.",
+        text: "Lagos had 30% of the adverts. Abuja had 19%.",
       },
       {
         type: "p",
-        text: "The two cities hire differently. The Lagos adverts came from about 160 employers, so the average employer posted fewer than two. In Abuja, one hospital posted 79 of the 179 adverts. That hospital was the African Medical Centre of Excellence.",
+        text: "The two cities hire differently. The Lagos adverts came from many small employers, and the average employer posted fewer than two. In Abuja, one hospital posted more than 40% of the adverts. That hospital was the African Medical Centre of Excellence.",
       },
       {
         type: "p",
@@ -398,34 +398,34 @@ export const ARTICLES: Article[] = [
       { type: "h2", text: "Outside the two cities, jobs arrive in rounds" },
       {
         type: "p",
-        text: "Plateau State was third with 65 adverts, and 50 of them came from Jos University Teaching Hospital. Ondo State had 43, and 40 came from the Federal Medical Centre in Owo. Anambra State had 43, and 37 came from Nnamdi Azikiwe University Teaching Hospital. Sokoto State had 32, and 25 came from Usmanu Danfodiyo University Teaching Hospital.",
+        text: "Plateau State was third, and about three quarters of its adverts came from Jos University Teaching Hospital. In Ondo State, more than nine in ten came from the Federal Medical Centre in Owo. In Anambra State, more than eight in ten came from Nnamdi Azikiwe University Teaching Hospital. In Sokoto State, about three quarters came from Usmanu Danfodiyo University Teaching Hospital.",
       },
       {
         type: "p",
-        text: "If you want to work in one of these states, a daily look at a job board shows you almost nothing for weeks. Then a federal hospital posts forty vacancies in one notice with one closing date. Learn which federal hospitals are near you, and have your certificates scanned and ready before the notice appears.",
+        text: "If you want to work in one of these states, a daily look at a job board shows you almost nothing for weeks. Then a federal hospital posts dozens of vacancies in one notice with one closing date. Learn which federal hospitals are near you, and have your certificates scanned and ready before the notice appears.",
       },
       { type: "h2", text: "Doctors were the largest group" },
       {
         type: "ul",
         items: [
-          "[Doctors](/doctor-jobs): 241 adverts",
-          "[Nurses and midwives](/nursing-jobs): 152",
-          "[Pharmacists](/pharmacist-jobs): 111",
-          "[Allied health](/allied-health-jobs), such as radiographers and physiotherapists: 95",
-          "[Medical laboratory scientists](/medical-laboratory-scientist-jobs): 91",
-          "[Healthcare management](/healthcare-management-jobs): 49",
-          "[Dentists](/dentist-jobs): 48",
-          "[Public health](/public-health-jobs): 39",
+          "[Doctors](/doctor-jobs): 25% of adverts",
+          "[Nurses and midwives](/nursing-jobs): 16%",
+          "[Pharmacists](/pharmacist-jobs): 12%",
+          "[Allied health](/allied-health-jobs), such as radiographers and physiotherapists: 10%",
+          "[Medical laboratory scientists](/medical-laboratory-scientist-jobs): 9%",
+          "[Healthcare management](/healthcare-management-jobs): 5%",
+          "[Dentists](/dentist-jobs): 5%",
+          "[Public health](/public-health-jobs): 4%",
         ],
       },
       {
         type: "p",
-        text: "The remaining 133 adverts were for other roles inside health organisations, such as HMO officers, front desk staff and medical sales representatives.",
+        text: "The remaining 14% were for other roles inside health organisations, such as HMO officers, front desk staff and medical sales representatives.",
       },
       { type: "h2", text: "Most adverts did not state the pay" },
       {
         type: "p",
-        text: "152 adverts gave a salary in naira, and 105 of those were in Lagos. Another 118 gave a public service grade such as CONMESS 3. The other 689 gave nothing you could compare.",
+        text: "About 16% of the adverts gave a salary in naira, and two thirds of those were in Lagos. Another 12% gave a public service grade such as CONMESS 3. The remaining 72% gave nothing you could compare.",
       },
       {
         type: "p",
@@ -434,7 +434,7 @@ export const ARTICLES: Article[] = [
       { type: "h2", text: "Closing dates were short or missing" },
       {
         type: "p",
-        text: "497 adverts gave a closing date. Among the ones we could measure, half closed within 28 days of posting, and a quarter closed within 14 days. The other 462 adverts gave no closing date at all.",
+        text: "About half of the adverts gave a closing date. Among the ones we could measure, half closed within 28 days of posting, and a quarter closed within 14 days. The rest gave no closing date at all.",
       },
       { type: "h2", text: "What to do with these numbers" },
       {
