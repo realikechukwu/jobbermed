@@ -1,4 +1,4 @@
-import { CV_MATCH_URL } from "../../blog/articles";
+import { buildCvMatchUrl } from "../cv-match";
 import { useRef, type MouseEvent } from "react";
 import { useFocusTrap } from "../../../hooks/useFocusTrap";
 import { SOURCE_LABELS } from "../constants";
@@ -154,7 +154,7 @@ export function AggregatorDetailPanel({
           <div className="aggregator-notice detail-cv-match">
             <strong>Before you apply</strong>
             <p>
-              Check your CV against this advert with <a href={CV_MATCH_URL}>CV Match</a>. It scores the match, shows
+              Check your CV against this advert with <a href={buildCvMatchUrl(job)}>CV Match</a>. It scores the match, shows
               what is missing and rewrites your CV as a PDF. Free, no account needed.
             </p>
           </div>
