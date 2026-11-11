@@ -327,10 +327,12 @@ export function HomePage() {
     </>
   );
 
-  const specialtyCount = useMemo(
-    () => new Set(allActiveJobs.map((job) => normalizeCategory(job))).size,
-    [allActiveJobs],
-  );
+  // "Others" is a catch-all holding several specialties, so when it's present
+  // the true count is at least one more than the number of groups: show "N+".
+  const specialtyLabel = useMemo(() => {
+    const groups = new Set(allActiveJobs.map((job) => normalizeCategory(job)));
+    return groups.has("Others") ? `${groups.size + 1}+` : String(groups.size);
+  }, [allActiveJobs]);
   const boardCount = useMemo(
     () => new Set(allActiveJobs.filter((job) => !isDirectJob(job)).map((job) => job._source).filter(Boolean)).size,
     [allActiveJobs],
@@ -349,7 +351,7 @@ export function HomePage() {
         <strong>{sourceCounts.all}</strong> live roles
       </li>
       <li>
-        <strong>{specialtyCount}</strong> specialties
+        <strong>{specialtyLabel}</strong> specialties
       </li>
       <li>
         <strong>{boardCount}</strong> job boards
