@@ -389,13 +389,6 @@ export function HomePage() {
               includeNumbers
               onPageChange={setCurrentPage}
             />
-
-            <LandingBrowseLinks
-              activeCategory={activeCategory}
-              activeLocation={activeLocation}
-              categoryCounts={categoryCounts}
-              locationCounts={locationCounts}
-            />
           </>
         ) : null}
 
@@ -411,7 +404,16 @@ export function HomePage() {
         onToggleSave={toggleSavedJob}
       />
 
-      <FooterShell />
+      <FooterShell>
+        {!error && !isLoading ? (
+          <LandingBrowseLinks
+            activeCategory={activeCategory}
+            activeLocation={activeLocation}
+            categoryCounts={categoryCounts}
+            locationCounts={locationCounts}
+          />
+        ) : null}
+      </FooterShell>
       <AggregatorScrollTopButton />
     </div>
   );

@@ -1,8 +1,9 @@
+import type { ReactNode } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useSession } from "../features/auth/session-context";
 import { getSiteNavLinks, isSiteNavLinkActive, type SiteNavState } from "../navigation/site-nav";
 
-export function FooterShell() {
+export function FooterShell({ children }: { children?: ReactNode }) {
   const { user, roles } = useSession();
   const location = useLocation();
 
@@ -15,7 +16,8 @@ export function FooterShell() {
 
   return (
     <footer className="footer-strip" aria-label="Footer">
-      <div className="footer-inner">
+      {children ? <div className="footer-browse">{children}</div> : null}
+      <nav className="footer-inner" aria-label="Site links">
         {footerLinks.map((link) => {
           if (link.kind === "external") {
             return (
@@ -33,7 +35,7 @@ export function FooterShell() {
             </Link>
           );
         })}
-      </div>
+      </nav>
     </footer>
   );
 }
