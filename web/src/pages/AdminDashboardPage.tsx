@@ -81,7 +81,13 @@ export function AdminDashboardPage() {
       <section className="shell-content" aria-label="Pending access requests">
         <CardPrimitive
           title="Access requests"
-          meta={isLoading ? "Loading..." : `${requests.length} pending, oldest first. Approving a request gives that person the role straight away.`}
+          meta={
+            isLoading
+              ? "Loading..."
+              : requests.length === 0
+                ? "No requests are waiting."
+                : `${requests.length} pending, oldest first. Approving a request gives that person the role straight away.`
+          }
         >
           {error ? <p className="native-form-message native-form-error">{error}</p> : null}
           {notice ? <p className="native-form-message native-form-success">{notice}</p> : null}

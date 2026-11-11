@@ -129,7 +129,7 @@ export function RecruiterJobNewPage() {
   }
 
   return (
-    <RouteShell title="Post a Direct Apply job" subtitle="Create a direct-apply listing for candidates.">
+    <RouteShell title="Post a Direct Apply job" subtitle="Candidates apply to this job right here on JobberMed.">
       <section className="shell-content" aria-label="Create Direct Apply job">
         <CardPrimitive title="New Direct Apply job">
           <form className="shell-form" onSubmit={handleSubmit}>

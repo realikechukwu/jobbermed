@@ -59,7 +59,7 @@ export function RecruiterDashboardPage() {
           <div className="dashboard-card-head">
             <div>
               <h2 className="title">My jobs</h2>
-              <p className="meta">{isLoading ? "Loading..." : `${jobCountText}, newest first.`}</p>
+              <p className="meta">{isLoading ? "Loading..." : jobs.length === 0 ? "No jobs yet." : `${jobCountText}, newest first.`}</p>
             </div>
             <Link className="shell-button dashboard-link dashboard-link-primary" to="/recruiter/jobs/new">
               Post a job

@@ -113,7 +113,9 @@ export function MdcnDashboardPage() {
           meta={
             isLoading
               ? "Loading..."
-              : `${applications.length} ${applications.length === 1 ? "application" : "applications"}, newest first. Pick a new status, then press Save on that row.`
+              : applications.length === 0
+                ? "No applications are waiting."
+                : `${applications.length} ${applications.length === 1 ? "application" : "applications"}, newest first. Pick a new status, then press Save on that row.`
           }
         >
           {error ? <p className="native-form-message native-form-error">{error}</p> : null}

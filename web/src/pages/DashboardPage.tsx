@@ -185,7 +185,7 @@ export function DashboardPage() {
     : "Weekly (default)";
   const categoriesSummary = preferences.personalizeEnabled
     ? summarizeCategorySelections(preferences.categories)
-    : "All categories";
+    : "All specialties";
   const locationsSummary = preferences.personalizeEnabled
     ? summarizeLocationSelections(preferences.locations)
     : "All locations";
