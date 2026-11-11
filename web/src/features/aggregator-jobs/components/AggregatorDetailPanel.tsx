@@ -164,23 +164,6 @@ export function AggregatorDetailPanel({
           </section>
         ) : null}
 
-        {applyUrl ? (
-          <a className="detail-cta" id="detailCTA" href={applyUrl} target="_blank" rel="noopener noreferrer">
-            View Original Posting
-          </a>
-        ) : (
-          <a
-            className="detail-cta disabled"
-            id="detailCTA"
-            href="#"
-            onClick={(event) => {
-              event.preventDefault();
-            }}
-          >
-            No application link available
-          </a>
-        )}
-
         <div className="detail-listing-info">
           <p className="detail-source">
             Source: <span id="detailSource">{sourceLabel}</span>
@@ -189,6 +172,26 @@ export function AggregatorDetailPanel({
             <strong>About this listing:</strong> JobberMed aggregates medical jobs from multiple sources. We are not the
             employer. View the original posting for application instructions, contact details, and full job information.
           </p>
+        </div>
+
+        {/* Last in the panel and sticky, so the way to apply is always in view. */}
+        <div className="detail-cta-bar">
+          {applyUrl ? (
+            <a className="detail-cta" id="detailCTA" href={applyUrl} target="_blank" rel="noopener noreferrer">
+              View Original Posting
+            </a>
+          ) : (
+            <a
+              className="detail-cta disabled"
+              id="detailCTA"
+              href="#"
+              onClick={(event) => {
+                event.preventDefault();
+              }}
+            >
+              No application link available
+            </a>
+          )}
         </div>
       </aside>
     </>

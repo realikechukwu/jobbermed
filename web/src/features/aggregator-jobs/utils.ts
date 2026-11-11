@@ -371,7 +371,12 @@ export function getLocationBuckets(location: string): string[] {
   };
 
   const buckets = new Set<string>();
-  const isNigeria = hasWord("nigeria") || NIGERIAN_STATES.some((state) => hasWord(state.toLowerCase()));
+  // A known Nigerian city counts too, so "Wuse, Abuja" or "Abuja (FCT)" land in
+  // the FCT bucket instead of becoming their own one-off locations.
+  const isNigeria =
+    hasWord("nigeria") ||
+    NIGERIAN_STATES.some((state) => hasWord(state.toLowerCase())) ||
+    Object.keys(CITY_TO_STATE).some((city) => hasWord(city));
 
   if (isNigeria) {
     NIGERIAN_STATES.forEach((state) => {
@@ -413,6 +418,44 @@ export function getLocationBuckets(location: string): string[] {
   }
 
   return [raw];
+}
+
+export const JOB_TYPE_FILTERS = [
+  { value: "full-time", label: "Full-time" },
+  { value: "part-time", label: "Part-time" },
+  { value: "contract", label: "Contract & locum" },
+  { value: "internship", label: "Internship & NYSC" },
+  { value: "volunteer", label: "Volunteer" },
+] as const;
+
+export type JobTypeFilter = (typeof JOB_TYPE_FILTERS)[number]["value"];
+
+/** Maps the free-text job type from a listing onto one filter group, or "" when unknown. */
+export function getJobTypeGroup(jobType: string): JobTypeFilter | "" {
+  const lower = safeText(jobType).toLowerCase();
+  if (!lower) {
+    return "";
+  }
+  if (/part[\s-]?time/.test(lower)) {
+    return "part-time";
+  }
+  if (/intern|nysc|houseman/.test(lower)) {
+    return "internship";
+  }
+  if (/volunteer/.test(lower)) {
+    return "volunteer";
+  }
+  if (/contract|temporary|locum/.test(lower)) {
+    return "contract";
+  }
+  if (/full[\s-]?time|permanent/.test(lower)) {
+    return "full-time";
+  }
+  return "";
+}
+
+export function hasListedSalary(salary: string): boolean {
+  return /\d/.test(safeText(salary));
 }
 
 export function interleaveBySource<T extends AggregatorJob>(list: T[]): T[] {

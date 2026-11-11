@@ -9,6 +9,8 @@ type AggregatorJobsGridProps = {
   onOpenDetail: (job: UnifiedJob) => void;
   hasActiveFilters?: boolean;
   onClearFilters?: () => void;
+  /** True when only Direct Apply jobs are being shown. */
+  directOnly?: boolean;
 };
 
 export function AggregatorJobsGrid({
@@ -19,6 +21,7 @@ export function AggregatorJobsGrid({
   onOpenDetail,
   hasActiveFilters = false,
   onClearFilters,
+  directOnly = false,
 }: AggregatorJobsGridProps) {
   if (jobs.length === 0) {
     return (
@@ -35,11 +38,15 @@ export function AggregatorJobsGrid({
           </div>
         ) : (
           <div className="empty-state">
-            <strong>No jobs found</strong>
-            <span>Try adjusting your filters or search</span>
+            <strong>{directOnly ? "No Direct Apply jobs match right now" : "No jobs found"}</strong>
+            <span>
+              {directOnly
+                ? "Direct Apply roles are posted by employers on JobberMed. Listings from other job boards are still available."
+                : "Try adjusting your filters or search"}
+            </span>
             {hasActiveFilters && onClearFilters ? (
               <button className="empty-state-action" type="button" onClick={onClearFilters}>
-                Clear all filters
+                {directOnly ? "Browse all jobs" : "Clear all filters"}
               </button>
             ) : null}
           </div>

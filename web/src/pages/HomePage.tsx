@@ -18,7 +18,15 @@ import { isDirectJob, type UnifiedJob } from "../features/jobs/unify";
 import { useDetailPanel } from "../features/aggregator-jobs/hooks/useDetailPanel";
 import { useSavedJobsLocal } from "../features/aggregator-jobs/hooks/useSavedJobsLocal";
 import type { CategoryCounts, LocationCounts } from "../features/aggregator-jobs/types";
-import { getJobPageSlug, interleaveBySource, isExpired, normalizeCategory, safeText } from "../features/aggregator-jobs/utils";
+import {
+  getJobPageSlug,
+  getJobTypeGroup,
+  hasListedSalary,
+  interleaveBySource,
+  isExpired,
+  normalizeCategory,
+  safeText,
+} from "../features/aggregator-jobs/utils";
 import { applyPageMeta } from "../lib/seo";
 import "../styles/aggregator-home.css";
 
@@ -64,6 +72,12 @@ export function HomePage() {
     savedOnly,
     currentPage,
     activeSource,
+    activeJobType,
+    salaryOnly,
+    activeSort,
+    setActiveJobType,
+    setSalaryOnly,
+    setActiveSort,
     setActiveCategory,
     setActiveLocation,
     setKeywordQuery,
@@ -149,6 +163,16 @@ export function HomePage() {
     [locationCounts],
   );
 
+  // The busiest locations, repeated at the top of the dropdown.
+  const popularLocations = useMemo(
+    () =>
+      Object.entries(locationCounts)
+        .sort((left, right) => right[1] - left[1] || left[0].localeCompare(right[0]))
+        .slice(0, 5)
+        .map(([location]) => location),
+    [locationCounts],
+  );
+
   useEffect(() => {
     if (isLoading || error) {
       return;
@@ -180,13 +204,40 @@ export function HomePage() {
       list = list.filter((job) => isSaved(job._id, job._slug));
     }
 
+    if (activeJobType) {
+      list = list.filter((job) => getJobTypeGroup(job.job_type) === activeJobType);
+    }
+
+    if (salaryOnly) {
+      list = list.filter((job) => hasListedSalary(job.salary));
+    }
+
     list = list.filter((job) => !isExpired(job.deadline));
+
+    if (activeSort === "newest") {
+      return [...list].sort((left, right) => safeText(right.date_posted).localeCompare(safeText(left.date_posted)));
+    }
+
+    if (activeSort === "closing") {
+      // Listings without a deadline go last, newest first among themselves.
+      return [...list].sort((left, right) => {
+        const leftDeadline = safeText(left.deadline);
+        const rightDeadline = safeText(right.deadline);
+        if (leftDeadline && rightDeadline) {
+          return leftDeadline.localeCompare(rightDeadline);
+        }
+        if (leftDeadline || rightDeadline) {
+          return leftDeadline ? -1 : 1;
+        }
+        return safeText(right.date_posted).localeCompare(safeText(left.date_posted));
+      });
+    }
 
     // Direct Apply jobs lead the interleave order so they surface on page 1.
     const directJobs = list.filter((job) => isDirectJob(job));
     const externalJobs = list.filter((job) => !isDirectJob(job));
     return interleaveBySource([...directJobs, ...externalJobs]);
-  }, [activeCategory, activeLocation, sourceJobs, keywordQuery, savedOnly, isSaved]);
+  }, [activeCategory, activeLocation, sourceJobs, keywordQuery, savedOnly, isSaved, activeJobType, salaryOnly, activeSort]);
 
   const totalPages = useMemo(() => Math.ceil(filteredJobs.length / PAGE_SIZE), [filteredJobs.length]);
 
@@ -377,7 +428,15 @@ export function HomePage() {
           categoryCounts={categoryCounts}
           activeCategory={activeCategory}
           onCategoryChange={setActiveCategory}
+          isLoading={isLoading}
           locationOptions={locationOptions}
+          popularLocations={popularLocations}
+          activeJobType={activeJobType}
+          onJobTypeChange={setActiveJobType}
+          salaryOnly={salaryOnly}
+          onToggleSalary={() => setSalaryOnly(!salaryOnly)}
+          activeSort={activeSort}
+          onSortChange={setActiveSort}
           locationCounts={locationCounts}
           activeLocation={activeLocation}
           onLocationChange={setActiveLocation}
@@ -390,7 +449,12 @@ export function HomePage() {
           onClearAll={clearAllFilters}
         />
 
-        <AggregatorStats jobCountLabel={jobCountLabel} headingText={resultsHeadingText} metaParts={resultsMetaParts} />
+        <AggregatorStats
+          isLoading={isLoading}
+          jobCountLabel={jobCountLabel}
+          headingText={resultsHeadingText}
+          metaParts={resultsMetaParts}
+        />
 
         {directJobsError ? <p className="aggregator-source-notice">{directJobsError}</p> : null}
 
@@ -401,8 +465,19 @@ export function HomePage() {
         ) : null}
 
         {!error && isLoading ? (
-          <main className="grid" id="grid">
-            <p className="aggregator-load-state">Loading jobs...</p>
+          <main className="grid" id="grid" aria-busy="true">
+            <span className="sr-only">Loading jobs</span>
+            {Array.from({ length: 6 }, (_, index) => (
+              <div className="card job-card job-card-skeleton" key={index} aria-hidden="true">
+                <div className="skeleton-row">
+                  <span className="skeleton skeleton-avatar" />
+                  <span className="skeleton skeleton-line" style={{ width: "55%" }} />
+                </div>
+                <span className="skeleton skeleton-line skeleton-title" style={{ width: "70%" }} />
+                <span className="skeleton skeleton-line" style={{ width: "40%" }} />
+                <span className="skeleton skeleton-line" style={{ width: "100%", height: 34 }} />
+              </div>
+            ))}
           </main>
         ) : null}
 
@@ -416,6 +491,7 @@ export function HomePage() {
               onOpenDetail={openJobDetail}
               hasActiveFilters={hasActiveFilters}
               onClearFilters={clearAllFilters}
+              directOnly={activeSource === "direct"}
             />
 
             <AggregatorPagination

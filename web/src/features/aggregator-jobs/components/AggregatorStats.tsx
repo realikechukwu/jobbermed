@@ -1,4 +1,5 @@
 type AggregatorStatsProps = {
+  isLoading?: boolean;
   jobCountLabel: string;
   /** Words after the number, e.g. "nursing & midwifery jobs in Lagos". */
   headingText: string;
@@ -6,7 +7,18 @@ type AggregatorStatsProps = {
   metaParts: string[];
 };
 
-export function AggregatorStats({ jobCountLabel, headingText, metaParts }: AggregatorStatsProps) {
+export function AggregatorStats({ isLoading = false, jobCountLabel, headingText, metaParts }: AggregatorStatsProps) {
+  if (isLoading) {
+    return (
+      <div className="results-bar" id="results" aria-live="polite">
+        <h2 className="results-count" id="stat-count">
+          <span className="sr-only">Loading jobs</span>
+          <span className="skeleton skeleton-heading" aria-hidden="true" />
+        </h2>
+      </div>
+    );
+  }
+
   return (
     <div className="results-bar" id="results" aria-live="polite">
       <h2 className="results-count" id="stat-count">

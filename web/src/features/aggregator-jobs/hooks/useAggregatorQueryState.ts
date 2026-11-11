@@ -2,11 +2,13 @@ import { useCallback, useMemo } from "react";
 import { useLocation, useNavigate, useSearchParams } from "react-router-dom";
 import { ALL_CATEGORY, ALL_LOCATIONS } from "../constants";
 import { buildLandingPath, parseLandingPath } from "../landing";
-import { safeText } from "../utils";
+import { JOB_TYPE_FILTERS, safeText, type JobTypeFilter } from "../utils";
 
 type ParamMutator = (params: URLSearchParams) => void;
 
 export type JobSourceFilter = "all" | "direct" | "external";
+
+export type JobSort = "recommended" | "newest" | "closing";
 
 type AggregatorQueryState = {
   activeCategory: string;
@@ -15,6 +17,12 @@ type AggregatorQueryState = {
   savedOnly: boolean;
   currentPage: number;
   activeSource: JobSourceFilter;
+  activeJobType: JobTypeFilter | "";
+  salaryOnly: boolean;
+  activeSort: JobSort;
+  setActiveJobType: (jobType: JobTypeFilter | "") => void;
+  setSalaryOnly: (nextSalaryOnly: boolean) => void;
+  setActiveSort: (sort: JobSort) => void;
   setActiveCategory: (category: string) => void;
   setActiveLocation: (location: string) => void;
   setKeywordQuery: (keyword: string) => void;
@@ -31,6 +39,17 @@ function parseSource(value: string): JobSourceFilter {
     return value;
   }
   return "all";
+}
+
+function parseJobType(value: string): JobTypeFilter | "" {
+  return JOB_TYPE_FILTERS.find((option) => option.value === value)?.value ?? "";
+}
+
+function parseSort(value: string): JobSort {
+  if (value === "newest" || value === "closing") {
+    return value;
+  }
+  return "recommended";
 }
 
 function parsePage(value: string): number {
@@ -62,6 +81,9 @@ export function useAggregatorQueryState(): AggregatorQueryState {
   const savedOnly = useMemo(() => searchParams.get("saved") === "1", [searchParams]);
   const currentPage = useMemo(() => parsePage(safeText(searchParams.get("page"))), [searchParams]);
   const activeSource = useMemo(() => parseSource(safeText(searchParams.get("source"))), [searchParams]);
+  const activeJobType = useMemo(() => parseJobType(safeText(searchParams.get("type"))), [searchParams]);
+  const salaryOnly = useMemo(() => searchParams.get("salary") === "1", [searchParams]);
+  const activeSort = useMemo(() => parseSort(safeText(searchParams.get("sort"))), [searchParams]);
 
   const updateParams = useCallback(
     (mutator: ParamMutator) => {
@@ -166,6 +188,45 @@ export function useAggregatorQueryState(): AggregatorQueryState {
     [updateFilterParams],
   );
 
+  const setActiveJobType = useCallback(
+    (jobType: JobTypeFilter | "") => {
+      updateFilterParams((params) => {
+        if (jobType) {
+          params.set("type", jobType);
+        } else {
+          params.delete("type");
+        }
+      });
+    },
+    [updateFilterParams],
+  );
+
+  const setSalaryOnly = useCallback(
+    (nextSalaryOnly: boolean) => {
+      updateFilterParams((params) => {
+        if (nextSalaryOnly) {
+          params.set("salary", "1");
+        } else {
+          params.delete("salary");
+        }
+      });
+    },
+    [updateFilterParams],
+  );
+
+  const setActiveSort = useCallback(
+    (sort: JobSort) => {
+      updateFilterParams((params) => {
+        if (sort === "recommended") {
+          params.delete("sort");
+        } else {
+          params.set("sort", sort);
+        }
+      });
+    },
+    [updateFilterParams],
+  );
+
   const setCurrentPage = useCallback(
     (nextPage: number) => {
       if (!Number.isFinite(nextPage)) {
@@ -189,11 +250,13 @@ export function useAggregatorQueryState(): AggregatorQueryState {
     activeLocation !== ALL_LOCATIONS ||
     keywordQuery.length > 0 ||
     savedOnly ||
+    salaryOnly ||
+    activeJobType !== "" ||
     activeSource !== "all";
 
   const clearAllFilters = useCallback(() => {
     const params = new URLSearchParams(searchParams);
-    ["category", "loc", "q", "saved", "source", "page"].forEach((key) => params.delete(key));
+    ["category", "loc", "q", "saved", "source", "type", "salary", "page"].forEach((key) => params.delete(key));
     const search = params.toString();
     navigate({ pathname: landing ? "/" : pathname, search: search ? `?${search}` : "" }, { replace: true });
   }, [landing, navigate, pathname, searchParams]);
@@ -205,6 +268,12 @@ export function useAggregatorQueryState(): AggregatorQueryState {
     savedOnly,
     currentPage,
     activeSource,
+    activeJobType,
+    salaryOnly,
+    activeSort,
+    setActiveJobType,
+    setSalaryOnly,
+    setActiveSort,
     setActiveCategory,
     setActiveLocation,
     setKeywordQuery,
