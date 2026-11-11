@@ -1,3 +1,4 @@
+import { ALL_CATEGORY, ALL_LOCATIONS } from "../constants";
 import type { JobSourceFilter } from "../hooks/useAggregatorQueryState";
 import { type CategoryCounts, type LocationCounts } from "../types";
 
@@ -22,6 +23,10 @@ type AggregatorFiltersProps = {
   savedOnly: boolean;
   savedCount: number;
   onToggleSaved: () => void;
+  keywordQuery: string;
+  onClearKeyword: () => void;
+  hasActiveFilters: boolean;
+  onClearAll: () => void;
 };
 
 const SOURCE_OPTIONS: Array<{ value: JobSourceFilter; label: string }> = [
@@ -52,7 +57,15 @@ export function AggregatorFilters({
   savedOnly,
   savedCount,
   onToggleSaved,
+  keywordQuery,
+  onClearKeyword,
+  hasActiveFilters,
+  onClearAll,
 }: AggregatorFiltersProps) {
+  const hasKeyword = keywordQuery.trim().length > 0;
+  const hasRole = activeCategory !== ALL_CATEGORY;
+  const hasLocation = activeLocation !== ALL_LOCATIONS;
+
   return (
     <>
       <nav className="stories" id="filters" aria-label="Filter by specialty">
@@ -131,6 +144,47 @@ export function AggregatorFilters({
           </button>
         </div>
       </div>
+
+      {hasActiveFilters ? (
+        <div className="active-filters" aria-label="Active filters">
+          {hasKeyword ? (
+            <button
+              className="filter-chip"
+              type="button"
+              aria-label={`Remove search: ${keywordQuery}`}
+              onClick={onClearKeyword}
+            >
+              “{keywordQuery}”
+              <span className="filter-chip-x" aria-hidden="true">×</span>
+            </button>
+          ) : null}
+          {hasRole ? (
+            <button
+              className="filter-chip"
+              type="button"
+              aria-label={`Remove role filter: ${activeCategory}`}
+              onClick={() => onCategoryChange(ALL_CATEGORY)}
+            >
+              {CATEGORY_SHORT_LABELS[activeCategory] ?? activeCategory}
+              <span className="filter-chip-x" aria-hidden="true">×</span>
+            </button>
+          ) : null}
+          {hasLocation ? (
+            <button
+              className="filter-chip"
+              type="button"
+              aria-label={`Remove location filter: ${activeLocation}`}
+              onClick={() => onLocationChange(ALL_LOCATIONS)}
+            >
+              {activeLocation}
+              <span className="filter-chip-x" aria-hidden="true">×</span>
+            </button>
+          ) : null}
+          <button className="filter-clear-all" type="button" onClick={onClearAll}>
+            Clear all filters
+          </button>
+        </div>
+      ) : null}
     </>
   );
 }

@@ -1,4 +1,5 @@
-import { useCallback, useEffect, useMemo } from "react";
+import { useCallback, useEffect, useMemo, useRef } from "react";
+import { buildPostedRangeText, buildResultsHeadingText, buildUpdatedText } from "../features/aggregator-jobs/results-summary";
 import { useNavigate } from "react-router-dom";
 import { AggregatorDetailPanel } from "../features/aggregator-jobs/components/AggregatorDetailPanel";
 import { AggregatorFilters } from "../features/aggregator-jobs/components/AggregatorFilters";
@@ -17,7 +18,7 @@ import { isDirectJob, type UnifiedJob } from "../features/jobs/unify";
 import { useDetailPanel } from "../features/aggregator-jobs/hooks/useDetailPanel";
 import { useSavedJobsLocal } from "../features/aggregator-jobs/hooks/useSavedJobsLocal";
 import type { CategoryCounts, LocationCounts } from "../features/aggregator-jobs/types";
-import { formatDate, getJobPageSlug, interleaveBySource, isExpired, normalizeCategory, safeText } from "../features/aggregator-jobs/utils";
+import { getJobPageSlug, interleaveBySource, isExpired, normalizeCategory, safeText } from "../features/aggregator-jobs/utils";
 import { applyPageMeta } from "../lib/seo";
 import "../styles/aggregator-home.css";
 
@@ -50,21 +51,6 @@ function buildLocationCounts(activeJobs: Array<{ _locationBuckets: string[] }>):
   });
 
   return counts;
-}
-
-function buildListingsPeriodLabel(datesList: Array<{ date_posted: string }>): string {
-  const dates = datesList
-    .map((job) => safeText(job.date_posted))
-    .filter((date) => date.length > 0)
-    .sort();
-
-  if (dates.length === 0) {
-    return "Unknown";
-  }
-
-  const oldest = formatDate(dates[0]) ?? dates[0];
-  const newest = formatDate(dates[dates.length - 1]) ?? dates[dates.length - 1];
-  return `${oldest} to ${newest}`;
 }
 
 export function HomePage() {
@@ -226,21 +212,35 @@ export function HomePage() {
   }, [currentPage, filteredJobs]);
 
   const jobCountLabel = isLoading ? "-" : String(filteredJobs.length);
-  const listingsPeriodLabel = isLoading ? "-" : buildListingsPeriodLabel(filteredJobs);
 
-  const updatedLabel = useMemo(() => {
+  const resultsHeadingText = buildResultsHeadingText({
+    count: filteredJobs.length,
+    category: activeCategory,
+    location: activeLocation,
+    keyword: keywordQuery,
+    source: activeSource,
+    savedOnly,
+  });
+
+  const resultsMetaParts = useMemo(() => {
+    if (isLoading) {
+      return [];
+    }
+
     const latest = jobs
       .map((job) => safeText(job.date_posted))
       .filter((date) => date.length > 0)
       .sort()
       .pop();
+    const oldestShown = filteredJobs
+      .map((job) => safeText(job.date_posted))
+      .filter((date) => date.length > 0)
+      .sort()[0];
 
-    if (!latest) {
-      return "Live jobs";
-    }
-
-    return `Live jobs - updated ${formatDate(latest) ?? latest}`;
-  }, [jobs]);
+    return [buildUpdatedText(latest), buildPostedRangeText(oldestShown)].filter(
+      (part): part is string => Boolean(part),
+    );
+  }, [filteredJobs, isLoading, jobs]);
 
   // Set when the active specialty/location pair has its own landing page.
   const landingMeta = useMemo(() => {
@@ -273,27 +273,58 @@ export function HomePage() {
 
   const hasKeyword = keywordQuery.trim().length > 0;
 
+  const searchInputRef = useRef<HTMLInputElement>(null);
+
+  const showResults = useCallback(() => {
+    // Close the mobile keyboard, then bring the results into view so the
+    // user can see the search did something.
+    searchInputRef.current?.blur();
+    document.getElementById("results")?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, []);
+
   const heroSearch = (
-    <div className="hero-search" role="search">
-      <svg className="hero-search-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
-        <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" strokeWidth="2" />
-        <path d="M20 20l-3.5-3.5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-      </svg>
-      <input
-        id="keywordSearch"
-        className="hero-search-input"
-        type="search"
-        placeholder="Search roles or hospitals"
-        aria-label="Search jobs by keyword"
-        value={keywordQuery}
-        onChange={(event) => setKeywordQuery(event.target.value)}
-      />
-      {hasKeyword ? (
-        <button className="hero-search-clear" type="button" aria-label="Clear search" onClick={clearKeyword}>
-          Clear
+    <>
+      <form
+        className="hero-search"
+        role="search"
+        onSubmit={(event) => {
+          event.preventDefault();
+          showResults();
+        }}
+      >
+        <svg className="hero-search-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+          <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" strokeWidth="2" />
+          <path d="M20 20l-3.5-3.5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+        </svg>
+        <input
+          ref={searchInputRef}
+          id="keywordSearch"
+          className={`hero-search-input${hasKeyword ? " has-keyword" : ""}`}
+          type="search"
+          enterKeyHint="search"
+          placeholder="Search roles or hospitals"
+          aria-label="Search jobs by keyword"
+          value={keywordQuery}
+          onChange={(event) => setKeywordQuery(event.target.value)}
+        />
+        <div className="hero-search-actions">
+          {hasKeyword ? (
+            <button className="hero-search-clear" type="button" aria-label="Clear search" onClick={clearKeyword}>
+              ×
+            </button>
+          ) : null}
+          <button className="hero-search-submit" type="submit">
+            Search
+          </button>
+        </div>
+      </form>
+      {hasKeyword && !isLoading ? (
+        <button className="hero-search-hint" type="button" onClick={showResults} aria-live="polite">
+          <strong>{filteredJobs.length}</strong> {filteredJobs.length === 1 ? "job matches" : "jobs match"} “{keywordQuery}”
+          <span aria-hidden="true"> · See results ↓</span>
         </button>
       ) : null}
-    </div>
+    </>
   );
 
   const specialtyCount = useMemo(
@@ -351,9 +382,13 @@ export function HomePage() {
           savedOnly={savedOnly}
           savedCount={savedCount}
           onToggleSaved={() => setSavedOnly(!savedOnly)}
+          keywordQuery={keywordQuery}
+          onClearKeyword={clearKeyword}
+          hasActiveFilters={hasActiveFilters}
+          onClearAll={clearAllFilters}
         />
 
-        <AggregatorStats jobCountLabel={jobCountLabel} updatedLabel={updatedLabel} listingsPeriodLabel={listingsPeriodLabel} />
+        <AggregatorStats jobCountLabel={jobCountLabel} headingText={resultsHeadingText} metaParts={resultsMetaParts} />
 
         {directJobsError ? <p className="aggregator-source-notice">{directJobsError}</p> : null}
 

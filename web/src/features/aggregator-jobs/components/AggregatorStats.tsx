@@ -1,19 +1,22 @@
 type AggregatorStatsProps = {
   jobCountLabel: string;
-  updatedLabel: string;
-  listingsPeriodLabel: string;
+  /** Words after the number, e.g. "nursing & midwifery jobs in Lagos". */
+  headingText: string;
+  /** e.g. ["Updated today", "Posted in the last 8 weeks"] */
+  metaParts: string[];
 };
 
-export function AggregatorStats({ jobCountLabel, updatedLabel, listingsPeriodLabel }: AggregatorStatsProps) {
+export function AggregatorStats({ jobCountLabel, headingText, metaParts }: AggregatorStatsProps) {
   return (
-    <div className="results-bar" aria-live="polite">
+    <div className="results-bar" id="results" aria-live="polite">
       <h2 className="results-count" id="stat-count">
-        <strong>{jobCountLabel}</strong> {jobCountLabel === "1" ? "job" : "jobs"}
+        <strong>{jobCountLabel}</strong> {headingText}
       </h2>
-      <p className="results-meta" id="stat-range">
-        <span>{updatedLabel}</span>
-        <span>{`Listings from ${listingsPeriodLabel}`}</span>
-      </p>
+      {metaParts.length > 0 ? (
+        <p className="results-meta" id="stat-range">
+          {metaParts.join(" · ")}
+        </p>
+      ) : null}
     </div>
   );
 }

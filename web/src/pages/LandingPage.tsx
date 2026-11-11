@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { FooterShell } from "../components/FooterShell";
 import "../styles/landing.css";
 
 const ROLES = ["Doctors", "Nurses", "Pharmacists", "Med Lab", "Radiographers", "Dentists", "Allied Health"];
@@ -269,15 +270,7 @@ export function LandingPage() {
       </section>
 
       {/* ── Footer ── */}
-      <footer className="footer-strip">
-        <div className="landing-footer-inner">
-          <div className="footer-inner">
-            <a className="footer-link" href="https://jobbermed.com/">Home</a>
-            <a className="footer-link" href="https://jobbermed.com/about">About</a>
-          </div>
-          <p className="landing-footer-copy">&copy; JobberMed 2026</p>
-        </div>
-      </footer>
+      <FooterShell />
     </div>
   );
 }
