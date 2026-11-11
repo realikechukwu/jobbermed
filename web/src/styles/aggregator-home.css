@@ -10,7 +10,6 @@
   --glass-line: rgba(255, 255, 255, 0.28);
   --on-photo: #ffffff;
   --on-photo-muted: rgba(255, 255, 255, 0.84);
-  --brand-gradient: linear-gradient(135deg, var(--med) 0%, var(--jobber) 100%);
   --story-gradient: linear-gradient(135deg, var(--med) 0%, var(--jobber) 100%);
   --max-width: 1180px;
   color: var(--ink);
@@ -36,7 +35,7 @@
   max-width: calc(var(--max-width) + 40px);
   margin: 0 auto;
   width: calc(100% - 24px);
-  border-radius: 32px;
+  border-radius: var(--radius-lg);
   overflow: hidden;
   color: var(--on-photo);
   background:
@@ -51,7 +50,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  border-radius: 999px;
+  border-radius: var(--radius-md);
   /* Tinted so links stay readable over the bright side of the photo. */
   background: rgba(14, 8, 70, 0.42);
   border: 1px solid var(--glass-line);
@@ -193,7 +192,7 @@
 .aggregator-home .hero-search-input {
   width: 100%;
   padding: 16px 104px 16px 50px;
-  border-radius: 999px;
+  border-radius: var(--radius-md);
   border: 1px solid var(--glass-line);
   background: var(--glass);
   -webkit-backdrop-filter: blur(18px) saturate(1.4);
@@ -234,7 +233,7 @@
   color: var(--on-photo);
   width: 34px;
   height: 34px;
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   font-size: 1.3rem;
   line-height: 1;
   cursor: pointer;
@@ -248,7 +247,7 @@
   border: 0;
   background: var(--on-photo);
   color: var(--ink);
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   padding: 10px 18px;
   font-size: 0.86rem;
   font-weight: 600;
@@ -397,7 +396,7 @@
 .aggregator-home .segmented {
   display: inline-flex;
   padding: 3px;
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   background: #ececf0;
   max-width: 100%;
 }
@@ -410,7 +409,7 @@
   background: transparent;
   color: var(--muted);
   padding: 8px 14px;
-  border-radius: 999px;
+  border-radius: var(--radius-xs);
   font-size: 0.86rem;
   font-weight: 500;
   cursor: pointer;
@@ -445,7 +444,7 @@
   -webkit-appearance: none;
   appearance: none;
   border: 1px solid var(--line);
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   padding: 10px 38px 10px 16px;
   font-size: 0.86rem;
   font-weight: 500;
@@ -475,7 +474,7 @@
   border: 1px solid var(--line);
   background: var(--surface);
   color: var(--ink);
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   padding: 10px 16px;
   font-size: 0.86rem;
   font-weight: 500;
@@ -517,7 +516,7 @@
 
 .aggregator-home .skeleton {
   display: block;
-  border-radius: 999px;
+  border-radius: var(--radius-xs);
   background: #e9e9ee;
   animation: aggregator-skeleton-pulse 1.4s ease-in-out infinite;
 }
@@ -569,7 +568,7 @@
   border: 1px solid transparent;
   background: var(--accent-soft);
   color: var(--accent);
-  border-radius: 999px;
+  border-radius: var(--radius-xs);
   padding: 6px 10px 6px 12px;
   font-size: 0.82rem;
   font-weight: 600;
@@ -631,7 +630,7 @@
 .aggregator-home .aggregator-source-notice {
   margin-top: 14px;
   padding: 10px 16px;
-  border-radius: 14px;
+  border-radius: var(--radius-sm);
   background: #fff7e6;
   border: 1px solid #f0d9a8;
   color: #7a5b16;
@@ -649,14 +648,14 @@
 .aggregator-home .card {
   background: var(--surface);
   border: 1px solid var(--line);
-  border-radius: 24px;
+  border-radius: var(--radius-md);
   padding: 18px;
-  box-shadow: 0 8px 24px -18px rgba(0, 0, 0, 0.3);
+  box-shadow: none;
   display: flex;
   flex-direction: column;
   gap: 14px;
   min-width: 0;
-  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  transition: border-color 0.15s ease;
 }
 
 .aggregator-home .card.clickable {
@@ -664,8 +663,8 @@
 }
 
 .aggregator-home .card.clickable:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 22px 40px -22px rgba(14, 6, 90, 0.35);
+  border-color: #c4c4cf;
+  box-shadow: none;
 }
 
 .aggregator-home .job-head {
@@ -721,7 +720,7 @@
   flex: 0 0 auto;
   width: 36px;
   height: 36px;
-  border-radius: 50%;
+  border-radius: var(--radius-sm);
   border: 0;
   background: transparent;
   color: var(--ink);
@@ -772,7 +771,7 @@
 
 .aggregator-home .card .tag {
   padding: 4px 11px;
-  border-radius: 999px;
+  border-radius: var(--radius-xs);
   font-size: 0.74rem;
   font-weight: 500;
   background: var(--canvas);
@@ -781,7 +780,7 @@
 }
 
 .aggregator-home .card .tag.direct-badge {
-  background: var(--brand-gradient);
+  background: var(--med);
   border-color: transparent;
   color: var(--on-photo);
   font-weight: 600;
@@ -805,7 +804,7 @@
   border: 0;
   background: transparent;
   color: var(--ink);
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   padding: 9px 12px;
   font-size: 0.84rem;
   font-weight: 600;
@@ -820,9 +819,9 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: var(--brand-gradient);
+  background: var(--med);
   color: var(--on-photo);
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   padding: 9px 20px;
   font-size: 0.84rem;
   font-weight: 600;
@@ -845,7 +844,7 @@
   grid-column: 1 / -1;
   text-align: center;
   padding: 56px 20px;
-  border-radius: 24px;
+  border-radius: var(--radius-md);
   background: var(--surface);
   border: 1px solid var(--line);
 }
@@ -867,7 +866,7 @@
   margin: 18px auto 0;
   padding: 11px 22px;
   border: 0;
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   background: var(--ink);
   color: var(--surface);
   font-size: 0.88rem;
@@ -891,7 +890,7 @@
   margin: 0;
   padding: 56px 20px;
   text-align: center;
-  border-radius: 24px;
+  border-radius: var(--radius-md);
   border: 1px solid var(--line);
   background: var(--surface);
   color: var(--muted);
@@ -911,7 +910,7 @@
 .aggregator-home .pagination-num {
   background: var(--surface);
   border: 1px solid var(--line);
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   padding: 9px 18px;
   font-size: 0.86rem;
   font-weight: 500;
@@ -989,7 +988,7 @@
   right: 16px;
   background: #ffffff;
   border: 1px solid var(--line);
-  border-radius: 50%;
+  border-radius: var(--radius-sm);
   width: 40px;
   height: 40px;
   font-size: 20px;
@@ -1014,12 +1013,12 @@
   gap: 6px;
   background: #ffffff;
   border: 1px solid var(--line);
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   padding: 10px 18px;
   font-size: 0.9rem;
   font-weight: 500;
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: none;
 }
 
 .aggregator-home .detail-header {
@@ -1050,7 +1049,7 @@
   background: transparent;
   border: 1px solid #e0e0e0;
   padding: 10px 16px;
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   cursor: pointer;
   font-size: 14px;
   white-space: nowrap;
@@ -1083,7 +1082,7 @@
   align-items: center;
   background: #f0f0f0;
   color: #111111;
-  border-radius: 999px;
+  border-radius: var(--radius-xs);
   padding: 4px 10px;
   font-size: 0.82rem;
   font-weight: 500;
@@ -1139,7 +1138,7 @@
   position: relative;
   margin: 28px 0 0;
   padding: 18px 18px 16px 20px;
-  border-radius: 14px;
+  border-radius: var(--radius-md);
   background: var(--accent-soft, #eceafc);
   border: 1px solid rgba(24, 0, 173, 0.14);
   overflow: hidden;
@@ -1150,7 +1149,7 @@
   position: absolute;
   inset: 0 auto 0 0;
   width: 4px;
-  background: var(--brand-gradient);
+  background: var(--med);
 }
 
 .aggregator-home .detail-cv-match-eyebrow {
@@ -1189,7 +1188,7 @@
   gap: 8px;
   width: 100%;
   padding: 12px 20px;
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   border: 1.5px solid var(--med);
   background: #ffffff;
   color: var(--med);
@@ -1242,7 +1241,7 @@
 .aggregator-home .detail-source span {
   color: #111111;
   padding: 2px 8px;
-  border-radius: 999px;
+  border-radius: var(--radius-xs);
   border: 1px solid #d0d0d0;
   font-weight: 500;
 }
@@ -1259,11 +1258,11 @@
 .aggregator-home .detail-cta {
   display: block;
   width: 100%;
-  background: var(--brand-gradient);
+  background: var(--med);
   color: #ffffff;
   text-align: center;
   padding: 16px 24px;
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
@@ -1287,7 +1286,7 @@
   background: var(--ink);
   color: var(--surface);
   border: 0;
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   padding: 11px 18px;
   font-size: 0.84rem;
   font-weight: 600;
@@ -1380,7 +1379,7 @@
 
   .aggregator-home .hero-card {
     width: calc(100% - 16px);
-    border-radius: 26px;
+    border-radius: var(--radius-lg);
     background-position: 62% 20%;
   }
 
@@ -1508,5 +1507,108 @@
   .aggregator-home * {
     transition: none !important;
     animation: none !important;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   Open layout: a full-width square hero, then the feed as one flowing list on
+   a white page instead of a grid of boxed cards.
+   ------------------------------------------------------------------------ */
+.aggregator-home {
+  --canvas: #ffffff;
+  padding-top: 0;
+}
+
+.aggregator-home .hero-card {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  border-radius: 0;
+  /* The photo runs edge to edge; the content keeps the page's column. */
+  padding-inline: max(20px, calc((100% - var(--max-width)) / 2));
+}
+
+.aggregator-home .glass-nav {
+  margin: 14px 0 0;
+}
+
+.aggregator-home .hero-copy {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.aggregator-home .grid {
+  grid-template-columns: 1fr;
+  gap: 0;
+  border-top: 1px solid var(--line);
+}
+
+.aggregator-home .job-card {
+  margin: 0 -12px;
+  padding: 20px 12px;
+  gap: 10px;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
+  background: transparent;
+  transition: background 0.15s ease;
+}
+
+.aggregator-home .card.clickable:hover {
+  background: #f6f6f9;
+  border-color: var(--line);
+}
+
+.aggregator-home .empty-state {
+  border: 0;
+  background: transparent;
+}
+
+@media (min-width: 769px) {
+  /* One row per job: who and what on the left, actions on the right. */
+  .aggregator-home .job-card {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    column-gap: 24px;
+    align-items: start;
+  }
+
+  .aggregator-home .job-card > * {
+    grid-column: 1;
+  }
+
+  .aggregator-home .job-card > .card-actions {
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    align-self: end;
+    margin-top: 0;
+  }
+
+  /* Bookmark sits in the row's top-right corner, above the actions. */
+  .aggregator-home .job-card {
+    position: relative;
+  }
+
+  .aggregator-home .job-card .save-btn {
+    position: absolute;
+    top: 14px;
+    right: 12px;
+  }
+
+  .aggregator-home .job-card .job-posted {
+    flex: none;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .aggregator-home .hero-card {
+    width: 100%;
+    border-radius: 0;
+    padding-inline: 16px;
+  }
+
+  .aggregator-home .glass-nav {
+    margin: 10px 0 0;
   }
 }

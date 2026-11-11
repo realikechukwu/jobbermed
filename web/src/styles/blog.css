@@ -41,7 +41,7 @@
   margin: 0 0 16px;
   padding: 14px 16px;
   border-left: 3px solid var(--accent);
-  border-radius: 0 12px 12px 0;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
   background: var(--accent-soft);
   font-size: 0.95rem;
 }
@@ -58,7 +58,7 @@
   margin: 24px 0;
   padding: 18px 20px;
   border: 1px solid var(--line);
-  border-radius: 16px;
+  border-radius: var(--radius-md);
   background: var(--bg);
 }
 
@@ -78,7 +78,7 @@
 .cv-cta .cv-cta-button {
   display: inline-block;
   padding: 10px 18px;
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   background: var(--accent);
   color: #ffffff;
   font-size: 0.92rem;
@@ -153,7 +153,7 @@
 .blog-shell .hero-banner {
   width: calc(100% - 40px);
   max-width: var(--blog-width);
-  border-radius: 24px 24px 0 0;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
   overflow: visible;
 }
 
@@ -204,14 +204,14 @@
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 16px;
+  border-radius: var(--radius-md);
 }
 .blog-shell .blog-content {
   margin-top: 0;
   background: #fff;
   border: 1px solid var(--line);
   border-top: 0;
-  border-radius: 0 0 24px 24px;
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
   padding: 44px clamp(24px, 4vw, 48px);
 }
 .blog-article {
@@ -222,7 +222,7 @@
 }
 .blog-article > p:first-child { font-size: 1.18rem; line-height: 1.7; color: #37334d; }
 .blog-shell .blog-index { max-width: none; margin-top: 0; padding-top: 28px; }
-.blog-shell:has(.blog-index) .hero-banner { border-radius: 24px; }
+.blog-shell:has(.blog-index) .hero-banner { border-radius: var(--radius-lg); }
 .blog-list {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
@@ -235,11 +235,11 @@
   overflow: hidden;
   background: #fff;
   border: 1px solid var(--line);
-  border-radius: 18px;
+  border-radius: var(--radius-md);
   text-decoration: none;
   transition: box-shadow 160ms ease;
 }
-.blog-card-link:hover { box-shadow: 0 8px 28px rgba(24, 0, 173, 0.1); }
+.blog-card-link:hover { border-color: #c4c4cf; }
 .blog-card-link:focus-visible, .blog-back:focus-visible { outline: 3px solid #0cc0df; outline-offset: 4px; }
 .blog-card-image { display: block; width: 100%; height: auto; aspect-ratio: 640 / 340; object-fit: cover; }
 .blog-card-copy { padding: 24px; display: flex; flex: 1; flex-direction: column; }

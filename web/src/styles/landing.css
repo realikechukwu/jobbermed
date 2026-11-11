@@ -3,7 +3,6 @@
   --on-photo: #ffffff;
   --on-photo-muted: rgba(255, 255, 255, 0.84);
   --glass-line: rgba(255, 255, 255, 0.28);
-  --brand-gradient: linear-gradient(135deg, var(--med) 0%, var(--jobber) 100%);
   --story-gradient: linear-gradient(135deg, var(--med) 0%, var(--jobber) 100%);
   color: var(--ink);
   background: var(--bg);
@@ -28,7 +27,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  border-radius: 999px;
+  border-radius: var(--radius-md);
   background: rgba(14, 8, 70, 0.42);
   border: 1px solid var(--glass-line);
   -webkit-backdrop-filter: blur(18px) saturate(1.4);
@@ -51,7 +50,7 @@
 .landing-page .glass-nav-cta {
   background: var(--on-photo);
   color: var(--ink);
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   padding: 9px 18px;
   font-size: 0.86rem;
   font-weight: 600;
@@ -99,7 +98,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   padding: 14px 28px;
   font-size: 1rem;
   font-weight: 600;
@@ -156,7 +155,7 @@
   display: inline-flex;
   align-items: center;
   padding: 6px 14px;
-  border-radius: 999px;
+  border-radius: var(--radius-xs);
   font-size: 0.8rem;
   font-weight: 500;
   background: rgba(255, 255, 255, 0.14);
@@ -198,7 +197,7 @@
   display: inline-block;
   margin: 0 0 12px;
   padding: 4px 14px;
-  border-radius: 999px;
+  border-radius: var(--radius-xs);
   font-size: 0.78rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -218,7 +217,7 @@
 }
 
 .landing-page .accent-text {
-  background: var(--brand-gradient);
+  background: var(--med);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -247,11 +246,11 @@
   align-items: center;
   gap: 4px;
   padding: 16px 22px;
-  border-radius: 22px;
+  border-radius: var(--radius-md);
   background: #ffffff;
   border: 1px solid var(--line);
   min-width: 140px;
-  box-shadow: 0 8px 24px -18px rgba(0, 0, 0, 0.3);
+  box-shadow: none;
 }
 
 .landing-page .stat-pill-value {
@@ -315,7 +314,7 @@
 .landing-page .chat-question .chat-content {
   background: #ffffff;
   border: 1px solid var(--line);
-  border-radius: 6px 22px 22px 22px;
+  border-radius: 4px 12px 12px 12px;
   padding: 14px 18px;
 }
 
@@ -345,8 +344,8 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  background: var(--brand-gradient);
-  border-radius: 22px 22px 6px 22px;
+  background: var(--med);
+  border-radius: 12px 12px 4px 12px;
   padding: 14px 20px;
 }
 
@@ -383,7 +382,7 @@
 .landing-page .chat-insight .chat-content {
   background: var(--accent-soft);
   border: 1px solid transparent;
-  border-radius: 6px 22px 22px 22px;
+  border-radius: 4px 12px 12px 12px;
   padding: 16px 20px;
 }
 
@@ -433,7 +432,7 @@
 }
 
 .landing-page .discovery-bar--accent .discovery-bar-fill {
-  background: var(--brand-gradient);
+  background: var(--med);
 }
 
 .landing-page .discovery-bar-content {
@@ -489,16 +488,16 @@
 
 .landing-page .solution-card {
   padding: 28px 26px;
-  border-radius: 24px;
+  border-radius: var(--radius-md);
   background: #ffffff;
   border: 1px solid var(--line);
-  box-shadow: 0 8px 24px -18px rgba(0, 0, 0, 0.3);
+  box-shadow: none;
   transition: box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
 .landing-page .solution-card:hover {
   border-color: #d0d0d0;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  box-shadow: none;
 }
 
 .landing-page .solution-title {
@@ -523,7 +522,7 @@
   max-width: 1220px;
   margin: 0 auto 28px;
   padding: clamp(48px, 7vw, 84px) 20px;
-  border-radius: 32px;
+  border-radius: var(--radius-lg);
   background: linear-gradient(105deg, #070428 0%, #150a78 62%, #0b6f9c 125%);
   text-align: center;
 }
@@ -608,7 +607,7 @@
 
   .landing-page .survey-final-cta {
     width: calc(100% - 16px);
-    border-radius: 26px;
+    border-radius: var(--radius-lg);
   }
 
   .landing-page .landing-ctas {
@@ -687,4 +686,21 @@
     transform: none;
     transition: none;
   }
+}
+
+/* Open layout: figures and benefits sit on the page, divided by lines, not in boxes. */
+.landing-page .stat-pill {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.landing-page .solution-card,
+.landing-page .solution-card:hover {
+  padding: 20px 0 0;
+  border: 0;
+  border-top: 2px solid var(--ink);
+  border-radius: 0;
+  background: transparent;
 }

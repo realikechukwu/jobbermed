@@ -10,4 +10,9 @@
   --med: #1800ad;
   --jobber: #0cc0df;
   --max-width: 1100px;
+  /* Corner scale: tags and chips, controls, cards and panels, hero banners. */
+  --radius-xs: 6px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
 }
