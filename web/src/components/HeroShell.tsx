@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, type ReactNode } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useSession } from "../features/auth/session-context";
 import { getSupabaseClient } from "../lib/supabase-client";
@@ -8,11 +8,12 @@ import { SiteMobileDrawer } from "./SiteMobileDrawer";
 
 type HeroShellProps = {
   title: string;
+  content?: ReactNode;
   subtitle?: string;
   variant?: "hero" | "compact";
 };
 
-export function HeroShell({ title, subtitle, variant = "hero" }: HeroShellProps) {
+export function HeroShell({ title, subtitle, content, variant = "hero" }: HeroShellProps) {
   const { user, roles } = useSession();
   const location = useLocation();
   const navigate = useNavigate();
@@ -63,8 +64,10 @@ export function HeroShell({ title, subtitle, variant = "hero" }: HeroShellProps)
           <img className="brand-logo" src="/images/logo.png" alt="JobberMed" />
         </Link>
 
-        <h1 className="hero-title">{title}</h1>
-        {subtitle ? <p className="hero-subtitle">{subtitle}</p> : null}
+        {content ?? <>
+          <h1 className="hero-title">{title}</h1>
+          {subtitle ? <p className="hero-subtitle">{subtitle}</p> : null}
+        </>}
       </div>
 
       <SiteMobileDrawer

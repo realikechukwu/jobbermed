@@ -23,6 +23,8 @@ export type Article = {
   /** ISO date. */
   published: string;
   readMinutes: number;
+  category: string;
+  image: string;
   body: ArticleBlock[];
 };
 
@@ -65,6 +67,8 @@ export const ARTICLES: Article[] = [
       "What Nigerian hospitals, clinics and pharmacies look for on a CV, based on more than 900 healthcare job adverts: licence, NYSC status, numbers and the advert's own words.",
     published: "2026-11-10",
     readMinutes: 5,
+    category: "CV & credentials",
+    image: "/images/guides/cv.svg",
     body: [
       {
         type: "p",
@@ -156,6 +160,8 @@ export const ARTICLES: Article[] = [
       "Over half of Nigerian healthcare adverts ask for email applications. How to write the subject line, the email and the attachments so your CV gets opened.",
     published: "2026-11-10",
     readMinutes: 5,
+    category: "Applications",
+    image: "/images/guides/email.svg",
     body: [
       {
         type: "p",
@@ -229,6 +235,8 @@ export const ARTICLES: Article[] = [
       "Federal hospital adverts quote a grade such as CONMESS 3 or CONHESS 9 in place of a salary. What the grades are, which roles sit on them and how private pay compares.",
     published: "2026-11-10",
     readMinutes: 5,
+    category: "Pay & progression",
+    image: "/images/guides/salary.svg",
     body: [
       {
         type: "p",
@@ -302,6 +310,8 @@ export const ARTICLES: Article[] = [
       "Checks to run before you apply or pay anything: fees, email addresses, pay that is too high, overseas offers and how to trace an advert back to its source.",
     published: "2026-11-10",
     readMinutes: 5,
+    category: "Safer job searches",
+    image: "/images/guides/safety.svg",
     body: [
       {
         type: "p",
@@ -373,6 +383,8 @@ export const ARTICLES: Article[] = [
       "We counted more than 900 Nigerian healthcare job adverts by state, employer, profession and pay. Lagos and Abuja had almost half. Elsewhere, teaching hospitals hire in large rounds.",
     published: "2026-11-10",
     readMinutes: 6,
+    category: "The job market",
+    image: "/images/guides/locations.svg",
     body: [
       {
         type: "p",
