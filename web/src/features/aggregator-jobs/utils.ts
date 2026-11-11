@@ -454,6 +454,24 @@ export function getJobTypeGroup(jobType: string): JobTypeFilter | "" {
   return "";
 }
 
+/** One spelling per job type for display: "Full Time", "full-time" and "Full-Time" all read "Full-time". */
+export function formatJobType(jobType: string): string {
+  const cleaned = safeText(jobType)
+    .replace(/full[\s-]?time/gi, "Full-time")
+    .replace(/part[\s-]?time/gi, "Part-time")
+    .replace(/on[\s-]?site|in[\s-]person/gi, "On-site");
+  return cleaned ? `${cleaned[0].toUpperCase()}${cleaned.slice(1)}` : "";
+}
+
+/** One currency mark and period style for display: "NGN380,000 - NGN500,000 / monthly" reads "₦380,000 - ₦500,000/month". */
+export function formatSalary(salary: string): string {
+  return safeText(salary)
+    .replace(/\b(?:NGN|N)\s?(?=\d)/g, "₦")
+    .replace(/(\d)\s*[–—-]\s*(₦?\d)/g, "$1 - $2")
+    .replace(/\s*(?:\/|\bper)\s*month(?:ly)?\b/gi, "/month")
+    .replace(/(\d)\s+monthly\b/gi, "$1/month");
+}
+
 export function hasListedSalary(salary: string): boolean {
   return /\d/.test(safeText(salary));
 }

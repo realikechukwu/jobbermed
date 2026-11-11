@@ -1,7 +1,8 @@
 import type { MouseEvent } from "react";
 import { Link } from "react-router-dom";
 import { isDirectJob, type UnifiedJob } from "../../jobs/unify";
-import { formatDate, safeText } from "../utils";
+import { SOURCE_LABELS } from "../constants";
+import { formatDate, formatJobType, formatSalary, getJobPageSlug, hasListedSalary, safeText } from "../utils";
 
 type AggregatorJobCardProps = {
   job: UnifiedJob;
@@ -34,6 +35,12 @@ export function AggregatorJobCard({ job, isSaved, onToggleSave, onOpenDetail }: 
   const applyUrl = safeText(job.apply_url);
   const isDirect = isDirectJob(job);
   const directDetailPath = job.directJobId ? `/jobs/direct/${job.directJobId}` : null;
+  const title = job.job_title || "Untitled role";
+  const jobType = formatJobType(job.job_type);
+  // The listing's own address, so the title can be opened in a new tab.
+  const detailPath = isDirect && directDetailPath ? directDetailPath : `/jobs/${getJobPageSlug(job._slug)}`;
+  const describedJob = company ? `${title} at ${company}` : title;
+  const sourceLabel = SOURCE_LABELS[safeText(job._source)];
 
   function handleCardClick(event: MouseEvent<HTMLElement>) {
     const target = event.target as HTMLElement;
@@ -53,6 +60,17 @@ export function AggregatorJobCard({ job, isSaved, onToggleSave, onOpenDetail }: 
   function handleOpenDetail(event: MouseEvent<HTMLButtonElement>) {
     event.preventDefault();
     event.stopPropagation();
+    onOpenDetail(job);
+  }
+
+  function handleTitleClick(event: MouseEvent<HTMLAnchorElement>) {
+    event.stopPropagation();
+    // Modified clicks (new tab, new window) follow the link as usual.
+    if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) {
+      return;
+    }
+
+    event.preventDefault();
     onOpenDetail(job);
   }
 
@@ -80,7 +98,7 @@ export function AggregatorJobCard({ job, isSaved, onToggleSave, onOpenDetail }: 
         <button
           className={`save-btn${isSaved ? " saved" : ""}`}
           type="button"
-          aria-label={isSaved ? "Remove from saved jobs" : "Save job"}
+          aria-label={isSaved ? `Remove ${describedJob} from saved jobs` : `Save ${describedJob}`}
           aria-pressed={isSaved ? "true" : "false"}
           onClick={handleSaveClick}
         >
@@ -90,28 +108,44 @@ export function AggregatorJobCard({ job, isSaved, onToggleSave, onOpenDetail }: 
         </button>
       </div>
 
-      <h3 className="title job-title">{job.job_title || "Untitled role"}</h3>
+      <h3 className="title job-title">
+        <a className="job-title-link" href={detailPath} onClick={handleTitleClick}>
+          {title}
+        </a>
+      </h3>
 
       <div className="tags">
         {isDirect ? <div className="tag direct-badge">Apply on JobberMed</div> : null}
-        {job.job_type ? <div className="tag job-type">{job.job_type}</div> : null}
-        {/\d/.test(safeText(job.salary)) ? <div className="tag salary">{safeText(job.salary)}</div> : null}
+        {jobType ? <div className="tag job-type">{jobType}</div> : null}
+        {hasListedSalary(job.salary) ? <div className="tag salary">{formatSalary(job.salary)}</div> : null}
         {deadline ? <div className="tag deadline">{`Closes ${deadline}`}</div> : null}
       </div>
 
       <div className="card-actions">
         <span className="job-posted">{posted ? `Posted ${posted}` : ""}</span>
 
-        <button className="view-btn" type="button" onClick={handleOpenDetail}>
+        <button className="view-btn" type="button" aria-label={`Details: ${describedJob}`} onClick={handleOpenDetail}>
           Details
         </button>
 
         {isDirect && directDetailPath ? (
-          <Link className="apply-btn" to={directDetailPath} onClick={(event) => event.stopPropagation()}>
+          <Link
+            className="apply-btn"
+            to={directDetailPath}
+            aria-label={`Apply: ${describedJob}`}
+            onClick={(event) => event.stopPropagation()}
+          >
             Apply
           </Link>
         ) : applyUrl ? (
-          <a className="apply-btn" href={applyUrl} target="_blank" rel="noopener noreferrer" onClick={(event) => event.stopPropagation()}>
+          <a
+            className="apply-btn"
+            href={applyUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`Apply: ${describedJob}${sourceLabel ? `, on ${sourceLabel}` : ""} (opens in a new tab)`}
+            onClick={(event) => event.stopPropagation()}
+          >
             Apply
           </a>
         ) : (

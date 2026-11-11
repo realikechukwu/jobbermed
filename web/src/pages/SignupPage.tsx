@@ -99,7 +99,7 @@ export function SignupPage() {
   }
 
   return (
-    <RouteShell title="Create account" subtitle="Start as a candidate and request additional platform roles.">
+    <RouteShell title="Create account" subtitle="Get new healthcare roles for your specialty and location sent to your inbox.">
       <section className="shell-content" aria-label="Sign up">
         <CardPrimitive title="Create your JobberMed account">
           <button className="gsi-material-button" type="button" onClick={handleGoogleSignup} disabled={isBusy}>

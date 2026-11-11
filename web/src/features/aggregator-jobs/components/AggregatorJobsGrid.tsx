@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import type { UnifiedJob } from "../../jobs/unify";
 import { AggregatorJobCard } from "./AggregatorJobCard";
 
@@ -11,6 +12,11 @@ type AggregatorJobsGridProps = {
   onClearFilters?: () => void;
   /** True when only Direct Apply jobs are being shown. */
   directOnly?: boolean;
+  keyword?: string;
+  /** Live jobs matching the keyword once every other filter is removed. */
+  keywordOnlyCount?: number;
+  onClearKeyword?: () => void;
+  onKeepKeywordOnly?: () => void;
 };
 
 export function AggregatorJobsGrid({
@@ -22,7 +28,13 @@ export function AggregatorJobsGrid({
   hasActiveFilters = false,
   onClearFilters,
   directOnly = false,
+  keyword = "",
+  keywordOnlyCount = 0,
+  onClearKeyword,
+  onKeepKeywordOnly,
 }: AggregatorJobsGridProps) {
+  const hasKeyword = keyword.trim().length > 0;
+
   if (jobs.length === 0) {
     return (
       <main className="grid" id="grid">
@@ -35,6 +47,34 @@ export function AggregatorJobsGrid({
                 Browse all jobs
               </button>
             ) : null}
+          </div>
+        ) : hasKeyword ? (
+          <div className="empty-state">
+            <strong>{`No jobs match “${keyword}”`}</strong>
+            {keywordOnlyCount > 0 ? (
+              <>
+                <span>
+                  {`Your other filters are hiding ${keywordOnlyCount} ${keywordOnlyCount === 1 ? "job that matches" : "jobs that match"} this search.`}
+                </span>
+                {onKeepKeywordOnly ? (
+                  <button className="empty-state-action" type="button" onClick={onKeepKeywordOnly}>
+                    {`Show ${keywordOnlyCount === 1 ? "that job" : `all ${keywordOnlyCount} jobs`}`}
+                  </button>
+                ) : null}
+              </>
+            ) : (
+              <>
+                <span>Check the spelling, or try a broader word such as “nurse”, “pharmacist” or a hospital name.</span>
+                {onClearKeyword ? (
+                  <button className="empty-state-action" type="button" onClick={onClearKeyword}>
+                    Clear search
+                  </button>
+                ) : null}
+              </>
+            )}
+            <Link className="empty-state-link" to="/account/personalization">
+              Get new jobs by email instead
+            </Link>
           </div>
         ) : (
           <div className="empty-state">

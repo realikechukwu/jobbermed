@@ -3,7 +3,7 @@ import { useRef, type MouseEvent } from "react";
 import { useFocusTrap } from "../../../hooks/useFocusTrap";
 import { SOURCE_LABELS } from "../constants";
 import type { AggregatorJob } from "../types";
-import { formatDate, normalizeCategory, safeText } from "../utils";
+import { formatDate, formatJobType, formatSalary, normalizeCategory, safeText } from "../utils";
 
 type AggregatorDetailPanelProps = {
   job: AggregatorJob | null;
@@ -62,10 +62,12 @@ export function AggregatorDetailPanel({
   const hasRealTitle = rawTitle.length > 0;
   const company = safeText(job?.company);
   const location = safeText(job?.location);
-  const salary = safeText(job?.salary) || "Salary not listed";
+  const salary = formatSalary(safeText(job?.salary)) || "Salary not listed";
+  const jobType = formatJobType(safeText(job?.job_type));
   const applyUrl = safeText(job?.apply_url);
   const sourceKey = safeText(job?._source);
-  const sourceLabel = SOURCE_LABELS[sourceKey] || sourceKey || "External Source";
+  const knownSourceLabel = SOURCE_LABELS[sourceKey];
+  const sourceLabel = knownSourceLabel || sourceKey || "External Source";
   const posted = formatDate(safeText(job?.date_posted));
   const deadline = formatDate(safeText(job?.deadline));
   const category = job ? normalizeCategory(job) : "";
@@ -87,7 +89,7 @@ export function AggregatorDetailPanel({
     <>
       <div className={`detail-overlay${overlayVisible ? " visible" : ""}`} role="presentation" onClick={onClose} />
 
-      <aside ref={panelRef} className={panelClassName} aria-hidden="false" role="dialog" aria-labelledby="detailTitle">
+      <aside ref={panelRef} className={panelClassName} role="dialog" aria-modal="true" aria-labelledby="detailTitle">
         <button className="detail-close-btn" type="button" aria-label="Close panel" onClick={onClose}>
           ✕
         </button>
@@ -123,7 +125,7 @@ export function AggregatorDetailPanel({
           <div className="detail-tags" id="detailTags">
             {posted ? <div className="tag">{`Posted ${posted}`}</div> : null}
             {category && category !== "Others" ? <div className="tag category">{category}</div> : null}
-            {job?.job_type ? <div className="tag job-type">{job.job_type}</div> : null}
+            {jobType ? <div className="tag job-type">{jobType}</div> : null}
             {deadline ? <div className="tag deadline">{`Closes ${deadline}`}</div> : null}
           </div>
 
@@ -178,7 +180,9 @@ export function AggregatorDetailPanel({
         <div className="detail-cta-bar">
           {applyUrl ? (
             <a className="detail-cta" id="detailCTA" href={applyUrl} target="_blank" rel="noopener noreferrer">
-              View Original Posting
+              {knownSourceLabel ? `Apply on ${knownSourceLabel}` : "Apply on the original site"}
+              <span aria-hidden="true"> ↗</span>
+              <span className="sr-only"> (opens in a new tab)</span>
             </a>
           ) : (
             <a

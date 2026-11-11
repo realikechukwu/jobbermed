@@ -32,6 +32,8 @@ type AggregatorQueryState = {
   setActiveSource: (source: JobSourceFilter) => void;
   hasActiveFilters: boolean;
   clearAllFilters: () => void;
+  /** Drops every filter except the search keyword. */
+  clearFiltersKeepKeyword: () => void;
 };
 
 function parseSource(value: string): JobSourceFilter {
@@ -261,6 +263,13 @@ export function useAggregatorQueryState(): AggregatorQueryState {
     navigate({ pathname: landing ? "/" : pathname, search: search ? `?${search}` : "" }, { replace: true });
   }, [landing, navigate, pathname, searchParams]);
 
+  const clearFiltersKeepKeyword = useCallback(() => {
+    const params = new URLSearchParams(searchParams);
+    ["category", "loc", "saved", "source", "type", "salary", "page"].forEach((key) => params.delete(key));
+    const search = params.toString();
+    navigate({ pathname: landing ? "/" : pathname, search: search ? `?${search}` : "" }, { replace: true });
+  }, [landing, navigate, pathname, searchParams]);
+
   return {
     activeCategory,
     activeLocation,
@@ -283,5 +292,6 @@ export function useAggregatorQueryState(): AggregatorQueryState {
     setActiveSource,
     hasActiveFilters,
     clearAllFilters,
+    clearFiltersKeepKeyword,
   };
 }

@@ -87,6 +87,7 @@ export function HomePage() {
     setActiveSource,
     hasActiveFilters,
     clearAllFilters,
+    clearFiltersKeepKeyword,
   } = useAggregatorQueryState();
 
   const { savedCount, isSaved, toggleSavedJob } = useSavedJobsLocal();
@@ -238,6 +239,23 @@ export function HomePage() {
     const externalJobs = list.filter((job) => !isDirectJob(job));
     return interleaveBySource([...directJobs, ...externalJobs]);
   }, [activeCategory, activeLocation, sourceJobs, keywordQuery, savedOnly, isSaved, activeJobType, salaryOnly, activeSort]);
+
+  const matchesKeyword = useCallback(
+    (job: UnifiedJob) =>
+      [job.job_title, job.company, job.location, job.job_type, job.job_category]
+        .map((value) => safeText(value))
+        .join(" ")
+        .toLowerCase()
+        .includes(keywordQuery),
+    [keywordQuery],
+  );
+
+  // For the empty state: how many live jobs the search would find with every
+  // other filter removed.
+  const keywordOnlyCount = useMemo(
+    () => (keywordQuery && filteredJobs.length === 0 ? allActiveJobs.filter(matchesKeyword).length : 0),
+    [allActiveJobs, filteredJobs.length, keywordQuery, matchesKeyword],
+  );
 
   const totalPages = useMemo(() => Math.ceil(filteredJobs.length / PAGE_SIZE), [filteredJobs.length]);
 
@@ -492,6 +510,10 @@ export function HomePage() {
               hasActiveFilters={hasActiveFilters}
               onClearFilters={clearAllFilters}
               directOnly={activeSource === "direct"}
+              keyword={keywordQuery}
+              keywordOnlyCount={keywordOnlyCount}
+              onClearKeyword={clearKeyword}
+              onKeepKeywordOnly={clearFiltersKeepKeyword}
             />
 
             <AggregatorPagination
