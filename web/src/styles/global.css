@@ -1320,3 +1320,110 @@ body {
     border-radius: 26px;
   }
 }
+
+/* ---------- dashboards ---------- */
+/* Every signed-in page starts its first card the same distance below the banner. */
+.shell-grid {
+  margin-top: 24px;
+}
+
+.shell-grid--follow {
+  margin-top: 16px;
+}
+
+/* Links between dashboards are quiet; one filled button per card at most. */
+.dashboard-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.shell-button.dashboard-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  min-height: 44px;
+  margin-top: 0;
+  background: #ffffff;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  text-decoration: none;
+}
+
+.shell-button.dashboard-link:hover {
+  background: #f4f4f7;
+  filter: none;
+}
+
+.shell-button.dashboard-link.dashboard-link-primary {
+  border-color: transparent;
+  background: linear-gradient(135deg, var(--med) 0%, var(--jobber) 100%);
+  color: #ffffff;
+}
+
+.shell-button.dashboard-link.dashboard-link-primary:hover {
+  filter: brightness(1.1);
+}
+
+.dashboard-card-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.dashboard-list {
+  list-style: none;
+  margin: 12px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.dashboard-list li {
+  display: grid;
+  gap: 2px;
+  font-size: 0.92rem;
+}
+
+.dashboard-list .meta {
+  margin: 0;
+}
+
+/* A note, not a field: no border, tinted background. */
+.preference-note {
+  border: 0;
+  background: var(--accent-soft);
+}
+
+.form-section {
+  display: grid;
+  gap: 10px;
+  margin: 8px 0 0;
+  padding: 16px 0 0;
+  border: 0;
+  border-top: 1px solid var(--line);
+  min-width: 0;
+}
+
+.form-section-title {
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.form-required {
+  font-weight: 400;
+  color: var(--muted);
+}
+
+@media (max-width: 768px) {
+  .shell-grid {
+    margin-top: 24px;
+  }
+}

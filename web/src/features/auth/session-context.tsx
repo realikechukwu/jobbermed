@@ -115,7 +115,13 @@ export function SessionProvider({ children }: { children: ReactNode }) {
       // 🚨 KEY FIX: Only clear state on explicit SIGNED_OUT
       if (!nextSession?.user) {
         if (authEvent !== "SIGNED_OUT") {
-          // Transient null during tab focus / token refresh → ignore
+          // Transient null during tab focus / token refresh → ignore.
+          // On the very first load there is nothing to keep, so finish loading:
+          // otherwise a signed-out visitor is stuck on "Checking session".
+          if (!hasInitializedRef.current && mountedRef.current) {
+            setIsLoading(false);
+            hasInitializedRef.current = true;
+          }
           return;
         }
 

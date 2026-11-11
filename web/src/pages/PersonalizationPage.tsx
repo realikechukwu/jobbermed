@@ -209,9 +209,9 @@ export function PersonalizationPage() {
   };
 
   return (
-    <RouteShell title="Personalisation settings" subtitle="Control categories, locations, and delivery frequency.">
+    <RouteShell title="Job alert emails" subtitle="Choose the specialties, locations and how often we email you.">
       <section className="shell-content" aria-label="Personalisation settings">
-        <CardPrimitive title="Email preferences" meta="Weekly nationwide digest by default.">
+        <CardPrimitive title="Email preferences" meta="Everyone gets a weekly email covering all of Nigeria unless they tailor it below.">
           {isLoadingPrefs ? <p className="meta">Loading preference controls...</p> : null}
 
           {!isLoadingPrefs && !userId ? (

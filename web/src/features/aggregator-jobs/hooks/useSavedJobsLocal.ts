@@ -68,6 +68,19 @@ function persistSavedJobDetails(details: Record<string, { title: string; company
   window.localStorage.setItem(SAVED_JOB_DETAILS_KEY, JSON.stringify(details));
 }
 
+export type SavedJobSummary = { id: string; title: string; company: string; location: string };
+
+/** Jobs bookmarked in this browser, for showing outside the feed. */
+export function readSavedJobSummaries(): SavedJobSummary[] {
+  const details = readSavedJobDetails();
+  return Array.from(readSavedJobsFromStorage()).map((id) => ({
+    id,
+    title: details[id]?.title || "Saved job",
+    company: details[id]?.company || "",
+    location: details[id]?.location || "",
+  }));
+}
+
 type UseSavedJobsLocalResult = {
   savedCount: number;
   isSaved: (jobId: string, slugId: string) => boolean;

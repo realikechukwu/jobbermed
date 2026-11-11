@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { CardPrimitive } from "../components/CardPrimitive";
 import { fetchMyNativeJobs } from "../features/native-jobs/api";
 import type { NativeJob } from "../features/native-jobs/types";
 import { RouteShell } from "../layouts/RouteShell";
@@ -10,6 +9,11 @@ function formatDate(value: string | null): string {
   const parsed = new Date(value);
   if (Number.isNaN(parsed.getTime())) return value;
   return parsed.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
+}
+
+function formatStatus(value: string): string {
+  const words = String(value || "").replace(/_/g, " ").trim();
+  return words ? `${words[0].toUpperCase()}${words.slice(1)}` : "-";
 }
 
 export function RecruiterDashboardPage() {
@@ -46,31 +50,28 @@ export function RecruiterDashboardPage() {
     };
   }, []);
 
+  const jobCountText = jobs.length === 1 ? "1 job posted" : `${jobs.length} jobs posted`;
+
   return (
-    <RouteShell title="Recruiter dashboard" subtitle="Create direct-apply jobs and manage incoming applicants.">
-      <section className="shell-grid" aria-label="Recruiter summary cards">
-        <CardPrimitive title="Direct Apply jobs" meta="Jobs posted by your account.">
-          <p className="meta">{isLoading ? "Loading..." : `${jobs.length} total jobs`}</p>
-          <Link className="shell-button dashboard-link" to="/recruiter/jobs/new">
-            Post new job
-          </Link>
-        </CardPrimitive>
-
-        <CardPrimitive title="Review applications" meta="Open applicants by job.">
-          <p className="meta">Each job has a dedicated applicant workflow.</p>
-          <Link className="shell-button dashboard-link" to="/?source=direct">
-            View public Direct Apply jobs
-          </Link>
-        </CardPrimitive>
-      </section>
-
+    <RouteShell title="Recruiter dashboard" subtitle="Post jobs and review the people who apply.">
       <section className="shell-content" aria-label="Recruiter jobs list">
-        <CardPrimitive title="My jobs" meta="Newest first.">
-          {isLoading ? <p className="meta">Loading jobs...</p> : null}
+        <article className="card">
+          <div className="dashboard-card-head">
+            <div>
+              <h2 className="title">My jobs</h2>
+              <p className="meta">{isLoading ? "Loading..." : `${jobCountText}, newest first.`}</p>
+            </div>
+            <Link className="shell-button dashboard-link dashboard-link-primary" to="/recruiter/jobs/new">
+              Post a job
+            </Link>
+          </div>
+
           {error ? <p className="native-form-message native-form-error">{error}</p> : null}
 
           {!isLoading && !error && jobs.length === 0 ? (
-            <p className="meta">No jobs posted yet.</p>
+            <p className="meta">
+              You have not posted a job yet. Once you do, it appears here with a link to its applicants.
+            </p>
           ) : null}
 
           {!isLoading && !error && jobs.length > 0 ? (
@@ -88,11 +89,15 @@ export function RecruiterDashboardPage() {
                   {jobs.map((job) => (
                     <tr key={job.id}>
                       <td>{job.title}</td>
-                      <td>{job.status}</td>
+                      <td>{formatStatus(job.status)}</td>
                       <td>{formatDate(job.createdAt)}</td>
                       <td>
-                        <Link className="access-inline-link" to={`/recruiter/jobs/${job.id}/applicants`}>
-                          Open
+                        <Link
+                          className="access-inline-link"
+                          to={`/recruiter/jobs/${job.id}/applicants`}
+                          aria-label={`View applicants for ${job.title}`}
+                        >
+                          View applicants
                         </Link>
                       </td>
                     </tr>
@@ -101,7 +106,7 @@ export function RecruiterDashboardPage() {
               </table>
             </div>
           ) : null}
-        </CardPrimitive>
+        </article>
       </section>
     </RouteShell>
   );

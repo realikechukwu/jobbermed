@@ -1,8 +1,9 @@
 import { useEffect, useMemo, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { CardPrimitive } from "../components/CardPrimitive";
 import { type DashboardRole } from "../features/auth/roles";
 import { useSession } from "../features/auth/session-context";
+import { readSavedJobSummaries } from "../features/aggregator-jobs/hooks/useSavedJobsLocal";
 import { fetchCandidateNativeApplications } from "../features/native-jobs/api";
 import {
   normalizeCategorySelections,
@@ -28,6 +29,13 @@ const ROLE_TITLES: Record<DashboardRole, string> = {
 
 type BannerTone = "info" | "success" | "error";
 
+const SAVED_JOBS_SHOWN = 5;
+
+function formatStatus(value: string): string {
+  const words = String(value || "").replace(/_/g, " ").trim();
+  return words ? `${words[0].toUpperCase()}${words.slice(1)}` : "-";
+}
+
 function formatDate(value: string | null): string {
   if (!value) return "-";
   const parsed = new Date(value);
@@ -36,7 +44,15 @@ function formatDate(value: string | null): string {
 }
 
 export function DashboardPage() {
-  const { roles, hasRole, error: sessionError } = useSession();
+  const { user, roles, hasRole, error: sessionError } = useSession();
+  const navigate = useNavigate();
+  const [savedJobs] = useState(() => readSavedJobSummaries());
+
+  async function handleSignOut() {
+    await getSupabaseClient().auth.signOut();
+    navigate("/");
+  }
+
   const [applications, setApplications] = useState<NativeJobApplicationRecord[]>([]);
   const [isLoadingApps, setIsLoadingApps] = useState(true);
   const [appsError, setAppsError] = useState<string | null>(null);
@@ -175,69 +191,49 @@ export function DashboardPage() {
     : "All locations";
 
   return (
-    <RouteShell title="Dashboard" subtitle="Manage your role access, direct applications, and email delivery settings.">
+    <RouteShell title="Dashboard" subtitle="Your saved jobs, applications and job alert emails.">
       <section className="shell-grid" aria-label="Dashboard cards">
-        <CardPrimitive title="Account roles" meta="Active roles from claims and platform assignments.">
-          <p className="meta">{roleList.join(" • ")}</p>
-          {sessionError ? <p className="native-form-message native-form-error">{sessionError}</p> : null}
-          <p className="meta auth-aux-link">
-            <Link to="/account/change-password">Change password</Link>
-          </p>
-        </CardPrimitive>
-
-        <CardPrimitive title="Your workspaces" meta="Open dashboards available to your current role access.">
-          {workspaceLinks.length === 0 ? (
-            <p className="meta">No role-specific dashboards are available for your account yet.</p>
+        <CardPrimitive title="Saved jobs" meta="Jobs you bookmarked on this device.">
+          {savedJobs.length === 0 ? (
+            <p className="meta">Nothing saved yet. Tap the bookmark on any job to keep it here.</p>
           ) : (
-            <div className="dashboard-links">
-              {workspaceLinks.map((workspace) => (
-                <Link key={workspace.id} className="shell-button dashboard-link" to={workspace.to}>
-                  {workspace.label}
-                </Link>
+            <ul className="dashboard-list">
+              {savedJobs.slice(0, SAVED_JOBS_SHOWN).map((job) => (
+                <li key={job.id}>
+                  <strong>{job.title}</strong>
+                  {job.company || job.location ? (
+                    <span className="meta">{[job.company, job.location].filter(Boolean).join(" · ")}</span>
+                  ) : null}
+                </li>
               ))}
-            </div>
+            </ul>
           )}
+          <div className="dashboard-links">
+            {savedJobs.length > 0 ? (
+              <Link className="shell-button dashboard-link dashboard-link-primary" to="/?saved=1">
+                {savedJobs.length > SAVED_JOBS_SHOWN ? `View all ${savedJobs.length} saved jobs` : "Open saved jobs"}
+              </Link>
+            ) : (
+              <Link className="shell-button dashboard-link dashboard-link-primary" to="/">
+                Browse jobs
+              </Link>
+            )}
+          </div>
         </CardPrimitive>
 
-        {hasRecruiterAccess ? (
-          <CardPrimitive title="Recruiter workspace">
-            <p className="meta">Manage your job posts and review applicants.</p>
-            <div className="dashboard-links">
-              <Link className="shell-button dashboard-link" to="/recruiter">
-                Manage jobs
-              </Link>
-            </div>
-          </CardPrimitive>
-        ) : (
-          <CardPrimitive title="Recruiter access">
-            <div className="access-request-status">
-              <p>Post jobs and manage applicants. Requires admin approval.</p>
-              <p className="preference-meta">If approved, refresh access to activate your recruiter dashboard.</p>
-            </div>
-            <div className="dashboard-links">
-              <Link className="shell-button dashboard-link" to="/request-access/recruiter">
-                Request recruiter access
-              </Link>
-            </div>
-          </CardPrimitive>
-        )}
-
-        <CardPrimitive
-          title="Email personalisation"
-          meta="Review your current digest settings and open full controls."
-        >
-          {isLoadingPrefs ? <p className="meta">Loading personalisation summary...</p> : null}
+        <CardPrimitive title="Job alert emails" meta="New roles sent to your inbox.">
+          {isLoadingPrefs ? <p className="meta">Loading your email settings...</p> : null}
 
           {!isLoadingPrefs ? (
             <div className="access-request-status">
               <p className="meta">
-                <strong>Status:</strong> {personalizationStatus}
+                <strong>Tailored to you:</strong> {personalizationStatus}
               </p>
               <p className="meta">
-                <strong>Frequency:</strong> {frequencySummary}
+                <strong>How often:</strong> {frequencySummary}
               </p>
               <p className="meta">
-                <strong>Categories:</strong> {categoriesSummary}
+                <strong>Specialties:</strong> {categoriesSummary}
               </p>
               <p className="meta">
                 <strong>Locations:</strong> {locationsSummary}
@@ -250,19 +246,29 @@ export function DashboardPage() {
 
           <div className="dashboard-links">
             <Link className="shell-button dashboard-link" to="/account/personalization">
-              Manage personalisation
+              Change email settings
             </Link>
           </div>
         </CardPrimitive>
       </section>
 
-      <section className="shell-content dashboard-applications" aria-label="My direct applications">
-        <CardPrimitive title="My direct applications" meta="Your latest direct applications.">
+      <section className="shell-content dashboard-applications" aria-label="My applications">
+        <CardPrimitive title="My applications" meta="Jobs you applied for directly on JobberMed.">
           {isLoadingApps ? <p className="meta">Loading applications...</p> : null}
           {appsError ? <p className="native-form-message native-form-error">{appsError}</p> : null}
 
           {!isLoadingApps && !appsError && applications.length === 0 ? (
-            <p className="meta">No direct applications yet.</p>
+            <>
+              <p className="meta">
+                You have not applied to any jobs on JobberMed yet. Applications made on other job boards are not tracked
+                here.
+              </p>
+              <div className="dashboard-links">
+                <Link className="shell-button dashboard-link" to="/">
+                  Browse jobs
+                </Link>
+              </div>
+            </>
           ) : null}
 
           {!isLoadingApps && !appsError && applications.length > 0 ? (
@@ -279,7 +285,7 @@ export function DashboardPage() {
                   {applications.slice(0, 10).map((application) => (
                     <tr key={application.id}>
                       <td>{application.jobTitle || "Untitled role"}</td>
-                      <td>{application.status}</td>
+                      <td>{formatStatus(application.status)}</td>
                       <td>{formatDate(application.submittedAt)}</td>
                     </tr>
                   ))}
@@ -287,6 +293,49 @@ export function DashboardPage() {
               </table>
             </div>
           ) : null}
+        </CardPrimitive>
+      </section>
+
+      <section className="shell-grid shell-grid--follow" aria-label="Workspaces and account">
+        {workspaceLinks.length > 0 ? (
+          <CardPrimitive title="Your workspaces" meta="Other areas your account can open.">
+            <div className="dashboard-links">
+              {workspaceLinks.map((workspace) => (
+                <Link key={workspace.id} className="shell-button dashboard-link" to={workspace.to}>
+                  {workspace.label}
+                </Link>
+              ))}
+            </div>
+          </CardPrimitive>
+        ) : null}
+
+        {!hasRecruiterAccess ? (
+          <CardPrimitive title="Hiring for a hospital or clinic?" meta="Post jobs and review applicants on JobberMed.">
+            <p className="meta">Recruiter access is approved by our team, usually after a short review.</p>
+            <div className="dashboard-links">
+              <Link className="shell-button dashboard-link" to="/request-access/recruiter">
+                Request recruiter access
+              </Link>
+            </div>
+          </CardPrimitive>
+        ) : null}
+
+        <CardPrimitive title="Account">
+          {user?.email ? (
+            <p className="meta">
+              Signed in as <strong>{user.email}</strong>
+            </p>
+          ) : null}
+          {roleList.length > 1 ? <p className="meta">Access: {roleList.join(", ")}</p> : null}
+          {sessionError ? <p className="native-form-message native-form-error">{sessionError}</p> : null}
+          <div className="dashboard-links">
+            <Link className="shell-button dashboard-link" to="/account/change-password">
+              Change password
+            </Link>
+            <button className="shell-button dashboard-link" type="button" onClick={() => void handleSignOut()}>
+              Sign out
+            </button>
+          </div>
         </CardPrimitive>
       </section>
     </RouteShell>

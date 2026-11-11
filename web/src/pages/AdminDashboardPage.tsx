@@ -63,13 +63,11 @@ export function AdminDashboardPage() {
     setActioningId(requestId);
 
     try {
+      const reviewedRequest = requests.find((request) => request.id === requestId);
       const reviewed = await reviewAccessRequest(requestId, approve);
       setRequests((current) => current.filter((request) => request.id !== requestId));
-      setNotice(
-        `${formatRole(reviewed.requestedRole)} request ${approve ? "approved" : "rejected"} for ${
-          reviewed.userId
-        }.`,
-      );
+      const who = reviewedRequest?.requesterName || reviewedRequest?.requesterEmail || "this user";
+      setNotice(`${formatRole(reviewed.requestedRole)} request ${approve ? "approved" : "rejected"} for ${who}.`);
     } catch (reviewError) {
       const message = reviewError instanceof Error ? reviewError.message : "Unable to review access request.";
       setError(message);
@@ -80,24 +78,16 @@ export function AdminDashboardPage() {
 
   return (
     <RouteShell title="Admin dashboard" subtitle="Approve or reject recruiter and MDCN role access requests.">
-      <section className="shell-grid" aria-label="Admin summary cards">
-        <CardPrimitive title="Pending approvals" meta="Access requests awaiting admin review.">
-          <p className="meta">{isLoading ? "Loading..." : `${requests.length} pending`}</p>
-        </CardPrimitive>
-
-        <CardPrimitive title="Role operations" meta="Approvals grant active platform roles.">
-          <p className="meta">Approvals call `approve_access_request()` and activate role assignments.</p>
-        </CardPrimitive>
-      </section>
-
       <section className="shell-content" aria-label="Pending access requests">
-        <CardPrimitive title="Access request queue" meta="Oldest pending requests first.">
-          {isLoading ? <p className="meta">Loading pending requests...</p> : null}
+        <CardPrimitive
+          title="Access requests"
+          meta={isLoading ? "Loading..." : `${requests.length} pending, oldest first. Approving a request gives that person the role straight away.`}
+        >
           {error ? <p className="native-form-message native-form-error">{error}</p> : null}
           {notice ? <p className="native-form-message native-form-success">{notice}</p> : null}
 
           {!isLoading && !error && requests.length === 0 ? (
-            <p className="meta">No pending access requests.</p>
+            <p className="meta">Nothing to review. New recruiter and MDCN access requests will appear here.</p>
           ) : null}
 
           {!isLoading && !error && requests.length > 0 ? (

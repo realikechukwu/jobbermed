@@ -16,6 +16,15 @@ const STATUS_OPTIONS: NativeApplicationStatus[] = [
   "withdrawn",
 ];
 
+const STATUS_LABELS: Record<NativeApplicationStatus, string> = {
+  submitted: "Submitted",
+  in_review: "In review",
+  shortlisted: "Shortlisted",
+  rejected: "Rejected",
+  hired: "Hired",
+  withdrawn: "Withdrawn",
+};
+
 function formatDate(value: string | null): string {
   if (!value) return "-";
   const parsed = new Date(value);
@@ -98,23 +107,19 @@ export function MdcnDashboardPage() {
 
   return (
     <RouteShell title="MDCN dashboard" subtitle="Regulatory review queue for direct-apply job applications.">
-      <section className="shell-grid" aria-label="MDCN summary cards">
-        <CardPrimitive title="Review queue" meta="All applications visible to MDCN reviewers.">
-          <p className="meta">{isLoading ? "Loading..." : `${applications.length} applications`}</p>
-        </CardPrimitive>
-
-        <CardPrimitive title="Workflow" meta="Update statuses as regulatory review progresses.">
-          <p className="meta">Status changes are saved immediately.</p>
-        </CardPrimitive>
-      </section>
-
       <section className="shell-content" aria-label="MDCN applications queue">
-        <CardPrimitive title="Applications queue" meta="Newest submissions first.">
-          {isLoading ? <p className="meta">Loading queue...</p> : null}
+        <CardPrimitive
+          title="Applications to review"
+          meta={
+            isLoading
+              ? "Loading..."
+              : `${applications.length} ${applications.length === 1 ? "application" : "applications"}, newest first. Pick a new status, then press Save on that row.`
+          }
+        >
           {error ? <p className="native-form-message native-form-error">{error}</p> : null}
 
           {!isLoading && !error && applications.length === 0 ? (
-            <p className="meta">No applications available for review.</p>
+            <p className="meta">Nothing to review. Applications made through Direct Apply jobs will appear here.</p>
           ) : null}
 
           {!isLoading && !error && applications.length > 0 ? (
@@ -145,6 +150,7 @@ export function MdcnDashboardPage() {
                         <td>
                           <select
                             className="shell-input dashboard-status-select"
+                            aria-label={`Status for ${application.applicantName || "applicant"}`}
                             value={selectedStatus}
                             onChange={(event) =>
                               setPendingStatuses((current) => ({
@@ -155,7 +161,7 @@ export function MdcnDashboardPage() {
                           >
                             {STATUS_OPTIONS.map((status) => (
                               <option key={status} value={status}>
-                                {status}
+                                {STATUS_LABELS[status]}
                               </option>
                             ))}
                           </select>

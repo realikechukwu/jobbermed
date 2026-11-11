@@ -133,8 +133,12 @@ export function RecruiterJobNewPage() {
       <section className="shell-content" aria-label="Create Direct Apply job">
         <CardPrimitive title="New Direct Apply job">
           <form className="shell-form" onSubmit={handleSubmit}>
+            <p className="meta">Only the job title and description are required. Everything else is optional.</p>
+
+            <fieldset className="form-section">
+            <legend className="form-section-title">The role</legend>
             <label className="shell-label" htmlFor="job-title">
-              Job title
+              Job title <span className="form-required">(required)</span>
             </label>
             <input
               className="shell-input"
@@ -145,7 +149,7 @@ export function RecruiterJobNewPage() {
             />
 
             <label className="shell-label" htmlFor="job-description">
-              Description
+              Description <span className="form-required">(required, at least 40 characters)</span>
             </label>
             <textarea
               className="shell-input access-request-reason"
@@ -183,6 +187,10 @@ export function RecruiterJobNewPage() {
               </div>
             </div>
 
+            </fieldset>
+
+            <fieldset className="form-section">
+            <legend className="form-section-title">What you are looking for</legend>
             <label className="shell-label" htmlFor="job-requirements">
               Requirements (one per line)
             </label>
@@ -202,7 +210,10 @@ export function RecruiterJobNewPage() {
               value={form.responsibilities}
               onChange={(event) => update("responsibilities", event.target.value)}
             />
+            </fieldset>
 
+            <fieldset className="form-section">
+            <legend className="form-section-title">Location and type</legend>
             <div className="dashboard-form-grid">
               <div>
                 <label className="shell-label" htmlFor="job-location">
@@ -254,6 +265,12 @@ export function RecruiterJobNewPage() {
                 </select>
               </div>
 
+            </div>
+            </fieldset>
+
+            <fieldset className="form-section">
+            <legend className="form-section-title">Pay and deadline</legend>
+            <div className="dashboard-form-grid">
               <div>
                 <label className="shell-label" htmlFor="job-currency">
                   Currency
@@ -268,7 +285,7 @@ export function RecruiterJobNewPage() {
 
               <div>
                 <label className="shell-label" htmlFor="job-salary-min">
-                  Salary min
+                  Lowest monthly salary
                 </label>
                 <input
                   className="shell-input"
@@ -281,7 +298,7 @@ export function RecruiterJobNewPage() {
 
               <div>
                 <label className="shell-label" htmlFor="job-salary-max">
-                  Salary max
+                  Highest monthly salary
                 </label>
                 <input
                   className="shell-input"
@@ -294,7 +311,7 @@ export function RecruiterJobNewPage() {
 
               <div>
                 <label className="shell-label" htmlFor="job-deadline">
-                  Apply deadline
+                  Application deadline
                 </label>
                 <input
                   className="shell-input"
@@ -305,9 +322,15 @@ export function RecruiterJobNewPage() {
                 />
               </div>
 
+            </div>
+            </fieldset>
+
+            <fieldset className="form-section">
+            <legend className="form-section-title">Publishing</legend>
+            <div className="dashboard-form-grid">
               <div>
                 <label className="shell-label" htmlFor="job-status">
-                  Initial status
+                  Save as
                 </label>
                 <select
                   className="shell-input"
@@ -315,8 +338,8 @@ export function RecruiterJobNewPage() {
                   value={form.status}
                   onChange={(event) => update("status", event.target.value as NativeJobStatus)}
                 >
-                  <option value="draft">Draft</option>
-                  <option value="published">Published</option>
+                  <option value="published">Published (open for applications)</option>
+                  <option value="draft">Draft (finish later)</option>
                 </select>
               </div>
             </div>
@@ -327,8 +350,10 @@ export function RecruiterJobNewPage() {
                 checked={form.isPublic}
                 onChange={(event) => update("isPublic", event.target.checked)}
               />
-              <span>Make this job publicly visible</span>
+              <span>Show this job on the public job feed</span>
             </label>
+            <p className="meta">Untick to keep a published job off the feed and share it by link only.</p>
+            </fieldset>
 
             {error ? <p className="native-form-message native-form-error">{error}</p> : null}
 
