@@ -57,7 +57,9 @@ export function AggregatorDetailPanel({
     return null;
   }
 
-  const title = safeText(job?.job_title) || "Untitled Role";
+  const rawTitle = safeText(job?.job_title);
+  const title = rawTitle || "Untitled Role";
+  const hasRealTitle = rawTitle.length > 0;
   const company = safeText(job?.company);
   const location = safeText(job?.location);
   const salary = safeText(job?.salary) || "Salary not listed";
@@ -142,27 +144,25 @@ export function AggregatorDetailPanel({
           <ul id="detailResponsibilities">{renderDetailList(responsibilities)}</ul>
         </div>
 
-        <div className="aggregator-notice">
-          <strong>About this listing</strong>
-          <p>
-            JobberMed aggregates medical jobs from multiple sources. We are not the employer. View the original posting
-            below for application instructions, contact details, and full job information.
-          </p>
-        </div>
-
         {applyUrl ? (
-          <div className="aggregator-notice detail-cv-match">
-            <strong>Before you apply</strong>
-            <p>
-              Check your CV against this advert with <a href={buildCvMatchUrl(job)}>CV Match</a>. It scores the match, shows
-              what is missing and rewrites your CV as a PDF. Free, no account needed.
-            </p>
-          </div>
+          <section className="detail-cv-match" aria-labelledby="detailCvMatchTitle">
+            <span className="detail-cv-match-eyebrow">Before you apply</span>
+            <h4 className="detail-cv-match-title" id="detailCvMatchTitle">
+              {hasRealTitle ? (
+                <>
+                  See how well your CV matches this <span className="detail-cv-match-role">{title}</span> role
+                </>
+              ) : (
+                "See how well your CV matches this role"
+              )}
+            </h4>
+            <p className="detail-cv-match-body">Get a match score, find the gaps, download a tailored CV.</p>
+            <a className="detail-cv-match-btn" href={buildCvMatchUrl(job)}>
+              Check my CV against this job <span aria-hidden="true">→</span>
+            </a>
+            <p className="detail-cv-match-fine">Free · No account needed</p>
+          </section>
         ) : null}
-
-        <p className="detail-source">
-          Source: <span id="detailSource">{sourceLabel}</span>
-        </p>
 
         {applyUrl ? (
           <a className="detail-cta" id="detailCTA" href={applyUrl} target="_blank" rel="noopener noreferrer">
@@ -180,6 +180,16 @@ export function AggregatorDetailPanel({
             No application link available
           </a>
         )}
+
+        <div className="detail-listing-info">
+          <p className="detail-source">
+            Source: <span id="detailSource">{sourceLabel}</span>
+          </p>
+          <p className="detail-disclaimer">
+            <strong>About this listing:</strong> JobberMed aggregates medical jobs from multiple sources. We are not the
+            employer. View the original posting for application instructions, contact details, and full job information.
+          </p>
+        </div>
       </aside>
     </>
   );

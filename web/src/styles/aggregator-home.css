@@ -949,32 +949,109 @@
   font-style: italic;
 }
 
-.aggregator-home .aggregator-notice {
-  background: #f5f5f5;
-  border: 1px solid #e0e0e0;
-  border-radius: 12px;
-  padding: 14px 16px;
-  margin: 24px 0;
-  font-size: 0.88rem;
+/* "Before you apply" CV Match prompt: sits directly above the apply CTA */
+.aggregator-home .detail-cv-match {
+  position: relative;
+  margin: 28px 0 0;
+  padding: 18px 18px 16px 20px;
+  border-radius: 14px;
+  background: var(--accent-soft, #eceafc);
+  border: 1px solid rgba(24, 0, 173, 0.14);
+  overflow: hidden;
+}
+
+.aggregator-home .detail-cv-match::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 4px;
+  background: var(--brand-gradient);
+}
+
+.aggregator-home .detail-cv-match-eyebrow {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--med);
+  margin-bottom: 6px;
+}
+
+.aggregator-home .detail-cv-match-title {
+  margin: 0 0 4px;
+  font-size: 1.02rem;
+  font-weight: 650;
+  line-height: 1.35;
+  color: var(--ink);
+}
+
+.aggregator-home .detail-cv-match-role {
+  color: var(--med);
+}
+
+.aggregator-home .detail-cv-match-body {
+  margin: 0 0 14px;
+  font-size: 0.9rem;
   line-height: 1.5;
+  color: var(--ink);
 }
 
-.aggregator-home .aggregator-notice strong {
-  display: block;
-  color: #111111;
-  margin-bottom: 4px;
-  font-size: 0.85rem;
+.aggregator-home .detail-cv-match-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 999px;
+  border: 1.5px solid var(--med);
+  background: #ffffff;
+  color: var(--med);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.15s ease, color 0.15s ease;
 }
 
-.aggregator-home .aggregator-notice p {
+.aggregator-home .detail-cv-match-btn:hover {
+  background: var(--med);
+  color: #ffffff;
+}
+
+.aggregator-home .detail-cv-match-btn:focus-visible {
+  outline: 3px solid rgba(24, 0, 173, 0.35);
+  outline-offset: 2px;
+}
+
+.aggregator-home .detail-cv-match-fine {
+  margin: 8px 0 0;
+  text-align: center;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+/* Source + disclaimer: quiet fine print under the apply CTA */
+.aggregator-home .detail-listing-info {
+  margin-top: 18px;
+}
+
+.aggregator-home .detail-disclaimer {
   margin: 0;
-  color: #111111;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.aggregator-home .detail-disclaimer strong {
+  color: var(--ink);
+  font-weight: 600;
 }
 
 .aggregator-home .detail-source {
   font-size: 0.82rem;
   color: var(--muted);
-  margin: 16px 0 8px;
+  margin: 0 0 8px;
 }
 
 .aggregator-home .detail-source span {
@@ -996,7 +1073,7 @@
   font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
-  margin-top: 20px;
+  margin-top: 14px;
 }
 
 .aggregator-home .detail-cta:hover {
