@@ -485,7 +485,7 @@ for (const article of blog.ARTICLES) {
           datePublished: article.published,
           dateModified: article.published,
           mainEntityOfPage: abs(path),
-          image: `${SITE_URL}/images/og-banner.jpg`,
+          image: `${SITE_URL}/images/og-banner-v2.jpg`,
           author: publisher,
           publisher,
         }) +
