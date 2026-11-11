@@ -2,6 +2,9 @@ import { useEffect, useRef } from "react";
 
 let activeLockCount = 0;
 let lockedScrollY = 0;
+// Pathname at lock time. If the user navigated while locked (e.g. tapped a
+// link in the mobile drawer), we must not restore the old page's scroll.
+let lockedPathname = "";
 let restoreFrameId: number | null = null;
 let storedStyles: {
   overflow: string;
@@ -22,6 +25,7 @@ function acquireBodyScrollLock() {
 
   if (activeLockCount === 0) {
     lockedScrollY = window.scrollY || 0;
+    lockedPathname = window.location.pathname;
     storedStyles = {
       overflow: document.body.style.overflow,
       position: document.body.style.position,
@@ -64,6 +68,10 @@ function releaseBodyScrollLock() {
 
   storedStyles = null;
   const scrollYToRestore = lockedScrollY;
+  if (window.location.pathname !== lockedPathname) {
+    window.scrollTo(0, 0);
+    return;
+  }
   restoreFrameId = window.requestAnimationFrame(() => {
     restoreFrameId = null;
     if (activeLockCount === 0) {

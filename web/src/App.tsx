@@ -1,5 +1,6 @@
 import { Navigate, Route, Routes, useParams } from "react-router-dom";
 import { CardPrimitive } from "./components/CardPrimitive";
+import { ScrollToTop } from "./components/ScrollToTop";
 import { RequireAuth, RequireRole } from "./features/auth/guards";
 import { ALL_CATEGORY_SLUG, LANDING_CATEGORIES } from "./features/aggregator-jobs/landing";
 import { RouteShell } from "./layouts/RouteShell";
@@ -62,6 +63,7 @@ function MdcnAccessRequiredFallback() {
 export function App() {
   return (
     <>
+    <ScrollToTop />
     <RouteMeta />
     <Routes>
       <Route path="/" element={<HomePage />} />
