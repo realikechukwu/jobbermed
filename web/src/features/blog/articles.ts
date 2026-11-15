@@ -63,6 +63,98 @@ export const CV_MATCH_CTA = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "medical-officer-locum-doctor-jobs-nigeria",
+    title: "How to Get a Medical Officer (MO) or Locum Doctor Job in Nigeria (2026 Guide)",
+    description:
+      "Find Medical Officer and locum doctor jobs in Nigeria. Check MDCN and NYSC requirements, compare advertised pay examples from ₦380k to ₦800k, and tailor your CV.",
+    published: "2026-11-15",
+    readMinutes: 5,
+    category: "Medical careers",
+    image: "/images/guides/cv.svg",
+    body: [
+      {
+        type: "p",
+        text: "Looking for a Medical Officer (MO) job after housemanship or NYSC, or a locum shift that fits around your exams? Start with [doctor jobs in Nigeria](/doctor-jobs). Look for Medical Officer, Resident Medical Officer (RMO), Senior Medical Officer (SMO) and locum doctor, then confirm the hours and clinical responsibilities in the original advert.",
+      },
+      {
+        type: "p",
+        text: "This guide draws on a JobberMed snapshot of 969 healthcare adverts from five Nigerian job boards, dated 16 September to 14 November 2026. The pay examples below come from individual adverts. Some have already closed, so use the live listings for vacancies you can apply for today.",
+      },
+      { type: "h2", text: "1. MDCN and NYSC requirements for Medical Officer and locum jobs" },
+      {
+        type: "ul",
+        items: [
+          "Medical degree. Have your MBBS, MBChB or other recognised equivalent ready. Use the employer’s required documents list.",
+          "Full MDCN registration and a current annual practising licence. Provisional registration is for approved, supervised housemanship. If you have just finished, complete full registration and check your licence before taking a Medical Officer role or a locum shift. [MDCN licensure requirements](https://mdcn.gov.ng/page/about-us/mdcn-act-other-regulation)",
+          "NYSC evidence where applicable. Keep the relevant discharge or exemption document ready, or check what official evidence applies to your circumstances. Read the advert alongside the [NYSC Act](https://www.nysc.gov.ng/downloads/nysc-decree.php).",
+          "Experience for the duties in the advert. A maternity hospital may look for obstetric experience. An outpatient clinic may ask for BLS and experience with electronic medical records (EMR). Confirm which procedures you would be expected to perform, what supervision is available and how referrals work.",
+        ],
+      },
+      { type: "h2", text: "2. Where to find Medical Officer and locum doctor vacancies" },
+      {
+        type: "ul",
+        items: [
+          "Private hospitals and maternity centres. Browse [doctor jobs in Lagos](/doctor-jobs/lagos) and [doctor jobs in Abuja](/doctor-jobs/abuja) for permanent posts and ward, emergency or maternity cover.",
+          "HMO clinics, wellness centres and telemedicine. Check whether the job is in person or remote, what the consultation schedule looks like and how emergencies are escalated.",
+          "Specialist centres. Search for roles in dialysis, paediatrics, fertility or critical care if your training and experience fit the job.",
+          "NGOs, universities and public hospitals. Check institutional recruitment pages for programme or hospital posts. See [how to apply for NGO and UN roles](/blog/ngo-jobs-in-nigeria) if you want to move into public health.",
+        ],
+      },
+      { type: "h2", text: "3. Medical Officer and locum doctor salary in Nigeria" },
+      {
+        type: "p",
+        text: "Compare advertised figures within the same type of work. A monthly salary, an hourly rate and a public sector grade tell you different things. These late-2026 examples show why the role, location and hours matter when you compare offers.",
+      },
+      {
+        type: "table",
+        columns: ["Advertised role", "Pay quoted"],
+        rows: [
+          ["[Full-time Medical Officer, paediatrics, Ikeja](https://medlocumjobs.com/jobs/medical-officer-paediatrics-2304)", "₦380,000 to ₦500,000 per month."],
+          ["[Full-time Medical Officer, wellness clinic, Lekki](https://jobanchor.com.ng/jobs/13024)", "₦800,000 per month. The advert asked for three to five years of relevant experience after housemanship."],
+          ["[Locum Medical Officer, Lagos](https://medlocumjobs.com/jobs/medical-officer-2322)", "₦2,500 per hour in this advert. Confirm billable hours and payment timing with the employer."],
+          ["[Medical Officer, OAUTHC, Ile-Ife](https://fcc.gov.ng/job-listings/obafemi-awolowo-university-teaching-hospitals-complex-ile-ife/)", "CONMESS 3 Step 2 in the October 2026 recruitment notice."],
+        ],
+      },
+      {
+        type: "p",
+        text: "For a locum shift, agree the rate, start and finish times, cover expected after handover, and when the invoice or payment is due. For a monthly post, confirm gross versus take-home pay, call allowances, overtime and any accommodation in writing. For public sector offers, check the exact grade and step. [Guide to CONMESS and CONHESS](/blog/conmess-conhess-explained)",
+      },
+      { type: "h2", text: "4. Write a Medical Officer or locum doctor CV" },
+      {
+        type: "ol",
+        items: [
+          "Put your MDCN registration and annual licence status near the top, with your NYSC status where relevant.",
+          "Describe the work you did in terms a recruiter can verify. Name the ward or service, its workload and your own responsibilities. For procedures, distinguish cases you led from those you assisted or did under supervision. Keep patient details out of the CV.",
+          "Use the advert’s wording for skills you have. Mention EMR documentation, ultrasound or a current BLS certificate when it fits the role and you can substantiate it.",
+        ],
+      },
+      {
+        type: "p",
+        text: "For structure, use the [healthcare CV guide for Nigeria](/blog/healthcare-cv-nigeria). When you find a specific role, [CV Match](https://cv.jobbermed.com) compares the advert with your CV, flags gaps and suggests a tailored rewrite you can review and save as a PDF.",
+      },
+      { type: "h2", text: "5. Send your application and verify the employer" },
+      {
+        type: "p",
+        text: "Check the closing date and apply through the original advert. If the employer asks for an email, use its specified subject line and file format. A name such as Amina-Bello-Medical-Officer-CV.pdf helps the recruiter find your CV. Verify the hospital and contact details independently before sharing documents. Treat unexplained interview or processing fees as a warning sign. [How to apply by email](/blog/apply-for-healthcare-job-by-email) · [How to spot a fake job advert](/blog/fake-healthcare-job-adverts)",
+      },
+      { type: "h2", text: "Frequently asked questions" },
+      { type: "h3", text: "Can I work as a locum doctor on provisional MDCN registration?" },
+      {
+        type: "p",
+        text: "Provisional registration allows supervised training at an approved housemanship centre. After completing housemanship, obtain full registration and a current annual practising licence before taking up ordinary Medical Officer or locum work. [MDCN guidance for house officers](https://www.mdcn.gov.ng/page/recent-news/press-release-on-professional-ethics-for-house-officers)",
+      },
+      { type: "h3", text: "What should I search for after NYSC?" },
+      {
+        type: "p",
+        text: "Try Medical Officer, Resident Medical Officer, GP, locum doctor and your preferred city. Read the level and years of experience in the advert before applying. If you are still looking for your first supervised placement, start with the [medical housemanship guide](/blog/medical-housemanship-in-nigeria).",
+      },
+      {
+        type: "p",
+        text: "[Browse current doctor jobs](/doctor-jobs) and [check your CV against the advert](https://cv.jobbermed.com) before you apply.",
+      },
+    ],
+  },
+  {
     slug: "medical-housemanship-in-nigeria",
     title: "Medical Housemanship in Nigeria: MDCN Portal, Pay and Centres",
     description:
@@ -564,6 +656,10 @@ export const ARTICLES: Article[] = [
       {
         type: "p",
         text: "These are advertised figures from a small sample, a few dozen adverts at most for each profession. About two thirds of the adverts with a naira salary were in Lagos. Use them to judge whether an offer is in the normal range. Do not treat them as a national average.",
+      },
+      {
+        type: "p",
+        text: "See the [Medical Officer and locum doctor jobs guide](/blog/medical-officer-locum-doctor-jobs-nigeria) for examples of monthly pay, an hourly locum rate and a federal grade.",
       },
       { type: "h2", text: "Show that you qualify for the grade" },
       {
