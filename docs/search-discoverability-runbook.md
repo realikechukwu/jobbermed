@@ -48,7 +48,7 @@ curl -sS -o /dev/null -w '%{http_code}\n' https://example.com/intentionally-miss
 | Crawler access | Live `robots.txt` allowed Google, Bing and OpenAI on public routes via `User-agent: *`. The sample listing returned 200 with ordinary and synthetic crawler user agents. |
 | Google Pages, report dated Nov 9 | 3 indexed; 98 not indexed: 81 crawled/currently not indexed, 15 redirect, 1 soft 404, 1 not found. Exclusions are diagnoses, not all defects. |
 | Google Sitemaps | `https://jobbermed.com/sitemap.xml` had status **Success**, submitted and last read Nov 10, with 981 discovered URLs. A production GET on Nov 15 contained 989 entries, reflecting different snapshots. |
-| Bing | Sign-in screen opened and handed off to the owner. Verification and submission are tracked separately from Google. |
+| Bing | Reused the existing verified `https://jobbermed.com/` property after the owner signed in. The Sitemaps table had zero rows before submission. |
 
 On the original local snapshot, the audit found 15 active case-folded slug collision groups. It also found that none of the 821 generated listing pages had a clickable application link in the raw HTML. Some `JobPosting` descriptions contained no substantive details, and several `addressCountry` values were missing or were actually regions. The changes make job pages and board links use the same source identity and URL resolver, preserve the board's quick-view dialog, add original application links and stable canonicals, and suppress indexing/markup for thin pages. The sitemap and JSON-LD are checked before GitHub Pages uploads the build.
 
@@ -62,6 +62,12 @@ git diff --check
 ```
 
 The Nov 15 build contained 895 external listing pages, of which 776 were included in the 882-URL sitemap. The artifact check validated 655 `JobPosting` records. A rendered job detail confirmed the original source link, readable job facts and a matching canonical. Navigating back to the board reset the canonical to the homepage and removed the job's structured data. Lint passed for the changed files; the full repo lint still flags the existing Fast Refresh export warning in the auth session module.
+
+[GitHub Pages deployed the SEO commit successfully](https://github.com/realikechukwu/jobbermed/actions/runs/43710738535). The production sitemap returned `200 application/xml` with 882 URLs. Live smoke tests verified the job's canonical and application link, the signup page's `noindex`, and a real 404 with no homepage canonical. Bing accepted `https://jobbermed.com/sitemap.xml` and showed **Processing**. Google already had a successful sitemap submission for the same URL, so it was retained.
+
+Google's stored report did not yet know about `/about/`. **Test live URL** reported it available and eligible for indexing; **Request indexing** added it to the priority crawl queue. Bing's stored report showed a 4xx from April. Bing's **Live URL** diagnostic could not load insights after a retry, though a direct production request using the Bingbot user-agent returned `200`. Bing accepted the manual indexing request for `/about/`. Neither request proves inclusion in the respective index.
+
+GPT‑6.1 Sol at extra high handled the independent audit. GPT‑6.1 Terra at high attempted to open and attach to the browser, but the signed-in in-app tabs were accessible only from the main chat, which completed the console actions.
 
 Direct Apply is a separate publication lifecycle. It loads from Supabase and GitHub Pages does not currently generate its public detail HTML. The audited board showed zero Direct Apply roles. Before promoting these URLs to search, make a public-only snapshot at publish/close or use a server route with real status codes. Do not snapshot applicant details, auth state or drafts. Audit original listing links and close unknown-deadline listings when the source reports them closed; the current data cannot prove a source's availability when it omits a deadline.
 

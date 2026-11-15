@@ -91,6 +91,8 @@ The React app exposes:
 
 Board filter state (source, category, location, keyword, saved-only, page) lives in the URL query string, so filtered views are shareable and survive reloads.
 
+The [search discoverability runbook](docs/search-discoverability-runbook.md) covers the static search pages, crawler checks, sitemap validation and Google/Bing submission.
+
 ### 5. Direct Apply (native) jobs and role workflows
 
 Direct Apply jobs (internally "native jobs") live in Supabase and support these flows:
