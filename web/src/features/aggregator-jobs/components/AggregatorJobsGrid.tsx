@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import type { UnifiedJob } from "../../jobs/unify";
+import { searchListingKey } from "../search-listings";
 import { AggregatorJobCard } from "./AggregatorJobCard";
 
 type AggregatorJobsGridProps = {
   jobs: UnifiedJob[];
+  listingPaths: ReadonlyMap<string, string>;
   savedOnly: boolean;
   isSaved: (jobId: string, slugId: string) => boolean;
   onToggleSave: (job: UnifiedJob) => void;
@@ -21,6 +23,7 @@ type AggregatorJobsGridProps = {
 
 export function AggregatorJobsGrid({
   jobs,
+  listingPaths,
   savedOnly,
   isSaved,
   onToggleSave,
@@ -101,6 +104,7 @@ export function AggregatorJobsGrid({
         <AggregatorJobCard
           key={job._id}
           job={job}
+          listingPath={listingPaths.get(searchListingKey(job))}
           isSaved={isSaved(job._id, job._slug)}
           onToggleSave={onToggleSave}
           onOpenDetail={onOpenDetail}

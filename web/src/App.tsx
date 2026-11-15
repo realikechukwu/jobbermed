@@ -6,6 +6,7 @@ import { ALL_CATEGORY_SLUG, LANDING_CATEGORIES } from "./features/aggregator-job
 import { RouteShell } from "./layouts/RouteShell";
 import { RouteMeta } from "./lib/seo";
 import { AdminDashboardPage } from "./pages/AdminDashboardPage";
+import { AggregatorJobDetailPage } from "./pages/AggregatorJobDetailPage";
 import { AboutPage } from "./pages/AboutPage";
 import { BlogArticlePage } from "./pages/BlogArticlePage";
 import { BlogIndexPage } from "./pages/BlogIndexPage";
@@ -67,7 +68,7 @@ export function App() {
     <RouteMeta />
     <Routes>
       <Route path="/" element={<HomePage />} />
-      <Route path="/jobs/:jobSlug" element={<HomePage />} />
+      <Route path="/jobs/:jobSlug" element={<AggregatorJobDetailPage />} />
       {/* Search landing pages: the home feed filtered by specialty and/or location. */}
       {LANDING_CATEGORIES.flatMap(({ slug }) => [
         <Route key={slug} path={`/${slug}`} element={<HomePage />} />,

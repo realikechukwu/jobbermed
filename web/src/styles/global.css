@@ -1094,6 +1094,17 @@ a {
   gap: 14px;
 }
 
+.external-job-facts,
+.external-job-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px 24px;
+}
+
+.external-job-facts dt { font-weight: 700; }
+.external-job-facts dd { margin: 0; }
+
 .native-job-detail-salary {
   margin: 0;
   font-size: 1rem;

@@ -22,6 +22,7 @@ export type Article = {
   description: string;
   /** ISO date. */
   published: string;
+  updated?: string;
   readMinutes: number;
   category: string;
   image: string;

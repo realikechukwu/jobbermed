@@ -53,6 +53,9 @@ jobs:
           VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
           VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
 
+      - name: Validate SEO artifact
+        run: python3 web/scripts/verify-seo.py
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:

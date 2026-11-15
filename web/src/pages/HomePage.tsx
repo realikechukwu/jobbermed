@@ -12,6 +12,7 @@ import { LandingBrowseLinks } from "../features/aggregator-jobs/components/Landi
 import { HomeLegacyShell } from "../features/aggregator-jobs/components/HomeLegacyShell";
 import { ALL_CATEGORY, ALL_LOCATIONS, CATEGORY_ORDER, PAGE_SIZE } from "../features/aggregator-jobs/constants";
 import { getLandingMeta } from "../features/aggregator-jobs/landing";
+import { indexSearchListings } from "../features/aggregator-jobs/search-listings";
 import { useAggregatorQueryState } from "../features/aggregator-jobs/hooks/useAggregatorQueryState";
 import { useUnifiedJobsData } from "../features/jobs/useUnifiedJobsData";
 import { isDirectJob, type UnifiedJob } from "../features/jobs/unify";
@@ -19,7 +20,6 @@ import { useDetailPanel } from "../features/aggregator-jobs/hooks/useDetailPanel
 import { useSavedJobsLocal } from "../features/aggregator-jobs/hooks/useSavedJobsLocal";
 import type { CategoryCounts, LocationCounts } from "../features/aggregator-jobs/types";
 import {
-  getJobPageSlug,
   getJobTypeGroup,
   hasListedSalary,
   interleaveBySource,
@@ -27,7 +27,6 @@ import {
   normalizeCategory,
   safeText,
 } from "../features/aggregator-jobs/utils";
-import { applyPageMeta } from "../lib/seo";
 import "../styles/aggregator-home.css";
 
 const AGGREGATED_JOBS_URL = `${import.meta.env.BASE_URL}data/master_jobs.json`;
@@ -64,6 +63,7 @@ function buildLocationCounts(activeJobs: Array<{ _locationBuckets: string[] }>):
 export function HomePage() {
   const { jobs, isLoading, error, directJobsError } = useUnifiedJobsData(AGGREGATED_JOBS_URL);
   const navigate = useNavigate();
+  const listingPaths = useMemo(() => indexSearchListings(jobs.filter((job) => !isDirectJob(job))).byId, [jobs]);
 
   const {
     activeCategory,
@@ -317,27 +317,6 @@ export function HomePage() {
     return getLandingMeta(activeCategory, activeLocation, count);
   }, [activeCategory, activeLocation, categoryCounts, isLoading]);
 
-  useEffect(() => {
-    if (panelJob && !panelJob._slug.startsWith("direct-")) {
-      const company = safeText(panelJob.company);
-      const place = safeText(panelJob.location);
-      const role = panelJob.job_title || "Healthcare job";
-      applyPageMeta({
-        title: `${role}${company ? ` at ${company}` : ""}${place ? `, ${place}` : ""} | JobberMed`,
-        description: `${role}${company ? ` at ${company}` : ""}${place ? ` in ${place}` : ""}. See requirements, responsibilities and how to apply on JobberMed.`,
-        path: `/jobs/${getJobPageSlug(panelJob._slug)}`,
-      });
-      return;
-    }
-
-    if (landingMeta) {
-      applyPageMeta({ title: landingMeta.title, description: landingMeta.description, path: landingMeta.path });
-      return;
-    }
-
-    applyPageMeta({ path: "/" });
-  }, [landingMeta, panelJob]);
-
   const panelIsSaved = panelJob ? isSaved(panelJob._id, panelJob._slug) : false;
 
   const hasKeyword = keywordQuery.trim().length > 0;
@@ -502,6 +481,7 @@ export function HomePage() {
         {!error && !isLoading ? (
           <>
             <AggregatorJobsGrid
+              listingPaths={listingPaths}
               jobs={pageItems}
               savedOnly={savedOnly}
               isSaved={isSaved}

@@ -13,7 +13,7 @@ export type PageMeta = {
   title?: string;
   description?: string;
   /** Canonical path, e.g. "/about". */
-  path?: string;
+  path?: string | null;
   noindex?: boolean;
 };
 
@@ -37,10 +37,12 @@ const ROUTE_META: Record<string, PageMeta> = {
   "/signup": {
     title: "Create Your Free Account | JobberMed",
     description: "Sign up to save healthcare jobs, set preferences and apply directly on JobberMed.",
+    noindex: true,
   },
   "/signin": {
     title: "Sign In | JobberMed",
     description: "Sign in to your JobberMed account to manage saved jobs and applications.",
+    noindex: true,
   },
 };
 
@@ -59,19 +61,24 @@ export function applyPageMeta(meta: PageMeta) {
   const description = meta.description ?? DEFAULT_DESCRIPTION;
   // Pages are served from directories, so the canonical form ends in a slash
   // (the bare path redirects there).
-  const path = meta.path ?? "/";
-  const canonical = `${SITE_URL}${path.endsWith("/") ? path : `${path}/`}`;
+  const path = meta.path === undefined ? "/" : meta.path;
+  const canonical = path === null ? null : `${SITE_URL}${path.endsWith("/") ? path : `${path}/`}`;
 
   document.title = title;
   upsertMeta("name", "description", description);
-  upsertMeta("name", "robots", meta.noindex ? "noindex, nofollow" : "index, follow, max-image-preview:large");
+  upsertMeta("name", "robots", meta.noindex ? "noindex" : "index, follow, max-image-preview:large");
   upsertMeta("property", "og:title", title);
   upsertMeta("property", "og:description", description);
-  upsertMeta("property", "og:url", canonical);
+  if (canonical) upsertMeta("property", "og:url", canonical);
+  else document.head.querySelector('meta[property="og:url"]')?.remove();
   upsertMeta("name", "twitter:title", title);
   upsertMeta("name", "twitter:description", description);
 
   let link = document.head.querySelector<HTMLLinkElement>('link[rel="canonical"]');
+  if (!canonical) {
+    link?.remove();
+    return;
+  }
   if (!link) {
     link = document.createElement("link");
     link.rel = "canonical";
@@ -104,12 +111,8 @@ export function getRouteMeta(pathname: string): PageMeta {
     }
   }
 
-  if (normalized.startsWith("/jobs/")) {
-    return { path: normalized };
-  }
-
   // Account, dashboard and other app-only screens stay out of search results.
-  return { title: `${SITE_NAME}`, path: normalized, noindex: true };
+  return { title: SITE_NAME, path: null, noindex: true };
 }
 
 /** Sets title, description, canonical and robots for the current route. */
@@ -117,6 +120,12 @@ export function RouteMeta() {
   const { pathname } = useLocation();
 
   useEffect(() => {
+    const path = pathname.replace(/\/+$/, "") + "/";
+    const originalCanonical = document.head.querySelector<HTMLLinkElement>('link[rel="canonical"]')?.href;
+    if (originalCanonical === SITE_URL + path) return;
+    document.head.querySelectorAll("script[data-route-schema]").forEach((script) => script.remove());
+    // The listing detail sets its metadata after resolving the job.
+    if (/^\/jobs\/[^/]+\/$/.test(path) && path !== "/jobs/direct/") return;
     applyPageMeta(getRouteMeta(pathname));
   }, [pathname]);
 

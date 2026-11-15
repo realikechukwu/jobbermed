@@ -2,10 +2,11 @@ import type { MouseEvent } from "react";
 import { Link } from "react-router-dom";
 import { isDirectJob, type UnifiedJob } from "../../jobs/unify";
 import { SOURCE_LABELS } from "../constants";
-import { formatDate, formatJobType, formatSalary, getJobPageSlug, hasListedSalary, safeText } from "../utils";
+import { formatDate, formatJobType, formatSalary, hasListedSalary, safeText } from "../utils";
 
 type AggregatorJobCardProps = {
   job: UnifiedJob;
+  listingPath?: string;
   isSaved: boolean;
   onToggleSave: (job: UnifiedJob) => void;
   onOpenDetail: (job: UnifiedJob) => void;
@@ -27,7 +28,7 @@ function BookmarkIcon({ filled }: { filled: boolean }) {
   );
 }
 
-export function AggregatorJobCard({ job, isSaved, onToggleSave, onOpenDetail }: AggregatorJobCardProps) {
+export function AggregatorJobCard({ job, listingPath, isSaved, onToggleSave, onOpenDetail }: AggregatorJobCardProps) {
   const company = safeText(job.company);
   const location = safeText(job.location);
   const posted = formatDate(job.date_posted);
@@ -38,7 +39,7 @@ export function AggregatorJobCard({ job, isSaved, onToggleSave, onOpenDetail }: 
   const title = job.job_title || "Untitled role";
   const jobType = formatJobType(job.job_type);
   // The listing's own address, so the title can be opened in a new tab.
-  const detailPath = isDirect && directDetailPath ? directDetailPath : `/jobs/${getJobPageSlug(job._slug)}`;
+  const detailPath = isDirect && directDetailPath ? directDetailPath : listingPath ? `${listingPath}/` : null;
   const describedJob = company ? `${title} at ${company}` : title;
   const sourceLabel = SOURCE_LABELS[safeText(job._source)];
 
@@ -109,9 +110,7 @@ export function AggregatorJobCard({ job, isSaved, onToggleSave, onOpenDetail }: 
       </div>
 
       <h3 className="title job-title">
-        <a className="job-title-link" href={detailPath} onClick={handleTitleClick}>
-          {title}
-        </a>
+        {detailPath ? <a className="job-title-link" href={detailPath} onClick={handleTitleClick}>{title}</a> : title}
       </h3>
 
       <div className="tags">

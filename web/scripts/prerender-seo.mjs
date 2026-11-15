@@ -38,15 +38,21 @@ async function loadAppModule(entry) {
   }
 }
 
-const landing = await loadAppModule("src/features/aggregator-jobs/landing.ts");
-const blog = await loadAppModule("src/features/blog/articles.ts");
+const [landing, blog, listings, jobsData, { SOURCE_LABELS }, { ABOUT_PARAGRAPHS }] = await Promise.all([
+  loadAppModule("src/features/aggregator-jobs/landing.ts"),
+  loadAppModule("src/features/blog/articles.ts"),
+  loadAppModule("src/features/aggregator-jobs/search-listings.ts"),
+  loadAppModule("src/features/aggregator-jobs/utils.ts"),
+  loadAppModule("src/features/aggregator-jobs/constants.ts"),
+  loadAppModule("src/features/aggregator-jobs/about.ts"),
+]);
 const ALL_CATEGORY = "All";
 const ALL_LOCATIONS = "All locations";
 const MAX_LANDING_JOBS_LISTED = 100;
 
 const template = readFileSync(join(DIST, "index.html"), "utf8");
 const payload = JSON.parse(readFileSync(join(DIST, "data", "master_jobs.json"), "utf8"));
-const rawJobs = Array.isArray(payload) ? payload : Array.isArray(payload.jobs) ? payload.jobs : [];
+const jobs = jobsData.normalizeJobs(jobsData.extractRawJobs(payload));
 
 // Keep in sync with ROUTE_META in src/lib/seo.ts.
 const PUBLIC_PAGES = [
@@ -75,22 +81,15 @@ const PUBLIC_PAGES = [
     title: "Create Your Free Account | JobberMed",
     description: "Sign up to save healthcare jobs, set preferences and apply directly on JobberMed.",
     heading: "Create your free JobberMed account",
+    noindex: true,
   },
   {
     path: "/signin",
     title: "Sign In | JobberMed",
     description: "Sign in to your JobberMed account to manage saved jobs and applications.",
     heading: "Sign in to JobberMed",
+    noindex: true,
   },
-];
-
-const EMPLOYMENT_TYPES = [
-  [/full/i, "FULL_TIME"],
-  [/part/i, "PART_TIME"],
-  [/contract|locum/i, "CONTRACTOR"],
-  [/temp/i, "TEMPORARY"],
-  [/intern|house\s*officer/i, "INTERN"],
-  [/volunt/i, "VOLUNTEER"],
 ];
 
 // GitHub Pages serves each page from a directory and redirects the bare path
@@ -99,57 +98,29 @@ const href = (path) => (path === "/" || path.endsWith("/") ? path : `${path}/`);
 const abs = (path) => `${SITE_URL}${href(path)}`;
 const lowerFirst = (value) => value.charAt(0).toLowerCase() + value.slice(1);
 const text = (value) => (value === null || value === undefined ? "" : String(value).trim());
-const list = (value) => (Array.isArray(value) ? value.map(text).filter(Boolean) : []);
-const esc = (value) =>
-  text(value).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+const esc = (value) => listings.escapeListingHtml(text(value));
 const jsonLd = (data) =>
-  `<script type="application/ld+json">${JSON.stringify(data).replace(/</g, "\\u003c")}</script>`;
-
-// Mirrors getJobSlug() in src/features/aggregator-jobs/utils.ts so the URL
-// written here is the one the app resolves.
-function getJobSlug(job) {
-  const match = text(job.apply_url).match(/[^/]+$/);
-  if (match) {
-    return match[0];
-  }
-  return (text(job.job_title) || "job")
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "")
-    .substring(0, 60);
-}
-
-function isExpired(deadline) {
-  const date = new Date(text(deadline));
-  if (!text(deadline) || Number.isNaN(date.getTime())) {
-    return false;
-  }
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
-  return date < today;
-}
-
-const isoDate = (value) => (/^\d{4}-\d{2}-\d{2}/.test(text(value)) ? text(value).slice(0, 10) : "");
+  `<script type="application/ld+json" data-route-schema>${JSON.stringify(data).replace(/</g, "\\u003c")}</script>`;
 
 function renderPage({ path, title, description, headExtra = "", body, noindex = false }) {
-  const canonical = `${abs(path)}`;
+  const canonical = path === null ? null : abs(path);
   let html = template
-    .replace(/<title>[\s\S]*?<\/title>/, `<title>${esc(title)}</title>`)
-    .replace(/(<meta\s+name="description"\s+content=")[^"]*(")/, `$1${esc(description)}$2`)
-    .replace(/(<meta\s+property="og:title"\s+content=")[^"]*(")/, `$1${esc(title)}$2`)
-    .replace(/(<meta\s+property="og:description"\s+content=")[^"]*(")/, `$1${esc(description)}$2`)
-    .replace(/(<meta\s+name="twitter:title"\s+content=")[^"]*(")/, `$1${esc(title)}$2`)
-    .replace(/(<meta\s+name="twitter:description"\s+content=")[^"]*(")/, `$1${esc(description)}$2`)
-    .replace(/(<meta\s+property="og:url"\s+content=")[^"]*(")/, `$1${canonical}$2`)
-    .replace(/(<link\s+rel="canonical"\s+href=")[^"]*(")/, `$1${canonical}$2`);
+    .replace(/<title>[\s\S]*?<\/title>/, () => `<title>${esc(title)}</title>`)
+    .replace(/(<meta\s+name="description"\s+content=")[^"]*(")/, (_match, before, after) => before + esc(description) + after)
+    .replace(/(<meta\s+property="og:title"\s+content=")[^"]*(")/, (_match, before, after) => before + esc(title) + after)
+    .replace(/(<meta\s+property="og:description"\s+content=")[^"]*(")/, (_match, before, after) => before + esc(description) + after)
+    .replace(/(<meta\s+name="twitter:title"\s+content=")[^"]*(")/, (_match, before, after) => before + esc(title) + after)
+    .replace(/(<meta\s+name="twitter:description"\s+content=")[^"]*(")/, (_match, before, after) => before + esc(description) + after)
+    .replace(/<meta\s+property="og:url"\s+content="[^"]*"\s*\/?\s*>/, () => canonical ? `<meta property="og:url" content="${canonical}" />` : "")
+    .replace(/<link\s+rel="canonical"\s+href="[^"]*"\s*\/?\s*>/, () => canonical ? `<link rel="canonical" href="${canonical}" />` : "");
 
   if (noindex) {
     html = html.replace(/(<meta\s+name="robots"\s+content=")[^"]*(")/, "$1noindex$2");
   }
 
   return html
-    .replace("<!--seo:head-->", headExtra)
-    .replace("<!--seo:body-->", body ? `<div style="${SHELL_STYLE}">${body}</div>` : "");
+    .replace("<!--seo:head-->", () => headExtra)
+    .replace("<!--seo:body-->", () => body ? `<main style="${SHELL_STYLE}">${body}</main>` : "");
 }
 
 // Shown only until the app mounts and replaces it.
@@ -164,7 +135,7 @@ function writePage(path, html) {
 
 function jobHeadline(job) {
   const role = text(job.job_title) || "Healthcare job";
-  const company = text(job.company);
+  const company = job.company === "Company not listed" ? "" : job.company;
   const place = text(job.location);
   return { role, company, place };
 }
@@ -195,70 +166,31 @@ function jobBody(job, parent) {
     ["Location", place],
     ["Job type", text(job.job_type)],
     ["Salary", text(job.salary)],
-    ["Experience", text(job.experience)],
-    ["Qualification", text(job.qualification)],
-    ["Posted", isoDate(job.date_posted)],
-    ["Closes", isoDate(job.deadline)],
+    ["Posted", listings.listingDate(job.date_posted)],
+    ["Closes", listings.listingDate(job.deadline)],
   ].filter(([, value]) => value);
   const section = (heading, items) =>
     items.length ? `<h2>${heading}</h2><ul>${items.map((item) => `<li>${esc(item)}</li>`).join("")}</ul>` : "";
 
+  const applyUrl = listings.sourceApplyUrl(job.apply_url);
+  const sourceLabel = SOURCE_LABELS[job._source];
   return [
-    `<nav><a href="/">JobberMed</a> &rsaquo; <a href="/">Healthcare jobs</a>${
+    `<nav><a href="/">Healthcare jobs</a>${
       parent ? ` &rsaquo; <a href="${href(parent.path)}">${esc(parent.linkLabel)}</a>` : ""
     }</nav>`,
     `<h1>${esc(role)}${company ? ` at ${esc(company)}` : ""}</h1>`,
     `<dl>${facts.map(([label, value]) => `<dt><strong>${label}</strong></dt><dd>${esc(value)}</dd>`).join("")}</dl>`,
-    section("Responsibilities", list(job.responsibilities)),
-    section("Requirements", list(job.requirements)),
-    text(job.how_to_apply) ? `<h2>How to apply</h2><p>${esc(job.how_to_apply)}</p>` : "",
+    section("Responsibilities", job.responsibilities),
+    section("Requirements", job.requirements),
+    applyUrl ? `<p><a href="${esc(applyUrl)}">${sourceLabel ? `Apply on ${esc(sourceLabel)}` : "Apply on the original site"}</a></p>` : "",
     parent ? `<p><a href="${href(parent.path)}">More ${esc(lowerFirst(parent.linkLabel))}</a></p>` : "",
     `<p><a href="/">Browse all healthcare jobs on JobberMed</a></p>`,
   ].join("");
 }
 
 function jobStructuredData(job, url, parent) {
-  const { role, company, place } = jobHeadline(job);
-  const datePosted = isoDate(job.date_posted);
-  if (!company || !place || !datePosted) {
-    return ""; // Google requires all three for JobPosting.
-  }
-
-  const parts = place.split(",").map((part) => part.trim()).filter(Boolean);
-  const country = parts.length > 1 ? parts[parts.length - 1] : /nigeria/i.test(place) ? "Nigeria" : "";
-  const description = [
-    `<p>${esc(role)} at ${esc(company)}, ${esc(place)}.</p>`,
-    list(job.responsibilities).length
-      ? `<p><strong>Responsibilities</strong></p><ul>${list(job.responsibilities).map((item) => `<li>${esc(item)}</li>`).join("")}</ul>`
-      : "",
-    list(job.requirements).length
-      ? `<p><strong>Requirements</strong></p><ul>${list(job.requirements).map((item) => `<li>${esc(item)}</li>`).join("")}</ul>`
-      : "",
-  ].join("");
-  const employmentType = EMPLOYMENT_TYPES.find(([pattern]) => pattern.test(text(job.job_type)))?.[1];
-  const validThrough = isoDate(job.deadline);
-
-  const posting = {
-    "@context": "https://schema.org",
-    "@type": "JobPosting",
-    title: role,
-    description,
-    datePosted,
-    ...(validThrough ? { validThrough: `${validThrough}T23:59:59+01:00` } : {}),
-    ...(employmentType ? { employmentType } : {}),
-    hiringOrganization: { "@type": "Organization", name: company },
-    jobLocation: {
-      "@type": "Place",
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: parts.length > 1 ? parts.slice(0, -1).join(", ") : place,
-        ...(country ? { addressCountry: country } : {}),
-      },
-    },
-    industry: "Healthcare",
-    directApply: false,
-    url,
-  };
+  const posting = listings.listingJobPosting(job, url);
+  const { role } = jobHeadline(job);
   const breadcrumbs = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -268,30 +200,21 @@ function jobStructuredData(job, url, parent) {
       { "@type": "ListItem", position: parent ? 3 : 2, name: role, item: url },
     ],
   };
-  return jsonLd(posting) + jsonLd(breadcrumbs);
+  return (posting ? jsonLd(posting) : "") + jsonLd(breadcrumbs);
 }
 
 // ---- jobs -----------------------------------------------------------------
-const seen = new Set();
-const jobPages = [];
-for (const job of rawJobs) {
-  // Mirrors getJobPageSlug() in the app. Anything that still is not a clean
-  // path segment stays reachable in the app through ?job=.
-  const slug = getJobSlug(job)
-    .replace(/[?#].*$/, "")
-    .replace(/\.html?$/i, "");
-  if (!/^[a-z0-9][a-z0-9._-]*$/i.test(slug) || seen.has(slug) || isExpired(job.deadline)) {
-    continue;
-  }
-  seen.add(slug);
-  jobPages.push({
+const jobPages = [...listings.indexSearchListings(jobs).bySlug].map(([slug, job]) => {
+  const path = `/jobs/${slug}`;
+  return {
     job,
-    slug,
-    path: `/jobs/${slug}`,
-    category: landing.normalizeCategory({ job_title: text(job.job_title), job_category: text(job.job_category) }),
-    buckets: landing.getLocationBuckets(text(job.location)),
-  });
-}
+    path,
+    meta: listings.listingMeta(job, path),
+    category: landing.normalizeCategory(job),
+    buckets: job._locationBuckets,
+  };
+});
+const indexableJobPages = jobPages.filter(({ meta }) => !meta.noindex);
 
 // ---- landing pages (specialty, location, specialty x location) --------------
 const byDate = (a, b) => text(b.job.date_posted).localeCompare(text(a.job.date_posted));
@@ -401,16 +324,13 @@ for (const page of landingPages) {
 }
 
 for (const entry of jobPages) {
-  const { job, path } = entry;
+  const { job, path, meta } = entry;
   const parent = jobLanding(entry);
-  const { role, company, place } = jobHeadline(job);
   writePage(
     path,
     renderPage({
-      path,
-      title: `${role}${company ? ` at ${company}` : ""}${place ? `, ${place}` : ""} | JobberMed`,
-      description: `${role}${company ? ` at ${company}` : ""}${place ? ` in ${place}` : ""}. See requirements, responsibilities and how to apply on JobberMed.`,
-      headExtra: jobStructuredData(job, `${abs(path)}`, parent),
+      ...meta,
+      headExtra: meta.noindex ? "" : jobStructuredData(job, abs(path), parent),
       body: jobBody(job, parent),
     }),
   );
@@ -483,7 +403,7 @@ for (const article of blog.ARTICLES) {
           headline: article.title,
           description: article.description,
           datePublished: article.published,
-          dateModified: article.published,
+          ...(article.updated ? { dateModified: article.updated } : {}),
           mainEntityOfPage: abs(path),
           image: `${SITE_URL}/images/og-banner-v2.jpg`,
           author: publisher,
@@ -516,7 +436,9 @@ for (const page of PUBLIC_PAGES) {
     page.path,
     renderPage({
       ...page,
-      body: `<h1>${esc(page.heading)}</h1><p>${esc(page.description)}</p><p><a href="/">Browse healthcare jobs on JobberMed</a></p>`,
+      body: `<h1>${esc(page.heading)}</h1>${page.path === "/about"
+        ? `${ABOUT_PARAGRAPHS.map((paragraph) => `<p>${esc(paragraph)}</p>`).join("")}<p>To report an issue with a listing, email <a href="mailto:hello@jobbermed.com">hello@jobbermed.com</a>.</p><p><a href="/blog/">Read healthcare career guides</a></p>`
+        : `<p>${esc(page.description)}</p>`}<p><a href="/">Browse healthcare jobs on JobberMed</a></p>`,
     }),
   );
 }
@@ -524,7 +446,7 @@ for (const page of PUBLIC_PAGES) {
 // ---- 404 fallback (also boots the app for signed-in routes) ----------------
 writeFileSync(
   join(DIST, "404.html"),
-  renderPage({ path: "/", title: "JobberMed", description: "Healthcare jobs in Nigeria and across Africa.", noindex: true }),
+  renderPage({ path: null, title: "Page not found | JobberMed", description: "Browse healthcare jobs in Nigeria and across Africa.", noindex: true, body: '<h1>Page not found</h1><p><a href="/">Browse healthcare jobs</a></p>' }),
 );
 
 // ---- home -----------------------------------------------------------------
@@ -543,49 +465,34 @@ const homeItemList = {
 writePage(
   "/",
   template
-    .replace("<!--seo:head-->", jsonLd(homeItemList))
+    .replace("<!--seo:head-->", () => jsonLd(homeItemList))
     .replace(
       "<!--seo:body-->",
-      `<div style="${SHELL_STYLE}"><h1>Healthcare jobs across Nigeria and Africa</h1><p>${homeDescription}</p><h2>Latest jobs</h2><ul>${latest.map(jobListItem).join("")}</ul>${
+      () => `<main style="${SHELL_STYLE}"><h1>Healthcare jobs across Nigeria and Africa</h1><p>${homeDescription}</p><h2>Latest jobs</h2><ul>${latest.map(jobListItem).join("")}</ul>${
         specialtyPages.length ? `<h2>Browse by specialty</h2>${linkList(specialtyPages)}` : ""
-      }${locationPages.length ? `<h2>Healthcare jobs by location</h2>${linkList(locationPages)}` : ""}<h2>Career guides</h2>${articleLinks(blog.ARTICLES)}</div>`,
+      }${locationPages.length ? `<h2>Healthcare jobs by location</h2>${linkList(locationPages)}` : ""}<h2>Career guides</h2>${articleLinks(blog.ARTICLES)}</main>`,
     ),
 );
 
 // ---- sitemap --------------------------------------------------------------
-const today = new Date().toISOString().slice(0, 10);
 const urls = [
-  { loc: "/", lastmod: today, changefreq: "daily", priority: "1.0" },
-  ...PUBLIC_PAGES.filter((page) => page.path !== "/signin").map((page) => ({
-    loc: page.path,
-    changefreq: "monthly",
-    priority: "0.4",
-  })),
-  { loc: blog.BLOG_INDEX_META.path, lastmod: blog.ARTICLES[0]?.published, changefreq: "weekly", priority: "0.7" },
-  ...blog.ARTICLES.map((article) => ({
-    loc: `/blog/${article.slug}`,
-    lastmod: article.published,
-    changefreq: "monthly",
-    priority: "0.7",
-  })),
-  ...landingPages.map((page) => ({ loc: page.path, lastmod: today, changefreq: "daily", priority: "0.9" })),
-  ...jobPages.map(({ job, path }) => ({
-    loc: path,
-    lastmod: isoDate(job.date_posted) || today,
-    changefreq: "weekly",
-    priority: "0.8",
-  })),
+  { loc: "/" },
+  ...PUBLIC_PAGES.filter((page) => !page.noindex).map(({ path }) => ({ loc: path })),
+  { loc: blog.BLOG_INDEX_META.path },
+  ...blog.ARTICLES.map((article) => ({ loc: `/blog/${article.slug}`, lastmod: article.updated ?? article.published })),
+  ...landingPages.map(({ path }) => ({ loc: path })),
+  ...indexableJobPages.map(({ path }) => ({ loc: path })),
 ];
 writeFileSync(
   join(DIST, "sitemap.xml"),
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls
     .map(
       (url) =>
-        `  <url><loc>${abs(esc(url.loc))}</loc>${url.lastmod ? `<lastmod>${url.lastmod}</lastmod>` : ""}<changefreq>${url.changefreq}</changefreq><priority>${url.priority}</priority></url>`,
+        `  <url><loc>${abs(esc(url.loc))}</loc>${url.lastmod ? `<lastmod>${url.lastmod}</lastmod>` : ""}</url>`,
     )
     .join("\n")}\n</urlset>\n`,
 );
 
 console.log(
-  `SEO prerender: ${jobPages.length} job pages (${rawJobs.length - jobPages.length} skipped), ${landingPages.length} landing pages, ${blog.ARTICLES.length} articles, ${PUBLIC_PAGES.length} static pages, sitemap with ${urls.length} URLs.`,
+  `SEO prerender: ${jobPages.length} job pages (${indexableJobPages.length} indexable), ${landingPages.length} landing pages, ${blog.ARTICLES.length} articles, ${PUBLIC_PAGES.length} static pages, sitemap with ${urls.length} URLs.`,
 );
