@@ -1333,9 +1333,9 @@ body {
 
 .page {
   width: 100%;
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 8px 20px 72px;
+  max-width: none;
+  margin: 0;
+  padding: 8px max(20px, calc((100% - var(--max-width)) / 2)) 72px;
 }
 
 .card {
@@ -1381,12 +1381,16 @@ body {
   margin-top: 0;
 }
 
-/* Forms read better at a comfortable line length than stretched across the page. */
-.page .shell-form,
-.page .preference-form,
-.page .gsi-material-button,
-.page .auth-separator {
-  max-width: 560px;
+/* Center single-column forms (Sign in, Sign up, Password, Preferences, Post job) on the page. */
+.page .shell-content:has(.shell-form) {
+  max-width: 480px;
+  margin-inline: auto;
+}
+
+.page .shell-content:has(.form-section),
+.page .shell-content:has(.preference-form) {
+  max-width: 680px;
+  margin-inline: auto;
 }
 
 .preference-section {
