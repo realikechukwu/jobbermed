@@ -1,15 +1,49 @@
 {
   "metadata": {
-    "extracted_at": "2026-11-14T10:19:50.518355",
+    "extracted_at": "2026-11-15T10:46:21.566996",
     "model": "gpt-4o-mini",
-    "total_processed": 1169,
-    "duplicates_removed": 191,
-    "skipped_old": 16,
+    "total_processed": 1153,
+    "duplicates_removed": 184,
+    "skipped_old": 31,
     "skipped_empty": 0,
     "errors": 0,
-    "openai_calls": 257
+    "openai_calls": 195
   },
   "jobs": [
+    {
+      "job_title": "Health Assistant",
+      "company": "Homa Clinic & Maternity Home",
+      "location": "Ota, Ogun, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "N53,000 - N58,000",
+      "experience": "1 year",
+      "qualification": "OND, Professional Certificate",
+      "requirements": [
+        "Certificate or National Diploma (ND) in Community Health / Health Technology (e.g., CHEW / JCHEW or Health Assistant Certificate)",
+        "Basic First Aid and CPR/BLS (Basic Life Support) certification is a strong advantage.",
+        "Minimum of 5 months hands-on clinical experience in a hospital or clinic. Theatre experience is an advantage.",
+        "Proven hands-on experience in taking vital signs, patient hygiene, and supporting medical staff during minor procedures."
+      ],
+      "responsibilities": [
+        "Provide direct basic clinical care, monitor vital signs (blood pressure, temperature, pulse), and administer prescribed medications and treatments under the supervision of qualified practitioners.",
+        "Assist doctors and nurses during clinical procedures, examinations, and minor surgeries.",
+        "Assist in delivering compassionate maternal and child care services (prenatal, intrapartum, and postnatal monitoring).",
+        "Maintain accurate, up-to-date patient records and clinical documentation.",
+        "Ensure strict adherence to infection control protocols, hygiene, bed-making, and general patient safety standards.",
+        "Respond promptly to clinical emergencies and provide basic triage support."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-11-14",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/health-assistant-homa-clinic-maternity-home-1",
+      "_source": "myjobmag"
+    },
     {
       "job_title": "Dental Surgery Technician",
       "company": "Hillsong Dental Clinic",
@@ -147,6 +181,226 @@
       "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
       "contact_phone": "",
       "apply_url": "https://www.myjobmag.com/job/registered-nurse-st-dominic-catholic-hospital-7",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Training Assistant / Hall Facilitator",
+      "company": "LifeCare Connect Nigeria Limited",
+      "location": "Akwa Ibom, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "/ Teaching / Training",
+      "requirements": [],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-11-14",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/training-assistant-hall-facilitator-lifecare-connect-nigeria-limited",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Training Quality and Assessment Officer",
+      "company": "LifeCare Connect Nigeria Limited",
+      "location": "Akwa Ibom, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "/ Teaching / Training",
+      "requirements": [
+        "Experience",
+        "Location",
+        "Akwa Ibom",
+        "Job Field: Education / Teaching / Training"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-11-14",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/training-quality-and-assessment-officer-lifecare-connect-nigeria-limited",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Post-harvest and Produce Quality Officer",
+      "company": "LifeCare Connect Nigeria Limited",
+      "location": "Akwa Ibom, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Healthcare Management",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "BSc",
+      "requirements": [
+        "BA/BSc/HND",
+        "Relevant qualifications and experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-11-14",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/post-harvest-and-produce-quality-officer-lifecare-connect-nigeria-limited",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Monitoring and Data Officer",
+      "company": "LifeCare Connect Nigeria Limited",
+      "location": "Akwa Ibom, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "",
+      "experience": "",
+      "qualification": "",
+      "requirements": [
+        "Relevant qualifications and experience"
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-11-14",
+      "deadline": "",
+      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/monitoring-and-data-officer-lifecare-connect-nigeria-limited",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Field Extension Officers",
+      "company": "LifeCare Connect Nigeria Limited",
+      "location": "Akwa Ibom, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Public Health",
+      "salary": "",
+      "experience": "",
+      "qualification": "",
+      "requirements": [],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-11-14",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/field-extension-officers-lifecare-connect-nigeria-limited",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Lead Agronomist (GAP Lead Trainer)",
+      "company": "LifeCare Connect Nigeria Limited",
+      "location": "Akwa Ibom, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "",
+      "requirements": [],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-11-14",
+      "deadline": "",
+      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/lead-agronomist-gap-lead-trainer-lifecare-connect-nigeria-limited",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Academy Coordinator (Head of Training)",
+      "company": "LifeCare Connect Nigeria Limited",
+      "location": "Akwa Ibom, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Healthcare Management",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "/ Teaching / Training",
+      "requirements": [],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-11-14",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/academy-coordinator-head-of-training-lifecare-connect-nigeria-limited",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Product Designer (Intern)",
+      "company": "MedixDeck",
+      "location": "Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "",
+      "experience": "Location",
+      "qualification": "rn",
+      "requirements": [
+        "Basic understanding of UI/UX principles, with a portfolio or sample projects that show your design process.",
+        "Working knowledge of Figma or similar tools for wireframing, prototyping, and building clean interfaces.",
+        "Interest in healthtech or other digital product industries is highly desirable.",
+        "Strong communication and teamwork skills, with the ability to take feedback and iterate quickly."
+      ],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-11-14",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/product-designer-intern-medixdeck",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Aquaculture Market Development & Commercial Manager",
+      "company": "Vetsark Limited",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Healthcare Management",
+      "salary": "",
+      "experience": "5 years",
+      "qualification": "BSc",
+      "requirements": [
+        "Bachelor's degree in Fisheries, Aquaculture, Agribusiness, Agricultural Economics, Business Administration, or a related field",
+        "Minimum 5 years of professional experience in the aquaculture sector",
+        "At least 3 years in market development, commercial operations, or development project management",
+        "Proven experience managing aquaculture development programmes or multi-stakeholder initiatives",
+        "Demonstrated success in fish marketing, distribution, buyer acquisition, or agribusiness commercialisation",
+        "Strong knowledge of Nigeria's aquaculture markets and value chains",
+        "Excellent project management, business development, negotiation, and leadership skills"
+      ],
+      "responsibilities": [
+        "Lead aquaculture access to market development projects",
+        "Drive fish sales, market expansion, buyer acquisition, and commercial growth",
+        "Develop strategic partnerships across the aquaculture value chain",
+        "Strengthen market linkages, supply chains, and commercial opportunities",
+        "Coordinate stakeholders, project teams, budgets, and performance targets",
+        "Identify and execute new business opportunities in the aquaculture sector",
+        "Monitor project performance, profitability, and reporting requirements"
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-11-14",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/aquaculture-market-development-commercial-manager-vetsark-limited",
       "_source": "myjobmag"
     },
     {
@@ -2139,65 +2393,6 @@
       "_source": "myjobmag"
     },
     {
-      "job_title": "Security Officer",
-      "company": "Abuja Clinics",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "",
-      "experience": "2 years",
-      "qualification": "Secondary School (SSCE)",
-      "requirements": [
-        "Secondary School (SSCE)",
-        "2 years experience"
-      ],
-      "responsibilities": [
-        "Implementing and overseeing strategies to assess and mitigate risk, safeguarding the corporation and its assets, crisis management",
-        "Developing, implementing, and maintaining security processes and policies, identifying and reducing risks, limiting liability, and exposure to informational, physical, and financial risk",
-        "Making sure the company is compliant with local, national, and global regulations, especially in areas like privacy, health, and safety",
-        "Conducting research and executing security management solutions to help keep the organization safe."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-11-13",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/security-officer-abuja-clinics-13",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Legal / Human Resource Officer",
-      "company": "Integrated Health Care Limited",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "",
-      "experience": "3 years",
-      "qualification": "BSc",
-      "requirements": [
-        "A first degree in Law (LL.B) from a recognized institution.",
-        "Minimum of three (3) years of relevant and progressive experience in a similar role, preferably within a corporate or regulated environment.",
-        "Demonstrated knowledge and hands-on experience in Human Resources Management, Business Administration, or both.",
-        "Ability to interpret and apply legal and regulatory frameworks within organizational operations.",
-        "Strong analytical, advisory, and documentation skills.",
-        "Sound understanding of the Health Insurance sector and its regulatory/business environment is desirable.",
-        "The ideal candidate must be an accredited agent of CAC."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-11-13",
-      "deadline": "",
-      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/legal-human-resource-officer-integrated-health-care-limited",
-      "_source": "myjobmag"
-    },
-    {
       "job_title": "Female Igbo cook",
       "company": "TSA",
       "location": "Osun State, Nigeria",
@@ -2216,6 +2411,27 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/female-igbo-cook-2324",
+      "_source": "medlocum"
+    },
+    {
+      "job_title": "Vacancies",
+      "company": "TSA",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Other",
+      "salary": "",
+      "experience": "",
+      "qualification": "",
+      "requirements": [],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-11-12",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/vacancies-2323",
       "_source": "medlocum"
     },
     {
@@ -3197,6 +3413,84 @@
       "_source": "hotnigerianjobs"
     },
     {
+      "job_title": "Protection and MHPSS Project Officer",
+      "company": "Sahei Gender Development Initiative",
+      "location": "Borno, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Public Health",
+      "salary": "",
+      "experience": "5 years",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "BA/BSc/HND",
+        "5 years"
+      ],
+      "responsibilities": [
+        "Plan and execute community-based protection and MHPSS activities following safeguarding and do-no-harm principles.",
+        "Facilitate psychosocial support (PSS) sessions, psycho-education, and coping strategy workshops for women, youth, and children.",
+        "Supervise Community Outreach Workers, MHPSS counsellors, and Community Support Center staff.",
+        "Monitor protection cases, assess psychological and psychosocial needs, and manage safe referrals to specialized legal, health, or GBV services.",
+        "Represent the organization in MHPSS technical working groups and protection clusters.",
+        "Collect, analyze, and submit regular field and assessment reports adhering to strict data confidentiality.",
+        "Conduct training sessions and workshops for HLP, WASH and GBV staff on protection mainstreaming, social cohesion and the importance of incorporating protection principles into their daily work.",
+        "Support the development of training materials and tools to support protection mainstreaming in the field",
+        "Support effective community engagement and community input into program activities and design through close contact and structured activities",
+        "Participate in community events and meetings, and lead the organization of awareness sessions and workshops",
+        "Collaborate with program teams to identify and address potential protection risks associated with project activities."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-11-12",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/protection-and-mhpss-project-officer-sahei-gender-development-initiative",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Business Development Executive, HealthTech (EMR, Medical Devices and Telemedicine)",
+      "company": "a Reputable Company",
+      "location": "Abuja, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Other",
+      "salary": "₦200,000 - ₦300,000/month",
+      "experience": "5 - 8 years",
+      "qualification": "BSc",
+      "requirements": [
+        "BA/BSc/HND",
+        "5 to 8 years' or more experience in HealthTech sales, medical-device sales, EMR or EHR systems, pharmaceutical sales or hospital solutions.",
+        "Strong understanding of hospital operations, clinical workflows and healthcare IT systems.",
+        "Proven track record of selling enterprise healthcare solutions with long sales cycles.",
+        "Strong presentation, negotiation and consultative selling skills.",
+        "Experience engaging senior healthcare decision-makers such as hospital directors, consultants and procurement heads.",
+        "Familiarity with telemedicine platforms, diagnostics equipment or hospital infrastructure solutions.",
+        "MBA or relevant postgraduate qualification."
+      ],
+      "responsibilities": [
+        "Drive sales of EMR systems, telemedicine platforms and medical devices to hospitals, clinics and healthcare groups.",
+        "Identify, engage and close enterprise deals with hospital management, medical directors, procurement units and IT departments.",
+        "Lead end-to-end sales cycles including prospecting, product demonstrations, clinical walkthroughs, negotiation and contract closure.",
+        "Build relationships with doctors, hospital administrators, pharmacists, lab directors and HMO representatives.",
+        "Develop and execute territory and account-based sales strategies for healthcare institutions.",
+        "Conduct product presentations and clinical demonstrations tailored to hospital workflows and regulatory requirements.",
+        "Manage implementation handover with technical and onboarding teams to ensure smooth deployment.",
+        "Develop strategic partnerships with hospitals, diagnostic chains, government health agencies and private providers.",
+        "Monitor healthcare-technology trends, competitor offerings and regulatory developments.",
+        "Achieve and exceed quarterly revenue targets for enterprise healthcare accounts."
+      ],
+      "how_to_apply": [
+        "Submit your application through the employer’s online recruitment portal.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-11-12",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/business-development-executive-healthtech-emr-medical-devices-and-telemedicine",
+      "_source": "myjobmag"
+    },
+    {
       "job_title": "Nutrition Officer",
       "company": "Premiere Urgence Internationale (PUI)",
       "location": "Borno, Nigeria",
@@ -3325,42 +3619,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.myjobmag.com/job/community-health-extension-workers-chews-anambra-state-government",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Protection and MHPSS Project Officer",
-      "company": "Sahei Gender Development Initiative",
-      "location": "Borno, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Public Health",
-      "salary": "",
-      "experience": "5 years",
-      "qualification": "BA/BSc/HND",
-      "requirements": [
-        "BA/BSc/HND",
-        "5 years"
-      ],
-      "responsibilities": [
-        "Plan and execute community-based protection and MHPSS activities following safeguarding and do-no-harm principles.",
-        "Facilitate psychosocial support (PSS) sessions, psycho-education, and coping strategy workshops for women, youth, and children.",
-        "Supervise Community Outreach Workers, MHPSS counsellors, and Community Support Center staff.",
-        "Monitor protection cases, assess psychological and psychosocial needs, and manage safe referrals to specialized legal, health, or GBV services.",
-        "Represent the organization in MHPSS technical working groups and protection clusters.",
-        "Collect, analyze, and submit regular field and assessment reports adhering to strict data confidentiality.",
-        "Conduct training sessions and workshops for HLP, WASH and GBV staff on protection mainstreaming, social cohesion and the importance of incorporating protection principles into their daily work.",
-        "Support the development of training materials and tools to support protection mainstreaming in the field",
-        "Support effective community engagement and community input into program activities and design through close contact and structured activities",
-        "Participate in community events and meetings, and lead the organization of awareness sessions and workshops",
-        "Collaborate with program teams to identify and address potential protection risks associated with project activities."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-11-12",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/protection-and-mhpss-project-officer-sahei-gender-development-initiative",
       "_source": "myjobmag"
     },
     {
@@ -3690,171 +3948,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.myjobmag.com/job/medical-counsellor-skipper-eye-q-hospital-2",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Business Development Executive, HealthTech (EMR, Medical Devices and Telemedicine)",
-      "company": "a Reputable Company",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "₦200,000 - ₦300,000/month",
-      "experience": "5 - 8 years",
-      "qualification": "BSc",
-      "requirements": [
-        "BA/BSc/HND",
-        "5 to 8 years' or more experience in HealthTech sales, medical-device sales, EMR or EHR systems, pharmaceutical sales or hospital solutions.",
-        "Strong understanding of hospital operations, clinical workflows and healthcare IT systems.",
-        "Proven track record of selling enterprise healthcare solutions with long sales cycles.",
-        "Strong presentation, negotiation and consultative selling skills.",
-        "Experience engaging senior healthcare decision-makers such as hospital directors, consultants and procurement heads.",
-        "Familiarity with telemedicine platforms, diagnostics equipment or hospital infrastructure solutions.",
-        "MBA or relevant postgraduate qualification."
-      ],
-      "responsibilities": [
-        "Drive sales of EMR systems, telemedicine platforms and medical devices to hospitals, clinics and healthcare groups.",
-        "Identify, engage and close enterprise deals with hospital management, medical directors, procurement units and IT departments.",
-        "Lead end-to-end sales cycles including prospecting, product demonstrations, clinical walkthroughs, negotiation and contract closure.",
-        "Build relationships with doctors, hospital administrators, pharmacists, lab directors and HMO representatives.",
-        "Develop and execute territory and account-based sales strategies for healthcare institutions.",
-        "Conduct product presentations and clinical demonstrations tailored to hospital workflows and regulatory requirements.",
-        "Manage implementation handover with technical and onboarding teams to ensure smooth deployment.",
-        "Develop strategic partnerships with hospitals, diagnostic chains, government health agencies and private providers.",
-        "Monitor healthcare-technology trends, competitor offerings and regulatory developments.",
-        "Achieve and exceed quarterly revenue targets for enterprise healthcare accounts."
-      ],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-11-12",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/business-development-executive-healthtech-emr-medical-devices-and-telemedicine",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Account Officer",
-      "company": "Katchey Company Limited Online Shop",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "",
-      "experience": "2 - 3 years",
-      "qualification": "BSc",
-      "requirements": [
-        "BA/BSc/HND",
-        "2 - 3 years of experience as an account officer",
-        "Proficiency in Microsoft Office Suite, particularly Excel",
-        "Knowledge of accounting principles and financial procedures",
-        "Strong numerical, analytical, and problem-solving skills",
-        "Accuracy and attention to detail in financial record-keeping",
-        "Good financial reporting and documentation skills",
-        "Excellent organisational and time management skills",
-        "Strong communication and interpersonal skills",
-        "Integrity, confidentiality, and ability to meet deadlines"
-      ],
-      "responsibilities": [
-        "Prepare list of office approved requisition and forward to the accountant for funding request daily",
-        "Write cheques (or transfer letter) and Payment Vouchers for office approved requisitions and release to staff and service contractors as Approved by the CEO and other signatories",
-        "Forward Payment to Relevant Government Agencies and Statutory Bodies; Ensures Filing within deadlines",
-        "Prepare Petty cash Vouchers and schedule for the department and reconcile with Account supervisor for re-imbursement",
-        "Write official receipts for payments made into the Bank Account by customers, using Bank statements daily",
-        "Carry out bank reconciliation on a Monthly basis, write Payment Vouchers for transactions done directly with the bank and report to Account Supervisor",
-        "Prepare Weekly report of Cash advance retirement to determine retired and unretired cash advances to staff cash as well released to service contractors & submit to Account Supervisor",
-        "File all Accounts Documented Information",
-        "Timely escalation of issues that cannot be resolved to Head Accountant",
-        "Perform any other duties as assigned by the account manager"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-11-12",
-      "deadline": "",
-      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/account-officer-katchey-company-limited-online-shop",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Pharmacist",
-      "company": "Remediks Pharmacy",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Pharmacist",
-      "salary": "",
-      "experience": "",
-      "qualification": "",
-      "requirements": [
-        "Experience",
-        "Location",
-        "Abuja",
-        "Job Field",
-        "Pharmaceutical",
-        "Interested applicant(s) should possess relevant qualifications and experience"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-11-12",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/pharmacist-remediks-pharmacy",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Business Development Manager",
-      "company": "Synapse Services",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Healthcare Management",
-      "salary": "",
-      "experience": "2 years",
-      "qualification": "BSc",
-      "requirements": [
-        "Undergraduate degree (Marketing or related field) with proven work experience in Business Development Capacity",
-        "Minimum of two (2) years’ experience in business development",
-        "Knowledge of the behavioral health sector & healthcare experience is desirable",
-        "A master's degree is desirable but not essential"
-      ],
-      "responsibilities": [
-        "Identify new business opportunities – including new markets, growth areas, trends, customers, products, and services",
-        "Building effective working relationships with community partners such as Psychiatrists, Treatment Centers, and other relevant stakeholders",
-        "Establish partnerships with Government, Organized Private Sector, Manufacturing Companies, etc.",
-        "Develop a yearly business development plan & strategies for the organization",
-        "Conduct research to identify new markets and customer needs",
-        "Study Customer needs to properly direct sales efforts",
-        "Have a good understanding of the business’s products and services and be able to advise clients about them",
-        "Communicate new product & service developments to prospective clients",
-        "Oversee the development of marketing literature",
-        "Manage and retain relationships with existing clients",
-        "Increase client base",
-        "Plan and oversee new marketing initiative",
-        "Write business proposals and reports",
-        "Draft and review contracts",
-        "Create Weekly & Monthly Reports",
-        "Analyze Team performance against Set targets and goals",
-        "Update relevant logs and meet up with record keeping requirements",
-        "Design and develop strategies and plans",
-        "Responsible for proposal writing, regularly prepare, review and submit commercial bids and proposals",
-        "Prepare and make presentations to prospective clients and network to increase visibility",
-        "Participate in conducting market research and analyze activities to ensure that the organization is competitive in the marketplace, on a local and national rating",
-        "Suggest measures for improving customer satisfaction and loyalty",
-        "Actively involved in identifying, recommending and generating new business opportunities, managing relationships with tactical partners in line with corporate goals."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-11-12",
-      "deadline": "",
-      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/business-development-manager-synapse-services-1",
       "_source": "myjobmag"
     },
     {
@@ -5132,30 +5225,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.myjobmag.com/job/nursing-with-neonatal-experience-arkville-hospital",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Nursing with Dialysis Experience",
-      "company": "Arkville Hospital",
-      "location": "Ikorodu, Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Nurse",
-      "salary": "",
-      "experience": "Job Type",
-      "qualification": "BA/BSc/HND",
-      "requirements": [
-        "Interested candidates should possess relevant qualifications."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing. Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-11-11",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/nursing-with-dialysis-experience-arkville-hospital",
       "_source": "myjobmag"
     },
     {
@@ -9061,27 +9130,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/optometrist-intern-2266",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "HMO OFFICER",
-      "company": "1 NEECIT HOSPITAL LIMITED",
-      "location": "Eleyo Imasayi, Yewa North, Ogun State, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Other",
-      "salary": "NGN250,000 / monthly",
-      "experience": "",
-      "qualification": "",
-      "requirements": [],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-11-06",
-      "deadline": "2026-11-25",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/hmo-officer-2265",
       "_source": "medlocum"
     },
     {
@@ -29689,392 +29737,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/959206/reliance-care-officer-arabic-speaking-at-reliance.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Consultant Obstetrician & Gynaecologist",
-      "company": "Lily Hospitals Limited",
-      "location": "Warri, Delta",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "package",
-      "experience": "3",
-      "qualification": "bsc",
-      "requirements": [
-        "Full registration and valid practising licence with the Medical and Dental Council of Nigeria (MDCN).",
-        "Fellowship in Obstetrics & Gynaecology (FMCOG, FWACS, or equivalent recognized qualification).",
-        "Minimum 3 years’ post-fellowship experience as a Consultant Obstetrician & Gynaecologist.",
-        "Demonstrable experience managing routine and high-risk pregnancies and complex obstetric and gynaecological cases.",
-        "Proven experience in obstetric and gynaecological surgery, including Caesarean section and management of obstetric emergencies.",
-        "Strong clinical judgement, communication, leadership, and teamwork skills.",
-        "Experience in clinical audit, quality improvement, teaching, and research is desirable.",
-        "Ability to work effectively under pressure while maintaining a high standard of patient-centred care."
-      ],
-      "responsibilities": [
-        "Conduct comprehensive antenatal, obstetric, and gynaecological assessments.",
-        "Provide expert management of normal and high-risk pregnancies.",
-        "Manage obstetric emergencies, including postpartum haemorrhage, pre-eclampsia/eclampsia, obstructed labour, and other maternal emergencies.",
-        "Perform and supervise obstetric and gynaecological procedures, including Caesarean sections and other relevant surgical interventions.",
-        "Provide comprehensive management of gynaecological conditions, including menstrual disorders, fibroids, infertility, endometriosis, pelvic infections, and menopausal conditions.",
-        "Provide intrapartum care and make appropriate decisions regarding induction of labour, assisted vaginal delivery, and operative delivery.",
-        "Provide postnatal care and manage maternal complications following delivery.",
-        "Provide appropriate contraceptive counselling and family-planning services.",
-        "Collaborate with Paediatricians, Anaesthesiologists, Midwives, and other healthcare professionals to ensure comprehensive patient care.",
-        "Supervise, mentor, and support junior doctors, medical officers, and other clinical staff.",
-        "Participate in clinical audits, quality improvement programmes, and patient-safety initiatives.",
-        "Maintain accurate, comprehensive, and timely clinical documentation and medical records.",
-        "Ensure compliance with professional, ethical, and regulatory standards.",
-        "Keep abreast of current developments, clinical guidelines, and best practices in Obstetrics and Gynaecology.",
-        "Participate in clinical teaching, research, and continuous professional development.",
-        "Contribute to the development and implementation of departmental protocols and clinical pathways.",
-        "Participate in on-call duties and departmental rosters as required."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-15",
-      "deadline": "2026-09-20",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medicalworldnigeria.com/post/Consultant-Obstetrician-and-Gynaecologist-at-Lily-Hospitals-Limited?pid=78488",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Nurse",
-      "company": "Chiron Hospital - ICU & Surgical Centre",
-      "location": "GRA - Benin City, Edo",
-      "job_type": "",
-      "job_category": "Nurse",
-      "salary": "",
-      "experience": "",
-      "qualification": "bsc",
-      "requirements": [
-        "Candidates should possess a relevant qualification."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-15",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "08073832415, 08130716980",
-      "apply_url": "https://medicalworldnigeria.com/post/Nurse-at-Aster-Bloom-Academy?pid=78491",
-      "_source": "medicalworldnigeria"
-    },
-    {
-      "job_title": "Product Manager",
-      "company": "Codix Pharma Limited",
-      "location": "Lagos, Nigeria",
-      "job_type": "",
-      "job_category": "Healthcare Management",
-      "salary": "",
-      "experience": "Minimum of 5 years cognate work experience",
-      "qualification": "B.Sc Degree in Pharmacy, Pharmacology",
-      "requirements": [
-        "Excellent communication skills",
-        "Proficient knowledge of MS Office particularly Excel, Word and PowerPoint",
-        "Strong leadership skills"
-      ],
-      "responsibilities": [
-        "Develop portfolio marketing strategies",
-        "Prepare brand Market Research briefs for usage & attitude studies/Brand tracks or other customized research",
-        "Carry out market /field visits to oversee implementation of marketing activities",
-        "Lead Product Management team",
-        "Prepare creative/media plan briefs for the brand and coordinate & evaluate lead implementation with the advertising agency for brand support",
-        "Collect, analyze and report on data and make adjustments to Product business plans as needed to facilitate a successful new product launch",
-        "Actively drive new product introduction to augment the Brand presence and increase revenue for the organization."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-15",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/958674/product-manager-at-codix-pharma-limited.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Auxiliary Nurse",
-      "company": "Candlelight Foundation For Children With Special Needs INC",
-      "location": "Ikorodu, Lagos, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "",
-      "experience": "",
-      "qualification": "",
-      "requirements": [
-        "Candidates should possess relevant qualifications and experience."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-15",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/959076/auxiliary-nurse-at-candlelight-foundation-for-chil.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Registered Nurse",
-      "company": "Candlelight Foundation For Children With Special Needs INC",
-      "location": "Ikorodu, Lagos, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "",
-      "experience": "",
-      "qualification": "relevant qualifications and experience",
-      "requirements": [],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-15",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/959072/registered-nurse-at-candlelight-foundation-for-chi.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Community Health Nurse",
-      "company": "Candlelight Foundation For Children With Special Needs INC",
-      "location": "Ikorodu, Lagos, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "",
-      "experience": "",
-      "qualification": "",
-      "requirements": [
-        "Candidates should possess relevant qualifications and experience."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-15",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/959070/community-health-nurse-at-candlelight-foundation-f.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Nursing Officer",
-      "company": "LCH Hospital",
-      "location": "Nigeria",
-      "job_type": "",
-      "job_category": "Nurse",
-      "salary": "n,",
-      "experience": "",
-      "qualification": "ond",
-      "requirements": [],
-      "responsibilities": [
-        "Provide compassionate, high-quality nursing care to pediatric patients, from infants to adolescents.",
-        "Administer prescribed medications, treatments, and procedures, and monitor patients’ conditions and progress.",
-        "Maintain high standards of infection prevention, hygiene, patient safety, and clinical practice.",
-        "Provide education, guidance, and reassurance to patients, parents, and guardians on care plans, medications, hygiene, and discharge instructions.",
-        "Collaborate effectively with doctors, consultants, and other healthcare professionals to ensure coordinated and holistic patient care.",
-        "Participate in clinical handovers, team meetings, quality improvement initiatives, and departmental audits.",
-        "Maintain accurate and timely nursing documentation and promptly report changes in patients’ conditions or other clinical concerns.",
-        "Comply with the hospital policies, clinical protocols, professional standards, and applicable regulatory requirements."
-      ],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-15",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/958887/nursing-officer-at-lch.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Nurse",
-      "company": "Apex Pharmalab",
-      "location": "Iddo - Ebute Metta, Lagos, Nigeria",
-      "job_type": "",
-      "job_category": "Nurse",
-      "salary": "N120,000 monthly",
-      "experience": "1",
-      "qualification": "rn",
-      "requirements": [
-        "Registered Nurse (RN) with current license",
-        "Minimum of 1 year experience in clinical, community, or public health nursing",
-        "Strong communication and patient care skills",
-        "Computer and documentation skills."
-      ],
-      "responsibilities": [
-        "Administer injections, and first aid treatments",
-        "Conduct vital checks: blood pressure, blood sugar, cholesterol, weight, BMI",
-        "Offer wound care, family planning, and health education services",
-        "Support chronic disease management",
-        "Provide counseling on medication use and adherence",
-        "Maintain accurate patient records",
-        "Collaborate with the pharmacist on public health outreach and campaigns."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-15",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/958842/nurse-at-apex-pharmalab.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Part Time Dentist",
-      "company": "Signature Smiles Clinic",
-      "location": "Orchid road, Lekki - Lagos, Nigeria",
-      "job_type": "Part Time",
-      "job_category": "Dentist",
-      "salary": "",
-      "experience": "2 years",
-      "qualification": "MDCN",
-      "requirements": [
-        "Recognised dental qualification and valid registration with the MDCN.",
-        "Minimum 2 years' clinical experience (preferably in a private practice).",
-        "Competent in general dentistry procedures and treatment planning.",
-        "Excellent communication and interpersonal skills.",
-        "Able to work independently and as part of a team.",
-        "Must be available to work on Saturdays at the Lekki clinic.",
-        "Professional, patient-focused and committed to high-quality care."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-15",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/959040/part-time-dentist-at-signature-smiles-clinic.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Dental Surgery Technician (DST)",
-      "company": "Signature Smiles Clinic",
-      "location": "Lekki - Lagos, Nigeria",
-      "job_type": "",
-      "job_category": "Dentist",
-      "salary": "",
-      "experience": "2",
-      "qualification": "Relevant recognised DST qualification and appropriate registration",
-      "requirements": [
-        "Minimum 2 years' relevant dental practice experience",
-        "Strong chairside assisting skills across routine and advanced procedures",
-        "Good knowledge of infection prevention and control, sterilisation and instrument management",
-        "Ability to prepare surgeries, instruments and materials efficiently",
-        "Professional, reliable and a good team player"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-15",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/959034/dental-surgery-technician-dst-at-signature-smiles.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Part Time Dental Surgery Technician (DST)",
-      "company": "Signature Smiles Clinic - Orchid Road",
-      "location": "Orchid Road, Lekki - Lagos, Nigeria",
-      "job_type": "Part-time",
-      "job_category": "Dentist",
-      "salary": "",
-      "experience": "in a dental practice",
-      "qualification": "Relevant DST qualification and appropriate registration (where applicable).",
-      "requirements": [
-        "Previous experience in a dental practice.",
-        "Competent in chairside assistance, surgery preparation and instrument handling.",
-        "Good knowledge of infection control, sterilisation and decontamination.",
-        "Must be reliably available to work Saturdays.",
-        "Professional, organised and a good team player."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-15",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/959032/part-time-dental-surgery-technician-dst-at-signatu.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Dentist (Full Time)",
-      "company": "Signature Smiles Clinic",
-      "location": "Lekki - Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Dentist",
-      "salary": "",
-      "experience": "2",
-      "qualification": "MDCN",
-      "requirements": [
-        "BDS or equivalent recognised dental qualification.",
-        "Current registration and valid practising licence with the MDCN.",
-        "Minimum 2 years post-qualification clinical experience.",
-        "Competent in general dentistry (including restorative dentistry, extractions, preventive care and treatment planning).",
-        "Additional skills (e.g. endodontics, prosthodontics, cosmetic dentistry or minor oral surgery) will be an advantage.",
-        "Professional, reliable and committed to high standards of patient care."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-15",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/959036/dentist-full-time-at-signature-smiles-clinic.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Part Time Dental Surgery Technician (DST)",
-      "company": "Signature Smiles Clinic - Gbagada",
-      "location": "Diya Street, Gbagada - Lagos, Nigeria",
-      "job_type": "Part Time (Saturdays)",
-      "job_category": "Dentist",
-      "salary": "",
-      "experience": "in a dental clinical environment.",
-      "qualification": "Relevant DST qualification and appropriate registration (where applicable).",
-      "requirements": [
-        "Previous experience in a dental clinical environment.",
-        "Competent in chairside assistance, surgery preparation and instrument handling.",
-        "Good knowledge of infection control, sterilisation and decontamination.",
-        "Must be reliably available to work Saturdays at the Gbagada clinic.",
-        "Professional, punctual, dependable and a good team player."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites).",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-15",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/959029/part-time-dental-surgery-technician-dst-at-signatu.html",
       "_source": "hotnigerianjobs"
     }
   ]
