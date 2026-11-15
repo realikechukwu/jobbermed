@@ -63,6 +63,101 @@ export const CV_MATCH_CTA = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "ngo-jobs-in-nigeria",
+    title: "NGO Jobs in Nigeria: How to Apply for NGO and UN Roles",
+    description:
+      "Find NGO and UN jobs in Nigeria, from public health roles in Abuja to humanitarian jobs in Borno. Learn where to apply and how to show hospital QI work on your CV.",
+    published: "2026-11-15",
+    readMinutes: 5,
+    category: "Public health careers",
+    image: "/images/guides/locations.svg",
+    body: [
+      {
+        type: "p",
+        text: "To find NGO jobs in Nigeria, search by role as well as organisation. Try “health programme officer”, “medical officer”, “nutrition officer” or “monitoring and evaluation officer”. Browse [public health jobs in Nigeria](/public-health-jobs) and check the employer’s own careers portal for the full requirements and application deadline.",
+      },
+      {
+        type: "p",
+        text: "If you are a doctor, nurse or other clinician moving from hospital work into humanitarian health, start with evidence of what you have already improved. A quality improvement project can show how you used data, worked with a team and followed a change through to a measurable result.",
+      },
+      { type: "h2", text: "Where to find NGO and UN jobs in Nigeria" },
+      {
+        type: "table",
+        columns: ["What you are looking for", "Where to search"],
+        rows: [
+          ["Public health and programme jobs", "Start with [public health jobs in Abuja](/public-health-jobs/abuja) and the [FHI 360 careers page](https://www.fhi360.org/join-our-team/). Search for programme officer, health specialist and project coordinator."],
+          ["Medical and humanitarian field jobs", "Check [ReliefWeb Jobs](https://reliefweb.int/jobs), [MSF careers](https://www.msf.org/work-msf) and [public health jobs in Borno](/public-health-jobs/borno). Search for medical officer, emergency health, nutrition and field coordinator."],
+          ["UN jobs in Nigeria", "Use [UN Careers](https://careers.un.org/) for UN Secretariat roles. Check [UNICEF Nigeria vacancies](https://jobs.unicef.org/cw/en-us/Search/?location=nigeria) and [WHO Careers](https://www.who.int/careers) for those agencies’ openings."],
+        ],
+      },
+      {
+        type: "p",
+        text: "Check Abuja for programme, partnership and technical roles. For field roles, search the duty stations and surrounding states you can work in, including Maiduguri, Yola and Damaturu. Read how much travel the job requires and where the post is actually based before applying.",
+      },
+      { type: "h2", text: "NGO job requirements and roles to search for" },
+      {
+        type: "p",
+        text: "Read the essential criteria first. Match your degree and experience to the advert, keep your NYSC documents ready where applicable, and show your current professional registration and practising licence for clinical posts that require them. An MPH or another relevant master’s degree can help for technical or senior posts that ask for one.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Health and nutrition: Medical officer, nurse, midwife, pharmacist, nutrition officer and public health specialist.",
+          "Monitoring, evaluation, accountability and learning (MEAL): M&E assistant, data officer and reporting officer. Look for the tools named in the advert, such as KoboToolbox, ODK, DHIS2, Power BI or Excel.",
+          "Water, sanitation and hygiene (WASH): WASH officer, environmental health officer and hygiene promotion officer.",
+          "Protection and operations: Case management, psychosocial support, grants, finance, procurement and logistics.",
+        ],
+      },
+      { type: "h2", text: "How to apply for an NGO or UN job in Nigeria" },
+      {
+        type: "ol",
+        items: [
+          "Tailor your CV to the job description. Use the employer’s terms for work you have actually done. Put the most relevant outcomes near the top and show what you personally contributed. [CV Match](https://cv.jobbermed.com) can compare your CV with a job advert and suggest a tailored version you can review before submitting.",
+          "Build the skills the role asks for. Practise a relevant task, such as building a small survey in KoboToolbox, checking data quality or writing a one-page report. For field posts, check which security training the employer requires or provides.",
+          "Apply on the official portal. Use the link in the original advert and follow its instructions. For UN Secretariat posts, [UN Careers explains how to apply through Inspira](https://careers.un.org/how-to-apply?language=en), including how to complete your profile and motivation statement. Other agencies use their own application systems.",
+          "Check the duty station and contract. Confirm travel, contract length, work arrangements, insurance and any accommodation or field allowances. Get the terms in writing before accepting an offer.",
+          "Prepare for a competency-based interview. Use the STAR method (situation, task, action and result) to describe a time you solved a problem, handled limited resources or worked with people who disagreed. Make your contribution and the outcome clear. [UN assessment guidance](https://careers.un.org/assessment?language=en)",
+        ],
+      },
+      { type: "h3", text: "How to put hospital quality improvement (QI) on an NGO CV" },
+      {
+        type: "p",
+        text: "Pick a project you can explain from start to finish. Name the problem, how you measured it, what you did with the team and how the result changed. Examples include reviewing delays in urgent treatment, reducing clinic waiting times, auditing adherence to a protocol or training staff and checking whether practice improved.",
+      },
+      {
+        type: "example",
+        lines: [
+          "Example CV bullet with illustrative figures",
+          "Led a six-week clinic flow audit with the nursing team. Reviewed waiting times, changed how patients were directed at arrival and re-audited the same measure. Median waiting time fell from 48 to 33 minutes in the audit sample.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Use your own figures, describe how you collected them and leave out identifying patient details. If you have no follow-up measurement, describe the change you made or what the audit found. That still gives the recruiter an example of how you use evidence.",
+      },
+      { type: "h2", text: "Frequently asked questions about NGO jobs in Nigeria" },
+      { type: "h3", text: "Can I get an NGO job with no NGO experience?" },
+      {
+        type: "p",
+        text: "Look for roles that accept related experience, such as programme assistant, field assistant or a short-term data collection post. Hospital audit work, community outreach and relevant volunteering can help you show that you meet the criteria. Check internship eligibility before applying, as some programmes have education or graduation requirements.",
+      },
+      { type: "h3", text: "How much do NGO and UN jobs pay in Nigeria?" },
+      {
+        type: "p",
+        text: "Pay varies by organisation, grade, contract and duty station. The [International Civil Service Commission](https://icsc.un.org/home/datasalaryscales) distinguishes worldwide salary scales for internationally recruited UN Professional posts from local scales for General Service staff. For any offer, confirm the currency, gross or net pay, allowances and benefits with the recruiter.",
+      },
+      { type: "h3", text: "Do UN jobs have an application fee?" },
+      {
+        type: "p",
+        text: "The [UN recruitment guide](https://careers.un.org/how-to-apply?language=en) says the UN charges no fee at any stage. If a message asks for money or sends you to an unfamiliar form, look for the same vacancy on the employer’s website before sharing documents. See [how to spot a fake healthcare job advert](/blog/fake-healthcare-job-adverts).",
+      },
+      {
+        type: "p",
+        text: "[Browse public health vacancies](/public-health-jobs) to find a role that fits your experience, then [check your CV against the advert](https://cv.jobbermed.com) before sending it.",
+      },
+    ],
+  },
+  {
     slug: "nursing-jobs-in-nigeria-career-guide",
     title: "Landing a Nursing Job in Nigeria (2026 Career Guide)",
     description:
@@ -486,6 +581,10 @@ export const ARTICLES: Article[] = [
       {
         type: "p",
         text: "You can see the current lists for [Lagos](/healthcare-jobs/lagos) and [Abuja](/healthcare-jobs/abuja).",
+      },
+      {
+        type: "p",
+        text: "For humanitarian or development work, see [how to apply for NGO and UN jobs in Nigeria](/blog/ngo-jobs-in-nigeria), including where to look for public health roles in Abuja and field posts in Borno.",
       },
       { type: "h2", text: "Outside the two cities, jobs arrive in rounds" },
       {
