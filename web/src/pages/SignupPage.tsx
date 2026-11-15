@@ -123,62 +123,103 @@ export function SignupPage() {
           </div>
 
           <form className="shell-form" onSubmit={handleSubmit}>
-            <label className="shell-label" htmlFor="signup-name">
-              Full name
-            </label>
-            <input
-              className="shell-input"
-              id="signup-name"
-              value={fullName}
-              onChange={(event) => setFullName(event.target.value)}
-              placeholder="Your name"
-              autoComplete="name"
-            />
+            <div className="shell-field">
+              <label className="shell-label" htmlFor="signup-name">
+                Full name
+              </label>
+              <input
+                className="shell-input"
+                id="signup-name"
+                name="full_name"
+                value={fullName}
+                onChange={(event) => setFullName(event.target.value)}
+                placeholder="Your name"
+                autoComplete="name"
+              />
+            </div>
 
-            <label className="shell-label" htmlFor="signup-email">
-              Email
-            </label>
-            <input
-              className="shell-input"
-              id="signup-email"
-              type="email"
-              value={email}
-              onChange={(event) => setEmail(event.target.value)}
-              placeholder="you@example.com"
-              autoComplete="email"
-              required
-            />
+            <div className="shell-field">
+              <label className="shell-label" htmlFor="signup-email">
+                Email
+              </label>
+              <input
+                className="shell-input"
+                id="signup-email"
+                name="email"
+                type="email"
+                inputMode="email"
+                value={email}
+                onChange={(event) => setEmail(event.target.value)}
+                placeholder="you@example.com"
+                autoComplete="email"
+                aria-errormessage="signup-email-error"
+                required
+              />
+              <span id="signup-email-error" className="field-error-msg">
+                <span aria-hidden="true">⚠ </span>Please enter a valid email address.
+              </span>
+            </div>
 
-            <label className="shell-label" htmlFor="signup-password">
-              Password
-            </label>
-            <input
-              className="shell-input"
-              id="signup-password"
-              type="password"
-              value={password}
-              onChange={(event) => setPassword(event.target.value)}
-              placeholder="Create password"
-              autoComplete="new-password"
-              required
-            />
+            <div className="shell-field">
+              <label className="shell-label" htmlFor="signup-password">
+                Password
+              </label>
+              <span id="signup-password-hint" className="shell-hint">
+                At least 6 characters.
+              </span>
+              <input
+                className="shell-input"
+                id="signup-password"
+                name="password"
+                type="password"
+                value={password}
+                onChange={(event) => setPassword(event.target.value)}
+                placeholder="Create password"
+                autoComplete="new-password"
+                minLength={6}
+                aria-describedby="signup-password-hint"
+                aria-errormessage="signup-password-error"
+                required
+              />
+              <span id="signup-password-error" className="field-error-msg">
+                <span aria-hidden="true">⚠ </span>Password must be at least 6 characters.
+              </span>
+            </div>
 
-            <label className="shell-label" htmlFor="signup-confirm-password">
-              Confirm password
-            </label>
-            <input
-              className="shell-input"
-              id="signup-confirm-password"
-              type="password"
-              value={confirmPassword}
-              onChange={(event) => setConfirmPassword(event.target.value)}
-              placeholder="Confirm password"
-              autoComplete="new-password"
-              required
-            />
+            <div className="shell-field">
+              <label className="shell-label" htmlFor="signup-confirm-password">
+                Confirm password
+              </label>
+              <input
+                className="shell-input"
+                id="signup-confirm-password"
+                name="confirm_password"
+                type="password"
+                value={confirmPassword}
+                onChange={(event) => setConfirmPassword(event.target.value)}
+                placeholder="Confirm password"
+                autoComplete="new-password"
+                minLength={6}
+                aria-errormessage="signup-confirm-error"
+                required
+              />
+              <span id="signup-confirm-error" className="field-error-msg">
+                <span aria-hidden="true">⚠ </span>Please confirm your password (at least 6 characters).
+              </span>
+            </div>
 
-            {error ? <p className="native-form-message native-form-error">{error}</p> : null}
-            {notice ? <p className="native-form-message native-form-success">{notice}</p> : null}
+            {error ? (
+              <p className="native-form-message native-form-error" role="alert">
+                <span aria-hidden="true">⚠ </span>
+                {error}
+              </p>
+            ) : null}
+            {notice ? (
+              <p className="native-form-message native-form-success" role="status" aria-live="polite">
+                <span aria-hidden="true">✓ </span>
+                {notice}
+              </p>
+            ) : null}
 
             <button className="shell-button" type="submit" disabled={isBusy}>
               {isSubmitting ? "Creating account..." : "Create account"}

@@ -52,6 +52,7 @@ export function HeroShell({ title, subtitle, content, variant = "hero" }: HeroSh
             className="site-mobile-menu-btn"
             type="button"
             aria-label="Open menu"
+            aria-controls="site-mobile-drawer"
             aria-expanded={isMobileMenuOpen ? "true" : "false"}
             onClick={() => setIsMobileMenuOpen(true)}
           >

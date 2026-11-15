@@ -30,7 +30,7 @@ export function BlogIndexPage() {
   return (
     <RouteShell className="blog-shell" title={BLOG_INDEX_META.heading} subtitle={BLOG_INDEX_META.intro}>
       <section className="shell-content blog-index" id="career-guides" aria-label="Career guides">
-        <ul className="blog-list">
+        <ul className="blog-list" role="list">
           {pageArticles.map((article) => (
             <ArticleCard key={article.slug} article={article} />
           ))}

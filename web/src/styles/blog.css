@@ -157,6 +157,11 @@
   min-width: 0;
 }
 
+.blog-card:nth-child(n + 4) {
+  content-visibility: auto;
+  contain-intrinsic-size: auto none auto 220px;
+}
+
 .blog-card-link {
   display: flex;
   flex-direction: column;
@@ -326,6 +331,8 @@
   margin: 48px auto 0;
   border-top: 1px solid var(--line);
   padding-top: 32px;
+  content-visibility: auto;
+  contain-intrinsic-size: auto none auto 640px;
 }
 
 .blog-more > h2 {

@@ -331,10 +331,9 @@ export function HomePage() {
   }, []);
 
   const heroSearch = (
-    <>
+    <search>
       <form
         className="hero-search"
-        role="search"
         onSubmit={(event) => {
           event.preventDefault();
           showResults();
@@ -347,6 +346,7 @@ export function HomePage() {
         <input
           ref={searchInputRef}
           id="keywordSearch"
+          name="q"
           className={`hero-search-input${hasKeyword ? " has-keyword" : ""}`}
           type="search"
           enterKeyHint="search"
@@ -372,7 +372,7 @@ export function HomePage() {
           <span aria-hidden="true"> · See results ↓</span>
         </button>
       ) : null}
-    </>
+    </search>
   );
 
   // "Others" is a catch-all holding several specialties, so when it's present
@@ -394,7 +394,7 @@ export function HomePage() {
   );
 
   const heroStats = isLoading ? null : (
-    <ul className="hero-stats">
+    <ul className="hero-stats" role="list">
       <li>
         <strong>{sourceCounts.all}</strong> live roles
       </li>

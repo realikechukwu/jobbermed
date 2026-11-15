@@ -1,12 +1,13 @@
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { useBodyScrollLock } from "../hooks/useBodyScrollLock";
-import { useFocusTrap } from "../hooks/useFocusTrap";
+import { handleDialogBackdropClickFallback } from "../lib/form-accessibility";
 import { isSiteNavLinkActive, type SiteNavLink } from "../navigation/site-nav";
 
 type SiteMobileDrawerVariant = "home" | "app";
 
 type SiteMobileDrawerProps = {
+  id?: string;
   variant: SiteMobileDrawerVariant;
   isOpen: boolean;
   onClose: () => void;
@@ -50,6 +51,7 @@ function DrawerLink({
 }
 
 export function SiteMobileDrawer({
+  id = "site-mobile-drawer",
   variant,
   isOpen,
   onClose,
@@ -60,26 +62,23 @@ export function SiteMobileDrawer({
   showSignOut = false,
   onSignOut,
 }: SiteMobileDrawerProps) {
-  const drawerRef = useRef<HTMLElement>(null);
+  const dialogRef = useRef<HTMLDialogElement>(null);
   useBodyScrollLock(isOpen);
-  useFocusTrap(drawerRef, isOpen);
 
   useEffect(() => {
-    if (!isOpen) {
+    const dialog = dialogRef.current;
+    if (!dialog) {
       return;
     }
 
-    const handleEscape = (event: KeyboardEvent) => {
-      if (event.key === "Escape") {
-        onClose();
+    if (isOpen) {
+      if (!dialog.open) {
+        dialog.showModal();
       }
-    };
-
-    document.addEventListener("keydown", handleEscape);
-    return () => {
-      document.removeEventListener("keydown", handleEscape);
-    };
-  }, [isOpen, onClose]);
+    } else if (dialog.open) {
+      dialog.close();
+    }
+  }, [isOpen]);
 
   function handleSignOutClick() {
     onClose();
@@ -97,83 +96,80 @@ export function SiteMobileDrawer({
   const signUpLink = authLinks.find((link) => link.id === "signup");
 
   return (
-    <>
-      <div className={`site-mobile-overlay${isOpen ? " show" : ""}`} role="presentation" onClick={onClose} />
+    <dialog
+      ref={dialogRef}
+      id={id}
+      className={`site-mobile-drawer site-mobile-drawer--${variant}${isOpen ? " open" : ""}`}
+      aria-label="Site menu"
+      onClose={onClose}
+      onClick={(event) => handleDialogBackdropClickFallback(event, onClose)}
+      {...({ closedby: "any" } as Record<string, string>)}
+    >
+      <div className="site-mobile-header">
+        <span className="site-mobile-brand">
+          Jobber<span className="site-mobile-brand-accent">Med</span>
+        </span>
+        <button className="site-mobile-close" type="button" aria-label="Close menu" onClick={onClose}>
+          ✕
+        </button>
+      </div>
 
-      <aside
-        ref={drawerRef}
-        className={`site-mobile-drawer site-mobile-drawer--${variant}${isOpen ? " open" : ""}`}
-        role="dialog"
-        aria-modal="true"
-        aria-label="Site menu"
-        aria-hidden={isOpen ? "false" : "true"}
-      >
-        <div className="site-mobile-header">
-          <span className="site-mobile-brand">
-            Jobber<span className="site-mobile-brand-accent">Med</span>
-          </span>
-          <button className="site-mobile-close" type="button" aria-label="Close menu" onClick={onClose}>
-            ✕
-          </button>
-        </div>
+      {email ? <div className="site-mobile-email">{email}</div> : null}
 
-        {email ? <div className="site-mobile-email">{email}</div> : null}
+      <nav className="site-mobile-links" aria-label="Main">
+        {primaryLinks.map((link) => (
+          <DrawerLink key={link.id} link={link} pathname={pathname} search={search} onClose={onClose} className="site-mobile-link" />
+        ))}
+      </nav>
 
-        <nav className="site-mobile-links" aria-label="Main">
-          {primaryLinks.map((link) => (
-            <DrawerLink key={link.id} link={link} pathname={pathname} search={search} onClose={onClose} className="site-mobile-link" />
+      {accountLinks.length > 0 ? (
+        <>
+          <div className="site-mobile-section-label" aria-hidden="true">
+            Account
+          </div>
+          <nav className="site-mobile-links" aria-label="Account">
+            {accountLinks.map((link) => (
+              <DrawerLink key={link.id} link={link} pathname={pathname} search={search} onClose={onClose} className="site-mobile-link" />
+            ))}
+          </nav>
+        </>
+      ) : null}
+
+      <div className="site-mobile-bottom">
+        <nav className="site-mobile-legal" aria-label="About and legal">
+          {legalLinks.map((link) => (
+            <DrawerLink
+              key={link.id}
+              link={link}
+              pathname={pathname}
+              search={search}
+              onClose={onClose}
+              className="site-mobile-legal-link"
+            />
           ))}
         </nav>
 
-        {accountLinks.length > 0 ? (
-          <>
-            <div className="site-mobile-section-label" aria-hidden="true">
-              Account
-            </div>
-            <nav className="site-mobile-links" aria-label="Account">
-              {accountLinks.map((link) => (
-                <DrawerLink key={link.id} link={link} pathname={pathname} search={search} onClose={onClose} className="site-mobile-link" />
-              ))}
-            </nav>
-          </>
+        {signUpLink || signInLink ? (
+          <div className="site-mobile-auth">
+            {signUpLink && signUpLink.kind === "internal" ? (
+              <Link className="site-mobile-auth-btn site-mobile-auth-primary" to={signUpLink.to} onClick={onClose}>
+                {signUpLink.label}
+              </Link>
+            ) : null}
+            {signInLink && signInLink.kind === "internal" ? (
+              <Link className="site-mobile-auth-btn site-mobile-auth-secondary" to={signInLink.to} onClick={onClose}>
+                {signInLink.label}
+              </Link>
+            ) : null}
+          </div>
         ) : null}
 
-        <div className="site-mobile-bottom">
-          <nav className="site-mobile-legal" aria-label="About and legal">
-            {legalLinks.map((link) => (
-              <DrawerLink
-                key={link.id}
-                link={link}
-                pathname={pathname}
-                search={search}
-                onClose={onClose}
-                className="site-mobile-legal-link"
-              />
-            ))}
-          </nav>
-
-          {signUpLink || signInLink ? (
-            <div className="site-mobile-auth">
-              {signUpLink && signUpLink.kind === "internal" ? (
-                <Link className="site-mobile-auth-btn site-mobile-auth-primary" to={signUpLink.to} onClick={onClose}>
-                  {signUpLink.label}
-                </Link>
-              ) : null}
-              {signInLink && signInLink.kind === "internal" ? (
-                <Link className="site-mobile-auth-btn site-mobile-auth-secondary" to={signInLink.to} onClick={onClose}>
-                  {signInLink.label}
-                </Link>
-              ) : null}
-            </div>
-          ) : null}
-
-          {showSignOut ? (
-            <button className="site-mobile-signout" type="button" onClick={handleSignOutClick}>
-              Sign Out
-            </button>
-          ) : null}
-        </div>
-      </aside>
-    </>
+        {showSignOut ? (
+          <button className="site-mobile-signout" type="button" onClick={handleSignOutClick}>
+            Sign Out
+          </button>
+        ) : null}
+      </div>
+    </dialog>
   );
 }

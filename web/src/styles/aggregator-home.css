@@ -211,8 +211,9 @@
   display: none;
 }
 
-.aggregator-home .hero-search-input:focus {
-  outline: 0;
+.aggregator-home .hero-search-input:focus-visible {
+  outline: 3px solid var(--jobber);
+  outline-offset: 2px;
   background: rgba(255, 255, 255, 0.24);
   border-color: var(--on-photo);
 }
@@ -950,37 +951,51 @@
 }
 
 /* ---------- detail panel ---------- */
-.aggregator-home .detail-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(28, 27, 25, 0.4);
-  z-index: 999;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  pointer-events: none;
-}
-
-.aggregator-home .detail-overlay.visible {
-  opacity: 1;
-  pointer-events: auto;
-}
-
 .aggregator-home .detail-panel {
   position: fixed;
+  margin: 0;
+  margin-inline-start: auto;
+  max-width: none;
+  max-height: none;
+  border: 0;
   background: #ffffff;
+  color: var(--ink);
   z-index: 1000;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   overscroll-behavior: contain;
-  transition: transform 0.45s ease;
+  transition-property: transform, opacity, display, overlay;
+  transition-duration: 0.45s;
+  transition-timing-function: ease;
+  transition-behavior: allow-discrete;
 }
 
-.aggregator-home .detail-panel.visible {
+.aggregator-home .detail-panel:is([open], .visible) {
   transform: translateX(0);
+
+  @starting-style {
+    transform: translateX(100%);
+  }
 }
 
 .aggregator-home .detail-panel.closing {
   transform: translateX(100%);
+}
+
+.aggregator-home .detail-panel::backdrop {
+  background-color: rgba(28, 27, 25, 0);
+  transition:
+    display 0.3s allow-discrete,
+    overlay 0.3s allow-discrete,
+    background-color 0.3s ease;
+}
+
+.aggregator-home .detail-panel[open]:not(.closing)::backdrop {
+  background-color: rgba(28, 27, 25, 0.4);
+
+  @starting-style {
+    background-color: rgba(28, 27, 25, 0);
+  }
 }
 
 .aggregator-home .detail-close-btn {
@@ -1505,9 +1520,15 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .aggregator-home * {
-    transition: none !important;
-    animation: none !important;
+  .aggregator-home .detail-panel {
+    transform: none;
+    transition-duration: 0.1s;
+  }
+
+  @starting-style {
+    .aggregator-home .detail-panel:is([open], .visible) {
+      transform: none;
+    }
   }
 }
 
@@ -1553,6 +1574,11 @@
   border-radius: 0;
   background: transparent;
   transition: background 0.15s ease;
+}
+
+.aggregator-home .job-card:nth-child(n + 9) {
+  content-visibility: auto;
+  contain-intrinsic-size: auto none auto 160px;
 }
 
 .aggregator-home .card.clickable:hover {

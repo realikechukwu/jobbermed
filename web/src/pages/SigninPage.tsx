@@ -95,39 +95,59 @@ export function SigninPage() {
           </div>
 
           <form className="shell-form" onSubmit={handleSubmit}>
-            <label className="shell-label" htmlFor="signin-email">
-              Email
-            </label>
-            <input
-              className="shell-input"
-              id="signin-email"
-              type="email"
-              autoComplete="email"
-              placeholder="you@example.com"
-              value={email}
-              onChange={(event) => setEmail(event.target.value)}
-              required
-            />
+            <div className="shell-field">
+              <label className="shell-label" htmlFor="signin-email">
+                Email
+              </label>
+              <input
+                className="shell-input"
+                id="signin-email"
+                name="email"
+                type="email"
+                inputMode="email"
+                autoComplete="email"
+                placeholder="you@example.com"
+                aria-errormessage="signin-email-error"
+                value={email}
+                onChange={(event) => setEmail(event.target.value)}
+                required
+              />
+              <span id="signin-email-error" className="field-error-msg">
+                <span aria-hidden="true">⚠ </span>Please enter a valid email address.
+              </span>
+            </div>
 
-            <label className="shell-label" htmlFor="signin-password">
-              Password
-            </label>
-            <input
-              className="shell-input"
-              id="signin-password"
-              type="password"
-              autoComplete="current-password"
-              placeholder="Password"
-              value={password}
-              onChange={(event) => setPassword(event.target.value)}
-              required
-            />
+            <div className="shell-field">
+              <label className="shell-label" htmlFor="signin-password">
+                Password
+              </label>
+              <input
+                className="shell-input"
+                id="signin-password"
+                name="password"
+                type="password"
+                autoComplete="current-password"
+                placeholder="Password"
+                aria-errormessage="signin-password-error"
+                value={password}
+                onChange={(event) => setPassword(event.target.value)}
+                required
+              />
+              <span id="signin-password-error" className="field-error-msg">
+                <span aria-hidden="true">⚠ </span>Please enter your password.
+              </span>
+            </div>
 
             <p className="meta auth-aux-link">
               <Link to="/forgot-password">Forgot password?</Link>
             </p>
 
-            {error ? <p className="native-form-message native-form-error">{error}</p> : null}
+            {error ? (
+              <p className="native-form-message native-form-error" role="alert">
+                <span aria-hidden="true">⚠ </span>
+                {error}
+              </p>
+            ) : null}
 
             <button className="shell-button" type="submit" disabled={isBusy}>
               {isSubmitting ? "Signing in..." : "Continue"}

@@ -1,6 +1,6 @@
 import { buildCvMatchUrl } from "../cv-match";
-import { useRef, type MouseEvent } from "react";
-import { useFocusTrap } from "../../../hooks/useFocusTrap";
+import { useEffect, useRef, type MouseEvent } from "react";
+import { handleDialogBackdropClickFallback } from "../../../lib/form-accessibility";
 import { SOURCE_LABELS } from "../constants";
 import type { AggregatorJob } from "../types";
 import { formatDate, formatJobType, formatSalary, normalizeCategory, safeText } from "../utils";
@@ -45,13 +45,22 @@ export function AggregatorDetailPanel({
   job,
   isMounted,
   isClosing,
-  overlayVisible,
   isSaved,
   onClose,
   onToggleSave,
 }: AggregatorDetailPanelProps) {
-  const panelRef = useRef<HTMLElement>(null);
-  useFocusTrap(panelRef, isMounted && !isClosing);
+  const panelRef = useRef<HTMLDialogElement>(null);
+
+  useEffect(() => {
+    const dialog = panelRef.current;
+    if (!dialog) {
+      return;
+    }
+
+    if (isMounted && !dialog.open) {
+      dialog.showModal();
+    }
+  }, [isMounted]);
 
   if (!isMounted) {
     return null;
@@ -86,13 +95,17 @@ export function AggregatorDetailPanel({
   }
 
   return (
-    <>
-      <div className={`detail-overlay${overlayVisible ? " visible" : ""}`} role="presentation" onClick={onClose} />
-
-      <aside ref={panelRef} className={panelClassName} role="dialog" aria-modal="true" aria-labelledby="detailTitle">
-        <button className="detail-close-btn" type="button" aria-label="Close panel" onClick={onClose}>
-          ✕
-        </button>
+    <dialog
+      ref={panelRef}
+      className={panelClassName}
+      aria-labelledby="detailTitle"
+      onClose={onClose}
+      onClick={(event) => handleDialogBackdropClickFallback(event, onClose)}
+      {...({ closedby: "any" } as Record<string, string>)}
+    >
+      <button className="detail-close-btn" type="button" aria-label="Close panel" onClick={onClose}>
+        ✕
+      </button>
 
         <button className="detail-back-btn" type="button" onClick={onClose}>
           Back to jobs
@@ -198,7 +211,6 @@ export function AggregatorDetailPanel({
             </a>
           )}
         </div>
-      </aside>
-    </>
+      </dialog>
   );
 }

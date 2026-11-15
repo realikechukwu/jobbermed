@@ -90,36 +90,66 @@ export function ResetPasswordPage() {
                 .
               </p>
 
-              <label className="shell-label" htmlFor="reset-new-password">
-                New password
-              </label>
-              <input
-                className="shell-input"
-                id="reset-new-password"
-                type="password"
-                autoComplete="new-password"
-                placeholder="Enter new password"
-                value={newPassword}
-                onChange={(event) => setNewPassword(event.target.value)}
-                required
-              />
+              <div className="shell-field">
+                <label className="shell-label" htmlFor="reset-new-password">
+                  New password
+                </label>
+                <span id="reset-password-hint" className="shell-hint">
+                  At least 6 characters.
+                </span>
+                <input
+                  className="shell-input"
+                  id="reset-new-password"
+                  name="new_password"
+                  type="password"
+                  autoComplete="new-password"
+                  placeholder="Enter new password"
+                  minLength={6}
+                  aria-describedby="reset-password-hint"
+                  aria-errormessage="reset-new-password-error"
+                  value={newPassword}
+                  onChange={(event) => setNewPassword(event.target.value)}
+                  required
+                />
+                <span id="reset-new-password-error" className="field-error-msg">
+                  <span aria-hidden="true">⚠ </span>Password must be at least 6 characters.
+                </span>
+              </div>
 
-              <label className="shell-label" htmlFor="reset-confirm-password">
-                Confirm new password
-              </label>
-              <input
-                className="shell-input"
-                id="reset-confirm-password"
-                type="password"
-                autoComplete="new-password"
-                placeholder="Confirm new password"
-                value={confirmPassword}
-                onChange={(event) => setConfirmPassword(event.target.value)}
-                required
-              />
+              <div className="shell-field">
+                <label className="shell-label" htmlFor="reset-confirm-password">
+                  Confirm new password
+                </label>
+                <input
+                  className="shell-input"
+                  id="reset-confirm-password"
+                  name="confirm_password"
+                  type="password"
+                  autoComplete="new-password"
+                  placeholder="Confirm new password"
+                  minLength={6}
+                  aria-errormessage="reset-confirm-password-error"
+                  value={confirmPassword}
+                  onChange={(event) => setConfirmPassword(event.target.value)}
+                  required
+                />
+                <span id="reset-confirm-password-error" className="field-error-msg">
+                  <span aria-hidden="true">⚠ </span>Please confirm your new password (at least 6 characters).
+                </span>
+              </div>
 
-              {error ? <p className="native-form-message native-form-error">{error}</p> : null}
-              {notice ? <p className="native-form-message native-form-success">{notice}</p> : null}
+              {error ? (
+                <p className="native-form-message native-form-error" role="alert">
+                  <span aria-hidden="true">⚠ </span>
+                  {error}
+                </p>
+              ) : null}
+              {notice ? (
+                <p className="native-form-message native-form-success" role="status" aria-live="polite">
+                  <span aria-hidden="true">✓ </span>
+                  {notice}
+                </p>
+              ) : null}
 
               <button className="shell-button" type="submit" disabled={isSubmitting}>
                 {isSubmitting ? "Updating password..." : "Update password"}

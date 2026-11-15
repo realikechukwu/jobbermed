@@ -63,25 +63,43 @@ export function ForgotPasswordPage() {
       <section className="shell-content" aria-label="Forgot password">
         <CardPrimitive title="Reset your password">
           <form className="shell-form" onSubmit={handleSubmit}>
-            <label className="shell-label" htmlFor="forgot-password-email">
-              Email
-            </label>
-            <input
-              className="shell-input"
-              id="forgot-password-email"
-              type="email"
-              autoComplete="email"
-              placeholder="you@example.com"
-              value={email}
-              onChange={(event) => setEmail(event.target.value)}
-              required
-            />
+            <div className="shell-field">
+              <label className="shell-label" htmlFor="forgot-password-email">
+                Email
+              </label>
+              <input
+                className="shell-input"
+                id="forgot-password-email"
+                name="email"
+                type="email"
+                inputMode="email"
+                autoComplete="email"
+                placeholder="you@example.com"
+                aria-errormessage="forgot-password-email-error"
+                value={email}
+                onChange={(event) => setEmail(event.target.value)}
+                required
+              />
+              <span id="forgot-password-email-error" className="field-error-msg">
+                <span aria-hidden="true">⚠ </span>Please enter a valid email address.
+              </span>
+            </div>
 
-            {error ? <p className="native-form-message native-form-error">{error}</p> : null}
+            {error ? (
+              <p className="native-form-message native-form-error" role="alert">
+                <span aria-hidden="true">⚠ </span>
+                {error}
+              </p>
+            ) : null}
             {showRedirectHint ? (
               <p className="meta">Check Supabase Auth redirect URL allowlist for: {redirectTo}</p>
             ) : null}
-            {notice ? <p className="native-form-message native-form-success">{notice}</p> : null}
+            {notice ? (
+              <p className="native-form-message native-form-success" role="status" aria-live="polite">
+                <span aria-hidden="true">✓ </span>
+                {notice}
+              </p>
+            ) : null}
 
             <button className="shell-button" type="submit" disabled={isSubmitting}>
               {isSubmitting ? "Sending reset link..." : "Send reset link"}

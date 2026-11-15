@@ -13,6 +13,29 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", "Segoe UI", Roboto, sans-serif;
   color: var(--ink);
   background: #ffffff;
+  accent-color: var(--med);
+}
+
+/* Fallback for older browsers without accent-color */
+@supports not (accent-color: var(--med)) {
+  input[type="checkbox"],
+  input[type="radio"] {
+    border: 1.5px solid #767676;
+  }
+
+  input[type="checkbox"]:checked,
+  input[type="radio"]:checked {
+    background-color: var(--med);
+    border-color: var(--med);
+  }
+
+  progress::-webkit-progress-value {
+    background-color: var(--med);
+  }
+
+  progress::-moz-progress-bar {
+    background-color: var(--med);
+  }
 }
 
 a {
@@ -131,43 +154,69 @@ a {
   cursor: pointer;
 }
 
-.site-mobile-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.35);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.2s ease;
-  z-index: 1200;
-}
-
-.site-mobile-overlay.show {
-  opacity: 1;
-  pointer-events: auto;
-}
-
 .site-mobile-drawer {
   position: fixed;
-  top: 0;
-  right: 0;
+  inset: 0 0 0 auto;
+  margin: 0;
+  max-width: none;
+  max-height: none;
+  border: 0;
   width: min(320px, 90vw);
   height: 100vh;
   height: 100dvh;
   background: #ffffff;
+  color: var(--ink);
   transform: translateX(100%);
-  transition: transform 0.25s ease;
+  transition-property: transform, opacity, display, overlay;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-out;
+  transition-behavior: allow-discrete;
   z-index: 1300;
   padding: 16px 20px;
   padding-bottom: calc(20px + env(safe-area-inset-bottom));
-  display: flex;
   flex-direction: column;
   gap: 8px;
   overflow-y: auto;
+  overscroll-behavior: contain;
   -webkit-overflow-scrolling: touch;
 }
 
-.site-mobile-drawer.open {
+.site-mobile-drawer:is([open], .open) {
+  display: flex;
   transform: translateX(0);
+
+  @starting-style {
+    transform: translateX(100%);
+  }
+}
+
+.site-mobile-drawer::backdrop {
+  background-color: rgba(0, 0, 0, 0);
+  transition:
+    display 0.25s allow-discrete,
+    overlay 0.25s allow-discrete,
+    background-color 0.25s ease-out;
+}
+
+.site-mobile-drawer[open]::backdrop {
+  background-color: rgba(0, 0, 0, 0.35);
+
+  @starting-style {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-mobile-drawer {
+    transform: none;
+    transition-duration: 0.1s;
+  }
+
+  @starting-style {
+    .site-mobile-drawer:is([open], .open) {
+      transform: none;
+    }
+  }
 }
 
 .site-mobile-header {
@@ -536,7 +585,12 @@ a {
 
 .shell-form {
   display: grid;
-  gap: 10px;
+  gap: 14px;
+}
+
+.shell-field {
+  display: grid;
+  gap: 4px;
 }
 
 .shell-label {
@@ -544,20 +598,60 @@ a {
   color: var(--muted);
 }
 
-.shell-input {
-  width: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  border-radius: var(--radius-sm);
-  padding: 12px 14px;
-  font-size: 0.95rem;
-  background: var(--card);
-  color: var(--ink);
-  outline: none;
+.shell-hint {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin-bottom: 2px;
 }
 
-.shell-input:focus {
-  border-color: #9a9a9a;
-  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.08);
+.shell-field:has(.shell-input:is(:user-invalid, .user-invalid-fallback)) .shell-hint {
+  color: #b3261e;
+  font-weight: 600;
+}
+
+.shell-input {
+  width: 100%;
+  min-height: 48px;
+  border: 1px solid rgba(0, 0, 0, 0.24);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  font-size: 1rem;
+  background: var(--card);
+  color: var(--ink);
+  box-sizing: border-box;
+}
+
+@media (pointer: coarse) {
+  .shell-input {
+    min-height: 52px;
+  }
+}
+
+.shell-input:focus-visible {
+  outline: 3px solid var(--jobber);
+  outline-offset: 2px;
+  border-color: var(--ink);
+}
+
+.shell-input:is(:user-invalid, .user-invalid-fallback) {
+  border-color: #b3261e;
+  background-color: #fce8e6;
+}
+
+.shell-input:is(:user-valid, .user-valid-fallback) {
+  border-color: #188038;
+}
+
+.field-error-msg {
+  display: none;
+  color: #b3261e;
+  font-size: 0.84rem;
+  margin-top: 2px;
+}
+
+.shell-input:is(:user-invalid, .user-invalid-fallback) + .field-error-msg {
+  display: block;
 }
 
 .shell-button {

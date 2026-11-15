@@ -80,49 +80,82 @@ export function ChangePasswordPage() {
       <section className="shell-content" aria-label="Change password">
         <CardPrimitive title="Change password">
           <form className="shell-form" onSubmit={handleSubmit}>
-            <label className="shell-label" htmlFor="change-current-password">
-              Current password (Recommended)
-            </label>
-            <input
-              className="shell-input"
-              id="change-current-password"
-              type="password"
-              autoComplete="current-password"
-              placeholder="Enter current password"
-              value={currentPassword}
-              onChange={(event) => setCurrentPassword(event.target.value)}
-            />
+            <div className="shell-field">
+              <label className="shell-label" htmlFor="change-current-password">
+                Current password (Recommended)
+              </label>
+              <input
+                className="shell-input"
+                id="change-current-password"
+                name="current_password"
+                type="password"
+                autoComplete="current-password"
+                placeholder="Enter current password"
+                value={currentPassword}
+                onChange={(event) => setCurrentPassword(event.target.value)}
+              />
+            </div>
 
-            <label className="shell-label" htmlFor="change-new-password">
-              New password
-            </label>
-            <input
-              className="shell-input"
-              id="change-new-password"
-              type="password"
-              autoComplete="new-password"
-              placeholder="Enter new password"
-              value={newPassword}
-              onChange={(event) => setNewPassword(event.target.value)}
-              required
-            />
+            <div className="shell-field">
+              <label className="shell-label" htmlFor="change-new-password">
+                New password
+              </label>
+              <span id="change-password-hint" className="shell-hint">
+                At least 6 characters.
+              </span>
+              <input
+                className="shell-input"
+                id="change-new-password"
+                name="new_password"
+                type="password"
+                autoComplete="new-password"
+                placeholder="Enter new password"
+                minLength={6}
+                aria-describedby="change-password-hint"
+                aria-errormessage="change-new-password-error"
+                value={newPassword}
+                onChange={(event) => setNewPassword(event.target.value)}
+                required
+              />
+              <span id="change-new-password-error" className="field-error-msg">
+                <span aria-hidden="true">⚠ </span>Password must be at least 6 characters.
+              </span>
+            </div>
 
-            <label className="shell-label" htmlFor="change-confirm-password">
-              Confirm new password
-            </label>
-            <input
-              className="shell-input"
-              id="change-confirm-password"
-              type="password"
-              autoComplete="new-password"
-              placeholder="Confirm new password"
-              value={confirmPassword}
-              onChange={(event) => setConfirmPassword(event.target.value)}
-              required
-            />
+            <div className="shell-field">
+              <label className="shell-label" htmlFor="change-confirm-password">
+                Confirm new password
+              </label>
+              <input
+                className="shell-input"
+                id="change-confirm-password"
+                name="confirm_password"
+                type="password"
+                autoComplete="new-password"
+                placeholder="Confirm new password"
+                minLength={6}
+                aria-errormessage="change-confirm-password-error"
+                value={confirmPassword}
+                onChange={(event) => setConfirmPassword(event.target.value)}
+                required
+              />
+              <span id="change-confirm-password-error" className="field-error-msg">
+                <span aria-hidden="true">⚠ </span>Please confirm your new password (at least 6 characters).
+              </span>
+            </div>
 
-            {error ? <p className="native-form-message native-form-error">{error}</p> : null}
-            {notice ? <p className="native-form-message native-form-success">{notice}</p> : null}
+            {error ? (
+              <p className="native-form-message native-form-error" role="alert">
+                <span aria-hidden="true">⚠ </span>
+                {error}
+              </p>
+            ) : null}
+            {notice ? (
+              <p className="native-form-message native-form-success" role="status" aria-live="polite">
+                <span aria-hidden="true">✓ </span>
+                {notice}
+              </p>
+            ) : null}
 
             <button className="shell-button" type="submit" disabled={isSubmitting}>
               {isSubmitting ? "Updating password..." : "Update password"}

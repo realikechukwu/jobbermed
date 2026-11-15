@@ -101,72 +101,126 @@ export function NativeJobApplyForm({ jobId, jobTitle }: NativeJobApplyFormProps)
 
   return (
     <form className="native-apply-form" onSubmit={handleSubmit}>
-      <label className="shell-label" htmlFor="native-apply-name">
-        Full name
-      </label>
-      <input
-        className="shell-input"
-        id="native-apply-name"
-        value={formState.applicantName}
-        onChange={updateField("applicantName")}
-        placeholder="Your full name"
-        required
-      />
+      <div className="shell-field">
+        <label className="shell-label" htmlFor="native-apply-name">
+          Full name
+        </label>
+        <input
+          className="shell-input"
+          id="native-apply-name"
+          name="applicant_name"
+          autoComplete="name"
+          minLength={2}
+          aria-errormessage="native-apply-name-error"
+          value={formState.applicantName}
+          onChange={updateField("applicantName")}
+          placeholder="Your full name"
+          required
+        />
+        <span id="native-apply-name-error" className="field-error-msg">
+          <span aria-hidden="true">⚠ </span>Please enter your full name (at least 2 characters).
+        </span>
+      </div>
 
-      <label className="shell-label" htmlFor="native-apply-email">
-        Email
-      </label>
-      <input
-        className="shell-input"
-        id="native-apply-email"
-        type="email"
-        value={formState.applicantEmail}
-        onChange={updateField("applicantEmail")}
-        placeholder="you@example.com"
-        required
-      />
+      <div className="shell-field">
+        <label className="shell-label" htmlFor="native-apply-email">
+          Email
+        </label>
+        <input
+          className="shell-input"
+          id="native-apply-email"
+          name="applicant_email"
+          type="email"
+          inputMode="email"
+          autoComplete="email"
+          aria-errormessage="native-apply-email-error"
+          value={formState.applicantEmail}
+          onChange={updateField("applicantEmail")}
+          placeholder="you@example.com"
+          required
+        />
+        <span id="native-apply-email-error" className="field-error-msg">
+          <span aria-hidden="true">⚠ </span>Please enter a valid email address.
+        </span>
+      </div>
 
-      <label className="shell-label" htmlFor="native-apply-phone">
-        Phone
-      </label>
-      <input
-        className="shell-input"
-        id="native-apply-phone"
-        type="tel"
-        value={formState.applicantPhone}
-        onChange={updateField("applicantPhone")}
-        placeholder="+234..."
-      />
+      <div className="shell-field">
+        <label className="shell-label" htmlFor="native-apply-phone">
+          Phone
+        </label>
+        <input
+          className="shell-input"
+          id="native-apply-phone"
+          name="applicant_phone"
+          type="tel"
+          inputMode="tel"
+          autoComplete="tel"
+          value={formState.applicantPhone}
+          onChange={updateField("applicantPhone")}
+          placeholder="+234..."
+        />
+      </div>
 
-      <label className="shell-label" htmlFor="native-apply-cv">
-        CV link
-      </label>
-      <p className="preference-meta">
-        Please upload a link to your CV. Kindly upload it to a drive and share the link as a shared file here.
-      </p>
-      <input
-        className="shell-input"
-        id="native-apply-cv"
-        type="url"
-        value={formState.cvUrl}
-        onChange={updateField("cvUrl")}
-        placeholder="https://drive.google.com/..."
-      />
+      <div className="shell-field">
+        <label className="shell-label" htmlFor="native-apply-cv">
+          CV link
+        </label>
+        <p id="native-apply-cv-hint" className="preference-meta">
+          Please upload a link to your CV. Kindly upload it to a drive and share the link as a shared file here.
+        </p>
+        <input
+          className="shell-input"
+          id="native-apply-cv"
+          name="cv_url"
+          type="url"
+          inputMode="url"
+          aria-describedby="native-apply-cv-hint"
+          aria-errormessage="native-apply-cv-error"
+          value={formState.cvUrl}
+          onChange={updateField("cvUrl")}
+          placeholder="https://drive.google.com/..."
+        />
+        <span id="native-apply-cv-error" className="field-error-msg">
+          <span aria-hidden="true">⚠ </span>Please enter a valid URL starting with https:// or http://.
+        </span>
+      </div>
 
-      <label className="shell-label" htmlFor="native-apply-cover-letter">
-        Cover letter
-      </label>
-      <textarea
-        className="shell-input native-apply-cover-letter"
-        id="native-apply-cover-letter"
-        value={formState.coverLetter}
-        onChange={updateField("coverLetter")}
-        placeholder="Why you are a good fit for this role"
-        required
-      />
+      <div className="shell-field">
+        <label className="shell-label" htmlFor="native-apply-cover-letter">
+          Cover letter
+        </label>
+        <span id="native-apply-cover-hint" className="shell-hint">
+          At least 40 characters.
+        </span>
+        <textarea
+          className="shell-input native-apply-cover-letter"
+          id="native-apply-cover-letter"
+          name="cover_letter"
+          minLength={40}
+          aria-describedby="native-apply-cover-hint"
+          aria-errormessage="native-apply-cover-error"
+          value={formState.coverLetter}
+          onChange={updateField("coverLetter")}
+          placeholder="Why you are a good fit for this role"
+          required
+        />
+        <span id="native-apply-cover-error" className="field-error-msg">
+          <span aria-hidden="true">⚠ </span>Cover letter must be at least 40 characters.
+        </span>
+      </div>
 
-      {error ? <p className="native-form-message native-form-error">{error}</p> : null}
-      {success ? <p className="native-form-message native-form-success">{success}</p> : null}
+      {error ? (
+        <p className="native-form-message native-form-error" role="alert">
+          <span aria-hidden="true">⚠ </span>
+          {error}
+        </p>
+      ) : null}
+      {success ? (
+        <p className="native-form-message native-form-success" role="status" aria-live="polite">
+          <span aria-hidden="true">✓ </span>
+          {success}
+        </p>
+      ) : null}
 
       <button className="shell-button native-submit-button" type="submit" disabled={isSubmitting}>
         {isSubmitting ? "Submitting..." : "Submit application"}
