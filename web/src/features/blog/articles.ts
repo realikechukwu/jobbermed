@@ -9,8 +9,9 @@ export const CV_MATCH_URL = "https://cv.jobbermed.com";
 
 export type ArticleBlock =
   | { type: "p"; text: string }
-  | { type: "h2"; text: string }
-  | { type: "ul"; items: string[] }
+  | { type: "h2" | "h3"; text: string }
+  | { type: "ul" | "ol"; items: string[] }
+  | { type: "table"; columns: [string, string]; rows: [string, string][] }
   /** A sample email, CV line or subject line, shown as written. */
   | { type: "example"; lines: string[] }
   /** The CV Match call to action. */
@@ -61,6 +62,84 @@ export const CV_MATCH_CTA = {
 };
 
 export const ARTICLES: Article[] = [
+  {
+    slug: "nursing-jobs-in-nigeria-career-guide",
+    title: "Landing a Nursing Job in Nigeria (2026 Career Guide)",
+    description:
+      "How to find nursing jobs in Nigeria, from Lagos and Abuja to regional hospitals. Check NMCN and NYSC requirements, compare pay, and prepare for applications and interviews.",
+    published: "2026-11-15",
+    readMinutes: 4,
+    category: "Nursing careers",
+    image: "/images/guides/cv.svg",
+    body: [
+      {
+        type: "p",
+        text: "Landing a nursing job in Nigeria takes more than a qualification. Whether you are targeting a federal teaching hospital, a private clinic in Lagos or Abuja, or an NGO or corporate health role, show employers that your licence is current and that your clinical experience fits the post.",
+      },
+      {
+        type: "p",
+        text: "Start with [nursing jobs across Nigeria](/nursing-jobs), [nursing jobs in Lagos](/nursing-jobs/lagos) or [nursing jobs in Abuja](/nursing-jobs/abuja). When you find a role you want, [CV Match](https://cv.jobbermed.com) can compare your CV with the advert and help you tailor it.",
+      },
+      { type: "h2", text: "1. Check your requirements before you apply" },
+      {
+        type: "ul",
+        items: [
+          "Academic qualification. Check whether the post accepts your nursing qualification or specifies a degree such as a BNSc. Public adverts can set different entry requirements for nursing officers, senior officers and tutors.",
+          "NMCN registration and a current practising licence. Use the category of registration the advert asks for. The [Nursing and Midwifery Council of Nigeria](https://nmcn.gov.ng/licensing.html) says practising licences are renewable every three years.",
+          "NYSC documents. If NYSC applies to you, have your discharge or exemption certificate ready. Check the wording for your qualification and the specific role. [Official NYSC rules](https://www.nysc.gov.ng/downloads/nysc-decree.php)",
+          "Relevant certifications. List dual registration as a nurse and midwife, current BLS or ACLS training, or a post-basic qualification in areas such as ICU, theatre, emergency nursing, paediatrics or oncology when it matches the role.",
+        ],
+      },
+      { type: "h2", text: "2. Where to look for nursing jobs and what to ask about pay" },
+      {
+        type: "table",
+        columns: ["Sector", "Where to look and what to check"],
+        rows: [
+          ["Federal teaching hospitals", "Check the hospital's recruitment page and official notices. Ask for the CONHESS grade, step and applicable allowances."],
+          ["Private specialist hospitals and clinics", "Check employer career pages and JobberMed. Ask for the basic salary, shift pattern, night pay and overtime terms."],
+          ["NGOs and humanitarian organisations", "Look on the organisation's own careers portal. Check the duty station, contract length and any field or accommodation allowance."],
+          ["Oil, gas and corporate health", "Look for occupational health and site clinic roles. Check rotation, site requirements and any safety training named in the advert."],
+          ["State hospitals", "Check state recruitment notices and the hospital's own website. Ask which salary scale and allowances apply."],
+          ["Military and paramilitary services", "Use official recruitment channels and check whether the post is civilian or requires joining the service."],
+        ],
+      },
+      {
+        type: "p",
+        text: "In JobberMed’s September–November 2026 sample, private registered nurse and midwife adverts that disclosed pay mostly quoted ₦125,000 to ₦260,000 a month. The sample was small and weighted towards Lagos. In one [October 2026 teaching hospital notice](https://fcc.gov.ng/job-listings/obafemi-awolowo-university-teaching-hospitals-complex-ile-ife/), Nursing Officer II was listed at CONHESS 7 Step 2 and Senior Nursing Officer at CONHESS 9 Step 1. Use the [CONMESS and CONHESS guide](/blog/conmess-conhess-explained) to understand grades before comparing actual offers.",
+      },
+      {
+        type: "p",
+        text: "If you can relocate, include regional teaching hospitals and NGO field posts in your search. Ask about allowances, accommodation, travel and the length of the contract before you compare the offer with a job in Lagos or Abuja.",
+      },
+      { type: "h2", text: "3. Five steps to improve your application" },
+      {
+        type: "ol",
+        items: [
+          "Write a CV that shows your clinical work. Put your NMCN registration category and practising licence status near the top. Use numbers you can explain, such as the size of your ward or your typical patient caseload. [Tailor your CV to a specific advert](https://cv.jobbermed.com) and check the result before sending it.",
+          "Apply through healthcare recruitment channels. Browse [nursing vacancies on JobberMed](/nursing-jobs) and follow the link to the original advert. For a federal or state position, also check the employer’s own recruitment page for the deadline and required documents.",
+          "Stay in touch with your nursing network. Ask former supervisors, colleagues and contacts from your clinical postings to share relevant openings. Local nursing association groups can also help you hear about roles.",
+          "Prepare for a written assessment if the employer uses one. Review drug calculations, IV flow rates, core pharmacology and professional ethics. Ask the recruiter what the assessment covers if the invitation leaves that out.",
+          "Practise for the clinical panel. Prepare a few examples of how you prioritised care, escalated a concern or handled a challenging shift. Use the STAR method: situation, task, action and result. Keep patient details confidential.",
+        ],
+      },
+      { type: "h2", text: "Quick FAQ" },
+      { type: "h3", text: "Can I work as a nurse in Nigeria before finishing NYSC?" },
+      {
+        type: "p",
+        text: "Check both your NYSC status and the advert. Some teaching hospital posts explicitly ask for evidence of completion, exemption or exclusion, depending on the qualification. If you are still serving, ask the recruiter which evidence they accept for the specific post and check the [official NYSC rules](https://www.nysc.gov.ng/downloads/nysc-decree.php).",
+      },
+      { type: "h3", text: "Which nursing specialties should I look for?" },
+      {
+        type: "p",
+        text: "Search by specialty as well as job title. Try ICU or critical care, theatre or perioperative nursing, emergency nursing and midwifery. For offshore or worksite posts, check which occupational health experience and safety qualifications the employer lists.",
+      },
+      { type: "h2", text: "Find your next nursing role" },
+      {
+        type: "p",
+        text: "[Browse nursing and midwifery jobs](/nursing-jobs) to find a role that fits your experience. Then [check your CV against the advert](https://cv.jobbermed.com) before applying.",
+      },
+    ],
+  },
   {
     slug: "healthcare-cv-nigeria",
     title: "How to write a CV for a healthcare job in Nigeria",

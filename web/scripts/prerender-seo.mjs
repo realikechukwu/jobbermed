@@ -354,8 +354,16 @@ function articleHtml(blocks) {
       switch (block.type) {
         case "h2":
           return `<h2>${esc(block.text)}</h2>`;
+        case "h3":
+          return `<h3>${esc(block.text)}</h3>`;
         case "ul":
-          return `<ul>${block.items.map((item) => `<li>${inlineHtml(item)}</li>`).join("")}</ul>`;
+        case "ol":
+          return `<${block.type}>${block.items.map((item) => `<li>${inlineHtml(item)}</li>`).join("")}</${block.type}>`;
+        case "table": {
+          const head = block.columns.map((column) => `<th scope="col">${esc(column)}</th>`).join("");
+          const rows = block.rows.map(([label, value]) => `<tr><th scope="row">${inlineHtml(label)}</th><td>${inlineHtml(value)}</td></tr>`).join("");
+          return `<table class="blog-table"><thead><tr>${head}</tr></thead><tbody>${rows}</tbody></table>`;
+        }
         case "example":
           return `<blockquote>${block.lines.map((line) => `<p>${esc(line)}</p>`).join("")}</blockquote>`;
         case "cta":

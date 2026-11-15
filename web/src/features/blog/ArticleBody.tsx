@@ -48,15 +48,38 @@ export function ArticleBody({ blocks }: { blocks: ArticleBlock[] }) {
         switch (block.type) {
           case "h2":
             return <h2 key={index}>{block.text}</h2>;
+          case "h3":
+            return <h3 key={index}>{block.text}</h3>;
           case "ul":
+          case "ol": {
+            const List = block.type;
             return (
-              <ul key={index}>
+              <List key={index}>
                 {block.items.map((item) => (
                   <li key={item}>
                     <Inline text={item} />
                   </li>
                 ))}
-              </ul>
+              </List>
+            );
+          }
+          case "table":
+            return (
+              <table className="blog-table" key={index}>
+                <thead>
+                  <tr>
+                    {block.columns.map((column) => <th key={column} scope="col">{column}</th>)}
+                  </tr>
+                </thead>
+                <tbody>
+                  {block.rows.map(([label, text]) => (
+                    <tr key={label}>
+                      <th scope="row"><Inline text={label} /></th>
+                      <td><Inline text={text} /></td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             );
           case "example":
             return (
