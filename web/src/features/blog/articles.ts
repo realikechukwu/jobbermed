@@ -63,6 +63,97 @@ export const CV_MATCH_CTA = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "medical-housemanship-in-nigeria",
+    title: "Medical Housemanship in Nigeria: MDCN Portal, Pay and Centres",
+    description:
+      "Apply for medical housemanship in Nigeria through the MDCN portal or directly to accredited hospitals. Check posting deadlines, CONMESS pay and accommodation.",
+    published: "2026-11-15",
+    readMinutes: 5,
+    category: "Medical careers",
+    image: "/images/guides/locations.svg",
+    body: [
+      {
+        type: "p",
+        text: "There are two routes into medical housemanship in Nigeria. Use the [MDCN Housemanship Portal](https://housemanship.mdcn.gov.ng/) for hospitals in the federal centralised scheme. For accredited hospitals outside that scheme, apply through the hospital or its recruitment authority when it advertises a house officer vacancy.",
+      },
+      {
+        type: "p",
+        text: "Housemanship, also called a house job, is 12 months of supervised training at a centre approved by the Medical and Dental Council of Nigeria (MDCN). Medical graduates typically rotate through medicine, surgery, paediatrics, and obstetrics and gynaecology. Dental graduates follow the approved dental rotations. Both routes require satisfactory completion of housemanship before applying for full registration. [MDCN registration guidelines](https://mdcn.gov.ng/public/storage/documents/sub_document_1215406857.pdf)",
+      },
+      { type: "h2", text: "How to apply through the MDCN Housemanship Portal" },
+      {
+        type: "ol",
+        items: [
+          "Register with your provisional certificate. On the [MDCN registration page](https://housemanship.mdcn.gov.ng/auth/register), enter your provisional registration folio number and the date of issue as shown on the certificate. Use an email address you can access.",
+          "Watch [MDCN announcements](https://www.mdcn.gov.ng/) for vacancy releases. When you sign in, the list shows centres with available places for selection. If your preferred hospital is missing, check again after the next official release or compare other centres.",
+          "Confirm the centre before submitting. Check that you can relocate and report on time. MDCN’s FAQ says a confirmed choice cannot simply be reset.",
+          "Save your posting letter and check the reporting date. The portal emails a copy to you and the centre after a successful selection. Ask the hospital which documents to bring and where to report. Follow the date on your letter. A missed deadline can cancel your posting and release the slot.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Use the [official MDCN posting instructions](https://www.mdcn.gov.ng/page/housemanship/how-it-works) and the [MDCN FAQ](https://mdcn.gov.ng/frequently-asked-questions) for portal problems. MDCN prohibits applicants and intermediaries from soliciting postings from its staff. Avoid anyone offering to sell you a slot.",
+      },
+      { type: "h2", text: "How to apply directly for house officer jobs" },
+      {
+        type: "p",
+        text: "Check state teaching hospitals, health service commissions, military hospitals and private or faith-based centres for official house officer adverts. Confirm that the centre is approved by MDCN for your medical or dental programme before you accept an offer. Ask the recruitment office about the application deadline, interview and documents.",
+      },
+      {
+        type: "p",
+        text: "Keep your provisional registration certificate, degree evidence and a short medical CV ready. Include relevant clerkships, electives, research and leadership. Follow the documents and submission method in the advert. When you find a vacancy, [CV Match](https://cv.jobbermed.com) can help you tailor your existing CV to it. See the [JobberMed guide to healthcare CVs](/blog/healthcare-cv-nigeria).",
+      },
+      {
+        type: "p",
+        text: "MDCN’s [placement procedure](https://mdcn.gov.ng/page/recent-news/notice-on-the-standard-operating-procedures-sop-for-house-officers-placement-for014) directs house officers employed by accredited centres outside the centralised scheme to upload their employment letters to the portal when they resume. Ask the hospital’s housemanship office how to complete the registration and records for your placement.",
+      },
+      { type: "h2", text: "MDCN-accredited housemanship centres in Nigeria" },
+      {
+        type: "p",
+        text: "Start with the [September 2026 MDCN accreditation list](https://www.mdcn.gov.ng/public/storage/documents/document_966972577.pdf). It separates medical and dental training quotas. A quota tells you how many trainees the centre is approved to take. Check the portal or institution for current vacancies.",
+      },
+      {
+        type: "table",
+        columns: ["Location", "Examples of centres to check"],
+        rows: [
+          ["Lagos", "Lagos University Teaching Hospital (LUTH), Lagos State University Teaching Hospital (LASUTH) and Federal Medical Centre, Ebute-Metta."],
+          ["Abuja", "National Hospital Abuja, Federal Medical Centre Jabi and University of Abuja Teaching Hospital, Gwagwalada."],
+          ["Port Harcourt", "University of Port Harcourt Teaching Hospital (UPTH) and Rivers State University Teaching Hospital (RSUTH)."],
+          ["Abeokuta, Benin City and Jos", "Federal Medical Centre Abeokuta, University of Benin Teaching Hospital (UBTH) and Jos University Teaching Hospital (JUTH)."],
+        ],
+      },
+      {
+        type: "p",
+        text: "Compare supervision across your rotations, call schedules and commuting time. If you need house officer quarters, ask the hospital whether a room is available when you resume, how it is allocated and what it costs.",
+      },
+      { type: "h2", text: "House officer salary in Nigeria and CONMESS pay" },
+      {
+        type: "p",
+        text: "For a federal placement, check the [official CONMESS salary circular](https://nsiwc.gov.ng/download/implementation-of-the-new-national-minimum-wage-in-the-federal-public-service-the-consolidated-medical-salary-structure-conmess/) and ask which grade and step apply to your offer. Confirm your gross monthly pay, deductions and allowances with the hospital to estimate what you will take home. MDCN’s centralised scheme uses monthly hospital clearance for payment.",
+      },
+      {
+        type: "p",
+        text: "For a direct offer from a state, private, faith-based or military centre, ask the employer who pays you, when your first payment is due and whether call pay or accommodation is included. Compare the written terms and your living costs. See [how CONMESS grades and steps work](/blog/conmess-conhess-explained).",
+      },
+      { type: "h2", text: "Housemanship FAQs" },
+      { type: "h3", text: "Can I do my housemanship outside the MDCN portal?" },
+      {
+        type: "p",
+        text: "Yes. You can apply directly to centres outside the federal centralised scheme if MDCN approves them for your training. Confirm current accreditation and follow MDCN’s requirements for recording the placement.",
+      },
+      { type: "h3", text: "How long do I have to resume after an MDCN posting?" },
+      {
+        type: "p",
+        text: "MDCN’s FAQ describes a two-week reporting window for centralised placements. Use the deadline in your posting letter and confirm the hospital’s reporting arrangements as soon as you receive it.",
+      },
+      { type: "h3", text: "What should I search for when looking for vacancies?" },
+      {
+        type: "p",
+        text: "Try “house officer”, “housemanship”, “house job” or “dental house officer” with the name of a state or hospital. Start with [doctor jobs in Nigeria](/doctor-jobs) or [dental jobs in Nigeria](/dentist-jobs) on JobberMed, then confirm the vacancy and application process with the employer.",
+      },
+    ],
+  },
+  {
     slug: "ngo-jobs-in-nigeria",
     title: "NGO Jobs in Nigeria: How to Apply for NGO and UN Roles",
     description:
@@ -301,6 +392,10 @@ export const ARTICLES: Article[] = [
       {
         type: "p",
         text: "A house officer or a newly qualified nurse needs one page. Most other people need two. Consultants applying to teaching hospitals are the exception, because interview panels expect publications, fellowships and teaching listed in full.",
+      },
+      {
+        type: "p",
+        text: "Applying for your first house job? See the [medical housemanship guide](/blog/medical-housemanship-in-nigeria) for the MDCN portal and direct application routes.",
       },
       {
         type: "p",
