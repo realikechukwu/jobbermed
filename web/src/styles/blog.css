@@ -103,11 +103,12 @@
 }
 
 .cv-cta {
-  margin: 24px 0;
-  padding: 18px 20px;
-  border: 1px solid var(--line);
-  border-radius: var(--radius-md);
-  background: var(--bg);
+  margin: 32px 0 0;
+  padding: 24px 0 0;
+  border: 0;
+  border-top: 1px solid var(--line);
+  border-radius: 0;
+  background: transparent;
 }
 
 .cv-cta-heading {
@@ -136,7 +137,7 @@
 
 .blog-index,
 .blog-more {
-  max-width: 720px;
+  max-width: none;
   margin-left: auto;
   margin-right: auto;
 }
@@ -146,75 +147,92 @@
   margin: 0;
   padding: 0;
   display: grid;
-  gap: 14px;
+  grid-template-columns: 1fr;
+  gap: 0;
+  border-top: 1px solid var(--line);
 }
 
 .blog-card {
-  padding: 20px 22px;
+  padding: 0;
+  min-width: 0;
+}
+
+.blog-card-link {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 28px 0;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
+  text-decoration: none;
+  transition: background 150ms ease;
+}
+
+.blog-card-link:hover .blog-card-title {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.blog-card-link:focus-visible,
+.blog-back:focus-visible {
+  outline: 3px solid #0cc0df;
+  outline-offset: 4px;
+}
+
+.blog-card-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 640 / 340;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--line);
+}
+
+.blog-card-copy {
+  padding: 0;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
 }
 
 .blog-card-title {
   margin: 0 0 8px;
-  font-size: 1.15rem;
-  line-height: 1.35;
-}
-
-.blog-card-title a {
-  text-decoration: none;
-}
-
-.blog-card-title a:hover {
-  text-decoration: underline;
+  color: var(--ink);
+  font-size: 1.25rem;
+  line-height: 1.3;
+  letter-spacing: -0.025em;
 }
 
 .blog-card-description {
-  margin: 0 0 10px;
+  margin: 0 0 12px;
+  font-size: 0.94rem;
   line-height: 1.55;
+  color: #595565;
 }
 
 .blog-meta {
   margin: 0;
-  font-size: 0.84rem;
+  font-size: 0.82rem;
   color: var(--muted);
 }
 
-.blog-more {
-  margin-top: 28px;
+.blog-read-link {
+  margin-top: 12px;
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.88rem;
 }
 
-.blog-more h2 {
-  margin: 0 0 10px;
-  font-size: 1.05rem;
-}
-
-.blog-more ul {
-  margin: 0 0 14px;
-  padding-left: 20px;
-  line-height: 1.7;
-}
-
-/* A single editorial frame for the cover, reading surface and guide cards. */
-.blog-shell {
-  --blog-width: 1040px;
-}
-
-.blog-shell .hero-banner {
-  width: calc(100% - 40px);
-  max-width: var(--blog-width);
-  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
-  overflow: visible;
-}
-
-.blog-shell .hero-banner--compact .hero-inner {
-  padding: 22px clamp(24px, 4vw, 48px) 40px;
-}
-
-.blog-shell .brand-logo { height: 64px; }
-.blog-shell .brand-link { margin-bottom: 20px; }
-.blog-shell .page {
-  max-width: var(--blog-width);
-  padding: 0 0 64px;
-  width: calc(100% - 40px);
+@media (min-width: 701px) {
+  .blog-card-link {
+    display: grid;
+    grid-template-columns: 240px minmax(0, 1fr);
+    gap: 28px;
+    align-items: center;
+  }
 }
 
 .blog-back {
@@ -223,29 +241,48 @@
   color: #d7d3f2;
   font-size: 0.85rem;
   text-decoration: none;
-  margin: clamp(20px, 3vw, 36px) 8px 16px;
+  margin: clamp(20px, 3vw, 36px) 0 16px;
 }
-.blog-back:hover { color: #fff; text-decoration: underline; }
+
+.blog-back:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
 .blog-hero {
   max-width: 720px;
-  margin: 0 8px;
+  margin: 0;
 }
+
 .blog-category {
   display: block;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   color: var(--accent);
   font-size: 0.73rem;
   font-weight: 700;
   letter-spacing: 0.09em;
   text-transform: uppercase;
 }
-.blog-hero .blog-category { color: #7ee3f2; }
+
+.blog-hero .blog-category {
+  color: #7ee3f2;
+}
+
 .blog-shell .hero-banner--compact .hero-title {
-  font-size: clamp(1.8rem, 3.2vw, 2.65rem);
-  line-height: 1.14;
+  font-size: clamp(2rem, 4.4vw, 3rem);
+  line-height: 1.08;
   text-wrap: balance;
 }
-.blog-hero .hero-subtitle { margin-top: 18px; font-size: 0.9rem; }
+
+.blog-shell .blog-hero .hero-title {
+  margin-top: 0;
+}
+
+.blog-hero .hero-subtitle {
+  margin-top: 14px;
+  font-size: 0.92rem;
+}
+
 .blog-hero-image {
   display: block;
   width: 100%;
@@ -254,164 +291,66 @@
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
 }
+
 .blog-shell .blog-content {
   margin-top: 0;
-  background: #fff;
-  border: 1px solid var(--line);
-  border-top: 0;
-  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
-  padding: 44px clamp(24px, 4vw, 48px);
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  padding: 36px 0 0;
 }
+
 .blog-article {
   max-width: 720px;
+  margin: 0;
   padding: 0;
   font-size: 1.05rem;
   line-height: 1.8;
 }
-.blog-article > p:first-of-type { font-size: 1.18rem; line-height: 1.7; color: #37334d; }
-.blog-shell .blog-index { max-width: none; margin-top: 0; padding-top: 28px; }
-.blog-shell:has(.blog-index) .hero-banner { border-radius: var(--radius-lg); }
-.blog-list {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 24px;
-}
-.blog-card { padding: 0; min-width: 0; }
-.blog-card-link {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  overflow: hidden;
-  background: #fff;
-  border: 1px solid var(--line);
-  border-radius: var(--radius-md);
-  text-decoration: none;
-  transition: box-shadow 160ms ease;
-}
-.blog-card-link:hover { border-color: #c4c4cf; }
-.blog-card-link:focus-visible, .blog-back:focus-visible { outline: 3px solid #0cc0df; outline-offset: 4px; }
-.blog-card-image { display: block; width: 100%; height: auto; aspect-ratio: 640 / 340; object-fit: cover; }
-.blog-card-copy { padding: 24px; display: flex; flex: 1; flex-direction: column; }
-.blog-card-title { color: var(--ink); font-size: 1.25rem; letter-spacing: -0.025em; }
-.blog-card-description { font-size: 0.92rem; color: #595565; margin-bottom: 20px; }
-.blog-card .blog-meta { margin-top: auto; font-size: 0.78rem; }
-.blog-read-link { margin-top: 18px; color: var(--accent); font-weight: 600; font-size: 0.88rem; }
-.blog-more { max-width: none; margin-top: 48px; border-top: 1px solid var(--line); padding-top: 32px; }
-.blog-more > h2 { margin-bottom: 24px; font-size: 1.3rem; }
-.blog-more .blog-list { list-style: none; padding: 0; margin: 0 0 24px; line-height: normal; }
-.blog-more .blog-card-title { font-size: 1.1rem; }
 
-@media (max-width: 700px) {
-  .blog-shell .hero-banner, .blog-shell .page { width: calc(100% - 24px); }
-  .blog-shell:has(.blog-content) .page { width: 100%; }
-  .blog-shell .hero-banner--compact .hero-inner { padding: 18px 22px 28px; }
-  .blog-shell .hero-banner--compact .hero-title { font-size: 1.85rem; }
-  .blog-shell .blog-content { padding: 28px 20px; border-left: 0; border-right: 0; border-radius: 0; }
-  .blog-article { font-size: 1rem; }
-  .blog-article > p:first-of-type { font-size: 1.1rem; }
-  .blog-list { grid-template-columns: 1fr; gap: 20px; }
-  .blog-card-copy { padding: 20px; }
+.blog-article > p:first-of-type {
+  font-size: 1.18rem;
+  line-height: 1.7;
+  color: #37334d;
 }
 
-/* Career guides hero: same photo, glass bar and wordmark as the home page,
-   keeping the page's own title and subtitle. */
-.blog-shell .hero-banner--compact {
-  background:
-    linear-gradient(100deg, rgba(6, 4, 40, 0.93) 0%, rgba(14, 6, 90, 0.74) 44%, rgba(12, 192, 223, 0.14) 100%),
-    url("/images/banner-hero.jpg") 70% 28% / cover #0b0640;
-}
-
-.blog-shell .hero-banner--compact .hero-inner {
-  padding: 14px 14px 44px;
-}
-
-.blog-shell .hero-top-row {
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 0;
-  padding: 8px 10px 8px 22px;
-  border-radius: var(--radius-md);
-  background: rgba(14, 8, 70, 0.42);
-  border: 1px solid rgba(255, 255, 255, 0.28);
-  -webkit-backdrop-filter: blur(18px) saturate(1.4);
-  backdrop-filter: blur(18px) saturate(1.4);
-}
-
-.blog-shell .hero-top-wordmark {
-  display: inline-block;
-}
-
-.blog-shell .hero-banner .brand-link {
-  display: none;
-}
-
-.blog-shell .hero-banner--compact .hero-title,
-.blog-shell .hero-banner--compact .hero-subtitle {
-  margin-left: 8px;
-  margin-right: 8px;
-}
-
-.blog-shell .blog-hero .hero-title,
-.blog-shell .blog-hero .hero-subtitle {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.blog-shell .hero-banner--compact .hero-title {
-  margin-top: clamp(32px, 5vw, 56px);
-  font-size: clamp(2rem, 4.6vw, 3.1rem);
-  line-height: 1.05;
-  letter-spacing: -0.03em;
-}
-
-.blog-shell .blog-hero .hero-title {
+.blog-shell .blog-index {
+  max-width: none;
   margin-top: 0;
+  padding-top: 20px;
+  border-top: 0;
 }
 
-.blog-shell .hero-banner--compact .hero-title::after {
-  display: none;
+.blog-more {
+  max-width: none;
+  margin-top: 48px;
+  border-top: 1px solid var(--line);
+  padding-top: 32px;
 }
 
-.blog-shell .hero-banner--compact .hero-subtitle {
-  margin-top: 14px;
-  max-width: 640px;
-  font-size: clamp(1rem, 1.7vw, 1.1rem);
-  line-height: 1.55;
-  color: rgba(255, 255, 255, 0.85);
+.blog-more > h2 {
+  margin: 0 0 20px;
+  font-size: 1.3rem;
+}
+
+.blog-more .blog-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px;
+  line-height: normal;
+}
+
+.blog-more .blog-card-title {
+  font-size: 1.15rem;
 }
 
 @media (max-width: 700px) {
-  .blog-shell .hero-top-row {
-    padding: 6px 6px 6px 18px;
+  .blog-article {
+    font-size: 1rem;
   }
 
-  .blog-shell .hero-banner--compact .hero-inner {
-    padding: 10px 10px 32px;
-  }
-}
-
-/* Desktop: give the hero the same breathing room as the home page. */
-@media (min-width: 701px) {
-  .blog-shell .hero-banner--compact .hero-inner {
-    padding-bottom: clamp(48px, 6vw, 80px);
-  }
-
-  .blog-shell .hero-banner--compact .hero-title {
-    margin-top: clamp(56px, 8vw, 104px);
-  }
-
-  .blog-shell .blog-hero .hero-title {
-    margin-top: 0;
-  }
-}
-
-/* Phones: full-width hero with square corners, like home. */
-@media (max-width: 700px) {
-  .blog-shell .hero-banner,
-  .blog-shell:has(.blog-index) .hero-banner {
-    width: 100%;
-    max-width: none;
-    margin-top: 0;
-    border-radius: 0;
+  .blog-article > p:first-of-type {
+    font-size: 1.1rem;
   }
 }
 

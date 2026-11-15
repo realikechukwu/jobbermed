@@ -5,8 +5,8 @@
   --glass-line: rgba(255, 255, 255, 0.28);
   --story-gradient: linear-gradient(135deg, var(--med) 0%, var(--jobber) 100%);
   color: var(--ink);
-  background: var(--bg);
-  padding-top: 12px;
+  background: #ffffff;
+  padding-top: 0;
 }
 
 .landing-page :focus-visible {
@@ -16,12 +16,16 @@
 
 .landing-page .hero-banner {
   display: block;
-  margin-top: 0;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  border-radius: 0;
+  padding-inline: max(20px, calc((100% - var(--max-width)) / 2));
   color: var(--on-photo);
 }
 
 .landing-page .glass-nav {
-  margin: 14px 14px 0;
+  margin: 14px 0 0;
   padding: 8px 10px 8px 22px;
   display: flex;
   align-items: center;
@@ -61,7 +65,7 @@
   width: 100%;
   max-width: 720px;
   margin: 0;
-  padding: clamp(40px, 7vw, 84px) clamp(20px, 4vw, 44px) 32px;
+  padding: clamp(40px, 7vw, 84px) 0 32px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -518,11 +522,11 @@
 /* ── final CTA ── */
 
 .landing-page .survey-final-cta {
-  width: calc(100% - 24px);
-  max-width: 1220px;
-  margin: 0 auto 28px;
+  width: 100%;
+  max-width: none;
+  margin: 0;
   padding: clamp(48px, 7vw, 84px) 20px;
-  border-radius: var(--radius-lg);
+  border-radius: 0;
   background: linear-gradient(105deg, #070428 0%, #150a78 62%, #0b6f9c 125%);
   text-align: center;
 }
@@ -597,17 +601,21 @@
 
 @media (max-width: 600px) {
   .landing-page {
-    padding-top: 8px;
+    padding-top: 0;
+  }
+
+  .landing-page .hero-banner {
+    padding-inline: 16px;
   }
 
   .landing-page .glass-nav {
-    margin: 10px 10px 0;
+    margin: 10px 0 0;
     padding-left: 18px;
   }
 
   .landing-page .survey-final-cta {
-    width: calc(100% - 16px);
-    border-radius: var(--radius-lg);
+    width: 100%;
+    border-radius: 0;
   }
 
   .landing-page .landing-ctas {

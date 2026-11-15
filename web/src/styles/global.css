@@ -1199,11 +1199,11 @@ a {
 }
 
 /* ---------------------------------------------------------------------------
-   Photo Glass alignment for interior pages: same rounded hero card, pill
-   controls and light footer as the homepage.
+   Photo Glass alignment for interior pages: full-bleed hero with frosted nav
+   bar, open white page surface and divided sections matching the homepage.
    ------------------------------------------------------------------------ */
 body {
-  background: var(--bg);
+  background: #ffffff;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -1211,30 +1211,71 @@ body {
   display: none;
 }
 
-.hero-banner {
-  width: calc(100% - 24px);
-  max-width: 1220px;
+.hero-banner,
+.hero-banner--compact {
+  width: 100%;
+  max-width: none;
   min-height: 0;
-  margin: 12px auto 0;
-  border-radius: var(--radius-lg);
+  margin: 0;
+  border-radius: 0;
   overflow: hidden;
+  display: block;
   background:
     linear-gradient(100deg, rgba(6, 4, 40, 0.93) 0%, rgba(14, 6, 90, 0.74) 44%, rgba(12, 192, 223, 0.14) 100%),
     url("/images/banner-hero.jpg") 70% 28% / cover #0b0640;
+  padding-inline: max(20px, calc((100% - var(--max-width)) / 2));
 }
 
-.hero-banner--compact {
-  background: linear-gradient(105deg, #070428 0%, #150a78 62%, #0b6f9c 125%);
-}
-
+.hero-inner,
 .hero-banner--compact .hero-inner {
-  padding: 16px clamp(18px, 3vw, 32px) 34px;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 14px 0 clamp(36px, 5vw, 60px);
 }
 
-.hero-title {
+.hero-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 0;
+  padding: 8px 10px 8px 22px;
+  border-radius: var(--radius-md);
+  background: rgba(14, 8, 70, 0.42);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  -webkit-backdrop-filter: blur(18px) saturate(1.4);
+  backdrop-filter: blur(18px) saturate(1.4);
+}
+
+.brand-wordmark {
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 6px 0;
+}
+
+.brand-wordmark span {
+  color: var(--jobber);
+}
+
+.hero-top-wordmark {
+  display: inline-block;
+}
+
+.hero-banner .brand-link {
+  display: none;
+}
+
+.hero-title,
+.hero-banner--compact .hero-title {
+  margin-top: clamp(32px, 5vw, 56px);
+  font-size: clamp(2rem, 4.4vw, 3rem);
   font-weight: 700;
   letter-spacing: -0.035em;
-  line-height: 1.08;
+  line-height: 1.06;
   text-shadow: none;
 }
 
@@ -1243,8 +1284,13 @@ body {
   display: none;
 }
 
-.hero-subtitle {
+.hero-subtitle,
+.hero-banner--compact .hero-subtitle {
+  margin-top: 14px;
+  max-width: 640px;
+  font-size: clamp(1rem, 1.6vw, 1.12rem);
   font-weight: 400;
+  line-height: 1.5;
   color: rgba(255, 255, 255, 0.84);
   text-shadow: none;
 }
@@ -1257,6 +1303,7 @@ body {
 .site-nav-button {
   font-size: 0.86rem;
   font-weight: 500;
+  color: rgba(255, 255, 255, 0.84);
 }
 
 .site-nav-link:hover,
@@ -1285,13 +1332,17 @@ body {
 }
 
 .page {
-  padding-top: 8px;
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 8px 20px 72px;
 }
 
 .card {
-  border: 1px solid var(--line);
-  border-radius: var(--radius-md);
-  padding: 22px;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  background: transparent;
   box-shadow: none;
 }
 
@@ -1310,25 +1361,61 @@ body {
   filter: brightness(1.1);
 }
 
-@media (max-width: 600px) {
-  .hero-banner {
-    width: calc(100% - 16px);
-    margin-top: 8px;
-    border-radius: var(--radius-lg);
-  }
+/* ---------- dashboards & open interior sections ---------- */
+.shell-grid,
+.shell-content {
+  margin-top: 0;
+  padding: 28px 0;
+  border-top: 1px solid var(--line);
 }
 
-/* ---------- dashboards ---------- */
-/* Every signed-in page starts its first card the same distance below the banner. */
+.page > :first-child {
+  border-top: 0;
+}
+
 .shell-grid {
-  margin-top: 24px;
+  gap: 28px 40px;
 }
 
 .shell-grid--follow {
-  margin-top: 16px;
+  margin-top: 0;
 }
 
-/* Links between dashboards are quiet; one filled button per card at most. */
+/* Forms read better at a comfortable line length than stretched across the page. */
+.page .shell-form,
+.page .preference-form,
+.page .gsi-material-button,
+.page .auth-separator {
+  max-width: 560px;
+}
+
+.preference-section {
+  padding: 16px 0 0;
+  border: 0;
+  border-top: 1px solid var(--line);
+  border-radius: 0;
+  background: transparent;
+}
+
+.native-job-detail-layout {
+  gap: 32px 48px;
+}
+
+@media (min-width: 701px) {
+  .native-apply-card {
+    padding-left: 32px;
+    border-left: 1px solid var(--line);
+  }
+}
+
+@media (max-width: 700px) {
+  .native-apply-card {
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+  }
+}
+
+/* Links between dashboards are quiet; one filled button per section at most. */
 .dashboard-links {
   display: flex;
   flex-wrap: wrap;
@@ -1419,130 +1506,33 @@ body {
   color: var(--muted);
 }
 
-@media (max-width: 768px) {
-  .shell-grid {
-    margin-top: 24px;
-  }
-}
-
-/* ---------------------------------------------------------------------------
-   Open layout for inner pages: the banner runs straight into one white sheet,
-   and what used to be separate boxed cards are sections divided by a line.
-   The career guides keep their own version of this in blog.css.
-   ------------------------------------------------------------------------ */
-:not(.blog-shell) > .hero-banner--compact {
-  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
-}
-
-:not(.blog-shell) > .hero-banner--compact + .page {
-  width: calc(100% - 24px);
-  max-width: 1220px;
-  padding: 4px clamp(18px, 3vw, 32px) 28px;
-  background: #ffffff;
-  border: 1px solid var(--line);
-  border-top: 0;
-  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
-}
-
-:not(.blog-shell) > .hero-banner--compact + .page > .shell-grid,
-:not(.blog-shell) > .hero-banner--compact + .page > .shell-content {
-  margin-top: 0;
-  padding: 26px 0;
-  border-top: 1px solid var(--line);
-}
-
-:not(.blog-shell) > .hero-banner--compact + .page > :first-child {
-  border-top: 0;
-}
-
-:not(.blog-shell) > .hero-banner--compact + .page > .shell-grid {
-  gap: 28px 40px;
-}
-
-:not(.blog-shell) > .hero-banner--compact + .page .card {
-  padding: 0;
-  border: 0;
-  border-radius: 0;
-  background: transparent;
-}
-
-/* Forms read better at a comfortable line length than stretched across the sheet. */
-:not(.blog-shell) > .hero-banner--compact + .page .shell-form,
-:not(.blog-shell) > .hero-banner--compact + .page .preference-form {
-  max-width: 640px;
-}
-
-@media (max-width: 600px) {
-  :not(.blog-shell) > .hero-banner--compact + .page {
-    width: calc(100% - 16px);
-  }
-}
-
-/* ---------------------------------------------------------------------------
-   Shared mobile header: wordmark left, round menu button right, inside the
-   same glass bar the home page uses. Landing, blog and CV Match all match it.
-   ------------------------------------------------------------------------ */
-.brand-wordmark {
-  font-size: 1.25rem;
-  font-weight: 800;
-  letter-spacing: -0.03em;
-  color: #ffffff;
-  text-decoration: none;
-  padding: 6px 0;
-}
-
-.brand-wordmark span {
-  color: var(--jobber);
-}
-
-.hero-top-wordmark {
-  display: none;
-}
-
-@media (max-width: 700px) {
-  .hero-top-row {
-    align-items: center;
-    justify-content: space-between;
-    padding: 6px 6px 6px 18px;
-    border-radius: var(--radius-md);
-    background: rgba(14, 8, 70, 0.42);
-    border: 1px solid rgba(255, 255, 255, 0.28);
-    -webkit-backdrop-filter: blur(18px) saturate(1.4);
-    backdrop-filter: blur(18px) saturate(1.4);
-  }
-
-  .hero-top-wordmark {
-    display: inline-block;
-  }
-
-  /* The wordmark in the bar replaces the logo image on phones. */
-  .hero-banner .brand-link {
+@media (max-width: 820px) {
+  .site-nav {
     display: none;
   }
 
-  .hero-banner--compact .hero-inner {
-    padding-top: 10px;
+  .site-mobile-menu-btn {
+    display: inline-flex;
   }
 
-  .hero-banner--compact .hero-top-row {
-    margin-bottom: 18px;
+  .hero-top-row {
+    padding: 6px 6px 6px 18px;
   }
 }
 
-/* Phones: the hero photo runs edge to edge with square corners, like home. */
-@media (max-width: 700px) {
+@media (max-width: 600px) {
   .hero-banner,
-  :not(.blog-shell) > .hero-banner--compact {
-    width: 100%;
-    max-width: none;
-    margin: 0;
-    border-radius: 0;
+  .hero-banner--compact {
+    padding-inline: 16px;
   }
 
-  :not(.blog-shell) > .hero-banner--compact + .page {
-    width: 100%;
-    border-left: 0;
-    border-right: 0;
-    border-radius: 0;
+  .hero-inner,
+  .hero-banner--compact .hero-inner {
+    padding-top: 10px;
+    padding-bottom: 28px;
+  }
+
+  .page {
+    padding: 8px 16px 56px;
   }
 }
