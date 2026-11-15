@@ -38,7 +38,14 @@ async function loadAppModule(entry) {
   }
 }
 
-const [landing, blog, listings, jobsData, { SOURCE_LABELS }, { ABOUT_PARAGRAPHS }] = await Promise.all([
+const [
+  landing,
+  blog,
+  listings,
+  jobsData,
+  { SOURCE_LABELS },
+  { ABOUT_EMPLOYER_PARAGRAPHS, ABOUT_FEATURES, ABOUT_GUIDE_PATH, ABOUT_GUIDE_TITLE, ABOUT_PARAGRAPHS },
+] = await Promise.all([
   loadAppModule("src/features/aggregator-jobs/landing.ts"),
   loadAppModule("src/features/blog/articles.ts"),
   loadAppModule("src/features/aggregator-jobs/search-listings.ts"),
@@ -366,6 +373,8 @@ function articleHtml(blocks) {
         }
         case "example":
           return `<blockquote>${block.lines.map((line) => `<p>${esc(line)}</p>`).join("")}</blockquote>`;
+        case "image":
+          return `<figure class="blog-figure"><img src="${esc(block.src)}" alt="${esc(block.alt)}" width="${block.width ?? 1280}" height="${block.height ?? 760}" loading="lazy">${block.caption ? `<figcaption>${inlineHtml(block.caption)}</figcaption>` : ""}</figure>`;
         case "cta":
           return cvMatchHtml;
         default:
@@ -445,7 +454,16 @@ for (const page of PUBLIC_PAGES) {
     renderPage({
       ...page,
       body: `<h1>${esc(page.heading)}</h1>${page.path === "/about"
-        ? `${ABOUT_PARAGRAPHS.map((paragraph) => `<p>${esc(paragraph)}</p>`).join("")}<p>To report an issue with a listing, email <a href="mailto:hello@jobbermed.com">hello@jobbermed.com</a>.</p><p><a href="/blog/">Read healthcare career guides</a></p>`
+        ? [
+            ...ABOUT_PARAGRAPHS.map((paragraph) => `<p>${esc(paragraph)}</p>`),
+            `<p><strong>New to JobberMed?</strong> Read <a href="${href(ABOUT_GUIDE_PATH)}">${esc(ABOUT_GUIDE_TITLE)}</a> or explore our <a href="/landing/">survey of 294 Nigerian healthcare professionals</a>.</p>`,
+            `<h2>How JobberMed helps your job search</h2>`,
+            `<ul>${ABOUT_FEATURES.map((feature) => `<li><strong>${esc(feature.title)}:</strong> ${esc(feature.text)}</li>`).join("")}</ul>`,
+            `<h2>How listings work &amp; hiring on JobberMed</h2>`,
+            ...ABOUT_EMPLOYER_PARAGRAPHS.map((paragraph) => `<p>${esc(paragraph)}</p>`),
+            `<p>To report an issue with a listing, email <a href="mailto:hello@jobbermed.com">hello@jobbermed.com</a>.</p>`,
+            `<p><a href="/blog/">Read healthcare career guides</a></p>`,
+          ].join("")
         : `<p>${esc(page.description)}</p>`}<p><a href="/">Browse healthcare jobs on JobberMed</a></p>`,
     }),
   );

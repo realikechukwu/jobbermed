@@ -14,6 +14,8 @@ export type ArticleBlock =
   | { type: "table"; columns: [string, string]; rows: [string, string][] }
   /** A sample email, CV line or subject line, shown as written. */
   | { type: "example"; lines: string[] }
+  /** An inline screenshot or illustration with an optional caption. */
+  | { type: "image"; src: string; alt: string; caption?: string; width?: number; height?: number }
   /** The CV Match call to action. */
   | { type: "cta" };
 
@@ -62,6 +64,143 @@ export const CV_MATCH_CTA = {
 };
 
 export const ARTICLES: Article[] = [
+  {
+    slug: "how-to-use-jobbermed",
+    title: "How to Use JobberMed: Search Filters, CV Match and Job Alerts",
+    description:
+      "A step-by-step guide to finding healthcare jobs on JobberMed: filter by specialty, state and published salary, pre-load CV Match from any advert, save a shortlist and set up daily or weekly email alerts.",
+    published: "2026-11-15",
+    readMinutes: 5,
+    category: "Using JobberMed",
+    image: "/images/guides/how-to.svg",
+    body: [
+      {
+        type: "p",
+        text: "JobberMed collects healthcare vacancies from major Nigerian job boards every day and lists them alongside Direct Apply roles posted by hospitals, clinics, HMOs and NGOs. You can search, filter, bookmark jobs and check your CV without creating an account. Signing up is free and adds personalised email alerts and Direct Apply tracking.",
+      },
+      { type: "h2", text: "1. Filter by specialty, state and job type" },
+      {
+        type: "p",
+        text: "Start on the [JobberMed home page](/) with the specialty rings beneath the search bar. Each ring shows the live count of open adverts in that profession. Tap a ring to narrow the feed:",
+      },
+      {
+        type: "ul",
+        items: [
+          "[Doctors](/doctor-jobs) — medical officers, house officers, registrars and consultants.",
+          "[Nurses & Midwives](/nursing-jobs) — staff nurses, ICU, theatre, matron and midwifery roles.",
+          "[Pharmacists](/pharmacist-jobs) — hospital, community, regulatory, industrial and intern pharmacists.",
+          "[Med Lab](/medical-laboratory-scientist-jobs) — medical laboratory scientists, haematology, microbiology and lab technicians.",
+          "[Dentists](/dentist-jobs), [Public Health](/public-health-jobs), [Management](/healthcare-management-jobs) and [Allied Health](/allied-health-jobs) — radiographers, sonographers, physiotherapists, optometrists, dietitians, HMO officers and programme leads.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Next, use the toolbar controls to combine your specialty with a state or work pattern:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Location dropdown: The busiest states appear at the top under Most jobs, followed by an A-to-Z list of every state with live openings (including [Lagos](/healthcare-jobs/lagos), [Abuja](/healthcare-jobs/abuja), [Rivers](/healthcare-jobs/rivers) and [Oyo](/healthcare-jobs/oyo)).",
+          "Job type dropdown: Filter for Full-time, Part-time, Locum / cover, Remote, NGO / humanitarian or Entry level / internship.",
+          "Keyword search: Type a hospital name, sub-specialty or town into the top search bar (for example, sonographer, Dialysis, Lekki or Federal Medical Centre) and press Search.",
+        ],
+      },
+      {
+        type: "image",
+        src: "/images/guides/how-to-search-filters.png",
+        alt: "JobberMed home page showing the specialty rings, location and job-type dropdowns, the Salary shown pill and active filter chips",
+        caption: "Combine a specialty ring, a state and the Salary shown toggle to narrow the feed. Active filters appear as removable chips above the results count.",
+      },
+      {
+        type: "p",
+        text: "Every specialty and state combination also has a permanent URL you can bookmark or share, such as [doctor jobs in Lagos](/doctor-jobs/lagos) or [nursing jobs in Abuja](/nursing-jobs/abuja).",
+      },
+      { type: "h2", text: "2. Spot published salaries and closing dates first" },
+      {
+        type: "p",
+        text: "Most Nigerian healthcare adverts omit pay, and around half close within four weeks of posting. Use two toolbar controls to prioritise:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Salary shown pill: Click Salary shown to hide adverts that leave pay unstated. Only listings with a monthly naira figure, shift rate or public-sector grade (such as [CONMESS or CONHESS](/blog/conmess-conhess-explained)) remain.",
+          "Sort menu: Sort: Recommended interleaves listings across partner boards so one source never crowds out the rest, while keeping Direct Apply roles first. Switch to Sort: Newest for today's postings, or Sort: Closing soon to catch the nearest deadlines.",
+        ],
+      },
+      { type: "h2", text: "3. Read the summary and pre-load CV Match" },
+      {
+        type: "p",
+        text: "Click any job card (or its Details button) to open the slide-in detail panel without leaving your search results. The panel extracts the employer, location, dates, salary, Requirements and Responsibilities into a clean checklist.",
+      },
+      {
+        type: "image",
+        src: "/images/guides/how-to-detail-cv-match.png",
+        alt: "JobberMed slide-in job detail panel showing extracted responsibilities, the Check my CV against this job button and the source application button",
+        caption: "The slide-in detail panel shows extracted requirements and responsibilities alongside a one-click link that pre-loads the advert into CV Match.",
+      },
+      {
+        type: "p",
+        text: "Inside the panel, click [Check my CV against this job](https://cv.jobbermed.com) in the Before you apply card. JobberMed passes the job title, employer, requirements and responsibilities straight into CV Match. Upload or paste your CV there to get:",
+      },
+      {
+        type: "ol",
+        items: [
+          "A match score comparing your clinical experience, licences and keywords with the advert.",
+          "A list of missing requirements to address before you apply.",
+          "A tailored CV rewritten for that specific role, ready to download as a PDF.",
+        ],
+      },
+      {
+        type: "p",
+        text: "CV Match is free for three analyses a day and needs no account. When your CV is ready, click the sticky Apply button at the bottom of the panel to open the original posting.",
+      },
+      { type: "h2", text: "4. Save a shortlist on your device" },
+      {
+        type: "p",
+        text: "Browsing on a ward break? Tap the bookmark icon in the top-right corner of any job card or inside the detail panel to save it on your phone or laptop.",
+      },
+      {
+        type: "image",
+        src: "/images/guides/how-to-saved-jobs.png",
+        alt: "JobberMed Saved filter active in the toolbar showing a shortlist of three bookmarked healthcare jobs",
+        caption: "Tap the bookmark icon on any role, then click Saved in the toolbar to view only your shortlisted jobs.",
+      },
+      {
+        type: "p",
+        text: "Click Saved in the toolbar at any time to filter the board down to your bookmarked roles. Saved jobs also appear on your [Dashboard](/dashboard) when you sign in.",
+      },
+      { type: "h2", text: "5. Set up email alerts and Direct Apply" },
+      {
+        type: "p",
+        text: "A [free JobberMed account](/signup) unlocks two extra features:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Personalised job alert emails: Open [Job alert emails](/account/personalization) from your dashboard, tick Enable personalised digest, pick Daily or Weekly delivery, and select your specialties and states.",
+          "Direct Apply and status tracking: Apply directly on employer-posted Direct Apply listings and check your [Dashboard](/dashboard) to see whether your application is Submitted, In review or Shortlisted.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Hiring for a hospital, clinic, HMO or NGO? [Request recruiter access](/request-access/recruiter) to post Direct Apply vacancies.",
+      },
+      { type: "h2", text: "Quick reference: what needs an account?" },
+      {
+        type: "table",
+        columns: ["Feature", "Access"],
+        rows: [
+          ["Search, specialty rings, state, job-type & salary filters", "No account — use the [home page](/) or specialty pages."],
+          ["Save jobs shortlist", "No account — tap the bookmark icon and toggle Saved."],
+          ["CV Match score & tailored PDF", "No account (3 free/day) — click Check my CV against this job or open [cv.jobbermed.com](https://cv.jobbermed.com)."],
+          ["Career & salary guides", "No account — browse [/blog](/blog)."],
+          ["Daily or weekly job alert emails", "Free account — configure in [Email settings](/account/personalization)."],
+          ["Direct Apply & status tracking", "Free account — track on your [Dashboard](/dashboard)."],
+        ],
+      },
+      { type: "cta" },
+    ],
+  },
   {
     slug: "non-clinical-hmo-health-tech-jobs-nigeria",
     title: "Non-Clinical Jobs for Doctors and Nurses in Nigeria",

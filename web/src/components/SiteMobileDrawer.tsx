@@ -1,4 +1,4 @@
-import { useEffect, useRef, type ReactNode } from "react";
+import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { useBodyScrollLock } from "../hooks/useBodyScrollLock";
 import { useFocusTrap } from "../hooks/useFocusTrap";
@@ -18,54 +18,6 @@ type SiteMobileDrawerProps = {
   onSignOut?: () => Promise<void> | void;
 };
 
-const LINK_ICONS: Record<string, ReactNode> = {
-  home: (
-    <svg viewBox="0 0 24 24" aria-hidden="true">
-      <path fill="currentColor" d="M12 3 2 12h3v8h6v-6h2v6h6v-8h3L12 3z" />
-    </svg>
-  ),
-  jobs: (
-    <svg viewBox="0 0 24 24" aria-hidden="true">
-      <rect x="3" y="7" width="18" height="13" rx="2" fill="none" stroke="currentColor" strokeWidth="2" />
-      <path fill="none" stroke="currentColor" strokeWidth="2" d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2" />
-    </svg>
-  ),
-  blog: (
-    <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path fill="none" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" d="M4 5.5A1.5 1.5 0 0 1 5.5 4H11v15H5.5A1.5 1.5 0 0 0 4 20.5v-15zM20 5.5A1.5 1.5 0 0 0 18.5 4H13v15h5.5a1.5 1.5 0 0 1 1.5 1.5v-15z" />
-      </svg>
-  ),
-  "cv-match": (
-    <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path fill="none" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" d="M6 3h8l4 4v14H6V3z" />
-        <path fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="m9 14 2 2 4-4" />
-      </svg>
-  ),
-  dashboard: (
-    <svg viewBox="0 0 24 24" aria-hidden="true">
-      <path fill="currentColor" d="M3 3h8v8H3V3zm10 0h8v5h-8V3zM3 13h8v8H3v-8zm10-3h8v11h-8V10z" />
-    </svg>
-  ),
-  recruiter: (
-    <svg viewBox="0 0 24 24" aria-hidden="true">
-      <path fill="currentColor" d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4zm0 2c-4 0-8 2-8 5v2h16v-2c0-3-4-5-8-5z" />
-    </svg>
-  ),
-  mdcn: (
-    <svg viewBox="0 0 24 24" aria-hidden="true">
-      <path fill="currentColor" d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3zm-1 14-4-4 1.4-1.4L11 13.2l5.6-5.6L18 9l-7 7z" />
-    </svg>
-  ),
-  admin: (
-    <svg viewBox="0 0 24 24" aria-hidden="true">
-      <path
-        fill="currentColor"
-        d="M19.4 13a7.8 7.8 0 0 0 .1-1 7.8 7.8 0 0 0-.1-1l2.1-1.6a.5.5 0 0 0 .1-.7l-2-3.4a.5.5 0 0 0-.6-.2l-2.5 1a7.6 7.6 0 0 0-1.7-1l-.4-2.6a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 0-.5.5l-.4 2.6a7.6 7.6 0 0 0-1.7 1l-2.5-1a.5.5 0 0 0-.6.2l-2 3.4a.5.5 0 0 0 .1.7L4.5 11a7.8 7.8 0 0 0-.1 1 7.8 7.8 0 0 0 .1 1l-2.1 1.6a.5.5 0 0 0-.1.7l2 3.4c.1.2.4.3.6.2l2.5-1a7.6 7.6 0 0 0 1.7 1l.4 2.6c0 .3.2.5.5.5h4c.3 0 .5-.2.5-.5l.4-2.6a7.6 7.6 0 0 0 1.7-1l2.5 1c.2.1.5 0 .6-.2l2-3.4a.5.5 0 0 0-.1-.7L19.4 13zM12 15.5A3.5 3.5 0 1 1 15.5 12 3.5 3.5 0 0 1 12 15.5z"
-      />
-    </svg>
-  ),
-};
-
 function DrawerLink({
   link,
   pathname,
@@ -81,26 +33,18 @@ function DrawerLink({
 }) {
   const isActive = isSiteNavLinkActive(link, pathname, search);
   const fullClassName = `${className}${isActive ? " active" : ""}`;
-  const icon = LINK_ICONS[link.id];
-
-  const content = (
-    <>
-      {icon ? <span className="site-mobile-link-icon">{icon}</span> : null}
-      {link.label}
-    </>
-  );
 
   if (link.kind === "external") {
     return (
       <a className={fullClassName} href={link.href} onClick={onClose}>
-        {content}
+        {link.label}
       </a>
     );
   }
 
   return (
     <Link className={fullClassName} to={link.to} onClick={onClose}>
-      {content}
+      {link.label}
     </Link>
   );
 }

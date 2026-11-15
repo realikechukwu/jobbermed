@@ -89,6 +89,24 @@ export function ArticleBody({ blocks }: { blocks: ArticleBlock[] }) {
                 ))}
               </blockquote>
             );
+          case "image":
+            return (
+              <figure key={index} className="blog-figure">
+                <img
+                  className="blog-figure-image"
+                  src={block.src}
+                  alt={block.alt}
+                  width={block.width ?? 1280}
+                  height={block.height ?? 760}
+                  loading="lazy"
+                />
+                {block.caption ? (
+                  <figcaption className="blog-figure-caption">
+                    <Inline text={block.caption} />
+                  </figcaption>
+                ) : null}
+              </figure>
+            );
           case "cta":
             return <CvMatchCta key={index} />;
           default:
