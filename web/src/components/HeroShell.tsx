@@ -44,6 +44,10 @@ export function HeroShell({ title, subtitle, content, variant = "hero" }: HeroSh
     <section className={`hero-banner${variant === "compact" ? " hero-banner--compact" : ""}`}>
       <div className="hero-inner">
         <div className="hero-top-row">
+          <Link className="brand-wordmark hero-top-wordmark" to="/" aria-label="JobberMed home">
+            Jobber<span>Med</span>
+          </Link>
+
           <button
             className="site-mobile-menu-btn"
             type="button"

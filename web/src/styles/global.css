@@ -1492,3 +1492,54 @@ body {
     width: calc(100% - 16px);
   }
 }
+
+/* ---------------------------------------------------------------------------
+   Shared mobile header: wordmark left, round menu button right, inside the
+   same glass bar the home page uses. Landing, blog and CV Match all match it.
+   ------------------------------------------------------------------------ */
+.brand-wordmark {
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 6px 0;
+}
+
+.brand-wordmark span {
+  color: var(--jobber);
+}
+
+.hero-top-wordmark {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .hero-top-row {
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 6px 6px 18px;
+    border-radius: var(--radius-md);
+    background: rgba(14, 8, 70, 0.42);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    -webkit-backdrop-filter: blur(18px) saturate(1.4);
+    backdrop-filter: blur(18px) saturate(1.4);
+  }
+
+  .hero-top-wordmark {
+    display: inline-block;
+  }
+
+  /* The wordmark in the bar replaces the logo image on phones. */
+  .hero-banner .brand-link {
+    display: none;
+  }
+
+  .hero-banner--compact .hero-inner {
+    padding-top: 10px;
+  }
+
+  .hero-banner--compact .hero-top-row {
+    margin-bottom: 18px;
+  }
+}

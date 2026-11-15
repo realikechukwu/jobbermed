@@ -704,3 +704,29 @@
   border-radius: 0;
   background: transparent;
 }
+
+/* Mobile menu button: same round white button as the home page header. */
+.landing-page .site-mobile-menu-btn {
+  display: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 0;
+  padding: 0;
+  background: var(--on-photo);
+  color: var(--ink, #111114);
+}
+
+@media (max-width: 820px) {
+  .landing-page .site-mobile-menu-btn {
+    display: inline-flex;
+  }
+
+  .landing-page .glass-nav-cta {
+    display: none;
+  }
+
+  .landing-page .glass-nav {
+    padding: 6px 6px 6px 18px;
+  }
+}

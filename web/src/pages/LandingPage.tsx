@@ -1,5 +1,10 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import { FooterShell } from "../components/FooterShell";
+import { SiteMobileDrawer } from "../components/SiteMobileDrawer";
+import { useSession } from "../features/auth/session-context";
+import { getSupabaseClient } from "../lib/supabase-client";
+import { getSiteNavLinks, type SiteNavState } from "../navigation/site-nav";
 import "../styles/landing.css";
 
 const ROLES = ["Doctors", "Nurses", "Pharmacists", "Med Lab", "Radiographers", "Dentists", "Allied Health"];
@@ -73,6 +78,18 @@ function useScrollReveal() {
 }
 
 export function LandingPage() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
+  const { user, roles } = useSession();
+  const navState = useMemo<SiteNavState>(() => ({ isAuthenticated: Boolean(user), roles }), [roles, user]);
+  const mobileLinks = useMemo(() => getSiteNavLinks("mobile", navState), [navState]);
+
+  async function handleSignOut() {
+    await getSupabaseClient().auth.signOut();
+    navigate("/");
+  }
+
   const surveyRef = useScrollReveal();
   const challengeRef = useScrollReveal();
   const discoveryRef = useScrollReveal();
@@ -90,7 +107,30 @@ export function LandingPage() {
           <a className="glass-nav-cta" href="https://jobbermed.com/">
             Browse jobs
           </a>
+          <button
+            className="site-mobile-menu-btn"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded={isMobileMenuOpen ? "true" : "false"}
+            onClick={() => setIsMobileMenuOpen(true)}
+          >
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+              <path fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" d="M4 8h16M4 16h16" />
+            </svg>
+          </button>
         </div>
+
+        <SiteMobileDrawer
+          variant="home"
+          isOpen={isMobileMenuOpen}
+          onClose={() => setIsMobileMenuOpen(false)}
+          pathname={location.pathname}
+          search={location.search}
+          email={user?.email ?? ""}
+          links={mobileLinks}
+          showSignOut={Boolean(user)}
+          onSignOut={handleSignOut}
+        />
 
         <div className="hero-inner">
           <h1 className="landing-headline">Find healthcare jobs faster</h1>
