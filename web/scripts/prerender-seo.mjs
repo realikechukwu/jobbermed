@@ -45,6 +45,7 @@ const [
   jobsData,
   { SOURCE_LABELS },
   { ABOUT_EMPLOYER_PARAGRAPHS, ABOUT_FEATURES, ABOUT_GUIDE_PATH, ABOUT_GUIDE_TITLE, ABOUT_PARAGRAPHS },
+  { PRIVACY_CONTACT_EMAIL, PRIVACY_INTRO, PRIVACY_SECTIONS, PRIVACY_UPDATED },
 ] = await Promise.all([
   loadAppModule("src/features/aggregator-jobs/landing.ts"),
   loadAppModule("src/features/blog/articles.ts"),
@@ -52,6 +53,7 @@ const [
   loadAppModule("src/features/aggregator-jobs/utils.ts"),
   loadAppModule("src/features/aggregator-jobs/constants.ts"),
   loadAppModule("src/features/aggregator-jobs/about.ts"),
+  loadAppModule("src/features/aggregator-jobs/privacy.ts"),
 ]);
 const ALL_CATEGORY = "All";
 const ALL_LOCATIONS = "All locations";
@@ -464,7 +466,15 @@ for (const page of PUBLIC_PAGES) {
             `<p>To report an issue with a listing, email <a href="mailto:hello@jobbermed.com">hello@jobbermed.com</a>.</p>`,
             `<p><a href="/blog/">Read healthcare career guides</a></p>`,
           ].join("")
-        : `<p>${esc(page.description)}</p>`}<p><a href="/">Browse healthcare jobs on JobberMed</a></p>`,
+        : page.path === "/privacy"
+          ? [
+              `<p><em>${esc(PRIVACY_UPDATED)}</em></p>`,
+              `<p>${esc(PRIVACY_INTRO)}</p>`,
+              ...PRIVACY_SECTIONS.map((section) => `<h2>${esc(section.title)}</h2><p>${esc(section.text)}</p>`),
+              `<h2>Contact us and updates</h2>`,
+              `<p>To request access to, correction of, or deletion of your account and personal data, email <a href="mailto:${esc(PRIVACY_CONTACT_EMAIL)}">${esc(PRIVACY_CONTACT_EMAIL)}</a>.</p>`,
+            ].join("")
+          : `<p>${esc(page.description)}</p>`}<p><a href="/">Browse healthcare jobs on JobberMed</a></p>`,
     }),
   );
 }

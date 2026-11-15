@@ -29,7 +29,6 @@ export function BlogArticlePage() {
               <h1 className="hero-title">{article.title}</h1>
               <p className="hero-subtitle">{formatArticleDate(article.published)} · {article.readMinutes} min read</p>
             </div>
-            <img className="blog-hero-image" src={article.image} alt="" width="640" height="420" fetchPriority="high" />
           </div>
         </>
       }
@@ -37,6 +36,7 @@ export function BlogArticlePage() {
     >
       <section className="shell-content blog-content" aria-label={article.title}>
         <article className="blog-article">
+          <img className="blog-hero-image" src={article.image} alt="" width="640" height="420" fetchPriority="high" />
           <ArticleBody blocks={article.body} />
         </article>
 
