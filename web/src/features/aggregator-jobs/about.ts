@@ -3,7 +3,7 @@ export const ABOUT_GUIDE_TITLE = "How to Use JobberMed: Search Filters, CV Match
 
 export const ABOUT_PARAGRAPHS = [
   "JobberMed is a healthcare job board built for doctors, nurses, pharmacists, medical laboratory scientists, dentists, radiographers, public health specialists and allied health professionals across Nigeria and Africa.",
-  "When we surveyed 294 healthcare professionals in Nigeria, 64% relied on WhatsApp and Telegram forwards to hear about openings, 59% struggled with missing salary details, and 40% ran into outdated or unverifiable adverts. JobberMed brings live vacancies from trusted Nigerian job boards together with Direct Apply roles posted by hospitals, clinics, HMOs and NGOs in one searchable feed updated daily.",
+  "When we surveyed 294 healthcare professionals in Nigeria, 64% relied on WhatsApp and Telegram forwards to hear about openings, 59% struggled with missing salary details, and 40% ran into outdated or unverifiable adverts. JobberMed brings live vacancies from popular Nigerian job boards together with roles posted directly by hospitals, clinics, HMOs and NGOs in one searchable feed updated daily.",
 ];
 
 export const ABOUT_FEATURES: Array<{ title: string; text: string }> = [
@@ -13,7 +13,7 @@ export const ABOUT_FEATURES: Array<{ title: string; text: string }> = [
   },
   {
     title: "Spot published pay and closing dates",
-    text: "Toggle Salary shown in the toolbar to view only adverts that state pay in naira or a CONMESS/CONHESS grade, and sort by Closing soon so short-window hospital recruitment notices never slip past.",
+    text: "Switch on Salary shown in the filter bar to view only adverts that state pay in naira or a CONMESS/CONHESS grade, and sort by Closing soon so short-window hospital recruitment notices never slip past.",
   },
   {
     title: "Check your CV against any advert",
@@ -21,7 +21,7 @@ export const ABOUT_FEATURES: Array<{ title: string; text: string }> = [
   },
   {
     title: "Save a shortlist and get tailored email alerts",
-    text: "Tap the bookmark icon on any card to keep a shortlist on your device without signing in, or create a free account to switch from our weekly nationwide digest to daily or weekly email alerts filtered to your specialties and states.",
+    text: "Tap the bookmark icon on any card to keep a shortlist on your device without signing in, or create a free account to switch from our weekly nationwide job email to daily or weekly alerts filtered to your specialties and states.",
   },
   {
     title: "Read Nigeria-focused career guides",
@@ -30,6 +30,6 @@ export const ABOUT_FEATURES: Array<{ title: string; text: string }> = [
 ];
 
 export const ABOUT_EMPLOYER_PARAGRAPHS = [
-  "External listings are gathered daily from partner job boards. JobberMed is not the employer for those listings, so always check the original advert to confirm the closing date and application instructions before applying.",
-  "Hospitals, clinics, HMOs, diagnostic centres and health NGOs can also request recruiter access to post Direct Apply vacancies on JobberMed and review applicant submissions in one workspace.",
+  "External listings are collected daily from popular Nigerian job boards and public employer websites. JobberMed is not the employer for those listings, so always check the original advert to confirm the closing date and application instructions before applying.",
+  "Hospitals, clinics, HMOs, diagnostic centres and health NGOs can also request recruiter access to post vacancies directly on JobberMed and review applicant submissions in one place.",
 ];

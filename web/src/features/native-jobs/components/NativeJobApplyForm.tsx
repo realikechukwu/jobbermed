@@ -74,7 +74,7 @@ export function NativeJobApplyForm({ jobId, jobTitle }: NativeJobApplyFormProps)
     }
 
     if (cvUrl && !isHttpUrl(cvUrl)) {
-      setError("CV link must be a valid http or https URL.");
+      setError("Enter a valid web link (starting with https://) to your CV.");
       return;
     }
 

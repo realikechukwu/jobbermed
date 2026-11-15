@@ -167,8 +167,7 @@ export function AccessRequestPanel({
       {!isLoading && latestRequest?.status === "approved" ? (
         <div className="access-request-actions">
           <p className="meta">
-            Access is approved. Refresh now. If access still fails, sign out and sign in again to refresh your role
-            claims.
+            Your access is approved. Click Refresh access below, or sign out and sign back in to open your dashboard.
           </p>
           <button className="shell-button" type="button" onClick={handleRefreshAccess} disabled={isRefreshing}>
             {isRefreshing ? "Refreshing..." : "Refresh access"}
@@ -178,7 +177,7 @@ export function AccessRequestPanel({
 
       {shouldShowApprovedNotice ? (
         <p className="native-form-message native-form-success">
-          Approval detected. A fresh session may be required before this dashboard unlocks.
+          Your request has been approved. Sign out and sign back in if the dashboard does not open right away.
         </p>
       ) : null}
 

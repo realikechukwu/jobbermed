@@ -117,7 +117,7 @@ async function readStringSetTable(
   if (error) {
     if (isMissingRelationError(error)) {
       throw new PreferencesUnavailableError(
-        `Personalisation tables are not ready yet (${tableName}).`,
+        "Custom email settings are temporarily unavailable.",
       );
     }
     throw error;
@@ -141,7 +141,7 @@ async function replaceStringSetTable(
   if (deleteError) {
     if (isMissingRelationError(deleteError)) {
       throw new PreferencesUnavailableError(
-        `Personalisation tables are not ready yet (${tableName}).`,
+        "Custom email settings are temporarily unavailable.",
       );
     }
     throw deleteError;
@@ -160,7 +160,7 @@ async function replaceStringSetTable(
   if (insertError) {
     if (isMissingRelationError(insertError)) {
       throw new PreferencesUnavailableError(
-        `Personalisation tables are not ready yet (${tableName}).`,
+        "Custom email settings are temporarily unavailable.",
       );
     }
     throw insertError;
@@ -181,7 +181,7 @@ export async function loadUserEmailPreferencesForUser(
     if (isMissingRelationError(error)) {
       return {
         status: "unavailable",
-        reason: "Email preference tables are not available yet. Legacy weekly digest remains active.",
+        reason: "Custom email settings are temporarily unavailable. You'll still receive our weekly nationwide job email.",
       };
     }
     return { status: "error", error: asErrorMessage(error) };
@@ -243,7 +243,7 @@ export async function saveUserEmailPreferencesForUser(
     if (isMissingRelationError(upsertError)) {
       return {
         status: "unavailable",
-        reason: "Email preference tables are not available yet. Legacy weekly digest remains active.",
+        reason: "Custom email settings are temporarily unavailable. You'll still receive our weekly nationwide job email.",
       };
     }
     return { status: "error", error: asErrorMessage(upsertError) };

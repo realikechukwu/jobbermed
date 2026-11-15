@@ -27,7 +27,7 @@ export function PrivacyPage() {
             <p>
               To request access to, correction of, or deletion of your account and personal data, email{" "}
               <a href={`mailto:${PRIVACY_CONTACT_EMAIL}`}>{PRIVACY_CONTACT_EMAIL}</a> or manage your email alerts in{" "}
-              <Link to="/account/personalization">account personalisation</Link>. We may update this policy as we add
+              <Link to="/account/personalization">email settings</Link>. We may update this policy as we add
               new features, and the latest version will always be published on this page.
             </p>
           </div>

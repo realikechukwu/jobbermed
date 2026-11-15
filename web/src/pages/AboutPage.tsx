@@ -61,7 +61,7 @@ export function AboutPage() {
       </section>
 
       <section className="shell-content" aria-label="Employers and listing sources">
-        <CardPrimitive title="How listings work & hiring on JobberMed" meta="External job boards and Direct Apply employer postings.">
+        <CardPrimitive title="How listings work & hiring on JobberMed" meta="Job boards and employer postings on JobberMed.">
           <div className="legal-content">
             {ABOUT_EMPLOYER_PARAGRAPHS.map((paragraph) => (
               <p key={paragraph}>{paragraph}</p>

@@ -82,7 +82,7 @@ export function PersonalizationPage() {
         if (loaded.status === "unavailable") {
           setTableWarning(loaded.reason);
           setStatusTone("info");
-          setStatusMessage("Weekly digest fallback remains active until preferences are available.");
+          setStatusMessage("You'll continue receiving our weekly nationwide job email while custom settings are unavailable.");
           return;
         }
 
@@ -193,7 +193,7 @@ export function PersonalizationPage() {
       if (result.status === "unavailable") {
         setTableWarning(result.reason);
         setStatusTone("info");
-        setStatusMessage("Weekly digest fallback remains active.");
+        setStatusMessage("You'll continue receiving our weekly nationwide job email.");
         return;
       }
 
@@ -232,7 +232,7 @@ export function PersonalizationPage() {
               <p className="preference-note">
                 {preferences.personalizeEnabled
                   ? `Current delivery: Personalised ${preferences.frequency} updates.`
-                  : "Current delivery: Weekly nationwide digest (default)."}
+                  : "Current delivery: Weekly nationwide job email (default)."}
               </p>
               <p className="preference-meta">Jobs update daily.</p>
 
@@ -248,7 +248,7 @@ export function PersonalizationPage() {
                     }))
                   }
                 />
-                <span>Enable personalised digest</span>
+                <span>Turn on tailored job alerts</span>
               </label>
 
               {preferences.personalizeEnabled ? (

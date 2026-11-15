@@ -55,7 +55,7 @@ export function NativeJobDetailPage() {
 
     async function loadJobDetail() {
       if (!jobId) {
-        setError("Job id is missing from the URL.");
+        setError("This job link is incomplete.");
         setIsLoading(false);
         return;
       }
@@ -67,14 +67,14 @@ export function NativeJobDetailPage() {
         const jobDetail = await fetchPublishedNativeJobById(jobId);
         if (!isSubscribed) return;
         if (!jobDetail) {
-          setError("Native job not found.");
+          setError("This job listing could not be found.");
           setJob(null);
           return;
         }
         setJob(jobDetail);
       } catch (loadError) {
         if (!isSubscribed) return;
-        const message = loadError instanceof Error ? loadError.message : "Unable to load native job detail.";
+        const message = loadError instanceof Error ? loadError.message : "Unable to load job details.";
         setError(message);
       } finally {
         if (isSubscribed) {
@@ -173,7 +173,7 @@ export function NativeJobDetailPage() {
             <article className="card native-apply-card">
               <h2 className="title">Apply for this role</h2>
               <p className="meta">
-                Submit your details and cover letter. Recruiters review applications directly in-platform.
+                Submit your details and cover letter. The hiring team will review your application on JobberMed.
               </p>
               <NativeJobApplyForm jobId={job.id} jobTitle={job.title} />
             </article>

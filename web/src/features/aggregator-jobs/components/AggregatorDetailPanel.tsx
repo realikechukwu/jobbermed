@@ -171,8 +171,9 @@ export function AggregatorDetailPanel({
             Source: <span id="detailSource">{sourceLabel}</span>
           </p>
           <p className="detail-disclaimer">
-            <strong>About this listing:</strong> JobberMed aggregates medical jobs from multiple sources. We are not the
-            employer. View the original posting for application instructions, contact details, and full job information.
+            <strong>About this listing:</strong> JobberMed collects healthcare jobs from popular Nigerian job boards and
+            employer websites. We are not the employer for this listing. View the original posting for application
+            instructions, contact details, and full job information.
           </p>
         </div>
 

@@ -76,7 +76,7 @@ export const ARTICLES: Article[] = [
     body: [
       {
         type: "p",
-        text: "JobberMed collects healthcare vacancies from major Nigerian job boards every day and lists them alongside Direct Apply roles posted by hospitals, clinics, HMOs and NGOs. You can search, filter, bookmark jobs and check your CV without creating an account. Signing up is free and adds personalised email alerts and Direct Apply tracking.",
+        text: "JobberMed collects healthcare vacancies from popular Nigerian job boards every day and lists them alongside roles posted directly by hospitals, clinics, HMOs and NGOs. You can search, filter, bookmark jobs and check your CV without creating an account. Signing up is free and adds personalised email alerts and application tracking.",
       },
       { type: "h2", text: "1. Filter by specialty, state and job type" },
       {
@@ -95,7 +95,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Next, use the toolbar controls to combine your specialty with a state or work pattern:",
+        text: "Next, use the search filters to combine your specialty with a state or work pattern:",
       },
       {
         type: "ul",
@@ -113,18 +113,18 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Every specialty and state combination also has a permanent URL you can bookmark or share, such as [doctor jobs in Lagos](/doctor-jobs/lagos) or [nursing jobs in Abuja](/nursing-jobs/abuja).",
+        text: "Every specialty and state combination also has its own page link you can bookmark or share, such as [doctor jobs in Lagos](/doctor-jobs/lagos) or [nursing jobs in Abuja](/nursing-jobs/abuja).",
       },
       { type: "h2", text: "2. Spot published salaries and closing dates first" },
       {
         type: "p",
-        text: "Most Nigerian healthcare adverts omit pay, and around half close within four weeks of posting. Use two toolbar controls to prioritise:",
+        text: "Most Nigerian healthcare adverts omit pay, and around half close within four weeks of posting. Use two filter options to prioritise:",
       },
       {
         type: "ul",
         items: [
-          "Salary shown pill: Click Salary shown to hide adverts that leave pay unstated. Only listings with a monthly naira figure, shift rate or public-sector grade (such as [CONMESS or CONHESS](/blog/conmess-conhess-explained)) remain.",
-          "Sort menu: Sort: Recommended interleaves listings across partner boards so one source never crowds out the rest, while keeping Direct Apply roles first. Switch to Sort: Newest for today's postings, or Sort: Closing soon to catch the nearest deadlines.",
+          "Salary shown button: Click Salary shown to hide adverts that leave pay unstated. Only listings with a monthly naira figure, shift rate or public-sector grade (such as [CONMESS or CONHESS](/blog/conmess-conhess-explained)) remain.",
+          "Sort menu: Sort: Recommended mixes listings from different job boards so one website never crowds out the rest, while keeping employer-posted roles first. Switch to Sort: Newest for today's postings, or Sort: Closing soon to catch the nearest deadlines.",
         ],
       },
       { type: "h2", text: "3. Read the summary and pre-load CV Match" },
@@ -152,7 +152,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "CV Match is free for three analyses a day and needs no account. When your CV is ready, click the sticky Apply button at the bottom of the panel to open the original posting.",
+        text: "CV Match is free for three analyses a day and needs no account. When your CV is ready, click the Apply button at the bottom of the panel to open the original posting.",
       },
       { type: "h2", text: "4. Save a shortlist on your device" },
       {
@@ -162,14 +162,14 @@ export const ARTICLES: Article[] = [
       {
         type: "image",
         src: "/images/guides/how-to-saved-jobs.png",
-        alt: "JobberMed Saved filter active in the toolbar showing a shortlist of three bookmarked healthcare jobs",
-        caption: "Tap the bookmark icon on any role, then click Saved in the toolbar to view only your shortlisted jobs.",
+        alt: "JobberMed Saved filter active in the filter bar showing a shortlist of three bookmarked healthcare jobs",
+        caption: "Tap the bookmark icon on any role, then click Saved in the filter bar to view only your shortlisted jobs.",
       },
       {
         type: "p",
-        text: "Click Saved in the toolbar at any time to filter the board down to your bookmarked roles. Saved jobs also appear on your [Dashboard](/dashboard) when you sign in.",
+        text: "Click Saved in the filter bar at any time to narrow the board down to your bookmarked roles. Saved jobs also appear on your [Dashboard](/dashboard) when you sign in.",
       },
-      { type: "h2", text: "5. Set up email alerts and Direct Apply" },
+      { type: "h2", text: "5. Set up email alerts and track applications" },
       {
         type: "p",
         text: "A [free JobberMed account](/signup) unlocks two extra features:",
@@ -177,13 +177,13 @@ export const ARTICLES: Article[] = [
       {
         type: "ul",
         items: [
-          "Personalised job alert emails: Open [Job alert emails](/account/personalization) from your dashboard, tick Enable personalised digest, pick Daily or Weekly delivery, and select your specialties and states.",
-          "Direct Apply and status tracking: Apply directly on employer-posted Direct Apply listings and check your [Dashboard](/dashboard) to see whether your application is Submitted, In review or Shortlisted.",
+          "Personalised job alert emails: Open [Job alert emails](/account/personalization) from your dashboard, tick Turn on tailored job alerts, pick Daily or Weekly delivery, and select your specialties and states.",
+          "Direct applications and status tracking: Apply directly on employer-posted listings on JobberMed and check your [Dashboard](/dashboard) to see whether your application is Submitted, In review or Shortlisted.",
         ],
       },
       {
         type: "p",
-        text: "Hiring for a hospital, clinic, HMO or NGO? [Request recruiter access](/request-access/recruiter) to post Direct Apply vacancies.",
+        text: "Hiring for a hospital, clinic, HMO or NGO? [Request recruiter access](/request-access/recruiter) to post vacancies on JobberMed.",
       },
       { type: "h2", text: "Quick reference: what needs an account?" },
       {
@@ -195,7 +195,7 @@ export const ARTICLES: Article[] = [
           ["CV Match score & tailored PDF", "No account (3 free/day) — click Check my CV against this job or open [cv.jobbermed.com](https://cv.jobbermed.com)."],
           ["Career & salary guides", "No account — browse [/blog](/blog)."],
           ["Daily or weekly job alert emails", "Free account — configure in [Email settings](/account/personalization)."],
-          ["Direct Apply & status tracking", "Free account — track on your [Dashboard](/dashboard)."],
+          ["Employer applications & status tracking", "Free account — track on your [Dashboard](/dashboard)."],
         ],
       },
       { type: "cta" },

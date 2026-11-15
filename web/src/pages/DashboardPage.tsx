@@ -129,7 +129,7 @@ export function DashboardPage() {
         if (loaded.status === "unavailable") {
           setTableWarning(loaded.reason);
           setStatusTone("info");
-          setStatusMessage("Weekly digest fallback remains active until preferences are available.");
+          setStatusMessage("You'll continue receiving our weekly nationwide job email while custom settings are unavailable.");
           return;
         }
 
