@@ -30,6 +30,17 @@ const LINK_ICONS: Record<string, ReactNode> = {
       <path fill="none" stroke="currentColor" strokeWidth="2" d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2" />
     </svg>
   ),
+  blog: (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path fill="none" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" d="M4 5.5A1.5 1.5 0 0 1 5.5 4H11v15H5.5A1.5 1.5 0 0 0 4 20.5v-15zM20 5.5A1.5 1.5 0 0 0 18.5 4H13v15h5.5a1.5 1.5 0 0 1 1.5 1.5v-15z" />
+      </svg>
+  ),
+  "cv-match": (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path fill="none" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" d="M6 3h8l4 4v14H6V3z" />
+        <path fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="m9 14 2 2 4-4" />
+      </svg>
+  ),
   dashboard: (
     <svg viewBox="0 0 24 24" aria-hidden="true">
       <path fill="currentColor" d="M3 3h8v8H3V3zm10 0h8v5h-8V3zM3 13h8v8H3v-8zm10-3h8v11h-8V10z" />

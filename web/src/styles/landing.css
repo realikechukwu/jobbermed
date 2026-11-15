@@ -730,3 +730,9 @@
     padding: 6px 6px 6px 18px;
   }
 }
+
+@media (max-width: 700px) {
+  .landing-page {
+    padding-top: 0;
+  }
+}

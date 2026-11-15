@@ -160,7 +160,7 @@ const NAV_DEFINITIONS: SiteNavDefinition[] = [
     group: "legal",
     to: "/landing",
     activeMatch: "exact",
-    placements: ["mobile", "footer"],
+    placements: ["footer"],
   },
   {
     id: "privacy",

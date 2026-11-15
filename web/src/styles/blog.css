@@ -292,3 +292,145 @@
   .blog-list { grid-template-columns: 1fr; gap: 20px; }
   .blog-card-copy { padding: 20px; }
 }
+
+/* Career guides hero: same photo, glass bar and wordmark as the home page,
+   keeping the page's own title and subtitle. */
+.blog-shell .hero-banner--compact {
+  background:
+    linear-gradient(100deg, rgba(6, 4, 40, 0.93) 0%, rgba(14, 6, 90, 0.74) 44%, rgba(12, 192, 223, 0.14) 100%),
+    url("/images/banner-hero.jpg") 70% 28% / cover #0b0640;
+}
+
+.blog-shell .hero-banner--compact .hero-inner {
+  padding: 14px 14px 44px;
+}
+
+.blog-shell .hero-top-row {
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0;
+  padding: 8px 10px 8px 22px;
+  border-radius: var(--radius-md);
+  background: rgba(14, 8, 70, 0.42);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  -webkit-backdrop-filter: blur(18px) saturate(1.4);
+  backdrop-filter: blur(18px) saturate(1.4);
+}
+
+.blog-shell .hero-top-wordmark {
+  display: inline-block;
+}
+
+.blog-shell .hero-banner .brand-link {
+  display: none;
+}
+
+.blog-shell .hero-banner--compact .hero-title,
+.blog-shell .hero-banner--compact .hero-subtitle {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.blog-shell .hero-banner--compact .hero-title {
+  margin-top: clamp(32px, 5vw, 56px);
+  font-size: clamp(2rem, 4.6vw, 3.1rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.blog-shell .hero-banner--compact .hero-title::after {
+  display: none;
+}
+
+.blog-shell .hero-banner--compact .hero-subtitle {
+  margin-top: 14px;
+  max-width: 640px;
+  font-size: clamp(1rem, 1.7vw, 1.1rem);
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+@media (max-width: 700px) {
+  .blog-shell .hero-top-row {
+    padding: 6px 6px 6px 18px;
+  }
+
+  .blog-shell .hero-banner--compact .hero-inner {
+    padding: 10px 10px 32px;
+  }
+}
+
+/* Desktop: give the hero the same breathing room as the home page. */
+@media (min-width: 701px) {
+  .blog-shell .hero-banner--compact .hero-inner {
+    padding-bottom: clamp(48px, 6vw, 80px);
+  }
+
+  .blog-shell .hero-banner--compact .hero-title {
+    margin-top: clamp(56px, 8vw, 104px);
+  }
+}
+
+/* Phones: full-width hero with square corners, like home. */
+@media (max-width: 700px) {
+  .blog-shell .hero-banner,
+  .blog-shell:has(.blog-index) .hero-banner {
+    width: 100%;
+    max-width: none;
+    margin-top: 0;
+    border-radius: 0;
+  }
+}
+
+/* Pagination: same controls as the home page job feed. */
+.blog-shell .pagination {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.blog-shell .pagination-btn,
+.blog-shell .pagination-num {
+  min-height: 44px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 9px 18px;
+  font-size: 0.86rem;
+  font-weight: 500;
+  color: var(--ink);
+  cursor: pointer;
+  font-variant-numeric: tabular-nums;
+}
+
+.blog-shell .pagination-num {
+  min-width: 44px;
+  padding: 9px 0;
+}
+
+.blog-shell .pagination-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.blog-shell .pagination-num.active {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: #ffffff;
+}
+
+.blog-shell .pagination-status,
+.blog-shell .pagination-dots {
+  font-size: 0.86rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.blog-shell .pagination-numbers {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}

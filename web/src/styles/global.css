@@ -1543,3 +1543,21 @@ body {
     margin-bottom: 18px;
   }
 }
+
+/* Phones: the hero photo runs edge to edge with square corners, like home. */
+@media (max-width: 700px) {
+  .hero-banner,
+  :not(.blog-shell) > .hero-banner--compact {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  :not(.blog-shell) > .hero-banner--compact + .page {
+    width: 100%;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+  }
+}
