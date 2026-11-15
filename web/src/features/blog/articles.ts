@@ -63,6 +63,97 @@ export const CV_MATCH_CTA = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "non-clinical-hmo-health-tech-jobs-nigeria",
+    title: "Non-Clinical Jobs for Doctors and Nurses in Nigeria",
+    description:
+      "Find HMO, claims, telehealth and health-tech jobs for doctors and nurses in Nigeria. Compare advertised salaries and learn how to tailor your CV for a career change.",
+    published: "2026-11-15",
+    readMinutes: 5,
+    category: "Career transitions",
+    image: "/images/guides/cv.svg",
+    body: [
+      {
+        type: "p",
+        text: "If you want to move from ward work into a non-clinical job, search for the work you would do rather than your current title. Start with case management, provider relations, medical claims, clinical operations or health-tech implementation. Browse [healthcare management jobs in Nigeria](/healthcare-management-jobs), including listings in [Lagos](/healthcare-management-jobs/lagos) and [Abuja](/healthcare-management-jobs/abuja).",
+      },
+      {
+        type: "p",
+        text: "Doctors and nurses can bring experience in reading clinical records, explaining care to patients and coordinating with different teams. Some roles involve clinical judgement or direct patient care. Check the duties and licence requirements even when a job is advertised as remote or office-based.",
+      },
+      { type: "h2", text: "HMO and health-tech jobs to search for" },
+      { type: "h3", text: "Case management and utilisation review" },
+      {
+        type: "p",
+        text: "Case managers coordinate care, review records and follow up with providers. Utilisation review roles may assess care requests or support pre-authorisation according to the insurer’s process. Search for clinical case reviewer, utilisation review officer or case management associate. A [Reliance Health case management advert](https://apply.workable.com/get-reliance-health/j/6CFE23B6C9/) accepted medical or nursing qualifications and asked for a current professional licence and relevant experience.",
+      },
+      { type: "h3", text: "Provider network and relations" },
+      {
+        type: "p",
+        text: "Provider teams work with partner hospitals and clinics. Duties can include onboarding facilities, monitoring service quality, resolving provider problems and helping manage contracts. Search for provider relations officer, network officer or provider network manager. [AfriTPA’s careers page](https://afritpahealth.com/careers.html) shows how one employer describes provider contracting and network management.",
+      },
+      { type: "h3", text: "Medical claims and hospital HMO desks" },
+      {
+        type: "p",
+        text: "On the hospital side, an HMO officer may check eligibility, submit pre-authorisation requests and follow up on rejected claims. On the insurer or third-party administrator side, claims teams may check documentation, billing and plan terms. Search for HMO billing officer, claims officer, claims auditor or claims adjudicator. Get familiar with the [NHIA claims submission and review procedure](https://www.nhia.gov.ng/download/standard-operating-procedure-for-claims-submission-review-and-payment/) and learn which tariff or contract the employer uses.",
+      },
+      { type: "h3", text: "Telehealth, clinical operations and health-tech implementation" },
+      {
+        type: "p",
+        text: "Search for telehealth nurse, care coordinator, operations nurse, clinical product specialist or EMR implementation specialist. A telehealth clinician may still assess patients. A clinical operations or implementation role may focus on scheduling, training staff or improving how a service runs. Ask whether the role includes patient contact, evening cover or time on site.",
+      },
+      { type: "h2", text: "HMO and health-tech salaries in Nigeria" },
+      {
+        type: "p",
+        text: "These are amounts from individual adverts, so use them as examples when comparing roles. Confirm whether each figure is gross or take-home and whether the employer pays separately for shifts, travel or overtime. Some of the adverts may have closed.",
+      },
+      {
+        type: "table",
+        columns: ["Advertised role", "Monthly pay in the advert"],
+        rows: [
+          ["[HMO Officer, St Dominic Catholic Hospital, Ibadan](https://www.hotnigerianjobs.com/hotjobs/982368/hmo-officer-at-stdominic-catholic-hospital.html)", "₦90,000 to ₦130,000."],
+          ["[Hybrid Telehealth Nurse / Care Coordinator, ExcelHealth](https://www.hotnigerianjobs.com/hotjobs/963069/telehealth-nurse-care-coordinator-hybrid-at-excelh.html)", "₦100,000 to ₦200,000, depending on experience."],
+          ["[Health-tech Business Development Executive, Abuja](https://www.myjobmag.com/job/business-development-executive-healthtech-emr-medical-devices-and-telemedicine)", "₦200,000 to ₦300,000."],
+          ["[Operations Nurse, Dokitami, Lagos](https://www.hotnigerianjobs.com/hotjobs/976174/operations-nurse-at-dokitami.html)", "₦350,000."],
+        ],
+      },
+      {
+        type: "p",
+        text: "If you are comparing an offer with hospital work, include the value of your current call pay, allowances and benefits. See the [guide to CONMESS and CONHESS](/blog/conmess-conhess-explained) for public-sector pay context.",
+      },
+      { type: "h2", text: "How to write a CV for an HMO or health-tech job" },
+      {
+        type: "p",
+        text: "Show how your hospital experience relates to the job. If you handled pre-authorisations, say what you checked and how you followed up. If you tested an electronic medical record (EMR) workflow, explain the problem you spotted, who you worked with and what improved. Use figures from your own work and keep patient details out of the CV.",
+      },
+      {
+        type: "example",
+        lines: [
+          "Example CV bullets. Replace the details with your own experience.",
+          "Recorded and prioritised about 45 outpatient visits per day in the EMR, then flagged incomplete referrals for follow-up.",
+          "Coordinated pre-authorisation requests with six HMOs and followed up on missing documentation before claims submission.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Use the [healthcare CV guide](/blog/healthcare-cv-nigeria) to organise your experience. [CV Match](https://cv.jobbermed.com) compares your CV with a specific advert, highlights gaps and suggests a rewrite you can review and save as a PDF.",
+      },
+      { type: "h2", text: "What to check before you apply" },
+      {
+        type: "ul",
+        items: [
+          "Licence. If the role involves clinical practice or the employer asks for a licence, check that your [MDCN practising licence](https://mdcn.gov.ng/page/about-us/mdcn-act-other-regulation) or [NMCN licence](https://nmcn.gov.ng/renewal.html) is current. Read the requirements for the specific post.",
+          "NYSC. State your status where applicable and follow the advert’s instructions for discharge or exemption evidence.",
+          "Tools and workflows. List Excel, HMO portals, EMR systems or reporting tools you have used. Give an example of what you did with them.",
+          "Work pattern and application. Confirm the office location, hybrid schedule, shifts and travel. For an email application, follow the employer’s instructions. [How to apply for a healthcare job by email](/blog/apply-for-healthcare-job-by-email)",
+        ],
+      },
+      {
+        type: "p",
+        text: "Browse [healthcare management jobs](/healthcare-management-jobs), [doctor jobs](/doctor-jobs) or [nursing jobs](/nursing-jobs) on JobberMed. Search for a role that fits your experience, then [check your CV against the advert](https://cv.jobbermed.com) before you apply.",
+      },
+    ],
+  },
+  {
     slug: "medical-officer-locum-doctor-jobs-nigeria",
     title: "How to Get a Medical Officer (MO) or Locum Doctor Job in Nigeria (2026 Guide)",
     description:
@@ -803,6 +894,10 @@ export const ARTICLES: Article[] = [
       {
         type: "p",
         text: "The remaining 14% were for other roles inside health organisations, such as HMO officers, front desk staff and medical sales representatives.",
+      },
+      {
+        type: "p",
+        text: "If you are exploring HMO work, claims or digital health, see our guide to [non-clinical jobs for doctors and nurses in Nigeria](/blog/non-clinical-hmo-health-tech-jobs-nigeria).",
       },
       { type: "h2", text: "Most adverts did not state the pay" },
       {
