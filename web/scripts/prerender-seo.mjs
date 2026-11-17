@@ -529,6 +529,104 @@ writeFileSync(
     .join("\n")}\n</urlset>\n`,
 );
 
+// ---- llms.txt & llm.txt ---------------------------------------------------
+const extractedAt = text(payload?.metadata?.extracted_at);
+const sourceList = Object.entries(SOURCE_LABELS)
+  .map(([key, label]) => `\`${key}\` (${label})`)
+  .join(", ");
+
+const llmsTxt = [
+  "# JobberMed",
+  "",
+  "> Healthcare job board for doctors, nurses, pharmacists, medical laboratory scientists, dentists, public health specialists, and allied health professionals across Nigeria and Africa. Updated daily by aggregating vacancies from five Nigerian job boards alongside direct postings from hospitals, clinics, HMOs, and NGOs.",
+  "",
+  `- Canonical origin: ${SITE_URL}`,
+  `- Live aggregated jobs: ${jobPages.length} (${indexableJobPages.length} indexable)`,
+  ...(extractedAt ? [`- Last dataset update: ${extractedAt}`] : []),
+  "",
+  "## Machine-Readable Data & Discovery",
+  "",
+  `- [Live Jobs JSON Feed](${SITE_URL}/data/master_jobs.json): Full structured dataset of active aggregated vacancies (\`metadata\` + \`jobs[]\`). Prefer this endpoint over scraping HTML when querying, filtering, or comparing multiple jobs.`,
+  `- [XML Sitemap](${SITE_URL}/sitemap.xml): Canonical URLs for all public pages, specialty/location landing pages, career guides, and indexable job listings.`,
+  `- [Robots Policy](${SITE_URL}/robots.txt): Crawl rules; public job, specialty, location, and guide routes are allowed, while \`/dashboard\`, \`/account/\`, \`/recruiter\`, \`/admin\`, \`/mdcn\`, and auth routes are disallowed.`,
+  "",
+  "### `master_jobs.json` Schema",
+  "",
+  'Top-level object: `{ "metadata": { "extracted_at", "total_processed", ... }, "jobs": Job[] }`',
+  "",
+  "Each `Job` object contains:",
+  "- `job_title` (string): Role title",
+  "- `company` (string): Employer or facility name",
+  "- `location` (string): City, state, or country",
+  "- `job_type` (string): e.g. Full-time, Part-time, Contract, Locum, Internship, Volunteer",
+  `- \`job_category\` (string): Specialty bucket (${landing.LANDING_CATEGORIES.map((c) => `\`${c.category}\``).join(", ")}, \`Others\`)`,
+  "- `salary` (string): Stated pay or CONMESS/CONHESS grade, if published",
+  "- `experience` (string): Required years or level",
+  "- `qualification` (string): Required degree, license, or registration (e.g. MDCN, NMCN, PCN, MLSCN)",
+  "- `requirements` (string[]): Bullet list of requirements",
+  "- `responsibilities` (string[]): Bullet list of duties",
+  "- `how_to_apply` (string): Application instructions",
+  "- `date_posted` (string, ISO date): Publication date",
+  "- `deadline` (string, ISO date): Closing date, if published",
+  "- `contact_email` (string): Application or contact email, if published",
+  "- `contact_phone` (string): Contact phone, if published",
+  "- `apply_url` (string): Original source URL",
+  `- \`_source\` (string): Source board key (${sourceList})`,
+  "",
+  "### URL Search & Filter Parameters",
+  "",
+  `Construct filtered views on \`${SITE_URL}/\` using query parameters:`,
+  "- `q`: Keyword search across title, employer, location, and requirements (e.g. `?q=radiographer`)",
+  "- `category`: Specialty name (e.g. `?category=Doctors`)",
+  "- `loc`: Location bucket (e.g. `?loc=Lagos%20State`, `?loc=FCT`)",
+  "- `type`: `full-time` | `part-time` | `contract` | `internship` | `volunteer`",
+  "- `source`: `all` | `direct` (employer-posted) | `external` (aggregated)",
+  "- `salary`: `1` to show only listings with published salary/grade",
+  "- `sort`: `recommended` | `newest` | `closing`",
+  "- `page`: 1-based page number (12 jobs per page)",
+  "- `job`: Job slug to open the detail panel directly",
+  "",
+  "Every public job page (`/jobs/<slug>/`) and career guide (`/blog/<slug>/`) is pre-rendered with `Schema.org` JSON-LD (`JobPosting`, `BlogPosting`, `BreadcrumbList`, `ItemList`).",
+  "",
+  "## Browse by Specialty",
+  "",
+  ...specialtyPages.map((page) => {
+    const cat = landing.LANDING_CATEGORIES.find((entry) => entry.category === page.category);
+    const rolesNote = cat ? ` — ${cat.roles}` : "";
+    return `- [${page.linkLabel}](${abs(page.path)}): ${page.entries.length} live jobs${rolesNote}`;
+  }),
+  "",
+  "## Browse by Location",
+  "",
+  ...locationPages.map(
+    (page) => `- [${page.linkLabel}](${abs(page.path)}): ${page.entries.length} live jobs`,
+  ),
+  "",
+  "## Career Guides",
+  "",
+  ...blog.ARTICLES.map(
+    (article) => `- [${article.title}](${abs(`/blog/${article.slug}`)}): ${article.description}`,
+  ),
+  "",
+  "## Core Pages & Companion Tools",
+  "",
+  `- [JobberMed Home](${SITE_URL}/): Searchable live healthcare job feed`,
+  `- [About JobberMed](${abs("/about")}): Platform overview, survey findings, and employer posting info`,
+  `- [Why JobberMed](${abs("/landing")}): Summary of healthcare job search pain points and features`,
+  `- [Career Guides Index](${abs(blog.BLOG_INDEX_META.path)}): Nigeria-focused healthcare career, CONMESS/CONHESS salary, and CV guides`,
+  "- [CV Match](https://cv.jobbermed.com): Free AI CV-to-advert scorer and tailored PDF generator (3 free analyses/day, no account required)",
+  `- [Privacy Policy](${abs("/privacy")}): Data handling and contact details`,
+  "",
+  "## Optional",
+  "",
+  "- Account & workflow routes (`/signin/`, `/signup/`, `/dashboard/`, `/account/personalization/`, `/recruiter/`, `/mdcn/`, `/admin/`) require authentication and are marked `noindex`.",
+  "- Support & listing issues: hello@jobbermed.com",
+  "",
+].join("\n");
+
+writeFileSync(join(DIST, "llms.txt"), llmsTxt);
+writeFileSync(join(DIST, "llm.txt"), llmsTxt);
+
 console.log(
-  `SEO prerender: ${jobPages.length} job pages (${indexableJobPages.length} indexable), ${landingPages.length} landing pages, ${blog.ARTICLES.length} articles, ${PUBLIC_PAGES.length} static pages, sitemap with ${urls.length} URLs.`,
+  `SEO prerender: ${jobPages.length} job pages (${indexableJobPages.length} indexable), ${landingPages.length} landing pages, ${blog.ARTICLES.length} articles, ${PUBLIC_PAGES.length} static pages, sitemap with ${urls.length} URLs, llms.txt & llm.txt.`,
 );
