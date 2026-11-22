@@ -1,18 +1,39 @@
 {
   "metadata": {
-    "extracted_at": "2026-11-21T11:10:37.251587",
+    "extracted_at": "2026-11-22T11:03:01.076138",
     "model": "gpt-4o-mini",
-    "total_processed": 1220,
-    "duplicates_removed": 194,
-    "skipped_old": 29,
+    "total_processed": 1200,
+    "duplicates_removed": 186,
+    "skipped_old": 44,
     "skipped_empty": 0,
     "errors": 0,
-    "openai_calls": 270
+    "openai_calls": 201
   },
   "jobs": [
     {
+      "job_title": "Front Desk staff",
+      "company": "MC care Hospital Surulere",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full-Time",
+      "job_category": "Other",
+      "salary": "",
+      "experience": "",
+      "qualification": "",
+      "requirements": [],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-11-22",
+      "deadline": "2026-11-27",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medlocumjobs.com/jobs/front-desk-staff-2412",
+      "_source": "medlocum"
+    },
+    {
       "job_title": "Full time Caregiver",
-      "company": "Mr  Samuel Uche",
+      "company": "Mr Samuel Uche",
       "location": "Delta, Nigeria",
       "job_type": "Full-Time",
       "job_category": "Other",
@@ -28,8 +49,279 @@
       "deadline": "2027-01-01",
       "contact_email": "",
       "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/full-time-caregiver-copy-2411",
+      "apply_url": "https://medlocumjobs.com/jobs/full-time-caregiver-2411",
       "_source": "medlocum"
+    },
+    {
+      "job_title": "Consultant Anaesthetist",
+      "company": "British Community Hospital and Outpatient Clinics - BCHOC",
+      "location": "Port Harcourt, Rivers, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Doctor",
+      "salary": "and Procedures",
+      "experience": "Location",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "BA/BSc/HND",
+        "Current MDCN practising licence",
+        "Evidence of relevant specialist experience"
+      ],
+      "responsibilities": [
+        "Conduct specialist and appropriate general consultations.",
+        "Assess, diagnose and manage patients.",
+        "Review patients referred by the Medical Officer.",
+        "Attend to specialist emergencies where agreed.",
+        "Review admitted patients under their care.",
+        "Participate in relevant ward rounds.",
+        "Request and interpret appropriate investigations.",
+        "Prescribe medicines and document treatment plans.",
+        "Perform procedures or surgeries within their specialty and approved clinical privileges.",
+        "Provide preoperative and postoperative care.",
+        "Provide clear clinical instructions for continuing patient management.",
+        "Communicate treatment plans to the Medical Officer and relevant clinical staff.",
+        "Review follow-up information supplied between consultant visits.",
+        "Respond to important clinical concerns relating to patients under their care.",
+        "Refer patients requiring facilities or expertise beyond the hospital’s capacity.",
+        "Maintain complete clinical, theatre and procedural records.",
+        "Participate in clinical audits, case reviews and quality-improvement activities.",
+        "Support the development of specialty-specific protocols and referral pathways.",
+        "Comply with patient-safety, infection-control and professional requirements."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-11-21",
+      "deadline": "",
+      "contact_email": "career@bchoc.net",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/consultant-anaesthetist-british-community-hospital-and-outpatient-clinics-bchoc-1",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Consultant Cardiologist/Physician",
+      "company": "British Community Hospital and Outpatient Clinics - BCHOC",
+      "location": "Port Harcourt, Rivers, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Doctor",
+      "salary": "and Procedures",
+      "experience": "",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "A current CV.",
+        "A cover letter.",
+        "Copies of relevant qualifications.",
+        "Fellowship or specialist certificates.",
+        "Current MDCN practising licence.",
+        "Evidence of relevant specialist experience.",
+        "Contact details for two professional referees."
+      ],
+      "responsibilities": [
+        "Conduct specialist and appropriate general consultations.",
+        "Assess, diagnose and manage patients.",
+        "Review patients referred by the Medical Officer.",
+        "Attend to specialist emergencies where agreed.",
+        "Review admitted patients under their care.",
+        "Participate in relevant ward rounds.",
+        "Request and interpret appropriate investigations.",
+        "Prescribe medicines and document treatment plans.",
+        "Perform procedures or surgeries within their specialty and approved clinical privileges.",
+        "Provide preoperative and postoperative care.",
+        "Provide clear clinical instructions for continuing patient management.",
+        "Communicate treatment plans to the Medical Officer and relevant clinical staff.",
+        "Review follow-up information supplied between consultant visits.",
+        "Respond to important clinical concerns relating to patients under their care.",
+        "Refer patients requiring facilities or expertise beyond the hospital’s capacity.",
+        "Maintain complete clinical, theatre and procedural records.",
+        "Participate in clinical audits, case reviews and quality-improvement activities.",
+        "Support the development of specialty-specific protocols and referral pathways.",
+        "Comply with patient-safety, infection-control and professional requirements."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-11-21",
+      "deadline": "",
+      "contact_email": "career@bchoc.net",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/consultant-cardiologist-physician-british-community-hospital-and-outpatient-clinics-bchoc",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Consultant Nephrologist",
+      "company": "British Community Hospital and Outpatient Clinics - BCHOC",
+      "location": "Port Harcourt, Rivers, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Doctor",
+      "salary": "and Procedures",
+      "experience": "",
+      "qualification": "BA/BSc/HND",
+      "requirements": [],
+      "responsibilities": [
+        "Conduct specialist and appropriate general consultations.",
+        "Assess, diagnose and manage patients.",
+        "Review patients referred by the Medical Officer.",
+        "Attend to specialist emergencies where agreed.",
+        "Review admitted patients under their care.",
+        "Participate in relevant ward rounds.",
+        "Request and interpret appropriate investigations.",
+        "Prescribe medicines and document treatment plans.",
+        "Perform procedures or surgeries within their specialty and approved clinical privileges.",
+        "Provide preoperative and postoperative care.",
+        "Provide clear clinical instructions for continuing patient management.",
+        "Communicate treatment plans to the Medical Officer and relevant clinical staff.",
+        "Review follow-up information supplied between consultant visits.",
+        "Respond to important clinical concerns relating to patients under their care.",
+        "Refer patients requiring facilities or expertise beyond the hospital’s capacity.",
+        "Maintain complete clinical, theatre and procedural records.",
+        "Participate in clinical audits, case reviews and quality-improvement activities.",
+        "Support the development of specialty-specific protocols and referral pathways.",
+        "Comply with patient-safety, infection-control and professional requirements."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-11-21",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/consultant-nephrologist-british-community-hospital-and-outpatient-clinics-bchoc",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Consultant Obstetrician and Gynaecologist",
+      "company": "British Community Hospital and Outpatient Clinics - BCHOC",
+      "location": "Port Harcourt, Rivers, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Doctor",
+      "salary": "and Procedures",
+      "experience": "",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "BA/BSc/HND",
+        "Current MDCN practising licence",
+        "Evidence of relevant specialist experience",
+        "Contact details for two professional referees"
+      ],
+      "responsibilities": [
+        "Conduct specialist and appropriate general consultations.",
+        "Assess, diagnose and manage patients.",
+        "Review patients referred by the Medical Officer.",
+        "Attend to specialist emergencies where agreed.",
+        "Review admitted patients under their care.",
+        "Participate in relevant ward rounds.",
+        "Request and interpret appropriate investigations.",
+        "Prescribe medicines and document treatment plans.",
+        "Perform procedures or surgeries within their specialty and approved clinical privileges.",
+        "Provide preoperative and postoperative care.",
+        "Provide clear clinical instructions for continuing patient management.",
+        "Communicate treatment plans to the Medical Officer and relevant clinical staff.",
+        "Review follow-up information supplied between consultant visits.",
+        "Respond to important clinical concerns relating to patients under their care.",
+        "Refer patients requiring facilities or expertise beyond the hospital’s capacity.",
+        "Maintain complete clinical, theatre and procedural records.",
+        "Participate in clinical audits, case reviews and quality-improvement activities.",
+        "Support the development of specialty-specific protocols and referral pathways.",
+        "Comply with patient-safety, infection-control and professional requirements."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-11-21",
+      "deadline": "",
+      "contact_email": "career@bchoc.net",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/consultant-obstetrician-and-gynaecologist-british-community-hospital-and-outpatient-clinics-bchoc",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Consultant Paediatrician",
+      "company": "British Community Hospital and Outpatient Clinics - BCHOC",
+      "location": "Port Harcourt, Rivers, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Doctor",
+      "salary": "and Procedures",
+      "experience": "",
+      "qualification": "BA/BSc/HND",
+      "requirements": [
+        "A current CV",
+        "A cover letter",
+        "Copies of relevant qualifications",
+        "Fellowship or specialist certificates",
+        "Current MDCN practising licence",
+        "Evidence of relevant specialist experience",
+        "Contact details for two professional referees"
+      ],
+      "responsibilities": [
+        "Conduct specialist and appropriate general consultations.",
+        "Assess, diagnose and manage patients.",
+        "Review patients referred by the Medical Officer.",
+        "Attend to specialist emergencies where agreed.",
+        "Review admitted patients under their care.",
+        "Participate in relevant ward rounds.",
+        "Request and interpret appropriate investigations.",
+        "Prescribe medicines and document treatment plans.",
+        "Perform procedures or surgeries within their specialty and approved clinical privileges.",
+        "Provide preoperative and postoperative care.",
+        "Provide clear clinical instructions for continuing patient management.",
+        "Communicate treatment plans to the Medical Officer and relevant clinical staff.",
+        "Review follow-up information supplied between consultant visits.",
+        "Respond to important clinical concerns relating to patients under their care.",
+        "Refer patients requiring facilities or expertise beyond the hospital’s capacity.",
+        "Maintain complete clinical, theatre and procedural records.",
+        "Participate in clinical audits, case reviews and quality-improvement activities.",
+        "Support the development of specialty-specific protocols and referral pathways.",
+        "Comply with patient-safety, infection-control and professional requirements."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-11-21",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/consultant-paediatrician-british-community-hospital-and-outpatient-clinics-bchoc-1",
+      "_source": "myjobmag"
+    },
+    {
+      "job_title": "Consultant General Surgeon",
+      "company": "British Community Hospital and Outpatient Clinics - BCHOC",
+      "location": "Port Harcourt, Rivers, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Doctor",
+      "salary": "and Procedures",
+      "experience": "",
+      "qualification": "BA/BSc/HND",
+      "requirements": [],
+      "responsibilities": [
+        "Conduct specialist and appropriate general consultations.",
+        "Assess, diagnose and manage patients.",
+        "Review patients referred by the Medical Officer.",
+        "Attend to specialist emergencies where agreed.",
+        "Review admitted patients under their care.",
+        "Participate in relevant ward rounds.",
+        "Request and interpret appropriate investigations.",
+        "Prescribe medicines and document treatment plans.",
+        "Perform procedures or surgeries within their specialty and approved clinical privileges.",
+        "Provide preoperative and postoperative care.",
+        "Provide clear clinical instructions for continuing patient management.",
+        "Communicate treatment plans to the Medical Officer and relevant clinical staff.",
+        "Review follow-up information supplied between consultant visits.",
+        "Respond to important clinical concerns relating to patients under their care.",
+        "Refer patients requiring facilities or expertise beyond the hospital’s capacity.",
+        "Maintain complete clinical, theatre and procedural records.",
+        "Participate in clinical audits, case reviews and quality-improvement activities.",
+        "Support the development of specialty-specific protocols and referral pathways.",
+        "Comply with patient-safety, infection-control and professional requirements."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-11-21",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/consultant-general-surgeon-british-community-hospital-and-outpatient-clinics-bchoc-1",
+      "_source": "myjobmag"
     },
     {
       "job_title": "Nurse",
@@ -2223,36 +2515,6 @@
       "_source": "myjobmag"
     },
     {
-      "job_title": "Health and Safety Advisor",
-      "company": "Jaza Energy",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "",
-      "experience": "6 years",
-      "qualification": "rn",
-      "requirements": [],
-      "responsibilities": [
-        "Lead Jaza Energy’s occupational health and safety programme across existing and planned markets.",
-        "Set standards for safe working practices and help country teams assess and address hazards.",
-        "Oversee emergency preparedness and incident investigations across offices, solar hubs, and field operations.",
-        "Conduct health and safety risk assessments for offices, solar hubs, and field activities.",
-        "Inspect work facilities and review field activities to verify safety measures are effective.",
-        "Maintain emergency plans and coordinate drills with security and country teams.",
-        "Deliver health and safety inductions and training for staff and Jaza Stars.",
-        "Investigate work-related injuries, accidents, and near misses to prevent recurrence."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-11-20",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/health-and-safety-advisor-jaza-energy",
-      "_source": "myjobmag"
-    },
-    {
       "job_title": "Biomedical Engineer",
       "company": "Marigold Hospital and Critical Care Center",
       "location": "Lagos, Nigeria",
@@ -2585,136 +2847,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.myjobmag.com/job/customer-service-representativ-nigerbell-hearing",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Business Development Manager",
-      "company": "NigerBell Hearing",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Healthcare Management",
-      "salary": "",
-      "experience": "Location",
-      "qualification": "BSc",
-      "requirements": [
-        "Candidates should possess relevant qualifications with experience."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-11-20",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/business-development-manager-nigerbell-hearing",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Accounts / Cashier Officer",
-      "company": "Dalzon Medical Diagnostics Limited",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "",
-      "experience": "Location",
-      "qualification": "BSc",
-      "requirements": [
-        "BA/BSc/HND",
-        "Relevant qualifications and experience"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-11-20",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/accounts-cashier-officer-dalzon-medical-diagnostics-limited",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Front Desk / Patient Services Officers",
-      "company": "Dalzon Medical Diagnostics Limited",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "",
-      "experience": "Location",
-      "qualification": "BSc",
-      "requirements": [
-        "BA/BSc/HND",
-        "Experience",
-        "Location",
-        "Lagos",
-        "Interested applicant(s) should possess relevant qualifications and experience"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-11-20",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/front-desk-patient-services-officers-dalzon-medical-diagnostics-limited",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Healthcare Marketing Executives",
-      "company": "Dalzon Medical Diagnostics Limited",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "",
-      "experience": "",
-      "qualification": "BSc",
-      "requirements": [
-        "BA/BSc/HND",
-        "Experience",
-        "Location",
-        "Lagos",
-        "Sales and Business Development",
-        "Interested applicant(s) should possess relevant qualifications and experience"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-11-20",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/healthcare-marketing-executives-dalzon-medical-diagnostics-limited",
-      "_source": "myjobmag"
-    },
-    {
-      "job_title": "Business Development Manager",
-      "company": "Dalzon Medical Diagnostics Limited",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Healthcare Management",
-      "salary": "",
-      "experience": "Location",
-      "qualification": "BSc",
-      "requirements": [
-        "BA/BSc/HND",
-        "Relevant qualifications and experience"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-11-20",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/business-development-manager-dalzon-medical-diagnostics-limited",
       "_source": "myjobmag"
     },
     {
@@ -8031,52 +8163,6 @@
       "_source": "myjobmag"
     },
     {
-      "job_title": "Patient Services & Administrative Officer",
-      "company": "Harmony 360 Health",
-      "location": "Ibadan, Oyo, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Other",
-      "salary": "₦50,000 - ₦100,000/month",
-      "experience": "2 years",
-      "qualification": "OND",
-      "requirements": [
-        "OND",
-        "Others",
-        "2 years experience"
-      ],
-      "responsibilities": [
-        "Welcome patients and families warmly and professionally.",
-        "Register new patients and update existing patient information in the electronic health record (EHR) system.",
-        "Manage patient check-in, check-out, and appointment scheduling.",
-        "Respond to telephone calls, WhatsApp messages, and general patient enquiries.",
-        "Provide accurate information about clinic services, operating hours, and appointment procedures.",
-        "Coordinate patient flow and communicate waiting times or delays appropriately.",
-        "Maintain a clean, organized, and welcoming reception area.",
-        "Communicate applicable service fees to patients.",
-        "Receive and accurately record patient payments through approved payment channels.",
-        "Issue receipts and maintain accurate transaction records.",
-        "Record payments and outstanding balances in the clinic management system.",
-        "Reconcile daily transactions and prepare end-of-shift cashier reports.",
-        "Escalate payment discrepancies promptly.",
-        "Maintain strict accountability for funds handled.",
-        "Measure and document vital signs, including temperature, pulse, respiratory rate, blood pressure, oxygen saturation, height, and weight.",
-        "Assist with preparing patients for consultations and examinations.",
-        "Support basic patient comfort and positioning.",
-        "Prepare consultation and treatment areas and replenish supplies.",
-        "Assist nursing staff with non-invasive patient care activities as delegated.",
-        "Maintain infection prevention and control standards, including appropriate cleaning and disinfection of equipment."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-11-18",
-      "deadline": "",
-      "contact_email": "careers@harmony360health.com",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/patient-services-administrative-officer-harmony-360-health",
-      "_source": "myjobmag"
-    },
-    {
       "job_title": "Male nurse assistant/ Chew",
       "company": "TSA",
       "location": "Anambra, Nigeria",
@@ -8752,43 +8838,6 @@
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/992506/health-manager-at-life-at-best-development-initiat.html",
       "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Nurse",
-      "company": "Life at Best Development Initiative",
-      "location": "Borno, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Nurse",
-      "salary": "",
-      "experience": "2 - 3 years",
-      "qualification": "BA/BSc/HND",
-      "requirements": [
-        "Current registration with the Nursing and Midwifery Council of Nigeria and a valid practising licence.",
-        "Completed NYSC or an applicable exemption certificate where required for the qualification.",
-        "Sound nursing assessment, medication safety, patient education and documentation skills.",
-        "Ability to work effectively in a multidisciplinary team and maintain patient dignity.",
-        "Fluency in English and Hausa; knowledge of Kanuri is an advantage.",
-        "Willingness to work in the assigned LGA and travel to project locations in accordance with LABDI security procedures."
-      ],
-      "responsibilities": [
-        "Conduct nursing assessments, record vital signs, support triage and promptly escalate clinical deterioration.",
-        "Administer prescribed medicines and treatments within professional scope and maintain appropriate records.",
-        "Provide wound care, observe patients and assist clinicians with approved procedures.",
-        "Apply infection prevention measures, safe sharps handling and healthcare waste management practices.",
-        "Provide health education on hygiene, nutrition, medication adherence and prevention of illness.",
-        "Support maternal and child health activities within individual training, authorisation and competence.",
-        "Maintain confidential patient documentation and support referrals and follow-up arrangements.",
-        "Monitor nursing supplies, report stock needs and raise patient safety or safeguarding concerns promptly."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-11-17",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/nurse-life-at-best-development-initiative",
-      "_source": "myjobmag"
     },
     {
       "job_title": "HMO Officer",
@@ -10317,26 +10366,23 @@
       "_source": "hotnigerianjobs"
     },
     {
-      "job_title": "Territory Sales Officer - Healthcare",
+      "job_title": "Territory Sales Officer - Healthcare (Port Harcourt)",
       "company": "Sovereign Quint Iddeas Limited",
-      "location": "Abuja, Nigeria",
+      "location": "Rivers, Nigeria",
       "job_type": "Full Time",
       "job_category": "Other",
       "salary": "₦200,000 - ₦300,000/month",
       "experience": "2 years",
       "qualification": "BA/BSc/HND, OND",
       "requirements": [
-        "BA/BSc/HND in Medical Sciences/Life Sciences/Marketing",
-        "OND degree holders considered with 3 years sales experience in healthcare sales/marketing",
-        "Minimum of 1-2 years field sales experience in Healthcare/Medical consumables and device sales",
-        "Proficiency in MS Office",
-        "Experience with CRM sales automation platforms"
+        "BA/BSc/HND",
+        "OND",
+        "Minimum of 1-2 years’ cognate field sales experience preferably in Healthcare/Medical consumables and device sales.",
+        "Proficiency in MS Office (basic level) and CRM sales automation platforms such as Zoho App."
       ],
       "responsibilities": [
-        "Manage existing customers",
-        "Seek new business opportunities",
-        "Develop relationships with potential customers",
-        "Implement effective territory sales/marketing strategies to grow revenue"
+        "Manage existing customers and seek new business opportunities by contacting and developing relationships with potential customers.",
+        "Develop excellent customer relationships and implement effective territory sales/marketing strategies to grow revenue in assigned territory."
       ],
       "how_to_apply": [
         "Submit your application through the employer’s online recruitment portal.",
@@ -10346,7 +10392,7 @@
       "deadline": "",
       "contact_email": "",
       "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/territory-sales-officer-healthcare-abuja-sovereign-quint-iddeas-limited-3",
+      "apply_url": "https://www.myjobmag.com/job/territory-sales-officer-healthcare-port-harcourt-sovereign-quint-iddeas-limited",
       "_source": "myjobmag"
     },
     {
@@ -10390,6 +10436,40 @@
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/laboratory-technician-2348",
       "_source": "medlocum"
+    },
+    {
+      "job_title": "Health Assistant",
+      "company": "Homa Clinic & Maternity Home",
+      "location": "Ota, Ogun, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Allied Health",
+      "salary": "N53,000 - N58,000",
+      "experience": "1 year",
+      "qualification": "OND, Professional Certificate",
+      "requirements": [
+        "Certificate or National Diploma (ND) in Community Health / Health Technology",
+        "Basic First Aid and CPR/BLS (Basic Life Support) certification is a strong advantage",
+        "Minimum of 5 months hands-on clinical experience in a hospital or clinic",
+        "Proven hands-on experience in taking vital signs, patient hygiene, and supporting medical staff during minor procedures"
+      ],
+      "responsibilities": [
+        "Provide direct basic clinical care, monitor vital signs (blood pressure, temperature, pulse), and administer prescribed medications and treatments under the supervision of qualified practitioners.",
+        "Assist doctors and nurses during clinical procedures, examinations, and minor surgeries.",
+        "Assist in delivering compassionate maternal and child care services (prenatal, intrapartum, and postnatal monitoring).",
+        "Maintain accurate, up-to-date patient records and clinical documentation.",
+        "Ensure strict adherence to infection control protocols, hygiene, bed-making, and general patient safety standards.",
+        "Respond promptly to clinical emergencies and provide basic triage support."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-11-14",
+      "deadline": "",
+      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/health-assistant-homa-clinic-maternity-home-1",
+      "_source": "myjobmag"
     },
     {
       "job_title": "Nurse",
@@ -10683,27 +10763,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://medlocumjobs.com/jobs/therapeutic-radiographer-2329",
-      "_source": "medlocum"
-    },
-    {
-      "job_title": "Endocrinology Physician",
-      "company": "African Medical Centre of Excellence (AMCE)",
-      "location": "Abuja, Nigeria",
-      "job_type": "Full-Time",
-      "job_category": "Doctor",
-      "salary": "",
-      "experience": "",
-      "qualification": "",
-      "requirements": [],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-11-13",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://medlocumjobs.com/jobs/endocrinology-physician-2328",
       "_source": "medlocum"
     },
     {
@@ -11923,42 +11982,6 @@
       "_source": "myjobmag"
     },
     {
-      "job_title": "Protection and MHPSS Project Officer",
-      "company": "Sahei Gender Development Initiative",
-      "location": "Borno, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Public Health",
-      "salary": "",
-      "experience": "5 years",
-      "qualification": "BA/BSc/HND",
-      "requirements": [
-        "BA/BSc/HND",
-        "5 years of humanitarian or development field experience in Protection, MHPSS, or case management"
-      ],
-      "responsibilities": [
-        "Plan and execute community-based protection and MHPSS activities following safeguarding and do-no-harm principles.",
-        "Facilitate psychosocial support (PSS) sessions, psycho-education, and coping strategy workshops for women, youth, and children.",
-        "Supervise Community Outreach Workers, MHPSS counsellors, and Community Support Center staff.",
-        "Monitor protection cases, assess psychological and psychosocial needs, and manage safe referrals to specialized legal, health, or GBV services.",
-        "Represent the organization in MHPSS technical working groups and protection clusters.",
-        "Collect, analyze, and submit regular field and assessment reports adhering to strict data confidentiality.",
-        "Conduct training sessions and workshops for HLP, WASH and GBV staff on protection mainstreaming, social cohesion and the importance of incorporating protection principles into their daily work.",
-        "Support the development of training materials and tools to support protection mainstreaming in the field.",
-        "Support effective community engagement and community input into program activities and design through close contact and structured activities.",
-        "Participate in community events and meetings, and lead the organization of awareness sessions and workshops.",
-        "Collaborate with program teams to identify and address potential protection risks associated with project activities."
-      ],
-      "how_to_apply": [
-        "Apply via the Apply Now button for full details."
-      ],
-      "date_posted": "2026-11-12",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/protection-and-mhpss-project-officer-sahei-gender-development-initiative",
-      "_source": "myjobmag"
-    },
-    {
       "job_title": "Gas / Kitchen Equipment Technician",
       "company": "Tastee Fried Chicken – TFC",
       "location": "Lagos, Nigeria",
@@ -13109,6 +13132,47 @@
       "_source": "medicalworldnigeria"
     },
     {
+      "job_title": "Endocrinology Physician",
+      "company": "African Medical Centre of Excellence (AMCE)",
+      "location": "Abuja, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Doctor",
+      "salary": "",
+      "experience": "post-qualification in Internal Medicine, with a significant, demonstrable focus on Endocrinology.",
+      "qualification": "bsc",
+      "requirements": [
+        "Medical Degree (MBBS or equivalent) from a recognized institution.",
+        "Fellowship or equivalent postgraduate qualification in Internal Medicine and Endocrinology from a recognized international board.",
+        "Possession of a valid medical license to practice or eligibility for licensing in Nigeria.",
+        "A minimum of 5 years of substantive experience post-qualification in Internal Medicine, focusing on Endocrinology.",
+        "Proven track record of excellence in managing a broad and complex range of endocrine and metabolic disorders in a tertiary care setting.",
+        "Demonstrable experience in the teaching, supervision, and mentorship of junior medical staff and other healthcare trainees.",
+        "Experience in clinical research is mandatory, with a strong record of peer-reviewed publications, presentations, and successful research projects being highly desirable.",
+        "Prior experience in a JCI-accredited or equivalent international healthcare environment is preferred."
+      ],
+      "responsibilities": [
+        "Provide comprehensive care for a diverse patient population, encompassing both inpatient and outpatient services, for conditions such as diabetes mellitus, thyroid disorders, pituitary and adrenal diseases, metabolic bone diseases, obesity, and lipid disorders.",
+        "Perform, interpret, and lead on the use of advanced diagnostic tests and procedures relevant to endocrinology, ensuring timely and accurate diagnosis.",
+        "Develop, implement, and rigorously monitor evidence-based, individualized treatment plans, ensuring the highest standards of clinical practice and patient safety.",
+        "Act as the primary expert consultant for colleagues across all specialties on complex endocrine and metabolic aspects of patient care, providing authoritative guidance and second opinions.",
+        "Work collaboratively as an integral member of a multi-disciplinary team, partnering with dieticians, diabetes nurse educators, surgeons, ophthalmologists, cardiologists, and other specialists to provide fully integrated, holistic patient care.",
+        "Lead or actively participate in multi-disciplinary team (MDT) meetings, facilitating discussions on complex cases to formulate consensus-driven, comprehensive management strategies.",
+        "Adhere to, promote, and contribute to the ongoing development of hospital policies, clinical guidelines, and protocols to ensure best practice.",
+        "Lead and participate in clinical audit, quality improvement initiatives, and risk management activities to continuously enhance patient safety, service delivery, and clinical effectiveness.",
+        "Ensure full compliance with all applicable national and international regulatory and accreditation standards, championing a culture of transparency and accountability.",
+        "Provide formal and informal teaching, training, supervision, and mentorship to medical officers, residents, interns, and other healthcare professionals."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-11-10",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://medicalworldnigeria.com/post/Endocrinology-Physician-at-African-Medical-Centre-of-Excellence-AMCE?pid=78712",
+      "_source": "medicalworldnigeria"
+    },
+    {
       "job_title": "Medical Consultant",
       "company": "CVM Careers",
       "location": "Warri, Delta",
@@ -14165,6 +14229,50 @@
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/988130/mental-health-and-psychosocial-support-mhpss-offic.html",
       "_source": "hotnigerianjobs"
+    },
+    {
+      "job_title": "Senior Nursing Officer",
+      "company": "Harley and Wall Healthcare and Business Consulting",
+      "location": "Lagos, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Nurse",
+      "salary": "Competitive",
+      "experience": "15",
+      "qualification": "BSc",
+      "requirements": [
+        "RN + RM",
+        "BNSc Nursing",
+        "Valid 2026 NMCN practicing license",
+        "Health Management certificate: added advantage",
+        "Post-basic in Perioperative / ICU / A&E / Paediatrics — added advantage",
+        "10-15 years post-qualification, with minimum 3 years as Ward Manager / PNO / ADNS in a private hospital",
+        "Must have managed >20 nurses before",
+        "Current BLS & ACLS",
+        "Proficient in EHR/EMR, MS office, roster planning",
+        "Strong leadership, communication, and customer service for private patients",
+        "Age: 35-45 years preferred"
+      ],
+      "responsibilities": [
+        "Lead daily nursing operations across wards, A&E, Theatre, Labour Ward, Clinics",
+        "Roster, deploy and supervise 20-30 nurses/midwives across shifts",
+        "Enforce NMCN, SAFECARE and HEFAMAA standards, infection prevention, documentation",
+        "Conduct ward rounds, audit care, handle incidents and patient complaints",
+        "Oversee support services i.e housekeeping and kitchen",
+        "Liaise with Consultants, Medical Officers, Laboratory, Pharmacy, Admin and other units for patient flow",
+        "Train, appraise, and discipline nursing staff; organize in-service training",
+        "Prepare nursing reports, stock requests, and inputs for management meetings",
+        "Be on-call for nursing emergencies"
+      ],
+      "how_to_apply": [
+        "Submit your application through the employer’s online recruitment portal.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-11-10",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/senior-nursing-officer-harley-and-wall-healthcare-and-business-consulting",
+      "_source": "myjobmag"
     },
     {
       "job_title": "Dentist",
@@ -20704,6 +20812,39 @@
       "_source": "hotnigerianjobs"
     },
     {
+      "job_title": "Director, Clinical Quality & GCP Compliance",
+      "company": "Afro-reach Research Organisation",
+      "location": "Abuja, Nigeria",
+      "job_type": "Full Time",
+      "job_category": "Healthcare Management",
+      "salary": "",
+      "experience": "7 - 10 years",
+      "qualification": "BSc",
+      "requirements": [
+        "BA/BSc/HND",
+        "MBA/MSc/MA",
+        "7 - 10 years experience"
+      ],
+      "responsibilities": [
+        "Serve as ARO's functional lead for Clinical Quality Assurance and GCP compliance.",
+        "Provide day-to-day leadership, direction, prioritization, and oversight for QA personnel and activities.",
+        "Establish and maintain effective Clinical Quality oversight across ARO programs and applicable functional areas.",
+        "Interpret and apply applicable ICH-GCP, NAFDAC, NHREC and other applicable Nigerian requirements, sponsor requirements, and ARO procedures.",
+        "Provide independent QA guidance to Clinical Operations, Regulatory Affairs, Project Management, HR/Training, Logistics, and other applicable functions while preserving functional ownership of operational activities.",
+        "Promote a proactive culture of quality, compliance, accountability, and continuous improvement.",
+        "Escalate significant, systemic, or emerging quality risks to executive leadership in a timely manner."
+      ],
+      "how_to_apply": [
+        "Apply via the Apply Now button for full details."
+      ],
+      "date_posted": "2026-11-04",
+      "deadline": "",
+      "contact_email": "Email the address shown on the original listing (email is protected on some sites).",
+      "contact_phone": "",
+      "apply_url": "https://www.myjobmag.com/job/director-clinical-quality-gcp-compliance-afro-reach-research-organisation",
+      "_source": "myjobmag"
+    },
+    {
       "job_title": "Medical Officer",
       "company": "Paelon Memorial Hospital",
       "location": "Lagos, Nigeria",
@@ -21184,43 +21325,6 @@
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/984019/assistant-geotechnical-laboratory-technician-at-pr.html",
       "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Senior Medical Officer",
-      "company": "Cypresshill Hospital",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full Time",
-      "job_category": "Doctor",
-      "salary": "₦500,000 - ₦750,000/month",
-      "experience": "4 years",
-      "qualification": "BA/BSc/HND",
-      "requirements": [
-        "BA/BSc/HND",
-        "Others",
-        "4 years of experience"
-      ],
-      "responsibilities": [
-        "Conduct thorough medical assessments and examinations of patients.",
-        "Diagnose and treat various medical conditions, injuries, and illnesses.",
-        "Develop and implement personalized treatment plans for patients.",
-        "Prescribe medications and monitor patient responses.",
-        "Perform medical procedures and surgeries as required.",
-        "Educate patients and their families about medical conditions and treatments.",
-        "Maintain accurate and up-to-date medical records for all patients.",
-        "Collaborate with multidisciplinary healthcare teams to coordinate patient care.",
-        "Stay informed about advancements in medical practices and treatments.",
-        "Adhere to medical protocols, standards, and regulations."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-11-02",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.myjobmag.com/job/senior-medical-officer-cypresshill-hospital",
-      "_source": "myjobmag"
     },
     {
       "job_title": "Medical Record Officer",
@@ -26086,6 +26190,35 @@
       "_source": "hotnigerianjobs"
     },
     {
+      "job_title": "Pharmacist (Ogun)",
+      "company": "Nett Pharmacy",
+      "location": "Magboro, Ogun, Nigeria",
+      "job_type": "Full-time",
+      "job_category": "Pharmacist",
+      "salary": "",
+      "experience": "",
+      "qualification": "Bachelor",
+      "requirements": [
+        "Bachelor's Degree in Pharmacy or Doctor of Pharmacy (Pharm.D.)",
+        "Current valid license to practice as a pharmacist in Nigeria."
+      ],
+      "responsibilities": [
+        "Dispensing and managing medication",
+        "Consulting with healthcare providers and patients to offer health services",
+        "Verifying prescriptions and answering patients' questions about drug interactions, side effects, and dosages."
+      ],
+      "how_to_apply": [
+        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-10-14",
+      "deadline": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/974952/pharmacist-magboro-at-nett-pharmacy.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
       "job_title": "Pharmacist (Ojodu)",
       "company": "Nett Pharmacy",
       "location": "Ojodu, Lagos, Nigeria",
@@ -26702,6 +26835,28 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/973957/nurse-at-aster-bloom-academy.html",
+      "_source": "hotnigerianjobs"
+    },
+    {
+      "job_title": "Nurse Tutor",
+      "company": "Nnamdi Azikiwe University Teaching Hospital (NAUTH), Nnewi",
+      "location": "Nnewi, Anambra, Nigeria",
+      "job_type": "temporary",
+      "job_category": "Nurse",
+      "salary": "Grade CONMESS 7",
+      "experience": "",
+      "qualification": "A Degree in Nursing Science in any recognized University and registration with Nursing and Midwifery Council of Nigeria (NMCN).",
+      "requirements": [],
+      "responsibilities": [],
+      "how_to_apply": [
+        "Submit your application through the employer’s online recruitment portal.",
+        "Click Apply Now for full details."
+      ],
+      "date_posted": "2026-10-13",
+      "deadline": "2026-11-24",
+      "contact_email": "",
+      "contact_phone": "",
+      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/973897/nurse-tutor-at-nnamdi-azikwe-university-teaching-h.html",
       "_source": "hotnigerianjobs"
     },
     {
@@ -30442,456 +30597,6 @@
       "contact_email": "",
       "contact_phone": "",
       "apply_url": "https://www.hotnigerianjobs.com/hotjobs/963965/medical-representatives-at-synermed-nigeria-limite.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Pharmacist / Pharmacy Lead",
-      "company": "Excel Health",
-      "location": "Nigeria",
-      "job_type": "",
-      "job_category": "Pharmacist",
-      "salary": "",
-      "experience": "2",
-      "qualification": "rn",
-      "requirements": [
-        "Licensed pharmacist with current registration to practise in Nigeria.",
-        "Minimum 2 years’ relevant post-qualification experience preferred.",
-        "Community, hospital, primary care or digital-health experience desirable.",
-        "Strong understanding of medication safety and pharmacy governance.",
-        "Good communication and patient counselling skills.",
-        "Comfortable working with digital health systems.",
-        "Commercial awareness and interest in building a growing healthcare service would be an advantage."
-      ],
-      "responsibilities": [
-        "Dispense and manage medications safely and accurately.",
-        "Review prescriptions for appropriateness, interactions, contraindications and dosing.",
-        "Provide medication counselling and adherence support.",
-        "Support chronic disease patients, particularly hypertension, diabetes and respiratory conditions.",
-        "Manage pharmacy inventory, stock levels, expiry dates and storage requirements."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-22",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/963169/pharmacist-pharmacy-lead-at-excel-health.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Training Manager – Pharmaceutical Manufacturing",
-      "company": "Jawa Group of Companies",
-      "location": "Lagos, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Healthcare Management",
-      "salary": "n,",
-      "experience": "Minimum of 3-5 years’ experience in a training or learning & development role, preferably within a pharmaceutical or regulated manufacturing environment.",
-      "qualification": "B.Sc./HND in Human Resources, Education, Social Sciences, Pharmacy, or related fields, or postgraduate studies.",
-      "requirements": [
-        "Identify training needs across departments through skills gap analysis, performance reviews, and regulatory requirements.",
-        "Design, plan, and deliver induction, GMP, safety, and role-specific training programs for staff at all levels.",
-        "Develop and maintain training curricula, materials, and schedules in line with company and regulatory standards.",
-        "Maintain accurate training records, attendance registers, and competency assessments for audit and regulatory purposes.",
-        "Evaluate training effectiveness and recommend improvements to content and delivery methods.",
-        "Support onboarding of new employees and ensure timely completion of mandatory training.",
-        "Prepare periodic training reports for management and ensure readiness for regulatory audits and inspections."
-      ],
-      "responsibilities": [
-        "Responsible for designing, coordinating, and delivering training programs that build staff competence and ensure compliance with Good Manufacturing Practices (GMP), safety standards, and regulatory requirements.",
-        "Focus on identifying training needs, developing structured learning plans, and maintaining accurate training records."
-      ],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-22",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/962956/training-manager-pharmaceutical-manufacturing-at-j.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Pharmacist",
-      "company": "Leadgate Pharmacy & Stores",
-      "location": "Jabi, Abuja, Nigeria",
-      "job_type": "",
-      "job_category": "Pharmacist",
-      "salary": "",
-      "experience": "",
-      "qualification": "ond",
-      "requirements": [
-        "Interested candidates should possess relevant qualifications."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-22",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/962823/pharmacist-at-leadgate-pharmacy-stores.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Mobile / Tele-Nurse",
-      "company": "Excel Health",
-      "location": "Nigeria",
-      "job_type": "Remote",
-      "job_category": "Nurse",
-      "salary": "n,",
-      "experience": "2",
-      "qualification": "ond",
-      "requirements": [
-        "Registered Nurse (RN)",
-        "Minimum 2 years hospital experience",
-        "Comfortable working autonomously",
-        "Community health or primary care experience is a plus",
-        "Good digital literacy"
-      ],
-      "responsibilities": [
-        "Conduct home visits (vaccinations, vitals, blood sampling, wound care)",
-        "Provide tele-nursing support and follow-ups",
-        "Health education and lifestyle counseling",
-        "Support chronic care monitoring",
-        "Accurate patient documentation",
-        "Coordinate referrals and escalation"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-22",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/963121/mobile-telenurse-at-excel-health.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Chief Nursing Officer (CNO)",
-      "company": "Excel Health",
-      "location": "Remote, Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "N200,000 - N300,000 / Month",
-      "experience": "Has leadership or supervisory experience",
-      "qualification": "ond",
-      "requirements": [],
-      "responsibilities": [
-        "Overseeing all nursing operations across telehealth and mobile care services",
-        "Managing nurse schedules, workflows, and operational coordination",
-        "Developing and implementing clinical nursing protocols and standards",
-        "Supervising care quality, patient outcomes, and service delivery excellence",
-        "Leading training, onboarding, and continuous professional development for nurses",
-        "Handling clinical escalations and ensuring safe patient-centered care",
-        "Coordinating virtual and physical nursing teams",
-        "Monitoring nurse performance and compliance documentation",
-        "Supporting recruitment and workforce planning",
-        "Reviewing incident reports and quality assurance processes",
-        "Assisting with partnership engagement for clinical operations",
-        "Supporting the implementation of remote patient monitoring systems",
-        "Participating in strategic planning and service improvement meetings"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-22",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/963085/chief-nursing-officer-cno-at-excel-health-remote.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Clinical Admin & Patient Support Assistant",
-      "company": "Excel Health",
-      "location": "Remote, Nigeria",
-      "job_type": "Part-time or Full-time (flexible)",
-      "job_category": "Other",
-      "salary": "N70,000 - N120,000 / Month",
-      "experience": "in customer service or patient-facing roles",
-      "qualification": "ond",
-      "requirements": [
-        "Strong communicators and emotionally intelligent",
-        "Calm under pressure and highly organised",
-        "Comfortable using WhatsApp, Google Sheets, and digital tools",
-        "Bonus if you have healthcare background or clinical exposure",
-        "Experience in customer service or patient-facing roles"
-      ],
-      "responsibilities": [
-        "Respond to patient inquiries via WhatsApp/platform",
-        "Handle complaints, concerns, and general service questions",
-        "Ensure patients are guided and supported at all times",
-        "Manage and moderate the patient community/forum",
-        "Share updates, health tips, and service information",
-        "Ensure a safe, supportive, and engaging environment",
-        "Coordinate home medication delivery and nurse visits",
-        "Liaise with mobile nurses and clinical team",
-        "Track service completion and patient feedback",
-        "Maintain patient records and service logs",
-        "Update trackers for appointments, payments, and follow-ups",
-        "Support scheduling between patients and clinicians",
-        "Escalate clinical concerns to nurses or doctors promptly",
-        "Ensure urgent issues are properly flagged and followed up"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-22",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/963110/clinical-admin-patient-support-assistants-hybrid-a.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Telehealth Nurse / Care Coordinator (Hybrid)",
-      "company": "ExcelHealth",
-      "location": "Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Nurse",
-      "salary": "N100,000 - N200,000 / Month (depending on experience)",
-      "experience": "2",
-      "qualification": "ond",
-      "requirements": [
-        "Registered with NMCN",
-        "At least 2 years post registration experience",
-        "Hospital or community health experience",
-        "Clear communication with patients",
-        "Comfortable using WhatsApp and digital tools",
-        "HIPPA Certified",
-        "Experience in the use of EMR/EHR",
-        "Strong proactive skills",
-        "Ability to work independently",
-        "Driving will be an added advantage"
-      ],
-      "responsibilities": [
-        "Be the first point of contact for patients",
-        "Provide triage and initial assessment",
-        "Support doctors during consultations",
-        "Manage follow-ups and patient engagement",
-        "Track chronic conditions (BP, sugar, medication adherence)"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-22",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/963069/telehealth-nurse-care-coordinator-hybrid-at-excelh.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Aesthetic Nurse",
-      "company": "Susan Chanel Beauty",
-      "location": "Lagos, Abuja, Nigeria",
-      "job_type": "",
-      "job_category": "Nurse",
-      "salary": "",
-      "experience": "",
-      "qualification": "relevant qualification",
-      "requirements": [
-        "Must have relevant experience.",
-        "Willingness to travel is a must."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-22",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "234 814 573 0386",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/962982/aesthetic-nurse-at-susan-chanel-beauty-2-openings.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Nurse",
-      "company": "Leadgate Pharmacy & Stores",
-      "location": "Jabi, Abuja, Nigeria",
-      "job_type": "",
-      "job_category": "Nurse",
-      "salary": "",
-      "experience": "",
-      "qualification": "ond",
-      "requirements": [
-        "Relevant qualifications"
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-22",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/962825/nurse-at-leadgate-pharmacy-stores.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Client Liaison Officer (CLO)",
-      "company": "Nordica Fertility Centre",
-      "location": "Lagos, Nigeria",
-      "job_type": "Part-time",
-      "job_category": "Other",
-      "salary": "N230,000 Gross Monthly",
-      "experience": "Minimum of 2 years' experience in customer service, front desk, hospitality, or healthcare",
-      "qualification": "Bachelor's Degree or HND in Social Sciences, Humanities, Business Administration, Health Sciences, Mass Communication, or a related discipline",
-      "requirements": [
-        "Excellent communication and interpersonal skills.",
-        "Strong customer service orientation and telephone etiquette.",
-        "Proficiency in Microsoft Office applications.",
-        "Strong organizational and multitasking abilities.",
-        "Ability to work effectively in a fast-paced healthcare environment."
-      ],
-      "responsibilities": [
-        "Welcome and attend to patients and visitors professionally.",
-        "Handle walk-in, telephone, email, and online enquiries.",
-        "Register patients and maintain accurate records.",
-        "Schedule, confirm, and follow up on appointments.",
-        "Coordinate patient flow and support the discharge process.",
-        "Liaise with clinical and administrative teams to ensure seamless patient care.",
-        "Resolve or escalate patient concerns appropriately.",
-        "Maintain confidentiality and uphold excellent customer service standards."
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-22",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/963276/client-liaison-officer-clo-at-nordica-fertility-ce.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Volunteer - Health Education Ambassador",
-      "company": "ExcelHealth",
-      "location": "Nigeria",
-      "job_type": "Volunteer",
-      "job_category": "Public Health",
-      "salary": "n,",
-      "experience": "",
-      "qualification": "Ambassador at ExcelHealth",
-      "requirements": [
-        "Confidentiality awareness",
-        "Respect for patient privacy",
-        "Basic safeguarding awareness",
-        "Professional communication",
-        "Reliability and accountability"
-      ],
-      "responsibilities": [
-        "Support outreach and awareness",
-        "Assist in onboarding users",
-        "Promote preventive health education",
-        "Support events and campaigns"
-      ],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-22",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/963158/volunteer-health-education-ambassador-at-excelheal.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Volunteer - Patient Onboarding Assistant",
-      "company": "ExcelHealth",
-      "location": "Nigeria",
-      "job_type": "Volunteer",
-      "job_category": "Other",
-      "salary": "n,",
-      "experience": "",
-      "qualification": "Support events and campaigns",
-      "requirements": [
-        "Confidentiality awareness",
-        "Respect for patient privacy",
-        "Basic safeguarding awareness",
-        "Professional communication",
-        "Reliability and accountability"
-      ],
-      "responsibilities": [
-        "Support outreach and awareness",
-        "Assist in onboarding users",
-        "Promote preventive health education",
-        "Support events and campaigns"
-      ],
-      "how_to_apply": [
-        "Submit your application through the employer’s online recruitment portal.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-22",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/963156/volunteer-patient-onboarding-assistant-at-excelhea.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Clinical Lead (Medical Doctor)",
-      "company": "ExcelHealth",
-      "location": "Nigeria",
-      "job_type": "Full-time",
-      "job_category": "Doctor",
-      "salary": "(per consultation or retainer model) (80% pay per consultation)",
-      "experience": "",
-      "qualification": "MDCN",
-      "requirements": [],
-      "responsibilities": [
-        "Leading all virtual clinical consultations",
-        "Ensuring safe and high-quality patient care",
-        "Supervising clinical protocols and nurse-led triage",
-        "Supporting escalation and complex cases",
-        "Ensuring full MDCN compliance"
-      ],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-22",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/963053/clinical-lead-medical-doctor-at-excelhealth.html",
-      "_source": "hotnigerianjobs"
-    },
-    {
-      "job_title": "Dental Therapist",
-      "company": "EC Body Essence and Spa",
-      "location": "Alimosho, Lagos, Nigeria",
-      "job_type": "",
-      "job_category": "Dentist",
-      "salary": "",
-      "experience": "",
-      "qualification": "relevant qualifications",
-      "requirements": [
-        "Candidates should possess relevant qualifications with experience."
-      ],
-      "responsibilities": [],
-      "how_to_apply": [
-        "Email the address shown on the original listing (email is protected on some sites). Subject: Use the job title as the subject.",
-        "Click Apply Now for full details."
-      ],
-      "date_posted": "2026-09-22",
-      "deadline": "",
-      "contact_email": "",
-      "contact_phone": "",
-      "apply_url": "https://www.hotnigerianjobs.com/hotjobs/962890/dental-therapist-at-ec-body-essence-and-spa.html",
       "_source": "hotnigerianjobs"
     }
   ]
