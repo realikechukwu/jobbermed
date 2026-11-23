@@ -4,6 +4,7 @@ import { PublicPageAnalytics } from "./components/PublicPageAnalytics";
 import { ScrollToTop } from "./components/ScrollToTop";
 import { RequireAuth, RequireRole } from "./features/auth/guards";
 import { ALL_CATEGORY_SLUG, LANDING_CATEGORIES } from "./features/aggregator-jobs/landing";
+import { NewsletterPrompt } from "./features/newsletter/NewsletterPrompt";
 import { RouteShell } from "./layouts/RouteShell";
 import { RouteMeta } from "./lib/seo";
 import { AdminDashboardPage } from "./pages/AdminDashboardPage";
@@ -178,6 +179,7 @@ export function App() {
 
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
+    <NewsletterPrompt />
     </>
   );
 }

@@ -1,7 +1,7 @@
 import { captureEvent, getAnalyticsVisitorId } from "../../lib/analytics";
 
-export type NewsletterPlacement = "home" | "subscribe";
-export type NewsletterEntryPoint = "homepage_inline" | "mobile_drawer" | "footer" | "direct";
+export type NewsletterPlacement = "home" | "subscribe" | "prompt";
+export type NewsletterEntryPoint = "homepage_inline" | "mobile_drawer" | "footer" | "direct" | "timed_prompt";
 
 type NewsletterEvent =
   | "newsletter form viewed"
@@ -49,12 +49,12 @@ export function captureNewsletterConfirmation() {
 
     const { distinctId, placement, entryPoint, at } = JSON.parse(pending);
     const elapsed = typeof at === "number" ? Date.now() - at : Infinity;
-    if (
-      typeof distinctId === "string" &&
-      (placement === "home" || placement === "subscribe") &&
-      elapsed >= 0 && elapsed < confirmationWindow
-    ) {
-      const source = placement === "home" ? "homepage_inline" : subscribeEntryPoint(entryPoint);
+    const source =
+      placement === "home" ? "homepage_inline"
+      : placement === "prompt" ? "timed_prompt"
+      : placement === "subscribe" ? subscribeEntryPoint(entryPoint)
+      : undefined;
+    if (typeof distinctId === "string" && source && elapsed >= 0 && elapsed < confirmationWindow) {
       captureNewsletterEvent("newsletter subscription confirmed", placement, source, distinctId);
     }
   } catch {

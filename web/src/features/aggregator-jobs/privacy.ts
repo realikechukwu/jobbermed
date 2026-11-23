@@ -10,7 +10,7 @@ export const PRIVACY_SECTIONS: Array<{ title: string; text: string }> = [
   },
   {
     title: "Newsletter signup and website analytics",
-    text: "Brevo collects your email address and sends a confirmation link before adding you to the weekly newsletter. We use PostHog to measure visits to public pages, where visitors came from, newsletter signups, and how visitors view and apply for jobs. Events use a random visit identifier and include details such as campaign tags or the job category and region. We exclude contact details, search terms and application contents. Your browser can store the newsletter signup identifier to link your confirmation back to the signup. We respect Global Privacy Control and Do Not Track signals for this measurement.",
+    text: "Brevo collects your email address and sends a confirmation link before adding you to the weekly newsletter. We use PostHog to measure visits to public pages, where visitors came from, newsletter signups, and how visitors view and apply for jobs. Events use a random visit identifier and include details such as campaign tags or the job category and region. We exclude contact details, search terms and application contents. Your browser can store the newsletter signup identifier to link your confirmation back to the signup. It also remembers when you close the newsletter signup prompt, so we don’t show it again for two weeks, and when you subscribe, so we stop showing it. We respect Global Privacy Control and Do Not Track signals for this measurement.",
   },
   {
     title: "Saved jobs on your device and CV Match",
