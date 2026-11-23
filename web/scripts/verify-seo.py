@@ -49,7 +49,7 @@ class Page(HTMLParser):
 
 def verify():
     locations = [element.text for element in ET.parse(DIST / "sitemap.xml").findall("./{*}url/{*}loc")]
-    assert ORIGIN + "/" in locations and ORIGIN + "/blog/" in locations
+    assert {ORIGIN + path for path in ("/", "/blog/", "/subscribe/")}.issubset(locations)
     assert len(locations) == len({url.casefold() for url in locations}), "case-insensitive sitemap collision"
     robots = RobotFileParser()
     robots.parse((DIST / "robots.txt").read_text(encoding="utf-8").splitlines())
@@ -76,7 +76,7 @@ def verify():
                 assert date.fromisoformat(posting["validThrough"]) >= date.today(), url
             job_markup_count += 1
 
-    for file in (DIST / "signin/index.html", DIST / "signup/index.html", DIST / "404.html"):
+    for file in (DIST / "signin/index.html", DIST / "signup/index.html", DIST / "subscribe/confirmed/index.html", DIST / "404.html"):
         page = Page(file)
         assert "noindex" in page.robots, file
         assert ORIGIN + "/" + str(file.parent.relative_to(DIST)) + "/" not in locations, file

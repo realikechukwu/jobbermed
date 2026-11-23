@@ -4,7 +4,7 @@
 import json
 import os
 import sys
-from datetime import date, datetime
+from datetime import date, datetime, timezone
 from html import escape
 from pathlib import Path
 
@@ -12,6 +12,9 @@ import requests
 from dotenv import load_dotenv
 
 from config import EMAIL_CONFIG, MASTER_JOBS_PATH
+
+BREVO_API_URL = "https://api.brevo.com/v3"
+BREVO_TIMEOUT = 30
 
 
 def is_expired(deadline_str: str) -> bool:
@@ -242,6 +245,44 @@ def build_email_html(
     return html_content
 
 
+def weekly_campaign(headers: dict, name: str) -> dict | None:
+    """Find an existing campaign so a rerun can reuse its draft or skip a send."""
+    offset = 0
+    while True:
+        response = requests.get(
+            f"{BREVO_API_URL}/emailCampaigns",
+            params={"type": "classic", "excludeHtmlContent": "true", "limit": 100, "offset": offset},
+            headers=headers,
+            timeout=BREVO_TIMEOUT,
+        )
+        response.raise_for_status()
+        campaigns = response.json().get("campaigns", [])
+        for campaign in campaigns:
+            if campaign["name"] == name:
+                return campaign
+        if len(campaigns) < 100:
+            return None
+        offset += len(campaigns)
+
+
+def verify_weekly_list() -> None:
+    expected_id = os.getenv("BREVO_EXPECTED_LIST_ID")
+    if not expected_id:
+        return
+    if os.getenv("BREVO_LIST_ID") != expected_id or not os.getenv("BREVO_API_KEY"):
+        raise ValueError("Brevo credentials must target the JobberMed weekly subscriber list.")
+
+    response = requests.get(
+        f"{BREVO_API_URL}/contacts/lists/{expected_id}",
+        headers={"api-key": os.environ["BREVO_API_KEY"]},
+        timeout=BREVO_TIMEOUT,
+    )
+    response.raise_for_status()
+    if response.json().get("name") != "JobberMed Subscribers":
+        raise ValueError("Brevo did not return the JobberMed Subscribers list.")
+    print("Verified the JobberMed Subscribers list in Brevo.")
+
+
 def send_campaign(html_content: str, job_count: int) -> bool:
     """Send email campaign via Brevo API."""
 
@@ -259,11 +300,11 @@ def send_campaign(html_content: str, job_count: int) -> bool:
         return False
 
     # Generate subject with date
-    today = datetime.now()
+    today = datetime.now(timezone.utc)
     subject = f"{job_count} New Medical Jobs This Week — {today.strftime('%d %b %Y')}"
 
     # Create campaign
-    campaign_url = "https://api.brevo.com/v3/emailCampaigns"
+    campaign_url = f"{BREVO_API_URL}/emailCampaigns"
 
     headers = {
         "accept": "application/json",
@@ -272,7 +313,7 @@ def send_campaign(html_content: str, job_count: int) -> bool:
     }
 
     campaign_data = {
-        "name": f"Weekly Digest - {today.strftime('%Y-%m-%d')}",
+        "name": f"JobberMed Weekly Digest - {today.strftime('%G-W%V')}",
         "subject": subject,
         "sender": {
             "name": sender_name,
@@ -286,28 +327,32 @@ def send_campaign(html_content: str, job_count: int) -> bool:
     }
 
     try:
-        print("📧 Creating email campaign...")
-        response = requests.post(campaign_url, json=campaign_data, headers=headers)
+        campaign = weekly_campaign(headers, campaign_data["name"])
+        if campaign and campaign["status"] in {"sent", "queued", "in-Process"}:
+            print(f"Campaign {campaign['id']} already {campaign['status']} for this week.")
+            return True
+        if campaign:
+            if campaign["status"] != "draft" or campaign.get("recipients", {}).get("lists") != [list_id]:
+                print(f"Campaign {campaign['id']} needs review before it can be sent.")
+                return False
+            campaign_id = campaign["id"]
+            print(f"Reusing weekly campaign draft {campaign_id}.")
+        else:
+            response = requests.post(campaign_url, json=campaign_data, headers=headers, timeout=BREVO_TIMEOUT)
+            response.raise_for_status()
+            campaign_id = response.json()["id"]
+            print(f"Campaign created: ID {campaign_id}.")
 
-        if response.status_code == 201:
-            campaign_id = response.json().get("id")
-            print(f"✅ Campaign created: ID {campaign_id}")
-
-            send_url = f"https://api.brevo.com/v3/emailCampaigns/{campaign_id}/sendNow"
-            send_response = requests.post(send_url, headers=headers)
-
-            if send_response.status_code == 204:
-                print("✅ Campaign sent successfully!")
-                return True
-            print(f"❌ Failed to send: {send_response.status_code}")
-            print(send_response.text)
-            return False
-
-        print(f"❌ Failed to create campaign: {response.status_code}")
-        print(response.text)
+        send_url = f"{campaign_url}/{campaign_id}/sendNow"
+        send_response = requests.post(send_url, headers=headers, timeout=BREVO_TIMEOUT)
+        send_response.raise_for_status()
+        if send_response.status_code == 204:
+            print(f"Brevo accepted campaign {campaign_id} for sending.")
+            return True
+        print(f"Unexpected Brevo send response: {send_response.status_code}.")
         return False
 
-    except requests.RequestException as e:
+    except (requests.RequestException, ValueError, KeyError) as e:
         print(f"❌ API request failed: {e}")
         return False
 
@@ -322,6 +367,11 @@ def main() -> None:
     if not EMAIL_CONFIG.get("weekly_newsletter_enabled", False):
         print("\n⏸️  Weekly newsletter is switched off in config.py (EMAIL_CONFIG). Nothing sent.")
         return
+
+    try:
+        verify_weekly_list()
+    except (requests.RequestException, ValueError) as error:
+        sys.exit(f"Unable to verify the weekly audience: {error}")
 
     jobs_file = MASTER_JOBS_PATH
     jobs = load_jobs(jobs_file, limit=20)

@@ -27,6 +27,7 @@ import { ResetPasswordPage } from "./pages/ResetPasswordPage";
 import { PersonalizationPage } from "./pages/PersonalizationPage";
 import { SigninPage } from "./pages/SigninPage";
 import { SignupPage } from "./pages/SignupPage";
+import { NewsletterConfirmedPage, SubscribePage } from "./pages/SubscribePage";
 
 function AdminOnlyFallback() {
   return (
@@ -86,6 +87,8 @@ export function App() {
       <Route path="/blog" element={<BlogIndexPage />} />
       <Route path="/blog/:articleSlug" element={<BlogArticlePage />} />
       <Route path="/privacy" element={<PrivacyPage />} />
+      <Route path="/subscribe" element={<SubscribePage />} />
+      <Route path="/subscribe/confirmed" element={<NewsletterConfirmedPage />} />
       <Route path="/landing" element={<LandingPage />} />
       <Route path="/forgot-password" element={<ForgotPasswordPage />} />
       <Route path="/reset-password" element={<ResetPasswordPage />} />

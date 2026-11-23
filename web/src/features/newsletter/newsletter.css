@@ -1,0 +1,45 @@
+.newsletter-signup {
+  margin-top: 32px;
+  padding: 24px 0 0;
+  border-top: 1px solid var(--line);
+}
+
+.newsletter-signup h2 {
+  margin: 0 0 12px;
+  font-size: 1.25rem;
+  color: var(--ink);
+}
+
+.newsletter-signup p {
+  margin: 12px 0 0;
+}
+
+.newsletter-signup-form {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 12px;
+  max-width: 460px;
+}
+
+.newsletter-signup-form .shell-button {
+  margin: 0;
+  min-height: 48px;
+}
+
+.newsletter-privacy {
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+@media (pointer: coarse) {
+  .newsletter-signup-form .shell-button {
+    min-height: 52px;
+  }
+}
+
+@media (max-width: 420px) {
+  .newsletter-signup-form {
+    grid-template-columns: 1fr;
+  }
+}

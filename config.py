@@ -64,7 +64,7 @@ EXTRACTION_CONFIG = {
 EMAIL_CONFIG = {
     # Master switch for the weekly newsletter campaign (newsletter.py).
     # Set to True to resume sending.
-    "weekly_newsletter_enabled": False,
+    "weekly_newsletter_enabled": True,
     # Master switch for the personalized digest sent to opted-in users
     # (scripts/personalized_digest.py). Set to True to resume sending.
     "personalized_digest_enabled": False,
