@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import { captureSubscribeLinkClick } from "../features/newsletter/analytics";
 import { useBodyScrollLock } from "../hooks/useBodyScrollLock";
 import { handleDialogBackdropClickFallback } from "../lib/form-accessibility";
 import { isSiteNavLinkActive, type SiteNavLink } from "../navigation/site-nav";
@@ -44,7 +45,10 @@ function DrawerLink({
   }
 
   return (
-    <Link className={fullClassName} to={link.to} onClick={onClose}>
+    <Link className={fullClassName} to={link.to} onClick={() => {
+      if (link.id === "subscribe-mobile") captureSubscribeLinkClick("mobile_drawer");
+      onClose();
+    }}>
       {link.label}
     </Link>
   );

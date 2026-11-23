@@ -1,4 +1,4 @@
-import { useEffect, useMemo } from "react";
+import { useEffect, useMemo, type MouseEvent } from "react";
 import { Link, useParams } from "react-router-dom";
 import { SOURCE_LABELS } from "../features/aggregator-jobs/constants";
 import { buildCvMatchUrl } from "../features/aggregator-jobs/cv-match";
@@ -6,6 +6,7 @@ import { useAggregatorJobsData } from "../features/aggregator-jobs/hooks/useAggr
 import { useSavedJobsLocal } from "../features/aggregator-jobs/hooks/useSavedJobsLocal";
 import { indexSearchListings, listingMeta, sourceApplyUrl } from "../features/aggregator-jobs/search-listings";
 import { formatDate, formatJobType, formatSalary } from "../features/aggregator-jobs/utils";
+import { captureJobEvent, jobAnalyticsProperties, useJobView } from "../features/jobs/analytics";
 import { RouteShell } from "../layouts/RouteShell";
 import { applyPageMeta } from "../lib/seo";
 import { NotFoundPage } from "./NotFoundPage";
@@ -15,6 +16,8 @@ export function AggregatorJobDetailPage() {
   const { jobs, isLoading, error } = useAggregatorJobsData(`${import.meta.env.BASE_URL}data/master_jobs.json`);
   const { isSaved, toggleSavedJob } = useSavedJobsLocal();
   const job = useMemo(() => indexSearchListings(jobs).bySlug.get(jobSlug ?? ""), [jobs, jobSlug]);
+  const analyticsJob = job && !isLoading && !error ? jobAnalyticsProperties(job) : undefined;
+  useJobView(analyticsJob, "listing_page");
 
   useEffect(() => {
     if (isLoading || error) return;
@@ -43,6 +46,12 @@ export function AggregatorJobDetailPage() {
     ["Salary", formatSalary(job.salary)], ["Posted", posted], ["Closes", deadline],
   ].filter(([, value]) => value);
 
+  function handleApplyClick(event: MouseEvent<HTMLAnchorElement>) {
+    if (analyticsJob && (event.button === 0 || event.button === 1)) {
+      captureJobEvent("job apply clicked", analyticsJob, "listing_page");
+    }
+  }
+
   return (
     <RouteShell title={heading}>
       <main className="native-job-detail-page">
@@ -58,7 +67,7 @@ export function AggregatorJobDetailPage() {
             </section>
           ))}
           <div className="external-job-actions">
-            {applyUrl && <a className="shell-button" href={applyUrl}>{source ? `Apply on ${source}` : "Apply on the original site"}</a>}
+            {applyUrl && <a className="shell-button" href={applyUrl} onClick={handleApplyClick} onAuxClick={handleApplyClick}>{source ? `Apply on ${source}` : "Apply on the original site"}</a>}
             <button className="shell-button" type="button" aria-pressed={saved} onClick={() => toggleSavedJob(job)}>{saved ? "Saved" : "Save job"}</button>
             {applyUrl && <a href={buildCvMatchUrl(job)}>Check my CV against this job</a>}
           </div>

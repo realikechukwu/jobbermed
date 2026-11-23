@@ -746,6 +746,7 @@ def main() -> int:
                 "category and location settings."
             ),
             include_signup_cta=False,
+            campaign=campaign_type,
         )
 
         try:

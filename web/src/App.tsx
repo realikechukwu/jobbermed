@@ -1,5 +1,6 @@
 import { Navigate, Route, Routes, useParams } from "react-router-dom";
 import { CardPrimitive } from "./components/CardPrimitive";
+import { PublicPageAnalytics } from "./components/PublicPageAnalytics";
 import { ScrollToTop } from "./components/ScrollToTop";
 import { RequireAuth, RequireRole } from "./features/auth/guards";
 import { ALL_CATEGORY_SLUG, LANDING_CATEGORIES } from "./features/aggregator-jobs/landing";
@@ -67,6 +68,7 @@ export function App() {
     <>
     <ScrollToTop />
     <RouteMeta />
+    <PublicPageAnalytics />
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/jobs/:jobSlug" element={<AggregatorJobDetailPage />} />

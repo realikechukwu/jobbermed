@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useSession } from "../features/auth/session-context";
+import { captureSubscribeLinkClick } from "../features/newsletter/analytics";
 import { getSiteNavLinks, isSiteNavLinkActive, type SiteNavState } from "../navigation/site-nav";
 
 export function FooterShell({ children }: { children?: ReactNode }) {
@@ -30,7 +31,12 @@ export function FooterShell({ children }: { children?: ReactNode }) {
           const activeClass = isSiteNavLinkActive(link, location.pathname, location.search) ? " active" : "";
 
           return (
-            <Link key={link.id} className={`footer-link${activeClass}`} to={link.to}>
+            <Link
+              key={link.id}
+              className={`footer-link${activeClass}`}
+              to={link.to}
+              onClick={link.id === "subscribe" ? () => captureSubscribeLinkClick("footer") : undefined}
+            >
               {link.label}
             </Link>
           );

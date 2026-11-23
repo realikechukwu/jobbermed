@@ -1,5 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link, useParams } from "react-router-dom";
+import { jobAnalyticsProperties, useJobView } from "../features/jobs/analytics";
+import { nativeJobToUnified } from "../features/jobs/unify";
 import { fetchPublishedNativeJobById } from "../features/native-jobs/api";
 import { parseNativeJobAdvertMeta } from "../features/native-jobs/advert-meta";
 import { NativeJobApplyForm } from "../features/native-jobs/components/NativeJobApplyForm";
@@ -49,6 +51,10 @@ export function NativeJobDetailPage() {
   const [job, setJob] = useState<NativeJob | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const analyticsJob = useMemo(() => (
+    job && job.id === jobId && !isLoading && !error ? jobAnalyticsProperties(nativeJobToUnified(job), "direct") : undefined
+  ), [error, isLoading, job, jobId]);
+  useJobView(analyticsJob, "direct_apply");
 
   useEffect(() => {
     let isSubscribed = true;
@@ -175,7 +181,7 @@ export function NativeJobDetailPage() {
               <p className="meta">
                 Submit your details and cover letter. The hiring team will review your application on JobberMed.
               </p>
-              <NativeJobApplyForm jobId={job.id} jobTitle={job.title} />
+              <NativeJobApplyForm jobId={job.id} jobTitle={job.title} analyticsJob={analyticsJob} />
             </article>
           </div>
         ) : null}

@@ -7,7 +7,7 @@ import sys
 from datetime import date, datetime, timezone
 from html import escape
 from pathlib import Path
-from urllib.parse import urljoin
+from urllib.parse import parse_qsl, urlencode, urljoin, urlsplit
 
 import requests
 from dotenv import load_dotenv
@@ -65,6 +65,19 @@ def get_email_cta_url() -> str:
     return value or "/signup"
 
 
+def newsletter_visit_url(url: str, campaign: str) -> str:
+    try:
+        parts = urlsplit(url)
+    except ValueError:
+        return url
+    if parts.scheme not in ("http", "https") or parts.hostname != "jobbermed.com":
+        return url
+
+    tags = {"utm_source": "newsletter", "utm_medium": "email", "utm_campaign": campaign}
+    query = [(key, value) for key, value in parse_qsl(parts.query, keep_blank_values=True) if key not in tags]
+    return parts._replace(query=urlencode([*query, *tags.items()])).geturl()
+
+
 def build_email_html(
     jobs: list,
     *,
@@ -72,16 +85,18 @@ def build_email_html(
     subheadline_text: str = "Your weekly roundup of open roles.",
     intro_text: str | None = None,
     include_signup_cta: bool = True,
+    campaign: str = "weekly_digest",
 ) -> str:
     """Build the JobberMed digest with inline styles for email clients."""
     invalid_salary_values = {"", "n", "n,", "na", "n/a", "none", "null", "-", "--", "nil"}
     job_rows = []
+    home_url = escape(newsletter_visit_url("https://jobbermed.com/", campaign), quote=True)
 
     for job in jobs:
         title = escape(str(job.get("job_title") or "Untitled Role"))
         company = str(job.get("company") or "Company not listed").strip()
         location = str(job.get("location") or "").strip()
-        apply_url = escape(str(job.get("apply_url") or "https://jobbermed.com/"), quote=True)
+        apply_url = escape(newsletter_visit_url(str(job.get("apply_url") or "https://jobbermed.com/"), campaign), quote=True)
         employer = escape(" · ".join(filter(None, (company, location))))
 
         salary = str(job.get("salary") or "").strip()
@@ -130,7 +145,7 @@ def build_email_html(
 
     signup_cta_html = ""
     if include_signup_cta:
-        cta_url = escape(urljoin("https://jobbermed.com/", get_email_cta_url()), quote=True)
+        cta_url = escape(newsletter_visit_url(urljoin("https://jobbermed.com/", get_email_cta_url()), campaign), quote=True)
         signup_cta_html = f"""
                 <tr>
                   <td class="gutter" style="padding:0 32px 24px;color:#555561;font-size:14px;line-height:1.5;">
@@ -167,7 +182,7 @@ def build_email_html(
           <tr>
             <td class="gutter" bgcolor="#0b0640"
               style="padding:26px 32px 32px;background-color:#0b0640;background-image:linear-gradient(100deg,#0b0640 5%,rgba(14,6,90,.93) 60%,rgba(14,6,90,.72) 100%),url('https://jobbermed.com/images/banner-hero.jpg');background-size:cover;background-position:center 30%;">
-              <a href="https://jobbermed.com/" style="color:#ffffff;font-size:21px;line-height:1.2;letter-spacing:-.45px;font-weight:800;text-decoration:none;">Jobber<span style="color:#0cc0df;">Med</span></a>
+              <a href="{home_url}" style="color:#ffffff;font-size:21px;line-height:1.2;letter-spacing:-.45px;font-weight:800;text-decoration:none;">Jobber<span style="color:#0cc0df;">Med</span></a>
               <h1 class="hero-title" style="margin:24px 0 10px;color:#ffffff;font-size:38px;line-height:1.13;letter-spacing:-1px;font-weight:750;">
                 {escape(headline_text)}
               </h1>
@@ -186,7 +201,7 @@ def build_email_html(
               <table role="presentation" cellpadding="0" cellspacing="0">
                 <tr>
                   <td bgcolor="#1800ad" style="border-radius:8px;background-color:#1800ad;mso-padding-alt:12px 18px;">
-                    <a href="https://jobbermed.com/" style="display:inline-block;padding:12px 18px;color:#ffffff;font-size:15px;line-height:1.35;font-weight:700;text-decoration:none;mso-padding-alt:0;">Browse all jobs &rarr;</a>
+                    <a href="{home_url}" style="display:inline-block;padding:12px 18px;color:#ffffff;font-size:15px;line-height:1.35;font-weight:700;text-decoration:none;mso-padding-alt:0;">Browse all jobs &rarr;</a>
                   </td>
                 </tr>
               </table>
@@ -199,7 +214,7 @@ def build_email_html(
               <p style="margin:0;font-size:13px;line-height:1.5;">
                 <a href="{{{{unsubscribe}}}}" style="color:#72e4f7;text-decoration:underline;">Unsubscribe</a>
                 <span style="color:#a5a7b7;">&nbsp;·&nbsp;</span>
-                <a href="https://jobbermed.com/" style="color:#72e4f7;text-decoration:underline;">Visit JobberMed</a>
+                <a href="{home_url}" style="color:#72e4f7;text-decoration:underline;">Visit JobberMed</a>
               </p>
             </td>
           </tr>

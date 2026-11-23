@@ -1,5 +1,6 @@
 import type { MouseEvent } from "react";
 import { Link } from "react-router-dom";
+import { captureJobEvent, jobAnalyticsProperties } from "../../jobs/analytics";
 import { isDirectJob, type UnifiedJob } from "../../jobs/unify";
 import { SOURCE_LABELS } from "../constants";
 import { formatDate, formatJobType, formatSalary, hasListedSalary, safeText } from "../utils";
@@ -75,6 +76,13 @@ export function AggregatorJobCard({ job, listingPath, isSaved, onToggleSave, onO
     onOpenDetail(job);
   }
 
+  function handleApplyClick(event: MouseEvent<HTMLAnchorElement>) {
+    event.stopPropagation();
+    if (event.button === 0 || event.button === 1) {
+      captureJobEvent("job apply clicked", jobAnalyticsProperties(job, job.origin), "job_feed");
+    }
+  }
+
   const initials =
     (company || job.job_title || "J")
       .replace(/[^A-Za-z0-9 ]/g, " ")
@@ -132,7 +140,8 @@ export function AggregatorJobCard({ job, listingPath, isSaved, onToggleSave, onO
             className="apply-btn"
             to={directDetailPath}
             aria-label={`Apply: ${describedJob}`}
-            onClick={(event) => event.stopPropagation()}
+            onClick={handleApplyClick}
+            onAuxClick={handleApplyClick}
           >
             Apply
           </Link>
@@ -143,7 +152,8 @@ export function AggregatorJobCard({ job, listingPath, isSaved, onToggleSave, onO
             target="_blank"
             rel="noopener noreferrer"
             aria-label={`Apply: ${describedJob}${sourceLabel ? `, on ${sourceLabel}` : ""} (opens in a new tab)`}
-            onClick={(event) => event.stopPropagation()}
+            onClick={handleApplyClick}
+            onAuxClick={handleApplyClick}
           >
             Apply
           </a>

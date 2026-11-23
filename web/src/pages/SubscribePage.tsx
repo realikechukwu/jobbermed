@@ -1,14 +1,15 @@
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import { NewsletterForm } from "../features/newsletter/NewsletterForm";
-import { captureNewsletterConfirmation } from "../features/newsletter/analytics";
+import { captureNewsletterConfirmation, subscribeEntryPoint } from "../features/newsletter/analytics";
 import { RouteShell } from "../layouts/RouteShell";
 
 export function SubscribePage() {
+  const [params] = useSearchParams();
   return (
     <RouteShell title="Subscribe to JobberMed" subtitle="Get healthcare vacancies in your inbox each week.">
       <main>
-        <NewsletterForm placement="subscribe" />
+        <NewsletterForm placement="subscribe" entryPoint={subscribeEntryPoint(params.get("from"))} />
       </main>
     </RouteShell>
   );

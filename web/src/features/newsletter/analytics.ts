@@ -1,4 +1,7 @@
+import { captureEvent, getAnalyticsVisitorId } from "../../lib/analytics";
+
 export type NewsletterPlacement = "home" | "subscribe";
+export type NewsletterEntryPoint = "homepage_inline" | "mobile_drawer" | "footer" | "direct";
 
 type NewsletterEvent =
   | "newsletter form viewed"
@@ -7,48 +10,32 @@ type NewsletterEvent =
   | "newsletter signup failed"
   | "newsletter subscription confirmed";
 
-const projectToken = import.meta.env.VITE_POSTHOG_PROJECT_TOKEN?.trim();
-const ingestHost = import.meta.env.VITE_POSTHOG_HOST?.trim();
 const pendingKey = "jobbermed_newsletter_confirmation";
 const confirmationWindow = 7 * 24 * 60 * 60 * 1000;
-let visitorId: string | undefined;
 
-function analyticsEnabled() {
-  const privacy = navigator as Navigator & { globalPrivacyControl?: boolean };
-  return Boolean(projectToken && ingestHost && typeof globalThis.crypto?.randomUUID === "function" &&
-    privacy.doNotTrack !== "1" && !privacy.globalPrivacyControl);
+export function subscribeEntryPoint(value: unknown): NewsletterEntryPoint {
+  return value === "mobile_drawer" || value === "footer" ? value : "direct";
 }
 
-export function captureNewsletterEvent(event: NewsletterEvent, placement: NewsletterPlacement, distinctId?: string) {
-  if (!analyticsEnabled()) return;
-  visitorId ??= crypto.randomUUID();
-
-  void fetch(`${ingestHost?.replace(/\/$/, "")}/i/v0/e/`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    credentials: "omit",
-    referrerPolicy: "no-referrer",
-    keepalive: true,
-    body: JSON.stringify({
-      api_key: projectToken,
-      event,
-      distinct_id: distinctId ?? visitorId,
-      timestamp: new Date().toISOString(),
-      properties: {
-        placement,
-        environment: window.location.hostname === "jobbermed.com" ? "production" : "development",
-        $process_person_profile: false,
-        $geoip_disable: true,
-      },
-    }),
-  }).catch(() => undefined);
+export function captureSubscribeLinkClick(entryPoint: "mobile_drawer" | "footer") {
+  captureEvent("newsletter subscribe link clicked", { placement: "subscribe", entry_point: entryPoint });
 }
 
-export function rememberNewsletterSignup(placement: NewsletterPlacement) {
-  if (!analyticsEnabled() || !visitorId) return;
+export function captureNewsletterEvent(
+  event: NewsletterEvent,
+  placement: NewsletterPlacement,
+  entryPoint: NewsletterEntryPoint,
+  distinctId?: string,
+) {
+  captureEvent(event, { placement, entry_point: entryPoint }, distinctId);
+}
+
+export function rememberNewsletterSignup(placement: NewsletterPlacement, entryPoint: NewsletterEntryPoint) {
+  const distinctId = getAnalyticsVisitorId();
+  if (!distinctId) return;
 
   try {
-    localStorage.setItem(pendingKey, JSON.stringify({ distinctId: visitorId, placement, at: Date.now() }));
+    localStorage.setItem(pendingKey, JSON.stringify({ distinctId, placement, entryPoint, at: Date.now() }));
   } catch {
     // Signup still works when browser storage is unavailable.
   }
@@ -60,14 +47,15 @@ export function captureNewsletterConfirmation() {
     if (!pending) return;
     localStorage.removeItem(pendingKey);
 
-    const { distinctId, placement, at } = JSON.parse(pending);
+    const { distinctId, placement, entryPoint, at } = JSON.parse(pending);
     const elapsed = typeof at === "number" ? Date.now() - at : Infinity;
     if (
       typeof distinctId === "string" &&
       (placement === "home" || placement === "subscribe") &&
       elapsed >= 0 && elapsed < confirmationWindow
     ) {
-      captureNewsletterEvent("newsletter subscription confirmed", placement, distinctId);
+      const source = placement === "home" ? "homepage_inline" : subscribeEntryPoint(entryPoint);
+      captureNewsletterEvent("newsletter subscription confirmed", placement, source, distinctId);
     }
   } catch {
     // Showing the confirmation does not depend on browser storage.

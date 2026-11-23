@@ -1,9 +1,11 @@
 import { type ChangeEvent, type FormEvent, useState } from "react";
+import { captureJobEvent, type JobAnalyticsProperties } from "../../jobs/analytics";
 import { submitNativeJobApplication } from "../api";
 
 type NativeJobApplyFormProps = {
   jobId: string;
   jobTitle: string;
+  analyticsJob?: JobAnalyticsProperties;
 };
 
 type ApplicationFormState = {
@@ -35,7 +37,7 @@ function isHttpUrl(value: string): boolean {
   }
 }
 
-export function NativeJobApplyForm({ jobId, jobTitle }: NativeJobApplyFormProps) {
+export function NativeJobApplyForm({ jobId, jobTitle, analyticsJob }: NativeJobApplyFormProps) {
   const [formState, setFormState] = useState<ApplicationFormState>(initialState);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -79,6 +81,7 @@ export function NativeJobApplyForm({ jobId, jobTitle }: NativeJobApplyFormProps)
     }
 
     setIsSubmitting(true);
+    if (analyticsJob) captureJobEvent("job application started", analyticsJob, "direct_apply");
 
     try {
       await submitNativeJobApplication({
@@ -89,6 +92,7 @@ export function NativeJobApplyForm({ jobId, jobTitle }: NativeJobApplyFormProps)
         coverLetter,
         cvUrl,
       });
+      if (analyticsJob) captureJobEvent("job application submitted", analyticsJob, "direct_apply");
       setSuccess(`Application submitted for "${jobTitle}".`);
       setFormState(initialState);
     } catch (submitError) {

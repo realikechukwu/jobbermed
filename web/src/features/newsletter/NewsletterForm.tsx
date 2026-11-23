@@ -1,32 +1,32 @@
 import { useEffect, useId, useRef, useState, type FormEvent } from "react";
 import { Link } from "react-router-dom";
-import { captureNewsletterEvent, rememberNewsletterSignup, type NewsletterPlacement } from "./analytics";
+import { captureNewsletterEvent, rememberNewsletterSignup, type NewsletterEntryPoint, type NewsletterPlacement } from "./analytics";
 import { BREVO_SIGNUP_URL, requestNewsletterSubscription } from "./brevo";
 import "./newsletter.css";
 
 type Status = "idle" | "submitting" | "accepted" | "error";
 
-export function NewsletterForm({ placement }: { placement: NewsletterPlacement }) {
+export function NewsletterForm({ placement, entryPoint }: { placement: NewsletterPlacement; entryPoint: NewsletterEntryPoint }) {
   const headingId = useId();
   const emailId = useId();
   const sectionRef = useRef<HTMLElement>(null);
-  const viewed = useRef(false);
+  const viewedEntry = useRef<NewsletterEntryPoint>();
   const submitting = useRef(false);
   const [status, setStatus] = useState<Status>("idle");
 
   useEffect(() => {
     const section = sectionRef.current;
-    if (!section || viewed.current) return;
+    if (!section || viewedEntry.current === entryPoint) return;
 
     const observer = new IntersectionObserver(([entry]) => {
-      if (!entry.isIntersecting || viewed.current) return;
-      viewed.current = true;
-      captureNewsletterEvent("newsletter form viewed", placement);
+      if (!entry.isIntersecting || viewedEntry.current === entryPoint) return;
+      viewedEntry.current = entryPoint;
+      captureNewsletterEvent("newsletter form viewed", placement, entryPoint);
       observer.disconnect();
     });
     observer.observe(section);
     return () => observer.disconnect();
-  }, [placement]);
+  }, [entryPoint, placement]);
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -34,22 +34,22 @@ export function NewsletterForm({ placement }: { placement: NewsletterPlacement }
     const data = new FormData(event.currentTarget);
     if (data.get("email_address_check")) return;
 
-    if (!viewed.current) {
-      viewed.current = true;
-      captureNewsletterEvent("newsletter form viewed", placement);
+    if (viewedEntry.current !== entryPoint) {
+      viewedEntry.current = entryPoint;
+      captureNewsletterEvent("newsletter form viewed", placement, entryPoint);
     }
-    captureNewsletterEvent("newsletter signup submitted", placement);
+    captureNewsletterEvent("newsletter signup submitted", placement, entryPoint);
     submitting.current = true;
     setStatus("submitting");
 
     try {
       if (!(await requestNewsletterSubscription(data))) throw new Error("Signup was not accepted");
 
-      rememberNewsletterSignup(placement);
-      captureNewsletterEvent("newsletter signup accepted", placement);
+      rememberNewsletterSignup(placement, entryPoint);
+      captureNewsletterEvent("newsletter signup accepted", placement, entryPoint);
       setStatus("accepted");
     } catch {
-      captureNewsletterEvent("newsletter signup failed", placement);
+      captureNewsletterEvent("newsletter signup failed", placement, entryPoint);
       setStatus("error");
     } finally {
       submitting.current = false;

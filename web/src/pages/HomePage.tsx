@@ -509,7 +509,7 @@ export function HomePage() {
           </>
         ) : null}
 
-        {pathname === "/" ? <NewsletterForm placement="home" /> : null}
+        {pathname === "/" ? <NewsletterForm placement="home" entryPoint="homepage_inline" /> : null}
       </HomeLegacyShell>
 
       <AggregatorDetailPanel

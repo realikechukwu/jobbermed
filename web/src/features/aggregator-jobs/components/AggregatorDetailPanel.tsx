@@ -1,6 +1,7 @@
 import { buildCvMatchUrl } from "../cv-match";
 import { useEffect, useRef, type MouseEvent } from "react";
 import { handleDialogBackdropClickFallback } from "../../../lib/form-accessibility";
+import { captureJobEvent, jobAnalyticsProperties, useJobView } from "../../jobs/analytics";
 import { SOURCE_LABELS } from "../constants";
 import type { AggregatorJob } from "../types";
 import { formatDate, formatJobType, formatSalary, normalizeCategory, safeText } from "../utils";
@@ -50,6 +51,8 @@ export function AggregatorDetailPanel({
   onToggleSave,
 }: AggregatorDetailPanelProps) {
   const panelRef = useRef<HTMLDialogElement>(null);
+  const analyticsJob = isMounted && !isClosing && job ? jobAnalyticsProperties(job) : undefined;
+  useJobView(analyticsJob, "detail_drawer");
 
   useEffect(() => {
     const dialog = panelRef.current;
@@ -92,6 +95,12 @@ export function AggregatorDetailPanel({
     }
 
     onToggleSave(job);
+  }
+
+  function handleApplyClick(event: MouseEvent<HTMLAnchorElement>) {
+    if (analyticsJob && (event.button === 0 || event.button === 1)) {
+      captureJobEvent("job apply clicked", analyticsJob, "detail_drawer");
+    }
   }
 
   return (
@@ -193,7 +202,8 @@ export function AggregatorDetailPanel({
         {/* Last in the panel and sticky, so the way to apply is always in view. */}
         <div className="detail-cta-bar">
           {applyUrl ? (
-            <a className="detail-cta" id="detailCTA" href={applyUrl} target="_blank" rel="noopener noreferrer">
+            <a className="detail-cta" id="detailCTA" href={applyUrl} target="_blank" rel="noopener noreferrer"
+              onClick={handleApplyClick} onAuxClick={handleApplyClick}>
               {knownSourceLabel ? `Apply on ${knownSourceLabel}` : "Apply on the original site"}
               <span aria-hidden="true"> ↗</span>
               <span className="sr-only"> (opens in a new tab)</span>
