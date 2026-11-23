@@ -29,6 +29,15 @@ const ROUTE_META: Record<string, PageMeta> = {
     title: "Privacy Policy | JobberMed",
     description: "How JobberMed collects, uses and protects your personal information.",
   },
+  "/subscribe": {
+    title: "Weekly Healthcare Job Alerts | JobberMed",
+    description: "Subscribe to receive weekly healthcare vacancies from JobberMed by email.",
+  },
+  "/subscribe/confirmed": {
+    title: "Subscription Confirmed | JobberMed",
+    description: "Your JobberMed weekly job-alert subscription is confirmed.",
+    noindex: true,
+  },
   "/landing": {
     title: "Find Healthcare Jobs Faster | JobberMed",
     description:

@@ -3,6 +3,14 @@
 
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
+from config import EMAIL_CONFIG
 from email_runtime import (
     ConfigurationSkip,
     MissingRelationError,
@@ -51,11 +59,15 @@ def load_opted_in_emails(config) -> list[str]:
 
 
 def main() -> int:
-    config = load_runtime_config("SYNC_DRY_RUN")
-
     print("=" * 64)
     print("  JOBBERMED DELIVERY SEGMENT SYNC")
     print("=" * 64)
+
+    if not EMAIL_CONFIG.get("personalized_digest_enabled", False):
+        print("Personalized delivery is paused. Leaving Brevo list membership unchanged.")
+        return 0
+
+    config = load_runtime_config("SYNC_DRY_RUN")
 
     if not config.weekly_list_id:
         print("⚠️  Weekly Brevo list id not set. Skipping segment sync.")

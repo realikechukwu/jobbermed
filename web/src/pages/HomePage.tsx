@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef } from "react";
 import { buildPostedRangeText, buildResultsHeadingText, buildUpdatedText } from "../features/aggregator-jobs/results-summary";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { AggregatorDetailPanel } from "../features/aggregator-jobs/components/AggregatorDetailPanel";
 import { AggregatorFilters } from "../features/aggregator-jobs/components/AggregatorFilters";
 import { FooterShell } from "../components/FooterShell";
@@ -18,6 +18,7 @@ import { useUnifiedJobsData } from "../features/jobs/useUnifiedJobsData";
 import { isDirectJob, type UnifiedJob } from "../features/jobs/unify";
 import { useDetailPanel } from "../features/aggregator-jobs/hooks/useDetailPanel";
 import { useSavedJobsLocal } from "../features/aggregator-jobs/hooks/useSavedJobsLocal";
+import { NewsletterForm } from "../features/newsletter/NewsletterForm";
 import type { CategoryCounts, LocationCounts } from "../features/aggregator-jobs/types";
 import {
   getJobTypeGroup,
@@ -63,6 +64,7 @@ function buildLocationCounts(activeJobs: Array<{ _locationBuckets: string[] }>):
 export function HomePage() {
   const { jobs, isLoading, error, directJobsError } = useUnifiedJobsData(AGGREGATED_JOBS_URL);
   const navigate = useNavigate();
+  const { pathname } = useLocation();
   const listingPaths = useMemo(() => indexSearchListings(jobs.filter((job) => !isDirectJob(job))).byId, [jobs]);
 
   const {
@@ -507,6 +509,7 @@ export function HomePage() {
           </>
         ) : null}
 
+        {pathname === "/" ? <NewsletterForm placement="home" /> : null}
       </HomeLegacyShell>
 
       <AggregatorDetailPanel

@@ -1,4 +1,4 @@
-export const PRIVACY_UPDATED = "Last updated: 15 November 2026";
+export const PRIVACY_UPDATED = "Last updated: 23 November 2026";
 
 export const PRIVACY_INTRO =
   "JobberMed values your privacy. This policy explains what information we collect when you browse healthcare vacancies, use CV Match, subscribe to job alerts or apply for roles posted on JobberMed, how we protect your data, and the choices you have.";
@@ -7,6 +7,10 @@ export const PRIVACY_SECTIONS: Array<{ title: string; text: string }> = [
   {
     title: "Information we collect",
     text: "When you subscribe to job alerts or create a JobberMed account (by email and password or Google Sign-In), we collect your email address, account profile and saved alert preferences (such as preferred clinical specialties, Nigerian states, job sources and daily or weekly email frequency). If you apply to an employer-posted role on JobberMed or request recruiter access, we collect the details you submit, including your name, email address, phone number, CV or resume link, cover note and organisation details. We also collect basic, anonymous usage statistics to keep the website reliable and improve search quality.",
+  },
+  {
+    title: "Newsletter signup and analytics",
+    text: "Brevo collects your email address and sends a confirmation link before adding you to the weekly newsletter. We use PostHog to measure newsletter form views, submissions and confirmations. These events use a random identifier and exclude your email address and anything you enter in the form. Your browser can temporarily store the identifier to link a confirmation to its signup. We respect Global Privacy Control and Do Not Track signals for this measurement.",
   },
   {
     title: "Saved jobs on your device and CV Match",

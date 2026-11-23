@@ -172,6 +172,15 @@ const NAV_DEFINITIONS: SiteNavDefinition[] = [
     placements: ["footer"],
   },
   {
+    id: "subscribe",
+    kind: "internal",
+    label: "Subscribe",
+    group: "legal",
+    to: "/subscribe",
+    activeMatch: "exact",
+    placements: ["footer"],
+  },
+  {
     id: "how-it-works",
     kind: "internal",
     label: "How It Works",

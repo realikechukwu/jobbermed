@@ -86,6 +86,19 @@ const PUBLIC_PAGES = [
     heading: "Find healthcare jobs faster",
   },
   {
+    path: "/subscribe",
+    title: "Weekly Healthcare Job Alerts | JobberMed",
+    description: "Subscribe to receive weekly healthcare vacancies from JobberMed by email.",
+    heading: "Subscribe to JobberMed",
+  },
+  {
+    path: "/subscribe/confirmed",
+    title: "Subscription Confirmed | JobberMed",
+    description: "Your JobberMed weekly job-alert subscription is confirmed.",
+    heading: "Subscription confirmed",
+    noindex: true,
+  },
+  {
     path: "/signup",
     title: "Create Your Free Account | JobberMed",
     description: "Sign up to save healthcare jobs, set preferences and apply directly on JobberMed.",
