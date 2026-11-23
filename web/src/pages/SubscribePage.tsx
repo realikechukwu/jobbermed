@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import { NewsletterForm } from "../features/newsletter/NewsletterForm";
 import { captureNewsletterConfirmation, subscribeEntryPoint } from "../features/newsletter/analytics";
+import { rememberNewsletterSubscribed } from "../features/newsletter/prompt";
 import { RouteShell } from "../layouts/RouteShell";
 
 export function SubscribePage() {
@@ -16,7 +17,10 @@ export function SubscribePage() {
 }
 
 export function NewsletterConfirmedPage() {
-  useEffect(() => captureNewsletterConfirmation(), []);
+  useEffect(() => {
+    rememberNewsletterSubscribed();
+    captureNewsletterConfirmation();
+  }, []);
 
   return (
     <RouteShell title="Subscription confirmed" subtitle="You’re signed up for JobberMed’s weekly job alerts.">

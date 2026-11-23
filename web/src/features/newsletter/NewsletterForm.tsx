@@ -2,11 +2,19 @@ import { useEffect, useId, useRef, useState, type FormEvent } from "react";
 import { Link } from "react-router-dom";
 import { captureNewsletterEvent, rememberNewsletterSignup, type NewsletterEntryPoint, type NewsletterPlacement } from "./analytics";
 import { BREVO_SIGNUP_URL, requestNewsletterSubscription } from "./brevo";
+import { rememberNewsletterSubscribed } from "./prompt";
 import "./newsletter.css";
 
 type Status = "idle" | "submitting" | "accepted" | "error";
 
-export function NewsletterForm({ placement, entryPoint }: { placement: NewsletterPlacement; entryPoint: NewsletterEntryPoint }) {
+type NewsletterFormProps = {
+  placement: NewsletterPlacement;
+  entryPoint: NewsletterEntryPoint;
+  variant?: "inline" | "prompt";
+  onAccepted?: () => void;
+};
+
+export function NewsletterForm({ placement, entryPoint, variant = "inline", onAccepted }: NewsletterFormProps) {
   const headingId = useId();
   const emailId = useId();
   const sectionRef = useRef<HTMLElement>(null);
@@ -46,8 +54,10 @@ export function NewsletterForm({ placement, entryPoint }: { placement: Newslette
       if (!(await requestNewsletterSubscription(data))) throw new Error("Signup was not accepted");
 
       rememberNewsletterSignup(placement, entryPoint);
+      rememberNewsletterSubscribed();
       captureNewsletterEvent("newsletter signup accepted", placement, entryPoint);
       setStatus("accepted");
+      onAccepted?.();
     } catch {
       captureNewsletterEvent("newsletter signup failed", placement, entryPoint);
       setStatus("error");
@@ -57,12 +67,17 @@ export function NewsletterForm({ placement, entryPoint }: { placement: Newslette
   }
 
   return (
-    <section className="newsletter-signup" aria-labelledby={headingId} ref={sectionRef}>
+    <section
+      className={variant === "prompt" ? "newsletter-signup newsletter-signup--prompt" : "newsletter-signup"}
+      aria-labelledby={headingId}
+      ref={sectionRef}
+    >
       <h2 id={headingId}>Get weekly job alerts</h2>
       {status === "accepted" ? (
         <p role="status">Check your email for a link to confirm your subscription.</p>
       ) : (
         <>
+          {variant === "prompt" ? <p className="newsletter-signup-intro">New healthcare vacancies in your inbox each week.</p> : null}
           <form className="newsletter-signup-form" onSubmit={handleSubmit}>
             <div className="shell-field">
               <label className="shell-label" htmlFor={emailId}>Email address</label>
