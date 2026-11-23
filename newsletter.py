@@ -7,6 +7,7 @@ import sys
 from datetime import date, datetime, timezone
 from html import escape
 from pathlib import Path
+from urllib.parse import urljoin
 
 import requests
 from dotenv import load_dotenv
@@ -68,181 +69,148 @@ def build_email_html(
     jobs: list,
     *,
     headline_text: str = "Healthcare jobs across Nigeria and Africa.",
-    subheadline_text: str = "Delivered to your email every week.",
+    subheadline_text: str = "Your weekly roundup of open roles.",
     intro_text: str | None = None,
     include_signup_cta: bool = True,
 ) -> str:
-    """Build HTML email content."""
+    """Build the JobberMed digest with inline styles for email clients."""
     invalid_salary_values = {"", "n", "n,", "na", "n/a", "none", "null", "-", "--", "nil"}
+    job_rows = []
 
-    # Build job cards in a monochrome-forward style with subtle brand accents.
-    job_rows = ""
     for job in jobs:
         title = escape(str(job.get("job_title") or "Untitled Role"))
-        company = escape(str(job.get("company") or "Company not listed"))
-        location = escape(str(job.get("location") or "").strip())
-        apply_url = escape(str(job.get("apply_url") or "https://jobbermed.com"), quote=True)
+        company = str(job.get("company") or "Company not listed").strip()
+        location = str(job.get("location") or "").strip()
+        apply_url = escape(str(job.get("apply_url") or "https://jobbermed.com/"), quote=True)
+        employer = escape(" · ".join(filter(None, (company, location))))
 
-        salary_raw = str(job.get("salary") or "").strip()
-        salary_normalized = salary_raw.lower()
+        salary = str(job.get("salary") or "").strip()
+        posted = str(job.get("date_posted") or "").strip()
+        deadline = str(job.get("deadline") or "").strip()
+        job_type = str(job.get("job_type") or "").strip()
 
-        posted_raw = str(job.get("date_posted") or "").strip()
-        deadline_raw = str(job.get("deadline") or "").strip()
-        job_type_raw = str(job.get("job_type") or "").strip()
-
-        meta = company
-        if location:
-            meta = f"{meta} • {location}"
-
-        tags = []
-        if posted_raw:
-            tags.append(
-                f'<span style="display:inline-block;background:#f0f0f0;color:#111111;'
-                f'font-size:12px;line-height:1;padding:6px 10px;border-radius:999px;'
-                f'margin-right:6px;margin-bottom:6px;">Posted {escape(format_date(posted_raw))}</span>'
-            )
-        if deadline_raw:
-            tags.append(
-                f'<span style="display:inline-block;background:#f0f0f0;color:#111111;'
-                f'font-size:12px;line-height:1;padding:6px 10px;border-radius:999px;'
-                f'margin-right:6px;margin-bottom:6px;">Closes {escape(format_date(deadline_raw))}</span>'
-            )
-        if job_type_raw:
-            tags.append(
-                f'<span style="display:inline-block;background:#f0f0f0;color:#111111;'
-                f'font-size:12px;line-height:1;padding:6px 10px;border-radius:999px;'
-                f'margin-right:6px;margin-bottom:6px;">{escape(job_type_raw)}</span>'
-            )
-        tags_html = f'<p style="margin:0 0 10px 0;">{"".join(tags)}</p>' if tags else ""
-
-        salary_html = ""
-        if salary_normalized not in invalid_salary_values:
-            salary_html = (
-                f'<p style="margin:0; color:#1800ad; font-weight:600; font-size:13px;">'
-                f"{escape(salary_raw)}"
-                "</p>"
+        details = [escape(job_type)] if job_type else []
+        if salary.lower() not in invalid_salary_values:
+            details.append(f'<strong style="color:#1800ad;">{escape(salary)}</strong>')
+        if deadline:
+            details.append(f"Closes {escape(format_date(deadline))}")
+        if posted:
+            details.append(f"Posted {escape(format_date(posted))}")
+        details_html = ""
+        if details:
+            details_html = (
+                '<p style="margin:8px 0 0;color:#555561;font-size:13px;line-height:1.55;">'
+                + " &middot; ".join(details)
+                + "</p>"
             )
 
-        job_rows += f"""
-        <tr>
-          <td style="padding: 0 32px 14px 32px;">
-            <table width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #e2ddd6; border-radius:16px; background:#ffffff;">
-              <tr>
-                <td style="padding: 16px 18px 10px 18px;">
-                  <h3 style="margin: 0 0 8px 0; font-size: 18px; line-height: 1.35; color: #1c1b19; font-weight: 600;">
-                    <a href="{apply_url}" style="color:#1c1b19; text-decoration:none;">{title}</a>
-                  </h3>
-                  <p style="margin: 0 0 10px 0; color: #6d6760; font-size: 13px; line-height: 1.4;">{meta}</p>
-                  {tags_html}
-                  {salary_html}
-                </td>
-              </tr>
-              <tr>
-                <td style="padding: 0 18px 16px 18px;">
-                  <a href="{apply_url}" style="display:inline-block; background:#111111; color:#ffffff; padding:10px 16px; border-radius:10px; text-decoration:none; font-size:13px; font-weight:600;">
-                    View Original Posting →
-                  </a>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-        """
+        job_rows.append(f"""
+                <tr>
+                  <td class="gutter" style="padding:0 32px;">
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td style="padding:16px 0;border-top:1px solid #e8e8ec;">
+                          <h3 style="margin:0;font-size:18px;line-height:1.3;font-weight:700;overflow-wrap:anywhere;">
+                            <a href="{apply_url}" style="color:#1800ad;text-decoration:none;">{title}<span aria-hidden="true" style="white-space:nowrap;">&nbsp;↗</span></a>
+                          </h3>
+                          <p style="margin:5px 0 0;color:#111114;font-size:14px;line-height:1.5;">{employer}</p>
+                          {details_html}
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+        """)
 
-    if intro_text is None:
-        intro_text = (
-            f"Here are the top <strong>{len(jobs)} medical and healthcare opportunities</strong> curated this week."
-        )
+    openings = f"{len(jobs)} open {'role' if len(jobs) == 1 else 'roles'}"
+    listing_heading = "Job matches" if intro_text else openings
+    intro_html = ""
+    if intro_text:
+        intro_html = f'<p style="margin:8px 0 0;color:#555561;font-size:15px;line-height:1.5;">{intro_text}</p>'
 
     signup_cta_html = ""
     if include_signup_cta:
-        cta_url = escape(get_email_cta_url(), quote=True)
+        cta_url = escape(urljoin("https://jobbermed.com/", get_email_cta_url()), quote=True)
         signup_cta_html = f"""
-          <tr>
-            <td style="padding:0 32px 24px 32px;">
-              <table width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #e2ddd6; border-radius:14px; background:#f7f4ef;">
                 <tr>
-                  <td style="padding:16px 18px;">
-                    <p style="margin:0 0 10px 0; color:#1c1b19; font-size:14px; line-height:1.5;">
-                      Want emails matched to your preferred role, location, and job type?
-                    </p>
-                    <a href="{cta_url}" style="display:inline-block; background:#111111; color:#ffffff; padding:10px 14px; border-radius:10px; text-decoration:none; font-size:13px; font-weight:600;">
-                      Create account for personalization →
-                    </a>
+                  <td class="gutter" style="padding:0 32px 24px;color:#555561;font-size:14px;line-height:1.5;">
+                    <a href="{cta_url}" style="color:#1800ad;text-decoration:underline;">Set your job preferences</a>
+                    in a free JobberMed account.
                   </td>
                 </tr>
-              </table>
-            </td>
-          </tr>
         """
 
-    html_content = f"""
+    return f"""
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>JobberMed Weekly Digest</title>
+  <meta name="color-scheme" content="light">
+  <meta name="supported-color-schemes" content="light">
+  <title>JobberMed Job Digest</title>
+  <style>
+    @media only screen and (max-width: 480px) {{
+      .email-frame {{ padding:0 !important; }}
+      .gutter {{ padding-left:20px !important; padding-right:20px !important; }}
+      .hero-title {{ font-size:30px !important; }}
+    }}
+  </style>
 </head>
-<body style="margin:0; padding:0; background-color:#f7f4ef; font-family:'IBM Plex Sans','Segoe UI',Arial,sans-serif;">
-  <table width="100%" cellpadding="0" cellspacing="0" style="background-color:#f7f4ef; padding:28px 12px;">
+<body style="margin:0;padding:0;background-color:#f5f5f8;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;color:#111114;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" bgcolor="#f5f5f8">
     <tr>
-      <td align="center">
-        <table width="640" cellpadding="0" cellspacing="0" style="width:100%; max-width:640px; background-color:#ffffff; border-radius:18px; overflow:hidden; border:1px solid #e2ddd6; box-shadow:0 10px 24px rgba(0,0,0,0.06);">
+      <td class="email-frame" align="center" style="padding:28px 12px;">
+        <!--[if mso]><table role="presentation" width="640" align="center" cellpadding="0" cellspacing="0"><tr><td><![endif]-->
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" bgcolor="#ffffff"
+          style="width:100%;max-width:640px;background-color:#ffffff;text-align:left;">
           <tr>
-            <td style="height:12px; line-height:12px; font-size:0; background:#1800ad; background-image:linear-gradient(90deg,#1800ad 0%,#0cc0df 100%);">&nbsp;</td>
-          </tr>
-          <tr>
-            <td style="padding:26px 32px; background:#111111;">
-              <h1 style="margin:0; color:#ffffff; font-size:28px; line-height:1.2; font-weight:800;">
+            <td class="gutter" bgcolor="#0b0640"
+              style="padding:26px 32px 32px;background-color:#0b0640;background-image:linear-gradient(100deg,#0b0640 5%,rgba(14,6,90,.93) 60%,rgba(14,6,90,.72) 100%),url('https://jobbermed.com/images/banner-hero.jpg');background-size:cover;background-position:center 30%;">
+              <a href="https://jobbermed.com/" style="color:#ffffff;font-size:21px;line-height:1.2;letter-spacing:-.45px;font-weight:800;text-decoration:none;">Jobber<span style="color:#0cc0df;">Med</span></a>
+              <h1 class="hero-title" style="margin:24px 0 10px;color:#ffffff;font-size:38px;line-height:1.13;letter-spacing:-1px;font-weight:750;">
                 {escape(headline_text)}
               </h1>
-              <div style="width:180px; height:5px; margin-top:14px; border-radius:999px; background:#0cc0df;"></div>
-              <p style="margin:14px 0 0 0; color:rgba(255,255,255,0.85); font-size:15px; line-height:1.5;">
-                {escape(subheadline_text)}
-              </p>
+              <p style="margin:0;color:#e5e5f7;font-size:16px;line-height:1.5;">{escape(subheadline_text)}</p>
             </td>
           </tr>
           <tr>
-            <td style="padding:20px 32px 20px 32px;">
-              <p style="margin:0; color:#1c1b19; font-size:15px; line-height:1.6;">
-                {intro_text}
-              </p>
+            <td class="gutter" style="padding:23px 32px 13px;">
+              <h2 style="margin:0;color:#111114;font-size:21px;line-height:1.3;font-weight:700;">{listing_heading}</h2>
+              {intro_html}
             </td>
           </tr>
+          {"".join(job_rows)}
           <tr>
-            <td style="padding:0;">
-              <table width="100%" cellpadding="0" cellspacing="0">
-                {job_rows}
+            <td class="gutter" style="padding:18px 32px 26px;border-top:1px solid #e8e8ec;">
+              <table role="presentation" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td bgcolor="#1800ad" style="border-radius:8px;background-color:#1800ad;mso-padding-alt:12px 18px;">
+                    <a href="https://jobbermed.com/" style="display:inline-block;padding:12px 18px;color:#ffffff;font-size:15px;line-height:1.35;font-weight:700;text-decoration:none;mso-padding-alt:0;">Browse all jobs &rarr;</a>
+                  </td>
+                </tr>
               </table>
-            </td>
-          </tr>
-          <tr>
-            <td style="padding:20px 32px 34px 32px; text-align:center;">
-              <a href="https://jobbermed.com" style="display:inline-block; background:#111111; color:#ffffff; padding:14px 32px; border-radius:12px; text-decoration:none; font-size:16px; font-weight:600;">
-                Browse All Jobs →
-              </a>
             </td>
           </tr>
           {signup_cta_html}
           <tr>
-            <td style="background:#111111; padding:24px 32px; text-align:center;">
-              <p style="margin:0 0 8px 0; color:rgba(255,255,255,0.72); font-size:13px; line-height:1.5;">
-                You're receiving this because you subscribed at jobbermed.com
-              </p>
-              <p style="margin:0; color:rgba(255,255,255,0.72); font-size:13px;">
-                <a href="{{{{unsubscribe}}}}" style="color:#0cc0df; text-decoration:none;">Unsubscribe</a> · <a href="https://jobbermed.com" style="color:#0cc0df; text-decoration:none;">Visit Website</a>
+            <td class="gutter" bgcolor="#151727" style="padding:21px 32px;background-color:#151727;">
+              <p style="margin:0 0 8px;color:#dedfea;font-size:13px;line-height:1.5;">You’re receiving this because you signed up for JobberMed job alerts.</p>
+              <p style="margin:0;font-size:13px;line-height:1.5;">
+                <a href="{{{{unsubscribe}}}}" style="color:#72e4f7;text-decoration:underline;">Unsubscribe</a>
+                <span style="color:#a5a7b7;">&nbsp;·&nbsp;</span>
+                <a href="https://jobbermed.com/" style="color:#72e4f7;text-decoration:underline;">Visit JobberMed</a>
               </p>
             </td>
           </tr>
         </table>
+        <!--[if mso]></td></tr></table><![endif]-->
       </td>
     </tr>
   </table>
 </body>
 </html>
 """
-    return html_content
 
 
 def weekly_campaign(headers: dict, name: str) -> dict | None:
