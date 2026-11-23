@@ -111,6 +111,15 @@ const NAV_DEFINITIONS: SiteNavDefinition[] = [
     placements: ["header", "mobile", "footer"],
   },
   {
+    id: "subscribe-mobile",
+    kind: "internal",
+    label: "Subscribe",
+    group: "primary",
+    to: "/subscribe",
+    activeMatch: "exact",
+    placements: ["mobile"],
+  },
+  {
     id: "dashboard",
     kind: "internal",
     label: "Dashboard",
