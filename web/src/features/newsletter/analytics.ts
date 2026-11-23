@@ -15,7 +15,7 @@ let visitorId: string | undefined;
 
 function analyticsEnabled() {
   const privacy = navigator as Navigator & { globalPrivacyControl?: boolean };
-  return Boolean(projectToken && ingestHost && globalThis.crypto?.randomUUID &&
+  return Boolean(projectToken && ingestHost && typeof globalThis.crypto?.randomUUID === "function" &&
     privacy.doNotTrack !== "1" && !privacy.globalPrivacyControl);
 }
 
